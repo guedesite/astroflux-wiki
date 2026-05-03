@@ -1,0 +1,41 @@
+---
+id: "Drops:6NLhvJ9vBku9OmuVQxDtlQ"
+source_table: "Drops"
+source_key: "6NLhvJ9vBku9OmuVQxDtlQ"
+slug: "drops/aureus-corrosive-manipulator"
+name: "Aureus Corrosive Manipulator"
+type: "drop"
+---
+
+# Aureus Corrosive Manipulator
+
+## Summary
+
+- Type: drop
+
+## Stats
+
+| Field | Value |
+| --- | --- |
+| `effect` | D4M790MLv02L0FqRrw-cFg |
+| `chance` | 1 |
+| `crate` | true |
+| `artifactChance` | 0 |
+| `name` | Aureus Corrosive Manipulator |
+| `type` | drop |
+| `bitmap` | DaGPTNAz7U6-DUSIe0XIHA |
+
+## Drop Rolls
+
+| Item | Table | Chance | Effective Chance | Quantity |
+| --- | --- | ---: | ---: | --- |
+| Aureus Corrosive Manipulator | `Weapons` | 1 | 1 | 1-1 |
+
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `bitmap` | crate.png (Images) |
+| `effect` | Drop Crate Weapon (Effects) |
+| `dropItem` | Aureus Corrosive Manipulator (Weapons) |
+

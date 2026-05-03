@@ -1,0 +1,5129 @@
+[
+  {
+    "id": "Drops:OAK9JZxHj0eIeNwnisymlw",
+    "source_table": "Drops",
+    "source_key": "OAK9JZxHj0eIeNwnisymlw",
+    "name": "1% Crate Elite lvl 22 ",
+    "slug": "1-crate-elite-lvl-22",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "TR_fJ0mdRkmd8LuFYlVcig",
+      "chance": 0.0101,
+      "crate": true,
+      "key": "OAK9JZxHj0eIeNwnisymlw",
+      "artifactChance": 0,
+      "name": "1% Crate Elite lvl 22 ",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:smz5b5fvfEiPzsxmPEboug",
+    "source_table": "Drops",
+    "source_key": "smz5b5fvfEiPzsxmPEboug",
+    "name": "1% Crate, Elite lvl 24",
+    "slug": "1-crate-elite-lvl-24",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "TR_fJ0mdRkmd8LuFYlVcig",
+      "chance": 0.0125,
+      "crate": true,
+      "key": "smz5b5fvfEiPzsxmPEboug",
+      "artifactChance": 0,
+      "name": "1% Crate, Elite lvl 24",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:tbyIG3iSukO7aW3akGczww",
+    "source_table": "Drops",
+    "source_key": "tbyIG3iSukO7aW3akGczww",
+    "name": "100% Crate, Elite lvl 26",
+    "slug": "100-crate-elite-lvl-26",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "TR_fJ0mdRkmd8LuFYlVcig",
+      "chance": 1,
+      "crate": true,
+      "key": "tbyIG3iSukO7aW3akGczww",
+      "artifactChance": 0,
+      "name": "100% Crate, Elite lvl 26",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:KUQot-0VNkKJvisyw5i11A",
+    "source_table": "Drops",
+    "source_key": "KUQot-0VNkKJvisyw5i11A",
+    "name": "25% Void Tentacle",
+    "slug": "25-void-tentacle",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 0.2505,
+      "crate": true,
+      "key": "KUQot-0VNkKJvisyw5i11A",
+      "artifactChance": 0,
+      "name": "25% Void Tentacle",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:jS6-IL5Hn06UfGA3aPt0yg",
+    "source_table": "Drops",
+    "source_key": "jS6-IL5Hn06UfGA3aPt0yg",
+    "name": "Acid Spore 100%",
+    "slug": "acid-spore-100",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "jS6-IL5Hn06UfGA3aPt0yg",
+      "artifactChance": 0,
+      "name": "Acid Spore 100%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:eGUPKGiVlkGoLANH6E__GQ",
+    "source_table": "Drops",
+    "source_key": "eGUPKGiVlkGoLANH6E__GQ",
+    "name": "Advanced Data Chip",
+    "slug": "advanced-data-chip",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "crate": false,
+      "key": "eGUPKGiVlkGoLANH6E__GQ",
+      "type": "drop",
+      "name": "Advanced Data Chip",
+      "bitmap": "ruu28iKNHUSXB6zxGhCang"
+    }
+  },
+  {
+    "id": "Drops:tOW09L5_8kqTw0j5LE8p3w",
+    "source_table": "Drops",
+    "source_key": "tOW09L5_8kqTw0j5LE8p3w",
+    "name": "Algea Nova Gland 5%",
+    "slug": "algea-nova-gland-5",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "tOW09L5_8kqTw0j5LE8p3w",
+      "artifactChance": 0,
+      "name": "Algea Nova Gland 5%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:QmEptBnu40yPEobIhpicKQ",
+    "source_table": "Drops",
+    "source_key": "QmEptBnu40yPEobIhpicKQ",
+    "name": "Alien Alloy",
+    "slug": "alien-alloy",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "name": "Alien Alloy",
+      "crate": false,
+      "key": "QmEptBnu40yPEobIhpicKQ",
+      "type": "drop",
+      "bitmap": "N2KfBqAyXUyNL3gIyz6eeg"
+    }
+  },
+  {
+    "id": "Drops:JvYR0d_4f0uslOwK_Mrhgg",
+    "source_table": "Drops",
+    "source_key": "JvYR0d_4f0uslOwK_Mrhgg",
+    "name": "Artifact 1%",
+    "slug": "artifact-1",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "lWWXz5e6CE-bzGbxgLypxw",
+      "chance": 0.0104,
+      "crate": true,
+      "key": "JvYR0d_4f0uslOwK_Mrhgg",
+      "artifactChance": 1,
+      "name": "Artifact 1%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:C6pxFT2jrkCOcl-1QfoEUw",
+    "source_table": "Drops",
+    "source_key": "C6pxFT2jrkCOcl-1QfoEUw",
+    "name": "Artifact 100%",
+    "slug": "artifact-100",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "lWWXz5e6CE-bzGbxgLypxw",
+      "chance": 1,
+      "crate": true,
+      "key": "C6pxFT2jrkCOcl-1QfoEUw",
+      "artifactChance": 1,
+      "name": "Artifact 100%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:7jwWzUsrgUK9bwk26A2UdA",
+    "source_table": "Drops",
+    "source_key": "7jwWzUsrgUK9bwk26A2UdA",
+    "name": "Artifact 30%",
+    "slug": "artifact-30",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "lWWXz5e6CE-bzGbxgLypxw",
+      "chance": 0.30060000000000003,
+      "crate": true,
+      "key": "7jwWzUsrgUK9bwk26A2UdA",
+      "artifactChance": 1,
+      "name": "Artifact 30%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:6NLhvJ9vBku9OmuVQxDtlQ",
+    "source_table": "Drops",
+    "source_key": "6NLhvJ9vBku9OmuVQxDtlQ",
+    "name": "Aureus Corrosive Manipulator",
+    "slug": "aureus-corrosive-manipulator",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "6NLhvJ9vBku9OmuVQxDtlQ",
+      "artifactChance": 0,
+      "name": "Aureus Corrosive Manipulator",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:kDITpD5lrE6f6A2YVe3t5g",
+    "source_table": "Drops",
+    "source_key": "kDITpD5lrE6f6A2YVe3t5g",
+    "name": "Aureus Drone Controller",
+    "slug": "aureus-drone-controller",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "kDITpD5lrE6f6A2YVe3t5g",
+      "artifactChance": 0,
+      "name": "Aureus Drone Controller",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:lyj2gcouQkacVklOiR6tQA",
+    "source_table": "Drops",
+    "source_key": "lyj2gcouQkacVklOiR6tQA",
+    "name": "Aureus Energy Manipulator",
+    "slug": "aureus-energy-manipulator",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "lyj2gcouQkacVklOiR6tQA",
+      "artifactChance": 0,
+      "name": "Aureus Energy Manipulator",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:NkJm6GzrD0Cr1INH-C2H0Q",
+    "source_table": "Drops",
+    "source_key": "NkJm6GzrD0Cr1INH-C2H0Q",
+    "name": "Aureus Kinetic Manipulator",
+    "slug": "aureus-kinetic-manipulator",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "NkJm6GzrD0Cr1INH-C2H0Q",
+      "artifactChance": 0,
+      "name": "Aureus Kinetic Manipulator",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:ZGHra-_4l0aaWQHhp_GYNQ",
+    "source_table": "Drops",
+    "source_key": "ZGHra-_4l0aaWQHhp_GYNQ",
+    "name": "BH1",
+    "slug": "bh1",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 1,
+      "fluxMin": 10,
+      "name": "BH1",
+      "xpMax": 2500,
+      "key": "ZGHra-_4l0aaWQHhp_GYNQ",
+      "table": "Drops",
+      "xpMin": 2500,
+      "artifactLevel": 100,
+      "type": "mission",
+      "fluxMax": 10
+    }
+  },
+  {
+    "id": "Drops:z7UGfjZngEmun0oF85Z7Hg",
+    "source_table": "Drops",
+    "source_key": "z7UGfjZngEmun0oF85Z7Hg",
+    "name": "BH2",
+    "slug": "bh2",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 2,
+      "fluxMin": 15,
+      "name": "BH2",
+      "xpMax": 3000,
+      "key": "z7UGfjZngEmun0oF85Z7Hg",
+      "table": "Drops",
+      "xpMin": 3000,
+      "artifactLevel": 105,
+      "type": "mission",
+      "fluxMax": 15
+    }
+  },
+  {
+    "id": "Drops:VfDwWYMSgkCPGQ1OYen7Cw",
+    "source_table": "Drops",
+    "source_key": "VfDwWYMSgkCPGQ1OYen7Cw",
+    "name": "BH3",
+    "slug": "bh3",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 3,
+      "fluxMin": 20,
+      "name": "BH3",
+      "xpMax": 3500,
+      "key": "VfDwWYMSgkCPGQ1OYen7Cw",
+      "table": "Drops",
+      "xpMin": 3500,
+      "artifactLevel": 110,
+      "type": "mission",
+      "fluxMax": 20
+    }
+  },
+  {
+    "id": "Drops:ARTmTgqG30-1IWLgpjRauQ",
+    "source_table": "Drops",
+    "source_key": "ARTmTgqG30-1IWLgpjRauQ",
+    "name": "BH4",
+    "slug": "bh4",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 4,
+      "fluxMin": 25,
+      "name": "BH4",
+      "xpMax": 4000,
+      "key": "ARTmTgqG30-1IWLgpjRauQ",
+      "table": "Drops",
+      "xpMin": 4000,
+      "artifactLevel": 110,
+      "type": "mission",
+      "fluxMax": 25
+    }
+  },
+  {
+    "id": "Drops:abXyzSR9IUCr476rSMndJg",
+    "source_table": "Drops",
+    "source_key": "abXyzSR9IUCr476rSMndJg",
+    "name": "BH5",
+    "slug": "bh5",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 5,
+      "fluxMin": 30,
+      "name": "BH5",
+      "xpMax": 5000,
+      "key": "abXyzSR9IUCr476rSMndJg",
+      "table": "Drops",
+      "xpMin": 5000,
+      "artifactLevel": 115,
+      "type": "mission",
+      "fluxMax": 30
+    }
+  },
+  {
+    "id": "Drops:WOYOj5L9IESBHExcQnymBQ",
+    "source_table": "Drops",
+    "source_key": "WOYOj5L9IESBHExcQnymBQ",
+    "name": "BH6",
+    "slug": "bh6",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 5,
+      "fluxMin": 35,
+      "name": "BH6",
+      "xpMax": 7500,
+      "key": "WOYOj5L9IESBHExcQnymBQ",
+      "table": "Drops",
+      "xpMin": 7500,
+      "artifactLevel": 120,
+      "type": "mission",
+      "fluxMax": 35
+    }
+  },
+  {
+    "id": "Drops:eHA3AEbYzku3CGPzZTg9Dw",
+    "source_table": "Drops",
+    "source_key": "eHA3AEbYzku3CGPzZTg9Dw",
+    "name": "BH7",
+    "slug": "bh7",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 5,
+      "fluxMin": 40,
+      "name": "BH7",
+      "xpMax": 10000,
+      "key": "eHA3AEbYzku3CGPzZTg9Dw",
+      "table": "Drops",
+      "xpMin": 10000,
+      "artifactLevel": 130,
+      "type": "mission",
+      "fluxMax": 40
+    }
+  },
+  {
+    "id": "Drops:T2Qz0dTSc0aLJFfeM5y3Fw",
+    "source_table": "Drops",
+    "source_key": "T2Qz0dTSc0aLJFfeM5y3Fw",
+    "name": "BH8",
+    "slug": "bh8",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 6,
+      "fluxMin": 45,
+      "name": "BH8",
+      "xpMax": 15000,
+      "key": "T2Qz0dTSc0aLJFfeM5y3Fw",
+      "table": "Drops",
+      "xpMin": 15000,
+      "artifactLevel": 140,
+      "type": "mission",
+      "fluxMax": 45
+    }
+  },
+  {
+    "id": "Drops:oyYZDo-yZ0694_hLpGartQ",
+    "source_table": "Drops",
+    "source_key": "oyYZDo-yZ0694_hLpGartQ",
+    "name": "BH9",
+    "slug": "bh9",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 10,
+      "fluxMin": 50,
+      "name": "BH9",
+      "xpMax": 25000,
+      "key": "oyYZDo-yZ0694_hLpGartQ",
+      "table": "Drops",
+      "xpMin": 25000,
+      "artifactLevel": 140,
+      "type": "mission",
+      "fluxMax": 50
+    }
+  },
+  {
+    "id": "Drops:W0zAU-AFikq_tTOFbPAsXg",
+    "source_table": "Drops",
+    "source_key": "W0zAU-AFikq_tTOFbPAsXg",
+    "name": "Big Metal Scrap",
+    "slug": "big-metal-scrap",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "chance": 1,
+      "key": "W0zAU-AFikq_tTOFbPAsXg",
+      "name": "Big Metal Scrap",
+      "type": "drop",
+      "bitmap": "1G-IWuJrvkWHGKRXqyqyww"
+    }
+  },
+  {
+    "id": "Drops:LJSolo_TgUmdmxzG7GS6bw",
+    "source_table": "Drops",
+    "source_key": "LJSolo_TgUmdmxzG7GS6bw",
+    "name": "Bionic Implant",
+    "slug": "bionic-implant",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "name": "Bionic Implant",
+      "crate": false,
+      "key": "LJSolo_TgUmdmxzG7GS6bw",
+      "effect": "RyHB04KC8kW-Z2dYKl5hHw",
+      "type": "drop",
+      "bitmap": "t3ExWdq_CEet05BCO1D2XQ"
+    }
+  },
+  {
+    "id": "Drops:W6oaTnkbDESUsCDkmAkyEg",
+    "source_table": "Drops",
+    "source_key": "W6oaTnkbDESUsCDkmAkyEg",
+    "name": "Brain Tissue",
+    "slug": "brain-tissue",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "crate": false,
+      "key": "W6oaTnkbDESUsCDkmAkyEg",
+      "type": "drop",
+      "name": "Brain Tissue",
+      "bitmap": "YDYOBJx9jEereiPuS0UGdg"
+    }
+  },
+  {
+    "id": "Drops:ucfbzT2cj0S3k0C55DudUg",
+    "source_table": "Drops",
+    "source_key": "ucfbzT2cj0S3k0C55DudUg",
+    "name": "Broadside 1%",
+    "slug": "broadside-1",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 0.0104,
+      "crate": true,
+      "key": "ucfbzT2cj0S3k0C55DudUg",
+      "artifactChance": 0,
+      "name": "Broadside 1%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:sADCoBCG7kiHKcCRNmnxpg",
+    "source_table": "Drops",
+    "source_key": "sADCoBCG7kiHKcCRNmnxpg",
+    "name": "Bug Leg",
+    "slug": "bug-leg",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "crate": false,
+      "key": "sADCoBCG7kiHKcCRNmnxpg",
+      "type": "drop",
+      "name": "Bug Leg",
+      "bitmap": "Se8Y3Ha69kqAUF04pexqEA"
+    }
+  },
+  {
+    "id": "Drops:FDY1BrqmPkSdR9PTpTMd7w",
+    "source_table": "Drops",
+    "source_key": "FDY1BrqmPkSdR9PTpTMd7w",
+    "name": "Cluster Missiles 100%",
+    "slug": "cluster-missiles-100",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "FDY1BrqmPkSdR9PTpTMd7w",
+      "artifactChance": 0,
+      "name": "Cluster Missiles 100%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:Lzew6zNkA02OlIsdtPDLdA",
+    "source_table": "Drops",
+    "source_key": "Lzew6zNkA02OlIsdtPDLdA",
+    "name": "Cold level 1",
+    "slug": "cold-level-1",
+    "type": "explore",
+    "stats": {
+      "table": "Drops",
+      "crate": false,
+      "chance": 1,
+      "type": "explore",
+      "name": "Cold level 1",
+      "key": "Lzew6zNkA02OlIsdtPDLdA"
+    }
+  },
+  {
+    "id": "Drops:KgYWhUuDI0afxC9uTvZv0g",
+    "source_table": "Drops",
+    "source_key": "KgYWhUuDI0afxC9uTvZv0g",
+    "name": "Core Charge",
+    "slug": "core-charge",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "crate": false,
+      "key": "KgYWhUuDI0afxC9uTvZv0g",
+      "type": "drop",
+      "name": "Core Charge",
+      "bitmap": "t9ZTgMhJwUOOaHynA9sSTA"
+    }
+  },
+  {
+    "id": "Drops:I9TOJpcdwEu9jGOSHvnEnQ",
+    "source_table": "Drops",
+    "source_key": "I9TOJpcdwEu9jGOSHvnEnQ",
+    "name": "Crate 1%, ALL 10-200",
+    "slug": "crate-1-all-10-200",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "chance": 0.0104,
+      "crate": true,
+      "key": "I9TOJpcdwEu9jGOSHvnEnQ",
+      "artifactChance": 0,
+      "type": "drop",
+      "name": "Crate 1%, ALL 10-200",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:NIEUQO4JGUS3ncvsJpb-Cg",
+    "source_table": "Drops",
+    "source_key": "NIEUQO4JGUS3ncvsJpb-Cg",
+    "name": "Crate 1%, Iridium  5-25",
+    "slug": "crate-1-iridium-5-25",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "chance": 0.0104,
+      "crate": true,
+      "key": "NIEUQO4JGUS3ncvsJpb-Cg",
+      "artifactChance": 0,
+      "type": "drop",
+      "name": "Crate 1%, Iridium  5-25",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:9bLjCkQ48kStTkKdGX2yDg",
+    "source_table": "Drops",
+    "source_key": "9bLjCkQ48kStTkKdGX2yDg",
+    "name": "Crate 1%, Steel 10-100",
+    "slug": "crate-1-steel-10-100",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "chance": 0.0104,
+      "crate": true,
+      "key": "9bLjCkQ48kStTkKdGX2yDg",
+      "artifactChance": 0,
+      "type": "drop",
+      "name": "Crate 1%, Steel 10-100",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:51nJdwRYWkCaHyqDk_rKCg",
+    "source_table": "Drops",
+    "source_key": "51nJdwRYWkCaHyqDk_rKCg",
+    "name": "Crate 1%, Steel 10-50",
+    "slug": "crate-1-steel-10-50",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "chance": 0.0104,
+      "crate": true,
+      "key": "51nJdwRYWkCaHyqDk_rKCg",
+      "artifactChance": 0,
+      "type": "drop",
+      "name": "Crate 1%, Steel 10-50",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:MbXJ3aSCpEuhFIqLshB6Pw",
+    "source_table": "Drops",
+    "source_key": "MbXJ3aSCpEuhFIqLshB6Pw",
+    "name": "Crate Advanced Data Chip",
+    "slug": "crate-advanced-data-chip",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "ARw-QivL5UyGKwxrV-46bw",
+      "chance": 1,
+      "crate": true,
+      "key": "MbXJ3aSCpEuhFIqLshB6Pw",
+      "artifactChance": 0,
+      "name": "Crate Advanced Data Chip",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:BibkXx9X3Emqc4KQWunaCg",
+    "source_table": "Drops",
+    "source_key": "BibkXx9X3Emqc4KQWunaCg",
+    "name": "Crate All 10-50",
+    "slug": "crate-all-10-50",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "TR_fJ0mdRkmd8LuFYlVcig",
+      "chance": 1,
+      "crate": true,
+      "key": "BibkXx9X3Emqc4KQWunaCg",
+      "artifactChance": 0,
+      "name": "Crate All 10-50",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:epFZvZfNv0KPbNw0Z18C1w",
+    "source_table": "Drops",
+    "source_key": "epFZvZfNv0KPbNw0Z18C1w",
+    "name": "Crate Beamer",
+    "slug": "crate-beamer",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "epFZvZfNv0KPbNw0Z18C1w",
+      "artifactChance": 0,
+      "name": "Crate Beamer",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:GnSyJ9eafkOD0JV7javjQA",
+    "source_table": "Drops",
+    "source_key": "GnSyJ9eafkOD0JV7javjQA",
+    "name": "Crate Concussion Sphere 0.1%",
+    "slug": "crate-concussion-sphere-01",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 0.001,
+      "crate": true,
+      "key": "GnSyJ9eafkOD0JV7javjQA",
+      "artifactChance": 0,
+      "name": "Crate Concussion Sphere 0.1%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:-IOeU0h00UqvuKlxJj4gTA",
+    "source_table": "Drops",
+    "source_key": "-IOeU0h00UqvuKlxJj4gTA",
+    "name": "Crate Gatling Laser 0.5%",
+    "slug": "crate-gatling-laser-05",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 0.0251,
+      "crate": true,
+      "key": "-IOeU0h00UqvuKlxJj4gTA",
+      "artifactChance": 0,
+      "name": "Crate Gatling Laser 0.5%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:qTXGJVqEo0eVMPhy9Eh3YQ",
+    "source_table": "Drops",
+    "source_key": "qTXGJVqEo0eVMPhy9Eh3YQ",
+    "name": "Crate HOF 0.6%",
+    "slug": "crate-hof-06",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "TR_fJ0mdRkmd8LuFYlVcig",
+      "chance": 0.0063,
+      "crate": true,
+      "key": "qTXGJVqEo0eVMPhy9Eh3YQ",
+      "artifactChance": 1,
+      "name": "Crate HOF 0.6%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:gCpD7ot2-k2mhQpCWruBGQ",
+    "source_table": "Drops",
+    "source_key": "gCpD7ot2-k2mhQpCWruBGQ",
+    "name": "Crate HOF 25%",
+    "slug": "crate-hof-25",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "TR_fJ0mdRkmd8LuFYlVcig",
+      "chance": 0.15660000000000002,
+      "crate": true,
+      "key": "gCpD7ot2-k2mhQpCWruBGQ",
+      "artifactChance": 0,
+      "name": "Crate HOF 25%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:BND0L3IxcUCR8UYnzyZCvg",
+    "source_table": "Drops",
+    "source_key": "BND0L3IxcUCR8UYnzyZCvg",
+    "name": "Crate Heal Spray 0.1%",
+    "slug": "crate-heal-spray-01",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 0.001,
+      "crate": true,
+      "key": "BND0L3IxcUCR8UYnzyZCvg",
+      "artifactChance": 0,
+      "name": "Crate Heal Spray 0.1%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:bMlkEN31Q0-x2D6mt_5Arw",
+    "source_table": "Drops",
+    "source_key": "bMlkEN31Q0-x2D6mt_5Arw",
+    "name": "Crate HoF Fulzar 80%",
+    "slug": "crate-hof-fulzar-80",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "TR_fJ0mdRkmd8LuFYlVcig",
+      "chance": 0.805,
+      "crate": true,
+      "key": "bMlkEN31Q0-x2D6mt_5Arw",
+      "artifactChance": 0,
+      "name": "Crate HoF Fulzar 80%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:09B4EFEE-7BEA-04B6-297C-442B072DE5BB",
+    "source_table": "Drops",
+    "source_key": "09B4EFEE-7BEA-04B6-297C-442B072DE5BB",
+    "name": "Crate HydroCrystal 200",
+    "slug": "crate-hydrocrystal-200",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "TR_fJ0mdRkmd8LuFYlVcig",
+      "chance": 1,
+      "crate": true,
+      "key": "09B4EFEE-7BEA-04B6-297C-442B072DE5BB",
+      "artifactChance": 0,
+      "name": "Crate HydroCrystal 200",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:x_abNdVFuU6GjvMJvfGCyw",
+    "source_table": "Drops",
+    "source_key": "x_abNdVFuU6GjvMJvfGCyw",
+    "name": "Crate Infested Missiles 0.5%",
+    "slug": "crate-infested-missiles-05",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 0.0209,
+      "crate": true,
+      "key": "x_abNdVFuU6GjvMJvfGCyw",
+      "artifactChance": 0,
+      "name": "Crate Infested Missiles 0.5%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:UTEOJ7kxUUetegNTBNxSxA",
+    "source_table": "Drops",
+    "source_key": "UTEOJ7kxUUetegNTBNxSxA",
+    "name": "Crate Lightning Gun",
+    "slug": "crate-lightning-gun",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "UTEOJ7kxUUetegNTBNxSxA",
+      "artifactChance": 0,
+      "name": "Crate Lightning Gun",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:JI65WQ5jXUadzjbUMr7xxw",
+    "source_table": "Drops",
+    "source_key": "JI65WQ5jXUadzjbUMr7xxw",
+    "name": "Crate Medium Data Chip",
+    "slug": "crate-medium-data-chip",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "ARw-QivL5UyGKwxrV-46bw",
+      "chance": 1,
+      "crate": true,
+      "key": "JI65WQ5jXUadzjbUMr7xxw",
+      "artifactChance": 0,
+      "name": "Crate Medium Data Chip",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:bdz5y-ZgGkODIWpMKnmPjw",
+    "source_table": "Drops",
+    "source_key": "bdz5y-ZgGkODIWpMKnmPjw",
+    "name": "Crate Mine Launcher",
+    "slug": "crate-mine-launcher",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "bdz5y-ZgGkODIWpMKnmPjw",
+      "artifactChance": 0,
+      "name": "Crate Mine Launcher",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:co96EswO5USfgsAGfYm4Jw",
+    "source_table": "Drops",
+    "source_key": "co96EswO5USfgsAGfYm4Jw",
+    "name": "Crate Missile Launcher",
+    "slug": "crate-missile-launcher",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "co96EswO5USfgsAGfYm4Jw",
+      "artifactChance": 0,
+      "name": "Crate Missile Launcher",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:hAOMMv1WP0OwjNqX1ZhDDg",
+    "source_table": "Drops",
+    "source_key": "hAOMMv1WP0OwjNqX1ZhDDg",
+    "name": "Crate Plasma",
+    "slug": "crate-plasma",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "hAOMMv1WP0OwjNqX1ZhDDg",
+      "artifactChance": 0,
+      "name": "Crate Plasma",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:9AAF146C-F3AE-294F-EBD3-19ABABC87A8A",
+    "source_table": "Drops",
+    "source_key": "9AAF146C-F3AE-294F-EBD3-19ABABC87A8A",
+    "name": "Crate Plasma 200",
+    "slug": "crate-plasma-200",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "TR_fJ0mdRkmd8LuFYlVcig",
+      "chance": 1,
+      "crate": true,
+      "key": "9AAF146C-F3AE-294F-EBD3-19ABABC87A8A",
+      "artifactChance": 0,
+      "name": "Crate Plasma 200",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:0Fnh9l_zs02-iJxCooksoA",
+    "source_table": "Drops",
+    "source_key": "0Fnh9l_zs02-iJxCooksoA",
+    "name": "Crate Prismatic Crystal 0.1%",
+    "slug": "crate-prismatic-crystal-01",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 0.001,
+      "crate": true,
+      "key": "0Fnh9l_zs02-iJxCooksoA",
+      "artifactChance": 0,
+      "name": "Crate Prismatic Crystal 0.1%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:tHA_5V6guEiwgjBaqSWc2A",
+    "source_table": "Drops",
+    "source_key": "tHA_5V6guEiwgjBaqSWc2A",
+    "name": "Crate Simple Data Chip",
+    "slug": "crate-simple-data-chip",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "ARw-QivL5UyGKwxrV-46bw",
+      "chance": 1,
+      "crate": true,
+      "key": "tHA_5V6guEiwgjBaqSWc2A",
+      "artifactChance": 0,
+      "name": "Crate Simple Data Chip",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:7F2OLPz_U0WybPJb5yyrEA",
+    "source_table": "Drops",
+    "source_key": "7F2OLPz_U0WybPJb5yyrEA",
+    "name": "Crate Steel 1-2k",
+    "slug": "crate-steel-1-2k",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "TR_fJ0mdRkmd8LuFYlVcig",
+      "chance": 1,
+      "crate": true,
+      "key": "7F2OLPz_U0WybPJb5yyrEA",
+      "artifactChance": 0,
+      "name": "Crate Steel 1-2k",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:C9baBXyTBkCv3-Rj_ILt9w",
+    "source_table": "Drops",
+    "source_key": "C9baBXyTBkCv3-Rj_ILt9w",
+    "name": "Crate Steel 2-4k",
+    "slug": "crate-steel-2-4k",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "TR_fJ0mdRkmd8LuFYlVcig",
+      "chance": 1,
+      "crate": true,
+      "key": "C9baBXyTBkCv3-Rj_ILt9w",
+      "artifactChance": 0,
+      "name": "Crate Steel 2-4k",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:571E2853-70C7-9133-0CEB-664F4F8C9A97",
+    "source_table": "Drops",
+    "source_key": "571E2853-70C7-9133-0CEB-664F4F8C9A97",
+    "name": "Crate Steel 200-600",
+    "slug": "crate-steel-200-600",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "TR_fJ0mdRkmd8LuFYlVcig",
+      "chance": 1,
+      "crate": true,
+      "key": "571E2853-70C7-9133-0CEB-664F4F8C9A97",
+      "artifactChance": 0,
+      "name": "Crate Steel 200-600",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:azYY6XStBE6T_F_szWjJPg",
+    "source_table": "Drops",
+    "source_key": "azYY6XStBE6T_F_szWjJPg",
+    "name": "Crate Steel 4-5k",
+    "slug": "crate-steel-4-5k",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "TR_fJ0mdRkmd8LuFYlVcig",
+      "chance": 1,
+      "crate": true,
+      "key": "azYY6XStBE6T_F_szWjJPg",
+      "artifactChance": 0,
+      "name": "Crate Steel 4-5k",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:ieGv_J1Bqkafgar4VPRdig",
+    "source_table": "Drops",
+    "source_key": "ieGv_J1Bqkafgar4VPRdig",
+    "name": "Crate Steel 5-10k",
+    "slug": "crate-steel-5-10k",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "TR_fJ0mdRkmd8LuFYlVcig",
+      "chance": 1,
+      "crate": true,
+      "key": "ieGv_J1Bqkafgar4VPRdig",
+      "artifactChance": 0,
+      "name": "Crate Steel 5-10k",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:C8AD8202-C22E-B653-C3A9-35A136734332",
+    "source_table": "Drops",
+    "source_key": "C8AD8202-C22E-B653-C3A9-35A136734332",
+    "name": "Crate Steel 50-100",
+    "slug": "crate-steel-50-100",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "TR_fJ0mdRkmd8LuFYlVcig",
+      "chance": 1,
+      "crate": true,
+      "key": "C8AD8202-C22E-B653-C3A9-35A136734332",
+      "artifactChance": 0,
+      "name": "Crate Steel 50-100",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:6E506916-CEC7-95FC-2EB1-4F1DE4519704",
+    "source_table": "Drops",
+    "source_key": "6E506916-CEC7-95FC-2EB1-4F1DE4519704",
+    "name": "Crate Steel 5000 Iridium 600",
+    "slug": "crate-steel-5000-iridium-600",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "TR_fJ0mdRkmd8LuFYlVcig",
+      "chance": 1,
+      "crate": true,
+      "key": "6E506916-CEC7-95FC-2EB1-4F1DE4519704",
+      "artifactChance": 0,
+      "name": "Crate Steel 5000 Iridium 600",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:80428731-B58E-BA1E-78AC-D073015ABE23",
+    "source_table": "Drops",
+    "source_key": "80428731-B58E-BA1E-78AC-D073015ABE23",
+    "name": "Crate Steel 850 Iridium 225",
+    "slug": "crate-steel-850-iridium-225",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "TR_fJ0mdRkmd8LuFYlVcig",
+      "chance": 1,
+      "crate": true,
+      "key": "80428731-B58E-BA1E-78AC-D073015ABE23",
+      "artifactChance": 0,
+      "name": "Crate Steel 850 Iridium 225",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:CA92F0A9-4B07-5C94-127B-F7D8B3E0185D",
+    "source_table": "Drops",
+    "source_key": "CA92F0A9-4B07-5C94-127B-F7D8B3E0185D",
+    "name": "Crate Unique Artifact",
+    "slug": "crate-unique-artifact",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "81873137-408C-9789-0A5E-305A14B96715",
+      "crate": true,
+      "chance": 0.998,
+      "key": "CA92F0A9-4B07-5C94-127B-F7D8B3E0185D",
+      "artifactChance": 0.999,
+      "type": "drop",
+      "name": "Crate Unique Artifact",
+      "bitmap": "4866ED0D-F591-7BD1-AEDD-45823D367FB5"
+    }
+  },
+  {
+    "id": "Drops:aGrl5gedXEmkvAPU_g-c7Q",
+    "source_table": "Drops",
+    "source_key": "aGrl5gedXEmkvAPU_g-c7Q",
+    "name": "Cruise Missiles 1%",
+    "slug": "cruise-missiles-1",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 0.0104,
+      "crate": true,
+      "key": "aGrl5gedXEmkvAPU_g-c7Q",
+      "artifactChance": 0,
+      "name": "Cruise Missiles 1%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:ARanMKZVW0KlVysx-GzgtA",
+    "source_table": "Drops",
+    "source_key": "ARanMKZVW0KlVysx-GzgtA",
+    "name": "Enemy Strongholds: Part 5",
+    "slug": "enemy-strongholds-part-5",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 3500,
+      "key": "ARanMKZVW0KlVysx-GzgtA",
+      "xpMin": 3500,
+      "fluxMin": 5,
+      "name": "Enemy Strongholds: Part 5",
+      "fluxMax": 10
+    }
+  },
+  {
+    "id": "Drops:mXH0I3iK_0Sv05bpO0qomQ",
+    "source_table": "Drops",
+    "source_key": "mXH0I3iK_0Sv05bpO0qomQ",
+    "name": "Engine Part",
+    "slug": "engine-part",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "crate": false,
+      "key": "mXH0I3iK_0Sv05bpO0qomQ",
+      "type": "drop",
+      "name": "Engine Part",
+      "bitmap": "QF5QtSqBlU-mJ-rqV4QV7w"
+    }
+  },
+  {
+    "id": "Drops:yCPzmbvjlEKWjb3dbG8lZg",
+    "source_table": "Drops",
+    "source_key": "yCPzmbvjlEKWjb3dbG8lZg",
+    "name": "Flak Cannon 5%",
+    "slug": "flak-cannon-5",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 0.050100000000000006,
+      "crate": true,
+      "key": "yCPzmbvjlEKWjb3dbG8lZg",
+      "artifactChance": 0,
+      "name": "Flak Cannon 5%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:57_ti1wVYEOGYz0tJ3liaQ",
+    "source_table": "Drops",
+    "source_key": "57_ti1wVYEOGYz0tJ3liaQ",
+    "name": "Flame Trail 1%",
+    "slug": "flame-trail-1",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 0.0063,
+      "crate": true,
+      "key": "57_ti1wVYEOGYz0tJ3liaQ",
+      "artifactChance": 0,
+      "name": "Flame Trail 1%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:R6Um7X6wKE-LjK-Xofi8pg",
+    "source_table": "Drops",
+    "source_key": "R6Um7X6wKE-LjK-Xofi8pg",
+    "name": "Flame Trail 25%",
+    "slug": "flame-trail-25",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 0.1544,
+      "crate": true,
+      "key": "R6Um7X6wKE-LjK-Xofi8pg",
+      "artifactChance": 0,
+      "name": "Flame Trail 25%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:EoUydJymbUG7-OMFIx4yGw",
+    "source_table": "Drops",
+    "source_key": "EoUydJymbUG7-OMFIx4yGw",
+    "name": "Flamethrower, 100%",
+    "slug": "flamethrower-100",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "EoUydJymbUG7-OMFIx4yGw",
+      "artifactChance": 0,
+      "name": "Flamethrower, 100%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:6YzWnfS3AESpKCq8nKaNtQ",
+    "source_table": "Drops",
+    "source_key": "6YzWnfS3AESpKCq8nKaNtQ",
+    "name": "Fusion Core",
+    "slug": "fusion-core",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "name": "Fusion Core",
+      "crate": false,
+      "key": "6YzWnfS3AESpKCq8nKaNtQ",
+      "type": "drop",
+      "bitmap": "E22xRnZe2UGP9uylfO9m_w"
+    }
+  },
+  {
+    "id": "Drops:TTwjt88kL0OHEkt2__UDiw",
+    "source_table": "Drops",
+    "source_key": "TTwjt88kL0OHEkt2__UDiw",
+    "name": "Gatling Gun 10%",
+    "slug": "gatling-gun-10",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 0.1022,
+      "crate": true,
+      "key": "TTwjt88kL0OHEkt2__UDiw",
+      "artifactChance": 0,
+      "name": "Gatling Gun 10%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:9xXU5wy3_0S8PVqXnRjxcg",
+    "source_table": "Drops",
+    "source_key": "9xXU5wy3_0S8PVqXnRjxcg",
+    "name": "Genetic Control Implant",
+    "slug": "genetic-control-implant",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "crate": false,
+      "key": "9xXU5wy3_0S8PVqXnRjxcg",
+      "type": "drop",
+      "name": "Genetic Control Implant",
+      "bitmap": "t3ExWdq_CEet05BCO1D2XQ"
+    }
+  },
+  {
+    "id": "Drops:XKwP4ztmB0q1DSeWGy-ouA",
+    "source_table": "Drops",
+    "source_key": "XKwP4ztmB0q1DSeWGy-ouA",
+    "name": "Gold Crate Event",
+    "slug": "gold-crate-event",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "TR_fJ0mdRkmd8LuFYlVcig",
+      "chance": 1,
+      "crate": true,
+      "key": "XKwP4ztmB0q1DSeWGy-ouA",
+      "artifactChance": 0,
+      "name": "Gold Crate Event",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:g_H7d9Y8uUu0Kj9I19d79A",
+    "source_table": "Drops",
+    "source_key": "g_H7d9Y8uUu0Kj9I19d79A",
+    "name": "Gold Crate Event Small",
+    "slug": "gold-crate-event-small",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "TR_fJ0mdRkmd8LuFYlVcig",
+      "chance": 1,
+      "crate": true,
+      "key": "g_H7d9Y8uUu0Kj9I19d79A",
+      "artifactChance": 0,
+      "name": "Gold Crate Event Small",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:gC1r0RnVVEq1dG_YNU_xzg",
+    "source_table": "Drops",
+    "source_key": "gC1r0RnVVEq1dG_YNU_xzg",
+    "name": "Health Pack",
+    "slug": "health-pack",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "name": "Health Pack",
+      "crate": false,
+      "key": "gC1r0RnVVEq1dG_YNU_xzg",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "type": "drop",
+      "bitmap": "dT9GZ1xUuUSIuUhLMF2Peg"
+    }
+  },
+  {
+    "id": "Drops:4tsh4offRESRCeLpcWkIyw",
+    "source_table": "Drops",
+    "source_key": "4tsh4offRESRCeLpcWkIyw",
+    "name": "Health Pack Large",
+    "slug": "health-pack-large",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "name": "Health Pack Large",
+      "crate": false,
+      "key": "4tsh4offRESRCeLpcWkIyw",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "type": "drop",
+      "bitmap": "XWONBcGQnEShglIri0LImA"
+    }
+  },
+  {
+    "id": "Drops:Za0xy4Ju_kKynOInrMDhRw",
+    "source_table": "Drops",
+    "source_key": "Za0xy4Ju_kKynOInrMDhRw",
+    "name": "Heart",
+    "slug": "heart",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "crate": false,
+      "key": "Za0xy4Ju_kKynOInrMDhRw",
+      "type": "drop",
+      "name": "Heart",
+      "bitmap": "BTxKfjSJUEKI3_E3Kfczrw"
+    }
+  },
+  {
+    "id": "Drops:MxxkCsZu8UKLkfdv9KAgog",
+    "source_table": "Drops",
+    "source_key": "MxxkCsZu8UKLkfdv9KAgog",
+    "name": "Hunter Missile 3%",
+    "slug": "hunter-missile-3",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 0.0313,
+      "crate": true,
+      "key": "MxxkCsZu8UKLkfdv9KAgog",
+      "artifactChance": 0,
+      "name": "Hunter Missile 3%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:3WkEfG428UW2hDAgvHetvA",
+    "source_table": "Drops",
+    "source_key": "3WkEfG428UW2hDAgvHetvA",
+    "name": "Hydrogen Oscillator",
+    "slug": "hydrogen-oscillator",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "name": "Hydrogen Oscillator",
+      "crate": false,
+      "key": "3WkEfG428UW2hDAgvHetvA",
+      "effect": "TR_fJ0mdRkmd8LuFYlVcig",
+      "type": "drop",
+      "bitmap": "Y9SNijnJcUqrDfHbGkXOyQ"
+    }
+  },
+  {
+    "id": "Drops:ZhiKr_lV5ka9I-Fio7APMg",
+    "source_table": "Drops",
+    "source_key": "ZhiKr_lV5ka9I-Fio7APMg",
+    "name": "Hydrogen Spill",
+    "slug": "hydrogen-spill",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "crate": false,
+      "chance": 1,
+      "key": "ZhiKr_lV5ka9I-Fio7APMg",
+      "effect": "Mp2aVKXQcEupFN62UXYK8w",
+      "name": "Hydrogen Spill",
+      "type": "drop",
+      "bitmap": "Zab7tcfc_ECR3nYGbVd60A"
+    }
+  },
+  {
+    "id": "Drops:00H6Iyez_kSCgrC2zo5SCA",
+    "source_table": "Drops",
+    "source_key": "00H6Iyez_kSCgrC2zo5SCA",
+    "name": "Locust Hatchery 0.5%",
+    "slug": "locust-hatchery-05",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 0.004200000000000001,
+      "crate": true,
+      "key": "00H6Iyez_kSCgrC2zo5SCA",
+      "artifactChance": 0,
+      "name": "Locust Hatchery 0.5%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:Abs-cEqQ-kCIUAtTwK358g",
+    "source_table": "Drops",
+    "source_key": "Abs-cEqQ-kCIUAtTwK358g",
+    "name": "Locust Hatchery 100%",
+    "slug": "locust-hatchery-100",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "Abs-cEqQ-kCIUAtTwK358g",
+      "artifactChance": 0,
+      "name": "Locust Hatchery 100%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:tCzLCGbSnUSvHsY8khZWmw",
+    "source_table": "Drops",
+    "source_key": "tCzLCGbSnUSvHsY8khZWmw",
+    "name": "Medium Data Chip",
+    "slug": "medium-data-chip",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "crate": false,
+      "key": "tCzLCGbSnUSvHsY8khZWmw",
+      "type": "drop",
+      "name": "Medium Data Chip",
+      "bitmap": "VlzhgfSheUSmygCMpU7dPA"
+    }
+  },
+  {
+    "id": "Drops:I3kIFNSZAUiOQv_Us6gX8w",
+    "source_table": "Drops",
+    "source_key": "I3kIFNSZAUiOQv_Us6gX8w",
+    "name": "Metal Scrap",
+    "slug": "metal-scrap",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "chance": 1,
+      "key": "I3kIFNSZAUiOQv_Us6gX8w",
+      "name": "Metal Scrap",
+      "type": "drop",
+      "bitmap": "LHxopqXdh0yyTopy6kxcrg"
+    }
+  },
+  {
+    "id": "Drops:Qb8nI4fjXEC1PoQTIKoQHg",
+    "source_table": "Drops",
+    "source_key": "Qb8nI4fjXEC1PoQTIKoQHg",
+    "name": "Mission 100 hearts",
+    "slug": "mission-100-hearts",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 0,
+      "fluxMin": 0,
+      "name": "Mission 100 hearts",
+      "xpMax": 10000,
+      "key": "Qb8nI4fjXEC1PoQTIKoQHg",
+      "table": "Drops",
+      "xpMin": 10000,
+      "artifactLevel": 1,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:J5_6sZ8SPESuIfT__hJxrw",
+    "source_table": "Drops",
+    "source_key": "J5_6sZ8SPESuIfT__hJxrw",
+    "name": "Mission 1000 hearts",
+    "slug": "mission-1000-hearts",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 0,
+      "fluxMin": 0,
+      "name": "Mission 1000 hearts",
+      "xpMax": 10000,
+      "key": "J5_6sZ8SPESuIfT__hJxrw",
+      "table": "Drops",
+      "xpMin": 10000,
+      "artifactLevel": 1,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:yM4SkW6CfUG9EED2rhgrDg",
+    "source_table": "Drops",
+    "source_key": "yM4SkW6CfUG9EED2rhgrDg",
+    "name": "Mission 1xlvl60 artifact",
+    "slug": "mission-1xlvl60-artifact",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 1,
+      "fluxMin": 0,
+      "name": "Mission 1xlvl60 artifact",
+      "xpMax": 2000,
+      "key": "yM4SkW6CfUG9EED2rhgrDg",
+      "table": "Drops",
+      "xpMin": 2000,
+      "artifactLevel": 60,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:q1-BzHWQG0-MCxjKUfkoPA",
+    "source_table": "Drops",
+    "source_key": "q1-BzHWQG0-MCxjKUfkoPA",
+    "name": "Mission 1xlvl70 artifact",
+    "slug": "mission-1xlvl70-artifact",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 1,
+      "fluxMin": 0,
+      "name": "Mission 1xlvl70 artifact",
+      "xpMax": 2000,
+      "key": "q1-BzHWQG0-MCxjKUfkoPA",
+      "table": "Drops",
+      "xpMin": 2000,
+      "artifactLevel": 70,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:gr0IeGPRfECE3urMpKT8hA",
+    "source_table": "Drops",
+    "source_key": "gr0IeGPRfECE3urMpKT8hA",
+    "name": "Mission 20k Mixed",
+    "slug": "mission-20k-mixed",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 0,
+      "fluxMin": 1,
+      "name": "Mission 20k Mixed",
+      "xpMax": 7000,
+      "key": "gr0IeGPRfECE3urMpKT8hA",
+      "table": "Drops",
+      "xpMin": 7000,
+      "artifactLevel": 1,
+      "type": "mission",
+      "fluxMax": 3
+    }
+  },
+  {
+    "id": "Drops:Ute0x9yu1ESUptoBWks3lQ",
+    "source_table": "Drops",
+    "source_key": "Ute0x9yu1ESUptoBWks3lQ",
+    "name": "Mission 20k Steel",
+    "slug": "mission-20k-steel",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 0,
+      "fluxMin": 1,
+      "name": "Mission 20k Steel",
+      "xpMax": 5000,
+      "key": "Ute0x9yu1ESUptoBWks3lQ",
+      "table": "Drops",
+      "xpMin": 5000,
+      "artifactLevel": 1,
+      "type": "mission",
+      "fluxMax": 3
+    }
+  },
+  {
+    "id": "Drops:MnA48T_5UUiLlP6UEtC5TA",
+    "source_table": "Drops",
+    "source_key": "MnA48T_5UUiLlP6UEtC5TA",
+    "name": "Mission 3xlvl75 artifacts",
+    "slug": "mission-3xlvl75-artifacts",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 3,
+      "fluxMin": 0,
+      "name": "Mission 3xlvl75 artifacts",
+      "xpMax": 2000,
+      "key": "MnA48T_5UUiLlP6UEtC5TA",
+      "table": "Drops",
+      "xpMin": 2000,
+      "artifactLevel": 75,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:p0DNaCO3YEWPhbDHNDZh2g",
+    "source_table": "Drops",
+    "source_key": "p0DNaCO3YEWPhbDHNDZh2g",
+    "name": "Mission 50k Steel",
+    "slug": "mission-50k-steel",
+    "type": "mission",
+    "stats": {
+      "artifactChance": 0,
+      "crate": false,
+      "artifactAmount": 0,
+      "fluxMin": 0,
+      "name": "Mission 50k Steel",
+      "xpMax": 10000,
+      "key": "p0DNaCO3YEWPhbDHNDZh2g",
+      "table": "Drops",
+      "chance": 0,
+      "xpMin": 10000,
+      "artifactLevel": 1,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:ExiQ4eZr3kywcrkggYcwpA",
+    "source_table": "Drops",
+    "source_key": "ExiQ4eZr3kywcrkggYcwpA",
+    "name": "Mission 50k Steel + 5 (lvl80) arts",
+    "slug": "mission-50k-steel-5-lvl80-arts",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 5,
+      "fluxMin": 1,
+      "name": "Mission 50k Steel + 5 (lvl80) arts",
+      "xpMax": 12000,
+      "key": "ExiQ4eZr3kywcrkggYcwpA",
+      "table": "Drops",
+      "xpMin": 12000,
+      "artifactLevel": 80,
+      "type": "mission",
+      "fluxMax": 3
+    }
+  },
+  {
+    "id": "Drops:cdF5mvqxdEC8Xt0F_OcNyA",
+    "source_table": "Drops",
+    "source_key": "cdF5mvqxdEC8Xt0F_OcNyA",
+    "name": "Mission 5xlvl80 Artifacts",
+    "slug": "mission-5xlvl80-artifacts",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 5,
+      "fluxMin": 1,
+      "name": "Mission 5xlvl80 Artifacts",
+      "xpMax": 5000,
+      "key": "cdF5mvqxdEC8Xt0F_OcNyA",
+      "table": "Drops",
+      "xpMin": 5000,
+      "artifactLevel": 80,
+      "type": "mission",
+      "fluxMax": 5
+    }
+  },
+  {
+    "id": "Drops:-wxUrUIVhkuznDs-eNuayw",
+    "source_table": "Drops",
+    "source_key": "-wxUrUIVhkuznDs-eNuayw",
+    "name": "Mission 5xlvl90 Artifacts",
+    "slug": "mission-5xlvl90-artifacts",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 5,
+      "fluxMin": 0,
+      "name": "Mission 5xlvl90 Artifacts",
+      "xpMax": 8000,
+      "key": "-wxUrUIVhkuznDs-eNuayw",
+      "table": "Drops",
+      "xpMin": 7000,
+      "artifactLevel": 90,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:F4YlFCKRO02aW_XnxgbQbQ",
+    "source_table": "Drops",
+    "source_key": "F4YlFCKRO02aW_XnxgbQbQ",
+    "name": "Mission 7 hearts",
+    "slug": "mission-7-hearts",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 0,
+      "fluxMin": 0,
+      "name": "Mission 7 hearts",
+      "xpMax": 10000,
+      "key": "F4YlFCKRO02aW_XnxgbQbQ",
+      "table": "Drops",
+      "xpMin": 10000,
+      "artifactLevel": 1,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:WFO96SaIOEqSnXVuai36bQ",
+    "source_table": "Drops",
+    "source_key": "WFO96SaIOEqSnXVuai36bQ",
+    "name": "Mission Advectorian",
+    "slug": "mission-advectorian",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 15000,
+      "key": "WFO96SaIOEqSnXVuai36bQ",
+      "xpMin": 12000,
+      "fluxMin": 0,
+      "name": "Mission Advectorian",
+      "fluxMax": 10
+    }
+  },
+  {
+    "id": "Drops:VpkPuwEWNF1i2x9Uea8pgf",
+    "source_table": "Drops",
+    "source_key": "VpkPuwEWNF1i2x9Uea8pgf",
+    "name": "Mission Assualt Executor",
+    "slug": "mission-assualt-executor",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 10,
+      "fluxMin": 5,
+      "name": "Mission Assualt Executor",
+      "xpMax": 100000,
+      "key": "VpkPuwEWNF1i2x9Uea8pgf",
+      "table": "Drops",
+      "xpMin": 80000,
+      "artifactLevel": 110,
+      "type": "mission",
+      "fluxMax": 15
+    }
+  },
+  {
+    "id": "Drops:cmspxoAyLU-IjcsiCddcvA",
+    "source_table": "Drops",
+    "source_key": "cmspxoAyLU-IjcsiCddcvA",
+    "name": "Mission Bionic Larva",
+    "slug": "mission-bionic-larva",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 0,
+      "fluxMin": 0,
+      "name": "Mission Bionic Larva",
+      "xpMax": 2000,
+      "key": "cmspxoAyLU-IjcsiCddcvA",
+      "table": "Drops",
+      "xpMin": 2000,
+      "artifactLevel": 1,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:z-3xMqwFMU2D2lbps-lplw",
+    "source_table": "Drops",
+    "source_key": "z-3xMqwFMU2D2lbps-lplw",
+    "name": "Mission Celonidron",
+    "slug": "mission-celonidron",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 5500,
+      "key": "z-3xMqwFMU2D2lbps-lplw",
+      "xpMin": 4000,
+      "fluxMin": 0,
+      "name": "Mission Celonidron",
+      "fluxMax": 8
+    }
+  },
+  {
+    "id": "Drops:0_5LahRRFkOZTsp3LxnDaA",
+    "source_table": "Drops",
+    "source_key": "0_5LahRRFkOZTsp3LxnDaA",
+    "name": "Mission Cleaning Lady",
+    "slug": "mission-cleaning-lady",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 75000,
+      "key": "0_5LahRRFkOZTsp3LxnDaA",
+      "xpMin": 40000,
+      "fluxMin": 5,
+      "name": "Mission Cleaning Lady",
+      "fluxMax": 15
+    }
+  },
+  {
+    "id": "Drops:bB_2HoisO0-oDmocDsgekw",
+    "source_table": "Drops",
+    "source_key": "bB_2HoisO0-oDmocDsgekw",
+    "name": "Mission Data Chip 1",
+    "slug": "mission-data-chip-1",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 1200,
+      "key": "bB_2HoisO0-oDmocDsgekw",
+      "xpMin": 600,
+      "fluxMin": 0,
+      "name": "Mission Data Chip 1",
+      "fluxMax": 5
+    }
+  },
+  {
+    "id": "Drops:ymCVLQ759kmM8_eEPF6h3w",
+    "source_table": "Drops",
+    "source_key": "ymCVLQ759kmM8_eEPF6h3w",
+    "name": "Mission Data Chip 2",
+    "slug": "mission-data-chip-2",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 1700,
+      "key": "ymCVLQ759kmM8_eEPF6h3w",
+      "xpMin": 1300,
+      "fluxMin": 0,
+      "name": "Mission Data Chip 2",
+      "fluxMax": 5
+    }
+  },
+  {
+    "id": "Drops:cO9nu26N2ES64uoa73O6cg",
+    "source_table": "Drops",
+    "source_key": "cO9nu26N2ES64uoa73O6cg",
+    "name": "Mission Data Chip 3",
+    "slug": "mission-data-chip-3",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 5500,
+      "key": "cO9nu26N2ES64uoa73O6cg",
+      "xpMin": 3400,
+      "fluxMin": 0,
+      "name": "Mission Data Chip 3",
+      "fluxMax": 6
+    }
+  },
+  {
+    "id": "Drops:DcAM1VHcOkakFDXn2wGfpA",
+    "source_table": "Drops",
+    "source_key": "DcAM1VHcOkakFDXn2wGfpA",
+    "name": "Mission Dominator",
+    "slug": "mission-dominator",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 600,
+      "key": "DcAM1VHcOkakFDXn2wGfpA",
+      "xpMin": 400,
+      "fluxMin": 1,
+      "name": "Mission Dominator",
+      "fluxMax": 3
+    }
+  },
+  {
+    "id": "Drops:IsU53gK56Uy-DGhZN-ANwQ",
+    "source_table": "Drops",
+    "source_key": "IsU53gK56Uy-DGhZN-ANwQ",
+    "name": "Mission Dreadnought",
+    "slug": "mission-dreadnought",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 75000,
+      "key": "IsU53gK56Uy-DGhZN-ANwQ",
+      "xpMin": 40000,
+      "fluxMin": 5,
+      "name": "Mission Dreadnought",
+      "fluxMax": 16
+    }
+  },
+  {
+    "id": "Drops:eEX38mtoyku1erVFRU9jng",
+    "source_table": "Drops",
+    "source_key": "eEX38mtoyku1erVFRU9jng",
+    "name": "Mission Fulzar Inv1",
+    "slug": "mission-fulzar-inv1",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 2,
+      "fluxMin": 25,
+      "name": "Mission Fulzar Inv1",
+      "xpMax": 12000,
+      "key": "eEX38mtoyku1erVFRU9jng",
+      "table": "Drops",
+      "xpMin": 12000,
+      "artifactLevel": 110,
+      "type": "mission",
+      "fluxMax": 25
+    }
+  },
+  {
+    "id": "Drops:JEtvQfyvOUuw8RNS7lyOZA",
+    "source_table": "Drops",
+    "source_key": "JEtvQfyvOUuw8RNS7lyOZA",
+    "name": "Mission Fulzar Inv2",
+    "slug": "mission-fulzar-inv2",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 5,
+      "fluxMin": 35,
+      "name": "Mission Fulzar Inv2",
+      "xpMax": 10000,
+      "key": "JEtvQfyvOUuw8RNS7lyOZA",
+      "table": "Drops",
+      "xpMin": 10000,
+      "artifactLevel": 110,
+      "type": "mission",
+      "fluxMax": 35
+    }
+  },
+  {
+    "id": "Drops:firAIwUNXUaeuyUYlOK-8w",
+    "source_table": "Drops",
+    "source_key": "firAIwUNXUaeuyUYlOK-8w",
+    "name": "Mission Mandrom",
+    "slug": "mission-mandrom",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 1000,
+      "key": "firAIwUNXUaeuyUYlOK-8w",
+      "xpMin": 500,
+      "fluxMin": 1,
+      "name": "Mission Mandrom",
+      "fluxMax": 3
+    }
+  },
+  {
+    "id": "Drops:J5yAuSfW2UCkUBkzIng_oA",
+    "source_table": "Drops",
+    "source_key": "J5yAuSfW2UCkUBkzIng_oA",
+    "name": "Mission Motherbrain",
+    "slug": "mission-motherbrain",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 5500,
+      "key": "J5yAuSfW2UCkUBkzIng_oA",
+      "xpMin": 4500,
+      "fluxMin": 0,
+      "name": "Mission Motherbrain",
+      "fluxMax": 10
+    }
+  },
+  {
+    "id": "Drops:lOHT7IFX5HuZQjOxbnXNYx",
+    "source_table": "Drops",
+    "source_key": "lOHT7IFX5HuZQjOxbnXNYx",
+    "name": "Mission Nexar Assasination",
+    "slug": "mission-nexar-assasination",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 5,
+      "fluxMin": 5,
+      "name": "Mission Nexar Assasination",
+      "xpMax": 85000,
+      "key": "lOHT7IFX5HuZQjOxbnXNYx",
+      "table": "Drops",
+      "xpMin": 60000,
+      "artifactLevel": 125,
+      "type": "mission",
+      "fluxMax": 15
+    }
+  },
+  {
+    "id": "Drops:8icxSav30DBfUM3nEABXiz",
+    "source_table": "Drops",
+    "source_key": "8icxSav30DBfUM3nEABXiz",
+    "name": "Mission Nexar Kill 50",
+    "slug": "mission-nexar-kill-50",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 5,
+      "fluxMin": 5,
+      "name": "Mission Nexar Kill 50",
+      "xpMax": 80000,
+      "key": "8icxSav30DBfUM3nEABXiz",
+      "table": "Drops",
+      "xpMin": 52000,
+      "artifactLevel": 120,
+      "type": "mission",
+      "fluxMax": 15
+    }
+  },
+  {
+    "id": "Drops:MHWoLfrZhE673tF45xt4Ug",
+    "source_table": "Drops",
+    "source_key": "MHWoLfrZhE673tF45xt4Ug",
+    "name": "Mission Nezerian Threat",
+    "slug": "mission-nezerian-threat",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "crate": false,
+      "artifactAmount": 3,
+      "fluxMin": 64,
+      "name": "Mission Nezerian Threat",
+      "xpMax": 66000,
+      "key": "MHWoLfrZhE673tF45xt4Ug",
+      "table": "Drops",
+      "xpMin": 60000,
+      "artifactLevel": 84,
+      "type": "mission",
+      "fluxMax": 64
+    }
+  },
+  {
+    "id": "Drops:stwxnXTzqEW4OLUxbV20cw",
+    "source_table": "Drops",
+    "source_key": "stwxnXTzqEW4OLUxbV20cw",
+    "name": "Mission Ossakel",
+    "slug": "mission-ossakel",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 1800,
+      "key": "stwxnXTzqEW4OLUxbV20cw",
+      "xpMin": 1300,
+      "fluxMin": 0,
+      "name": "Mission Ossakel",
+      "fluxMax": 6
+    }
+  },
+  {
+    "id": "Drops:HukOu5ezKku59ldjPGCK4g",
+    "source_table": "Drops",
+    "source_key": "HukOu5ezKku59ldjPGCK4g",
+    "name": "Mission Poison Part 16",
+    "slug": "mission-poison-part-16",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 18000,
+      "key": "HukOu5ezKku59ldjPGCK4g",
+      "xpMin": 14000,
+      "fluxMin": 24,
+      "name": "Mission Poison Part 16",
+      "fluxMax": 28
+    }
+  },
+  {
+    "id": "Drops:fw5YpzMZtkiyfPVGcsZILQ",
+    "source_table": "Drops",
+    "source_key": "fw5YpzMZtkiyfPVGcsZILQ",
+    "name": "Mission PvP Level 10",
+    "slug": "mission-pvp-level-10",
+    "type": "mission",
+    "stats": {
+      "reputation": 100,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 2890,
+      "key": "fw5YpzMZtkiyfPVGcsZILQ",
+      "xpMin": 2890,
+      "fluxMin": 20,
+      "name": "Mission PvP Level 10",
+      "fluxMax": 20
+    }
+  },
+  {
+    "id": "Drops:SNH9l4SZWE-wR89nx-aC6g",
+    "source_table": "Drops",
+    "source_key": "SNH9l4SZWE-wR89nx-aC6g",
+    "name": "Mission PvP Level 14",
+    "slug": "mission-pvp-level-14",
+    "type": "mission",
+    "stats": {
+      "reputation": 150,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 3450,
+      "key": "SNH9l4SZWE-wR89nx-aC6g",
+      "xpMin": 3450,
+      "fluxMin": 25,
+      "name": "Mission PvP Level 14",
+      "fluxMax": 25
+    }
+  },
+  {
+    "id": "Drops:bmAeK4wxaUSJ0UPk7EKE0g",
+    "source_table": "Drops",
+    "source_key": "bmAeK4wxaUSJ0UPk7EKE0g",
+    "name": "Mission PvP Level 18",
+    "slug": "mission-pvp-level-18",
+    "type": "mission",
+    "stats": {
+      "reputation": 500,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 3950,
+      "key": "bmAeK4wxaUSJ0UPk7EKE0g",
+      "xpMin": 3950,
+      "fluxMin": 60,
+      "name": "Mission PvP Level 18",
+      "fluxMax": 60
+    }
+  },
+  {
+    "id": "Drops:Lmm9LkFbBEOzhs-8gQm_cQ",
+    "source_table": "Drops",
+    "source_key": "Lmm9LkFbBEOzhs-8gQm_cQ",
+    "name": "Mission PvP Level 2",
+    "slug": "mission-pvp-level-2",
+    "type": "mission",
+    "stats": {
+      "reputation": 10,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 375,
+      "key": "Lmm9LkFbBEOzhs-8gQm_cQ",
+      "xpMin": 375,
+      "fluxMin": 10,
+      "name": "Mission PvP Level 2",
+      "fluxMax": 10
+    }
+  },
+  {
+    "id": "Drops:OJTxJPmSTEetAZ1u0E2whA",
+    "source_table": "Drops",
+    "source_key": "OJTxJPmSTEetAZ1u0E2whA",
+    "name": "Mission PvP Level 24 Pirate",
+    "slug": "mission-pvp-level-24-pirate",
+    "type": "mission",
+    "stats": {
+      "reputation": 1000,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 4590,
+      "key": "OJTxJPmSTEetAZ1u0E2whA",
+      "xpMin": 4590,
+      "fluxMin": 35,
+      "name": "Mission PvP Level 24 Pirate",
+      "fluxMax": 35
+    }
+  },
+  {
+    "id": "Drops:hNtiPur2D02INBRIfdE83w",
+    "source_table": "Drops",
+    "source_key": "hNtiPur2D02INBRIfdE83w",
+    "name": "Mission PvP Level 24 Police",
+    "slug": "mission-pvp-level-24-police",
+    "type": "mission",
+    "stats": {
+      "reputation": 1000,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 4590,
+      "key": "hNtiPur2D02INBRIfdE83w",
+      "xpMin": 4590,
+      "fluxMin": 35,
+      "name": "Mission PvP Level 24 Police",
+      "fluxMax": 35
+    }
+  },
+  {
+    "id": "Drops:nvxkO88_SkOfa93JOoZENQ",
+    "source_table": "Drops",
+    "source_key": "nvxkO88_SkOfa93JOoZENQ",
+    "name": "Mission PvP Level 4",
+    "slug": "mission-pvp-level-4",
+    "type": "mission",
+    "stats": {
+      "reputation": 20,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 1250,
+      "key": "nvxkO88_SkOfa93JOoZENQ",
+      "xpMin": 1250,
+      "fluxMin": 14,
+      "name": "Mission PvP Level 4",
+      "fluxMax": 14
+    }
+  },
+  {
+    "id": "Drops:jUPHwUlHL0qKMKWrOcdGZg",
+    "source_table": "Drops",
+    "source_key": "jUPHwUlHL0qKMKWrOcdGZg",
+    "name": "Mission PvP Level 6",
+    "slug": "mission-pvp-level-6",
+    "type": "mission",
+    "stats": {
+      "reputation": 100,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 1650,
+      "key": "jUPHwUlHL0qKMKWrOcdGZg",
+      "xpMin": 1650,
+      "fluxMin": 30,
+      "name": "Mission PvP Level 6",
+      "fluxMax": 30
+    }
+  },
+  {
+    "id": "Drops:mSYpK0tMxUaZUyH8YtEnOw",
+    "source_table": "Drops",
+    "source_key": "mSYpK0tMxUaZUyH8YtEnOw",
+    "name": "Mission PvP t1",
+    "slug": "mission-pvp-t1",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 175,
+      "key": "mSYpK0tMxUaZUyH8YtEnOw",
+      "xpMin": 175,
+      "fluxMin": 0,
+      "name": "Mission PvP t1",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:LTsuWh-vUUm3q--1RkT03w",
+    "source_table": "Drops",
+    "source_key": "LTsuWh-vUUm3q--1RkT03w",
+    "name": "Mission PvP t2",
+    "slug": "mission-pvp-t2",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 295,
+      "key": "LTsuWh-vUUm3q--1RkT03w",
+      "xpMin": 295,
+      "fluxMin": 0,
+      "name": "Mission PvP t2",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:HdXW8T9dg0KYjMSd7ODtnw",
+    "source_table": "Drops",
+    "source_key": "HdXW8T9dg0KYjMSd7ODtnw",
+    "name": "Mission Reach Level 12",
+    "slug": "mission-reach-level-12",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 1000,
+      "key": "HdXW8T9dg0KYjMSd7ODtnw",
+      "xpMin": 1000,
+      "fluxMin": 10,
+      "name": "Mission Reach Level 12",
+      "fluxMax": 10
+    }
+  },
+  {
+    "id": "Drops:lXDFj_HwxEOFTxbnJfJ7iQ",
+    "source_table": "Drops",
+    "source_key": "lXDFj_HwxEOFTxbnJfJ7iQ",
+    "name": "Mission Reach Level 15",
+    "slug": "mission-reach-level-15",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 2500,
+      "key": "lXDFj_HwxEOFTxbnJfJ7iQ",
+      "xpMin": 2500,
+      "fluxMin": 12,
+      "name": "Mission Reach Level 15",
+      "fluxMax": 12
+    }
+  },
+  {
+    "id": "Drops:pYsIYYGtyEOet27hXGj-lg",
+    "source_table": "Drops",
+    "source_key": "pYsIYYGtyEOet27hXGj-lg",
+    "name": "Mission Reach Level 2",
+    "slug": "mission-reach-level-2",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "artifactChance": 0,
+      "chance": 1,
+      "xpMax": 250,
+      "fluxMin": 0,
+      "name": "Mission Reach Level 2",
+      "key": "pYsIYYGtyEOet27hXGj-lg",
+      "table": "Drops",
+      "crate": true,
+      "xpMin": 250,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:HmcKxcAtvkKuuQL6LIEoHQ",
+    "source_table": "Drops",
+    "source_key": "HmcKxcAtvkKuuQL6LIEoHQ",
+    "name": "Mission Reach Level 20",
+    "slug": "mission-reach-level-20",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 3000,
+      "key": "HmcKxcAtvkKuuQL6LIEoHQ",
+      "xpMin": 3000,
+      "fluxMin": 16,
+      "name": "Mission Reach Level 20",
+      "fluxMax": 16
+    }
+  },
+  {
+    "id": "Drops:SwBkcgMthUyQ0nb1kLyvOQ",
+    "source_table": "Drops",
+    "source_key": "SwBkcgMthUyQ0nb1kLyvOQ",
+    "name": "Mission Reach Level 25",
+    "slug": "mission-reach-level-25",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 4000,
+      "key": "SwBkcgMthUyQ0nb1kLyvOQ",
+      "xpMin": 4000,
+      "fluxMin": 25,
+      "name": "Mission Reach Level 25",
+      "fluxMax": 25
+    }
+  },
+  {
+    "id": "Drops:mkYnqqj7p0u2k8g7EnAWhw",
+    "source_table": "Drops",
+    "source_key": "mkYnqqj7p0u2k8g7EnAWhw",
+    "name": "Mission Reach Level 30",
+    "slug": "mission-reach-level-30",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 8000,
+      "key": "mkYnqqj7p0u2k8g7EnAWhw",
+      "xpMin": 8000,
+      "fluxMin": 30,
+      "name": "Mission Reach Level 30",
+      "fluxMax": 30
+    }
+  },
+  {
+    "id": "Drops:zB8nzTOoJEmr0HovPJ-76Q",
+    "source_table": "Drops",
+    "source_key": "zB8nzTOoJEmr0HovPJ-76Q",
+    "name": "Mission Reach Level 35",
+    "slug": "mission-reach-level-35",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 10000,
+      "key": "zB8nzTOoJEmr0HovPJ-76Q",
+      "xpMin": 10000,
+      "fluxMin": 35,
+      "name": "Mission Reach Level 35",
+      "fluxMax": 35
+    }
+  },
+  {
+    "id": "Drops:bGhsN0Zdy0S6DDf86CqSAg",
+    "source_table": "Drops",
+    "source_key": "bGhsN0Zdy0S6DDf86CqSAg",
+    "name": "Mission Reach Level 4",
+    "slug": "mission-reach-level-4",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "artifactChance": 0,
+      "chance": 1,
+      "xpMax": 400,
+      "fluxMin": 4,
+      "name": "Mission Reach Level 4",
+      "key": "bGhsN0Zdy0S6DDf86CqSAg",
+      "table": "Drops",
+      "crate": true,
+      "xpMin": 400,
+      "type": "mission",
+      "fluxMax": 4
+    }
+  },
+  {
+    "id": "Drops:FMyzSW8ZEEeqtqsGSRbpUA",
+    "source_table": "Drops",
+    "source_key": "FMyzSW8ZEEeqtqsGSRbpUA",
+    "name": "Mission Reach Level 40",
+    "slug": "mission-reach-level-40",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 15000,
+      "key": "FMyzSW8ZEEeqtqsGSRbpUA",
+      "xpMin": 15000,
+      "fluxMin": 40,
+      "name": "Mission Reach Level 40",
+      "fluxMax": 40
+    }
+  },
+  {
+    "id": "Drops:QgUQyh329kyKeOhXFhEq3w",
+    "source_table": "Drops",
+    "source_key": "QgUQyh329kyKeOhXFhEq3w",
+    "name": "Mission Reach Level 45",
+    "slug": "mission-reach-level-45",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 17000,
+      "key": "QgUQyh329kyKeOhXFhEq3w",
+      "xpMin": 17000,
+      "fluxMin": 45,
+      "name": "Mission Reach Level 45",
+      "fluxMax": 45
+    }
+  },
+  {
+    "id": "Drops:5X5-MAn4XUCahRXs8fod_Q",
+    "source_table": "Drops",
+    "source_key": "5X5-MAn4XUCahRXs8fod_Q",
+    "name": "Mission Reach Level 50",
+    "slug": "mission-reach-level-50",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 17500,
+      "key": "5X5-MAn4XUCahRXs8fod_Q",
+      "xpMin": 17500,
+      "fluxMin": 50,
+      "name": "Mission Reach Level 50",
+      "fluxMax": 50
+    }
+  },
+  {
+    "id": "Drops:KfTq0wabzUSzx9h2UtxNtQ",
+    "source_table": "Drops",
+    "source_key": "KfTq0wabzUSzx9h2UtxNtQ",
+    "name": "Mission Reach Level 6",
+    "slug": "mission-reach-level-6",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 500,
+      "key": "KfTq0wabzUSzx9h2UtxNtQ",
+      "xpMin": 500,
+      "fluxMin": 6,
+      "name": "Mission Reach Level 6",
+      "fluxMax": 6
+    }
+  },
+  {
+    "id": "Drops:Pc9Q_Hre10W6Zti7PM_fFQ",
+    "source_table": "Drops",
+    "source_key": "Pc9Q_Hre10W6Zti7PM_fFQ",
+    "name": "Mission Reach Level 9",
+    "slug": "mission-reach-level-9",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 400,
+      "key": "Pc9Q_Hre10W6Zti7PM_fFQ",
+      "xpMin": 400,
+      "fluxMin": 8,
+      "name": "Mission Reach Level 9",
+      "fluxMax": 8
+    }
+  },
+  {
+    "id": "Drops:k39t7eSFUUCVLE3xFxC6Bg",
+    "source_table": "Drops",
+    "source_key": "k39t7eSFUUCVLE3xFxC6Bg",
+    "name": "Mission Renegades",
+    "slug": "mission-renegades",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 65000,
+      "key": "k39t7eSFUUCVLE3xFxC6Bg",
+      "xpMin": 30000,
+      "fluxMin": 5,
+      "name": "Mission Renegades",
+      "fluxMax": 10
+    }
+  },
+  {
+    "id": "Drops:TDwH2UVFK0o3I1ajAz0IlP",
+    "source_table": "Drops",
+    "source_key": "TDwH2UVFK0o3I1ajAz0IlP",
+    "name": "Mission Skirmisher Wars drop",
+    "slug": "mission-skirmisher-wars-drop",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "crate": false,
+      "artifactAmount": 0,
+      "fluxMin": 10,
+      "name": "Mission Skirmisher Wars drop",
+      "xpMax": 70000,
+      "key": "TDwH2UVFK0o3I1ajAz0IlP",
+      "table": "Drops",
+      "xpMin": 40200,
+      "artifactLevel": 1,
+      "type": "mission",
+      "fluxMax": 30
+    }
+  },
+  {
+    "id": "Drops:EeWcjZdXvU6AxC3lt0eAIg",
+    "source_table": "Drops",
+    "source_key": "EeWcjZdXvU6AxC3lt0eAIg",
+    "name": "Mission Tank",
+    "slug": "mission-tank",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 25000,
+      "key": "EeWcjZdXvU6AxC3lt0eAIg",
+      "xpMin": 20000,
+      "fluxMin": 0,
+      "name": "Mission Tank",
+      "fluxMax": 10
+    }
+  },
+  {
+    "id": "Drops:xWLc7aDQvEOFVdtqgf6Oiw",
+    "source_table": "Drops",
+    "source_key": "xWLc7aDQvEOFVdtqgf6Oiw",
+    "name": "Mission Timed 10a",
+    "slug": "mission-timed-10a",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 500,
+      "key": "xWLc7aDQvEOFVdtqgf6Oiw",
+      "xpMin": 300,
+      "fluxMin": 0,
+      "name": "Mission Timed 10a",
+      "fluxMax": 3
+    }
+  },
+  {
+    "id": "Drops:4Stx51Qp4EKW61vCKIDEuA",
+    "source_table": "Drops",
+    "source_key": "4Stx51Qp4EKW61vCKIDEuA",
+    "name": "Mission Timed 13a",
+    "slug": "mission-timed-13a",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 800,
+      "key": "4Stx51Qp4EKW61vCKIDEuA",
+      "xpMin": 500,
+      "fluxMin": 0,
+      "name": "Mission Timed 13a",
+      "fluxMax": 3
+    }
+  },
+  {
+    "id": "Drops:ax30Q4i7rEKv8r__zjQA9w",
+    "source_table": "Drops",
+    "source_key": "ax30Q4i7rEKv8r__zjQA9w",
+    "name": "Mission Timed 16a",
+    "slug": "mission-timed-16a",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 1000,
+      "key": "ax30Q4i7rEKv8r__zjQA9w",
+      "xpMin": 600,
+      "fluxMin": 0,
+      "name": "Mission Timed 16a",
+      "fluxMax": 3
+    }
+  },
+  {
+    "id": "Drops:P8rRwKi8YUOd-rI5eetOjw",
+    "source_table": "Drops",
+    "source_key": "P8rRwKi8YUOd-rI5eetOjw",
+    "name": "Mission Timed 1a",
+    "slug": "mission-timed-1a",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 150,
+      "key": "P8rRwKi8YUOd-rI5eetOjw",
+      "xpMin": 50,
+      "fluxMin": 0,
+      "name": "Mission Timed 1a",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:F5k8_kfqlUGakr_dAB31OQ",
+    "source_table": "Drops",
+    "source_key": "F5k8_kfqlUGakr_dAB31OQ",
+    "name": "Mission Timed 22a",
+    "slug": "mission-timed-22a",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 1000,
+      "key": "F5k8_kfqlUGakr_dAB31OQ",
+      "xpMin": 500,
+      "fluxMin": 0,
+      "name": "Mission Timed 22a",
+      "fluxMax": 3
+    }
+  },
+  {
+    "id": "Drops:F60iXla7GkS_6QxdjGp1zg",
+    "source_table": "Drops",
+    "source_key": "F60iXla7GkS_6QxdjGp1zg",
+    "name": "Mission Timed 28a",
+    "slug": "mission-timed-28a",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 1200,
+      "key": "F60iXla7GkS_6QxdjGp1zg",
+      "xpMin": 500,
+      "fluxMin": 0,
+      "name": "Mission Timed 28a",
+      "fluxMax": 5
+    }
+  },
+  {
+    "id": "Drops:YYP6dAijEk-d87LlXbpCbQ",
+    "source_table": "Drops",
+    "source_key": "YYP6dAijEk-d87LlXbpCbQ",
+    "name": "Mission Timed 34a",
+    "slug": "mission-timed-34a",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 1600,
+      "key": "YYP6dAijEk-d87LlXbpCbQ",
+      "xpMin": 800,
+      "fluxMin": 0,
+      "name": "Mission Timed 34a",
+      "fluxMax": 5
+    }
+  },
+  {
+    "id": "Drops:r8g0OMu-zUSIrvym2BgXcQ",
+    "source_table": "Drops",
+    "source_key": "r8g0OMu-zUSIrvym2BgXcQ",
+    "name": "Mission Timed 3a",
+    "slug": "mission-timed-3a",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 150,
+      "key": "r8g0OMu-zUSIrvym2BgXcQ",
+      "xpMin": 50,
+      "fluxMin": 0,
+      "name": "Mission Timed 3a",
+      "fluxMax": 2
+    }
+  },
+  {
+    "id": "Drops:Tt7V02O8BkauO7Eg7eeJqA",
+    "source_table": "Drops",
+    "source_key": "Tt7V02O8BkauO7Eg7eeJqA",
+    "name": "Mission Timed 45a",
+    "slug": "mission-timed-45a",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 2000,
+      "key": "Tt7V02O8BkauO7Eg7eeJqA",
+      "xpMin": 1400,
+      "fluxMin": 0,
+      "name": "Mission Timed 45a",
+      "fluxMax": 6
+    }
+  },
+  {
+    "id": "Drops:mvZLWFeL6kW4EIb_2uqtAA",
+    "source_table": "Drops",
+    "source_key": "mvZLWFeL6kW4EIb_2uqtAA",
+    "name": "Mission Timed 52a",
+    "slug": "mission-timed-52a",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 2800,
+      "key": "mvZLWFeL6kW4EIb_2uqtAA",
+      "xpMin": 2100,
+      "fluxMin": 0,
+      "name": "Mission Timed 52a",
+      "fluxMax": 5
+    }
+  },
+  {
+    "id": "Drops:OokNR3BP3UOJ68TVSGowNg",
+    "source_table": "Drops",
+    "source_key": "OokNR3BP3UOJ68TVSGowNg",
+    "name": "Mission Timed 68a",
+    "slug": "mission-timed-68a",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 1,
+      "fluxMin": 0,
+      "name": "Mission Timed 68a",
+      "xpMax": 2800,
+      "key": "OokNR3BP3UOJ68TVSGowNg",
+      "table": "Drops",
+      "xpMin": 2100,
+      "artifactLevel": 70,
+      "type": "mission",
+      "fluxMax": 3
+    }
+  },
+  {
+    "id": "Drops:YqmzChpMvkmFWSLiEHl-Rg",
+    "source_table": "Drops",
+    "source_key": "YqmzChpMvkmFWSLiEHl-Rg",
+    "name": "Mission Timed 6a",
+    "slug": "mission-timed-6a",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 250,
+      "key": "YqmzChpMvkmFWSLiEHl-Rg",
+      "xpMin": 50,
+      "fluxMin": 0,
+      "name": "Mission Timed 6a",
+      "fluxMax": 2
+    }
+  },
+  {
+    "id": "Drops:PoUtADOYKk-Fqw56NOWzQQ",
+    "source_table": "Drops",
+    "source_key": "PoUtADOYKk-Fqw56NOWzQQ",
+    "name": "Mission Timed 72a",
+    "slug": "mission-timed-72a",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 1,
+      "fluxMin": 0,
+      "name": "Mission Timed 72a",
+      "xpMax": 3200,
+      "key": "PoUtADOYKk-Fqw56NOWzQQ",
+      "table": "Drops",
+      "xpMin": 2400,
+      "artifactLevel": 75,
+      "type": "mission",
+      "fluxMax": 3
+    }
+  },
+  {
+    "id": "Drops:6jcDvWRMGE-GXABmNTISzg",
+    "source_table": "Drops",
+    "source_key": "6jcDvWRMGE-GXABmNTISzg",
+    "name": "Mission Timed 78a",
+    "slug": "mission-timed-78a",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 1,
+      "fluxMin": 0,
+      "name": "Mission Timed 78a",
+      "xpMax": 3500,
+      "key": "6jcDvWRMGE-GXABmNTISzg",
+      "table": "Drops",
+      "xpMin": 3000,
+      "artifactLevel": 80,
+      "type": "mission",
+      "fluxMax": 3
+    }
+  },
+  {
+    "id": "Drops:Jx83VwX4U0CUy-Yx8pCO9Q",
+    "source_table": "Drops",
+    "source_key": "Jx83VwX4U0CUy-Yx8pCO9Q",
+    "name": "Mission Timed 9a",
+    "slug": "mission-timed-9a",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 400,
+      "key": "Jx83VwX4U0CUy-Yx8pCO9Q",
+      "xpMin": 200,
+      "fluxMin": 0,
+      "name": "Mission Timed 9a",
+      "fluxMax": 2
+    }
+  },
+  {
+    "id": "Drops:LL_pY2d6mE-ULlL7KfmX-Q",
+    "source_table": "Drops",
+    "source_key": "LL_pY2d6mE-ULlL7KfmX-Q",
+    "name": "Mission Timed Bionic Queen",
+    "slug": "mission-timed-bionic-queen",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 1,
+      "fluxMin": 1,
+      "name": "Mission Timed Bionic Queen",
+      "xpMax": 10000,
+      "key": "LL_pY2d6mE-ULlL7KfmX-Q",
+      "table": "Drops",
+      "xpMin": 10000,
+      "artifactLevel": 82,
+      "type": "mission",
+      "fluxMax": 5
+    }
+  },
+  {
+    "id": "Drops:FmqeQp0bCUqHlTnxJXg0fw",
+    "source_table": "Drops",
+    "source_key": "FmqeQp0bCUqHlTnxJXg0fw",
+    "name": "Mission Timed Judicator",
+    "slug": "mission-timed-judicator",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 3,
+      "fluxMin": 5,
+      "name": "Mission Timed Judicator",
+      "xpMax": 75000,
+      "key": "FmqeQp0bCUqHlTnxJXg0fw",
+      "table": "Drops",
+      "xpMin": 40000,
+      "artifactLevel": 86,
+      "type": "mission",
+      "fluxMax": 10
+    }
+  },
+  {
+    "id": "Drops:Dwi_PQ54_kW8CNHoEsx6DQ",
+    "source_table": "Drops",
+    "source_key": "Dwi_PQ54_kW8CNHoEsx6DQ",
+    "name": "Mission Timed Nez Fulzar Dreadnought",
+    "slug": "mission-timed-nez-fulzar-dreadnought",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 3,
+      "fluxMin": 4,
+      "name": "Mission Timed Nez Fulzar Dreadnought",
+      "xpMax": 76000,
+      "key": "Dwi_PQ54_kW8CNHoEsx6DQ",
+      "table": "Drops",
+      "xpMin": 60000,
+      "artifactLevel": 88,
+      "type": "mission",
+      "fluxMax": 15
+    }
+  },
+  {
+    "id": "Drops:vtOS5nHdoUi6L2pdx3obSA",
+    "source_table": "Drops",
+    "source_key": "vtOS5nHdoUi6L2pdx3obSA",
+    "name": "Mission Timed Sidus",
+    "slug": "mission-timed-sidus",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 3,
+      "fluxMin": 4,
+      "name": "Mission Timed Sidus",
+      "xpMax": 45000,
+      "key": "vtOS5nHdoUi6L2pdx3obSA",
+      "table": "Drops",
+      "xpMin": 30000,
+      "artifactLevel": 84,
+      "type": "mission",
+      "fluxMax": 8
+    }
+  },
+  {
+    "id": "Drops:VuvXnuw4S0qpb0HTDLuX0Q",
+    "source_table": "Drops",
+    "source_key": "VuvXnuw4S0qpb0HTDLuX0Q",
+    "name": "Mission Transport 1",
+    "slug": "mission-transport-1",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 150,
+      "key": "VuvXnuw4S0qpb0HTDLuX0Q",
+      "xpMin": 50,
+      "fluxMin": 0,
+      "name": "Mission Transport 1",
+      "fluxMax": 2
+    }
+  },
+  {
+    "id": "Drops:gYusUV-HekGlfqtWuNDE4g",
+    "source_table": "Drops",
+    "source_key": "gYusUV-HekGlfqtWuNDE4g",
+    "name": "Mission Transport 2",
+    "slug": "mission-transport-2",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 200,
+      "key": "gYusUV-HekGlfqtWuNDE4g",
+      "xpMin": 100,
+      "fluxMin": 0,
+      "name": "Mission Transport 2",
+      "fluxMax": 3
+    }
+  },
+  {
+    "id": "Drops:xyhdp1LVPUmLep-AkUGVgw",
+    "source_table": "Drops",
+    "source_key": "xyhdp1LVPUmLep-AkUGVgw",
+    "name": "Mission Transport 3",
+    "slug": "mission-transport-3",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 300,
+      "key": "xyhdp1LVPUmLep-AkUGVgw",
+      "xpMin": 200,
+      "fluxMin": 0,
+      "name": "Mission Transport 3",
+      "fluxMax": 5
+    }
+  },
+  {
+    "id": "Drops:z6lvSFed80CjixkIiOZ21g",
+    "source_table": "Drops",
+    "source_key": "z6lvSFed80CjixkIiOZ21g",
+    "name": "Mission Transport 4",
+    "slug": "mission-transport-4",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 300,
+      "key": "z6lvSFed80CjixkIiOZ21g",
+      "xpMin": 200,
+      "fluxMin": 0,
+      "name": "Mission Transport 4",
+      "fluxMax": 5
+    }
+  },
+  {
+    "id": "Drops:iK9ts__fz0WBPogJHvuTlw",
+    "source_table": "Drops",
+    "source_key": "iK9ts__fz0WBPogJHvuTlw",
+    "name": "Mission Tutorial 1",
+    "slug": "mission-tutorial-1",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 250,
+      "key": "iK9ts__fz0WBPogJHvuTlw",
+      "xpMin": 250,
+      "fluxMin": 0,
+      "name": "Mission Tutorial 1",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:8KL2B0pE4U6TEYogg_1Tnw",
+    "source_table": "Drops",
+    "source_key": "8KL2B0pE4U6TEYogg_1Tnw",
+    "name": "Mission Tutorial 10",
+    "slug": "mission-tutorial-10",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 528,
+      "key": "8KL2B0pE4U6TEYogg_1Tnw",
+      "xpMin": 528,
+      "fluxMin": 4,
+      "name": "Mission Tutorial 10",
+      "fluxMax": 4
+    }
+  },
+  {
+    "id": "Drops:XkNUFPZt7UK62WmRd7zIHg",
+    "source_table": "Drops",
+    "source_key": "XkNUFPZt7UK62WmRd7zIHg",
+    "name": "Mission Tutorial 11",
+    "slug": "mission-tutorial-11",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 128,
+      "key": "XkNUFPZt7UK62WmRd7zIHg",
+      "xpMin": 128,
+      "fluxMin": 0,
+      "name": "Mission Tutorial 11",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:jOwdH7CoOEeeItvgjZ15EQ",
+    "source_table": "Drops",
+    "source_key": "jOwdH7CoOEeeItvgjZ15EQ",
+    "name": "Mission Tutorial 2",
+    "slug": "mission-tutorial-2",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 100,
+      "key": "jOwdH7CoOEeeItvgjZ15EQ",
+      "xpMin": 100,
+      "fluxMin": 0,
+      "name": "Mission Tutorial 2",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:EwDe0UlBXEWHTMs7EyIRLQ",
+    "source_table": "Drops",
+    "source_key": "EwDe0UlBXEWHTMs7EyIRLQ",
+    "name": "Mission Tutorial 3",
+    "slug": "mission-tutorial-3",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 160,
+      "key": "EwDe0UlBXEWHTMs7EyIRLQ",
+      "xpMin": 160,
+      "fluxMin": 0,
+      "name": "Mission Tutorial 3",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:jWT_3sQHRkKsUemAIivwTw",
+    "source_table": "Drops",
+    "source_key": "jWT_3sQHRkKsUemAIivwTw",
+    "name": "Mission Tutorial 4",
+    "slug": "mission-tutorial-4",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 380,
+      "key": "jWT_3sQHRkKsUemAIivwTw",
+      "xpMin": 380,
+      "fluxMin": 0,
+      "name": "Mission Tutorial 4",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:S0JUIBMnS0-c2tkJUOfvqQ",
+    "source_table": "Drops",
+    "source_key": "S0JUIBMnS0-c2tkJUOfvqQ",
+    "name": "Mission Tutorial 5",
+    "slug": "mission-tutorial-5",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 150,
+      "key": "S0JUIBMnS0-c2tkJUOfvqQ",
+      "xpMin": 150,
+      "fluxMin": 0,
+      "name": "Mission Tutorial 5",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:Hq8rhHL4ZUqb3dzse2mUYA",
+    "source_table": "Drops",
+    "source_key": "Hq8rhHL4ZUqb3dzse2mUYA",
+    "name": "Mission Tutorial 6",
+    "slug": "mission-tutorial-6",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 264,
+      "key": "Hq8rhHL4ZUqb3dzse2mUYA",
+      "xpMin": 262,
+      "fluxMin": 0,
+      "name": "Mission Tutorial 6",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:LlDenmV-i0iNsweCGpyKkw",
+    "source_table": "Drops",
+    "source_key": "LlDenmV-i0iNsweCGpyKkw",
+    "name": "Mission Tutorial 7",
+    "slug": "mission-tutorial-7",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 432,
+      "key": "LlDenmV-i0iNsweCGpyKkw",
+      "xpMin": 432,
+      "fluxMin": 2,
+      "name": "Mission Tutorial 7",
+      "fluxMax": 2
+    }
+  },
+  {
+    "id": "Drops:mKR-g14TJkKCjQSbVXXqAw",
+    "source_table": "Drops",
+    "source_key": "mKR-g14TJkKCjQSbVXXqAw",
+    "name": "Mission Tutorial 8",
+    "slug": "mission-tutorial-8",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 344,
+      "key": "mKR-g14TJkKCjQSbVXXqAw",
+      "xpMin": 321,
+      "fluxMin": 0,
+      "name": "Mission Tutorial 8",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:VxcukywvIU-IlvQ-zMYTUg",
+    "source_table": "Drops",
+    "source_key": "VxcukywvIU-IlvQ-zMYTUg",
+    "name": "Mission Tutorial 9",
+    "slug": "mission-tutorial-9",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 764,
+      "key": "VxcukywvIU-IlvQ-zMYTUg",
+      "xpMin": 764,
+      "fluxMin": 3,
+      "name": "Mission Tutorial 9",
+      "fluxMax": 3
+    }
+  },
+  {
+    "id": "Drops:5y8-or6zS0W_-Zx4KTKdzw",
+    "source_table": "Drops",
+    "source_key": "5y8-or6zS0W_-Zx4KTKdzw",
+    "name": "Mission XP 1000-1200",
+    "slug": "mission-xp-1000-1200",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 1200,
+      "key": "5y8-or6zS0W_-Zx4KTKdzw",
+      "xpMin": 1000,
+      "fluxMin": 0,
+      "name": "Mission XP 1000-1200",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:461ykk-x2EaaQfctJ8htsw",
+    "source_table": "Drops",
+    "source_key": "461ykk-x2EaaQfctJ8htsw",
+    "name": "Mission XP 12400-12800 + 16 Flux",
+    "slug": "mission-xp-12400-12800-16-flux",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 12800,
+      "key": "461ykk-x2EaaQfctJ8htsw",
+      "xpMin": 12400,
+      "fluxMin": 16,
+      "name": "Mission XP 12400-12800 + 16 Flux",
+      "fluxMax": 16
+    }
+  },
+  {
+    "id": "Drops:Iqjc285TmkKIWkoKjUVhwA",
+    "source_table": "Drops",
+    "source_key": "Iqjc285TmkKIWkoKjUVhwA",
+    "name": "Mission XP 14k",
+    "slug": "mission-xp-14k",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 0,
+      "fluxMin": 0,
+      "name": "Mission XP 14k",
+      "xpMax": 14800,
+      "key": "Iqjc285TmkKIWkoKjUVhwA",
+      "table": "Drops",
+      "xpMin": 14600,
+      "artifactLevel": 1,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:Hv_pnr0R60aicAYlXQkSAQ",
+    "source_table": "Drops",
+    "source_key": "Hv_pnr0R60aicAYlXQkSAQ",
+    "name": "Mission XP 1600-1800",
+    "slug": "mission-xp-1600-1800",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 1800,
+      "key": "Hv_pnr0R60aicAYlXQkSAQ",
+      "xpMin": 1600,
+      "fluxMin": 0,
+      "name": "Mission XP 1600-1800",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:qMffjxjWKkumepxsTOPbeA",
+    "source_table": "Drops",
+    "source_key": "qMffjxjWKkumepxsTOPbeA",
+    "name": "Mission XP 16800",
+    "slug": "mission-xp-16800",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 0,
+      "fluxMin": 0,
+      "name": "Mission XP 16800",
+      "xpMax": 16800,
+      "key": "qMffjxjWKkumepxsTOPbeA",
+      "table": "Drops",
+      "xpMin": 16800,
+      "artifactLevel": 1,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:dq5ZBJh3jUa2eu1xeosReg",
+    "source_table": "Drops",
+    "source_key": "dq5ZBJh3jUa2eu1xeosReg",
+    "name": "Mission XP 2.5k Steel 1.2k",
+    "slug": "mission-xp-25k-steel-12k",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 0,
+      "fluxMin": 0,
+      "name": "Mission XP 2.5k Steel 1.2k",
+      "xpMax": 2600,
+      "key": "dq5ZBJh3jUa2eu1xeosReg",
+      "table": "Drops",
+      "xpMin": 2400,
+      "artifactLevel": 1,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:JebQvxhDpUuTv0IOfiNEZQ",
+    "source_table": "Drops",
+    "source_key": "JebQvxhDpUuTv0IOfiNEZQ",
+    "name": "Mission XP 2400-2800",
+    "slug": "mission-xp-2400-2800",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 2800,
+      "key": "JebQvxhDpUuTv0IOfiNEZQ",
+      "xpMin": 2400,
+      "fluxMin": 0,
+      "name": "Mission XP 2400-2800",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:6y3wP0spPEie100_0mzwTA",
+    "source_table": "Drops",
+    "source_key": "6y3wP0spPEie100_0mzwTA",
+    "name": "Mission XP 3k Steel 1k",
+    "slug": "mission-xp-3k-steel-1k",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 0,
+      "fluxMin": 0,
+      "name": "Mission XP 3k Steel 1k",
+      "xpMax": 3200,
+      "key": "6y3wP0spPEie100_0mzwTA",
+      "table": "Drops",
+      "xpMin": 3000,
+      "artifactLevel": 1,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:fJu0-X73x0Sq6jOxnbp0GA",
+    "source_table": "Drops",
+    "source_key": "fJu0-X73x0Sq6jOxnbp0GA",
+    "name": "Mission XP 3k Steel 3k",
+    "slug": "mission-xp-3k-steel-3k",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 0,
+      "fluxMin": 0,
+      "name": "Mission XP 3k Steel 3k",
+      "xpMax": 3200,
+      "key": "fJu0-X73x0Sq6jOxnbp0GA",
+      "table": "Drops",
+      "xpMin": 3000,
+      "artifactLevel": 1,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:banaWVv7LUeym6TF3nRj8A",
+    "source_table": "Drops",
+    "source_key": "banaWVv7LUeym6TF3nRj8A",
+    "name": "Mission XP 4000-4200 + 8 Flux",
+    "slug": "mission-xp-4000-4200-8-flux",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 4800,
+      "key": "banaWVv7LUeym6TF3nRj8A",
+      "xpMin": 4200,
+      "fluxMin": 8,
+      "name": "Mission XP 4000-4200 + 8 Flux",
+      "fluxMax": 8
+    }
+  },
+  {
+    "id": "Drops:mZZzIfKq20u8Lgws5z2MpQ",
+    "source_table": "Drops",
+    "source_key": "mZZzIfKq20u8Lgws5z2MpQ",
+    "name": "Mission XP 4600",
+    "slug": "mission-xp-4600",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 0,
+      "fluxMin": 0,
+      "name": "Mission XP 4600",
+      "xpMax": 4600,
+      "key": "mZZzIfKq20u8Lgws5z2MpQ",
+      "table": "Drops",
+      "xpMin": 4600,
+      "artifactLevel": 1,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:6dAouK6cr0ec955oE7TS8w",
+    "source_table": "Drops",
+    "source_key": "6dAouK6cr0ec955oE7TS8w",
+    "name": "Mission XP 5.6k Steel 2.4k",
+    "slug": "mission-xp-56k-steel-24k",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 0,
+      "fluxMin": 0,
+      "name": "Mission XP 5.6k Steel 2.4k",
+      "xpMax": 5700,
+      "key": "6dAouK6cr0ec955oE7TS8w",
+      "table": "Drops",
+      "xpMin": 5500,
+      "artifactLevel": 1,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:LGktZIN8pE2CD5FfdRgD3g",
+    "source_table": "Drops",
+    "source_key": "LGktZIN8pE2CD5FfdRgD3g",
+    "name": "Mission XP 5600-5800 + 3 Flux",
+    "slug": "mission-xp-5600-5800-3-flux",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 6200,
+      "key": "LGktZIN8pE2CD5FfdRgD3g",
+      "xpMin": 5800,
+      "fluxMin": 5,
+      "name": "Mission XP 5600-5800 + 3 Flux",
+      "fluxMax": 5
+    }
+  },
+  {
+    "id": "Drops:9q3cs6qhJ0Kd6Tf3RrSOSg",
+    "source_table": "Drops",
+    "source_key": "9q3cs6qhJ0Kd6Tf3RrSOSg",
+    "name": "Mission XP 600-800",
+    "slug": "mission-xp-600-800",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 800,
+      "key": "9q3cs6qhJ0Kd6Tf3RrSOSg",
+      "xpMin": 600,
+      "fluxMin": 0,
+      "name": "Mission XP 600-800",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:VH6khMqOdEKaZRfjd5fn0Q",
+    "source_table": "Drops",
+    "source_key": "VH6khMqOdEKaZRfjd5fn0Q",
+    "name": "Mission XP 6200-6800 + 16 Flux",
+    "slug": "mission-xp-6200-6800-16-flux",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 6800,
+      "key": "VH6khMqOdEKaZRfjd5fn0Q",
+      "xpMin": 6200,
+      "fluxMin": 16,
+      "name": "Mission XP 6200-6800 + 16 Flux",
+      "fluxMax": 16
+    }
+  },
+  {
+    "id": "Drops:s46g7anU802tL933nOtrVw",
+    "source_table": "Drops",
+    "source_key": "s46g7anU802tL933nOtrVw",
+    "name": "Mission XP 8400-8600",
+    "slug": "mission-xp-8400-8600",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 0,
+      "fluxMin": 0,
+      "name": "Mission XP 8400-8600",
+      "xpMax": 8600,
+      "key": "s46g7anU802tL933nOtrVw",
+      "table": "Drops",
+      "xpMin": 8400,
+      "artifactLevel": 1,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:bN2whmIb3ES0I7uukS7uXQ",
+    "source_table": "Drops",
+    "source_key": "bN2whmIb3ES0I7uukS7uXQ",
+    "name": "Mission XP12k A10x100",
+    "slug": "mission-xp12k-a10x100",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 10,
+      "fluxMin": 0,
+      "name": "Mission XP12k A10x100",
+      "xpMax": 12600,
+      "key": "bN2whmIb3ES0I7uukS7uXQ",
+      "table": "Drops",
+      "xpMin": 12400,
+      "artifactLevel": 100,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:hEP0Ab5wq0KhgsyHxeD37w",
+    "source_table": "Drops",
+    "source_key": "hEP0Ab5wq0KhgsyHxeD37w",
+    "name": "Mission XP12k A10x96",
+    "slug": "mission-xp12k-a10x96",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 10,
+      "fluxMin": 0,
+      "name": "Mission XP12k A10x96",
+      "xpMax": 12600,
+      "key": "hEP0Ab5wq0KhgsyHxeD37w",
+      "table": "Drops",
+      "xpMin": 12400,
+      "artifactLevel": 96,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:0I3Qy70R20uQfP2bHIlwLw",
+    "source_table": "Drops",
+    "source_key": "0I3Qy70R20uQfP2bHIlwLw",
+    "name": "Mission XP12k Bionic Larva",
+    "slug": "mission-xp12k-bionic-larva",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 0,
+      "fluxMin": 0,
+      "name": "Mission XP12k Bionic Larva",
+      "xpMax": 12400,
+      "key": "0I3Qy70R20uQfP2bHIlwLw",
+      "table": "Drops",
+      "xpMin": 12200,
+      "artifactLevel": 1,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:DTZ2BHaWdUqR8dJYllM45Q",
+    "source_table": "Drops",
+    "source_key": "DTZ2BHaWdUqR8dJYllM45Q",
+    "name": "Mission XP16k F8",
+    "slug": "mission-xp16k-f8",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 0,
+      "fluxMin": 8,
+      "name": "Mission XP16k F8",
+      "xpMax": 16600,
+      "key": "DTZ2BHaWdUqR8dJYllM45Q",
+      "table": "Drops",
+      "xpMin": 16400,
+      "artifactLevel": 1,
+      "type": "mission",
+      "fluxMax": 8
+    }
+  },
+  {
+    "id": "Drops:88qMIotyIkWBTuUav5IDsA",
+    "source_table": "Drops",
+    "source_key": "88qMIotyIkWBTuUav5IDsA",
+    "name": "Mission XP26k F16",
+    "slug": "mission-xp26k-f16",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 0,
+      "fluxMin": 16,
+      "name": "Mission XP26k F16",
+      "xpMax": 26800,
+      "key": "88qMIotyIkWBTuUav5IDsA",
+      "table": "Drops",
+      "xpMin": 26600,
+      "artifactLevel": 1,
+      "type": "mission",
+      "fluxMax": 16
+    }
+  },
+  {
+    "id": "Drops:yzmL0Bc75Ema0Ya3SBfl-g",
+    "source_table": "Drops",
+    "source_key": "yzmL0Bc75Ema0Ya3SBfl-g",
+    "name": "Mission XP28k S3.6k A3x100",
+    "slug": "mission-xp28k-s36k-a3x100",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 3,
+      "fluxMin": 8,
+      "name": "Mission XP28k S3.6k A3x100",
+      "xpMax": 28800,
+      "key": "yzmL0Bc75Ema0Ya3SBfl-g",
+      "table": "Drops",
+      "xpMin": 28600,
+      "artifactLevel": 100,
+      "type": "mission",
+      "fluxMax": 8
+    }
+  },
+  {
+    "id": "Drops:bsiZ-MUpcE-KCmRVr04C7Q",
+    "source_table": "Drops",
+    "source_key": "bsiZ-MUpcE-KCmRVr04C7Q",
+    "name": "Mission XP28k S5.8 A5x95",
+    "slug": "mission-xp28k-s58-a5x95",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 5,
+      "fluxMin": 12,
+      "name": "Mission XP28k S5.8 A5x95",
+      "xpMax": 28800,
+      "key": "bsiZ-MUpcE-KCmRVr04C7Q",
+      "table": "Drops",
+      "xpMin": 28600,
+      "artifactLevel": 95,
+      "type": "mission",
+      "fluxMax": 12
+    }
+  },
+  {
+    "id": "Drops:g0_NxGz0qkq7FHCmICN2CA",
+    "source_table": "Drops",
+    "source_key": "g0_NxGz0qkq7FHCmICN2CA",
+    "name": "Mission XP3.2k S1.2k A2x50",
+    "slug": "mission-xp32k-s12k-a2x50",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 2,
+      "fluxMin": 4,
+      "name": "Mission XP3.2k S1.2k A2x50",
+      "xpMax": 3400,
+      "key": "g0_NxGz0qkq7FHCmICN2CA",
+      "table": "Drops",
+      "xpMin": 3200,
+      "artifactLevel": 50,
+      "type": "mission",
+      "fluxMax": 4
+    }
+  },
+  {
+    "id": "Drops:DJwrDxkGQEKxvrFYmTvX-A",
+    "source_table": "Drops",
+    "source_key": "DJwrDxkGQEKxvrFYmTvX-A",
+    "name": "Mission XP3.4k S1k A2x40",
+    "slug": "mission-xp34k-s1k-a2x40",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 2,
+      "fluxMin": 4,
+      "name": "Mission XP3.4k S1k A2x40",
+      "xpMax": 3600,
+      "key": "DJwrDxkGQEKxvrFYmTvX-A",
+      "table": "Drops",
+      "xpMin": 3400,
+      "artifactLevel": 40,
+      "type": "mission",
+      "fluxMax": 4
+    }
+  },
+  {
+    "id": "Drops:bXz-Je_DdEezJZ6ZgFkwGw",
+    "source_table": "Drops",
+    "source_key": "bXz-Je_DdEezJZ6ZgFkwGw",
+    "name": "Mission XP32k",
+    "slug": "mission-xp32k",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 0,
+      "fluxMin": 0,
+      "name": "Mission XP32k",
+      "xpMax": 32800,
+      "key": "bXz-Je_DdEezJZ6ZgFkwGw",
+      "table": "Drops",
+      "xpMin": 32600,
+      "artifactLevel": 1,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:JjTRoQzW8kCd_fvc158Keg",
+    "source_table": "Drops",
+    "source_key": "JjTRoQzW8kCd_fvc158Keg",
+    "name": "Mission XP32k F32",
+    "slug": "mission-xp32k-f32",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 0,
+      "fluxMin": 32,
+      "name": "Mission XP32k F32",
+      "xpMax": 32400,
+      "key": "JjTRoQzW8kCd_fvc158Keg",
+      "table": "Drops",
+      "xpMin": 32200,
+      "artifactLevel": 1,
+      "type": "mission",
+      "fluxMax": 32
+    }
+  },
+  {
+    "id": "Drops:hSiTCJ6YqU-XpJ1CaTtv7A",
+    "source_table": "Drops",
+    "source_key": "hSiTCJ6YqU-XpJ1CaTtv7A",
+    "name": "Mission XP36k + f12 +a3x130",
+    "slug": "mission-xp36k-f12-a3x130",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 3,
+      "fluxMin": 12,
+      "name": "Mission XP36k + f12 +a3x130",
+      "xpMax": 36000,
+      "key": "hSiTCJ6YqU-XpJ1CaTtv7A",
+      "table": "Drops",
+      "xpMin": 36000,
+      "artifactLevel": 130,
+      "type": "mission",
+      "fluxMax": 12
+    }
+  },
+  {
+    "id": "Drops:iNUrR_J0HU6eEg0dxKpO1A",
+    "source_table": "Drops",
+    "source_key": "iNUrR_J0HU6eEg0dxKpO1A",
+    "name": "Mission XP3k S1.2 A2x35",
+    "slug": "mission-xp3k-s12-a2x35",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 2,
+      "fluxMin": 0,
+      "name": "Mission XP3k S1.2 A2x35",
+      "xpMax": 3200,
+      "key": "iNUrR_J0HU6eEg0dxKpO1A",
+      "table": "Drops",
+      "xpMin": 3000,
+      "artifactLevel": 35,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:LqNKPDgugUmV0loD1_PlqQ",
+    "source_table": "Drops",
+    "source_key": "LqNKPDgugUmV0loD1_PlqQ",
+    "name": "Mission XP4.2k S2k A2x55",
+    "slug": "mission-xp42k-s2k-a2x55",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 2,
+      "fluxMin": 4,
+      "name": "Mission XP4.2k S2k A2x55",
+      "xpMax": 4400,
+      "key": "LqNKPDgugUmV0loD1_PlqQ",
+      "table": "Drops",
+      "xpMin": 4200,
+      "artifactLevel": 50,
+      "type": "mission",
+      "fluxMax": 4
+    }
+  },
+  {
+    "id": "Drops:RxRWHI24Nkyh7TiUJj35Yw",
+    "source_table": "Drops",
+    "source_key": "RxRWHI24Nkyh7TiUJj35Yw",
+    "name": "Mission XP4.6k S1.4k A2x60",
+    "slug": "mission-xp46k-s14k-a2x60",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 2,
+      "fluxMin": 4,
+      "name": "Mission XP4.6k S1.4k A2x60",
+      "xpMax": 4800,
+      "key": "RxRWHI24Nkyh7TiUJj35Yw",
+      "table": "Drops",
+      "xpMin": 4600,
+      "artifactLevel": 60,
+      "type": "mission",
+      "fluxMax": 4
+    }
+  },
+  {
+    "id": "Drops:NMq5uwpDJEKIfWzbIiYIDA",
+    "source_table": "Drops",
+    "source_key": "NMq5uwpDJEKIfWzbIiYIDA",
+    "name": "Mission XP54k + F26 A5x140",
+    "slug": "mission-xp54k-f26-a5x140",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 5,
+      "fluxMin": 26,
+      "name": "Mission XP54k + F26 A5x140",
+      "xpMax": 54000,
+      "key": "NMq5uwpDJEKIfWzbIiYIDA",
+      "table": "Drops",
+      "xpMin": 54000,
+      "artifactLevel": 140,
+      "type": "mission",
+      "fluxMax": 26
+    }
+  },
+  {
+    "id": "Drops:e8mRNOT8o0Gxim_BcXHTyQ",
+    "source_table": "Drops",
+    "source_key": "e8mRNOT8o0Gxim_BcXHTyQ",
+    "name": "Mission XP56k S14k A5x100",
+    "slug": "mission-xp56k-s14k-a5x100",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 5,
+      "fluxMin": 16,
+      "name": "Mission XP56k S14k A5x100",
+      "xpMax": 56600,
+      "key": "e8mRNOT8o0Gxim_BcXHTyQ",
+      "table": "Drops",
+      "xpMin": 56400,
+      "artifactLevel": 100,
+      "type": "mission",
+      "fluxMax": 16
+    }
+  },
+  {
+    "id": "Drops:iEFd84e_A0WM_H_vMT2lbw",
+    "source_table": "Drops",
+    "source_key": "iEFd84e_A0WM_H_vMT2lbw",
+    "name": "Mission XP6.5k S3.4k A4x65",
+    "slug": "mission-xp65k-s34k-a4x65",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 4,
+      "fluxMin": 8,
+      "name": "Mission XP6.5k S3.4k A4x65",
+      "xpMax": 6700,
+      "key": "iEFd84e_A0WM_H_vMT2lbw",
+      "table": "Drops",
+      "xpMin": 6500,
+      "artifactLevel": 65,
+      "type": "mission",
+      "fluxMax": 8
+    }
+  },
+  {
+    "id": "Drops:b7L3SzFcbEe14ZmLR5IV6w",
+    "source_table": "Drops",
+    "source_key": "b7L3SzFcbEe14ZmLR5IV6w",
+    "name": "Mission XP6k Bug leg",
+    "slug": "mission-xp6k-bug-leg",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 0,
+      "fluxMin": 0,
+      "name": "Mission XP6k Bug leg",
+      "xpMax": 6400,
+      "key": "b7L3SzFcbEe14ZmLR5IV6w",
+      "table": "Drops",
+      "xpMin": 6200,
+      "artifactLevel": 1,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:s6XA_1jdt0qinab-duSurA",
+    "source_table": "Drops",
+    "source_key": "s6XA_1jdt0qinab-duSurA",
+    "name": "Mission XP6k S1.5k A5x40",
+    "slug": "mission-xp6k-s15k-a5x40",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 5,
+      "fluxMin": 8,
+      "name": "Mission XP6k S1.5k A5x40",
+      "xpMax": 6200,
+      "key": "s6XA_1jdt0qinab-duSurA",
+      "table": "Drops",
+      "xpMin": 6000,
+      "artifactLevel": 40,
+      "type": "mission",
+      "fluxMax": 8
+    }
+  },
+  {
+    "id": "Drops:so2GmfBC2ESw_d5Dmrln3g",
+    "source_table": "Drops",
+    "source_key": "so2GmfBC2ESw_d5Dmrln3g",
+    "name": "Mission XP6k S2.5k A3x35",
+    "slug": "mission-xp6k-s25k-a3x35",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 3,
+      "fluxMin": 4,
+      "name": "Mission XP6k S2.5k A3x35",
+      "xpMax": 6200,
+      "key": "so2GmfBC2ESw_d5Dmrln3g",
+      "table": "Drops",
+      "xpMin": 6000,
+      "artifactLevel": 35,
+      "type": "mission",
+      "fluxMax": 4
+    }
+  },
+  {
+    "id": "Drops:qRDH1A8HXUilOs0AQZ2kCg",
+    "source_table": "Drops",
+    "source_key": "qRDH1A8HXUilOs0AQZ2kCg",
+    "name": "Mission XP8.4k A8x92",
+    "slug": "mission-xp84k-a8x92",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 8,
+      "fluxMin": 0,
+      "name": "Mission XP8.4k A8x92",
+      "xpMax": 8600,
+      "key": "qRDH1A8HXUilOs0AQZ2kCg",
+      "table": "Drops",
+      "xpMin": 8400,
+      "artifactLevel": 92,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:zOnNfOjOt0iGuYgvsx69Zw",
+    "source_table": "Drops",
+    "source_key": "zOnNfOjOt0iGuYgvsx69Zw",
+    "name": "Mission XP8600 DC250",
+    "slug": "mission-xp8600-dc250",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 0,
+      "fluxMin": 0,
+      "name": "Mission XP8600 DC250",
+      "xpMax": 8600,
+      "key": "zOnNfOjOt0iGuYgvsx69Zw",
+      "table": "Drops",
+      "xpMin": 8600,
+      "artifactLevel": 1,
+      "type": "mission",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:yt5gAMcfcEmLs8gxjb3-qQ",
+    "source_table": "Drops",
+    "source_key": "yt5gAMcfcEmLs8gxjb3-qQ",
+    "name": "Mission XP8k F8",
+    "slug": "mission-xp8k-f8",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 0,
+      "fluxMin": 8,
+      "name": "Mission XP8k F8",
+      "xpMax": 8800,
+      "key": "yt5gAMcfcEmLs8gxjb3-qQ",
+      "table": "Drops",
+      "xpMin": 8600,
+      "artifactLevel": 1,
+      "type": "mission",
+      "fluxMax": 8
+    }
+  },
+  {
+    "id": "Drops:wllISW7N6E2RApwnIFsMkw",
+    "source_table": "Drops",
+    "source_key": "wllISW7N6E2RApwnIFsMkw",
+    "name": "Mission XP9.6k S3.4k a2x80",
+    "slug": "mission-xp96k-s34k-a2x80",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 2,
+      "fluxMin": 6,
+      "name": "Mission XP9.6k S3.4k a2x80",
+      "xpMax": 9800,
+      "key": "wllISW7N6E2RApwnIFsMkw",
+      "table": "Drops",
+      "xpMin": 9600,
+      "artifactLevel": 80,
+      "type": "mission",
+      "fluxMax": 6
+    }
+  },
+  {
+    "id": "Drops:4iq0Y6zQtEKkoyAxY-dSeQ",
+    "source_table": "Drops",
+    "source_key": "4iq0Y6zQtEKkoyAxY-dSeQ",
+    "name": "Mission XP98k S68k 10x110",
+    "slug": "mission-xp98k-s68k-10x110",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 10,
+      "fluxMin": 126,
+      "name": "Mission XP98k S68k 10x110",
+      "xpMax": 98400,
+      "key": "4iq0Y6zQtEKkoyAxY-dSeQ",
+      "table": "Drops",
+      "xpMin": 98200,
+      "artifactLevel": 110,
+      "type": "mission",
+      "fluxMax": 126
+    }
+  },
+  {
+    "id": "Drops:7Sr1uHUE5ESQLmbDq77Z7Q",
+    "source_table": "Drops",
+    "source_key": "7Sr1uHUE5ESQLmbDq77Z7Q",
+    "name": "Mission: prog: Unknown Data",
+    "slug": "mission-prog-unknown-data",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "artifactChance": 1,
+      "crate": false,
+      "xpMax": 1000,
+      "fluxMin": 18,
+      "name": "Mission: prog: Unknown Data",
+      "key": "7Sr1uHUE5ESQLmbDq77Z7Q",
+      "table": "Drops",
+      "xpMin": 1000,
+      "artifactLevel": 12,
+      "type": "mission",
+      "fluxMax": 20
+    }
+  },
+  {
+    "id": "Drops:eTPJWKSk5k2Djp9-1_-hjA",
+    "source_table": "Drops",
+    "source_key": "eTPJWKSk5k2Djp9-1_-hjA",
+    "name": "Moth Zero Gland 1%",
+    "slug": "moth-zero-gland-1",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 0.0103,
+      "crate": true,
+      "key": "eTPJWKSk5k2Djp9-1_-hjA",
+      "artifactChance": 0,
+      "name": "Moth Zero Gland 1%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:3gLvecTpZUCe7N6m25SuFg",
+    "source_table": "Drops",
+    "source_key": "3gLvecTpZUCe7N6m25SuFg",
+    "name": "Moth Zero Gland 100%",
+    "slug": "moth-zero-gland-100",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "3gLvecTpZUCe7N6m25SuFg",
+      "artifactChance": 0,
+      "name": "Moth Zero Gland 100%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:pU99HkjT0UG1x1EKxi1sZw",
+    "source_table": "Drops",
+    "source_key": "pU99HkjT0UG1x1EKxi1sZw",
+    "name": "Nexar Blaster",
+    "slug": "nexar-blaster",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "pU99HkjT0UG1x1EKxi1sZw",
+      "artifactChance": 0,
+      "name": "Nexar Blaster",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:1z5I2aVRoUO4sPu1sHceJg",
+    "source_table": "Drops",
+    "source_key": "1z5I2aVRoUO4sPu1sHceJg",
+    "name": "Nexar Bomb",
+    "slug": "nexar-bomb",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "1z5I2aVRoUO4sPu1sHceJg",
+      "artifactChance": 0,
+      "name": "Nexar Bomb",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:_JBJWcV7LESTOuoBU-RgFA",
+    "source_table": "Drops",
+    "source_key": "_JBJWcV7LESTOuoBU-RgFA",
+    "name": "Nexar Light Wave",
+    "slug": "nexar-light-wave",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "name": "Nexar Light Wave",
+      "crate": false,
+      "key": "_JBJWcV7LESTOuoBU-RgFA",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:yGiCoX9bYkeotHNecc6qYg",
+    "source_table": "Drops",
+    "source_key": "yGiCoX9bYkeotHNecc6qYg",
+    "name": "Nexar Projector",
+    "slug": "nexar-projector",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "yGiCoX9bYkeotHNecc6qYg",
+      "artifactChance": 0,
+      "name": "Nexar Projector",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:0278E0F4-BA63-0FB7-03CB-499DC44A40B1",
+    "source_table": "Drops",
+    "source_key": "0278E0F4-BA63-0FB7-03CB-499DC44A40B1",
+    "name": "Phase Crystal",
+    "slug": "phase-crystal",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "name": "Phase Crystal",
+      "crate": false,
+      "key": "0278E0F4-BA63-0FB7-03CB-499DC44A40B1",
+      "effect": "Mp2aVKXQcEupFN62UXYK8w",
+      "type": "drop",
+      "bitmap": "E5B4F24B-9F4D-CD9E-BE24-30A2E2911713"
+    }
+  },
+  {
+    "id": "Drops:fz1MOEpW6USYxmX-4DFB3g",
+    "source_table": "Drops",
+    "source_key": "fz1MOEpW6USYxmX-4DFB3g",
+    "name": "Plankton Siphoner 0.5%",
+    "slug": "plankton-siphoner-05",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 0.004200000000000001,
+      "crate": true,
+      "key": "fz1MOEpW6USYxmX-4DFB3g",
+      "artifactChance": 0,
+      "name": "Plankton Siphoner 0.5%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:pI8CwHx900quCOBeGcYicA",
+    "source_table": "Drops",
+    "source_key": "pI8CwHx900quCOBeGcYicA",
+    "name": "Plasma Torpedos 0.6%",
+    "slug": "plasma-torpedos-06",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 0.0063,
+      "crate": true,
+      "key": "pI8CwHx900quCOBeGcYicA",
+      "artifactChance": 0,
+      "name": "Plasma Torpedos 0.6%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:7E7LQzbzGEiFWLFYkA0WwA",
+    "source_table": "Drops",
+    "source_key": "7E7LQzbzGEiFWLFYkA0WwA",
+    "name": "Plasma Torpedos 100%",
+    "slug": "plasma-torpedos-100",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "7E7LQzbzGEiFWLFYkA0WwA",
+      "artifactChance": 0,
+      "name": "Plasma Torpedos 100%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:PgAJvJPZSUC6lN23vkHu9A",
+    "source_table": "Drops",
+    "source_key": "PgAJvJPZSUC6lN23vkHu9A",
+    "name": "Polyhedric Fabric",
+    "slug": "polyhedric-fabric",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "name": "Polyhedric Fabric",
+      "crate": false,
+      "key": "PgAJvJPZSUC6lN23vkHu9A",
+      "effect": "Mp2aVKXQcEupFN62UXYK8w",
+      "type": "drop",
+      "bitmap": "T2-mslTkxEmBgfoGV18QEA"
+    }
+  },
+  {
+    "id": "Drops:N1NXhIHTb0KE8OlbXg3B_w",
+    "source_table": "Drops",
+    "source_key": "N1NXhIHTb0KE8OlbXg3B_w",
+    "name": "Pvp Drop",
+    "slug": "pvp-drop",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "chance": 1,
+      "crate": true,
+      "key": "N1NXhIHTb0KE8OlbXg3B_w",
+      "artifactChance": 0,
+      "type": "drop",
+      "name": "Pvp Drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:zs9vLUVzaUSCzntmEJxRTg",
+    "source_table": "Drops",
+    "source_key": "zs9vLUVzaUSCzntmEJxRTg",
+    "name": "Queen Spit Gland 100%",
+    "slug": "queen-spit-gland-100",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "zs9vLUVzaUSCzntmEJxRTg",
+      "artifactChance": 0,
+      "name": "Queen Spit Gland 100%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:NFbeNUs2IUiy122reWxrDg",
+    "source_table": "Drops",
+    "source_key": "NFbeNUs2IUiy122reWxrDg",
+    "name": "Radiated Junk",
+    "slug": "radiated-junk",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "name": "Radiated Junk",
+      "crate": false,
+      "key": "NFbeNUs2IUiy122reWxrDg",
+      "effect": "TR_fJ0mdRkmd8LuFYlVcig",
+      "type": "drop",
+      "bitmap": "WNdl9FxKAUKMcnCR3pMrFg"
+    }
+  },
+  {
+    "id": "Drops:bDe4E9TvOE2Qkwdvfmkgmw",
+    "source_table": "Drops",
+    "source_key": "bDe4E9TvOE2Qkwdvfmkgmw",
+    "name": "Railgun 1%",
+    "slug": "railgun-1",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "name": "Railgun 1%",
+      "crate": false,
+      "key": "bDe4E9TvOE2Qkwdvfmkgmw",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:bgXwJC2ZB0ioZEgBRLSbYA",
+    "source_table": "Drops",
+    "source_key": "bgXwJC2ZB0ioZEgBRLSbYA",
+    "name": "Ram 5%",
+    "slug": "ram-5",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 0.050100000000000006,
+      "crate": true,
+      "key": "bgXwJC2ZB0ioZEgBRLSbYA",
+      "artifactChance": 0,
+      "name": "Ram 5%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:4jFmhrqwiked_oNEG4zQVQ",
+    "source_table": "Drops",
+    "source_key": "4jFmhrqwiked_oNEG4zQVQ",
+    "name": "Repair Nanobot Launcher 1%",
+    "slug": "repair-nanobot-launcher-1",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 0.0103,
+      "crate": true,
+      "key": "4jFmhrqwiked_oNEG4zQVQ",
+      "artifactChance": 0,
+      "name": "Repair Nanobot Launcher 1%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:nVRaPlI21E6qbWfMM0SmSw",
+    "source_table": "Drops",
+    "source_key": "nVRaPlI21E6qbWfMM0SmSw",
+    "name": "Shadow Flame 100%",
+    "slug": "shadow-flame-100",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "nVRaPlI21E6qbWfMM0SmSw",
+      "artifactChance": 0,
+      "name": "Shadow Flame 100%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:va54N6vLaE-CrLb8mFWTIQ",
+    "source_table": "Drops",
+    "source_key": "va54N6vLaE-CrLb8mFWTIQ",
+    "name": "Shield Pack",
+    "slug": "shield-pack",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "name": "Shield Pack",
+      "crate": false,
+      "key": "va54N6vLaE-CrLb8mFWTIQ",
+      "effect": "ARw-QivL5UyGKwxrV-46bw",
+      "type": "drop",
+      "bitmap": "I9aNn6naAU-YI6Xz5Fr_ZA"
+    }
+  },
+  {
+    "id": "Drops:-j9iRUSSNUeKZRKdEwV5TA",
+    "source_table": "Drops",
+    "source_key": "-j9iRUSSNUeKZRKdEwV5TA",
+    "name": "Shield Pack Large",
+    "slug": "shield-pack-large",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "name": "Shield Pack Large",
+      "crate": false,
+      "key": "-j9iRUSSNUeKZRKdEwV5TA",
+      "effect": "ARw-QivL5UyGKwxrV-46bw",
+      "type": "drop",
+      "bitmap": "VB64lDst-0GBhw1dOAphjQ"
+    }
+  },
+  {
+    "id": "Drops:X49B46cOvEOvJd7Z4zaZZQ",
+    "source_table": "Drops",
+    "source_key": "X49B46cOvEOvJd7Z4zaZZQ",
+    "name": "Shruiken 0.5%",
+    "slug": "shruiken-05",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 0.004200000000000001,
+      "crate": true,
+      "key": "X49B46cOvEOvJd7Z4zaZZQ",
+      "artifactChance": 0,
+      "name": "Shruiken 0.5%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:xGFIWp48zUGgsGSu7ZFI0w",
+    "source_table": "Drops",
+    "source_key": "xGFIWp48zUGgsGSu7ZFI0w",
+    "name": "Shuriken 100%",
+    "slug": "shuriken-100",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "xGFIWp48zUGgsGSu7ZFI0w",
+      "artifactChance": 0,
+      "name": "Shuriken 100%",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:rzB4ku2hgk-TvG6RxP8B4w",
+    "source_table": "Drops",
+    "source_key": "rzB4ku2hgk-TvG6RxP8B4w",
+    "name": "Simple Data Chip",
+    "slug": "simple-data-chip",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "crate": false,
+      "key": "rzB4ku2hgk-TvG6RxP8B4w",
+      "type": "drop",
+      "name": "Simple Data Chip",
+      "bitmap": "AxLoq4Dv6EOpIPm68sDY-Q"
+    }
+  },
+  {
+    "id": "Drops:b2pyD9QnRE29dZPif32evA",
+    "source_table": "Drops",
+    "source_key": "b2pyD9QnRE29dZPif32evA",
+    "name": "The Infestation: Part 9",
+    "slug": "the-infestation-part-9",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 600,
+      "key": "b2pyD9QnRE29dZPif32evA",
+      "xpMin": 500,
+      "fluxMin": 0,
+      "name": "The Infestation: Part 9",
+      "fluxMax": 3
+    }
+  },
+  {
+    "id": "Drops:-mqnNwOx_0SIRiv7HBwhCQ",
+    "source_table": "Drops",
+    "source_key": "-mqnNwOx_0SIRiv7HBwhCQ",
+    "name": "The infestation: Part 10",
+    "slug": "the-infestation-part-10",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "artifactChance": 0,
+      "chance": 0,
+      "xpMax": 1200,
+      "fluxMin": 30,
+      "name": "The infestation: Part 10",
+      "key": "-mqnNwOx_0SIRiv7HBwhCQ",
+      "table": "Drops",
+      "crate": false,
+      "xpMin": 1200,
+      "type": "mission",
+      "fluxMax": 35
+    }
+  },
+  {
+    "id": "Drops:tGZyRh8mjEmnYZZgE55r7A",
+    "source_table": "Drops",
+    "source_key": "tGZyRh8mjEmnYZZgE55r7A",
+    "name": "Toxic Waste",
+    "slug": "toxic-waste",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "type": "drop",
+      "chance": 1,
+      "key": "tGZyRh8mjEmnYZZgE55r7A",
+      "effect": "RyHB04KC8kW-Z2dYKl5hHw",
+      "name": "Toxic Waste",
+      "bitmap": "CRIijw0rKESZXITOek_hcA"
+    }
+  },
+  {
+    "id": "Drops:FhH9NmQcekSlNXH3fBfGWA",
+    "source_table": "Drops",
+    "source_key": "FhH9NmQcekSlNXH3fBfGWA",
+    "name": "Unknown Data 6",
+    "slug": "unknown-data-6",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 500,
+      "key": "FhH9NmQcekSlNXH3fBfGWA",
+      "xpMin": 500,
+      "fluxMin": 0,
+      "name": "Unknown Data 6",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:txqJoqHQ5EOa9tqVZQncgA",
+    "source_table": "Drops",
+    "source_key": "txqJoqHQ5EOa9tqVZQncgA",
+    "name": "Unknown Data 7",
+    "slug": "unknown-data-7",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 750,
+      "key": "txqJoqHQ5EOa9tqVZQncgA",
+      "xpMin": 750,
+      "fluxMin": 5,
+      "name": "Unknown Data 7",
+      "fluxMax": 8
+    }
+  },
+  {
+    "id": "Drops:89rgRTZAAEGEKbppslMIsw",
+    "source_table": "Drops",
+    "source_key": "89rgRTZAAEGEKbppslMIsw",
+    "name": "Unknown Data 8",
+    "slug": "unknown-data-8",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 800,
+      "key": "89rgRTZAAEGEKbppslMIsw",
+      "xpMin": 800,
+      "fluxMin": 0,
+      "name": "Unknown Data 8",
+      "fluxMax": 0
+    }
+  },
+  {
+    "id": "Drops:PVxG4GVbIEmAER3s-N0D_Q",
+    "source_table": "Drops",
+    "source_key": "PVxG4GVbIEmAER3s-N0D_Q",
+    "name": "Unknown Data 9",
+    "slug": "unknown-data-9",
+    "type": "mission",
+    "stats": {
+      "reputation": 0,
+      "table": "Drops",
+      "type": "mission",
+      "crate": false,
+      "xpMax": 1200,
+      "key": "PVxG4GVbIEmAER3s-N0D_Q",
+      "xpMin": 1200,
+      "fluxMin": 18,
+      "name": "Unknown Data 9",
+      "fluxMax": 20
+    }
+  },
+  {
+    "id": "Drops:OoTO7RyFPki_60i9uTstZA",
+    "source_table": "Drops",
+    "source_key": "OoTO7RyFPki_60i9uTstZA",
+    "name": "Wasp Bait",
+    "slug": "wasp-bait",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "OoTO7RyFPki_60i9uTstZA",
+      "artifactChance": 0,
+      "name": "Wasp Bait",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:lEiSuQEJzkW4fK3dXSi-DA",
+    "source_table": "Drops",
+    "source_key": "lEiSuQEJzkW4fK3dXSi-DA",
+    "name": "Weapon Crate Event",
+    "slug": "weapon-crate-event",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "lEiSuQEJzkW4fK3dXSi-DA",
+      "artifactChance": 0,
+      "name": "Weapon Crate Event",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:TPBjsxZRX0Gi-IaQtKeDNQ",
+    "source_table": "Drops",
+    "source_key": "TPBjsxZRX0Gi-IaQtKeDNQ",
+    "name": "Weapon Crate Event Small",
+    "slug": "weapon-crate-event-small",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "TPBjsxZRX0Gi-IaQtKeDNQ",
+      "artifactChance": 0,
+      "name": "Weapon Crate Event Small",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:xL_i6sVErEeNg4Tab0A7Sw",
+    "source_table": "Drops",
+    "source_key": "xL_i6sVErEeNg4Tab0A7Sw",
+    "name": "X-32",
+    "slug": "x-32",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "xL_i6sVErEeNg4Tab0A7Sw",
+      "artifactChance": 0,
+      "name": "X-32",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:KJfCG-Zzhk6aE5P7obX9zw",
+    "source_table": "Drops",
+    "source_key": "KJfCG-Zzhk6aE5P7obX9zw",
+    "name": "X-42",
+    "slug": "x-42",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "KJfCG-Zzhk6aE5P7obX9zw",
+      "artifactChance": 0,
+      "name": "X-42",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:H7nlun_fUEu1KNTrumAxSg",
+    "source_table": "Drops",
+    "source_key": "H7nlun_fUEu1KNTrumAxSg",
+    "name": "X-73",
+    "slug": "x-73",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "D4M790MLv02L0FqRrw-cFg",
+      "chance": 1,
+      "crate": true,
+      "key": "H7nlun_fUEu1KNTrumAxSg",
+      "artifactChance": 0,
+      "name": "X-73",
+      "type": "drop",
+      "bitmap": "DaGPTNAz7U6-DUSIe0XIHA"
+    }
+  },
+  {
+    "id": "Drops:IKPRHgAWkUyrCsnMX3gHcg",
+    "source_table": "Drops",
+    "source_key": "IKPRHgAWkUyrCsnMX3gHcg",
+    "name": "quad_damage",
+    "slug": "quad-damage",
+    "type": "drop",
+    "stats": {
+      "table": "Drops",
+      "effect": "ARw-QivL5UyGKwxrV-46bw",
+      "chance": 0,
+      "crate": false,
+      "key": "IKPRHgAWkUyrCsnMX3gHcg",
+      "artifactChance": 0,
+      "name": "quad_damage",
+      "type": "drop",
+      "bitmap": "ln6jN_uadUiLNES50FqRaQ"
+    }
+  },
+  {
+    "id": "Drops:clu7pQBfwkOtBOzHR3Igxw",
+    "source_table": "Drops",
+    "source_key": "clu7pQBfwkOtBOzHR3Igxw",
+    "name": "timed vors t1",
+    "slug": "timed-vors-t1",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 1,
+      "fluxMin": 1,
+      "name": "timed vors t1",
+      "xpMax": 7500,
+      "key": "clu7pQBfwkOtBOzHR3Igxw",
+      "table": "Drops",
+      "xpMin": 5000,
+      "artifactLevel": 90,
+      "type": "mission",
+      "fluxMax": 4
+    }
+  },
+  {
+    "id": "Drops:UnWQDHCCV0G6_71SXyiP7g",
+    "source_table": "Drops",
+    "source_key": "UnWQDHCCV0G6_71SXyiP7g",
+    "name": "timed vors t2",
+    "slug": "timed-vors-t2",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 1,
+      "fluxMin": 2,
+      "name": "timed vors t2",
+      "xpMax": 8000,
+      "key": "UnWQDHCCV0G6_71SXyiP7g",
+      "table": "Drops",
+      "xpMin": 4000,
+      "artifactLevel": 95,
+      "type": "mission",
+      "fluxMax": 4
+    }
+  },
+  {
+    "id": "Drops:F2ZPiyzfs0mA3FB_7qw-mA",
+    "source_table": "Drops",
+    "source_key": "F2ZPiyzfs0mA3FB_7qw-mA",
+    "name": "timed vors t3e",
+    "slug": "timed-vors-t3e",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 2,
+      "fluxMin": 5,
+      "name": "timed vors t3e",
+      "xpMax": 46000,
+      "key": "F2ZPiyzfs0mA3FB_7qw-mA",
+      "table": "Drops",
+      "xpMin": 25000,
+      "artifactLevel": 125,
+      "type": "mission",
+      "fluxMax": 12
+    }
+  },
+  {
+    "id": "Drops:kkCoDypwaUiQwqLC63-AZg",
+    "source_table": "Drops",
+    "source_key": "kkCoDypwaUiQwqLC63-AZg",
+    "name": "timed vors t4e",
+    "slug": "timed-vors-t4e",
+    "type": "mission",
+    "stats": {
+      "crate": false,
+      "artifactAmount": 3,
+      "fluxMin": 6,
+      "name": "timed vors t4e",
+      "xpMax": 54000,
+      "key": "kkCoDypwaUiQwqLC63-AZg",
+      "table": "Drops",
+      "xpMin": 42000,
+      "artifactLevel": 130,
+      "type": "mission",
+      "fluxMax": 16
+    }
+  }
+]

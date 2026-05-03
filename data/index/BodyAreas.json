@@ -1,0 +1,5034 @@
+[
+  {
+    "id": "BodyAreas:qCe1_oc8VkGpryk_xO1R4w",
+    "source_table": "BodyAreas",
+    "source_key": "qCe1_oc8VkGpryk_xO1R4w",
+    "name": "AF Command Center",
+    "slug": "af-command-center",
+    "type": null,
+    "stats": {
+      "rewardLevel": 28,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 319,
+      "size": 10,
+      "name": "AF Command Center",
+      "key": "qCe1_oc8VkGpryk_xO1R4w"
+    }
+  },
+  {
+    "id": "BodyAreas:PFuVrZQlG0yhXnvwQRrP3w",
+    "source_table": "BodyAreas",
+    "source_key": "PFuVrZQlG0yhXnvwQRrP3w",
+    "name": "AF Hospital",
+    "slug": "af-hospital",
+    "type": null,
+    "stats": {
+      "rewardLevel": 28,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 311,
+      "size": 10,
+      "name": "AF Hospital",
+      "key": "PFuVrZQlG0yhXnvwQRrP3w"
+    }
+  },
+  {
+    "id": "BodyAreas:0udP6BAAEUS3gzotBATeKQ",
+    "source_table": "BodyAreas",
+    "source_key": "0udP6BAAEUS3gzotBATeKQ",
+    "name": "AF Military Prison",
+    "slug": "af-military-prison",
+    "type": null,
+    "stats": {
+      "rewardLevel": 28,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 335,
+      "size": 10,
+      "name": "AF Military Prison",
+      "key": "0udP6BAAEUS3gzotBATeKQ"
+    }
+  },
+  {
+    "id": "BodyAreas:0IKAy1UAu06pjqs6mUVfGw",
+    "source_table": "BodyAreas",
+    "source_key": "0IKAy1UAu06pjqs6mUVfGw",
+    "name": "AF Trading Post",
+    "slug": "af-trading-post",
+    "type": null,
+    "stats": {
+      "rewardLevel": 28,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 327,
+      "size": 10,
+      "name": "AF Trading Post",
+      "key": "0IKAy1UAu06pjqs6mUVfGw"
+    }
+  },
+  {
+    "id": "BodyAreas:fknfkFPrG0OofeOh1EVSLA",
+    "source_table": "BodyAreas",
+    "source_key": "fknfkFPrG0OofeOh1EVSLA",
+    "name": "Abandoned Beetle Nest",
+    "slug": "abandoned-beetle-nest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 17,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 246,
+      "size": 6,
+      "name": "Abandoned Beetle Nest",
+      "key": "fknfkFPrG0OofeOh1EVSLA"
+    }
+  },
+  {
+    "id": "BodyAreas:2P5f-wgysEGhRitD6abMhQ",
+    "source_table": "BodyAreas",
+    "source_key": "2P5f-wgysEGhRitD6abMhQ",
+    "name": "Abandoned City",
+    "slug": "abandoned-city",
+    "type": null,
+    "stats": {
+      "rewardLevel": 7,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 102,
+      "size": 5,
+      "name": "Abandoned City",
+      "key": "2P5f-wgysEGhRitD6abMhQ"
+    }
+  },
+  {
+    "id": "BodyAreas:lhGdT1eVOkWpxByevdbZiQ",
+    "source_table": "BodyAreas",
+    "source_key": "lhGdT1eVOkWpxByevdbZiQ",
+    "name": "Abandoned Dreadbug Nest",
+    "slug": "abandoned-dreadbug-nest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 26,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 153,
+      "size": 1,
+      "name": "Abandoned Dreadbug Nest",
+      "key": "lhGdT1eVOkWpxByevdbZiQ"
+    }
+  },
+  {
+    "id": "BodyAreas:fm6xnXGnpUeSYQAtBwyS2Q",
+    "source_table": "BodyAreas",
+    "source_key": "fm6xnXGnpUeSYQAtBwyS2Q",
+    "name": "Abandoned Enemy Palace",
+    "slug": "abandoned-enemy-palace",
+    "type": null,
+    "stats": {
+      "rewardLevel": 8,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 32,
+      "size": 1,
+      "name": "Abandoned Enemy Palace",
+      "key": "fm6xnXGnpUeSYQAtBwyS2Q"
+    }
+  },
+  {
+    "id": "BodyAreas:g2FTQ3lR30u_eYrXkQjRDA",
+    "source_table": "BodyAreas",
+    "source_key": "g2FTQ3lR30u_eYrXkQjRDA",
+    "name": "Abandoned Fanatic Shelter",
+    "slug": "abandoned-fanatic-shelter",
+    "type": null,
+    "stats": {
+      "rewardLevel": 1,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 1,
+      "size": 1,
+      "name": "Abandoned Fanatic Shelter",
+      "key": "g2FTQ3lR30u_eYrXkQjRDA"
+    }
+  },
+  {
+    "id": "BodyAreas:7spF2TyzokCmpC4CBFmLig",
+    "source_table": "BodyAreas",
+    "source_key": "7spF2TyzokCmpC4CBFmLig",
+    "name": "Abandoned Fortress",
+    "slug": "abandoned-fortress",
+    "type": null,
+    "stats": {
+      "rewardLevel": 30,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 134,
+      "size": 1,
+      "name": "Abandoned Fortress",
+      "key": "7spF2TyzokCmpC4CBFmLig"
+    }
+  },
+  {
+    "id": "BodyAreas:W9Sw-4lxKkiV9BAj38MMnA",
+    "source_table": "BodyAreas",
+    "source_key": "W9Sw-4lxKkiV9BAj38MMnA",
+    "name": "Abandoned Mine",
+    "slug": "abandoned-mine",
+    "type": null,
+    "stats": {
+      "rewardLevel": 30,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 123,
+      "size": 1,
+      "name": "Abandoned Mine",
+      "key": "W9Sw-4lxKkiV9BAj38MMnA"
+    }
+  },
+  {
+    "id": "BodyAreas:9MmDyf2-_UCzSkWfnEv4EA",
+    "source_table": "BodyAreas",
+    "source_key": "9MmDyf2-_UCzSkWfnEv4EA",
+    "name": "Abandoned Mining Complex",
+    "slug": "abandoned-mining-complex",
+    "type": null,
+    "stats": {
+      "rewardLevel": 8,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 30,
+      "size": 1,
+      "name": "Abandoned Mining Complex",
+      "key": "9MmDyf2-_UCzSkWfnEv4EA"
+    }
+  },
+  {
+    "id": "BodyAreas:nREM9lmVwkqRyh_tZ67TuA",
+    "source_table": "BodyAreas",
+    "source_key": "nREM9lmVwkqRyh_tZ67TuA",
+    "name": "Abandoned Moth Nexus",
+    "slug": "abandoned-moth-nexus",
+    "type": null,
+    "stats": {
+      "rewardLevel": 19,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 276,
+      "size": 6,
+      "name": "Abandoned Moth Nexus",
+      "key": "nREM9lmVwkqRyh_tZ67TuA"
+    }
+  },
+  {
+    "id": "BodyAreas:yjiBBWvBj0COdNhXl73t1Q",
+    "source_table": "BodyAreas",
+    "source_key": "yjiBBWvBj0COdNhXl73t1Q",
+    "name": "Active Volcano",
+    "slug": "active-volcano",
+    "type": null,
+    "stats": {
+      "rewardLevel": 9,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 126,
+      "size": 4,
+      "name": "Active Volcano",
+      "key": "yjiBBWvBj0COdNhXl73t1Q"
+    }
+  },
+  {
+    "id": "BodyAreas:oZYQH8qVg06dHgc-THNRpA",
+    "source_table": "BodyAreas",
+    "source_key": "oZYQH8qVg06dHgc-THNRpA",
+    "name": "Advanced Civilization",
+    "slug": "advanced-civilization",
+    "type": null,
+    "stats": {
+      "rewardLevel": 10,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 131,
+      "size": 5,
+      "name": "Advanced Civilization",
+      "key": "oZYQH8qVg06dHgc-THNRpA"
+    }
+  },
+  {
+    "id": "BodyAreas:n-hMuw_mC0mJClHd8CsdQA",
+    "source_table": "BodyAreas",
+    "source_key": "n-hMuw_mC0mJClHd8CsdQA",
+    "name": "Aggressive Worms",
+    "slug": "aggressive-worms",
+    "type": null,
+    "stats": {
+      "rewardLevel": 3,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 53,
+      "size": 2,
+      "name": "Aggressive Worms",
+      "key": "n-hMuw_mC0mJClHd8CsdQA"
+    }
+  },
+  {
+    "id": "BodyAreas:J60DdrMaME-N7mYFRP0XeQ",
+    "source_table": "BodyAreas",
+    "source_key": "J60DdrMaME-N7mYFRP0XeQ",
+    "name": "Aggressive Worms",
+    "slug": "aggressive-worms-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 3,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 53,
+      "size": 2,
+      "name": "Aggressive Worms",
+      "key": "J60DdrMaME-N7mYFRP0XeQ"
+    }
+  },
+  {
+    "id": "BodyAreas:sthMQ-921Uaaul8je4nfDg",
+    "source_table": "BodyAreas",
+    "source_key": "sthMQ-921Uaaul8je4nfDg",
+    "name": "Agressive Barbarians",
+    "slug": "agressive-barbarians",
+    "type": null,
+    "stats": {
+      "rewardLevel": 4,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 55,
+      "size": 4,
+      "name": "Agressive Barbarians",
+      "key": "sthMQ-921Uaaul8je4nfDg"
+    }
+  },
+  {
+    "id": "BodyAreas:9-HeHp9tC0GCnGsZtxdIFQ",
+    "source_table": "BodyAreas",
+    "source_key": "9-HeHp9tC0GCnGsZtxdIFQ",
+    "name": "Agressive Living Slime",
+    "slug": "agressive-living-slime",
+    "type": null,
+    "stats": {
+      "rewardLevel": 9,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 111,
+      "size": 5,
+      "name": "Agressive Living Slime",
+      "key": "9-HeHp9tC0GCnGsZtxdIFQ"
+    }
+  },
+  {
+    "id": "BodyAreas:MfGvGebUS0Sc1RqN8tP-FQ",
+    "source_table": "BodyAreas",
+    "source_key": "MfGvGebUS0Sc1RqN8tP-FQ",
+    "name": "Amygdala Ooze",
+    "slug": "amygdala-ooze",
+    "type": null,
+    "stats": {
+      "rewardLevel": 26,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 291,
+      "size": 9,
+      "name": "Amygdala Ooze",
+      "key": "MfGvGebUS0Sc1RqN8tP-FQ"
+    }
+  },
+  {
+    "id": "BodyAreas:BtEWum7N506M01K3qoUbTA",
+    "source_table": "BodyAreas",
+    "source_key": "BtEWum7N506M01K3qoUbTA",
+    "name": "Ancient Civilization",
+    "slug": "ancient-civilization",
+    "type": null,
+    "stats": {
+      "rewardLevel": 6,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 83,
+      "size": 3,
+      "name": "Ancient Civilization",
+      "key": "BtEWum7N506M01K3qoUbTA"
+    }
+  },
+  {
+    "id": "BodyAreas:rQbGlZDWdEu6ujO5oCfmOQ",
+    "source_table": "BodyAreas",
+    "source_key": "rQbGlZDWdEu6ujO5oCfmOQ",
+    "name": "Ancient Ice Giant Civilization",
+    "slug": "ancient-ice-giant-civilization",
+    "type": null,
+    "stats": {
+      "rewardLevel": 19,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 229,
+      "size": 7,
+      "name": "Ancient Ice Giant Civilization",
+      "key": "rQbGlZDWdEu6ujO5oCfmOQ"
+    }
+  },
+  {
+    "id": "BodyAreas:NPzPRoAT5EOUh6wXHbXUNQ",
+    "source_table": "BodyAreas",
+    "source_key": "NPzPRoAT5EOUh6wXHbXUNQ",
+    "name": "Ancient Jungle",
+    "slug": "ancient-jungle",
+    "type": null,
+    "stats": {
+      "rewardLevel": 7,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 98,
+      "size": 4,
+      "name": "Ancient Jungle",
+      "key": "NPzPRoAT5EOUh6wXHbXUNQ"
+    }
+  },
+  {
+    "id": "BodyAreas:ckCK5d1aF0mFMJEsOlOCLw",
+    "source_table": "BodyAreas",
+    "source_key": "ckCK5d1aF0mFMJEsOlOCLw",
+    "name": "Ancient Jungle Tribes",
+    "slug": "ancient-jungle-tribes",
+    "type": null,
+    "stats": {
+      "rewardLevel": 8,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 104,
+      "size": 4,
+      "name": "Ancient Jungle Tribes",
+      "key": "ckCK5d1aF0mFMJEsOlOCLw"
+    }
+  },
+  {
+    "id": "BodyAreas:wQ9tANkeNkOZC3iPyre8Hw",
+    "source_table": "BodyAreas",
+    "source_key": "wQ9tANkeNkOZC3iPyre8Hw",
+    "name": "Ancient Mountains",
+    "slug": "ancient-mountains",
+    "type": null,
+    "stats": {
+      "rewardLevel": 3,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 58,
+      "size": 2,
+      "name": "Ancient Mountains",
+      "key": "wQ9tANkeNkOZC3iPyre8Hw"
+    }
+  },
+  {
+    "id": "BodyAreas:_P6pgdwtOk6WYsGxXHjZVw",
+    "source_table": "BodyAreas",
+    "source_key": "_P6pgdwtOk6WYsGxXHjZVw",
+    "name": "Ancient Ruins",
+    "slug": "ancient-ruins",
+    "type": null,
+    "stats": {
+      "rewardLevel": 8,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 111,
+      "size": 2,
+      "name": "Ancient Ruins",
+      "key": "_P6pgdwtOk6WYsGxXHjZVw"
+    }
+  },
+  {
+    "id": "BodyAreas:5XOlNOgrskCnunILRQ-BQQ",
+    "source_table": "BodyAreas",
+    "source_key": "5XOlNOgrskCnunILRQ-BQQ",
+    "name": "Ancient Worms",
+    "slug": "ancient-worms",
+    "type": null,
+    "stats": {
+      "rewardLevel": 6,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 89,
+      "size": 3,
+      "name": "Ancient Worms",
+      "key": "5XOlNOgrskCnunILRQ-BQQ"
+    }
+  },
+  {
+    "id": "BodyAreas:8E6zf6-plE6hzV34lYjtFQ",
+    "source_table": "BodyAreas",
+    "source_key": "8E6zf6-plE6hzV34lYjtFQ",
+    "name": "Assasins Guild",
+    "slug": "assasins-guild",
+    "type": null,
+    "stats": {
+      "rewardLevel": 3,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 39,
+      "size": 2,
+      "name": "Assasins Guild",
+      "key": "8E6zf6-plE6hzV34lYjtFQ"
+    }
+  },
+  {
+    "id": "BodyAreas:dXHqN06ghUyWaEzP9yokdw",
+    "source_table": "BodyAreas",
+    "source_key": "dXHqN06ghUyWaEzP9yokdw",
+    "name": "Barbarian Tribes",
+    "slug": "barbarian-tribes",
+    "type": null,
+    "stats": {
+      "rewardLevel": 1,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 34,
+      "size": 3,
+      "name": "Barbarian Tribes",
+      "key": "dXHqN06ghUyWaEzP9yokdw"
+    }
+  },
+  {
+    "id": "BodyAreas:ebdcTMLLvESg7c23u5i3JQ",
+    "source_table": "BodyAreas",
+    "source_key": "ebdcTMLLvESg7c23u5i3JQ",
+    "name": "Beetle Nest",
+    "slug": "beetle-nest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 16,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 179,
+      "size": 4,
+      "name": "Beetle Nest",
+      "key": "ebdcTMLLvESg7c23u5i3JQ"
+    }
+  },
+  {
+    "id": "BodyAreas:FUKaqR7qR02PIGP9bbCOWA",
+    "source_table": "BodyAreas",
+    "source_key": "FUKaqR7qR02PIGP9bbCOWA",
+    "name": "Beetle Nest",
+    "slug": "beetle-nest-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 25,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 305,
+      "size": 7,
+      "name": "Beetle Nest",
+      "key": "FUKaqR7qR02PIGP9bbCOWA"
+    }
+  },
+  {
+    "id": "BodyAreas:6NSpt3LxMESq4VIS1zCCSw",
+    "source_table": "BodyAreas",
+    "source_key": "6NSpt3LxMESq4VIS1zCCSw",
+    "name": "Besieged Pirate Outpost",
+    "slug": "besieged-pirate-outpost",
+    "type": null,
+    "stats": {
+      "rewardLevel": 12,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 120,
+      "size": 4,
+      "name": "Besieged Pirate Outpost",
+      "key": "6NSpt3LxMESq4VIS1zCCSw"
+    }
+  },
+  {
+    "id": "BodyAreas:cVZtPINeJkeWURSMrMGXFw",
+    "source_table": "BodyAreas",
+    "source_key": "cVZtPINeJkeWURSMrMGXFw",
+    "name": "Bionic Drones",
+    "slug": "bionic-drones",
+    "type": null,
+    "stats": {
+      "rewardLevel": 28,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 332,
+      "size": 10,
+      "name": "Bionic Drones",
+      "key": "cVZtPINeJkeWURSMrMGXFw"
+    }
+  },
+  {
+    "id": "BodyAreas:ROMcO6yCqEa-OLd7rJfn1A",
+    "source_table": "BodyAreas",
+    "source_key": "ROMcO6yCqEa-OLd7rJfn1A",
+    "name": "Bionic Processing Chamber",
+    "slug": "bionic-processing-chamber",
+    "type": null,
+    "stats": {
+      "rewardLevel": 28,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 365,
+      "size": 10,
+      "name": "Bionic Processing Chamber",
+      "key": "ROMcO6yCqEa-OLd7rJfn1A"
+    }
+  },
+  {
+    "id": "BodyAreas:jK39iqOGJEG-OoojFanDmw",
+    "source_table": "BodyAreas",
+    "source_key": "jK39iqOGJEG-OoojFanDmw",
+    "name": "Black Market",
+    "slug": "black-market",
+    "type": null,
+    "stats": {
+      "rewardLevel": 5,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 61,
+      "size": 1,
+      "name": "Black Market",
+      "key": "jK39iqOGJEG-OoojFanDmw"
+    }
+  },
+  {
+    "id": "BodyAreas:OGb2HTvg_0WRhjUxqqNsjw",
+    "source_table": "BodyAreas",
+    "source_key": "OGb2HTvg_0WRhjUxqqNsjw",
+    "name": "Blazing Desert",
+    "slug": "blazing-desert",
+    "type": null,
+    "stats": {
+      "rewardLevel": 16,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 238,
+      "size": 6,
+      "name": "Blazing Desert",
+      "key": "OGb2HTvg_0WRhjUxqqNsjw"
+    }
+  },
+  {
+    "id": "BodyAreas:2CL-TmH7pU-CQb6L7CLPuA",
+    "source_table": "BodyAreas",
+    "source_key": "2CL-TmH7pU-CQb6L7CLPuA",
+    "name": "Blood Nest",
+    "slug": "blood-nest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 22,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 254,
+      "size": 7,
+      "name": "Blood Nest",
+      "key": "2CL-TmH7pU-CQb6L7CLPuA"
+    }
+  },
+  {
+    "id": "BodyAreas:dP4Au65d60KDgCoIjc-t-w",
+    "source_table": "BodyAreas",
+    "source_key": "dP4Au65d60KDgCoIjc-t-w",
+    "name": "Bottomless Crevasses",
+    "slug": "bottomless-crevasses",
+    "type": null,
+    "stats": {
+      "rewardLevel": 16,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 226,
+      "size": 7,
+      "name": "Bottomless Crevasses",
+      "key": "dP4Au65d60KDgCoIjc-t-w"
+    }
+  },
+  {
+    "id": "BodyAreas:-TCJ6_jFQ0GvpNEn683tSA",
+    "source_table": "BodyAreas",
+    "source_key": "-TCJ6_jFQ0GvpNEn683tSA",
+    "name": "Bug Infested Jungle",
+    "slug": "bug-infested-jungle",
+    "type": null,
+    "stats": {
+      "rewardLevel": 19,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 243,
+      "size": 8,
+      "name": "Bug Infested Jungle",
+      "key": "-TCJ6_jFQ0GvpNEn683tSA"
+    }
+  },
+  {
+    "id": "BodyAreas:yQcwaDESP06IJ-riQleQSg",
+    "source_table": "BodyAreas",
+    "source_key": "yQcwaDESP06IJ-riQleQSg",
+    "name": "Bug Nest",
+    "slug": "bug-nest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 1,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 25,
+      "size": 1,
+      "name": "Bug Nest",
+      "key": "yQcwaDESP06IJ-riQleQSg"
+    }
+  },
+  {
+    "id": "BodyAreas:_wLHeQoQAkKqJBf1mrxznw",
+    "source_table": "BodyAreas",
+    "source_key": "_wLHeQoQAkKqJBf1mrxznw",
+    "name": "Bug Nest",
+    "slug": "bug-nest-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 11,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 131,
+      "size": 5,
+      "name": "Bug Nest",
+      "key": "_wLHeQoQAkKqJBf1mrxznw"
+    }
+  },
+  {
+    "id": "BodyAreas:lHwoAKUTOUikZqll9yHz1g",
+    "source_table": "BodyAreas",
+    "source_key": "lHwoAKUTOUikZqll9yHz1g",
+    "name": "Bugolian Market Place",
+    "slug": "bugolian-market-place",
+    "type": null,
+    "stats": {
+      "rewardLevel": 4,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 50,
+      "size": 4,
+      "name": "Bugolian Market Place",
+      "key": "lHwoAKUTOUikZqll9yHz1g"
+    }
+  },
+  {
+    "id": "BodyAreas:b84vjA_KakKgtwgtC7JtvA",
+    "source_table": "BodyAreas",
+    "source_key": "b84vjA_KakKgtwgtC7JtvA",
+    "name": "Cave System",
+    "slug": "cave-system",
+    "type": null,
+    "stats": {
+      "rewardLevel": 19,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 267,
+      "size": 3,
+      "name": "Cave System",
+      "key": "b84vjA_KakKgtwgtC7JtvA"
+    }
+  },
+  {
+    "id": "BodyAreas:n4x3zORE90OGKXpxSjSV0A",
+    "source_table": "BodyAreas",
+    "source_key": "n4x3zORE90OGKXpxSjSV0A",
+    "name": "Cave System",
+    "slug": "cave-system-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 2,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 38,
+      "size": 1,
+      "name": "Cave System",
+      "key": "n4x3zORE90OGKXpxSjSV0A"
+    }
+  },
+  {
+    "id": "BodyAreas:-I9dJlfw_0OZ8w8o8JrlOQ",
+    "source_table": "BodyAreas",
+    "source_key": "-I9dJlfw_0OZ8w8o8JrlOQ",
+    "name": "Civilized Frost Beetles",
+    "slug": "civilized-frost-beetles",
+    "type": null,
+    "stats": {
+      "rewardLevel": 9,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 126,
+      "size": 6,
+      "name": "Civilized Frost Beetles",
+      "key": "-I9dJlfw_0OZ8w8o8JrlOQ"
+    }
+  },
+  {
+    "id": "BodyAreas:tYaUdCkLdU6bond0R65r3w",
+    "source_table": "BodyAreas",
+    "source_key": "tYaUdCkLdU6bond0R65r3w",
+    "name": "Colossal Deamon Lord",
+    "slug": "colossal-deamon-lord",
+    "type": null,
+    "stats": {
+      "rewardLevel": 24,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 272,
+      "size": 8,
+      "name": "Colossal Deamon Lord",
+      "key": "tYaUdCkLdU6bond0R65r3w"
+    }
+  },
+  {
+    "id": "BodyAreas:ppjzJcMDVEu7h4-KTgCDHg",
+    "source_table": "BodyAreas",
+    "source_key": "ppjzJcMDVEu7h4-KTgCDHg",
+    "name": "Communicating Sponge",
+    "slug": "communicating-sponge",
+    "type": null,
+    "stats": {
+      "rewardLevel": 23,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 247,
+      "size": 6,
+      "name": "Communicating Sponge",
+      "key": "ppjzJcMDVEu7h4-KTgCDHg"
+    }
+  },
+  {
+    "id": "BodyAreas:I8EsF_MbkUSwbhrrYYlnWg",
+    "source_table": "BodyAreas",
+    "source_key": "I8EsF_MbkUSwbhrrYYlnWg",
+    "name": "Conduit Platform",
+    "slug": "conduit-platform",
+    "type": null,
+    "stats": {
+      "rewardLevel": 28,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 357,
+      "size": 10,
+      "name": "Conduit Platform",
+      "key": "I8EsF_MbkUSwbhrrYYlnWg"
+    }
+  },
+  {
+    "id": "BodyAreas:v051J5ZOyECotqo5f-RWlw",
+    "source_table": "BodyAreas",
+    "source_key": "v051J5ZOyECotqo5f-RWlw",
+    "name": "Confusing Ice Worms",
+    "slug": "confusing-ice-worms",
+    "type": null,
+    "stats": {
+      "rewardLevel": 3,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 51,
+      "size": 3,
+      "name": "Confusing Ice Worms",
+      "key": "v051J5ZOyECotqo5f-RWlw"
+    }
+  },
+  {
+    "id": "BodyAreas:biolbNvwhki2i8cOzMmWHQ",
+    "source_table": "BodyAreas",
+    "source_key": "biolbNvwhki2i8cOzMmWHQ",
+    "name": "Creepy Deamon Larva",
+    "slug": "creepy-deamon-larva",
+    "type": null,
+    "stats": {
+      "rewardLevel": 24,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 266,
+      "size": 6,
+      "name": "Creepy Deamon Larva",
+      "key": "biolbNvwhki2i8cOzMmWHQ"
+    }
+  },
+  {
+    "id": "BodyAreas:e37-uB0pgEycsyGCfI_nuQ",
+    "source_table": "BodyAreas",
+    "source_key": "e37-uB0pgEycsyGCfI_nuQ",
+    "name": "DMAT-90 Construction Facility",
+    "slug": "dmat-90-construction-facility",
+    "type": null,
+    "stats": {
+      "rewardLevel": 18,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 160,
+      "size": 4,
+      "name": "DMAT-90 Construction Facility",
+      "key": "e37-uB0pgEycsyGCfI_nuQ"
+    }
+  },
+  {
+    "id": "BodyAreas:2oxgNOF7ck-YUHMK60e4cA",
+    "source_table": "BodyAreas",
+    "source_key": "2oxgNOF7ck-YUHMK60e4cA",
+    "name": "Deadman's Desert",
+    "slug": "deadmans-desert",
+    "type": null,
+    "stats": {
+      "rewardLevel": 20,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 265,
+      "size": 10,
+      "name": "Deadman's Desert",
+      "key": "2oxgNOF7ck-YUHMK60e4cA"
+    }
+  },
+  {
+    "id": "BodyAreas:xMyFMVwNqU6WaLCfrk5y8w",
+    "source_table": "BodyAreas",
+    "source_key": "xMyFMVwNqU6WaLCfrk5y8w",
+    "name": "Dense Jungle",
+    "slug": "dense-jungle",
+    "type": null,
+    "stats": {
+      "rewardLevel": 18,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 252,
+      "size": 4,
+      "name": "Dense Jungle",
+      "key": "xMyFMVwNqU6WaLCfrk5y8w"
+    }
+  },
+  {
+    "id": "BodyAreas:3o23zFRkrUC0CohKz3-PWA",
+    "source_table": "BodyAreas",
+    "source_key": "3o23zFRkrUC0CohKz3-PWA",
+    "name": "Dense Rainforest",
+    "slug": "dense-rainforest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 1,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 36,
+      "size": 3,
+      "name": "Dense Rainforest",
+      "key": "3o23zFRkrUC0CohKz3-PWA"
+    }
+  },
+  {
+    "id": "BodyAreas:FmlQJXHRakWLaaPo2PGYBQ",
+    "source_table": "BodyAreas",
+    "source_key": "FmlQJXHRakWLaaPo2PGYBQ",
+    "name": "Dense Spiky Rainforest",
+    "slug": "dense-spiky-rainforest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 16,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 220,
+      "size": 6,
+      "name": "Dense Spiky Rainforest",
+      "key": "FmlQJXHRakWLaaPo2PGYBQ"
+    }
+  },
+  {
+    "id": "BodyAreas:DVwYGrXSD06CSltzB44s3g",
+    "source_table": "BodyAreas",
+    "source_key": "DVwYGrXSD06CSltzB44s3g",
+    "name": "Desert",
+    "slug": "desert",
+    "type": null,
+    "stats": {
+      "rewardLevel": 3,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 51,
+      "size": 3,
+      "name": "Desert",
+      "key": "DVwYGrXSD06CSltzB44s3g"
+    }
+  },
+  {
+    "id": "BodyAreas:jWX0F_OLZ0OeCgLGuBCXuQ",
+    "source_table": "BodyAreas",
+    "source_key": "jWX0F_OLZ0OeCgLGuBCXuQ",
+    "name": "Diplomatic Acid Clouds",
+    "slug": "diplomatic-acid-clouds",
+    "type": null,
+    "stats": {
+      "rewardLevel": 17,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 202,
+      "size": 6,
+      "name": "Diplomatic Acid Clouds",
+      "key": "jWX0F_OLZ0OeCgLGuBCXuQ"
+    }
+  },
+  {
+    "id": "BodyAreas:WaIAKIHK1UuX_hVG0IQG8A",
+    "source_table": "BodyAreas",
+    "source_key": "WaIAKIHK1UuX_hVG0IQG8A",
+    "name": "Djungle Canyon",
+    "slug": "djungle-canyon",
+    "type": null,
+    "stats": {
+      "rewardLevel": 24,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 303,
+      "size": 8,
+      "name": "Djungle Canyon",
+      "key": "WaIAKIHK1UuX_hVG0IQG8A"
+    }
+  },
+  {
+    "id": "BodyAreas:U_7cGFLEuEGnFrwp4KY38A",
+    "source_table": "BodyAreas",
+    "source_key": "U_7cGFLEuEGnFrwp4KY38A",
+    "name": "Dread Moth Nest",
+    "slug": "dread-moth-nest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 27,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 330,
+      "size": 9,
+      "name": "Dread Moth Nest",
+      "key": "U_7cGFLEuEGnFrwp4KY38A"
+    }
+  },
+  {
+    "id": "BodyAreas:ujlZKIrTGEeQxByCg9s5kw",
+    "source_table": "BodyAreas",
+    "source_key": "ujlZKIrTGEeQxByCg9s5kw",
+    "name": "Dread Swamp",
+    "slug": "dread-swamp",
+    "type": null,
+    "stats": {
+      "rewardLevel": 27,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 344,
+      "size": 9,
+      "name": "Dread Swamp",
+      "key": "ujlZKIrTGEeQxByCg9s5kw"
+    }
+  },
+  {
+    "id": "BodyAreas:16m2D3sGUUSMxNJmH0O9qg",
+    "source_table": "BodyAreas",
+    "source_key": "16m2D3sGUUSMxNJmH0O9qg",
+    "name": "Dreadqueen Nest",
+    "slug": "dreadqueen-nest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 26,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 142,
+      "size": 1,
+      "name": "Dreadqueen Nest",
+      "key": "16m2D3sGUUSMxNJmH0O9qg"
+    }
+  },
+  {
+    "id": "BodyAreas:Q-STBmtd3keZ_H_emRzIQg",
+    "source_table": "BodyAreas",
+    "source_key": "Q-STBmtd3keZ_H_emRzIQg",
+    "name": "Empty Enemy Fortress",
+    "slug": "empty-enemy-fortress",
+    "type": null,
+    "stats": {
+      "rewardLevel": 8,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 33,
+      "size": 1,
+      "name": "Empty Enemy Fortress",
+      "key": "Q-STBmtd3keZ_H_emRzIQg"
+    }
+  },
+  {
+    "id": "BodyAreas:7_Fa_y-JoUKyHbiUCUhzuA",
+    "source_table": "BodyAreas",
+    "source_key": "7_Fa_y-JoUKyHbiUCUhzuA",
+    "name": "Empty Underground Bugnest",
+    "slug": "empty-underground-bugnest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 1,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 37,
+      "size": 1,
+      "name": "Empty Underground Bugnest",
+      "key": "7_Fa_y-JoUKyHbiUCUhzuA"
+    }
+  },
+  {
+    "id": "BodyAreas:nmo3tOO4Y0iw2Fjsmv3QNw",
+    "source_table": "BodyAreas",
+    "source_key": "nmo3tOO4Y0iw2Fjsmv3QNw",
+    "name": "Endless Ice Caves",
+    "slug": "endless-ice-caves",
+    "type": null,
+    "stats": {
+      "rewardLevel": 11,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 112,
+      "size": 10,
+      "name": "Endless Ice Caves",
+      "key": "nmo3tOO4Y0iw2Fjsmv3QNw"
+    }
+  },
+  {
+    "id": "BodyAreas:-D1b5qzt206PhJ_81CaElg",
+    "source_table": "BodyAreas",
+    "source_key": "-D1b5qzt206PhJ_81CaElg",
+    "name": "Endless Lava Fields",
+    "slug": "endless-lava-fields",
+    "type": null,
+    "stats": {
+      "rewardLevel": 10,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 128,
+      "size": 9,
+      "name": "Endless Lava Fields",
+      "key": "-D1b5qzt206PhJ_81CaElg"
+    }
+  },
+  {
+    "id": "BodyAreas:9wZjfuvibkSqcwwC7bhXhQ",
+    "source_table": "BodyAreas",
+    "source_key": "9wZjfuvibkSqcwwC7bhXhQ",
+    "name": "Endless Moth Nest",
+    "slug": "endless-moth-nest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 14,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 173,
+      "size": 10,
+      "name": "Endless Moth Nest",
+      "key": "9wZjfuvibkSqcwwC7bhXhQ"
+    }
+  },
+  {
+    "id": "BodyAreas:64XozvLrG0CulOu_vvixIQ",
+    "source_table": "BodyAreas",
+    "source_key": "64XozvLrG0CulOu_vvixIQ",
+    "name": "Endless Plains",
+    "slug": "endless-plains",
+    "type": null,
+    "stats": {
+      "rewardLevel": 3,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 46,
+      "size": 10,
+      "name": "Endless Plains",
+      "key": "64XozvLrG0CulOu_vvixIQ"
+    }
+  },
+  {
+    "id": "BodyAreas:Ho723q_6m0C2148AWJGWBw",
+    "source_table": "BodyAreas",
+    "source_key": "Ho723q_6m0C2148AWJGWBw",
+    "name": "Endless Spiky Plains",
+    "slug": "endless-spiky-plains",
+    "type": null,
+    "stats": {
+      "rewardLevel": 11,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 156,
+      "size": 10,
+      "name": "Endless Spiky Plains",
+      "key": "Ho723q_6m0C2148AWJGWBw"
+    }
+  },
+  {
+    "id": "BodyAreas:TuQ_iKGBzEu5NCqgnw-XGA",
+    "source_table": "BodyAreas",
+    "source_key": "TuQ_iKGBzEu5NCqgnw-XGA",
+    "name": "Enemy Fortification",
+    "slug": "enemy-fortification",
+    "type": null,
+    "stats": {
+      "rewardLevel": 50,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 276,
+      "size": 1,
+      "name": "Enemy Fortification",
+      "key": "TuQ_iKGBzEu5NCqgnw-XGA"
+    }
+  },
+  {
+    "id": "BodyAreas:NQTLMcwpOE6mGp6eALkEPg",
+    "source_table": "BodyAreas",
+    "source_key": "NQTLMcwpOE6mGp6eALkEPg",
+    "name": "Enemy Fortifications",
+    "slug": "enemy-fortifications",
+    "type": null,
+    "stats": {
+      "rewardLevel": 10,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 116,
+      "size": 4,
+      "name": "Enemy Fortifications",
+      "key": "NQTLMcwpOE6mGp6eALkEPg"
+    }
+  },
+  {
+    "id": "BodyAreas:EFoG7tP8VUCuw7jWf24hvw",
+    "source_table": "BodyAreas",
+    "source_key": "EFoG7tP8VUCuw7jWf24hvw",
+    "name": "Enemy Fortress",
+    "slug": "enemy-fortress",
+    "type": null,
+    "stats": {
+      "rewardLevel": 18,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 158,
+      "size": 10,
+      "name": "Enemy Fortress",
+      "key": "EFoG7tP8VUCuw7jWf24hvw"
+    }
+  },
+  {
+    "id": "BodyAreas:0DpIWtMk8E2k99aUpQWMxw",
+    "source_table": "BodyAreas",
+    "source_key": "0DpIWtMk8E2k99aUpQWMxw",
+    "name": "Enemy Fortress",
+    "slug": "enemy-fortress-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 50,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 276,
+      "size": 1,
+      "name": "Enemy Fortress",
+      "key": "0DpIWtMk8E2k99aUpQWMxw"
+    }
+  },
+  {
+    "id": "BodyAreas:JtqBeSqAEUKVYxEFOwa8Ag",
+    "source_table": "BodyAreas",
+    "source_key": "JtqBeSqAEUKVYxEFOwa8Ag",
+    "name": "Enemy Stronghold",
+    "slug": "enemy-stronghold",
+    "type": null,
+    "stats": {
+      "rewardLevel": 9,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 121,
+      "size": 4,
+      "name": "Enemy Stronghold",
+      "key": "JtqBeSqAEUKVYxEFOwa8Ag"
+    }
+  },
+  {
+    "id": "BodyAreas:DRNg6aeKqUaiygZ8flzHjA",
+    "source_table": "BodyAreas",
+    "source_key": "DRNg6aeKqUaiygZ8flzHjA",
+    "name": "Fire Beetles",
+    "slug": "fire-beetles",
+    "type": null,
+    "stats": {
+      "rewardLevel": 5,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 75,
+      "size": 6,
+      "name": "Fire Beetles",
+      "key": "DRNg6aeKqUaiygZ8flzHjA"
+    }
+  },
+  {
+    "id": "BodyAreas:6eYBWwDy_0K6xIXVPJzLqA",
+    "source_table": "BodyAreas",
+    "source_key": "6eYBWwDy_0K6xIXVPJzLqA",
+    "name": "Fire Moth Hills",
+    "slug": "fire-moth-hills",
+    "type": null,
+    "stats": {
+      "rewardLevel": 23,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 292,
+      "size": 6,
+      "name": "Fire Moth Hills",
+      "key": "6eYBWwDy_0K6xIXVPJzLqA"
+    }
+  },
+  {
+    "id": "BodyAreas:DdelzGelLEGp7ks_qlmn1g",
+    "source_table": "BodyAreas",
+    "source_key": "DdelzGelLEGp7ks_qlmn1g",
+    "name": "Forest of Blades",
+    "slug": "forest-of-blades",
+    "type": null,
+    "stats": {
+      "rewardLevel": 13,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 182,
+      "size": 6,
+      "name": "Forest of Blades",
+      "key": "DdelzGelLEGp7ks_qlmn1g"
+    }
+  },
+  {
+    "id": "BodyAreas:bsgaU1hYdEOHQrbg3RoCGA",
+    "source_table": "BodyAreas",
+    "source_key": "bsgaU1hYdEOHQrbg3RoCGA",
+    "name": "Forest of thorns",
+    "slug": "forest-of-thorns",
+    "type": null,
+    "stats": {
+      "rewardLevel": 12,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 231,
+      "size": 8,
+      "name": "Forest of thorns",
+      "key": "bsgaU1hYdEOHQrbg3RoCGA"
+    }
+  },
+  {
+    "id": "BodyAreas:EVJDc7k-60-7l4PRqvTBGg",
+    "source_table": "BodyAreas",
+    "source_key": "EVJDc7k-60-7l4PRqvTBGg",
+    "name": "Free Trade Zone",
+    "slug": "free-trade-zone",
+    "type": null,
+    "stats": {
+      "rewardLevel": 36,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 397,
+      "size": 10,
+      "name": "Free Trade Zone",
+      "key": "EVJDc7k-60-7l4PRqvTBGg"
+    }
+  },
+  {
+    "id": "BodyAreas:jyii6-lDKEa_M1TujZG6HA",
+    "source_table": "BodyAreas",
+    "source_key": "jyii6-lDKEa_M1TujZG6HA",
+    "name": "Friendly Living Flames",
+    "slug": "friendly-living-flames",
+    "type": null,
+    "stats": {
+      "rewardLevel": 4,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 65,
+      "size": 4,
+      "name": "Friendly Living Flames",
+      "key": "jyii6-lDKEa_M1TujZG6HA"
+    }
+  },
+  {
+    "id": "BodyAreas:CGeANDH7n0mDI81jti7qrw",
+    "source_table": "BodyAreas",
+    "source_key": "CGeANDH7n0mDI81jti7qrw",
+    "name": "Frost Beetles",
+    "slug": "frost-beetles",
+    "type": null,
+    "stats": {
+      "rewardLevel": 4,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 60,
+      "size": 4,
+      "name": "Frost Beetles",
+      "key": "CGeANDH7n0mDI81jti7qrw"
+    }
+  },
+  {
+    "id": "BodyAreas:gmWOvaX3UUuGQwEMjl08Hw",
+    "source_table": "BodyAreas",
+    "source_key": "gmWOvaX3UUuGQwEMjl08Hw",
+    "name": "Frozen Abyss",
+    "slug": "frozen-abyss",
+    "type": null,
+    "stats": {
+      "rewardLevel": 9,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 131,
+      "size": 3,
+      "name": "Frozen Abyss",
+      "key": "gmWOvaX3UUuGQwEMjl08Hw"
+    }
+  },
+  {
+    "id": "BodyAreas:40qs0OzUX021j_KZEspMaQ",
+    "source_table": "BodyAreas",
+    "source_key": "40qs0OzUX021j_KZEspMaQ",
+    "name": "Frozen Desert",
+    "slug": "frozen-desert",
+    "type": null,
+    "stats": {
+      "rewardLevel": 6,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 90,
+      "size": 3,
+      "name": "Frozen Desert",
+      "key": "40qs0OzUX021j_KZEspMaQ"
+    }
+  },
+  {
+    "id": "BodyAreas:1qxKzlrU1US7ZvFv3eptYw",
+    "source_table": "BodyAreas",
+    "source_key": "1qxKzlrU1US7ZvFv3eptYw",
+    "name": "Frozen Forest",
+    "slug": "frozen-forest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 11,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 144,
+      "size": 4,
+      "name": "Frozen Forest",
+      "key": "1qxKzlrU1US7ZvFv3eptYw"
+    }
+  },
+  {
+    "id": "BodyAreas:hcRzLc6M4Eaa7pCNMJtyWQ",
+    "source_table": "BodyAreas",
+    "source_key": "hcRzLc6M4Eaa7pCNMJtyWQ",
+    "name": "Frozen Sea",
+    "slug": "frozen-sea",
+    "type": null,
+    "stats": {
+      "rewardLevel": 3,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 54,
+      "size": 3,
+      "name": "Frozen Sea",
+      "key": "hcRzLc6M4Eaa7pCNMJtyWQ"
+    }
+  },
+  {
+    "id": "BodyAreas:VmR24gM-V0WL0tOGWtTuZg",
+    "source_table": "BodyAreas",
+    "source_key": "VmR24gM-V0WL0tOGWtTuZg",
+    "name": "Frozen Wastelands",
+    "slug": "frozen-wastelands",
+    "type": null,
+    "stats": {
+      "rewardLevel": 4,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 61,
+      "size": 3,
+      "name": "Frozen Wastelands",
+      "key": "VmR24gM-V0WL0tOGWtTuZg"
+    }
+  },
+  {
+    "id": "BodyAreas:yGhJGqNii0OrZX9o1xG6gA",
+    "source_table": "BodyAreas",
+    "source_key": "yGhJGqNii0OrZX9o1xG6gA",
+    "name": "Frozen Wastelands",
+    "slug": "frozen-wastelands-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 4,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 61,
+      "size": 3,
+      "name": "Frozen Wastelands",
+      "key": "yGhJGqNii0OrZX9o1xG6gA"
+    }
+  },
+  {
+    "id": "BodyAreas:WGTX3Mu6LESrfjy9IDKnnA",
+    "source_table": "BodyAreas",
+    "source_key": "WGTX3Mu6LESrfjy9IDKnnA",
+    "name": "Giant Moluscian Forest",
+    "slug": "giant-moluscian-forest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 26,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 322,
+      "size": 9,
+      "name": "Giant Moluscian Forest",
+      "key": "WGTX3Mu6LESrfjy9IDKnnA"
+    }
+  },
+  {
+    "id": "BodyAreas:9YlJOdQxuE-GojL0lo-LQg",
+    "source_table": "BodyAreas",
+    "source_key": "9YlJOdQxuE-GojL0lo-LQg",
+    "name": "Giant Moth Nest",
+    "slug": "giant-moth-nest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 11,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 126,
+      "size": 7,
+      "name": "Giant Moth Nest",
+      "key": "9YlJOdQxuE-GojL0lo-LQg"
+    }
+  },
+  {
+    "id": "BodyAreas:JyUEUyppNUKvMph9U4g2Dg",
+    "source_table": "BodyAreas",
+    "source_key": "JyUEUyppNUKvMph9U4g2Dg",
+    "name": "Gigantic Acid Swamp",
+    "slug": "gigantic-acid-swamp",
+    "type": null,
+    "stats": {
+      "rewardLevel": 22,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 226,
+      "size": 10,
+      "name": "Gigantic Acid Swamp",
+      "key": "JyUEUyppNUKvMph9U4g2Dg"
+    }
+  },
+  {
+    "id": "BodyAreas:Wz4n1LEmjUmSXcuefdN7tw",
+    "source_table": "BodyAreas",
+    "source_key": "Wz4n1LEmjUmSXcuefdN7tw",
+    "name": "Gigantic Bug Nest",
+    "slug": "gigantic-bug-nest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 4,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 62,
+      "size": 10,
+      "name": "Gigantic Bug Nest",
+      "key": "Wz4n1LEmjUmSXcuefdN7tw"
+    }
+  },
+  {
+    "id": "BodyAreas:CHrHjeAH-kCViCX1Utizjg",
+    "source_table": "BodyAreas",
+    "source_key": "CHrHjeAH-kCViCX1Utizjg",
+    "name": "Gigantic Bug Nest",
+    "slug": "gigantic-bug-nest-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 13,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 139,
+      "size": 10,
+      "name": "Gigantic Bug Nest",
+      "key": "CHrHjeAH-kCViCX1Utizjg"
+    }
+  },
+  {
+    "id": "BodyAreas:wr6K9nOxNUqco0-xM6iSng",
+    "source_table": "BodyAreas",
+    "source_key": "wr6K9nOxNUqco0-xM6iSng",
+    "name": "Gigantic Desert",
+    "slug": "gigantic-desert",
+    "type": null,
+    "stats": {
+      "rewardLevel": 10,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 139,
+      "size": 5,
+      "name": "Gigantic Desert",
+      "key": "wr6K9nOxNUqco0-xM6iSng"
+    }
+  },
+  {
+    "id": "BodyAreas:gDElGWd9TkewqjwpS9Vzww",
+    "source_table": "BodyAreas",
+    "source_key": "gDElGWd9TkewqjwpS9Vzww",
+    "name": "Gigantic Tundra",
+    "slug": "gigantic-tundra",
+    "type": null,
+    "stats": {
+      "rewardLevel": 5,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 71,
+      "size": 9,
+      "name": "Gigantic Tundra",
+      "key": "gDElGWd9TkewqjwpS9Vzww"
+    }
+  },
+  {
+    "id": "BodyAreas:mNB1mpXy0UCTKHDRa0xwhQ",
+    "source_table": "BodyAreas",
+    "source_key": "mNB1mpXy0UCTKHDRa0xwhQ",
+    "name": "Glog Pit",
+    "slug": "glog-pit",
+    "type": null,
+    "stats": {
+      "rewardLevel": 25,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 264,
+      "size": 7,
+      "name": "Glog Pit",
+      "key": "mNB1mpXy0UCTKHDRa0xwhQ"
+    }
+  },
+  {
+    "id": "BodyAreas:KfXOD5zcsEqwH9ULjMhxfA",
+    "source_table": "BodyAreas",
+    "source_key": "KfXOD5zcsEqwH9ULjMhxfA",
+    "name": "Gloomy Ancient Jungle",
+    "slug": "gloomy-ancient-jungle",
+    "type": null,
+    "stats": {
+      "rewardLevel": 19,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 271,
+      "size": 5,
+      "name": "Gloomy Ancient Jungle",
+      "key": "KfXOD5zcsEqwH9ULjMhxfA"
+    }
+  },
+  {
+    "id": "BodyAreas:dOPhBlJ1bEW69I61uvB3HQ",
+    "source_table": "BodyAreas",
+    "source_key": "dOPhBlJ1bEW69I61uvB3HQ",
+    "name": "Golgata Moth Hive",
+    "slug": "golgata-moth-hive",
+    "type": null,
+    "stats": {
+      "rewardLevel": 26,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 298,
+      "size": 8,
+      "name": "Golgata Moth Hive",
+      "key": "dOPhBlJ1bEW69I61uvB3HQ"
+    }
+  },
+  {
+    "id": "BodyAreas:fLZdw7p25E2dLG76nGrHdQ",
+    "source_table": "BodyAreas",
+    "source_key": "fLZdw7p25E2dLG76nGrHdQ",
+    "name": "Golgata Prison",
+    "slug": "golgata-prison",
+    "type": null,
+    "stats": {
+      "rewardLevel": 25,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 284,
+      "size": 7,
+      "name": "Golgata Prison",
+      "key": "fLZdw7p25E2dLG76nGrHdQ"
+    }
+  },
+  {
+    "id": "BodyAreas:mTI_ADidh0-HlDMozmskzQ",
+    "source_table": "BodyAreas",
+    "source_key": "mTI_ADidh0-HlDMozmskzQ",
+    "name": "Great Plains",
+    "slug": "great-plains",
+    "type": null,
+    "stats": {
+      "rewardLevel": 1,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 34,
+      "size": 2,
+      "name": "Great Plains",
+      "key": "mTI_ADidh0-HlDMozmskzQ"
+    }
+  },
+  {
+    "id": "BodyAreas:bqNoAicNX0e1EH5kzHpl3A",
+    "source_table": "BodyAreas",
+    "source_key": "bqNoAicNX0e1EH5kzHpl3A",
+    "name": "Hell Pits",
+    "slug": "hell-pits",
+    "type": null,
+    "stats": {
+      "rewardLevel": 24,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 298,
+      "size": 6,
+      "name": "Hell Pits",
+      "key": "bqNoAicNX0e1EH5kzHpl3A"
+    }
+  },
+  {
+    "id": "BodyAreas:jhDp8PRf3EGBOB8nDbfl8Q",
+    "source_table": "BodyAreas",
+    "source_key": "jhDp8PRf3EGBOB8nDbfl8Q",
+    "name": "Hidden Advanced Civilization",
+    "slug": "hidden-advanced-civilization",
+    "type": null,
+    "stats": {
+      "rewardLevel": 16,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 178,
+      "size": 4,
+      "name": "Hidden Advanced Civilization",
+      "key": "jhDp8PRf3EGBOB8nDbfl8Q"
+    }
+  },
+  {
+    "id": "BodyAreas:aHJrpwqhJ0SxglQO8mvTgg",
+    "source_table": "BodyAreas",
+    "source_key": "aHJrpwqhJ0SxglQO8mvTgg",
+    "name": "Hidden Ancient Civilization",
+    "slug": "hidden-ancient-civilization",
+    "type": null,
+    "stats": {
+      "rewardLevel": 9,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 117,
+      "size": 4,
+      "name": "Hidden Ancient Civilization",
+      "key": "aHJrpwqhJ0SxglQO8mvTgg"
+    }
+  },
+  {
+    "id": "BodyAreas:WVOWgppUoEOpC2oNA1L63Q",
+    "source_table": "BodyAreas",
+    "source_key": "WVOWgppUoEOpC2oNA1L63Q",
+    "name": "Hidden Blackmarket",
+    "slug": "hidden-blackmarket",
+    "type": null,
+    "stats": {
+      "rewardLevel": 11,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 108,
+      "size": 10,
+      "name": "Hidden Blackmarket",
+      "key": "WVOWgppUoEOpC2oNA1L63Q"
+    }
+  },
+  {
+    "id": "BodyAreas:tGU4yOVjREyUKjrmw3hwRQ",
+    "source_table": "BodyAreas",
+    "source_key": "tGU4yOVjREyUKjrmw3hwRQ",
+    "name": "Hidden Treasure Cave",
+    "slug": "hidden-treasure-cave",
+    "type": null,
+    "stats": {
+      "rewardLevel": 12,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 39,
+      "size": 1,
+      "name": "Hidden Treasure Cave",
+      "key": "tGU4yOVjREyUKjrmw3hwRQ"
+    }
+  },
+  {
+    "id": "BodyAreas:L441pyAu4E2qjMKuRWHZ6w",
+    "source_table": "BodyAreas",
+    "source_key": "L441pyAu4E2qjMKuRWHZ6w",
+    "name": "Hidden Undeground Nexus",
+    "slug": "hidden-undeground-nexus",
+    "type": null,
+    "stats": {
+      "rewardLevel": 20,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 121,
+      "size": 4,
+      "name": "Hidden Undeground Nexus",
+      "key": "L441pyAu4E2qjMKuRWHZ6w"
+    }
+  },
+  {
+    "id": "BodyAreas:4WMvUv7GgEWVu4pWk7bz6w",
+    "source_table": "BodyAreas",
+    "source_key": "4WMvUv7GgEWVu4pWk7bz6w",
+    "name": "Hostile Brain Vermin",
+    "slug": "hostile-brain-vermin",
+    "type": null,
+    "stats": {
+      "rewardLevel": 26,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 277,
+      "size": 9,
+      "name": "Hostile Brain Vermin",
+      "key": "4WMvUv7GgEWVu4pWk7bz6w"
+    }
+  },
+  {
+    "id": "BodyAreas:A0g1Q_e1R0SZjrzHbu41uQ",
+    "source_table": "BodyAreas",
+    "source_key": "A0g1Q_e1R0SZjrzHbu41uQ",
+    "name": "Hostile Gamma Brains",
+    "slug": "hostile-gamma-brains",
+    "type": null,
+    "stats": {
+      "rewardLevel": 23,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 261,
+      "size": 6,
+      "name": "Hostile Gamma Brains",
+      "key": "A0g1Q_e1R0SZjrzHbu41uQ"
+    }
+  },
+  {
+    "id": "BodyAreas:tcbkOwFcVECmIiNMBvMbDw",
+    "source_table": "BodyAreas",
+    "source_key": "tcbkOwFcVECmIiNMBvMbDw",
+    "name": "Hostile Irradiated Blobbs",
+    "slug": "hostile-irradiated-blobbs",
+    "type": null,
+    "stats": {
+      "rewardLevel": 35,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 431,
+      "size": 10,
+      "name": "Hostile Irradiated Blobbs",
+      "key": "tcbkOwFcVECmIiNMBvMbDw"
+    }
+  },
+  {
+    "id": "BodyAreas:FAQe9v-6bUOqaz4Ln_ehOA",
+    "source_table": "BodyAreas",
+    "source_key": "FAQe9v-6bUOqaz4Ln_ehOA",
+    "name": "Hostile Living Acid Clouds",
+    "slug": "hostile-living-acid-clouds",
+    "type": null,
+    "stats": {
+      "rewardLevel": 20,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 224,
+      "size": 10,
+      "name": "Hostile Living Acid Clouds",
+      "key": "FAQe9v-6bUOqaz4Ln_ehOA"
+    }
+  },
+  {
+    "id": "BodyAreas:E8gs3a5Fc0S1aSulF_3_KQ",
+    "source_table": "BodyAreas",
+    "source_key": "E8gs3a5Fc0S1aSulF_3_KQ",
+    "name": "Hostile Living Flames",
+    "slug": "hostile-living-flames",
+    "type": null,
+    "stats": {
+      "rewardLevel": 4,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 63,
+      "size": 5,
+      "name": "Hostile Living Flames",
+      "key": "E8gs3a5Fc0S1aSulF_3_KQ"
+    }
+  },
+  {
+    "id": "BodyAreas:2MRG9D0tp0-XzAXKrZ2lsA",
+    "source_table": "BodyAreas",
+    "source_key": "2MRG9D0tp0-XzAXKrZ2lsA",
+    "name": "Hostile Vegetation",
+    "slug": "hostile-vegetation",
+    "type": null,
+    "stats": {
+      "rewardLevel": 7,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 80,
+      "size": 5,
+      "name": "Hostile Vegetation",
+      "key": "2MRG9D0tp0-XzAXKrZ2lsA"
+    }
+  },
+  {
+    "id": "BodyAreas:AR64bMp4vUmYKvIPTOPM2w",
+    "source_table": "BodyAreas",
+    "source_key": "AR64bMp4vUmYKvIPTOPM2w",
+    "name": "Hostile Wildlife",
+    "slug": "hostile-wildlife",
+    "type": null,
+    "stats": {
+      "rewardLevel": 1,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 31,
+      "size": 2,
+      "name": "Hostile Wildlife",
+      "key": "AR64bMp4vUmYKvIPTOPM2w"
+    }
+  },
+  {
+    "id": "BodyAreas:C0LZXr1ADkCFCKhMJmzXfA",
+    "source_table": "BodyAreas",
+    "source_key": "C0LZXr1ADkCFCKhMJmzXfA",
+    "name": "Hostile Wildlife",
+    "slug": "hostile-wildlife-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 3,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 44,
+      "size": 2,
+      "name": "Hostile Wildlife",
+      "key": "C0LZXr1ADkCFCKhMJmzXfA"
+    }
+  },
+  {
+    "id": "BodyAreas:1WXDvjrs5E6ZuTZRJ-GE4w",
+    "source_table": "BodyAreas",
+    "source_key": "1WXDvjrs5E6ZuTZRJ-GE4w",
+    "name": "Hostile Worm Infestation",
+    "slug": "hostile-worm-infestation",
+    "type": null,
+    "stats": {
+      "rewardLevel": 8,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 97,
+      "size": 5,
+      "name": "Hostile Worm Infestation",
+      "key": "1WXDvjrs5E6ZuTZRJ-GE4w"
+    }
+  },
+  {
+    "id": "BodyAreas:vmUMwRwmkkyrSxyEnEuFzg",
+    "source_table": "BodyAreas",
+    "source_key": "vmUMwRwmkkyrSxyEnEuFzg",
+    "name": "Huge Barren Plains",
+    "slug": "huge-barren-plains",
+    "type": null,
+    "stats": {
+      "rewardLevel": 12,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 178,
+      "size": 9,
+      "name": "Huge Barren Plains",
+      "key": "vmUMwRwmkkyrSxyEnEuFzg"
+    }
+  },
+  {
+    "id": "BodyAreas:4x7r8_vzTkmf9uYXz1Jdvg",
+    "source_table": "BodyAreas",
+    "source_key": "4x7r8_vzTkmf9uYXz1Jdvg",
+    "name": "Huge Bug Nest",
+    "slug": "huge-bug-nest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 6,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 71,
+      "size": 8,
+      "name": "Huge Bug Nest",
+      "key": "4x7r8_vzTkmf9uYXz1Jdvg"
+    }
+  },
+  {
+    "id": "BodyAreas:GTzpxnFNgECGu6P5mhA6rg",
+    "source_table": "BodyAreas",
+    "source_key": "GTzpxnFNgECGu6P5mhA6rg",
+    "name": "Huge Desert",
+    "slug": "huge-desert",
+    "type": null,
+    "stats": {
+      "rewardLevel": 10,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 134,
+      "size": 4,
+      "name": "Huge Desert",
+      "key": "GTzpxnFNgECGu6P5mhA6rg"
+    }
+  },
+  {
+    "id": "BodyAreas:-mcUXAAgNkekrFalSDAaTg",
+    "source_table": "BodyAreas",
+    "source_key": "-mcUXAAgNkekrFalSDAaTg",
+    "name": "Huge Glacier",
+    "slug": "huge-glacier",
+    "type": null,
+    "stats": {
+      "rewardLevel": 9,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 121,
+      "size": 5,
+      "name": "Huge Glacier",
+      "key": "-mcUXAAgNkekrFalSDAaTg"
+    }
+  },
+  {
+    "id": "BodyAreas:5FeBfdN3O0OC4ZVODruOeg",
+    "source_table": "BodyAreas",
+    "source_key": "5FeBfdN3O0OC4ZVODruOeg",
+    "name": "Huge Ice Plains",
+    "slug": "huge-ice-plains",
+    "type": null,
+    "stats": {
+      "rewardLevel": 12,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 167,
+      "size": 7,
+      "name": "Huge Ice Plains",
+      "key": "5FeBfdN3O0OC4ZVODruOeg"
+    }
+  },
+  {
+    "id": "BodyAreas:7Mb-sDScxUOvlpls2s8rGA",
+    "source_table": "BodyAreas",
+    "source_key": "7Mb-sDScxUOvlpls2s8rGA",
+    "name": "Hydrogen Algea Swamp",
+    "slug": "hydrogen-algea-swamp",
+    "type": null,
+    "stats": {
+      "rewardLevel": 21,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 281,
+      "size": 5,
+      "name": "Hydrogen Algea Swamp",
+      "key": "7Mb-sDScxUOvlpls2s8rGA"
+    }
+  },
+  {
+    "id": "BodyAreas:6hrZqZd4Jkq_K4Gf5zcWEQ",
+    "source_table": "BodyAreas",
+    "source_key": "6hrZqZd4Jkq_K4Gf5zcWEQ",
+    "name": "Ice Caves",
+    "slug": "ice-caves",
+    "type": null,
+    "stats": {
+      "rewardLevel": 6,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 94,
+      "size": 3,
+      "name": "Ice Caves",
+      "key": "6hrZqZd4Jkq_K4Gf5zcWEQ"
+    }
+  },
+  {
+    "id": "BodyAreas:mEhgdXdGBEmKIyg-hec4uw",
+    "source_table": "BodyAreas",
+    "source_key": "mEhgdXdGBEmKIyg-hec4uw",
+    "name": "Ice Desert",
+    "slug": "ice-desert",
+    "type": null,
+    "stats": {
+      "rewardLevel": 50,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 312,
+      "size": 1,
+      "name": "Ice Desert",
+      "key": "mEhgdXdGBEmKIyg-hec4uw"
+    }
+  },
+  {
+    "id": "BodyAreas:8kVRpIw9MkKeJ4kdUJiJLg",
+    "source_table": "BodyAreas",
+    "source_key": "8kVRpIw9MkKeJ4kdUJiJLg",
+    "name": "Ice Fields",
+    "slug": "ice-fields",
+    "type": null,
+    "stats": {
+      "rewardLevel": 18,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 256,
+      "size": 5,
+      "name": "Ice Fields",
+      "key": "8kVRpIw9MkKeJ4kdUJiJLg"
+    }
+  },
+  {
+    "id": "BodyAreas:DrqH9VJ6WEu7pzoMA_83Og",
+    "source_table": "BodyAreas",
+    "source_key": "DrqH9VJ6WEu7pzoMA_83Og",
+    "name": "Ice Giant Rebels",
+    "slug": "ice-giant-rebels",
+    "type": null,
+    "stats": {
+      "rewardLevel": 18,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 222,
+      "size": 3,
+      "name": "Ice Giant Rebels",
+      "key": "DrqH9VJ6WEu7pzoMA_83Og"
+    }
+  },
+  {
+    "id": "BodyAreas:45vKHLn7AU2wGcHWsygIHA",
+    "source_table": "BodyAreas",
+    "source_key": "45vKHLn7AU2wGcHWsygIHA",
+    "name": "Ice Giant Refugees",
+    "slug": "ice-giant-refugees",
+    "type": null,
+    "stats": {
+      "rewardLevel": 19,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 224,
+      "size": 5,
+      "name": "Ice Giant Refugees",
+      "key": "45vKHLn7AU2wGcHWsygIHA"
+    }
+  },
+  {
+    "id": "BodyAreas:hT3QOOqf7E-YL6Ln0n8QnA",
+    "source_table": "BodyAreas",
+    "source_key": "hT3QOOqf7E-YL6Ln0n8QnA",
+    "name": "Ice Giants Trading Post",
+    "slug": "ice-giants-trading-post",
+    "type": null,
+    "stats": {
+      "rewardLevel": 18,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 212,
+      "size": 4,
+      "name": "Ice Giants Trading Post",
+      "key": "hT3QOOqf7E-YL6Ln0n8QnA"
+    }
+  },
+  {
+    "id": "BodyAreas:UPlm6FwK8UeIcQxdxZzYAw",
+    "source_table": "BodyAreas",
+    "source_key": "UPlm6FwK8UeIcQxdxZzYAw",
+    "name": "Ice Plains",
+    "slug": "ice-plains",
+    "type": null,
+    "stats": {
+      "rewardLevel": 3,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 47,
+      "size": 2,
+      "name": "Ice Plains",
+      "key": "UPlm6FwK8UeIcQxdxZzYAw"
+    }
+  },
+  {
+    "id": "BodyAreas:VUp52uNTy0S0WUcsGN7LdA",
+    "source_table": "BodyAreas",
+    "source_key": "VUp52uNTy0S0WUcsGN7LdA",
+    "name": "Ice Plains",
+    "slug": "ice-plains-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 5,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 72,
+      "size": 4,
+      "name": "Ice Plains",
+      "key": "VUp52uNTy0S0WUcsGN7LdA"
+    }
+  },
+  {
+    "id": "BodyAreas:LKG5hoYGL0CjG60aPgWtoQ",
+    "source_table": "BodyAreas",
+    "source_key": "LKG5hoYGL0CjG60aPgWtoQ",
+    "name": "Ice Worm Infestation",
+    "slug": "ice-worm-infestation",
+    "type": null,
+    "stats": {
+      "rewardLevel": 6,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 81,
+      "size": 4,
+      "name": "Ice Worm Infestation",
+      "key": "LKG5hoYGL0CjG60aPgWtoQ"
+    }
+  },
+  {
+    "id": "BodyAreas:cpGo26vNekSOwKl6qkGItA",
+    "source_table": "BodyAreas",
+    "source_key": "cpGo26vNekSOwKl6qkGItA",
+    "name": "Impenetrable Fortress",
+    "slug": "impenetrable-fortress",
+    "type": null,
+    "stats": {
+      "rewardLevel": 11,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 120,
+      "size": 10,
+      "name": "Impenetrable Fortress",
+      "key": "cpGo26vNekSOwKl6qkGItA"
+    }
+  },
+  {
+    "id": "BodyAreas:5v7qO56nQUGqllHw7kJ5oA",
+    "source_table": "BodyAreas",
+    "source_key": "5v7qO56nQUGqllHw7kJ5oA",
+    "name": "Impenetrable Fortress",
+    "slug": "impenetrable-fortress-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 56,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 291,
+      "size": 1,
+      "name": "Impenetrable Fortress",
+      "key": "5v7qO56nQUGqllHw7kJ5oA"
+    }
+  },
+  {
+    "id": "BodyAreas:l3ImxObitEubjeqE0G6Rdg",
+    "source_table": "BodyAreas",
+    "source_key": "l3ImxObitEubjeqE0G6Rdg",
+    "name": "Imprisoned King of the Ice Giants",
+    "slug": "imprisoned-king-of-the-ice-giants",
+    "type": null,
+    "stats": {
+      "rewardLevel": 26,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 146,
+      "size": 1,
+      "name": "Imprisoned King of the Ice Giants",
+      "key": "l3ImxObitEubjeqE0G6Rdg"
+    }
+  },
+  {
+    "id": "BodyAreas:5rUtLbz1NEKRt0Cq52xgIQ",
+    "source_table": "BodyAreas",
+    "source_key": "5rUtLbz1NEKRt0Cq52xgIQ",
+    "name": "Imprisoned Moth Queen",
+    "slug": "imprisoned-moth-queen",
+    "type": null,
+    "stats": {
+      "rewardLevel": 30,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 142,
+      "size": 1,
+      "name": "Imprisoned Moth Queen",
+      "key": "5rUtLbz1NEKRt0Cq52xgIQ"
+    }
+  },
+  {
+    "id": "BodyAreas:_UNVpwUCfEWPfhOnNY7AJg",
+    "source_table": "BodyAreas",
+    "source_key": "_UNVpwUCfEWPfhOnNY7AJg",
+    "name": "Incredible Brain Slug",
+    "slug": "incredible-brain-slug",
+    "type": null,
+    "stats": {
+      "rewardLevel": 24,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 252,
+      "size": 6,
+      "name": "Incredible Brain Slug",
+      "key": "_UNVpwUCfEWPfhOnNY7AJg"
+    }
+  },
+  {
+    "id": "BodyAreas:e-tv_QGLYkaYxgvcPZZhEg",
+    "source_table": "BodyAreas",
+    "source_key": "e-tv_QGLYkaYxgvcPZZhEg",
+    "name": "Infested Jungle",
+    "slug": "infested-jungle",
+    "type": null,
+    "stats": {
+      "rewardLevel": 18,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 232,
+      "size": 6,
+      "name": "Infested Jungle",
+      "key": "e-tv_QGLYkaYxgvcPZZhEg"
+    }
+  },
+  {
+    "id": "BodyAreas:DaEUKVOgKUq9_SjvcpV-qA",
+    "source_table": "BodyAreas",
+    "source_key": "DaEUKVOgKUq9_SjvcpV-qA",
+    "name": "Irradiated Blobbs",
+    "slug": "irradiated-blobbs",
+    "type": null,
+    "stats": {
+      "rewardLevel": 33,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 390,
+      "size": 7,
+      "name": "Irradiated Blobbs",
+      "key": "DaEUKVOgKUq9_SjvcpV-qA"
+    }
+  },
+  {
+    "id": "BodyAreas:ltM-FTzKL06nbAM1E3-6tQ",
+    "source_table": "BodyAreas",
+    "source_key": "ltM-FTzKL06nbAM1E3-6tQ",
+    "name": "Irradiated Burning Fields",
+    "slug": "irradiated-burning-fields",
+    "type": null,
+    "stats": {
+      "rewardLevel": 36,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 453,
+      "size": 10,
+      "name": "Irradiated Burning Fields",
+      "key": "ltM-FTzKL06nbAM1E3-6tQ"
+    }
+  },
+  {
+    "id": "BodyAreas:aVp4mJSn_0y237wFFWb6DQ",
+    "source_table": "BodyAreas",
+    "source_key": "aVp4mJSn_0y237wFFWb6DQ",
+    "name": "Irradiated Desert",
+    "slug": "irradiated-desert",
+    "type": null,
+    "stats": {
+      "rewardLevel": 34,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 438,
+      "size": 10,
+      "name": "Irradiated Desert",
+      "key": "aVp4mJSn_0y237wFFWb6DQ"
+    }
+  },
+  {
+    "id": "BodyAreas:OB92pM26EUCtgPzeCTvXrw",
+    "source_table": "BodyAreas",
+    "source_key": "OB92pM26EUCtgPzeCTvXrw",
+    "name": "Irradiated Forest",
+    "slug": "irradiated-forest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 36,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 461,
+      "size": 8,
+      "name": "Irradiated Forest",
+      "key": "OB92pM26EUCtgPzeCTvXrw"
+    }
+  },
+  {
+    "id": "BodyAreas:4Si9wvmPyk-lh8_0MGgpOg",
+    "source_table": "BodyAreas",
+    "source_key": "4Si9wvmPyk-lh8_0MGgpOg",
+    "name": "Irradiated Fungi",
+    "slug": "irradiated-fungi",
+    "type": null,
+    "stats": {
+      "rewardLevel": 32,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 411,
+      "size": 7,
+      "name": "Irradiated Fungi",
+      "key": "4Si9wvmPyk-lh8_0MGgpOg"
+    }
+  },
+  {
+    "id": "BodyAreas:cv2KU4_AZkqYW8bKLpC7nA",
+    "source_table": "BodyAreas",
+    "source_key": "cv2KU4_AZkqYW8bKLpC7nA",
+    "name": "Irradiated Glacier",
+    "slug": "irradiated-glacier",
+    "type": null,
+    "stats": {
+      "rewardLevel": 33,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 432,
+      "size": 9,
+      "name": "Irradiated Glacier",
+      "key": "cv2KU4_AZkqYW8bKLpC7nA"
+    }
+  },
+  {
+    "id": "BodyAreas:CZistYf1FUiK8L-m0Wo4jg",
+    "source_table": "BodyAreas",
+    "source_key": "CZistYf1FUiK8L-m0Wo4jg",
+    "name": "Irradiated Living Desert",
+    "slug": "irradiated-living-desert",
+    "type": null,
+    "stats": {
+      "rewardLevel": 37,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 468,
+      "size": 10,
+      "name": "Irradiated Living Desert",
+      "key": "CZistYf1FUiK8L-m0Wo4jg"
+    }
+  },
+  {
+    "id": "BodyAreas:zbAnmpb99UamF2cD579siw",
+    "source_table": "BodyAreas",
+    "source_key": "zbAnmpb99UamF2cD579siw",
+    "name": "Irradiated Military Base",
+    "slug": "irradiated-military-base",
+    "type": null,
+    "stats": {
+      "rewardLevel": 36,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 439,
+      "size": 10,
+      "name": "Irradiated Military Base",
+      "key": "zbAnmpb99UamF2cD579siw"
+    }
+  },
+  {
+    "id": "BodyAreas:ATf7vO3woUi36iP4BYdY0Q",
+    "source_table": "BodyAreas",
+    "source_key": "ATf7vO3woUi36iP4BYdY0Q",
+    "name": "Irradiated Military Base",
+    "slug": "irradiated-military-base-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 35,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 431,
+      "size": 10,
+      "name": "Irradiated Military Base",
+      "key": "ATf7vO3woUi36iP4BYdY0Q"
+    }
+  },
+  {
+    "id": "BodyAreas:dgi-dKRsL0qEnbZkU46NCQ",
+    "source_table": "BodyAreas",
+    "source_key": "dgi-dKRsL0qEnbZkU46NCQ",
+    "name": "Irradiated Missile Base",
+    "slug": "irradiated-missile-base",
+    "type": null,
+    "stats": {
+      "rewardLevel": 37,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 447,
+      "size": 10,
+      "name": "Irradiated Missile Base",
+      "key": "dgi-dKRsL0qEnbZkU46NCQ"
+    }
+  },
+  {
+    "id": "BodyAreas:xhhjymlaIEKwPAUZozavzg",
+    "source_table": "BodyAreas",
+    "source_key": "xhhjymlaIEKwPAUZozavzg",
+    "name": "Irradiated Neolithics",
+    "slug": "irradiated-neolithics",
+    "type": null,
+    "stats": {
+      "rewardLevel": 32,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 377,
+      "size": 8,
+      "name": "Irradiated Neolithics",
+      "key": "xhhjymlaIEKwPAUZozavzg"
+    }
+  },
+  {
+    "id": "BodyAreas:i8T_fHaPYEGn6XSV-BsQ2Q",
+    "source_table": "BodyAreas",
+    "source_key": "i8T_fHaPYEGn6XSV-BsQ2Q",
+    "name": "Irradiated Pit",
+    "slug": "irradiated-pit",
+    "type": null,
+    "stats": {
+      "rewardLevel": 14,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 193,
+      "size": 1,
+      "name": "Irradiated Pit",
+      "key": "i8T_fHaPYEGn6XSV-BsQ2Q"
+    }
+  },
+  {
+    "id": "BodyAreas:hOG7wwPjWEatXdoR6Vgpgw",
+    "source_table": "BodyAreas",
+    "source_key": "hOG7wwPjWEatXdoR6Vgpgw",
+    "name": "Irradiated Rainforest",
+    "slug": "irradiated-rainforest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 34,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 423,
+      "size": 10,
+      "name": "Irradiated Rainforest",
+      "key": "hOG7wwPjWEatXdoR6Vgpgw"
+    }
+  },
+  {
+    "id": "BodyAreas:-SuZVBaBlESdwoDv_pZlEQ",
+    "source_table": "BodyAreas",
+    "source_key": "-SuZVBaBlESdwoDv_pZlEQ",
+    "name": "Irradiated Slime Pools",
+    "slug": "irradiated-slime-pools",
+    "type": null,
+    "stats": {
+      "rewardLevel": 12,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 167,
+      "size": 7,
+      "name": "Irradiated Slime Pools",
+      "key": "-SuZVBaBlESdwoDv_pZlEQ"
+    }
+  },
+  {
+    "id": "BodyAreas:a-sGpPiSFkqcKfouaGF9dA",
+    "source_table": "BodyAreas",
+    "source_key": "a-sGpPiSFkqcKfouaGF9dA",
+    "name": "Irradiated Spiky Forest",
+    "slug": "irradiated-spiky-forest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 11,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 148,
+      "size": 3,
+      "name": "Irradiated Spiky Forest",
+      "key": "a-sGpPiSFkqcKfouaGF9dA"
+    }
+  },
+  {
+    "id": "BodyAreas:jDbkrA18cEy3pLNdmmRFhw",
+    "source_table": "BodyAreas",
+    "source_key": "jDbkrA18cEy3pLNdmmRFhw",
+    "name": "Irradiated Steps",
+    "slug": "irradiated-steps",
+    "type": null,
+    "stats": {
+      "rewardLevel": 34,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 446,
+      "size": 9,
+      "name": "Irradiated Steps",
+      "key": "jDbkrA18cEy3pLNdmmRFhw"
+    }
+  },
+  {
+    "id": "BodyAreas:xyWbItHRPUyKJC5ZXXwS4A",
+    "source_table": "BodyAreas",
+    "source_key": "xyWbItHRPUyKJC5ZXXwS4A",
+    "name": "Irradiated Tribe",
+    "slug": "irradiated-tribe",
+    "type": null,
+    "stats": {
+      "rewardLevel": 33,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 384,
+      "size": 7,
+      "name": "Irradiated Tribe",
+      "key": "xyWbItHRPUyKJC5ZXXwS4A"
+    }
+  },
+  {
+    "id": "BodyAreas:g1bzwgMoJkm--Kj7HUJuQg",
+    "source_table": "BodyAreas",
+    "source_key": "g1bzwgMoJkm--Kj7HUJuQg",
+    "name": "Irradiated Tundra",
+    "slug": "irradiated-tundra",
+    "type": null,
+    "stats": {
+      "rewardLevel": 34,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 426,
+      "size": 7,
+      "name": "Irradiated Tundra",
+      "key": "g1bzwgMoJkm--Kj7HUJuQg"
+    }
+  },
+  {
+    "id": "BodyAreas:7ikZn9z4mEuGtqvUsIKNgQ",
+    "source_table": "BodyAreas",
+    "source_key": "7ikZn9z4mEuGtqvUsIKNgQ",
+    "name": "Large Bug Nest",
+    "slug": "large-bug-nest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 12,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 136,
+      "size": 6,
+      "name": "Large Bug Nest",
+      "key": "7ikZn9z4mEuGtqvUsIKNgQ"
+    }
+  },
+  {
+    "id": "BodyAreas:uBYoo1qZ2kCRMDZQisJ80w",
+    "source_table": "BodyAreas",
+    "source_key": "uBYoo1qZ2kCRMDZQisJ80w",
+    "name": "Large Desert",
+    "slug": "large-desert",
+    "type": null,
+    "stats": {
+      "rewardLevel": 15,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 201,
+      "size": 5,
+      "name": "Large Desert",
+      "key": "uBYoo1qZ2kCRMDZQisJ80w"
+    }
+  },
+  {
+    "id": "BodyAreas:8ItvAi2r306duSkuHnMcuA",
+    "source_table": "BodyAreas",
+    "source_key": "8ItvAi2r306duSkuHnMcuA",
+    "name": "Large Forest",
+    "slug": "large-forest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 12,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 167,
+      "size": 7,
+      "name": "Large Forest",
+      "key": "8ItvAi2r306duSkuHnMcuA"
+    }
+  },
+  {
+    "id": "BodyAreas:QqISWnsLKE-zZsTh_qXwCg",
+    "source_table": "BodyAreas",
+    "source_key": "QqISWnsLKE-zZsTh_qXwCg",
+    "name": "Large Moon Crater",
+    "slug": "large-moon-crater",
+    "type": null,
+    "stats": {
+      "rewardLevel": 27,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 355,
+      "size": 9,
+      "name": "Large Moon Crater",
+      "key": "QqISWnsLKE-zZsTh_qXwCg"
+    }
+  },
+  {
+    "id": "BodyAreas:llngsrXLKE6xWrSkViNunA",
+    "source_table": "BodyAreas",
+    "source_key": "llngsrXLKE6xWrSkViNunA",
+    "name": "Large Moth Nest",
+    "slug": "large-moth-nest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 19,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 238,
+      "size": 5,
+      "name": "Large Moth Nest",
+      "key": "llngsrXLKE6xWrSkViNunA"
+    }
+  },
+  {
+    "id": "BodyAreas:ibcMJ7aEQkuQGrmstaT0dQ",
+    "source_table": "BodyAreas",
+    "source_key": "ibcMJ7aEQkuQGrmstaT0dQ",
+    "name": "Large Moth Nest",
+    "slug": "large-moth-nest-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 16,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 183,
+      "size": 7,
+      "name": "Large Moth Nest",
+      "key": "ibcMJ7aEQkuQGrmstaT0dQ"
+    }
+  },
+  {
+    "id": "BodyAreas:jz-ZhFhA_US1aZVygzCbsg",
+    "source_table": "BodyAreas",
+    "source_key": "jz-ZhFhA_US1aZVygzCbsg",
+    "name": "Large Plains",
+    "slug": "large-plains",
+    "type": null,
+    "stats": {
+      "rewardLevel": 14,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 182,
+      "size": 6,
+      "name": "Large Plains",
+      "key": "jz-ZhFhA_US1aZVygzCbsg"
+    }
+  },
+  {
+    "id": "BodyAreas:93sVjr0-o0W72lEkAgwRig",
+    "source_table": "BodyAreas",
+    "source_key": "93sVjr0-o0W72lEkAgwRig",
+    "name": "Large Rocky Plains",
+    "slug": "large-rocky-plains",
+    "type": null,
+    "stats": {
+      "rewardLevel": 17,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 232,
+      "size": 6,
+      "name": "Large Rocky Plains",
+      "key": "93sVjr0-o0W72lEkAgwRig"
+    }
+  },
+  {
+    "id": "BodyAreas:t4tCc38D70-ngNaz11gZFw",
+    "source_table": "BodyAreas",
+    "source_key": "t4tCc38D70-ngNaz11gZFw",
+    "name": "Lava Fields",
+    "slug": "lava-fields",
+    "type": null,
+    "stats": {
+      "rewardLevel": 7,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 107,
+      "size": 4,
+      "name": "Lava Fields",
+      "key": "t4tCc38D70-ngNaz11gZFw"
+    }
+  },
+  {
+    "id": "BodyAreas:EVolei8Gy0yB8_0y0T-z9g",
+    "source_table": "BodyAreas",
+    "source_key": "EVolei8Gy0yB8_0y0T-z9g",
+    "name": "Lava Giants",
+    "slug": "lava-giants",
+    "type": null,
+    "stats": {
+      "rewardLevel": 7,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 93,
+      "size": 3,
+      "name": "Lava Giants",
+      "key": "EVolei8Gy0yB8_0y0T-z9g"
+    }
+  },
+  {
+    "id": "BodyAreas:U3Tqr3-lGUi-jPwOwVyNBw",
+    "source_table": "BodyAreas",
+    "source_key": "U3Tqr3-lGUi-jPwOwVyNBw",
+    "name": "Living Acid Clouds",
+    "slug": "living-acid-clouds",
+    "type": null,
+    "stats": {
+      "rewardLevel": 17,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 216,
+      "size": 8,
+      "name": "Living Acid Clouds",
+      "key": "U3Tqr3-lGUi-jPwOwVyNBw"
+    }
+  },
+  {
+    "id": "BodyAreas:h0BfnrH6Q0KL7vjJ2l2a5A",
+    "source_table": "BodyAreas",
+    "source_key": "h0BfnrH6Q0KL7vjJ2l2a5A",
+    "name": "Living Acid Gas",
+    "slug": "living-acid-gas",
+    "type": null,
+    "stats": {
+      "rewardLevel": 7,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 89,
+      "size": 4,
+      "name": "Living Acid Gas",
+      "key": "h0BfnrH6Q0KL7vjJ2l2a5A"
+    }
+  },
+  {
+    "id": "BodyAreas:McveqFpptUymXhsL_5q2Hg",
+    "source_table": "BodyAreas",
+    "source_key": "McveqFpptUymXhsL_5q2Hg",
+    "name": "Living Irradiated Slime",
+    "slug": "living-irradiated-slime",
+    "type": null,
+    "stats": {
+      "rewardLevel": 15,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 174,
+      "size": 5,
+      "name": "Living Irradiated Slime",
+      "key": "McveqFpptUymXhsL_5q2Hg"
+    }
+  },
+  {
+    "id": "BodyAreas:umJHDNQDwkGQOX2_Rs0t8A",
+    "source_table": "BodyAreas",
+    "source_key": "umJHDNQDwkGQOX2_Rs0t8A",
+    "name": "Living Magma Giants",
+    "slug": "living-magma-giants",
+    "type": null,
+    "stats": {
+      "rewardLevel": 18,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 226,
+      "size": 7,
+      "name": "Living Magma Giants",
+      "key": "umJHDNQDwkGQOX2_Rs0t8A"
+    }
+  },
+  {
+    "id": "BodyAreas:6Pttg1oKYk60boOghqGEPw",
+    "source_table": "BodyAreas",
+    "source_key": "6Pttg1oKYk60boOghqGEPw",
+    "name": "Living Slime",
+    "slug": "living-slime",
+    "type": null,
+    "stats": {
+      "rewardLevel": 11,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 136,
+      "size": 7,
+      "name": "Living Slime",
+      "key": "6Pttg1oKYk60boOghqGEPw"
+    }
+  },
+  {
+    "id": "BodyAreas:g7akggYUfk6DW5ZvpxpzsA",
+    "source_table": "BodyAreas",
+    "source_key": "g7akggYUfk6DW5ZvpxpzsA",
+    "name": "Living Slime Pools",
+    "slug": "living-slime-pools",
+    "type": null,
+    "stats": {
+      "rewardLevel": 16,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 200,
+      "size": 7,
+      "name": "Living Slime Pools",
+      "key": "g7akggYUfk6DW5ZvpxpzsA"
+    }
+  },
+  {
+    "id": "BodyAreas:9NlwJ1GyHEmy20sXDwnTTQ",
+    "source_table": "BodyAreas",
+    "source_key": "9NlwJ1GyHEmy20sXDwnTTQ",
+    "name": "Locust Infestation",
+    "slug": "locust-infestation",
+    "type": null,
+    "stats": {
+      "rewardLevel": 25,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 270,
+      "size": 8,
+      "name": "Locust Infestation",
+      "key": "9NlwJ1GyHEmy20sXDwnTTQ"
+    }
+  },
+  {
+    "id": "BodyAreas:k3UM-YOnoEug6tqJJGaR4g",
+    "source_table": "BodyAreas",
+    "source_key": "k3UM-YOnoEug6tqJJGaR4g",
+    "name": "Mansion of the Fallen Deamon",
+    "slug": "mansion-of-the-fallen-deamon",
+    "type": null,
+    "stats": {
+      "rewardLevel": 24,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 258,
+      "size": 8,
+      "name": "Mansion of the Fallen Deamon",
+      "key": "k3UM-YOnoEug6tqJJGaR4g"
+    }
+  },
+  {
+    "id": "BodyAreas:8BwuwY66rEWEr-XNcyeI3g",
+    "source_table": "BodyAreas",
+    "source_key": "8BwuwY66rEWEr-XNcyeI3g",
+    "name": "Master Traders",
+    "slug": "master-traders",
+    "type": null,
+    "stats": {
+      "rewardLevel": 8,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 109,
+      "size": 3,
+      "name": "Master Traders",
+      "key": "8BwuwY66rEWEr-XNcyeI3g"
+    }
+  },
+  {
+    "id": "BodyAreas:8zMTKYGXhE6itouV_Ff8LQ",
+    "source_table": "BodyAreas",
+    "source_key": "8zMTKYGXhE6itouV_Ff8LQ",
+    "name": "Maturation Chambers",
+    "slug": "maturation-chambers",
+    "type": null,
+    "stats": {
+      "rewardLevel": 29,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 381,
+      "size": 10,
+      "name": "Maturation Chambers",
+      "key": "8zMTKYGXhE6itouV_Ff8LQ"
+    }
+  },
+  {
+    "id": "BodyAreas:eiJeAnAgeUuD3cN9OyeCMA",
+    "source_table": "BodyAreas",
+    "source_key": "eiJeAnAgeUuD3cN9OyeCMA",
+    "name": "Mature Queen's Chamber",
+    "slug": "mature-queens-chamber",
+    "type": null,
+    "stats": {
+      "rewardLevel": 28,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 348,
+      "size": 10,
+      "name": "Mature Queen's Chamber",
+      "key": "eiJeAnAgeUuD3cN9OyeCMA"
+    }
+  },
+  {
+    "id": "BodyAreas:y34_ux7aREurkzidShgGdA",
+    "source_table": "BodyAreas",
+    "source_key": "y34_ux7aREurkzidShgGdA",
+    "name": "McClains Expedition",
+    "slug": "mcclains-expedition",
+    "type": null,
+    "stats": {
+      "rewardLevel": 29,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 342,
+      "size": 10,
+      "name": "McClains Expedition",
+      "key": "y34_ux7aREurkzidShgGdA"
+    }
+  },
+  {
+    "id": "BodyAreas:AkcAcRbpFk-fWts5JwfWCw",
+    "source_table": "BodyAreas",
+    "source_key": "AkcAcRbpFk-fWts5JwfWCw",
+    "name": "Missile Base",
+    "slug": "missile-base",
+    "type": null,
+    "stats": {
+      "rewardLevel": 33,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 417,
+      "size": 8,
+      "name": "Missile Base",
+      "key": "AkcAcRbpFk-fWts5JwfWCw"
+    }
+  },
+  {
+    "id": "BodyAreas:RSQLGMy8VEqXFztfJJuITg",
+    "source_table": "BodyAreas",
+    "source_key": "RSQLGMy8VEqXFztfJJuITg",
+    "name": "Molten Fire Swamp",
+    "slug": "molten-fire-swamp",
+    "type": null,
+    "stats": {
+      "rewardLevel": 22,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 286,
+      "size": 7,
+      "name": "Molten Fire Swamp",
+      "key": "RSQLGMy8VEqXFztfJJuITg"
+    }
+  },
+  {
+    "id": "BodyAreas:GbdocIvVg0mjZ7FD2sW23A",
+    "source_table": "BodyAreas",
+    "source_key": "GbdocIvVg0mjZ7FD2sW23A",
+    "name": "Moth Alpha Nest",
+    "slug": "moth-alpha-nest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 17,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 211,
+      "size": 4,
+      "name": "Moth Alpha Nest",
+      "key": "GbdocIvVg0mjZ7FD2sW23A"
+    }
+  },
+  {
+    "id": "BodyAreas:WNlGmnXWhkOZBVpCh2lN4Q",
+    "source_table": "BodyAreas",
+    "source_key": "WNlGmnXWhkOZBVpCh2lN4Q",
+    "name": "Moth Extraction Facility",
+    "slug": "moth-extraction-facility",
+    "type": null,
+    "stats": {
+      "rewardLevel": 22,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 240,
+      "size": 7,
+      "name": "Moth Extraction Facility",
+      "key": "WNlGmnXWhkOZBVpCh2lN4Q"
+    }
+  },
+  {
+    "id": "BodyAreas:oNe3-ziuPUe90bpnwOty3A",
+    "source_table": "BodyAreas",
+    "source_key": "oNe3-ziuPUe90bpnwOty3A",
+    "name": "Moth Hatcheries",
+    "slug": "moth-hatcheries",
+    "type": null,
+    "stats": {
+      "rewardLevel": 12,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 141,
+      "size": 4,
+      "name": "Moth Hatcheries",
+      "key": "oNe3-ziuPUe90bpnwOty3A"
+    }
+  },
+  {
+    "id": "BodyAreas:DDNBaYyRFUiECbXwVQ_r2w",
+    "source_table": "BodyAreas",
+    "source_key": "DDNBaYyRFUiECbXwVQ_r2w",
+    "name": "Moth Infestation",
+    "slug": "moth-infestation",
+    "type": null,
+    "stats": {
+      "rewardLevel": 26,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 330,
+      "size": 8,
+      "name": "Moth Infestation",
+      "key": "DDNBaYyRFUiECbXwVQ_r2w"
+    }
+  },
+  {
+    "id": "BodyAreas:GVs97zPapEi2LewoTEBNcw",
+    "source_table": "BodyAreas",
+    "source_key": "GVs97zPapEi2LewoTEBNcw",
+    "name": "Moth Nest",
+    "slug": "moth-nest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 14,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 163,
+      "size": 6,
+      "name": "Moth Nest",
+      "key": "GVs97zPapEi2LewoTEBNcw"
+    }
+  },
+  {
+    "id": "BodyAreas:hia9ds7HlEC07JKyleiiWw",
+    "source_table": "BodyAreas",
+    "source_key": "hia9ds7HlEC07JKyleiiWw",
+    "name": "Moth Nest",
+    "slug": "moth-nest-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 13,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 152,
+      "size": 6,
+      "name": "Moth Nest",
+      "key": "hia9ds7HlEC07JKyleiiWw"
+    }
+  },
+  {
+    "id": "BodyAreas:4DOnLZQUCkqwrz3ni97-7w",
+    "source_table": "BodyAreas",
+    "source_key": "4DOnLZQUCkqwrz3ni97-7w",
+    "name": "Moth Queens Nest",
+    "slug": "moth-queens-nest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 14,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 159,
+      "size": 6,
+      "name": "Moth Queens Nest",
+      "key": "4DOnLZQUCkqwrz3ni97-7w"
+    }
+  },
+  {
+    "id": "BodyAreas:4_XL4mZPQkuTAtMsf5Shxg",
+    "source_table": "BodyAreas",
+    "source_key": "4_XL4mZPQkuTAtMsf5Shxg",
+    "name": "Mountain Range",
+    "slug": "mountain-range",
+    "type": null,
+    "stats": {
+      "rewardLevel": 2,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 41,
+      "size": 2,
+      "name": "Mountain Range",
+      "key": "4_XL4mZPQkuTAtMsf5Shxg"
+    }
+  },
+  {
+    "id": "BodyAreas:zib5T4GICEmzlxDue-UtIg",
+    "source_table": "BodyAreas",
+    "source_key": "zib5T4GICEmzlxDue-UtIg",
+    "name": "Moving Aggressive Plantlife",
+    "slug": "moving-aggressive-plantlife",
+    "type": null,
+    "stats": {
+      "rewardLevel": 16,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 194,
+      "size": 6,
+      "name": "Moving Aggressive Plantlife",
+      "key": "zib5T4GICEmzlxDue-UtIg"
+    }
+  },
+  {
+    "id": "BodyAreas:vTjaFScaukO49PhuTFfNFA",
+    "source_table": "BodyAreas",
+    "source_key": "vTjaFScaukO49PhuTFfNFA",
+    "name": "Mysterious Alien Civilization",
+    "slug": "mysterious-alien-civilization",
+    "type": null,
+    "stats": {
+      "rewardLevel": 7,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 93,
+      "size": 3,
+      "name": "Mysterious Alien Civilization",
+      "key": "vTjaFScaukO49PhuTFfNFA"
+    }
+  },
+  {
+    "id": "BodyAreas:-OvMsfYlzEiTBTSmZnBG7Q",
+    "source_table": "BodyAreas",
+    "source_key": "-OvMsfYlzEiTBTSmZnBG7Q",
+    "name": "Mysterious Forest",
+    "slug": "mysterious-forest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 15,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 206,
+      "size": 6,
+      "name": "Mysterious Forest",
+      "key": "-OvMsfYlzEiTBTSmZnBG7Q"
+    }
+  },
+  {
+    "id": "BodyAreas:pP5LJzSPpkS_QTTo8sLOoA",
+    "source_table": "BodyAreas",
+    "source_key": "pP5LJzSPpkS_QTTo8sLOoA",
+    "name": "Mysterious Island",
+    "slug": "mysterious-island",
+    "type": null,
+    "stats": {
+      "rewardLevel": 17,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 243,
+      "size": 2,
+      "name": "Mysterious Island",
+      "key": "pP5LJzSPpkS_QTTo8sLOoA"
+    }
+  },
+  {
+    "id": "BodyAreas:qaYEZhHpIUO0OvMRd7khfA",
+    "source_table": "BodyAreas",
+    "source_key": "qaYEZhHpIUO0OvMRd7khfA",
+    "name": "Neolitic Tribe",
+    "slug": "neolitic-tribe",
+    "type": null,
+    "stats": {
+      "rewardLevel": 26,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 284,
+      "size": 8,
+      "name": "Neolitic Tribe",
+      "key": "qaYEZhHpIUO0OvMRd7khfA"
+    }
+  },
+  {
+    "id": "BodyAreas:_G9ATt9fRUuG4pLLzu2BZg",
+    "source_table": "BodyAreas",
+    "source_key": "_G9ATt9fRUuG4pLLzu2BZg",
+    "name": "Neuro Cave",
+    "slug": "neuro-cave",
+    "type": null,
+    "stats": {
+      "rewardLevel": 25,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 316,
+      "size": 8,
+      "name": "Neuro Cave",
+      "key": "_G9ATt9fRUuG4pLLzu2BZg"
+    }
+  },
+  {
+    "id": "BodyAreas:K-v8qjD_QkyJkoMnDIzpRw",
+    "source_table": "BodyAreas",
+    "source_key": "K-v8qjD_QkyJkoMnDIzpRw",
+    "name": "Neutral Civilization",
+    "slug": "neutral-civilization",
+    "type": null,
+    "stats": {
+      "rewardLevel": 5,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 74,
+      "size": 5,
+      "name": "Neutral Civilization",
+      "key": "K-v8qjD_QkyJkoMnDIzpRw"
+    }
+  },
+  {
+    "id": "BodyAreas:HCQ06BEiCkGwBE9bZEhSEw",
+    "source_table": "BodyAreas",
+    "source_key": "HCQ06BEiCkGwBE9bZEhSEw",
+    "name": "Neutral Civilization",
+    "slug": "neutral-civilization-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 1,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 35,
+      "size": 1,
+      "name": "Neutral Civilization",
+      "key": "HCQ06BEiCkGwBE9bZEhSEw"
+    }
+  },
+  {
+    "id": "BodyAreas:FUQWcxlVNEKm0bqBHJJ2Cg",
+    "source_table": "BodyAreas",
+    "source_key": "FUQWcxlVNEKm0bqBHJJ2Cg",
+    "name": "Nezerian Combat Central",
+    "slug": "nezerian-combat-central",
+    "type": null,
+    "stats": {
+      "rewardLevel": 27,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 312,
+      "size": 10,
+      "name": "Nezerian Combat Central",
+      "key": "FUQWcxlVNEKm0bqBHJJ2Cg"
+    }
+  },
+  {
+    "id": "BodyAreas:wCi6Ji1900ilTIvXAaLFGA",
+    "source_table": "BodyAreas",
+    "source_key": "wCi6Ji1900ilTIvXAaLFGA",
+    "name": "Nezerian Mountain Bunker",
+    "slug": "nezerian-mountain-bunker",
+    "type": null,
+    "stats": {
+      "rewardLevel": 26,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 305,
+      "size": 8,
+      "name": "Nezerian Mountain Bunker",
+      "key": "wCi6Ji1900ilTIvXAaLFGA"
+    }
+  },
+  {
+    "id": "BodyAreas:-6-pRLNvJUmSVu8byQmNGQ",
+    "source_table": "BodyAreas",
+    "source_key": "-6-pRLNvJUmSVu8byQmNGQ",
+    "name": "Nezerian Power Station",
+    "slug": "nezerian-power-station",
+    "type": null,
+    "stats": {
+      "rewardLevel": 27,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 298,
+      "size": 9,
+      "name": "Nezerian Power Station",
+      "key": "-6-pRLNvJUmSVu8byQmNGQ"
+    }
+  },
+  {
+    "id": "BodyAreas:iB5oK0KZI0K8bLaF1C8-2w",
+    "source_table": "BodyAreas",
+    "source_key": "iB5oK0KZI0K8bLaF1C8-2w",
+    "name": "Nezerian Slave Fort",
+    "slug": "nezerian-slave-fort",
+    "type": null,
+    "stats": {
+      "rewardLevel": 27,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 299,
+      "size": 8,
+      "name": "Nezerian Slave Fort",
+      "key": "iB5oK0KZI0K8bLaF1C8-2w"
+    }
+  },
+  {
+    "id": "BodyAreas:r2154JFbjUeu6zwTbAtc2w",
+    "source_table": "BodyAreas",
+    "source_key": "r2154JFbjUeu6zwTbAtc2w",
+    "name": "Nezerian Stronghold",
+    "slug": "nezerian-stronghold",
+    "type": null,
+    "stats": {
+      "rewardLevel": 58,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 278,
+      "size": 1,
+      "name": "Nezerian Stronghold",
+      "key": "r2154JFbjUeu6zwTbAtc2w"
+    }
+  },
+  {
+    "id": "BodyAreas:BTfcVGduX0mnUF2eU8uDfQ",
+    "source_table": "BodyAreas",
+    "source_key": "BTfcVGduX0mnUF2eU8uDfQ",
+    "name": "Nezerian Underground Bunker",
+    "slug": "nezerian-underground-bunker",
+    "type": null,
+    "stats": {
+      "rewardLevel": 58,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 281,
+      "size": 1,
+      "name": "Nezerian Underground Bunker",
+      "key": "BTfcVGduX0mnUF2eU8uDfQ"
+    }
+  },
+  {
+    "id": "BodyAreas:dxshAMfSr0yOd_Hdr9_9Sw",
+    "source_table": "BodyAreas",
+    "source_key": "dxshAMfSr0yOd_Hdr9_9Sw",
+    "name": "Oppressed Primitive Civilization",
+    "slug": "oppressed-primitive-civilization",
+    "type": null,
+    "stats": {
+      "rewardLevel": 12,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 142,
+      "size": 8,
+      "name": "Oppressed Primitive Civilization",
+      "key": "dxshAMfSr0yOd_Hdr9_9Sw"
+    }
+  },
+  {
+    "id": "BodyAreas:hT662JZx20SkjJLPlEAOLg",
+    "source_table": "BodyAreas",
+    "source_key": "hT662JZx20SkjJLPlEAOLg",
+    "name": "Paradise Lost",
+    "slug": "paradise-lost",
+    "type": null,
+    "stats": {
+      "rewardLevel": 12,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 45,
+      "size": 1,
+      "name": "Paradise Lost",
+      "key": "hT662JZx20SkjJLPlEAOLg"
+    }
+  },
+  {
+    "id": "BodyAreas:SkicW0jY2UaSlzEUwJzq8Q",
+    "source_table": "BodyAreas",
+    "source_key": "SkicW0jY2UaSlzEUwJzq8Q",
+    "name": "Paradise Valley",
+    "slug": "paradise-valley",
+    "type": null,
+    "stats": {
+      "rewardLevel": 12,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 42,
+      "size": 1,
+      "name": "Paradise Valley",
+      "key": "SkicW0jY2UaSlzEUwJzq8Q"
+    }
+  },
+  {
+    "id": "BodyAreas:cK5-DPSsjkGSQoYcBTox6g",
+    "source_table": "BodyAreas",
+    "source_key": "cK5-DPSsjkGSQoYcBTox6g",
+    "name": "Passive Fire Beetles",
+    "slug": "passive-fire-beetles",
+    "type": null,
+    "stats": {
+      "rewardLevel": 5,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 78,
+      "size": 2,
+      "name": "Passive Fire Beetles",
+      "key": "cK5-DPSsjkGSQoYcBTox6g"
+    }
+  },
+  {
+    "id": "BodyAreas:ZDcgMIxzckKznpdcyt0HGw",
+    "source_table": "BodyAreas",
+    "source_key": "ZDcgMIxzckKznpdcyt0HGw",
+    "name": "Phage Troops",
+    "slug": "phage-troops",
+    "type": null,
+    "stats": {
+      "rewardLevel": 28,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 340,
+      "size": 10,
+      "name": "Phage Troops",
+      "key": "ZDcgMIxzckKznpdcyt0HGw"
+    }
+  },
+  {
+    "id": "BodyAreas:68OBRTNSGUSHinaYbmhLIQ",
+    "source_table": "BodyAreas",
+    "source_key": "68OBRTNSGUSHinaYbmhLIQ",
+    "name": "Phase Chamber",
+    "slug": "phase-chamber",
+    "type": null,
+    "stats": {
+      "rewardLevel": 30,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 398,
+      "size": 10,
+      "name": "Phase Chamber",
+      "key": "68OBRTNSGUSHinaYbmhLIQ"
+    }
+  },
+  {
+    "id": "BodyAreas:IIXjlBnnhEyxEk21zAfzlw",
+    "source_table": "BodyAreas",
+    "source_key": "IIXjlBnnhEyxEk21zAfzlw",
+    "name": "Pirate Base",
+    "slug": "pirate-base",
+    "type": null,
+    "stats": {
+      "rewardLevel": 16,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 189,
+      "size": 5,
+      "name": "Pirate Base",
+      "key": "IIXjlBnnhEyxEk21zAfzlw"
+    }
+  },
+  {
+    "id": "BodyAreas:0ORzZxD0Z0yboYG_Pf1hTA",
+    "source_table": "BodyAreas",
+    "source_key": "0ORzZxD0Z0yboYG_Pf1hTA",
+    "name": "Pirate Slave Camp",
+    "slug": "pirate-slave-camp",
+    "type": null,
+    "stats": {
+      "rewardLevel": 16,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 183,
+      "size": 3,
+      "name": "Pirate Slave Camp",
+      "key": "0ORzZxD0Z0yboYG_Pf1hTA"
+    }
+  },
+  {
+    "id": "BodyAreas:3y7fthCbBUKQNnM9iYcBKw",
+    "source_table": "BodyAreas",
+    "source_key": "3y7fthCbBUKQNnM9iYcBKw",
+    "name": "Pirate Slave Camp",
+    "slug": "pirate-slave-camp-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 9,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 122,
+      "size": 3,
+      "name": "Pirate Slave Camp",
+      "key": "3y7fthCbBUKQNnM9iYcBKw"
+    }
+  },
+  {
+    "id": "BodyAreas:iyJm0Xigm0--I7_IrTpi4g",
+    "source_table": "BodyAreas",
+    "source_key": "iyJm0Xigm0--I7_IrTpi4g",
+    "name": "Plankton Infested Ponds",
+    "slug": "plankton-infested-ponds",
+    "type": null,
+    "stats": {
+      "rewardLevel": 15,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 179,
+      "size": 5,
+      "name": "Plankton Infested Ponds",
+      "key": "iyJm0Xigm0--I7_IrTpi4g"
+    }
+  },
+  {
+    "id": "BodyAreas:lbjPCqKC8E2urfTgj9uOnw",
+    "source_table": "BodyAreas",
+    "source_key": "lbjPCqKC8E2urfTgj9uOnw",
+    "name": "Plankton Infested Pools",
+    "slug": "plankton-infested-pools",
+    "type": null,
+    "stats": {
+      "rewardLevel": 14,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 169,
+      "size": 5,
+      "name": "Plankton Infested Pools",
+      "key": "lbjPCqKC8E2urfTgj9uOnw"
+    }
+  },
+  {
+    "id": "BodyAreas:Ri_ef1_OekezNCYEuqbpKw",
+    "source_table": "BodyAreas",
+    "source_key": "Ri_ef1_OekezNCYEuqbpKw",
+    "name": "Plankton Infested Slime Pools",
+    "slug": "plankton-infested-slime-pools",
+    "type": null,
+    "stats": {
+      "rewardLevel": 17,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 206,
+      "size": 6,
+      "name": "Plankton Infested Slime Pools",
+      "key": "Ri_ef1_OekezNCYEuqbpKw"
+    }
+  },
+  {
+    "id": "BodyAreas:dQgDo5R02kmIG5fkTq-yDQ",
+    "source_table": "BodyAreas",
+    "source_key": "dQgDo5R02kmIG5fkTq-yDQ",
+    "name": "Plasma Core",
+    "slug": "plasma-core",
+    "type": null,
+    "stats": {
+      "rewardLevel": 31,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 416,
+      "size": 10,
+      "name": "Plasma Core",
+      "key": "dQgDo5R02kmIG5fkTq-yDQ"
+    }
+  },
+  {
+    "id": "BodyAreas:Ag44dKB-90O3j7GgsaO1eQ",
+    "source_table": "BodyAreas",
+    "source_key": "Ag44dKB-90O3j7GgsaO1eQ",
+    "name": "Primitive Civilization",
+    "slug": "primitive-civilization",
+    "type": null,
+    "stats": {
+      "rewardLevel": 8,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 99,
+      "size": 4,
+      "name": "Primitive Civilization",
+      "key": "Ag44dKB-90O3j7GgsaO1eQ"
+    }
+  },
+  {
+    "id": "BodyAreas:yOXzVb-esUyfTcOF5jITkA",
+    "source_table": "BodyAreas",
+    "source_key": "yOXzVb-esUyfTcOF5jITkA",
+    "name": "Primitive Civilization",
+    "slug": "primitive-civilization-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 2,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 41,
+      "size": 3,
+      "name": "Primitive Civilization",
+      "key": "yOXzVb-esUyfTcOF5jITkA"
+    }
+  },
+  {
+    "id": "BodyAreas:-zZWPRwgx0uQvVDjymX4vQ",
+    "source_table": "BodyAreas",
+    "source_key": "-zZWPRwgx0uQvVDjymX4vQ",
+    "name": "Primitive Civilization",
+    "slug": "primitive-civilization-3",
+    "type": null,
+    "stats": {
+      "rewardLevel": 16,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 172,
+      "size": 7,
+      "name": "Primitive Civilization",
+      "key": "-zZWPRwgx0uQvVDjymX4vQ"
+    }
+  },
+  {
+    "id": "BodyAreas:pgn5oViz0UCcCXzJroW_xw",
+    "source_table": "BodyAreas",
+    "source_key": "pgn5oViz0UCcCXzJroW_xw",
+    "name": "Primitive Civilization",
+    "slug": "primitive-civilization-4",
+    "type": null,
+    "stats": {
+      "rewardLevel": 14,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 156,
+      "size": 7,
+      "name": "Primitive Civilization",
+      "key": "pgn5oViz0UCcCXzJroW_xw"
+    }
+  },
+  {
+    "id": "BodyAreas:F27niwJXV0OWP-nNL1S2wQ",
+    "source_table": "BodyAreas",
+    "source_key": "F27niwJXV0OWP-nNL1S2wQ",
+    "name": "Primitive Farmers",
+    "slug": "primitive-farmers",
+    "type": null,
+    "stats": {
+      "rewardLevel": 3,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 55,
+      "size": 2,
+      "name": "Primitive Farmers",
+      "key": "F27niwJXV0OWP-nNL1S2wQ"
+    }
+  },
+  {
+    "id": "BodyAreas:-zdzwl9D90uGEYTvAmbaZQ",
+    "source_table": "BodyAreas",
+    "source_key": "-zdzwl9D90uGEYTvAmbaZQ",
+    "name": "Prison Camp",
+    "slug": "prison-camp",
+    "type": null,
+    "stats": {
+      "rewardLevel": 18,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 120,
+      "size": 10,
+      "name": "Prison Camp",
+      "key": "-zdzwl9D90uGEYTvAmbaZQ"
+    }
+  },
+  {
+    "id": "BodyAreas:Nd_iPSEGHkiU2UcpaqAwaw",
+    "source_table": "BodyAreas",
+    "source_key": "Nd_iPSEGHkiU2UcpaqAwaw",
+    "name": "Prison Camp",
+    "slug": "prison-camp-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 50,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 270,
+      "size": 1,
+      "name": "Prison Camp",
+      "key": "Nd_iPSEGHkiU2UcpaqAwaw"
+    }
+  },
+  {
+    "id": "BodyAreas:bt4U2sdTQE2mVp3_gGi-Aw",
+    "source_table": "BodyAreas",
+    "source_key": "bt4U2sdTQE2mVp3_gGi-Aw",
+    "name": "Radiated Scorched Plains",
+    "slug": "radiated-scorched-plains",
+    "type": null,
+    "stats": {
+      "rewardLevel": 18,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 262,
+      "size": 5,
+      "name": "Radiated Scorched Plains",
+      "key": "bt4U2sdTQE2mVp3_gGi-Aw"
+    }
+  },
+  {
+    "id": "BodyAreas:_P978mFm9UyLeOG5zOW4Xg",
+    "source_table": "BodyAreas",
+    "source_key": "_P978mFm9UyLeOG5zOW4Xg",
+    "name": "Radiated Wastefields",
+    "slug": "radiated-wastefields",
+    "type": null,
+    "stats": {
+      "rewardLevel": 8,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 115,
+      "size": 3,
+      "name": "Radiated Wastefields",
+      "key": "_P978mFm9UyLeOG5zOW4Xg"
+    }
+  },
+  {
+    "id": "BodyAreas:81Kdhn7DjUCU3TVnYl83JA",
+    "source_table": "BodyAreas",
+    "source_key": "81Kdhn7DjUCU3TVnYl83JA",
+    "name": "Rainforest",
+    "slug": "rainforest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 1,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 31,
+      "size": 1,
+      "name": "Rainforest",
+      "key": "81Kdhn7DjUCU3TVnYl83JA"
+    }
+  },
+  {
+    "id": "BodyAreas:5jlSdhUt8EGV8Uy7eUbzFA",
+    "source_table": "BodyAreas",
+    "source_key": "5jlSdhUt8EGV8Uy7eUbzFA",
+    "name": "Refuge Camp",
+    "slug": "refuge-camp",
+    "type": null,
+    "stats": {
+      "rewardLevel": 14,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 161,
+      "size": 5,
+      "name": "Refuge Camp",
+      "key": "5jlSdhUt8EGV8Uy7eUbzFA"
+    }
+  },
+  {
+    "id": "BodyAreas:2GkXmKZBF0yW3J9Rcwzphw",
+    "source_table": "BodyAreas",
+    "source_key": "2GkXmKZBF0yW3J9Rcwzphw",
+    "name": "Refugee Camp",
+    "slug": "refugee-camp",
+    "type": null,
+    "stats": {
+      "rewardLevel": 18,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 221,
+      "size": 2,
+      "name": "Refugee Camp",
+      "key": "2GkXmKZBF0yW3J9Rcwzphw"
+    }
+  },
+  {
+    "id": "BodyAreas:Po2kvHAT_EaPAyXI-r9aXw",
+    "source_table": "BodyAreas",
+    "source_key": "Po2kvHAT_EaPAyXI-r9aXw",
+    "name": "Refugee Tribes",
+    "slug": "refugee-tribes",
+    "type": null,
+    "stats": {
+      "rewardLevel": 7,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 97,
+      "size": 2,
+      "name": "Refugee Tribes",
+      "key": "Po2kvHAT_EaPAyXI-r9aXw"
+    }
+  },
+  {
+    "id": "BodyAreas:ITGNVBqPkEaTbGowjqCaeA",
+    "source_table": "BodyAreas",
+    "source_key": "ITGNVBqPkEaTbGowjqCaeA",
+    "name": "Refugees",
+    "slug": "refugees",
+    "type": null,
+    "stats": {
+      "rewardLevel": 4,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 58,
+      "size": 2,
+      "name": "Refugees",
+      "key": "ITGNVBqPkEaTbGowjqCaeA"
+    }
+  },
+  {
+    "id": "BodyAreas:tQTkpEqgmku6Kg1UY1q7Jw",
+    "source_table": "BodyAreas",
+    "source_key": "tQTkpEqgmku6Kg1UY1q7Jw",
+    "name": "Renegade Colony",
+    "slug": "renegade-colony",
+    "type": null,
+    "stats": {
+      "rewardLevel": 12,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 350,
+      "size": 7,
+      "name": "Renegade Colony",
+      "key": "tQTkpEqgmku6Kg1UY1q7Jw"
+    }
+  },
+  {
+    "id": "BodyAreas:QdJmUfsC_ka_RCyh5sSCKA",
+    "source_table": "BodyAreas",
+    "source_key": "QdJmUfsC_ka_RCyh5sSCKA",
+    "name": "Renegade Stronghold",
+    "slug": "renegade-stronghold",
+    "type": null,
+    "stats": {
+      "rewardLevel": 17,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 210,
+      "size": 7,
+      "name": "Renegade Stronghold",
+      "key": "QdJmUfsC_ka_RCyh5sSCKA"
+    }
+  },
+  {
+    "id": "BodyAreas:96Iuxrp3S0WTC4k-qAQCYg",
+    "source_table": "BodyAreas",
+    "source_key": "96Iuxrp3S0WTC4k-qAQCYg",
+    "name": "Research Lab",
+    "slug": "research-lab",
+    "type": null,
+    "stats": {
+      "rewardLevel": 16,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 150,
+      "size": 5,
+      "name": "Research Lab",
+      "key": "96Iuxrp3S0WTC4k-qAQCYg"
+    }
+  },
+  {
+    "id": "BodyAreas:jISXrSvuQ06LslUCpepOdA",
+    "source_table": "BodyAreas",
+    "source_key": "jISXrSvuQ06LslUCpepOdA",
+    "name": "Rocky Mountains",
+    "slug": "rocky-mountains",
+    "type": null,
+    "stats": {
+      "rewardLevel": 5,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 81,
+      "size": 4,
+      "name": "Rocky Mountains",
+      "key": "jISXrSvuQ06LslUCpepOdA"
+    }
+  },
+  {
+    "id": "BodyAreas:4Qx8tXCpOEiVgNBEEfl4aw",
+    "source_table": "BodyAreas",
+    "source_key": "4Qx8tXCpOEiVgNBEEfl4aw",
+    "name": "Rocky Mountains",
+    "slug": "rocky-mountains-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 5,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 81,
+      "size": 4,
+      "name": "Rocky Mountains",
+      "key": "4Qx8tXCpOEiVgNBEEfl4aw"
+    }
+  },
+  {
+    "id": "BodyAreas:WDjfm5LMdUip6OQPJ8n-rA",
+    "source_table": "BodyAreas",
+    "source_key": "WDjfm5LMdUip6OQPJ8n-rA",
+    "name": "Rocky Plains",
+    "slug": "rocky-plains",
+    "type": null,
+    "stats": {
+      "rewardLevel": 2,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 44,
+      "size": 2,
+      "name": "Rocky Plains",
+      "key": "WDjfm5LMdUip6OQPJ8n-rA"
+    }
+  },
+  {
+    "id": "BodyAreas:M910lMIs2U-pdoAljtin4w",
+    "source_table": "BodyAreas",
+    "source_key": "M910lMIs2U-pdoAljtin4w",
+    "name": "Ruined Sewer System",
+    "slug": "ruined-sewer-system",
+    "type": null,
+    "stats": {
+      "rewardLevel": 8,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 119,
+      "size": 1,
+      "name": "Ruined Sewer System",
+      "key": "M910lMIs2U-pdoAljtin4w"
+    }
+  },
+  {
+    "id": "BodyAreas:IRkmdOGUp06iQlCvmlNKAg",
+    "source_table": "BodyAreas",
+    "source_key": "IRkmdOGUp06iQlCvmlNKAg",
+    "name": "Scared Farming Civilization",
+    "slug": "scared-farming-civilization",
+    "type": null,
+    "stats": {
+      "rewardLevel": 16,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 193,
+      "size": 6,
+      "name": "Scared Farming Civilization",
+      "key": "IRkmdOGUp06iQlCvmlNKAg"
+    }
+  },
+  {
+    "id": "BodyAreas:IsTaN1P-l0KJnymgYt8J8w",
+    "source_table": "BodyAreas",
+    "source_key": "IsTaN1P-l0KJnymgYt8J8w",
+    "name": "Scavanger Getto",
+    "slug": "scavanger-getto",
+    "type": null,
+    "stats": {
+      "rewardLevel": 30,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 368,
+      "size": 10,
+      "name": "Scavanger Getto",
+      "key": "IsTaN1P-l0KJnymgYt8J8w"
+    }
+  },
+  {
+    "id": "BodyAreas:TA7AXXwINkSrfmyCS50kHA",
+    "source_table": "BodyAreas",
+    "source_key": "TA7AXXwINkSrfmyCS50kHA",
+    "name": "Scavanger Hideout",
+    "slug": "scavanger-hideout",
+    "type": null,
+    "stats": {
+      "rewardLevel": 29,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 351,
+      "size": 10,
+      "name": "Scavanger Hideout",
+      "key": "TA7AXXwINkSrfmyCS50kHA"
+    }
+  },
+  {
+    "id": "BodyAreas:dLZypDsLZkax7h1xgetnKQ",
+    "source_table": "BodyAreas",
+    "source_key": "dLZypDsLZkax7h1xgetnKQ",
+    "name": "Scavanger Hideout",
+    "slug": "scavanger-hideout-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 30,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 359,
+      "size": 10,
+      "name": "Scavanger Hideout",
+      "key": "dLZypDsLZkax7h1xgetnKQ"
+    }
+  },
+  {
+    "id": "BodyAreas:2VawRj4u5k6gIZOddGFp0Q",
+    "source_table": "BodyAreas",
+    "source_key": "2VawRj4u5k6gIZOddGFp0Q",
+    "name": "Scorching Desert",
+    "slug": "scorching-desert",
+    "type": null,
+    "stats": {
+      "rewardLevel": 6,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 86,
+      "size": 4,
+      "name": "Scorching Desert",
+      "key": "2VawRj4u5k6gIZOddGFp0Q"
+    }
+  },
+  {
+    "id": "BodyAreas:k-knUVBdCUOvJNd_zeUONQ",
+    "source_table": "BodyAreas",
+    "source_key": "k-knUVBdCUOvJNd_zeUONQ",
+    "name": "Scorching Desert",
+    "slug": "scorching-desert-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 6,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 86,
+      "size": 4,
+      "name": "Scorching Desert",
+      "key": "k-knUVBdCUOvJNd_zeUONQ"
+    }
+  },
+  {
+    "id": "BodyAreas:pBShk5kSdUCdD0-krl5bFw",
+    "source_table": "BodyAreas",
+    "source_key": "pBShk5kSdUCdD0-krl5bFw",
+    "name": "Scorching Plains",
+    "slug": "scorching-plains",
+    "type": null,
+    "stats": {
+      "rewardLevel": 4,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 61,
+      "size": 4,
+      "name": "Scorching Plains",
+      "key": "pBShk5kSdUCdD0-krl5bFw"
+    }
+  },
+  {
+    "id": "BodyAreas:rGQaEzSg1E-SRRMgTQ4u5Q",
+    "source_table": "BodyAreas",
+    "source_key": "rGQaEzSg1E-SRRMgTQ4u5Q",
+    "name": "Searing Plains",
+    "slug": "searing-plains",
+    "type": null,
+    "stats": {
+      "rewardLevel": 10,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 332,
+      "size": 9,
+      "name": "Searing Plains",
+      "key": "rGQaEzSg1E-SRRMgTQ4u5Q"
+    }
+  },
+  {
+    "id": "BodyAreas:NSWdFx6RCEGew2M4blz_JQ",
+    "source_table": "BodyAreas",
+    "source_key": "NSWdFx6RCEGew2M4blz_JQ",
+    "name": "Sentinel Command Central",
+    "slug": "sentinel-command-central",
+    "type": null,
+    "stats": {
+      "rewardLevel": 31,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 391,
+      "size": 10,
+      "name": "Sentinel Command Central",
+      "key": "NSWdFx6RCEGew2M4blz_JQ"
+    }
+  },
+  {
+    "id": "BodyAreas:7AescgFg-EmcYSLFa1C0jw",
+    "source_table": "BodyAreas",
+    "source_key": "7AescgFg-EmcYSLFa1C0jw",
+    "name": "Sentinel Recharge Chamber",
+    "slug": "sentinel-recharge-chamber",
+    "type": null,
+    "stats": {
+      "rewardLevel": 30,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 382,
+      "size": 10,
+      "name": "Sentinel Recharge Chamber",
+      "key": "7AescgFg-EmcYSLFa1C0jw"
+    }
+  },
+  {
+    "id": "BodyAreas:7q4SPzr0b0OgxeU9D-2rQw",
+    "source_table": "BodyAreas",
+    "source_key": "7q4SPzr0b0OgxeU9D-2rQw",
+    "name": "Sentinel Teleport Zone",
+    "slug": "sentinel-teleport-zone",
+    "type": null,
+    "stats": {
+      "rewardLevel": 30,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 374,
+      "size": 10,
+      "name": "Sentinel Teleport Zone",
+      "key": "7q4SPzr0b0OgxeU9D-2rQw"
+    }
+  },
+  {
+    "id": "BodyAreas:W7hTwmLr20CZadNd10ZMsg",
+    "source_table": "BodyAreas",
+    "source_key": "W7hTwmLr20CZadNd10ZMsg",
+    "name": "Sentinel Tunnel",
+    "slug": "sentinel-tunnel",
+    "type": null,
+    "stats": {
+      "rewardLevel": 30,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 374,
+      "size": 10,
+      "name": "Sentinel Tunnel",
+      "key": "W7hTwmLr20CZadNd10ZMsg"
+    }
+  },
+  {
+    "id": "BodyAreas:_E0C1EnFO0GyNKJHZCbWFw",
+    "source_table": "BodyAreas",
+    "source_key": "_E0C1EnFO0GyNKJHZCbWFw",
+    "name": "Service Shaft",
+    "slug": "service-shaft",
+    "type": null,
+    "stats": {
+      "rewardLevel": 28,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 373,
+      "size": 10,
+      "name": "Service Shaft",
+      "key": "_E0C1EnFO0GyNKJHZCbWFw"
+    }
+  },
+  {
+    "id": "BodyAreas:DwiSRtJcF0aXFRi86hljOw",
+    "source_table": "BodyAreas",
+    "source_key": "DwiSRtJcF0aXFRi86hljOw",
+    "name": "Slave Trading Post",
+    "slug": "slave-trading-post",
+    "type": null,
+    "stats": {
+      "rewardLevel": 27,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 291,
+      "size": 9,
+      "name": "Slave Trading Post",
+      "key": "DwiSRtJcF0aXFRi86hljOw"
+    }
+  },
+  {
+    "id": "BodyAreas:Vw9AVUjMB02xHX_Az7hMhA",
+    "source_table": "BodyAreas",
+    "source_key": "Vw9AVUjMB02xHX_Az7hMhA",
+    "name": "Slightly Less Primitive Civilization",
+    "slug": "slightly-less-primitive-civilization",
+    "type": null,
+    "stats": {
+      "rewardLevel": 14,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 156,
+      "size": 8,
+      "name": "Slightly Less Primitive Civilization",
+      "key": "Vw9AVUjMB02xHX_Az7hMhA"
+    }
+  },
+  {
+    "id": "BodyAreas:y-TpUi68s0Km6f01qP4M4g",
+    "source_table": "BodyAreas",
+    "source_key": "y-TpUi68s0Km6f01qP4M4g",
+    "name": "Sligtly Less Primitive Civilization",
+    "slug": "sligtly-less-primitive-civilization",
+    "type": null,
+    "stats": {
+      "rewardLevel": 15,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 168,
+      "size": 8,
+      "name": "Sligtly Less Primitive Civilization",
+      "key": "y-TpUi68s0Km6f01qP4M4g"
+    }
+  },
+  {
+    "id": "BodyAreas:qRLuIr9z-kCNHx6qxokAxg",
+    "source_table": "BodyAreas",
+    "source_key": "qRLuIr9z-kCNHx6qxokAxg",
+    "name": "Slime Pools",
+    "slug": "slime-pools",
+    "type": null,
+    "stats": {
+      "rewardLevel": 12,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 157,
+      "size": 6,
+      "name": "Slime Pools",
+      "key": "qRLuIr9z-kCNHx6qxokAxg"
+    }
+  },
+  {
+    "id": "BodyAreas:T6eIdYY_oUqx_h-nZ5DcAQ",
+    "source_table": "BodyAreas",
+    "source_key": "T6eIdYY_oUqx_h-nZ5DcAQ",
+    "name": "Slimy Pools",
+    "slug": "slimy-pools",
+    "type": null,
+    "stats": {
+      "rewardLevel": 16,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 232,
+      "size": 6,
+      "name": "Slimy Pools",
+      "key": "T6eIdYY_oUqx_h-nZ5DcAQ"
+    }
+  },
+  {
+    "id": "BodyAreas:cPKyjNfvVkSPu4vs_MdG_g",
+    "source_table": "BodyAreas",
+    "source_key": "cPKyjNfvVkSPu4vs_MdG_g",
+    "name": "Slimy Pools",
+    "slug": "slimy-pools-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 15,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 211,
+      "size": 4,
+      "name": "Slimy Pools",
+      "key": "cPKyjNfvVkSPu4vs_MdG_g"
+    }
+  },
+  {
+    "id": "BodyAreas:vWKwHPJN4k6NPhd7Aalbzw",
+    "source_table": "BodyAreas",
+    "source_key": "vWKwHPJN4k6NPhd7Aalbzw",
+    "name": "Small Underground Pirate Camp",
+    "slug": "small-underground-pirate-camp",
+    "type": null,
+    "stats": {
+      "rewardLevel": 2,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 38,
+      "size": 1,
+      "name": "Small Underground Pirate Camp",
+      "key": "vWKwHPJN4k6NPhd7Aalbzw"
+    }
+  },
+  {
+    "id": "BodyAreas:EG43VgskCUyVDcbr1ZZ3ag",
+    "source_table": "BodyAreas",
+    "source_key": "EG43VgskCUyVDcbr1ZZ3ag",
+    "name": "Snowy Mountains",
+    "slug": "snowy-mountains",
+    "type": null,
+    "stats": {
+      "rewardLevel": 5,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 73,
+      "size": 4,
+      "name": "Snowy Mountains",
+      "key": "EG43VgskCUyVDcbr1ZZ3ag"
+    }
+  },
+  {
+    "id": "BodyAreas:DpgM_2nDP0e_tqT84t0Y4w",
+    "source_table": "BodyAreas",
+    "source_key": "DpgM_2nDP0e_tqT84t0Y4w",
+    "name": "Space Pirate City",
+    "slug": "space-pirate-city",
+    "type": null,
+    "stats": {
+      "rewardLevel": 9,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 122,
+      "size": 3,
+      "name": "Space Pirate City",
+      "key": "DpgM_2nDP0e_tqT84t0Y4w"
+    }
+  },
+  {
+    "id": "BodyAreas:Es2FUOXIc0KWg8qYPThHNw",
+    "source_table": "BodyAreas",
+    "source_key": "Es2FUOXIc0KWg8qYPThHNw",
+    "name": "Spiky Desert",
+    "slug": "spiky-desert",
+    "type": null,
+    "stats": {
+      "rewardLevel": 11,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 152,
+      "size": 5,
+      "name": "Spiky Desert",
+      "key": "Es2FUOXIc0KWg8qYPThHNw"
+    }
+  },
+  {
+    "id": "BodyAreas:rG9vPggQMkykdzHIUvBbzA",
+    "source_table": "BodyAreas",
+    "source_key": "rG9vPggQMkykdzHIUvBbzA",
+    "name": "Spiky Mountains",
+    "slug": "spiky-mountains",
+    "type": null,
+    "stats": {
+      "rewardLevel": 14,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 194,
+      "size": 4,
+      "name": "Spiky Mountains",
+      "key": "rG9vPggQMkykdzHIUvBbzA"
+    }
+  },
+  {
+    "id": "BodyAreas:izi8fwV7TkuvjncoSlauaw",
+    "source_table": "BodyAreas",
+    "source_key": "izi8fwV7TkuvjncoSlauaw",
+    "name": "Spiky Mountains",
+    "slug": "spiky-mountains-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 50,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 312,
+      "size": 1,
+      "name": "Spiky Mountains",
+      "key": "izi8fwV7TkuvjncoSlauaw"
+    }
+  },
+  {
+    "id": "BodyAreas:Wd9pE16UcU69n4QHBUglyg",
+    "source_table": "BodyAreas",
+    "source_key": "Wd9pE16UcU69n4QHBUglyg",
+    "name": "Spiky Mountains",
+    "slug": "spiky-mountains-3",
+    "type": null,
+    "stats": {
+      "rewardLevel": 13,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 177,
+      "size": 5,
+      "name": "Spiky Mountains",
+      "key": "Wd9pE16UcU69n4QHBUglyg"
+    }
+  },
+  {
+    "id": "BodyAreas:fBQoF7AXV0axbKPn_KJKag",
+    "source_table": "BodyAreas",
+    "source_key": "fBQoF7AXV0axbKPn_KJKag",
+    "name": "Spiky Mountains",
+    "slug": "spiky-mountains-4",
+    "type": null,
+    "stats": {
+      "rewardLevel": 5,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 77,
+      "size": 3,
+      "name": "Spiky Mountains",
+      "key": "fBQoF7AXV0axbKPn_KJKag"
+    }
+  },
+  {
+    "id": "BodyAreas:k-fuTRGqWEa_9vek4BBOVQ",
+    "source_table": "BodyAreas",
+    "source_key": "k-fuTRGqWEa_9vek4BBOVQ",
+    "name": "Spiky Rainforest",
+    "slug": "spiky-rainforest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 16,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 215,
+      "size": 5,
+      "name": "Spiky Rainforest",
+      "key": "k-fuTRGqWEa_9vek4BBOVQ"
+    }
+  },
+  {
+    "id": "BodyAreas:X4r80zxFeU6cW20QXo8NZQ",
+    "source_table": "BodyAreas",
+    "source_key": "X4r80zxFeU6cW20QXo8NZQ",
+    "name": "Spiky Rainforest",
+    "slug": "spiky-rainforest-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 16,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 215,
+      "size": 5,
+      "name": "Spiky Rainforest",
+      "key": "X4r80zxFeU6cW20QXo8NZQ"
+    }
+  },
+  {
+    "id": "BodyAreas:RESYNljW_EKF0nVpVLEZxw",
+    "source_table": "BodyAreas",
+    "source_key": "RESYNljW_EKF0nVpVLEZxw",
+    "name": "Spiky Rainforest",
+    "slug": "spiky-rainforest-3",
+    "type": null,
+    "stats": {
+      "rewardLevel": 16,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 215,
+      "size": 5,
+      "name": "Spiky Rainforest",
+      "key": "RESYNljW_EKF0nVpVLEZxw"
+    }
+  },
+  {
+    "id": "BodyAreas:SGKSw9eBcUatnJ3R9Wic6g",
+    "source_table": "BodyAreas",
+    "source_key": "SGKSw9eBcUatnJ3R9Wic6g",
+    "name": "Spiky Rainforest",
+    "slug": "spiky-rainforest-4",
+    "type": null,
+    "stats": {
+      "rewardLevel": 16,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 215,
+      "size": 5,
+      "name": "Spiky Rainforest",
+      "key": "SGKSw9eBcUatnJ3R9Wic6g"
+    }
+  },
+  {
+    "id": "BodyAreas:BmsvO5RTbkWA_0ULomwSJA",
+    "source_table": "BodyAreas",
+    "source_key": "BmsvO5RTbkWA_0ULomwSJA",
+    "name": "Spore Nest",
+    "slug": "spore-nest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 29,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 356,
+      "size": 10,
+      "name": "Spore Nest",
+      "key": "BmsvO5RTbkWA_0ULomwSJA"
+    }
+  },
+  {
+    "id": "BodyAreas:FzvTAacBJECCy99mNTcXFA",
+    "source_table": "BodyAreas",
+    "source_key": "FzvTAacBJECCy99mNTcXFA",
+    "name": "Stranded Exploration Expedition",
+    "slug": "stranded-exploration-expedition",
+    "type": null,
+    "stats": {
+      "rewardLevel": 16,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 186,
+      "size": 7,
+      "name": "Stranded Exploration Expedition",
+      "key": "FzvTAacBJECCy99mNTcXFA"
+    }
+  },
+  {
+    "id": "BodyAreas:4wwmLTRiBUm6Oa49HcxX1g",
+    "source_table": "BodyAreas",
+    "source_key": "4wwmLTRiBUm6Oa49HcxX1g",
+    "name": "Talkative Trees",
+    "slug": "talkative-trees",
+    "type": null,
+    "stats": {
+      "rewardLevel": 17,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 198,
+      "size": 4,
+      "name": "Talkative Trees",
+      "key": "4wwmLTRiBUm6Oa49HcxX1g"
+    }
+  },
+  {
+    "id": "BodyAreas:UNGaYxxxVk-a2amWk83d8w",
+    "source_table": "BodyAreas",
+    "source_key": "UNGaYxxxVk-a2amWk83d8w",
+    "name": "Tectonic Resistance Structure",
+    "slug": "tectonic-resistance-structure",
+    "type": null,
+    "stats": {
+      "rewardLevel": 29,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 390,
+      "size": 10,
+      "name": "Tectonic Resistance Structure",
+      "key": "UNGaYxxxVk-a2amWk83d8w"
+    }
+  },
+  {
+    "id": "BodyAreas:0P6BXA0dI020gofjGXm_TA",
+    "source_table": "BodyAreas",
+    "source_key": "0P6BXA0dI020gofjGXm_TA",
+    "name": "The Muddy River",
+    "slug": "the-muddy-river",
+    "type": null,
+    "stats": {
+      "rewardLevel": 2,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 45,
+      "size": 2,
+      "name": "The Muddy River",
+      "key": "0P6BXA0dI020gofjGXm_TA"
+    }
+  },
+  {
+    "id": "BodyAreas:8RepT5WAkkCk96WERbJB9w",
+    "source_table": "BodyAreas",
+    "source_key": "8RepT5WAkkCk96WERbJB9w",
+    "name": "Thorn Spawner",
+    "slug": "thorn-spawner",
+    "type": null,
+    "stats": {
+      "rewardLevel": 21,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 250,
+      "size": 5,
+      "name": "Thorn Spawner",
+      "key": "8RepT5WAkkCk96WERbJB9w"
+    }
+  },
+  {
+    "id": "BodyAreas:yRK_CugIrEmoburBjOqoxQ",
+    "source_table": "BodyAreas",
+    "source_key": "yRK_CugIrEmoburBjOqoxQ",
+    "name": "Trading Station",
+    "slug": "trading-station",
+    "type": null,
+    "stats": {
+      "rewardLevel": 2,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 41,
+      "size": 3,
+      "name": "Trading Station",
+      "key": "yRK_CugIrEmoburBjOqoxQ"
+    }
+  },
+  {
+    "id": "BodyAreas:dXsOFZy9r0Wn7ZaAjdNPRw",
+    "source_table": "BodyAreas",
+    "source_key": "dXsOFZy9r0Wn7ZaAjdNPRw",
+    "name": "Transcendal Tubes",
+    "slug": "transcendal-tubes",
+    "type": null,
+    "stats": {
+      "rewardLevel": 30,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 407,
+      "size": 10,
+      "name": "Transcendal Tubes",
+      "key": "dXsOFZy9r0Wn7ZaAjdNPRw"
+    }
+  },
+  {
+    "id": "BodyAreas:xEBgeCU760eDmweZvO57jQ",
+    "source_table": "BodyAreas",
+    "source_key": "xEBgeCU760eDmweZvO57jQ",
+    "name": "Transgenic Beings",
+    "slug": "transgenic-beings",
+    "type": null,
+    "stats": {
+      "rewardLevel": 21,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 235,
+      "size": 5,
+      "name": "Transgenic Beings",
+      "key": "xEBgeCU760eDmweZvO57jQ"
+    }
+  },
+  {
+    "id": "BodyAreas:Yex034H1lUC-MvUwql3JgA",
+    "source_table": "BodyAreas",
+    "source_key": "Yex034H1lUC-MvUwql3JgA",
+    "name": "Treasure Cave",
+    "slug": "treasure-cave",
+    "type": null,
+    "stats": {
+      "rewardLevel": 8,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 31,
+      "size": 1,
+      "name": "Treasure Cave",
+      "key": "Yex034H1lUC-MvUwql3JgA"
+    }
+  },
+  {
+    "id": "BodyAreas:VN-qFUFELESbn1-t-KfSFA",
+    "source_table": "BodyAreas",
+    "source_key": "VN-qFUFELESbn1-t-KfSFA",
+    "name": "Treasure Island",
+    "slug": "treasure-island",
+    "type": null,
+    "stats": {
+      "rewardLevel": 12,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 47,
+      "size": 1,
+      "name": "Treasure Island",
+      "key": "VN-qFUFELESbn1-t-KfSFA"
+    }
+  },
+  {
+    "id": "BodyAreas:a1tq76KlGUKgxLAc4_A_4g",
+    "source_table": "BodyAreas",
+    "source_key": "a1tq76KlGUKgxLAc4_A_4g",
+    "name": "Tundra",
+    "slug": "tundra",
+    "type": null,
+    "stats": {
+      "rewardLevel": 4,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 69,
+      "size": 3,
+      "name": "Tundra",
+      "key": "a1tq76KlGUKgxLAc4_A_4g"
+    }
+  },
+  {
+    "id": "BodyAreas:eOp65IK9xUSfHFXTYTJXjQ",
+    "source_table": "BodyAreas",
+    "source_key": "eOp65IK9xUSfHFXTYTJXjQ",
+    "name": "Underground Bug Nest",
+    "slug": "underground-bug-nest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 3,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 48,
+      "size": 3,
+      "name": "Underground Bug Nest",
+      "key": "eOp65IK9xUSfHFXTYTJXjQ"
+    }
+  },
+  {
+    "id": "BodyAreas:VqhHPP8HFES_Ok4MlLXebw",
+    "source_table": "BodyAreas",
+    "source_key": "VqhHPP8HFES_Ok4MlLXebw",
+    "name": "Underground Bunker",
+    "slug": "underground-bunker",
+    "type": null,
+    "stats": {
+      "rewardLevel": 50,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 278,
+      "size": 1,
+      "name": "Underground Bunker",
+      "key": "VqhHPP8HFES_Ok4MlLXebw"
+    }
+  },
+  {
+    "id": "BodyAreas:1FS9RBIBU0aC-IeyK0aMmw",
+    "source_table": "BodyAreas",
+    "source_key": "1FS9RBIBU0aC-IeyK0aMmw",
+    "name": "Underground Bunker",
+    "slug": "underground-bunker-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 56,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 289,
+      "size": 1,
+      "name": "Underground Bunker",
+      "key": "1FS9RBIBU0aC-IeyK0aMmw"
+    }
+  },
+  {
+    "id": "BodyAreas:IvlbH8TYU060SblssiKONQ",
+    "source_table": "BodyAreas",
+    "source_key": "IvlbH8TYU060SblssiKONQ",
+    "name": "Underground City",
+    "slug": "underground-city",
+    "type": null,
+    "stats": {
+      "rewardLevel": 7,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 100,
+      "size": 3,
+      "name": "Underground City",
+      "key": "IvlbH8TYU060SblssiKONQ"
+    }
+  },
+  {
+    "id": "BodyAreas:ZreOHhmiXEC5jtn-7cdS7A",
+    "source_table": "BodyAreas",
+    "source_key": "ZreOHhmiXEC5jtn-7cdS7A",
+    "name": "Underground Civilization",
+    "slug": "underground-civilization",
+    "type": null,
+    "stats": {
+      "rewardLevel": 2,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 41,
+      "size": 1,
+      "name": "Underground Civilization",
+      "key": "ZreOHhmiXEC5jtn-7cdS7A"
+    }
+  },
+  {
+    "id": "BodyAreas:HoOwfWJHAky68uaaCAQa7Q",
+    "source_table": "BodyAreas",
+    "source_key": "HoOwfWJHAky68uaaCAQa7Q",
+    "name": "Underground Civilization",
+    "slug": "underground-civilization-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 18,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 216,
+      "size": 5,
+      "name": "Underground Civilization",
+      "key": "HoOwfWJHAky68uaaCAQa7Q"
+    }
+  },
+  {
+    "id": "BodyAreas:994QdKrWh0qntYm6VIkIGw",
+    "source_table": "BodyAreas",
+    "source_key": "994QdKrWh0qntYm6VIkIGw",
+    "name": "Underground Drug Market",
+    "slug": "underground-drug-market",
+    "type": null,
+    "stats": {
+      "rewardLevel": 26,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 284,
+      "size": 9,
+      "name": "Underground Drug Market",
+      "key": "994QdKrWh0qntYm6VIkIGw"
+    }
+  },
+  {
+    "id": "BodyAreas:jsI3MMtMtkCcg1xJqrGB1Q",
+    "source_table": "BodyAreas",
+    "source_key": "jsI3MMtMtkCcg1xJqrGB1Q",
+    "name": "Underground Hydrogen Cave",
+    "slug": "underground-hydrogen-cave",
+    "type": null,
+    "stats": {
+      "rewardLevel": 25,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 310,
+      "size": 7,
+      "name": "Underground Hydrogen Cave",
+      "key": "jsI3MMtMtkCcg1xJqrGB1Q"
+    }
+  },
+  {
+    "id": "BodyAreas:Jz4qwLqhiEKiUvL5OP3lww",
+    "source_table": "BodyAreas",
+    "source_key": "Jz4qwLqhiEKiUvL5OP3lww",
+    "name": "Underground Military Camp",
+    "slug": "underground-military-camp",
+    "type": null,
+    "stats": {
+      "rewardLevel": 1,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 38,
+      "size": 1,
+      "name": "Underground Military Camp",
+      "key": "Jz4qwLqhiEKiUvL5OP3lww"
+    }
+  },
+  {
+    "id": "BodyAreas:EOO_H4fgvUiQV8qiFaY_bg",
+    "source_table": "BodyAreas",
+    "source_key": "EOO_H4fgvUiQV8qiFaY_bg",
+    "name": "Underground Nest",
+    "slug": "underground-nest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 4,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 48,
+      "size": 3,
+      "name": "Underground Nest",
+      "key": "EOO_H4fgvUiQV8qiFaY_bg"
+    }
+  },
+  {
+    "id": "BodyAreas:Vv3qCBGF10eJlI6pIbOp7Q",
+    "source_table": "BodyAreas",
+    "source_key": "Vv3qCBGF10eJlI6pIbOp7Q",
+    "name": "Underground Plaza",
+    "slug": "underground-plaza",
+    "type": null,
+    "stats": {
+      "rewardLevel": 18,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 240,
+      "size": 5,
+      "name": "Underground Plaza",
+      "key": "Vv3qCBGF10eJlI6pIbOp7Q"
+    }
+  },
+  {
+    "id": "BodyAreas:EOhN3yGPok6mgCnrykWTpQ",
+    "source_table": "BodyAreas",
+    "source_key": "EOhN3yGPok6mgCnrykWTpQ",
+    "name": "Underground Trading Post",
+    "slug": "underground-trading-post",
+    "type": null,
+    "stats": {
+      "rewardLevel": 4,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 48,
+      "size": 1,
+      "name": "Underground Trading Post",
+      "key": "EOhN3yGPok6mgCnrykWTpQ"
+    }
+  },
+  {
+    "id": "BodyAreas:aU1OgfOsbkmJc33KSdRljA",
+    "source_table": "BodyAreas",
+    "source_key": "aU1OgfOsbkmJc33KSdRljA",
+    "name": "Underground Trading Post",
+    "slug": "underground-trading-post-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 13,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 149,
+      "size": 5,
+      "name": "Underground Trading Post",
+      "key": "aU1OgfOsbkmJc33KSdRljA"
+    }
+  },
+  {
+    "id": "BodyAreas:3KDWfy59r0q-reT866p2Mw",
+    "source_table": "BodyAreas",
+    "source_key": "3KDWfy59r0q-reT866p2Mw",
+    "name": "Underground Trading Post",
+    "slug": "underground-trading-post-3",
+    "type": null,
+    "stats": {
+      "rewardLevel": 6,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 85,
+      "size": 4,
+      "name": "Underground Trading Post",
+      "key": "3KDWfy59r0q-reT866p2Mw"
+    }
+  },
+  {
+    "id": "BodyAreas:Smn1EmRDdUaUkPIB0Eg1ZA",
+    "source_table": "BodyAreas",
+    "source_key": "Smn1EmRDdUaUkPIB0Eg1ZA",
+    "name": "Underground cave system",
+    "slug": "underground-cave-system",
+    "type": null,
+    "stats": {
+      "rewardLevel": 14,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 188,
+      "size": 6,
+      "name": "Underground cave system",
+      "key": "Smn1EmRDdUaUkPIB0Eg1ZA"
+    }
+  },
+  {
+    "id": "BodyAreas:7DY_yQopM0Wd2v0zVv_whw",
+    "source_table": "BodyAreas",
+    "source_key": "7DY_yQopM0Wd2v0zVv_whw",
+    "name": "Underwater Cavern",
+    "slug": "underwater-cavern",
+    "type": null,
+    "stats": {
+      "rewardLevel": 26,
+      "table": "BodyAreas",
+      "majorType": 0,
+      "skillLevel": 337,
+      "size": 8,
+      "name": "Underwater Cavern",
+      "key": "7DY_yQopM0Wd2v0zVv_whw"
+    }
+  },
+  {
+    "id": "BodyAreas:E1q2d3ojnE-g60F9tFDkLg",
+    "source_table": "BodyAreas",
+    "source_key": "E1q2d3ojnE-g60F9tFDkLg",
+    "name": "Unknown Lawn",
+    "slug": "unknown-lawn",
+    "type": null,
+    "stats": {
+      "rewardLevel": 3,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 46,
+      "size": 1,
+      "name": "Unknown Lawn",
+      "key": "E1q2d3ojnE-g60F9tFDkLg"
+    }
+  },
+  {
+    "id": "BodyAreas:fcyJrjM4bkuycb8wyfny3w",
+    "source_table": "BodyAreas",
+    "source_key": "fcyJrjM4bkuycb8wyfny3w",
+    "name": "Unknown Lifeform",
+    "slug": "unknown-lifeform",
+    "type": null,
+    "stats": {
+      "rewardLevel": 25,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 278,
+      "size": 7,
+      "name": "Unknown Lifeform",
+      "key": "fcyJrjM4bkuycb8wyfny3w"
+    }
+  },
+  {
+    "id": "BodyAreas:oO7yOEJWN0myFdo477_M4Q",
+    "source_table": "BodyAreas",
+    "source_key": "oO7yOEJWN0myFdo477_M4Q",
+    "name": "Weird Plankton Infested Pool",
+    "slug": "weird-plankton-infested-pool",
+    "type": null,
+    "stats": {
+      "rewardLevel": 17,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 208,
+      "size": 3,
+      "name": "Weird Plankton Infested Pool",
+      "key": "oO7yOEJWN0myFdo477_M4Q"
+    }
+  },
+  {
+    "id": "BodyAreas:bTanEA1Qzke-HqC2QqKY6Q",
+    "source_table": "BodyAreas",
+    "source_key": "bTanEA1Qzke-HqC2QqKY6Q",
+    "name": "Weird Plankton Infested Pool",
+    "slug": "weird-plankton-infested-pool-2",
+    "type": null,
+    "stats": {
+      "rewardLevel": 17,
+      "table": "BodyAreas",
+      "majorType": 1,
+      "skillLevel": 208,
+      "size": 3,
+      "name": "Weird Plankton Infested Pool",
+      "key": "bTanEA1Qzke-HqC2QqKY6Q"
+    }
+  },
+  {
+    "id": "BodyAreas:2OnkWbfLMUOWeoBvo_Bj2A",
+    "source_table": "BodyAreas",
+    "source_key": "2OnkWbfLMUOWeoBvo_Bj2A",
+    "name": "Worm Infested Forest",
+    "slug": "worm-infested-forest",
+    "type": null,
+    "stats": {
+      "rewardLevel": 14,
+      "table": "BodyAreas",
+      "majorType": 2,
+      "skillLevel": 146,
+      "size": 8,
+      "name": "Worm Infested Forest",
+      "key": "2OnkWbfLMUOWeoBvo_Bj2A"
+    }
+  }
+]

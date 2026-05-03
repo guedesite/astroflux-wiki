@@ -1,0 +1,304 @@
+[
+  {
+    "id": "WarpPaths:u0xyqdvvbU24INFLHevQXg",
+    "source_table": "WarpPaths",
+    "source_key": "u0xyqdvvbU24INFLHevQXg",
+    "name": "Arrenius <> Co-op Survival",
+    "slug": "arrenius-co-op-survival",
+    "type": null,
+    "stats": {
+      "table": "WarpPaths",
+      "solarSystem1": "DU6zMqKBIUGnUWA9eVVD-g",
+      "transit": true,
+      "name": "Arrenius <> Co-op Survival",
+      "solarSystem2": "ic3w-BxdMU6qWhX9t3_EaA",
+      "key": "u0xyqdvvbU24INFLHevQXg"
+    }
+  },
+  {
+    "id": "WarpPaths:qXKTGcGvuUeyE-BIPgCj9g",
+    "source_table": "WarpPaths",
+    "source_key": "qXKTGcGvuUeyE-BIPgCj9g",
+    "name": "Arrenius <> Kritillian",
+    "slug": "arrenius-kritillian",
+    "type": null,
+    "stats": {
+      "table": "WarpPaths",
+      "payVaultItem": "Warp Path Arrenius_Kritillian",
+      "solarSystem1": "DU6zMqKBIUGnUWA9eVVD-g",
+      "transit": true,
+      "name": "Arrenius <> Kritillian",
+      "solarSystem2": "qTczb1IHiE-g96ytcYY-Kg",
+      "key": "qXKTGcGvuUeyE-BIPgCj9g"
+    }
+  },
+  {
+    "id": "WarpPaths:SHFwfWTpxU2dbqScM6IlQw",
+    "source_table": "WarpPaths",
+    "source_key": "SHFwfWTpxU2dbqScM6IlQw",
+    "name": "Azuron <> Hyperion",
+    "slug": "azuron-hyperion",
+    "type": null,
+    "stats": {
+      "table": "WarpPaths",
+      "solarSystem1": "DrMy6JjyO0OI0ui7c80bNw",
+      "transit": false,
+      "name": "Azuron <> Hyperion",
+      "solarSystem2": "HrAjOBivt0SHPYtxKyiB_Q",
+      "key": "SHFwfWTpxU2dbqScM6IlQw"
+    }
+  },
+  {
+    "id": "WarpPaths:TtUsIEV2E0Obd9L1n2LYsA",
+    "source_table": "WarpPaths",
+    "source_key": "TtUsIEV2E0Obd9L1n2LYsA",
+    "name": "Durian <> Arrenius",
+    "slug": "durian-arrenius",
+    "type": null,
+    "stats": {
+      "table": "WarpPaths",
+      "payVaultItem": "Warp Path Durian_Arrenius",
+      "solarSystem1": "lf99t42bhEGsBmY0etltVw",
+      "transit": false,
+      "name": "Durian <> Arrenius",
+      "solarSystem2": "DU6zMqKBIUGnUWA9eVVD-g",
+      "key": "TtUsIEV2E0Obd9L1n2LYsA"
+    }
+  },
+  {
+    "id": "WarpPaths:dlGpzHEZRU611Wn5P8sVEA",
+    "source_table": "WarpPaths",
+    "source_key": "dlGpzHEZRU611Wn5P8sVEA",
+    "name": "Fulzar <> Vorsran",
+    "slug": "fulzar-vorsran",
+    "type": null,
+    "stats": {
+      "table": "WarpPaths",
+      "payVaultItem": "Warp Path Vibrilian_Fulzar",
+      "solarSystem1": "TFWG3jTSaESdIzfYva4qCQ",
+      "transit": false,
+      "name": "Fulzar <> Vorsran",
+      "solarSystem2": "sfNQWazDdUasynuRWngLdw",
+      "key": "dlGpzHEZRU611Wn5P8sVEA"
+    }
+  },
+  {
+    "id": "WarpPaths:rY6FIAyvMkm5ZKAJzxOm0g",
+    "source_table": "WarpPaths",
+    "source_key": "rY6FIAyvMkm5ZKAJzxOm0g",
+    "name": "Hozar <> Mitrilion",
+    "slug": "hozar-mitrilion",
+    "type": null,
+    "stats": {
+      "table": "WarpPaths",
+      "payVaultItem": "Warp Path x_Mitrillion",
+      "solarSystem1": "Rv0u-QG0bESaLV3ZyUj19Q",
+      "transit": false,
+      "name": "Hozar <> Mitrilion",
+      "solarSystem2": "TbpMncDxzU-7LigSVnzSDg",
+      "key": "rY6FIAyvMkm5ZKAJzxOm0g"
+    }
+  },
+  {
+    "id": "WarpPaths:Ad2tzly5e0iNzOIJyEMBwQ",
+    "source_table": "WarpPaths",
+    "source_key": "Ad2tzly5e0iNzOIJyEMBwQ",
+    "name": "Hyperion <> Kapello",
+    "slug": "hyperion-kapello",
+    "type": null,
+    "stats": {
+      "table": "WarpPaths",
+      "solarSystem1": "HrAjOBivt0SHPYtxKyiB_Q",
+      "transit": false,
+      "name": "Hyperion <> Kapello",
+      "solarSystem2": "rRgn1hgGh0qpWXAha3l4cw",
+      "key": "Ad2tzly5e0iNzOIJyEMBwQ"
+    }
+  },
+  {
+    "id": "WarpPaths:ikmGJ-piwkacprcS4R_XZg",
+    "source_table": "WarpPaths",
+    "source_key": "ikmGJ-piwkacprcS4R_XZg",
+    "name": "Kapello <> Durian",
+    "slug": "kapello-durian",
+    "type": null,
+    "stats": {
+      "table": "WarpPaths",
+      "payVaultItem": "Warp Path Kapello_Durian",
+      "solarSystem1": "rRgn1hgGh0qpWXAha3l4cw",
+      "transit": false,
+      "name": "Kapello <> Durian",
+      "solarSystem2": "lf99t42bhEGsBmY0etltVw",
+      "key": "ikmGJ-piwkacprcS4R_XZg"
+    }
+  },
+  {
+    "id": "WarpPaths:jqd8BJniykmDY2J3aesLzg",
+    "source_table": "WarpPaths",
+    "source_key": "jqd8BJniykmDY2J3aesLzg",
+    "name": "Kapello <> Venturi",
+    "slug": "kapello-venturi",
+    "type": null,
+    "stats": {
+      "table": "WarpPaths",
+      "payVaultItem": "Warp Path Kapello_Durian",
+      "solarSystem1": "rRgn1hgGh0qpWXAha3l4cw",
+      "transit": false,
+      "name": "Kapello <> Venturi",
+      "solarSystem2": "hI1Hlu1OIUWHIxPjor1_Zw",
+      "key": "jqd8BJniykmDY2J3aesLzg"
+    }
+  },
+  {
+    "id": "WarpPaths:nOvlzx58GUqzCnjNot4Lpg",
+    "source_table": "WarpPaths",
+    "source_key": "nOvlzx58GUqzCnjNot4Lpg",
+    "name": "Kritillian <> Hozar",
+    "slug": "kritillian-hozar",
+    "type": null,
+    "stats": {
+      "table": "WarpPaths",
+      "payVaultItem": "Warp Path Kritillian_X",
+      "solarSystem1": "qTczb1IHiE-g96ytcYY-Kg",
+      "transit": false,
+      "name": "Kritillian <> Hozar",
+      "solarSystem2": "Rv0u-QG0bESaLV3ZyUj19Q",
+      "key": "nOvlzx58GUqzCnjNot4Lpg"
+    }
+  },
+  {
+    "id": "WarpPaths:6UAzGr0ZZUC85fA0dzcGtw",
+    "source_table": "WarpPaths",
+    "source_key": "6UAzGr0ZZUC85fA0dzcGtw",
+    "name": "Kritillian <> Zergilin",
+    "slug": "kritillian-zergilin",
+    "type": null,
+    "stats": {
+      "table": "WarpPaths",
+      "payVaultItem": "Warp Path Kritillian_X",
+      "solarSystem1": "qTczb1IHiE-g96ytcYY-Kg",
+      "transit": false,
+      "name": "Kritillian <> Zergilin",
+      "solarSystem2": "eeiIZ18nr0-Is2jw_hLm3w",
+      "key": "6UAzGr0ZZUC85fA0dzcGtw"
+    }
+  },
+  {
+    "id": "WarpPaths:GcDQBmKnRkeTWzW0Zt3nVg",
+    "source_table": "WarpPaths",
+    "source_key": "GcDQBmKnRkeTWzW0Zt3nVg",
+    "name": "Mitrilion <> Vibrilian",
+    "slug": "mitrilion-vibrilian",
+    "type": null,
+    "stats": {
+      "table": "WarpPaths",
+      "payVaultItem": "Warp Path Mitrillion_Vibrilian",
+      "solarSystem1": "TbpMncDxzU-7LigSVnzSDg",
+      "transit": false,
+      "name": "Mitrilion <> Vibrilian",
+      "solarSystem2": "iFIiOWjST0KHKaGgw9cN4A",
+      "key": "GcDQBmKnRkeTWzW0Zt3nVg"
+    }
+  },
+  {
+    "id": "WarpPaths:3lDHg-rm-0iEfxeO-0LEOg",
+    "source_table": "WarpPaths",
+    "source_key": "3lDHg-rm-0iEfxeO-0LEOg",
+    "name": "Sarkinon <> Cynapsian",
+    "slug": "sarkinon-cynapsian",
+    "type": null,
+    "stats": {
+      "table": "WarpPaths",
+      "payVaultItem": "Warp Path Vibrilian_Sarkinon",
+      "solarSystem1": "AMfRfOOoqU-PeXmFnacumw",
+      "transit": false,
+      "name": "Sarkinon <> Cynapsian",
+      "solarSystem2": "AAFLLTg0nkqZaBDwy0qh0w",
+      "key": "3lDHg-rm-0iEfxeO-0LEOg"
+    }
+  },
+  {
+    "id": "WarpPaths:Zr62Uzp4lEGvJGfNOTTiwg",
+    "source_table": "WarpPaths",
+    "source_key": "Zr62Uzp4lEGvJGfNOTTiwg",
+    "name": "Sarkinon <> Neurona",
+    "slug": "sarkinon-neurona",
+    "type": null,
+    "stats": {
+      "table": "WarpPaths",
+      "payVaultItem": "Warp Path Vibrilian_Sarkinon",
+      "solarSystem1": "AMfRfOOoqU-PeXmFnacumw",
+      "transit": false,
+      "name": "Sarkinon <> Neurona",
+      "solarSystem2": "6TZ84m2FoUyJqjZK8grKaw",
+      "key": "Zr62Uzp4lEGvJGfNOTTiwg"
+    }
+  },
+  {
+    "id": "WarpPaths:eODRTIMzw0eaeZ4c2BJxCw",
+    "source_table": "WarpPaths",
+    "source_key": "eODRTIMzw0eaeZ4c2BJxCw",
+    "name": "Vibrilian <> Fulzar",
+    "slug": "vibrilian-fulzar",
+    "type": null,
+    "stats": {
+      "table": "WarpPaths",
+      "payVaultItem": "Warp Path Vibrilian_Fulzar",
+      "solarSystem1": "iFIiOWjST0KHKaGgw9cN4A",
+      "transit": true,
+      "name": "Vibrilian <> Fulzar",
+      "solarSystem2": "TFWG3jTSaESdIzfYva4qCQ",
+      "key": "eODRTIMzw0eaeZ4c2BJxCw"
+    }
+  },
+  {
+    "id": "WarpPaths:N7MNaYu4C0W0EROrI29AaA",
+    "source_table": "WarpPaths",
+    "source_key": "N7MNaYu4C0W0EROrI29AaA",
+    "name": "Vibrilian <> Sarkinon",
+    "slug": "vibrilian-sarkinon",
+    "type": null,
+    "stats": {
+      "table": "WarpPaths",
+      "payVaultItem": "Warp Path Vibrilian_Sarkinon",
+      "solarSystem1": "iFIiOWjST0KHKaGgw9cN4A",
+      "transit": false,
+      "name": "Vibrilian <> Sarkinon",
+      "solarSystem2": "AMfRfOOoqU-PeXmFnacumw",
+      "key": "N7MNaYu4C0W0EROrI29AaA"
+    }
+  },
+  {
+    "id": "WarpPaths:FE2719BD-B63E-1305-EBC7-5B39842726A3",
+    "source_table": "WarpPaths",
+    "source_key": "FE2719BD-B63E-1305-EBC7-5B39842726A3",
+    "name": "Vorsran <> Argon",
+    "slug": "vorsran-argon",
+    "type": null,
+    "stats": {
+      "table": "WarpPaths",
+      "solarSystem1": "sfNQWazDdUasynuRWngLdw",
+      "transit": false,
+      "name": "Vorsran <> Argon",
+      "solarSystem2": "BC26CB28-5F73-BE5D-88EC-1D3F2676306D",
+      "key": "FE2719BD-B63E-1305-EBC7-5B39842726A3"
+    }
+  },
+  {
+    "id": "WarpPaths:3vWMqQqGzUSpbENcjZJWYA",
+    "source_table": "WarpPaths",
+    "source_key": "3vWMqQqGzUSpbENcjZJWYA",
+    "name": "Zergilin <> Mitrilion",
+    "slug": "zergilin-mitrilion",
+    "type": null,
+    "stats": {
+      "table": "WarpPaths",
+      "payVaultItem": "Warp Path x_Mitrillion",
+      "solarSystem1": "eeiIZ18nr0-Is2jw_hLm3w",
+      "transit": false,
+      "name": "Zergilin <> Mitrilion",
+      "solarSystem2": "TbpMncDxzU-7LigSVnzSDg",
+      "key": "3vWMqQqGzUSpbENcjZJWYA"
+    }
+  }
+]

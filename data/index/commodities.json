@@ -1,0 +1,381 @@
+[
+  {
+    "id": "Commodities:I2W7v1C8h0iDVUAFHC2Ytg",
+    "source_table": "Commodities",
+    "source_key": "I2W7v1C8h0iDVUAFHC2Ytg",
+    "name": "Advanced Data Chip",
+    "slug": "advanced-data-chip",
+    "type": "spaceJunk",
+    "stats": {
+      "table": "Commodities",
+      "name": "Advanced Data Chip",
+      "bitmap": "fi2hOOtgVE2v72UrK_XqgQ",
+      "type": "spaceJunk",
+      "key": "I2W7v1C8h0iDVUAFHC2Ytg"
+    }
+  },
+  {
+    "id": "Commodities:lmPr7d35rkq0Ev6RQRJGVw",
+    "source_table": "Commodities",
+    "source_key": "lmPr7d35rkq0Ev6RQRJGVw",
+    "name": "Alien Alloys",
+    "slug": "alien-alloys",
+    "type": "spaceJunk",
+    "stats": {
+      "table": "Commodities",
+      "name": "Alien Alloys",
+      "bitmap": "veFmP5F5k0O0iauWvjg3Ew",
+      "type": "spaceJunk",
+      "key": "lmPr7d35rkq0Ev6RQRJGVw"
+    }
+  },
+  {
+    "id": "Commodities:1c46ec4C1UyRzxzv8hRqvw",
+    "source_table": "Commodities",
+    "source_key": "1c46ec4C1UyRzxzv8hRqvw",
+    "name": "Big Metal Scrap",
+    "slug": "big-metal-scrap",
+    "type": "spaceJunk",
+    "stats": {
+      "table": "Commodities",
+      "sellValue": 44,
+      "type": "spaceJunk",
+      "key": "1c46ec4C1UyRzxzv8hRqvw",
+      "size": 4,
+      "name": "Big Metal Scrap",
+      "bitmap": "fJ50xpvSvEGPU7Oc3nciqA"
+    }
+  },
+  {
+    "id": "Commodities:Ds3Fw5ukMUyDdCtOSF-pBQ",
+    "source_table": "Commodities",
+    "source_key": "Ds3Fw5ukMUyDdCtOSF-pBQ",
+    "name": "Bionic Implant",
+    "slug": "bionic-implant",
+    "type": "spaceJunk",
+    "stats": {
+      "table": "Commodities",
+      "name": "Bionic Implant",
+      "bitmap": "duO_xHqJvUy9kKA5Mbe7CA",
+      "type": "spaceJunk",
+      "key": "Ds3Fw5ukMUyDdCtOSF-pBQ"
+    }
+  },
+  {
+    "id": "Commodities:BbTw6ZdJDUm4iQXUuHy31Q",
+    "source_table": "Commodities",
+    "source_key": "BbTw6ZdJDUm4iQXUuHy31Q",
+    "name": "Brain Tissue",
+    "slug": "brain-tissue",
+    "type": "spaceJunk",
+    "stats": {
+      "table": "Commodities",
+      "name": "Brain Tissue",
+      "bitmap": "ddpzCN22M0K-jCZxYhRq2w",
+      "type": "spaceJunk",
+      "key": "BbTw6ZdJDUm4iQXUuHy31Q"
+    }
+  },
+  {
+    "id": "Commodities:NGlW6H9o80qip5U6aRnChA",
+    "source_table": "Commodities",
+    "source_key": "NGlW6H9o80qip5U6aRnChA",
+    "name": "Bug Leg",
+    "slug": "bug-leg",
+    "type": "spaceJunk",
+    "stats": {
+      "table": "Commodities",
+      "name": "Bug Leg",
+      "bitmap": "_uStOe9zuUCoy8c8TMa4QQ",
+      "type": "spaceJunk",
+      "key": "NGlW6H9o80qip5U6aRnChA"
+    }
+  },
+  {
+    "id": "Commodities:Q-4DCSknqkaIGa1016-ggA",
+    "source_table": "Commodities",
+    "source_key": "Q-4DCSknqkaIGa1016-ggA",
+    "name": "Core Charge",
+    "slug": "core-charge",
+    "type": "spaceJunk",
+    "stats": {
+      "table": "Commodities",
+      "name": "Core Charge",
+      "bitmap": "XzFVaX0FWUmFsARWbrrPgg",
+      "type": "spaceJunk",
+      "key": "Q-4DCSknqkaIGa1016-ggA"
+    }
+  },
+  {
+    "id": "Commodities:fPujzCjldEeJflK-PnPvBQ",
+    "source_table": "Commodities",
+    "source_key": "fPujzCjldEeJflK-PnPvBQ",
+    "name": "Engine Part",
+    "slug": "engine-part",
+    "type": "spaceJunk",
+    "stats": {
+      "table": "Commodities",
+      "name": "Engine Part",
+      "bitmap": "X4T5w8NB3UaSLC23nb60zg",
+      "type": "spaceJunk",
+      "key": "fPujzCjldEeJflK-PnPvBQ"
+    }
+  },
+  {
+    "id": "Commodities:9FhluvJjQEmdBvUtegVFHA",
+    "source_table": "Commodities",
+    "source_key": "9FhluvJjQEmdBvUtegVFHA",
+    "name": "Flux",
+    "slug": "flux",
+    "type": "mineral",
+    "stats": {
+      "table": "Commodities",
+      "name": "Flux",
+      "bitmap": "9hgYgsbTD06TO6UWLZ78hA",
+      "type": "mineral",
+      "key": "9FhluvJjQEmdBvUtegVFHA"
+    }
+  },
+  {
+    "id": "Commodities:K0RisGHC2UqZks1UVcYFOA",
+    "source_table": "Commodities",
+    "source_key": "K0RisGHC2UqZks1UVcYFOA",
+    "name": "Fusion Core",
+    "slug": "fusion-core",
+    "type": "spaceJunk",
+    "stats": {
+      "table": "Commodities",
+      "name": "Fusion Core",
+      "bitmap": "27GTVFZTvkGZ1S6NcwjlMA",
+      "type": "spaceJunk",
+      "key": "K0RisGHC2UqZks1UVcYFOA"
+    }
+  },
+  {
+    "id": "Commodities:-kUiivd-q02hAxMfyWgXlQ",
+    "source_table": "Commodities",
+    "source_key": "-kUiivd-q02hAxMfyWgXlQ",
+    "name": "Genetic Control Implant",
+    "slug": "genetic-control-implant",
+    "type": "spaceJunk",
+    "stats": {
+      "table": "Commodities",
+      "name": "Genetic Control Implant",
+      "bitmap": "duO_xHqJvUy9kKA5Mbe7CA",
+      "type": "spaceJunk",
+      "key": "-kUiivd-q02hAxMfyWgXlQ"
+    }
+  },
+  {
+    "id": "Commodities:d_SV3Oqzz0O5AeGUhMhqdg",
+    "source_table": "Commodities",
+    "source_key": "d_SV3Oqzz0O5AeGUhMhqdg",
+    "name": "Heart",
+    "slug": "heart",
+    "type": "spaceJunk",
+    "stats": {
+      "table": "Commodities",
+      "name": "Heart",
+      "bitmap": "ubUqJMsIrkCRiH4aTL30ag",
+      "type": "spaceJunk",
+      "key": "d_SV3Oqzz0O5AeGUhMhqdg"
+    }
+  },
+  {
+    "id": "Commodities:d6H3w_34pk2ghaQcXYBDag",
+    "source_table": "Commodities",
+    "source_key": "d6H3w_34pk2ghaQcXYBDag",
+    "name": "Hydrogen Crystal",
+    "slug": "hydrogen-crystal",
+    "type": "mineral",
+    "stats": {
+      "table": "Commodities",
+      "name": "Hydrogen Crystal",
+      "bitmap": "_9TC7PPI-UWXhuUSyG1Vwg",
+      "type": "mineral",
+      "key": "d6H3w_34pk2ghaQcXYBDag"
+    }
+  },
+  {
+    "id": "Commodities:hB-JTx4Ka0KG0eEjE1L02w",
+    "source_table": "Commodities",
+    "source_key": "hB-JTx4Ka0KG0eEjE1L02w",
+    "name": "Hydrogen Oscillator",
+    "slug": "hydrogen-oscillator",
+    "type": "spaceJunk",
+    "stats": {
+      "table": "Commodities",
+      "name": "Hydrogen Oscillator",
+      "bitmap": "CoCfkJGlQEmBrrR3FHGvkQ",
+      "type": "spaceJunk",
+      "key": "hB-JTx4Ka0KG0eEjE1L02w"
+    }
+  },
+  {
+    "id": "Commodities:h2-67R6yGEmPpWkPHATIeQ",
+    "source_table": "Commodities",
+    "source_key": "h2-67R6yGEmPpWkPHATIeQ",
+    "name": "Hydrogen Spill",
+    "slug": "hydrogen-spill",
+    "type": "spaceJunk",
+    "stats": {
+      "table": "Commodities",
+      "name": "Hydrogen Spill",
+      "bitmap": "MdUcjFlyZ02r1j68xzHqug",
+      "type": "spaceJunk",
+      "key": "h2-67R6yGEmPpWkPHATIeQ"
+    }
+  },
+  {
+    "id": "Commodities:gO_f-y0QEU68vVwJ_XVmOg",
+    "source_table": "Commodities",
+    "source_key": "gO_f-y0QEU68vVwJ_XVmOg",
+    "name": "Iridium",
+    "slug": "iridium",
+    "type": "mineral",
+    "stats": {
+      "table": "Commodities",
+      "name": "Iridium",
+      "bitmap": "9VshOljYPkmjPn6bUKo3hw",
+      "type": "mineral",
+      "key": "gO_f-y0QEU68vVwJ_XVmOg"
+    }
+  },
+  {
+    "id": "Commodities:Ril2ZkXB6EOTshX6kmWUrg",
+    "source_table": "Commodities",
+    "source_key": "Ril2ZkXB6EOTshX6kmWUrg",
+    "name": "Medium Data Chip",
+    "slug": "medium-data-chip",
+    "type": "spaceJunk",
+    "stats": {
+      "table": "Commodities",
+      "name": "Medium Data Chip",
+      "bitmap": "ZBKoDpnZukaAtGv1B_YS0g",
+      "type": "spaceJunk",
+      "key": "Ril2ZkXB6EOTshX6kmWUrg"
+    }
+  },
+  {
+    "id": "Commodities:9PxxP960kkejxGFHhy608A",
+    "source_table": "Commodities",
+    "source_key": "9PxxP960kkejxGFHhy608A",
+    "name": "Metal Scrap",
+    "slug": "metal-scrap",
+    "type": "spaceJunk",
+    "stats": {
+      "table": "Commodities",
+      "sellValue": 11,
+      "type": "spaceJunk",
+      "key": "9PxxP960kkejxGFHhy608A",
+      "size": 1,
+      "name": "Metal Scrap",
+      "bitmap": "XC9ABr6wKUu2kL1t2pZxxg"
+    }
+  },
+  {
+    "id": "Commodities:569EF4C8-A8A5-C1C7-C8D8-0FA49F4F24B0",
+    "source_table": "Commodities",
+    "source_key": "569EF4C8-A8A5-C1C7-C8D8-0FA49F4F24B0",
+    "name": "Phase Crystal",
+    "slug": "phase-crystal",
+    "type": "spaceJunk",
+    "stats": {
+      "table": "Commodities",
+      "name": "Phase Crystal",
+      "bitmap": "0F5B8AAB-2810-DFFD-11BF-5921EA82572E",
+      "type": "spaceJunk",
+      "key": "569EF4C8-A8A5-C1C7-C8D8-0FA49F4F24B0"
+    }
+  },
+  {
+    "id": "Commodities:H5qybQDy9UindMh9yYIeqg",
+    "source_table": "Commodities",
+    "source_key": "H5qybQDy9UindMh9yYIeqg",
+    "name": "Plasma Fluids",
+    "slug": "plasma-fluids",
+    "type": "mineral",
+    "stats": {
+      "table": "Commodities",
+      "name": "Plasma Fluids",
+      "bitmap": "W8y-JYWu_UmhnNHc27IVfg",
+      "type": "mineral",
+      "key": "H5qybQDy9UindMh9yYIeqg"
+    }
+  },
+  {
+    "id": "Commodities:_bvZ7JfYQEaEq7ap06_O6Q",
+    "source_table": "Commodities",
+    "source_key": "_bvZ7JfYQEaEq7ap06_O6Q",
+    "name": "Polyhedric Fabric",
+    "slug": "polyhedric-fabric",
+    "type": "spaceJunk",
+    "stats": {
+      "table": "Commodities",
+      "name": "Polyhedric Fabric",
+      "bitmap": "7w-zsKZcgESynZhO-tthtA",
+      "type": "spaceJunk",
+      "key": "_bvZ7JfYQEaEq7ap06_O6Q"
+    }
+  },
+  {
+    "id": "Commodities:-1XaRBMHpEyTJxGsUtxGXw",
+    "source_table": "Commodities",
+    "source_key": "-1XaRBMHpEyTJxGsUtxGXw",
+    "name": "Radiated Junk",
+    "slug": "radiated-junk",
+    "type": "spaceJunk",
+    "stats": {
+      "table": "Commodities",
+      "name": "Radiated Junk",
+      "bitmap": "wXbhTbkpOUe-W0ITbAi87g",
+      "type": "spaceJunk",
+      "key": "-1XaRBMHpEyTJxGsUtxGXw"
+    }
+  },
+  {
+    "id": "Commodities:HUilxrgrQ0eCLftFf2CSLw",
+    "source_table": "Commodities",
+    "source_key": "HUilxrgrQ0eCLftFf2CSLw",
+    "name": "Simple Data Chip",
+    "slug": "simple-data-chip",
+    "type": "spaceJunk",
+    "stats": {
+      "table": "Commodities",
+      "name": "Simple Data Chip",
+      "bitmap": "7y5VPu5-u0CmRokBnwPbzw",
+      "type": "spaceJunk",
+      "key": "HUilxrgrQ0eCLftFf2CSLw"
+    }
+  },
+  {
+    "id": "Commodities:flpbTKautkC1QzjWT28gkw",
+    "source_table": "Commodities",
+    "source_key": "flpbTKautkC1QzjWT28gkw",
+    "name": "Steel",
+    "slug": "steel",
+    "type": "mineral",
+    "stats": {
+      "table": "Commodities",
+      "name": "Steel",
+      "bitmap": "9RAPahKrbUSPGk1heTo-qA",
+      "type": "mineral",
+      "key": "flpbTKautkC1QzjWT28gkw"
+    }
+  },
+  {
+    "id": "Commodities:hZ2FpZBh-kmRldjIi3rEwg",
+    "source_table": "Commodities",
+    "source_key": "hZ2FpZBh-kmRldjIi3rEwg",
+    "name": "Toxic Waste",
+    "slug": "toxic-waste",
+    "type": "spaceJunk",
+    "stats": {
+      "table": "Commodities",
+      "name": "Toxic Waste",
+      "bitmap": "By_gG7G5Vk-7grHE5HMA9A",
+      "type": "spaceJunk",
+      "key": "hZ2FpZBh-kmRldjIi3rEwg"
+    }
+  }
+]

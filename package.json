@@ -1,0 +1,14 @@
+{
+  "name": "astroflux-wiki",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "extract": "node scripts/extract-wiki-data.js",
+    "build": "node scripts/build-static-site.js",
+    "check": "node scripts/check-generated-output.js",
+    "serve:dist": "node scripts/serve-dist.js",
+    "fetch:assets": "node scripts/fetch-gamefs-assets.js",
+    "wiki": "npm run extract && npm run build"
+  }
+}

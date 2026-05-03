@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Combat Guide - Astroflux Wiki</title>
+  <link rel="icon" href="/assets/favicon.ico">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="/">Astroflux Wiki</a>
+    <form class="site-search" role="search">
+      <input id="search-input" type="search" placeholder="Search wiki" autocomplete="off">
+      <div id="search-results" class="search-results" hidden></div>
+    </form>
+    <nav>
+      <a href="/guides/">Guides</a>
+      <a href="/systems/">Systems</a>
+      <a href="/bodies/">Bodies</a>
+      <a href="/enemies/">Enemies</a>
+      <a href="/bosses/">Bosses</a>
+      <a href="/weapons/">Weapons</a>
+      <a href="/commodities/">Items</a>
+      <a href="/artifacts/">Artifacts</a>
+      <a href="/drops/">Drops</a>
+      <a href="/media/">Media</a>
+      <a href="/map/">Map</a>
+    </nav>
+  </header>
+  
+  <main><h1>Combat Guide</h1>
+<section class="content-grid">
+  <article><h2>Damage Types</h2><p>Astroflux damage types come from <code>core.weapon.Damage</code>. The game caps resistance at 75%, so high resistance is important but not absolute immunity.</p><div class="table-wrap"><table class="sortable"><thead><tr><th>ID</th><th>Meaning</th><th>Weapon count</th></tr></thead><tbody><tr><td>0</td><td>Kinetic</td><td>79</td></tr><tr><td>1</td><td>Energy</td><td>120</td></tr><tr><td>2</td><td>Corrosive</td><td>54</td></tr><tr><td>3</td><td>50% Kinetic + 50% Energy</td><td>75</td></tr><tr><td>4</td><td>50% Corrosive + 50% Kinetic</td><td>18</td></tr><tr><td>5</td><td>All</td><td>0</td></tr><tr><td>6</td><td>Health</td><td>8</td></tr><tr><td>7</td><td>Kinetic + Energy + Corrosive</td><td>5</td></tr><tr><td>8</td><td>None</td><td>1</td></tr><tr><td>9</td><td>50% Energy + 50% Corrosive</td><td>8</td></tr></tbody></table></div></article>
+  <article><h2>How To Read Enemy Pages</h2><p>Start with traits, damage type, and resistances. Then inspect the weapon loadout and spawn location. A low-HP enemy with teleport or kamikaze behavior can be more dangerous than a static high-HP target.</p><div class="table-wrap"><table><thead><tr><th>Trait</th><th>Player meaning</th></tr></thead><tbody><tr><td>Melee</td><td>The enemy wants close range; range control matters.</td></tr><tr><td>Kamikaze</td><td>The enemy has self-damage behavior and can punish staying too close.</td></tr><tr><td>Teleport</td><td>The enemy can reset distance or reach targets that kite normally.</td></tr><tr><td>Cloak</td><td>The enemy can hide or break targeting rules.</td></tr><tr><td>Healer</td><td>The enemy can restore allies or targets; kill order matters.</td></tr><tr><td>Grab</td><td>The enemy can pull or hold targets.</td></tr><tr><td>Mini-boss</td><td>Expect inflated stats and better rewards than normal enemies.</td></tr></tbody></table></div></article>
+  <article><h2>Fast Workflow</h2><ol class="steps"><li>Find the enemy in <a href="/enemies/">Enemies</a>.</li><li>Check its weakest resistance and damage type.</li><li>Open its weapons to see range and projectile behavior.</li><li>Open its drops or spawn location when farming.</li></ol></article>
+</section></main>
+  <footer class="site-footer">
+    <p>Want to improve this wiki? Contributions are welcome on <a href="https://github.com/guedesite/astroflux-wiki">github.com/guedesite/astroflux-wiki</a>.</p>
+  </footer>
+  <script src="/assets/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,864 @@
+[
+  {
+    "type": "missing_reference",
+    "from": "Engines:MkKVb-TYmU6guaMJK4bGJA",
+    "rel": "sound",
+    "to_table": "Sounds",
+    "to_key": "lLFH1L5Jwk-uS-PWsTe8pQ",
+    "meta": {
+      "field": "sound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Engines:Vi31_NQQIEuiHwE3XLsbtg",
+    "rel": "sound",
+    "to_table": "Sounds",
+    "to_key": "lLFH1L5Jwk-uS-PWsTe8pQ",
+    "meta": {
+      "field": "sound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Engines:ENhJ3Ign8km93RajKCr5Nw",
+    "rel": "sound",
+    "to_table": "Sounds",
+    "to_key": "lLFH1L5Jwk-uS-PWsTe8pQ",
+    "meta": {
+      "field": "sound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Engines:x0or8InNgUyib0eAUOz4lA",
+    "rel": "sound",
+    "to_table": "Sounds",
+    "to_key": "lLFH1L5Jwk-uS-PWsTe8pQ",
+    "meta": {
+      "field": "sound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Engines:QjfqvvEYyESwHS2WoU1q3Q",
+    "rel": "sound",
+    "to_table": "Sounds",
+    "to_key": "lLFH1L5Jwk-uS-PWsTe8pQ",
+    "meta": {
+      "field": "sound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Engines:pDT7JYHFt0-05sNlbCFX4Q",
+    "rel": "sound",
+    "to_table": "Sounds",
+    "to_key": "lLFH1L5Jwk-uS-PWsTe8pQ",
+    "meta": {
+      "field": "sound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Engines:4piNNuXWsEqsihnMCLrF1g",
+    "rel": "sound",
+    "to_table": "Sounds",
+    "to_key": "lLFH1L5Jwk-uS-PWsTe8pQ",
+    "meta": {
+      "field": "sound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Engines:FDjXVCQQQUW5yCydBz3CsQ",
+    "rel": "sound",
+    "to_table": "Sounds",
+    "to_key": "lLFH1L5Jwk-uS-PWsTe8pQ",
+    "meta": {
+      "field": "sound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Engines:_qr_DAeKZ0mRoM1LLCHKIg",
+    "rel": "sound",
+    "to_table": "Sounds",
+    "to_key": "lLFH1L5Jwk-uS-PWsTe8pQ",
+    "meta": {
+      "field": "sound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Engines:BHsg1j3wakudSFBDObCWzg",
+    "rel": "sound",
+    "to_table": "Sounds",
+    "to_key": "lLFH1L5Jwk-uS-PWsTe8pQ",
+    "meta": {
+      "field": "sound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Engines:vjRfKwszJ02T7TSsnHL1sA",
+    "rel": "sound",
+    "to_table": "Sounds",
+    "to_key": "lLFH1L5Jwk-uS-PWsTe8pQ",
+    "meta": {
+      "field": "sound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:X8royBY-30WIWx9yhHwymQ",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:bob4DnmRb0mt24Pb8gNycA",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:CfhtzzXOME2jbmFExG1yUQ",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:WAOhOP9AhEWQCbdyHNZ4hA",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:ibpzn4XLh0urTAPuDQAjfA",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:xj5tjqYu5UCCmiumIbjhAg",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:8_bQQruskEOG6JWP68OUAg",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:Z02JsLUEbEyMlAGVT91mNA",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:YcD3grZJsk6R4u6mKhjgfA",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:Q8v3kbVmYkqAU1SSVRNNOQ",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:lBB9L87IQEW3Qq6zQQuG6A",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:zZA71pgydkSWtUVex0ON2A",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:4TstgWiY2ESI07N27Yqw5g",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:UnVZNZ3i3Uiu9XzikmzG-A",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:LPozDZclbE6WJMAUe9oW9Q",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:EYD8xWBPSE2NMfxTGk4kCQ",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:qEY_v3eQLUGHfEfH7VzX-g",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:NrOIIEhSX0makFKT6E3o1Q",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:LxqaXizVsk-Nv6STUWbpFA",
+    "rel": "techLevelProjectile",
+    "to_table": "Projectiles",
+    "to_key": "WNLt01U7e02CSc6T1eerYA",
+    "meta": {
+      "field": "techLevels.projectile",
+      "level": 1
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:LxqaXizVsk-Nv6STUWbpFA",
+    "rel": "techLevelProjectile",
+    "to_table": "Projectiles",
+    "to_key": "WNLt01U7e02CSc6T1eerYA",
+    "meta": {
+      "field": "techLevels.projectile",
+      "level": 2
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:LxqaXizVsk-Nv6STUWbpFA",
+    "rel": "techLevelProjectile",
+    "to_table": "Projectiles",
+    "to_key": "WNLt01U7e02CSc6T1eerYA",
+    "meta": {
+      "field": "techLevels.projectile",
+      "level": 3
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:LxqaXizVsk-Nv6STUWbpFA",
+    "rel": "techLevelProjectile",
+    "to_table": "Projectiles",
+    "to_key": "WNLt01U7e02CSc6T1eerYA",
+    "meta": {
+      "field": "techLevels.projectile",
+      "level": 4
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:LxqaXizVsk-Nv6STUWbpFA",
+    "rel": "techLevelProjectile",
+    "to_table": "Projectiles",
+    "to_key": "WNLt01U7e02CSc6T1eerYA",
+    "meta": {
+      "field": "techLevels.projectile",
+      "level": 5
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:LxqaXizVsk-Nv6STUWbpFA",
+    "rel": "techLevelProjectile",
+    "to_table": "Projectiles",
+    "to_key": "WNLt01U7e02CSc6T1eerYA",
+    "meta": {
+      "field": "techLevels.projectile",
+      "level": 6
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:TJnnZ9-7ZEKJzeCTF3-U0w",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:jlqUBRhv3UuaiVZ0qh30Gg",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:ufQeD-u9WU2oaHu52KI5uQ",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:JhCiqqLGFU-0gQuVriGusg",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:f9hDrXL4xkKa5icW748GzA",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:odLJiT9MuUagT139OOntcA",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:cRsMWi8ZSUifdolGGAJomw",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:JkxpdBtE2UWhsdUPkwC5Qg",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:90739F4F-C632-072B-8D8D-C489D0AC0EA3",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:75CFP2K1I0q-7OPAACATXA",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:Ll08fpGjzUWSempC4EYevw",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:AfpNM3XTbE2CIYNeWnOxrQ",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:7kEmyTJywU61ei7qbNHJvg",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:134D5AB9-70AA-5798-AA8A-E699ABCDD2CB",
+    "rel": "projectile",
+    "to_table": "Projectiles",
+    "to_key": "8B206F25-3595-3BB4-D5E6-1CD73A6B6FCA",
+    "meta": {
+      "field": "projectile"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:134D5AB9-70AA-5798-AA8A-E699ABCDD2CB",
+    "rel": "techLevelProjectile",
+    "to_table": "Projectiles",
+    "to_key": "8B206F25-3595-3BB4-D5E6-1CD73A6B6FCA",
+    "meta": {
+      "field": "techLevels.projectile",
+      "level": 1
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:134D5AB9-70AA-5798-AA8A-E699ABCDD2CB",
+    "rel": "techLevelProjectile",
+    "to_table": "Projectiles",
+    "to_key": "8B206F25-3595-3BB4-D5E6-1CD73A6B6FCA",
+    "meta": {
+      "field": "techLevels.projectile",
+      "level": 2
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:134D5AB9-70AA-5798-AA8A-E699ABCDD2CB",
+    "rel": "techLevelProjectile",
+    "to_table": "Projectiles",
+    "to_key": "8B206F25-3595-3BB4-D5E6-1CD73A6B6FCA",
+    "meta": {
+      "field": "techLevels.projectile",
+      "level": 3
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:134D5AB9-70AA-5798-AA8A-E699ABCDD2CB",
+    "rel": "techLevelProjectile",
+    "to_table": "Projectiles",
+    "to_key": "8B206F25-3595-3BB4-D5E6-1CD73A6B6FCA",
+    "meta": {
+      "field": "techLevels.projectile",
+      "level": 4
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:134D5AB9-70AA-5798-AA8A-E699ABCDD2CB",
+    "rel": "techLevelProjectile",
+    "to_table": "Projectiles",
+    "to_key": "8B206F25-3595-3BB4-D5E6-1CD73A6B6FCA",
+    "meta": {
+      "field": "techLevels.projectile",
+      "level": 5
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:134D5AB9-70AA-5798-AA8A-E699ABCDD2CB",
+    "rel": "techLevelProjectile",
+    "to_table": "Projectiles",
+    "to_key": "8B206F25-3595-3BB4-D5E6-1CD73A6B6FCA",
+    "meta": {
+      "field": "techLevels.projectile",
+      "level": 6
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:YXzpvPGTU0e6oO6GqafTfw",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Weapons:891D8348-F1DA-ACC9-8B6F-8B10BA77BC35",
+    "rel": "hitSound",
+    "to_table": "Sounds",
+    "to_key": "eleIwRMzTUuiNr3K_P46pg",
+    "meta": {
+      "field": "hitSound"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Spawners:h23LxGk6KUq3NQ3dQFjivw",
+    "rel": "body",
+    "to_table": "Bodies",
+    "to_key": "IWN-stEhxUCzmR_H-Mdt4w",
+    "meta": {
+      "field": "body"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Spawners:LASjePAN8EWGsTNq7lZTrw",
+    "rel": "body",
+    "to_table": "Bodies",
+    "to_key": "RW7tYQE_KE2v0F6fg20geQ",
+    "meta": {
+      "field": "body"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Spawners:eq36Kmj6bUOH1r9PtIAFuA",
+    "rel": "body",
+    "to_table": "Bodies",
+    "to_key": "IqxZtHomsUGOQeG6uALUiw",
+    "meta": {
+      "field": "body"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Spawners:uwFPRo4gukSc76l3uPGCdQ",
+    "rel": "body",
+    "to_table": "Bodies",
+    "to_key": "4IQmzRN5_U2VmctW98opJg",
+    "meta": {
+      "field": "body"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Spawners:4Ooq-zErxEOZf-nbEX6J5A",
+    "rel": "body",
+    "to_table": "Bodies",
+    "to_key": "uGiQDRn_MEWdUMoPQVMj2Q",
+    "meta": {
+      "field": "body"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Spawners:4Ooq-zErxEOZf-nbEX6J5A",
+    "rel": "enemy",
+    "to_table": "Enemies",
+    "to_key": "r-k-DJfNR02b2VPJgT2KDQ",
+    "meta": {
+      "field": "enemy"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Spawners:4Ooq-zErxEOZf-nbEX6J5A",
+    "rel": "enemy2",
+    "to_table": "Enemies",
+    "to_key": "dHCT_zuWPk6Ja-hVZh5M_g",
+    "meta": {
+      "field": "enemy2"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Spawners:kBFFxVucqkeQ9syhkJWRqA",
+    "rel": "body",
+    "to_table": "Bodies",
+    "to_key": "uGiQDRn_MEWdUMoPQVMj2Q",
+    "meta": {
+      "field": "body"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Spawners:kBFFxVucqkeQ9syhkJWRqA",
+    "rel": "enemy",
+    "to_table": "Enemies",
+    "to_key": "r-k-DJfNR02b2VPJgT2KDQ",
+    "meta": {
+      "field": "enemy"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Spawners:kBFFxVucqkeQ9syhkJWRqA",
+    "rel": "enemy2",
+    "to_table": "Enemies",
+    "to_key": "dHCT_zuWPk6Ja-hVZh5M_g",
+    "meta": {
+      "field": "enemy2"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Spawners:xO7fio1PykunPQ9bt3FWtA",
+    "rel": "enemy2",
+    "to_table": "Enemies",
+    "to_key": "dHCT_zuWPk6Ja-hVZh5M_g",
+    "meta": {
+      "field": "enemy2"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Spawners:695F-f7XnE22e6gUM0ISAw",
+    "rel": "enemy2",
+    "to_table": "Enemies",
+    "to_key": "dHCT_zuWPk6Ja-hVZh5M_g",
+    "meta": {
+      "field": "enemy2"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Spawners:cwu1xAgC7EmVamgobFwFUQ",
+    "rel": "body",
+    "to_table": "Bodies",
+    "to_key": "vaMjqon8bUKB19ChfnXwSA",
+    "meta": {
+      "field": "body"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Spawners:OOj1wE81B0m-55vSw8Gd1g",
+    "rel": "body",
+    "to_table": "Bodies",
+    "to_key": "KnGKX8VPsk2wIE0G7z37SQ",
+    "meta": {
+      "field": "body"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Spawners:Kf5EgXKmSUitqfGyCx-PgQ",
+    "rel": "body",
+    "to_table": "Bodies",
+    "to_key": "vaMjqon8bUKB19ChfnXwSA",
+    "meta": {
+      "field": "body"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Spawners:qiewYYk4cUGOpz3m4BbY0w",
+    "rel": "body",
+    "to_table": "Bodies",
+    "to_key": "HU9UtGAEHkiJ3qtwdwW2Ww",
+    "meta": {
+      "field": "body"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Spawners:CdUIRP3bD0mEFn5MfTpn-w",
+    "rel": "body",
+    "to_table": "Bodies",
+    "to_key": "6uY9QstRpkqqXCG8NvQVJg",
+    "meta": {
+      "field": "body"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Spawners:C_fldkUL2kSS4yL3HyBm3g",
+    "rel": "body",
+    "to_table": "Bodies",
+    "to_key": "FNmp-ld2xEGvcqVu4j2_LQ",
+    "meta": {
+      "field": "body"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Spawners:3TkkGOn7z0CjTCgWs15HEQ",
+    "rel": "body",
+    "to_table": "Bodies",
+    "to_key": "1dao89nmEU6Q3uIfoNBENQ",
+    "meta": {
+      "field": "body"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Spawners:zdqaOniRbkWWTKKUP8HDsA",
+    "rel": "body",
+    "to_table": "Bodies",
+    "to_key": "TL-mAwonvEeqNLseNdq-AA",
+    "meta": {
+      "field": "body"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Bodies:vGkQupIuCU2YoAd_gd3D3A",
+    "rel": "shopItem",
+    "to_table": "Weapons",
+    "to_key": "AFA92184-7546-586E-4269-6B541DABD2BC",
+    "meta": {
+      "field": "shopItems"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Bodies:vGkQupIuCU2YoAd_gd3D3A",
+    "rel": "shopItem",
+    "to_table": "Weapons",
+    "to_key": "F8C71FD6-7708-4186-E188-F885B8908AB7",
+    "meta": {
+      "field": "shopItems"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Bodies:vGkQupIuCU2YoAd_gd3D3A",
+    "rel": "shopItem",
+    "to_table": "Weapons",
+    "to_key": "129C9112-6D24-0C77-FF7B-C3344EA64F0E",
+    "meta": {
+      "field": "shopItems"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Bodies:03ApSFFEnUiGUROZkuwOeQ",
+    "rel": "shopItem",
+    "to_table": "Weapons",
+    "to_key": "AFA92184-7546-586E-4269-6B541DABD2BC",
+    "meta": {
+      "field": "shopItems"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Bodies:03ApSFFEnUiGUROZkuwOeQ",
+    "rel": "shopItem",
+    "to_table": "Weapons",
+    "to_key": "F8C71FD6-7708-4186-E188-F885B8908AB7",
+    "meta": {
+      "field": "shopItems"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Bodies:03ApSFFEnUiGUROZkuwOeQ",
+    "rel": "shopItem",
+    "to_table": "Weapons",
+    "to_key": "129C9112-6D24-0C77-FF7B-C3344EA64F0E",
+    "meta": {
+      "field": "shopItems"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Bodies:akzCA6bgI0ytbLPoalX7ag",
+    "rel": "solarSystem",
+    "to_table": "SolarSystems",
+    "to_key": "nswJH2CftEWEB8D03Y37IQ",
+    "meta": {
+      "field": "solarSystem"
+    }
+  },
+  {
+    "type": "missing_reference",
+    "from": "Bodies:KN6tRnNkv0W6Q70znaQHoA",
+    "rel": "solarSystem",
+    "to_table": "SolarSystems",
+    "to_key": "nswJH2CftEWEB8D03Y37IQ",
+    "meta": {
+      "field": "solarSystem"
+    }
+  }
+]

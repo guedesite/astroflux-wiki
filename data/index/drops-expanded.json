@@ -1,0 +1,6855 @@
+[
+  {
+    "id": "Drops:OAK9JZxHj0eIeNwnisymlw",
+    "source_key": "OAK9JZxHj0eIeNwnisymlw",
+    "name": "1% Crate Elite lvl 22 ",
+    "crate": true,
+    "crate_chance": 0.0101,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 0.0101,
+        "min": 5000,
+        "max": 10000
+      },
+      {
+        "table": "Commodities",
+        "key": "gO_f-y0QEU68vVwJ_XVmOg",
+        "name": "Iridium",
+        "chance": 0.34,
+        "effective_chance": 0.003434,
+        "min": 500,
+        "max": 1000
+      },
+      {
+        "table": "Commodities",
+        "key": "h2-67R6yGEmPpWkPHATIeQ",
+        "name": "Hydrogen Spill",
+        "chance": 0.34,
+        "effective_chance": 0.003434,
+        "min": 500,
+        "max": 1000
+      },
+      {
+        "table": "Commodities",
+        "key": "H5qybQDy9UindMh9yYIeqg",
+        "name": "Plasma Fluids",
+        "chance": 0.34,
+        "effective_chance": 0.003434,
+        "min": 500,
+        "max": 1000
+      }
+    ]
+  },
+  {
+    "id": "Drops:smz5b5fvfEiPzsxmPEboug",
+    "source_key": "smz5b5fvfEiPzsxmPEboug",
+    "name": "1% Crate, Elite lvl 24",
+    "crate": true,
+    "crate_chance": 0.0125,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 0.0125,
+        "min": 6000,
+        "max": 10000
+      },
+      {
+        "table": "Commodities",
+        "key": "gO_f-y0QEU68vVwJ_XVmOg",
+        "name": "Iridium",
+        "chance": 0.31,
+        "effective_chance": 0.003875,
+        "min": 1000,
+        "max": 2000
+      },
+      {
+        "table": "Commodities",
+        "key": "H5qybQDy9UindMh9yYIeqg",
+        "name": "Plasma Fluids",
+        "chance": 0.31,
+        "effective_chance": 0.003875,
+        "min": 1000,
+        "max": 2000
+      },
+      {
+        "table": "Commodities",
+        "key": "d6H3w_34pk2ghaQcXYBDag",
+        "name": "Hydrogen Crystal",
+        "chance": 0.31,
+        "effective_chance": 0.003875,
+        "min": 1000,
+        "max": 2000
+      }
+    ]
+  },
+  {
+    "id": "Drops:tbyIG3iSukO7aW3akGczww",
+    "source_key": "tbyIG3iSukO7aW3akGczww",
+    "name": "100% Crate, Elite lvl 26",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 3000,
+        "max": 10000
+      }
+    ]
+  },
+  {
+    "id": "Drops:KUQot-0VNkKJvisyw5i11A",
+    "source_key": "KUQot-0VNkKJvisyw5i11A",
+    "name": "25% Void Tentacle",
+    "crate": true,
+    "crate_chance": 0.2505,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "-l-o9K_yMUaeaBydO1_xXw",
+        "name": "Void Tentacles",
+        "chance": 1,
+        "effective_chance": 0.2505,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:jS6-IL5Hn06UfGA3aPt0yg",
+    "source_key": "jS6-IL5Hn06UfGA3aPt0yg",
+    "name": "Acid Spore 100%",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "JYj8LiTqwEixlkvCl-n55Q",
+        "name": "Acid Spore",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:eGUPKGiVlkGoLANH6E__GQ",
+    "source_key": "eGUPKGiVlkGoLANH6E__GQ",
+    "name": "Advanced Data Chip",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "I2W7v1C8h0iDVUAFHC2Ytg",
+        "name": "Advanced Data Chip",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:tOW09L5_8kqTw0j5LE8p3w",
+    "source_key": "tOW09L5_8kqTw0j5LE8p3w",
+    "name": "Algea Nova Gland 5%",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "XHdm9PPMckOrNVJa08mGlg",
+        "name": "Algea Nova Gland",
+        "chance": 0.05,
+        "effective_chance": 0.05,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:QmEptBnu40yPEobIhpicKQ",
+    "source_key": "QmEptBnu40yPEobIhpicKQ",
+    "name": "Alien Alloy",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "lmPr7d35rkq0Ev6RQRJGVw",
+        "name": "Alien Alloys",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:JvYR0d_4f0uslOwK_Mrhgg",
+    "source_key": "JvYR0d_4f0uslOwK_Mrhgg",
+    "name": "Artifact 1%",
+    "crate": true,
+    "crate_chance": 0.0104,
+    "artifact_chance": 1,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": []
+  },
+  {
+    "id": "Drops:C6pxFT2jrkCOcl-1QfoEUw",
+    "source_key": "C6pxFT2jrkCOcl-1QfoEUw",
+    "name": "Artifact 100%",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 1,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": []
+  },
+  {
+    "id": "Drops:7jwWzUsrgUK9bwk26A2UdA",
+    "source_key": "7jwWzUsrgUK9bwk26A2UdA",
+    "name": "Artifact 30%",
+    "crate": true,
+    "crate_chance": 0.30060000000000003,
+    "artifact_chance": 1,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": []
+  },
+  {
+    "id": "Drops:6NLhvJ9vBku9OmuVQxDtlQ",
+    "source_key": "6NLhvJ9vBku9OmuVQxDtlQ",
+    "name": "Aureus Corrosive Manipulator",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "4uoJyvPOEUup6qCH53Ethg",
+        "name": "Aureus Corrosive Manipulator",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:kDITpD5lrE6f6A2YVe3t5g",
+    "source_key": "kDITpD5lrE6f6A2YVe3t5g",
+    "name": "Aureus Drone Controller",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "N9gvkhkgS0OAprh5n_GdwQ",
+        "name": "Aureus Drone Controller",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:lyj2gcouQkacVklOiR6tQA",
+    "source_key": "lyj2gcouQkacVklOiR6tQA",
+    "name": "Aureus Energy Manipulator",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "8UQFwHFLOUyJBnzzia_xSA",
+        "name": "Aureus Energy Manipulator",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:NkJm6GzrD0Cr1INH-C2H0Q",
+    "source_key": "NkJm6GzrD0Cr1INH-C2H0Q",
+    "name": "Aureus Kinetic Manipulator",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "8bYpzP2SBkig_Y0RJRf15w",
+        "name": "Aureus Kinetic Manipulator",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:ZGHra-_4l0aaWQHhp_GYNQ",
+    "source_key": "ZGHra-_4l0aaWQHhp_GYNQ",
+    "name": "BH1",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 10,
+    "flux_max": 10,
+    "xp_min": 2500,
+    "xp_max": 2500,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 5000,
+        "max": 5000
+      }
+    ]
+  },
+  {
+    "id": "Drops:z7UGfjZngEmun0oF85Z7Hg",
+    "source_key": "z7UGfjZngEmun0oF85Z7Hg",
+    "name": "BH2",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 15,
+    "flux_max": 15,
+    "xp_min": 3000,
+    "xp_max": 3000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "gO_f-y0QEU68vVwJ_XVmOg",
+        "name": "Iridium",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1000,
+        "max": 1000
+      }
+    ]
+  },
+  {
+    "id": "Drops:VfDwWYMSgkCPGQ1OYen7Cw",
+    "source_key": "VfDwWYMSgkCPGQ1OYen7Cw",
+    "name": "BH3",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 20,
+    "flux_max": 20,
+    "xp_min": 3500,
+    "xp_max": 3500,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "d6H3w_34pk2ghaQcXYBDag",
+        "name": "Hydrogen Crystal",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1500,
+        "max": 1500
+      }
+    ]
+  },
+  {
+    "id": "Drops:ARTmTgqG30-1IWLgpjRauQ",
+    "source_key": "ARTmTgqG30-1IWLgpjRauQ",
+    "name": "BH4",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 25,
+    "flux_max": 25,
+    "xp_min": 4000,
+    "xp_max": 4000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "H5qybQDy9UindMh9yYIeqg",
+        "name": "Plasma Fluids",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1250,
+        "max": 1250
+      }
+    ]
+  },
+  {
+    "id": "Drops:abXyzSR9IUCr476rSMndJg",
+    "source_key": "abXyzSR9IUCr476rSMndJg",
+    "name": "BH5",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 30,
+    "flux_max": 30,
+    "xp_min": 5000,
+    "xp_max": 5000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 10000,
+        "max": 10000
+      }
+    ]
+  },
+  {
+    "id": "Drops:WOYOj5L9IESBHExcQnymBQ",
+    "source_key": "WOYOj5L9IESBHExcQnymBQ",
+    "name": "BH6",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 35,
+    "flux_max": 35,
+    "xp_min": 7500,
+    "xp_max": 7500,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "d6H3w_34pk2ghaQcXYBDag",
+        "name": "Hydrogen Crystal",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 5000,
+        "max": 5000
+      }
+    ]
+  },
+  {
+    "id": "Drops:eHA3AEbYzku3CGPzZTg9Dw",
+    "source_key": "eHA3AEbYzku3CGPzZTg9Dw",
+    "name": "BH7",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 40,
+    "flux_max": 40,
+    "xp_min": 10000,
+    "xp_max": 10000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "H5qybQDy9UindMh9yYIeqg",
+        "name": "Plasma Fluids",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 6000,
+        "max": 6000
+      }
+    ]
+  },
+  {
+    "id": "Drops:T2Qz0dTSc0aLJFfeM5y3Fw",
+    "source_key": "T2Qz0dTSc0aLJFfeM5y3Fw",
+    "name": "BH8",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 45,
+    "flux_max": 45,
+    "xp_min": 15000,
+    "xp_max": 15000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "gO_f-y0QEU68vVwJ_XVmOg",
+        "name": "Iridium",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 7500,
+        "max": 7500
+      }
+    ]
+  },
+  {
+    "id": "Drops:oyYZDo-yZ0694_hLpGartQ",
+    "source_key": "oyYZDo-yZ0694_hLpGartQ",
+    "name": "BH9",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 50,
+    "flux_max": 50,
+    "xp_min": 25000,
+    "xp_max": 25000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 25000,
+        "max": 25000
+      }
+    ]
+  },
+  {
+    "id": "Drops:W0zAU-AFikq_tTOFbPAsXg",
+    "source_key": "W0zAU-AFikq_tTOFbPAsXg",
+    "name": "Big Metal Scrap",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "1c46ec4C1UyRzxzv8hRqvw",
+        "name": "Big Metal Scrap",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:LJSolo_TgUmdmxzG7GS6bw",
+    "source_key": "LJSolo_TgUmdmxzG7GS6bw",
+    "name": "Bionic Implant",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "Ds3Fw5ukMUyDdCtOSF-pBQ",
+        "name": "Bionic Implant",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:W6oaTnkbDESUsCDkmAkyEg",
+    "source_key": "W6oaTnkbDESUsCDkmAkyEg",
+    "name": "Brain Tissue",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "BbTw6ZdJDUm4iQXUuHy31Q",
+        "name": "Brain Tissue",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:ucfbzT2cj0S3k0C55DudUg",
+    "source_key": "ucfbzT2cj0S3k0C55DudUg",
+    "name": "Broadside 1%",
+    "crate": true,
+    "crate_chance": 0.0104,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "V_E6Jh_KJ0KkxfpmNNTnZw",
+        "name": "Broadside",
+        "chance": 1,
+        "effective_chance": 0.0104,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:sADCoBCG7kiHKcCRNmnxpg",
+    "source_key": "sADCoBCG7kiHKcCRNmnxpg",
+    "name": "Bug Leg",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "NGlW6H9o80qip5U6aRnChA",
+        "name": "Bug Leg",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:FDY1BrqmPkSdR9PTpTMd7w",
+    "source_key": "FDY1BrqmPkSdR9PTpTMd7w",
+    "name": "Cluster Missiles 100%",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "v2fGmef7YEKFhf9JS1qqlA",
+        "name": "Cluster Missiles",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:Lzew6zNkA02OlIsdtPDLdA",
+    "source_key": "Lzew6zNkA02OlIsdtPDLdA",
+    "name": "Cold level 1",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 10,
+        "max": 100
+      },
+      {
+        "table": "Commodities",
+        "key": "9PxxP960kkejxGFHhy608A",
+        "name": "Metal Scrap",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 3,
+        "max": 3
+      },
+      {
+        "table": "Commodities",
+        "key": "1c46ec4C1UyRzxzv8hRqvw",
+        "name": "Big Metal Scrap",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 6
+      }
+    ]
+  },
+  {
+    "id": "Drops:KgYWhUuDI0afxC9uTvZv0g",
+    "source_key": "KgYWhUuDI0afxC9uTvZv0g",
+    "name": "Core Charge",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "Q-4DCSknqkaIGa1016-ggA",
+        "name": "Core Charge",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:I9TOJpcdwEu9jGOSHvnEnQ",
+    "source_key": "I9TOJpcdwEu9jGOSHvnEnQ",
+    "name": "Crate 1%, ALL 10-200",
+    "crate": true,
+    "crate_chance": 0.0104,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "d6H3w_34pk2ghaQcXYBDag",
+        "name": "Hydrogen Crystal",
+        "chance": 0.62,
+        "effective_chance": 0.006448,
+        "min": 10,
+        "max": 40
+      },
+      {
+        "table": "Commodities",
+        "key": "gO_f-y0QEU68vVwJ_XVmOg",
+        "name": "Iridium",
+        "chance": 0.62,
+        "effective_chance": 0.006448,
+        "min": 10,
+        "max": 40
+      },
+      {
+        "table": "Commodities",
+        "key": "H5qybQDy9UindMh9yYIeqg",
+        "name": "Plasma Fluids",
+        "chance": 0.62,
+        "effective_chance": 0.006448,
+        "min": 10,
+        "max": 40
+      },
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 0.0104,
+        "min": 50,
+        "max": 200
+      }
+    ]
+  },
+  {
+    "id": "Drops:NIEUQO4JGUS3ncvsJpb-Cg",
+    "source_key": "NIEUQO4JGUS3ncvsJpb-Cg",
+    "name": "Crate 1%, Iridium  5-25",
+    "crate": true,
+    "crate_chance": 0.0104,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "d6H3w_34pk2ghaQcXYBDag",
+        "name": "Hydrogen Crystal",
+        "chance": 1,
+        "effective_chance": 0.0104,
+        "min": 5,
+        "max": 25
+      }
+    ]
+  },
+  {
+    "id": "Drops:9bLjCkQ48kStTkKdGX2yDg",
+    "source_key": "9bLjCkQ48kStTkKdGX2yDg",
+    "name": "Crate 1%, Steel 10-100",
+    "crate": true,
+    "crate_chance": 0.0104,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 0.0104,
+        "min": 10,
+        "max": 100
+      }
+    ]
+  },
+  {
+    "id": "Drops:51nJdwRYWkCaHyqDk_rKCg",
+    "source_key": "51nJdwRYWkCaHyqDk_rKCg",
+    "name": "Crate 1%, Steel 10-50",
+    "crate": true,
+    "crate_chance": 0.0104,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 0.0104,
+        "min": 10,
+        "max": 50
+      }
+    ]
+  },
+  {
+    "id": "Drops:MbXJ3aSCpEuhFIqLshB6Pw",
+    "source_key": "MbXJ3aSCpEuhFIqLshB6Pw",
+    "name": "Crate Advanced Data Chip",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "I2W7v1C8h0iDVUAFHC2Ytg",
+        "name": "Advanced Data Chip",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:BibkXx9X3Emqc4KQWunaCg",
+    "source_key": "BibkXx9X3Emqc4KQWunaCg",
+    "name": "Crate All 10-50",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 10,
+        "max": 100
+      },
+      {
+        "table": "Commodities",
+        "key": "gO_f-y0QEU68vVwJ_XVmOg",
+        "name": "Iridium",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 10,
+        "max": 50
+      },
+      {
+        "table": "Commodities",
+        "key": "d6H3w_34pk2ghaQcXYBDag",
+        "name": "Hydrogen Crystal",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 10,
+        "max": 50
+      },
+      {
+        "table": "Commodities",
+        "key": "gO_f-y0QEU68vVwJ_XVmOg",
+        "name": "Iridium",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 10,
+        "max": 50
+      }
+    ]
+  },
+  {
+    "id": "Drops:epFZvZfNv0KPbNw0Z18C1w",
+    "source_key": "epFZvZfNv0KPbNw0Z18C1w",
+    "name": "Crate Beamer",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "bob4DnmRb0mt24Pb8gNycA",
+        "name": "Beamer",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:GnSyJ9eafkOD0JV7javjQA",
+    "source_key": "GnSyJ9eafkOD0JV7javjQA",
+    "name": "Crate Concussion Sphere 0.1%",
+    "crate": true,
+    "crate_chance": 0.001,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "4rJMW6ID_Umh_YIN_hNzow",
+        "name": "Concussion Sphere",
+        "chance": 1,
+        "effective_chance": 0.001,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:-IOeU0h00UqvuKlxJj4gTA",
+    "source_key": "-IOeU0h00UqvuKlxJj4gTA",
+    "name": "Crate Gatling Laser 0.5%",
+    "crate": true,
+    "crate_chance": 0.0251,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "dzmNj9Yzr0CFxvZSBSaEeg",
+        "name": "Gatling Laser",
+        "chance": 1,
+        "effective_chance": 0.0251,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:qTXGJVqEo0eVMPhy9Eh3YQ",
+    "source_key": "qTXGJVqEo0eVMPhy9Eh3YQ",
+    "name": "Crate HOF 0.6%",
+    "crate": true,
+    "crate_chance": 0.0063,
+    "artifact_chance": 1,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 0.0063,
+        "min": 1000,
+        "max": 10000
+      },
+      {
+        "table": "Commodities",
+        "key": "Q-4DCSknqkaIGa1016-ggA",
+        "name": "Core Charge",
+        "chance": 1,
+        "effective_chance": 0.0063,
+        "min": 2,
+        "max": 5
+      },
+      {
+        "table": "Commodities",
+        "key": "fPujzCjldEeJflK-PnPvBQ",
+        "name": "Engine Part",
+        "chance": 1,
+        "effective_chance": 0.0063,
+        "min": 1,
+        "max": 3
+      },
+      {
+        "table": "Commodities",
+        "key": "lmPr7d35rkq0Ev6RQRJGVw",
+        "name": "Alien Alloys",
+        "chance": 1,
+        "effective_chance": 0.0063,
+        "min": 10,
+        "max": 15
+      }
+    ]
+  },
+  {
+    "id": "Drops:gCpD7ot2-k2mhQpCWruBGQ",
+    "source_key": "gCpD7ot2-k2mhQpCWruBGQ",
+    "name": "Crate HOF 25%",
+    "crate": true,
+    "crate_chance": 0.15660000000000002,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 0.15660000000000002,
+        "min": 1000,
+        "max": 10000
+      },
+      {
+        "table": "Commodities",
+        "key": "gO_f-y0QEU68vVwJ_XVmOg",
+        "name": "Iridium",
+        "chance": 1,
+        "effective_chance": 0.15660000000000002,
+        "min": 1000,
+        "max": 2000
+      },
+      {
+        "table": "Commodities",
+        "key": "K0RisGHC2UqZks1UVcYFOA",
+        "name": "Fusion Core",
+        "chance": 1,
+        "effective_chance": 0.15660000000000002,
+        "min": 3,
+        "max": 6
+      },
+      {
+        "table": "Commodities",
+        "key": "fPujzCjldEeJflK-PnPvBQ",
+        "name": "Engine Part",
+        "chance": 1,
+        "effective_chance": 0.15660000000000002,
+        "min": 1,
+        "max": 3
+      },
+      {
+        "table": "Commodities",
+        "key": "H5qybQDy9UindMh9yYIeqg",
+        "name": "Plasma Fluids",
+        "chance": 1,
+        "effective_chance": 0.15660000000000002,
+        "min": 500,
+        "max": 1000
+      }
+    ]
+  },
+  {
+    "id": "Drops:BND0L3IxcUCR8UYnzyZCvg",
+    "source_key": "BND0L3IxcUCR8UYnzyZCvg",
+    "name": "Crate Heal Spray 0.1%",
+    "crate": true,
+    "crate_chance": 0.001,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "YmwsyoCIsUC_3cQZZteX8A",
+        "name": "Repair-Nanobot Spray",
+        "chance": 1,
+        "effective_chance": 0.001,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:bMlkEN31Q0-x2D6mt_5Arw",
+    "source_key": "bMlkEN31Q0-x2D6mt_5Arw",
+    "name": "Crate HoF Fulzar 80%",
+    "crate": true,
+    "crate_chance": 0.805,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "d6H3w_34pk2ghaQcXYBDag",
+        "name": "Hydrogen Crystal",
+        "chance": 0.56,
+        "effective_chance": 0.4508000000000001,
+        "min": 600,
+        "max": 800
+      },
+      {
+        "table": "Commodities",
+        "key": "gO_f-y0QEU68vVwJ_XVmOg",
+        "name": "Iridium",
+        "chance": 0.56,
+        "effective_chance": 0.4508000000000001,
+        "min": 500,
+        "max": 800
+      },
+      {
+        "table": "Commodities",
+        "key": "H5qybQDy9UindMh9yYIeqg",
+        "name": "Plasma Fluids",
+        "chance": 0.56,
+        "effective_chance": 0.4508000000000001,
+        "min": 600,
+        "max": 800
+      },
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 0.805,
+        "min": 8000,
+        "max": 10000
+      }
+    ]
+  },
+  {
+    "id": "Drops:09B4EFEE-7BEA-04B6-297C-442B072DE5BB",
+    "source_key": "09B4EFEE-7BEA-04B6-297C-442B072DE5BB",
+    "name": "Crate HydroCrystal 200",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "d6H3w_34pk2ghaQcXYBDag",
+        "name": "Hydrogen Crystal",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 100,
+        "max": 300
+      }
+    ]
+  },
+  {
+    "id": "Drops:x_abNdVFuU6GjvMJvfGCyw",
+    "source_key": "x_abNdVFuU6GjvMJvfGCyw",
+    "name": "Crate Infested Missiles 0.5%",
+    "crate": true,
+    "crate_chance": 0.0209,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "psmh2tj1rUuuLK3WGpIHbA",
+        "name": "Infested Missiles",
+        "chance": 1,
+        "effective_chance": 0.0209,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:UTEOJ7kxUUetegNTBNxSxA",
+    "source_key": "UTEOJ7kxUUetegNTBNxSxA",
+    "name": "Crate Lightning Gun",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "AfpNM3XTbE2CIYNeWnOxrQ",
+        "name": "Lightning Gun",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:JI65WQ5jXUadzjbUMr7xxw",
+    "source_key": "JI65WQ5jXUadzjbUMr7xxw",
+    "name": "Crate Medium Data Chip",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "Ril2ZkXB6EOTshX6kmWUrg",
+        "name": "Medium Data Chip",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:bdz5y-ZgGkODIWpMKnmPjw",
+    "source_key": "bdz5y-ZgGkODIWpMKnmPjw",
+    "name": "Crate Mine Launcher",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "vhdlyLrJAk6s_7fy3iVj2w",
+        "name": "Mine Launcher",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:co96EswO5USfgsAGfYm4Jw",
+    "source_key": "co96EswO5USfgsAGfYm4Jw",
+    "name": "Crate Missile Launcher",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "36zNgerYkEyhUVB0kPGS7Q",
+        "name": "Missile Launcher",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:hAOMMv1WP0OwjNqX1ZhDDg",
+    "source_key": "hAOMMv1WP0OwjNqX1ZhDDg",
+    "name": "Crate Plasma",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "gR_dfj1apkunOtbNpcZ4Ug",
+        "name": "Plasma Gun",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:9AAF146C-F3AE-294F-EBD3-19ABABC87A8A",
+    "source_key": "9AAF146C-F3AE-294F-EBD3-19ABABC87A8A",
+    "name": "Crate Plasma 200",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "H5qybQDy9UindMh9yYIeqg",
+        "name": "Plasma Fluids",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 100,
+        "max": 300
+      }
+    ]
+  },
+  {
+    "id": "Drops:0Fnh9l_zs02-iJxCooksoA",
+    "source_key": "0Fnh9l_zs02-iJxCooksoA",
+    "name": "Crate Prismatic Crystal 0.1%",
+    "crate": true,
+    "crate_chance": 0.001,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "TOaofFTM20KGHYtjQlqDfw",
+        "name": "Prismatic Crystal",
+        "chance": 1,
+        "effective_chance": 0.001,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:tHA_5V6guEiwgjBaqSWc2A",
+    "source_key": "tHA_5V6guEiwgjBaqSWc2A",
+    "name": "Crate Simple Data Chip",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "HUilxrgrQ0eCLftFf2CSLw",
+        "name": "Simple Data Chip",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:7F2OLPz_U0WybPJb5yyrEA",
+    "source_key": "7F2OLPz_U0WybPJb5yyrEA",
+    "name": "Crate Steel 1-2k",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1000,
+        "max": 2000
+      }
+    ]
+  },
+  {
+    "id": "Drops:C9baBXyTBkCv3-Rj_ILt9w",
+    "source_key": "C9baBXyTBkCv3-Rj_ILt9w",
+    "name": "Crate Steel 2-4k",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 2000,
+        "max": 4000
+      }
+    ]
+  },
+  {
+    "id": "Drops:571E2853-70C7-9133-0CEB-664F4F8C9A97",
+    "source_key": "571E2853-70C7-9133-0CEB-664F4F8C9A97",
+    "name": "Crate Steel 200-600",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 200,
+        "max": 600
+      }
+    ]
+  },
+  {
+    "id": "Drops:azYY6XStBE6T_F_szWjJPg",
+    "source_key": "azYY6XStBE6T_F_szWjJPg",
+    "name": "Crate Steel 4-5k",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 4000,
+        "max": 5000
+      }
+    ]
+  },
+  {
+    "id": "Drops:ieGv_J1Bqkafgar4VPRdig",
+    "source_key": "ieGv_J1Bqkafgar4VPRdig",
+    "name": "Crate Steel 5-10k",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 5000,
+        "max": 10000
+      }
+    ]
+  },
+  {
+    "id": "Drops:C8AD8202-C22E-B653-C3A9-35A136734332",
+    "source_key": "C8AD8202-C22E-B653-C3A9-35A136734332",
+    "name": "Crate Steel 50-100",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 50,
+        "max": 100
+      }
+    ]
+  },
+  {
+    "id": "Drops:6E506916-CEC7-95FC-2EB1-4F1DE4519704",
+    "source_key": "6E506916-CEC7-95FC-2EB1-4F1DE4519704",
+    "name": "Crate Steel 5000 Iridium 600",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 2500,
+        "max": 7500
+      },
+      {
+        "table": "Commodities",
+        "key": "gO_f-y0QEU68vVwJ_XVmOg",
+        "name": "Iridium",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 500,
+        "max": 750
+      }
+    ]
+  },
+  {
+    "id": "Drops:80428731-B58E-BA1E-78AC-D073015ABE23",
+    "source_key": "80428731-B58E-BA1E-78AC-D073015ABE23",
+    "name": "Crate Steel 850 Iridium 225",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "gO_f-y0QEU68vVwJ_XVmOg",
+        "name": "Iridium",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 100,
+        "max": 400
+      },
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 200,
+        "max": 1500
+      }
+    ]
+  },
+  {
+    "id": "Drops:CA92F0A9-4B07-5C94-127B-F7D8B3E0185D",
+    "source_key": "CA92F0A9-4B07-5C94-127B-F7D8B3E0185D",
+    "name": "Crate Unique Artifact",
+    "crate": true,
+    "crate_chance": 0.998,
+    "artifact_chance": 0.999,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": []
+  },
+  {
+    "id": "Drops:aGrl5gedXEmkvAPU_g-c7Q",
+    "source_key": "aGrl5gedXEmkvAPU_g-c7Q",
+    "name": "Cruise Missiles 1%",
+    "crate": true,
+    "crate_chance": 0.0104,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "dTH4L1BQ00qm2fgoB5t5ug",
+        "name": "Cruise Missiles VX-23",
+        "chance": 1,
+        "effective_chance": 0.0104,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:ARanMKZVW0KlVysx-GzgtA",
+    "source_key": "ARanMKZVW0KlVysx-GzgtA",
+    "name": "Enemy Strongholds: Part 5",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 5,
+    "flux_max": 10,
+    "xp_min": 3500,
+    "xp_max": 3500,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1000,
+        "max": 1000
+      }
+    ]
+  },
+  {
+    "id": "Drops:mXH0I3iK_0Sv05bpO0qomQ",
+    "source_key": "mXH0I3iK_0Sv05bpO0qomQ",
+    "name": "Engine Part",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "fPujzCjldEeJflK-PnPvBQ",
+        "name": "Engine Part",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:yCPzmbvjlEKWjb3dbG8lZg",
+    "source_key": "yCPzmbvjlEKWjb3dbG8lZg",
+    "name": "Flak Cannon 5%",
+    "crate": true,
+    "crate_chance": 0.050100000000000006,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "_KKDBczWq0WyG3RjntfIKw",
+        "name": "Flak Cannon",
+        "chance": 1,
+        "effective_chance": 0.050100000000000006,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:57_ti1wVYEOGYz0tJ3liaQ",
+    "source_key": "57_ti1wVYEOGYz0tJ3liaQ",
+    "name": "Flame Trail 1%",
+    "crate": true,
+    "crate_chance": 0.0063,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "z2lW_0_JmEagzFPNVKchDg",
+        "name": "Flame Trail",
+        "chance": 1,
+        "effective_chance": 0.0063,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:R6Um7X6wKE-LjK-Xofi8pg",
+    "source_key": "R6Um7X6wKE-LjK-Xofi8pg",
+    "name": "Flame Trail 25%",
+    "crate": true,
+    "crate_chance": 0.1544,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "z2lW_0_JmEagzFPNVKchDg",
+        "name": "Flame Trail",
+        "chance": 1,
+        "effective_chance": 0.1544,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:EoUydJymbUG7-OMFIx4yGw",
+    "source_key": "EoUydJymbUG7-OMFIx4yGw",
+    "name": "Flamethrower, 100%",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "5aPC1xQS9kC1be2z56Z6eQ",
+        "name": "Flamethrower",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:6YzWnfS3AESpKCq8nKaNtQ",
+    "source_key": "6YzWnfS3AESpKCq8nKaNtQ",
+    "name": "Fusion Core",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "K0RisGHC2UqZks1UVcYFOA",
+        "name": "Fusion Core",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:TTwjt88kL0OHEkt2__UDiw",
+    "source_key": "TTwjt88kL0OHEkt2__UDiw",
+    "name": "Gatling Gun 10%",
+    "crate": true,
+    "crate_chance": 0.1022,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "wVhdBk9kKUikW7AhNLOnCg",
+        "name": "Gatling Gun",
+        "chance": 1,
+        "effective_chance": 0.1022,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:9xXU5wy3_0S8PVqXnRjxcg",
+    "source_key": "9xXU5wy3_0S8PVqXnRjxcg",
+    "name": "Genetic Control Implant",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "-kUiivd-q02hAxMfyWgXlQ",
+        "name": "Genetic Control Implant",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:XKwP4ztmB0q1DSeWGy-ouA",
+    "source_key": "XKwP4ztmB0q1DSeWGy-ouA",
+    "name": "Gold Crate Event",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 35000,
+        "max": 50000
+      },
+      {
+        "table": "Commodities",
+        "key": "gO_f-y0QEU68vVwJ_XVmOg",
+        "name": "Iridium",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 7000,
+        "max": 10000
+      },
+      {
+        "table": "Commodities",
+        "key": "d6H3w_34pk2ghaQcXYBDag",
+        "name": "Hydrogen Crystal",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 7000,
+        "max": 10000
+      },
+      {
+        "table": "Commodities",
+        "key": "H5qybQDy9UindMh9yYIeqg",
+        "name": "Plasma Fluids",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 7000,
+        "max": 10000
+      }
+    ]
+  },
+  {
+    "id": "Drops:g_H7d9Y8uUu0Kj9I19d79A",
+    "source_key": "g_H7d9Y8uUu0Kj9I19d79A",
+    "name": "Gold Crate Event Small",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 4000,
+        "max": 10000
+      },
+      {
+        "table": "Commodities",
+        "key": "H5qybQDy9UindMh9yYIeqg",
+        "name": "Plasma Fluids",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 800,
+        "max": 2000
+      },
+      {
+        "table": "Commodities",
+        "key": "gO_f-y0QEU68vVwJ_XVmOg",
+        "name": "Iridium",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 800,
+        "max": 2000
+      },
+      {
+        "table": "Commodities",
+        "key": "d6H3w_34pk2ghaQcXYBDag",
+        "name": "Hydrogen Crystal",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 800,
+        "max": 2000
+      }
+    ]
+  },
+  {
+    "id": "Drops:gC1r0RnVVEq1dG_YNU_xzg",
+    "source_key": "gC1r0RnVVEq1dG_YNU_xzg",
+    "name": "Health Pack",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": []
+  },
+  {
+    "id": "Drops:4tsh4offRESRCeLpcWkIyw",
+    "source_key": "4tsh4offRESRCeLpcWkIyw",
+    "name": "Health Pack Large",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": []
+  },
+  {
+    "id": "Drops:Za0xy4Ju_kKynOInrMDhRw",
+    "source_key": "Za0xy4Ju_kKynOInrMDhRw",
+    "name": "Heart",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "d_SV3Oqzz0O5AeGUhMhqdg",
+        "name": "Heart",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:MxxkCsZu8UKLkfdv9KAgog",
+    "source_key": "MxxkCsZu8UKLkfdv9KAgog",
+    "name": "Hunter Missile 3%",
+    "crate": true,
+    "crate_chance": 0.0313,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "oNg_pJWmD0yhOVILCDsZWw",
+        "name": "Hunter-killer Launcher",
+        "chance": 1,
+        "effective_chance": 0.0313,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:3WkEfG428UW2hDAgvHetvA",
+    "source_key": "3WkEfG428UW2hDAgvHetvA",
+    "name": "Hydrogen Oscillator",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "hB-JTx4Ka0KG0eEjE1L02w",
+        "name": "Hydrogen Oscillator",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:ZhiKr_lV5ka9I-Fio7APMg",
+    "source_key": "ZhiKr_lV5ka9I-Fio7APMg",
+    "name": "Hydrogen Spill",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "h2-67R6yGEmPpWkPHATIeQ",
+        "name": "Hydrogen Spill",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:00H6Iyez_kSCgrC2zo5SCA",
+    "source_key": "00H6Iyez_kSCgrC2zo5SCA",
+    "name": "Locust Hatchery 0.5%",
+    "crate": true,
+    "crate_chance": 0.004200000000000001,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "EbAa-Nt2tEuuM70r0txFqA",
+        "name": "Locust Hatchery",
+        "chance": 1,
+        "effective_chance": 0.004200000000000001,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:Abs-cEqQ-kCIUAtTwK358g",
+    "source_key": "Abs-cEqQ-kCIUAtTwK358g",
+    "name": "Locust Hatchery 100%",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "EbAa-Nt2tEuuM70r0txFqA",
+        "name": "Locust Hatchery",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:tCzLCGbSnUSvHsY8khZWmw",
+    "source_key": "tCzLCGbSnUSvHsY8khZWmw",
+    "name": "Medium Data Chip",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "Ril2ZkXB6EOTshX6kmWUrg",
+        "name": "Medium Data Chip",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:I3kIFNSZAUiOQv_Us6gX8w",
+    "source_key": "I3kIFNSZAUiOQv_Us6gX8w",
+    "name": "Metal Scrap",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "9PxxP960kkejxGFHhy608A",
+        "name": "Metal Scrap",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:Qb8nI4fjXEC1PoQTIKoQHg",
+    "source_key": "Qb8nI4fjXEC1PoQTIKoQHg",
+    "name": "Mission 100 hearts",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 10000,
+    "xp_max": 10000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "d_SV3Oqzz0O5AeGUhMhqdg",
+        "name": "Heart",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 100,
+        "max": 100
+      }
+    ]
+  },
+  {
+    "id": "Drops:J5_6sZ8SPESuIfT__hJxrw",
+    "source_key": "J5_6sZ8SPESuIfT__hJxrw",
+    "name": "Mission 1000 hearts",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 10000,
+    "xp_max": 10000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "d_SV3Oqzz0O5AeGUhMhqdg",
+        "name": "Heart",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1000,
+        "max": 1000
+      }
+    ]
+  },
+  {
+    "id": "Drops:yM4SkW6CfUG9EED2rhgrDg",
+    "source_key": "yM4SkW6CfUG9EED2rhgrDg",
+    "name": "Mission 1xlvl60 artifact",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 2000,
+    "xp_max": 2000,
+    "items": []
+  },
+  {
+    "id": "Drops:q1-BzHWQG0-MCxjKUfkoPA",
+    "source_key": "q1-BzHWQG0-MCxjKUfkoPA",
+    "name": "Mission 1xlvl70 artifact",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 2000,
+    "xp_max": 2000,
+    "items": []
+  },
+  {
+    "id": "Drops:gr0IeGPRfECE3urMpKT8hA",
+    "source_key": "gr0IeGPRfECE3urMpKT8hA",
+    "name": "Mission 20k Mixed",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 1,
+    "flux_max": 3,
+    "xp_min": 7000,
+    "xp_max": 7000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 5000,
+        "max": 5000
+      },
+      {
+        "table": "Commodities",
+        "key": "H5qybQDy9UindMh9yYIeqg",
+        "name": "Plasma Fluids",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 2000,
+        "max": 2000
+      },
+      {
+        "table": "Commodities",
+        "key": "gO_f-y0QEU68vVwJ_XVmOg",
+        "name": "Iridium",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1000,
+        "max": 1000
+      },
+      {
+        "table": "Commodities",
+        "key": "d6H3w_34pk2ghaQcXYBDag",
+        "name": "Hydrogen Crystal",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 4000,
+        "max": 4000
+      }
+    ]
+  },
+  {
+    "id": "Drops:Ute0x9yu1ESUptoBWks3lQ",
+    "source_key": "Ute0x9yu1ESUptoBWks3lQ",
+    "name": "Mission 20k Steel",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 1,
+    "flux_max": 3,
+    "xp_min": 5000,
+    "xp_max": 5000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 20000,
+        "max": 20000
+      }
+    ]
+  },
+  {
+    "id": "Drops:MnA48T_5UUiLlP6UEtC5TA",
+    "source_key": "MnA48T_5UUiLlP6UEtC5TA",
+    "name": "Mission 3xlvl75 artifacts",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 2000,
+    "xp_max": 2000,
+    "items": []
+  },
+  {
+    "id": "Drops:p0DNaCO3YEWPhbDHNDZh2g",
+    "source_key": "p0DNaCO3YEWPhbDHNDZh2g",
+    "name": "Mission 50k Steel",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 10000,
+    "xp_max": 10000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 50000,
+        "max": 50000
+      }
+    ]
+  },
+  {
+    "id": "Drops:ExiQ4eZr3kywcrkggYcwpA",
+    "source_key": "ExiQ4eZr3kywcrkggYcwpA",
+    "name": "Mission 50k Steel + 5 (lvl80) arts",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 1,
+    "flux_max": 3,
+    "xp_min": 12000,
+    "xp_max": 12000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 50000,
+        "max": 50000
+      }
+    ]
+  },
+  {
+    "id": "Drops:cdF5mvqxdEC8Xt0F_OcNyA",
+    "source_key": "cdF5mvqxdEC8Xt0F_OcNyA",
+    "name": "Mission 5xlvl80 Artifacts",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 1,
+    "flux_max": 5,
+    "xp_min": 5000,
+    "xp_max": 5000,
+    "items": []
+  },
+  {
+    "id": "Drops:-wxUrUIVhkuznDs-eNuayw",
+    "source_key": "-wxUrUIVhkuznDs-eNuayw",
+    "name": "Mission 5xlvl90 Artifacts",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 7000,
+    "xp_max": 8000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 50000,
+        "max": 50000
+      }
+    ]
+  },
+  {
+    "id": "Drops:F4YlFCKRO02aW_XnxgbQbQ",
+    "source_key": "F4YlFCKRO02aW_XnxgbQbQ",
+    "name": "Mission 7 hearts",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 10000,
+    "xp_max": 10000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "d_SV3Oqzz0O5AeGUhMhqdg",
+        "name": "Heart",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 7,
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": "Drops:WFO96SaIOEqSnXVuai36bQ",
+    "source_key": "WFO96SaIOEqSnXVuai36bQ",
+    "name": "Mission Advectorian",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 10,
+    "xp_min": 12000,
+    "xp_max": 15000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "I2W7v1C8h0iDVUAFHC2Ytg",
+        "name": "Advanced Data Chip",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 3
+      },
+      {
+        "table": "Commodities",
+        "key": "Q-4DCSknqkaIGa1016-ggA",
+        "name": "Core Charge",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 100,
+        "max": 200
+      },
+      {
+        "table": "Commodities",
+        "key": "fPujzCjldEeJflK-PnPvBQ",
+        "name": "Engine Part",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 100,
+        "max": 200
+      },
+      {
+        "table": "Commodities",
+        "key": "K0RisGHC2UqZks1UVcYFOA",
+        "name": "Fusion Core",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 100,
+        "max": 200
+      }
+    ]
+  },
+  {
+    "id": "Drops:VpkPuwEWNF1i2x9Uea8pgf",
+    "source_key": "VpkPuwEWNF1i2x9Uea8pgf",
+    "name": "Mission Assualt Executor",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 5,
+    "flux_max": 15,
+    "xp_min": 80000,
+    "xp_max": 100000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 30000,
+        "max": 50000
+      }
+    ]
+  },
+  {
+    "id": "Drops:cmspxoAyLU-IjcsiCddcvA",
+    "source_key": "cmspxoAyLU-IjcsiCddcvA",
+    "name": "Mission Bionic Larva",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 2000,
+    "xp_max": 2000,
+    "items": [
+      {
+        "table": "Skins",
+        "key": "z1X7x6F6E0iSVVf_U5iu5Q",
+        "name": "Bionic Larva",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:z-3xMqwFMU2D2lbps-lplw",
+    "source_key": "z-3xMqwFMU2D2lbps-lplw",
+    "name": "Mission Celonidron",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 8,
+    "xp_min": 4000,
+    "xp_max": 5500,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "K0RisGHC2UqZks1UVcYFOA",
+        "name": "Fusion Core",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 5,
+        "max": 18
+      },
+      {
+        "table": "Commodities",
+        "key": "gO_f-y0QEU68vVwJ_XVmOg",
+        "name": "Iridium",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 5,
+        "max": 35
+      },
+      {
+        "table": "Commodities",
+        "key": "H5qybQDy9UindMh9yYIeqg",
+        "name": "Plasma Fluids",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 5,
+        "max": 35
+      },
+      {
+        "table": "Commodities",
+        "key": "hZ2FpZBh-kmRldjIi3rEwg",
+        "name": "Toxic Waste",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 5,
+        "max": 35
+      }
+    ]
+  },
+  {
+    "id": "Drops:0_5LahRRFkOZTsp3LxnDaA",
+    "source_key": "0_5LahRRFkOZTsp3LxnDaA",
+    "name": "Mission Cleaning Lady",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 5,
+    "flux_max": 15,
+    "xp_min": 40000,
+    "xp_max": 75000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "I2W7v1C8h0iDVUAFHC2Ytg",
+        "name": "Advanced Data Chip",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 5,
+        "max": 10
+      },
+      {
+        "table": "Commodities",
+        "key": "Ril2ZkXB6EOTshX6kmWUrg",
+        "name": "Medium Data Chip",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 10,
+        "max": 20
+      },
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 2000,
+        "max": 5000
+      }
+    ]
+  },
+  {
+    "id": "Drops:bB_2HoisO0-oDmocDsgekw",
+    "source_key": "bB_2HoisO0-oDmocDsgekw",
+    "name": "Mission Data Chip 1",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 5,
+    "xp_min": 600,
+    "xp_max": 1200,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "fPujzCjldEeJflK-PnPvBQ",
+        "name": "Engine Part",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 4,
+        "max": 10
+      },
+      {
+        "table": "Commodities",
+        "key": "1c46ec4C1UyRzxzv8hRqvw",
+        "name": "Big Metal Scrap",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 4,
+        "max": 14
+      },
+      {
+        "table": "Commodities",
+        "key": "Q-4DCSknqkaIGa1016-ggA",
+        "name": "Core Charge",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 4,
+        "max": 8
+      }
+    ]
+  },
+  {
+    "id": "Drops:ymCVLQ759kmM8_eEPF6h3w",
+    "source_key": "ymCVLQ759kmM8_eEPF6h3w",
+    "name": "Mission Data Chip 2",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 5,
+    "xp_min": 1300,
+    "xp_max": 1700,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "lmPr7d35rkq0Ev6RQRJGVw",
+        "name": "Alien Alloys",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 7,
+        "max": 15
+      },
+      {
+        "table": "Commodities",
+        "key": "K0RisGHC2UqZks1UVcYFOA",
+        "name": "Fusion Core",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 7,
+        "max": 15
+      },
+      {
+        "table": "Commodities",
+        "key": "1c46ec4C1UyRzxzv8hRqvw",
+        "name": "Big Metal Scrap",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 7,
+        "max": 15
+      }
+    ]
+  },
+  {
+    "id": "Drops:cO9nu26N2ES64uoa73O6cg",
+    "source_key": "cO9nu26N2ES64uoa73O6cg",
+    "name": "Mission Data Chip 3",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 6,
+    "xp_min": 3400,
+    "xp_max": 5500,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "1c46ec4C1UyRzxzv8hRqvw",
+        "name": "Big Metal Scrap",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 11,
+        "max": 20
+      },
+      {
+        "table": "Commodities",
+        "key": "Q-4DCSknqkaIGa1016-ggA",
+        "name": "Core Charge",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 11,
+        "max": 20
+      },
+      {
+        "table": "Commodities",
+        "key": "fPujzCjldEeJflK-PnPvBQ",
+        "name": "Engine Part",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 11,
+        "max": 20
+      },
+      {
+        "table": "Commodities",
+        "key": "lmPr7d35rkq0Ev6RQRJGVw",
+        "name": "Alien Alloys",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 11,
+        "max": 20
+      }
+    ]
+  },
+  {
+    "id": "Drops:DcAM1VHcOkakFDXn2wGfpA",
+    "source_key": "DcAM1VHcOkakFDXn2wGfpA",
+    "name": "Mission Dominator",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 1,
+    "flux_max": 3,
+    "xp_min": 400,
+    "xp_max": 600,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "K0RisGHC2UqZks1UVcYFOA",
+        "name": "Fusion Core",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 18,
+        "max": 20
+      }
+    ]
+  },
+  {
+    "id": "Drops:IsU53gK56Uy-DGhZN-ANwQ",
+    "source_key": "IsU53gK56Uy-DGhZN-ANwQ",
+    "name": "Mission Dreadnought",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 5,
+    "flux_max": 16,
+    "xp_min": 40000,
+    "xp_max": 75000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 2000,
+        "max": 5000
+      },
+      {
+        "table": "Commodities",
+        "key": "d6H3w_34pk2ghaQcXYBDag",
+        "name": "Hydrogen Crystal",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 2000,
+        "max": 5000
+      }
+    ]
+  },
+  {
+    "id": "Drops:eEX38mtoyku1erVFRU9jng",
+    "source_key": "eEX38mtoyku1erVFRU9jng",
+    "name": "Mission Fulzar Inv1",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 25,
+    "flux_max": 25,
+    "xp_min": 12000,
+    "xp_max": 12000,
+    "items": []
+  },
+  {
+    "id": "Drops:JEtvQfyvOUuw8RNS7lyOZA",
+    "source_key": "JEtvQfyvOUuw8RNS7lyOZA",
+    "name": "Mission Fulzar Inv2",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 35,
+    "flux_max": 35,
+    "xp_min": 10000,
+    "xp_max": 10000,
+    "items": []
+  },
+  {
+    "id": "Drops:firAIwUNXUaeuyUYlOK-8w",
+    "source_key": "firAIwUNXUaeuyUYlOK-8w",
+    "name": "Mission Mandrom",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 1,
+    "flux_max": 3,
+    "xp_min": 500,
+    "xp_max": 1000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "lmPr7d35rkq0Ev6RQRJGVw",
+        "name": "Alien Alloys",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 10,
+        "max": 20
+      },
+      {
+        "table": "Commodities",
+        "key": "Q-4DCSknqkaIGa1016-ggA",
+        "name": "Core Charge",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 10,
+        "max": 20
+      },
+      {
+        "table": "Commodities",
+        "key": "fPujzCjldEeJflK-PnPvBQ",
+        "name": "Engine Part",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 10,
+        "max": 20
+      }
+    ]
+  },
+  {
+    "id": "Drops:J5yAuSfW2UCkUBkzIng_oA",
+    "source_key": "J5yAuSfW2UCkUBkzIng_oA",
+    "name": "Mission Motherbrain",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 10,
+    "xp_min": 4500,
+    "xp_max": 5500,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "lmPr7d35rkq0Ev6RQRJGVw",
+        "name": "Alien Alloys",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 7,
+        "max": 15
+      },
+      {
+        "table": "Commodities",
+        "key": "1c46ec4C1UyRzxzv8hRqvw",
+        "name": "Big Metal Scrap",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 7,
+        "max": 15
+      },
+      {
+        "table": "Commodities",
+        "key": "Q-4DCSknqkaIGa1016-ggA",
+        "name": "Core Charge",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 7,
+        "max": 15
+      },
+      {
+        "table": "Commodities",
+        "key": "fPujzCjldEeJflK-PnPvBQ",
+        "name": "Engine Part",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 7,
+        "max": 15
+      }
+    ]
+  },
+  {
+    "id": "Drops:lOHT7IFX5HuZQjOxbnXNYx",
+    "source_key": "lOHT7IFX5HuZQjOxbnXNYx",
+    "name": "Mission Nexar Assasination",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 5,
+    "flux_max": 15,
+    "xp_min": 60000,
+    "xp_max": 85000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 30000,
+        "max": 50000
+      }
+    ]
+  },
+  {
+    "id": "Drops:8icxSav30DBfUM3nEABXiz",
+    "source_key": "8icxSav30DBfUM3nEABXiz",
+    "name": "Mission Nexar Kill 50",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 5,
+    "flux_max": 15,
+    "xp_min": 52000,
+    "xp_max": 80000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 7000,
+        "max": 13000
+      }
+    ]
+  },
+  {
+    "id": "Drops:MHWoLfrZhE673tF45xt4Ug",
+    "source_key": "MHWoLfrZhE673tF45xt4Ug",
+    "name": "Mission Nezerian Threat",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 64,
+    "flux_max": 64,
+    "xp_min": 60000,
+    "xp_max": 66000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "d6H3w_34pk2ghaQcXYBDag",
+        "name": "Hydrogen Crystal",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 4000,
+        "max": 6000
+      },
+      {
+        "table": "Commodities",
+        "key": "gO_f-y0QEU68vVwJ_XVmOg",
+        "name": "Iridium",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 4000,
+        "max": 6000
+      },
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 100000,
+        "max": 100000
+      }
+    ]
+  },
+  {
+    "id": "Drops:stwxnXTzqEW4OLUxbV20cw",
+    "source_key": "stwxnXTzqEW4OLUxbV20cw",
+    "name": "Mission Ossakel",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 6,
+    "xp_min": 1300,
+    "xp_max": 1800,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "Q-4DCSknqkaIGa1016-ggA",
+        "name": "Core Charge",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 5,
+        "max": 20
+      },
+      {
+        "table": "Commodities",
+        "key": "lmPr7d35rkq0Ev6RQRJGVw",
+        "name": "Alien Alloys",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 5,
+        "max": 20
+      },
+      {
+        "table": "Commodities",
+        "key": "Ril2ZkXB6EOTshX6kmWUrg",
+        "name": "Medium Data Chip",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 4
+      }
+    ]
+  },
+  {
+    "id": "Drops:HukOu5ezKku59ldjPGCK4g",
+    "source_key": "HukOu5ezKku59ldjPGCK4g",
+    "name": "Mission Poison Part 16",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 24,
+    "flux_max": 28,
+    "xp_min": 14000,
+    "xp_max": 18000,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "b1SNarfJmkmMewba8yEbjg",
+        "name": "Death Cloud",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:fw5YpzMZtkiyfPVGcsZILQ",
+    "source_key": "fw5YpzMZtkiyfPVGcsZILQ",
+    "name": "Mission PvP Level 10",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 20,
+    "flux_max": 20,
+    "xp_min": 2890,
+    "xp_max": 2890,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 3800,
+        "max": 3800
+      },
+      {
+        "table": "Commodities",
+        "key": "gO_f-y0QEU68vVwJ_XVmOg",
+        "name": "Iridium",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 200,
+        "max": 200
+      }
+    ]
+  },
+  {
+    "id": "Drops:SNH9l4SZWE-wR89nx-aC6g",
+    "source_key": "SNH9l4SZWE-wR89nx-aC6g",
+    "name": "Mission PvP Level 14",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 25,
+    "flux_max": 25,
+    "xp_min": 3450,
+    "xp_max": 3450,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 8420,
+        "max": 8420
+      }
+    ]
+  },
+  {
+    "id": "Drops:bmAeK4wxaUSJ0UPk7EKE0g",
+    "source_key": "bmAeK4wxaUSJ0UPk7EKE0g",
+    "name": "Mission PvP Level 18",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 60,
+    "flux_max": 60,
+    "xp_min": 3950,
+    "xp_max": 3950,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 0,
+        "effective_chance": 0,
+        "min": 9600,
+        "max": 9600
+      },
+      {
+        "table": "Commodities",
+        "key": "H5qybQDy9UindMh9yYIeqg",
+        "name": "Plasma Fluids",
+        "chance": 0,
+        "effective_chance": 0,
+        "min": 600,
+        "max": 600
+      }
+    ]
+  },
+  {
+    "id": "Drops:Lmm9LkFbBEOzhs-8gQm_cQ",
+    "source_key": "Lmm9LkFbBEOzhs-8gQm_cQ",
+    "name": "Mission PvP Level 2",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 10,
+    "flux_max": 10,
+    "xp_min": 375,
+    "xp_max": 375,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 750,
+        "max": 750
+      }
+    ]
+  },
+  {
+    "id": "Drops:OJTxJPmSTEetAZ1u0E2whA",
+    "source_key": "OJTxJPmSTEetAZ1u0E2whA",
+    "name": "Mission PvP Level 24 Pirate",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 35,
+    "flux_max": 35,
+    "xp_min": 4590,
+    "xp_max": 4590,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 12640,
+        "max": 12640
+      },
+      {
+        "table": "Commodities",
+        "key": "gO_f-y0QEU68vVwJ_XVmOg",
+        "name": "Iridium",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1980,
+        "max": 1980
+      },
+      {
+        "table": "Weapons",
+        "key": "P6XvSQpMr0q7kQUsjeHvwQ",
+        "name": "Blood-Claw S28 Smart Gun",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:hNtiPur2D02INBRIfdE83w",
+    "source_key": "hNtiPur2D02INBRIfdE83w",
+    "name": "Mission PvP Level 24 Police",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 35,
+    "flux_max": 35,
+    "xp_min": 4590,
+    "xp_max": 4590,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 12640,
+        "max": 12640
+      },
+      {
+        "table": "Commodities",
+        "key": "gO_f-y0QEU68vVwJ_XVmOg",
+        "name": "Iridium",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1980,
+        "max": 1980
+      },
+      {
+        "table": "Weapons",
+        "key": "w3-ZtQ-y_kiefCpnvFo88A",
+        "name": "X27-S Smart Gun",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:nvxkO88_SkOfa93JOoZENQ",
+    "source_key": "nvxkO88_SkOfa93JOoZENQ",
+    "name": "Mission PvP Level 4",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 14,
+    "flux_max": 14,
+    "xp_min": 1250,
+    "xp_max": 1250,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 800,
+        "max": 800
+      }
+    ]
+  },
+  {
+    "id": "Drops:jUPHwUlHL0qKMKWrOcdGZg",
+    "source_key": "jUPHwUlHL0qKMKWrOcdGZg",
+    "name": "Mission PvP Level 6",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 30,
+    "flux_max": 30,
+    "xp_min": 1650,
+    "xp_max": 1650,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 2500,
+        "max": 2500
+      }
+    ]
+  },
+  {
+    "id": "Drops:mSYpK0tMxUaZUyH8YtEnOw",
+    "source_key": "mSYpK0tMxUaZUyH8YtEnOw",
+    "name": "Mission PvP t1",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 175,
+    "xp_max": 175,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 250,
+        "max": 250
+      }
+    ]
+  },
+  {
+    "id": "Drops:LTsuWh-vUUm3q--1RkT03w",
+    "source_key": "LTsuWh-vUUm3q--1RkT03w",
+    "name": "Mission PvP t2",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 295,
+    "xp_max": 295,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 475,
+        "max": 475
+      }
+    ]
+  },
+  {
+    "id": "Drops:HdXW8T9dg0KYjMSd7ODtnw",
+    "source_key": "HdXW8T9dg0KYjMSd7ODtnw",
+    "name": "Mission Reach Level 12",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 10,
+    "flux_max": 10,
+    "xp_min": 1000,
+    "xp_max": 1000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "gO_f-y0QEU68vVwJ_XVmOg",
+        "name": "Iridium",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 200,
+        "max": 200
+      }
+    ]
+  },
+  {
+    "id": "Drops:lXDFj_HwxEOFTxbnJfJ7iQ",
+    "source_key": "lXDFj_HwxEOFTxbnJfJ7iQ",
+    "name": "Mission Reach Level 15",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 12,
+    "flux_max": 12,
+    "xp_min": 2500,
+    "xp_max": 2500,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 5000,
+        "max": 5000
+      }
+    ]
+  },
+  {
+    "id": "Drops:pYsIYYGtyEOet27hXGj-lg",
+    "source_key": "pYsIYYGtyEOet27hXGj-lg",
+    "name": "Mission Reach Level 2",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 250,
+    "xp_max": 250,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 400,
+        "max": 400
+      }
+    ]
+  },
+  {
+    "id": "Drops:HmcKxcAtvkKuuQL6LIEoHQ",
+    "source_key": "HmcKxcAtvkKuuQL6LIEoHQ",
+    "name": "Mission Reach Level 20",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 16,
+    "flux_max": 16,
+    "xp_min": 3000,
+    "xp_max": 3000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 7000,
+        "max": 7000
+      }
+    ]
+  },
+  {
+    "id": "Drops:SwBkcgMthUyQ0nb1kLyvOQ",
+    "source_key": "SwBkcgMthUyQ0nb1kLyvOQ",
+    "name": "Mission Reach Level 25",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 25,
+    "flux_max": 25,
+    "xp_min": 4000,
+    "xp_max": 4000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 10000,
+        "max": 10000
+      }
+    ]
+  },
+  {
+    "id": "Drops:mkYnqqj7p0u2k8g7EnAWhw",
+    "source_key": "mkYnqqj7p0u2k8g7EnAWhw",
+    "name": "Mission Reach Level 30",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 30,
+    "flux_max": 30,
+    "xp_min": 8000,
+    "xp_max": 8000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 15000,
+        "max": 15000
+      }
+    ]
+  },
+  {
+    "id": "Drops:zB8nzTOoJEmr0HovPJ-76Q",
+    "source_key": "zB8nzTOoJEmr0HovPJ-76Q",
+    "name": "Mission Reach Level 35",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 35,
+    "flux_max": 35,
+    "xp_min": 10000,
+    "xp_max": 10000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 20000,
+        "max": 20000
+      }
+    ]
+  },
+  {
+    "id": "Drops:bGhsN0Zdy0S6DDf86CqSAg",
+    "source_key": "bGhsN0Zdy0S6DDf86CqSAg",
+    "name": "Mission Reach Level 4",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": 4,
+    "flux_max": 4,
+    "xp_min": 400,
+    "xp_max": 400,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 200,
+        "max": 200
+      }
+    ]
+  },
+  {
+    "id": "Drops:FMyzSW8ZEEeqtqsGSRbpUA",
+    "source_key": "FMyzSW8ZEEeqtqsGSRbpUA",
+    "name": "Mission Reach Level 40",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 40,
+    "flux_max": 40,
+    "xp_min": 15000,
+    "xp_max": 15000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 30000,
+        "max": 30000
+      }
+    ]
+  },
+  {
+    "id": "Drops:QgUQyh329kyKeOhXFhEq3w",
+    "source_key": "QgUQyh329kyKeOhXFhEq3w",
+    "name": "Mission Reach Level 45",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 45,
+    "flux_max": 45,
+    "xp_min": 17000,
+    "xp_max": 17000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 40000,
+        "max": 40000
+      }
+    ]
+  },
+  {
+    "id": "Drops:5X5-MAn4XUCahRXs8fod_Q",
+    "source_key": "5X5-MAn4XUCahRXs8fod_Q",
+    "name": "Mission Reach Level 50",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 50,
+    "flux_max": 50,
+    "xp_min": 17500,
+    "xp_max": 17500,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 45000,
+        "max": 45000
+      }
+    ]
+  },
+  {
+    "id": "Drops:KfTq0wabzUSzx9h2UtxNtQ",
+    "source_key": "KfTq0wabzUSzx9h2UtxNtQ",
+    "name": "Mission Reach Level 6",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 6,
+    "flux_max": 6,
+    "xp_min": 500,
+    "xp_max": 500,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "d6H3w_34pk2ghaQcXYBDag",
+        "name": "Hydrogen Crystal",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 200,
+        "max": 200
+      }
+    ]
+  },
+  {
+    "id": "Drops:Pc9Q_Hre10W6Zti7PM_fFQ",
+    "source_key": "Pc9Q_Hre10W6Zti7PM_fFQ",
+    "name": "Mission Reach Level 9",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 8,
+    "flux_max": 8,
+    "xp_min": 400,
+    "xp_max": 400,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "H5qybQDy9UindMh9yYIeqg",
+        "name": "Plasma Fluids",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 300,
+        "max": 300
+      }
+    ]
+  },
+  {
+    "id": "Drops:k39t7eSFUUCVLE3xFxC6Bg",
+    "source_key": "k39t7eSFUUCVLE3xFxC6Bg",
+    "name": "Mission Renegades",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 5,
+    "flux_max": 10,
+    "xp_min": 30000,
+    "xp_max": 65000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1000,
+        "max": 6000
+      },
+      {
+        "table": "Commodities",
+        "key": "H5qybQDy9UindMh9yYIeqg",
+        "name": "Plasma Fluids",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1000,
+        "max": 4000
+      }
+    ]
+  },
+  {
+    "id": "Drops:TDwH2UVFK0o3I1ajAz0IlP",
+    "source_key": "TDwH2UVFK0o3I1ajAz0IlP",
+    "name": "Mission Skirmisher Wars drop",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 10,
+    "flux_max": 30,
+    "xp_min": 40200,
+    "xp_max": 70000,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "uWn7ceBXtka-N7d1o9-7ig",
+        "name": "Nexar Light Wave Generator",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:EeWcjZdXvU6AxC3lt0eAIg",
+    "source_key": "EeWcjZdXvU6AxC3lt0eAIg",
+    "name": "Mission Tank",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 10,
+    "xp_min": 20000,
+    "xp_max": 25000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "I2W7v1C8h0iDVUAFHC2Ytg",
+        "name": "Advanced Data Chip",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 3,
+        "max": 8
+      },
+      {
+        "table": "Commodities",
+        "key": "Ril2ZkXB6EOTshX6kmWUrg",
+        "name": "Medium Data Chip",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 8,
+        "max": 15
+      },
+      {
+        "table": "Commodities",
+        "key": "1c46ec4C1UyRzxzv8hRqvw",
+        "name": "Big Metal Scrap",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 8,
+        "max": 20
+      },
+      {
+        "table": "Commodities",
+        "key": "lmPr7d35rkq0Ev6RQRJGVw",
+        "name": "Alien Alloys",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 100,
+        "max": 200
+      },
+      {
+        "table": "Commodities",
+        "key": "Q-4DCSknqkaIGa1016-ggA",
+        "name": "Core Charge",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 100,
+        "max": 200
+      },
+      {
+        "table": "Commodities",
+        "key": "fPujzCjldEeJflK-PnPvBQ",
+        "name": "Engine Part",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 100,
+        "max": 200
+      }
+    ]
+  },
+  {
+    "id": "Drops:xWLc7aDQvEOFVdtqgf6Oiw",
+    "source_key": "xWLc7aDQvEOFVdtqgf6Oiw",
+    "name": "Mission Timed 10a",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 3,
+    "xp_min": 300,
+    "xp_max": 500,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 350,
+        "max": 500
+      },
+      {
+        "table": "Commodities",
+        "key": "H5qybQDy9UindMh9yYIeqg",
+        "name": "Plasma Fluids",
+        "chance": 0.29,
+        "effective_chance": 0.29,
+        "min": 10,
+        "max": 20
+      }
+    ]
+  },
+  {
+    "id": "Drops:4Stx51Qp4EKW61vCKIDEuA",
+    "source_key": "4Stx51Qp4EKW61vCKIDEuA",
+    "name": "Mission Timed 13a",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 3,
+    "xp_min": 500,
+    "xp_max": 800,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 400,
+        "max": 600
+      },
+      {
+        "table": "Commodities",
+        "key": "lmPr7d35rkq0Ev6RQRJGVw",
+        "name": "Alien Alloys",
+        "chance": 0.46,
+        "effective_chance": 0.46,
+        "min": 10,
+        "max": 20
+      },
+      {
+        "table": "Commodities",
+        "key": "Q-4DCSknqkaIGa1016-ggA",
+        "name": "Core Charge",
+        "chance": 0.46,
+        "effective_chance": 0.46,
+        "min": 10,
+        "max": 20
+      },
+      {
+        "table": "Commodities",
+        "key": "fPujzCjldEeJflK-PnPvBQ",
+        "name": "Engine Part",
+        "chance": 0.46,
+        "effective_chance": 0.46,
+        "min": 10,
+        "max": 20
+      }
+    ]
+  },
+  {
+    "id": "Drops:ax30Q4i7rEKv8r__zjQA9w",
+    "source_key": "ax30Q4i7rEKv8r__zjQA9w",
+    "name": "Mission Timed 16a",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 3,
+    "xp_min": 600,
+    "xp_max": 1000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 500,
+        "max": 700
+      },
+      {
+        "table": "Commodities",
+        "key": "Q-4DCSknqkaIGa1016-ggA",
+        "name": "Core Charge",
+        "chance": 0.52,
+        "effective_chance": 0.52,
+        "min": 12,
+        "max": 20
+      },
+      {
+        "table": "Commodities",
+        "key": "gO_f-y0QEU68vVwJ_XVmOg",
+        "name": "Iridium",
+        "chance": 0.51,
+        "effective_chance": 0.51,
+        "min": 20,
+        "max": 100
+      },
+      {
+        "table": "Commodities",
+        "key": "H5qybQDy9UindMh9yYIeqg",
+        "name": "Plasma Fluids",
+        "chance": 0.51,
+        "effective_chance": 0.51,
+        "min": 20,
+        "max": 100
+      }
+    ]
+  },
+  {
+    "id": "Drops:P8rRwKi8YUOd-rI5eetOjw",
+    "source_key": "P8rRwKi8YUOd-rI5eetOjw",
+    "name": "Mission Timed 1a",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 50,
+    "xp_max": 150,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 10,
+        "max": 30
+      }
+    ]
+  },
+  {
+    "id": "Drops:F5k8_kfqlUGakr_dAB31OQ",
+    "source_key": "F5k8_kfqlUGakr_dAB31OQ",
+    "name": "Mission Timed 22a",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 3,
+    "xp_min": 500,
+    "xp_max": 1000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 600,
+        "max": 1000
+      },
+      {
+        "table": "Commodities",
+        "key": "gO_f-y0QEU68vVwJ_XVmOg",
+        "name": "Iridium",
+        "chance": 0.46,
+        "effective_chance": 0.46,
+        "min": 20,
+        "max": 120
+      },
+      {
+        "table": "Commodities",
+        "key": "K0RisGHC2UqZks1UVcYFOA",
+        "name": "Fusion Core",
+        "chance": 0.46,
+        "effective_chance": 0.46,
+        "min": 5,
+        "max": 25
+      },
+      {
+        "table": "Commodities",
+        "key": "H5qybQDy9UindMh9yYIeqg",
+        "name": "Plasma Fluids",
+        "chance": 0.46,
+        "effective_chance": 0.46,
+        "min": 5,
+        "max": 120
+      },
+      {
+        "table": "Commodities",
+        "key": "fPujzCjldEeJflK-PnPvBQ",
+        "name": "Engine Part",
+        "chance": 0.46,
+        "effective_chance": 0.46,
+        "min": 5,
+        "max": 45
+      }
+    ]
+  },
+  {
+    "id": "Drops:F60iXla7GkS_6QxdjGp1zg",
+    "source_key": "F60iXla7GkS_6QxdjGp1zg",
+    "name": "Mission Timed 28a",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 5,
+    "xp_min": 500,
+    "xp_max": 1200,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 600,
+        "max": 1000
+      },
+      {
+        "table": "Commodities",
+        "key": "lmPr7d35rkq0Ev6RQRJGVw",
+        "name": "Alien Alloys",
+        "chance": 0.51,
+        "effective_chance": 0.51,
+        "min": 5,
+        "max": 20
+      },
+      {
+        "table": "Commodities",
+        "key": "Q-4DCSknqkaIGa1016-ggA",
+        "name": "Core Charge",
+        "chance": 0.51,
+        "effective_chance": 0.51,
+        "min": 5,
+        "max": 20
+      },
+      {
+        "table": "Commodities",
+        "key": "K0RisGHC2UqZks1UVcYFOA",
+        "name": "Fusion Core",
+        "chance": 0.51,
+        "effective_chance": 0.51,
+        "min": 5,
+        "max": 20
+      },
+      {
+        "table": "Commodities",
+        "key": "fPujzCjldEeJflK-PnPvBQ",
+        "name": "Engine Part",
+        "chance": 0.51,
+        "effective_chance": 0.51,
+        "min": 5,
+        "max": 20
+      }
+    ]
+  },
+  {
+    "id": "Drops:YYP6dAijEk-d87LlXbpCbQ",
+    "source_key": "YYP6dAijEk-d87LlXbpCbQ",
+    "name": "Mission Timed 34a",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 5,
+    "xp_min": 800,
+    "xp_max": 1600,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "Ril2ZkXB6EOTshX6kmWUrg",
+        "name": "Medium Data Chip",
+        "chance": 0.73,
+        "effective_chance": 0.73,
+        "min": 1,
+        "max": 3
+      },
+      {
+        "table": "Commodities",
+        "key": "I2W7v1C8h0iDVUAFHC2Ytg",
+        "name": "Advanced Data Chip",
+        "chance": 0.34,
+        "effective_chance": 0.34,
+        "min": 0,
+        "max": 1
+      },
+      {
+        "table": "Commodities",
+        "key": "Q-4DCSknqkaIGa1016-ggA",
+        "name": "Core Charge",
+        "chance": 0.34,
+        "effective_chance": 0.34,
+        "min": 6,
+        "max": 20
+      },
+      {
+        "table": "Commodities",
+        "key": "fPujzCjldEeJflK-PnPvBQ",
+        "name": "Engine Part",
+        "chance": 0.34,
+        "effective_chance": 0.34,
+        "min": 6,
+        "max": 20
+      },
+      {
+        "table": "Commodities",
+        "key": "1c46ec4C1UyRzxzv8hRqvw",
+        "name": "Big Metal Scrap",
+        "chance": 0.34,
+        "effective_chance": 0.34,
+        "min": 6,
+        "max": 20
+      }
+    ]
+  },
+  {
+    "id": "Drops:r8g0OMu-zUSIrvym2BgXcQ",
+    "source_key": "r8g0OMu-zUSIrvym2BgXcQ",
+    "name": "Mission Timed 3a",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 2,
+    "xp_min": 50,
+    "xp_max": 150,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 20,
+        "max": 100
+      }
+    ]
+  },
+  {
+    "id": "Drops:Tt7V02O8BkauO7Eg7eeJqA",
+    "source_key": "Tt7V02O8BkauO7Eg7eeJqA",
+    "name": "Mission Timed 45a",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 6,
+    "xp_min": 1400,
+    "xp_max": 2000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "I2W7v1C8h0iDVUAFHC2Ytg",
+        "name": "Advanced Data Chip",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Commodities",
+        "key": "lmPr7d35rkq0Ev6RQRJGVw",
+        "name": "Alien Alloys",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 5,
+        "max": 20
+      },
+      {
+        "table": "Commodities",
+        "key": "K0RisGHC2UqZks1UVcYFOA",
+        "name": "Fusion Core",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 5,
+        "max": 20
+      },
+      {
+        "table": "Commodities",
+        "key": "fPujzCjldEeJflK-PnPvBQ",
+        "name": "Engine Part",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 5,
+        "max": 20
+      }
+    ]
+  },
+  {
+    "id": "Drops:mvZLWFeL6kW4EIb_2uqtAA",
+    "source_key": "mvZLWFeL6kW4EIb_2uqtAA",
+    "name": "Mission Timed 52a",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 5,
+    "xp_min": 2100,
+    "xp_max": 2800,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "I2W7v1C8h0iDVUAFHC2Ytg",
+        "name": "Advanced Data Chip",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Commodities",
+        "key": "1c46ec4C1UyRzxzv8hRqvw",
+        "name": "Big Metal Scrap",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 20,
+        "max": 35
+      },
+      {
+        "table": "Commodities",
+        "key": "Q-4DCSknqkaIGa1016-ggA",
+        "name": "Core Charge",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 20,
+        "max": 35
+      },
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 400,
+        "max": 800
+      }
+    ]
+  },
+  {
+    "id": "Drops:OokNR3BP3UOJ68TVSGowNg",
+    "source_key": "OokNR3BP3UOJ68TVSGowNg",
+    "name": "Mission Timed 68a",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 3,
+    "xp_min": 2100,
+    "xp_max": 2800,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 700,
+        "max": 1200
+      }
+    ]
+  },
+  {
+    "id": "Drops:YqmzChpMvkmFWSLiEHl-Rg",
+    "source_key": "YqmzChpMvkmFWSLiEHl-Rg",
+    "name": "Mission Timed 6a",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 2,
+    "xp_min": 50,
+    "xp_max": 250,
+    "items": []
+  },
+  {
+    "id": "Drops:PoUtADOYKk-Fqw56NOWzQQ",
+    "source_key": "PoUtADOYKk-Fqw56NOWzQQ",
+    "name": "Mission Timed 72a",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 3,
+    "xp_min": 2400,
+    "xp_max": 3200,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1000,
+        "max": 1400
+      }
+    ]
+  },
+  {
+    "id": "Drops:6jcDvWRMGE-GXABmNTISzg",
+    "source_key": "6jcDvWRMGE-GXABmNTISzg",
+    "name": "Mission Timed 78a",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 3,
+    "xp_min": 3000,
+    "xp_max": 3500,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "_bvZ7JfYQEaEq7ap06_O6Q",
+        "name": "Polyhedric Fabric",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 10,
+        "max": 15
+      },
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1200,
+        "max": 1500
+      }
+    ]
+  },
+  {
+    "id": "Drops:Jx83VwX4U0CUy-Yx8pCO9Q",
+    "source_key": "Jx83VwX4U0CUy-Yx8pCO9Q",
+    "name": "Mission Timed 9a",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 2,
+    "xp_min": 200,
+    "xp_max": 400,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 100,
+        "max": 200
+      },
+      {
+        "table": "Commodities",
+        "key": "gO_f-y0QEU68vVwJ_XVmOg",
+        "name": "Iridium",
+        "chance": 0.31,
+        "effective_chance": 0.31,
+        "min": 10,
+        "max": 20
+      }
+    ]
+  },
+  {
+    "id": "Drops:LL_pY2d6mE-ULlL7KfmX-Q",
+    "source_key": "LL_pY2d6mE-ULlL7KfmX-Q",
+    "name": "Mission Timed Bionic Queen",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 1,
+    "flux_max": 5,
+    "xp_min": 10000,
+    "xp_max": 10000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 2000,
+        "max": 3000
+      }
+    ]
+  },
+  {
+    "id": "Drops:FmqeQp0bCUqHlTnxJXg0fw",
+    "source_key": "FmqeQp0bCUqHlTnxJXg0fw",
+    "name": "Mission Timed Judicator",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 5,
+    "flux_max": 10,
+    "xp_min": 40000,
+    "xp_max": 75000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 4000,
+        "max": 5000
+      }
+    ]
+  },
+  {
+    "id": "Drops:Dwi_PQ54_kW8CNHoEsx6DQ",
+    "source_key": "Dwi_PQ54_kW8CNHoEsx6DQ",
+    "name": "Mission Timed Nez Fulzar Dreadnought",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 4,
+    "flux_max": 15,
+    "xp_min": 60000,
+    "xp_max": 76000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 5000,
+        "max": 6000
+      }
+    ]
+  },
+  {
+    "id": "Drops:vtOS5nHdoUi6L2pdx3obSA",
+    "source_key": "vtOS5nHdoUi6L2pdx3obSA",
+    "name": "Mission Timed Sidus",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 4,
+    "flux_max": 8,
+    "xp_min": 30000,
+    "xp_max": 45000,
+    "items": []
+  },
+  {
+    "id": "Drops:VuvXnuw4S0qpb0HTDLuX0Q",
+    "source_key": "VuvXnuw4S0qpb0HTDLuX0Q",
+    "name": "Mission Transport 1",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 2,
+    "xp_min": 50,
+    "xp_max": 150,
+    "items": []
+  },
+  {
+    "id": "Drops:gYusUV-HekGlfqtWuNDE4g",
+    "source_key": "gYusUV-HekGlfqtWuNDE4g",
+    "name": "Mission Transport 2",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 3,
+    "xp_min": 100,
+    "xp_max": 200,
+    "items": []
+  },
+  {
+    "id": "Drops:xyhdp1LVPUmLep-AkUGVgw",
+    "source_key": "xyhdp1LVPUmLep-AkUGVgw",
+    "name": "Mission Transport 3",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 5,
+    "xp_min": 200,
+    "xp_max": 300,
+    "items": []
+  },
+  {
+    "id": "Drops:z6lvSFed80CjixkIiOZ21g",
+    "source_key": "z6lvSFed80CjixkIiOZ21g",
+    "name": "Mission Transport 4",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 5,
+    "xp_min": 200,
+    "xp_max": 300,
+    "items": []
+  },
+  {
+    "id": "Drops:iK9ts__fz0WBPogJHvuTlw",
+    "source_key": "iK9ts__fz0WBPogJHvuTlw",
+    "name": "Mission Tutorial 1",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 250,
+    "xp_max": 250,
+    "items": []
+  },
+  {
+    "id": "Drops:8KL2B0pE4U6TEYogg_1Tnw",
+    "source_key": "8KL2B0pE4U6TEYogg_1Tnw",
+    "name": "Mission Tutorial 10",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 4,
+    "flux_max": 4,
+    "xp_min": 528,
+    "xp_max": 528,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "d6H3w_34pk2ghaQcXYBDag",
+        "name": "Hydrogen Crystal",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 46,
+        "max": 46
+      },
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 326,
+        "max": 326
+      }
+    ]
+  },
+  {
+    "id": "Drops:XkNUFPZt7UK62WmRd7zIHg",
+    "source_key": "XkNUFPZt7UK62WmRd7zIHg",
+    "name": "Mission Tutorial 11",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 128,
+    "xp_max": 128,
+    "items": []
+  },
+  {
+    "id": "Drops:jOwdH7CoOEeeItvgjZ15EQ",
+    "source_key": "jOwdH7CoOEeeItvgjZ15EQ",
+    "name": "Mission Tutorial 2",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 100,
+    "xp_max": 100,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 200,
+        "max": 200
+      }
+    ]
+  },
+  {
+    "id": "Drops:EwDe0UlBXEWHTMs7EyIRLQ",
+    "source_key": "EwDe0UlBXEWHTMs7EyIRLQ",
+    "name": "Mission Tutorial 3",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 160,
+    "xp_max": 160,
+    "items": []
+  },
+  {
+    "id": "Drops:jWT_3sQHRkKsUemAIivwTw",
+    "source_key": "jWT_3sQHRkKsUemAIivwTw",
+    "name": "Mission Tutorial 4",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 380,
+    "xp_max": 380,
+    "items": []
+  },
+  {
+    "id": "Drops:S0JUIBMnS0-c2tkJUOfvqQ",
+    "source_key": "S0JUIBMnS0-c2tkJUOfvqQ",
+    "name": "Mission Tutorial 5",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 150,
+    "xp_max": 150,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1282,
+        "max": 1282
+      }
+    ]
+  },
+  {
+    "id": "Drops:Hq8rhHL4ZUqb3dzse2mUYA",
+    "source_key": "Hq8rhHL4ZUqb3dzse2mUYA",
+    "name": "Mission Tutorial 6",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 262,
+    "xp_max": 264,
+    "items": []
+  },
+  {
+    "id": "Drops:LlDenmV-i0iNsweCGpyKkw",
+    "source_key": "LlDenmV-i0iNsweCGpyKkw",
+    "name": "Mission Tutorial 7",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 2,
+    "flux_max": 2,
+    "xp_min": 432,
+    "xp_max": 432,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 425,
+        "max": 542
+      }
+    ]
+  },
+  {
+    "id": "Drops:mKR-g14TJkKCjQSbVXXqAw",
+    "source_key": "mKR-g14TJkKCjQSbVXXqAw",
+    "name": "Mission Tutorial 8",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 321,
+    "xp_max": 344,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 213,
+        "max": 432
+      }
+    ]
+  },
+  {
+    "id": "Drops:VxcukywvIU-IlvQ-zMYTUg",
+    "source_key": "VxcukywvIU-IlvQ-zMYTUg",
+    "name": "Mission Tutorial 9",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 3,
+    "flux_max": 3,
+    "xp_min": 764,
+    "xp_max": 764,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1421,
+        "max": 1421
+      }
+    ]
+  },
+  {
+    "id": "Drops:5y8-or6zS0W_-Zx4KTKdzw",
+    "source_key": "5y8-or6zS0W_-Zx4KTKdzw",
+    "name": "Mission XP 1000-1200",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 1000,
+    "xp_max": 1200,
+    "items": []
+  },
+  {
+    "id": "Drops:461ykk-x2EaaQfctJ8htsw",
+    "source_key": "461ykk-x2EaaQfctJ8htsw",
+    "name": "Mission XP 12400-12800 + 16 Flux",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 16,
+    "flux_max": 16,
+    "xp_min": 12400,
+    "xp_max": 12800,
+    "items": []
+  },
+  {
+    "id": "Drops:Iqjc285TmkKIWkoKjUVhwA",
+    "source_key": "Iqjc285TmkKIWkoKjUVhwA",
+    "name": "Mission XP 14k",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 14600,
+    "xp_max": 14800,
+    "items": []
+  },
+  {
+    "id": "Drops:Hv_pnr0R60aicAYlXQkSAQ",
+    "source_key": "Hv_pnr0R60aicAYlXQkSAQ",
+    "name": "Mission XP 1600-1800",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 1600,
+    "xp_max": 1800,
+    "items": []
+  },
+  {
+    "id": "Drops:qMffjxjWKkumepxsTOPbeA",
+    "source_key": "qMffjxjWKkumepxsTOPbeA",
+    "name": "Mission XP 16800",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 16800,
+    "xp_max": 16800,
+    "items": []
+  },
+  {
+    "id": "Drops:dq5ZBJh3jUa2eu1xeosReg",
+    "source_key": "dq5ZBJh3jUa2eu1xeosReg",
+    "name": "Mission XP 2.5k Steel 1.2k",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 2400,
+    "xp_max": 2600,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1200,
+        "max": 1200
+      }
+    ]
+  },
+  {
+    "id": "Drops:JebQvxhDpUuTv0IOfiNEZQ",
+    "source_key": "JebQvxhDpUuTv0IOfiNEZQ",
+    "name": "Mission XP 2400-2800",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 2400,
+    "xp_max": 2800,
+    "items": []
+  },
+  {
+    "id": "Drops:6y3wP0spPEie100_0mzwTA",
+    "source_key": "6y3wP0spPEie100_0mzwTA",
+    "name": "Mission XP 3k Steel 1k",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 3000,
+    "xp_max": 3200,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1000,
+        "max": 1000
+      }
+    ]
+  },
+  {
+    "id": "Drops:fJu0-X73x0Sq6jOxnbp0GA",
+    "source_key": "fJu0-X73x0Sq6jOxnbp0GA",
+    "name": "Mission XP 3k Steel 3k",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 3000,
+    "xp_max": 3200,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 3000,
+        "max": 3000
+      }
+    ]
+  },
+  {
+    "id": "Drops:banaWVv7LUeym6TF3nRj8A",
+    "source_key": "banaWVv7LUeym6TF3nRj8A",
+    "name": "Mission XP 4000-4200 + 8 Flux",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 8,
+    "flux_max": 8,
+    "xp_min": 4200,
+    "xp_max": 4800,
+    "items": []
+  },
+  {
+    "id": "Drops:mZZzIfKq20u8Lgws5z2MpQ",
+    "source_key": "mZZzIfKq20u8Lgws5z2MpQ",
+    "name": "Mission XP 4600",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 4600,
+    "xp_max": 4600,
+    "items": []
+  },
+  {
+    "id": "Drops:6dAouK6cr0ec955oE7TS8w",
+    "source_key": "6dAouK6cr0ec955oE7TS8w",
+    "name": "Mission XP 5.6k Steel 2.4k",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 5500,
+    "xp_max": 5700,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 2400,
+        "max": 2400
+      }
+    ]
+  },
+  {
+    "id": "Drops:LGktZIN8pE2CD5FfdRgD3g",
+    "source_key": "LGktZIN8pE2CD5FfdRgD3g",
+    "name": "Mission XP 5600-5800 + 3 Flux",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 5,
+    "flux_max": 5,
+    "xp_min": 5800,
+    "xp_max": 6200,
+    "items": []
+  },
+  {
+    "id": "Drops:9q3cs6qhJ0Kd6Tf3RrSOSg",
+    "source_key": "9q3cs6qhJ0Kd6Tf3RrSOSg",
+    "name": "Mission XP 600-800",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 600,
+    "xp_max": 800,
+    "items": []
+  },
+  {
+    "id": "Drops:VH6khMqOdEKaZRfjd5fn0Q",
+    "source_key": "VH6khMqOdEKaZRfjd5fn0Q",
+    "name": "Mission XP 6200-6800 + 16 Flux",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 16,
+    "flux_max": 16,
+    "xp_min": 6200,
+    "xp_max": 6800,
+    "items": []
+  },
+  {
+    "id": "Drops:s46g7anU802tL933nOtrVw",
+    "source_key": "s46g7anU802tL933nOtrVw",
+    "name": "Mission XP 8400-8600",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 8400,
+    "xp_max": 8600,
+    "items": []
+  },
+  {
+    "id": "Drops:bN2whmIb3ES0I7uukS7uXQ",
+    "source_key": "bN2whmIb3ES0I7uukS7uXQ",
+    "name": "Mission XP12k A10x100",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 12400,
+    "xp_max": 12600,
+    "items": []
+  },
+  {
+    "id": "Drops:hEP0Ab5wq0KhgsyHxeD37w",
+    "source_key": "hEP0Ab5wq0KhgsyHxeD37w",
+    "name": "Mission XP12k A10x96",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 12400,
+    "xp_max": 12600,
+    "items": []
+  },
+  {
+    "id": "Drops:0I3Qy70R20uQfP2bHIlwLw",
+    "source_key": "0I3Qy70R20uQfP2bHIlwLw",
+    "name": "Mission XP12k Bionic Larva",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 12200,
+    "xp_max": 12400,
+    "items": [
+      {
+        "table": "Skins",
+        "key": "z1X7x6F6E0iSVVf_U5iu5Q",
+        "name": "Bionic Larva",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:DTZ2BHaWdUqR8dJYllM45Q",
+    "source_key": "DTZ2BHaWdUqR8dJYllM45Q",
+    "name": "Mission XP16k F8",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 8,
+    "flux_max": 8,
+    "xp_min": 16400,
+    "xp_max": 16600,
+    "items": []
+  },
+  {
+    "id": "Drops:88qMIotyIkWBTuUav5IDsA",
+    "source_key": "88qMIotyIkWBTuUav5IDsA",
+    "name": "Mission XP26k F16",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 16,
+    "flux_max": 16,
+    "xp_min": 26600,
+    "xp_max": 26800,
+    "items": []
+  },
+  {
+    "id": "Drops:yzmL0Bc75Ema0Ya3SBfl-g",
+    "source_key": "yzmL0Bc75Ema0Ya3SBfl-g",
+    "name": "Mission XP28k S3.6k A3x100",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 8,
+    "flux_max": 8,
+    "xp_min": 28600,
+    "xp_max": 28800,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 3600,
+        "max": 3600
+      }
+    ]
+  },
+  {
+    "id": "Drops:bsiZ-MUpcE-KCmRVr04C7Q",
+    "source_key": "bsiZ-MUpcE-KCmRVr04C7Q",
+    "name": "Mission XP28k S5.8 A5x95",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 12,
+    "flux_max": 12,
+    "xp_min": 28600,
+    "xp_max": 28800,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 5800,
+        "max": 5800
+      }
+    ]
+  },
+  {
+    "id": "Drops:g0_NxGz0qkq7FHCmICN2CA",
+    "source_key": "g0_NxGz0qkq7FHCmICN2CA",
+    "name": "Mission XP3.2k S1.2k A2x50",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 4,
+    "flux_max": 4,
+    "xp_min": 3200,
+    "xp_max": 3400,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1200,
+        "max": 1200
+      }
+    ]
+  },
+  {
+    "id": "Drops:DJwrDxkGQEKxvrFYmTvX-A",
+    "source_key": "DJwrDxkGQEKxvrFYmTvX-A",
+    "name": "Mission XP3.4k S1k A2x40",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 4,
+    "flux_max": 4,
+    "xp_min": 3400,
+    "xp_max": 3600,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1000,
+        "max": 1000
+      }
+    ]
+  },
+  {
+    "id": "Drops:bXz-Je_DdEezJZ6ZgFkwGw",
+    "source_key": "bXz-Je_DdEezJZ6ZgFkwGw",
+    "name": "Mission XP32k",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 32600,
+    "xp_max": 32800,
+    "items": []
+  },
+  {
+    "id": "Drops:JjTRoQzW8kCd_fvc158Keg",
+    "source_key": "JjTRoQzW8kCd_fvc158Keg",
+    "name": "Mission XP32k F32",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 32,
+    "flux_max": 32,
+    "xp_min": 32200,
+    "xp_max": 32400,
+    "items": []
+  },
+  {
+    "id": "Drops:hSiTCJ6YqU-XpJ1CaTtv7A",
+    "source_key": "hSiTCJ6YqU-XpJ1CaTtv7A",
+    "name": "Mission XP36k + f12 +a3x130",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 12,
+    "flux_max": 12,
+    "xp_min": 36000,
+    "xp_max": 36000,
+    "items": []
+  },
+  {
+    "id": "Drops:iNUrR_J0HU6eEg0dxKpO1A",
+    "source_key": "iNUrR_J0HU6eEg0dxKpO1A",
+    "name": "Mission XP3k S1.2 A2x35",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 3000,
+    "xp_max": 3200,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1200,
+        "max": 0
+      }
+    ]
+  },
+  {
+    "id": "Drops:LqNKPDgugUmV0loD1_PlqQ",
+    "source_key": "LqNKPDgugUmV0loD1_PlqQ",
+    "name": "Mission XP4.2k S2k A2x55",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 4,
+    "flux_max": 4,
+    "xp_min": 4200,
+    "xp_max": 4400,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 2000,
+        "max": 2000
+      }
+    ]
+  },
+  {
+    "id": "Drops:RxRWHI24Nkyh7TiUJj35Yw",
+    "source_key": "RxRWHI24Nkyh7TiUJj35Yw",
+    "name": "Mission XP4.6k S1.4k A2x60",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 4,
+    "flux_max": 4,
+    "xp_min": 4600,
+    "xp_max": 4800,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1400,
+        "max": 1400
+      }
+    ]
+  },
+  {
+    "id": "Drops:NMq5uwpDJEKIfWzbIiYIDA",
+    "source_key": "NMq5uwpDJEKIfWzbIiYIDA",
+    "name": "Mission XP54k + F26 A5x140",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 26,
+    "flux_max": 26,
+    "xp_min": 54000,
+    "xp_max": 54000,
+    "items": []
+  },
+  {
+    "id": "Drops:e8mRNOT8o0Gxim_BcXHTyQ",
+    "source_key": "e8mRNOT8o0Gxim_BcXHTyQ",
+    "name": "Mission XP56k S14k A5x100",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 16,
+    "flux_max": 16,
+    "xp_min": 56400,
+    "xp_max": 56600,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 14000,
+        "max": 14000
+      }
+    ]
+  },
+  {
+    "id": "Drops:iEFd84e_A0WM_H_vMT2lbw",
+    "source_key": "iEFd84e_A0WM_H_vMT2lbw",
+    "name": "Mission XP6.5k S3.4k A4x65",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 8,
+    "flux_max": 8,
+    "xp_min": 6500,
+    "xp_max": 6700,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 3400,
+        "max": 3400
+      }
+    ]
+  },
+  {
+    "id": "Drops:b7L3SzFcbEe14ZmLR5IV6w",
+    "source_key": "b7L3SzFcbEe14ZmLR5IV6w",
+    "name": "Mission XP6k Bug leg",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 6200,
+    "xp_max": 6400,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "NGlW6H9o80qip5U6aRnChA",
+        "name": "Bug Leg",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:s6XA_1jdt0qinab-duSurA",
+    "source_key": "s6XA_1jdt0qinab-duSurA",
+    "name": "Mission XP6k S1.5k A5x40",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 8,
+    "flux_max": 8,
+    "xp_min": 6000,
+    "xp_max": 6200,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1500,
+        "max": 1500
+      }
+    ]
+  },
+  {
+    "id": "Drops:so2GmfBC2ESw_d5Dmrln3g",
+    "source_key": "so2GmfBC2ESw_d5Dmrln3g",
+    "name": "Mission XP6k S2.5k A3x35",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 4,
+    "flux_max": 4,
+    "xp_min": 6000,
+    "xp_max": 6200,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 2500,
+        "max": 2500
+      }
+    ]
+  },
+  {
+    "id": "Drops:qRDH1A8HXUilOs0AQZ2kCg",
+    "source_key": "qRDH1A8HXUilOs0AQZ2kCg",
+    "name": "Mission XP8.4k A8x92",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 8400,
+    "xp_max": 8600,
+    "items": []
+  },
+  {
+    "id": "Drops:zOnNfOjOt0iGuYgvsx69Zw",
+    "source_key": "zOnNfOjOt0iGuYgvsx69Zw",
+    "name": "Mission XP8600 DC250",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 8600,
+    "xp_max": 8600,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "I2W7v1C8h0iDVUAFHC2Ytg",
+        "name": "Advanced Data Chip",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 250,
+        "max": 250
+      }
+    ]
+  },
+  {
+    "id": "Drops:yt5gAMcfcEmLs8gxjb3-qQ",
+    "source_key": "yt5gAMcfcEmLs8gxjb3-qQ",
+    "name": "Mission XP8k F8",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 8,
+    "flux_max": 8,
+    "xp_min": 8600,
+    "xp_max": 8800,
+    "items": []
+  },
+  {
+    "id": "Drops:wllISW7N6E2RApwnIFsMkw",
+    "source_key": "wllISW7N6E2RApwnIFsMkw",
+    "name": "Mission XP9.6k S3.4k a2x80",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 6,
+    "flux_max": 6,
+    "xp_min": 9600,
+    "xp_max": 9800,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 3400,
+        "max": 3400
+      }
+    ]
+  },
+  {
+    "id": "Drops:4iq0Y6zQtEKkoyAxY-dSeQ",
+    "source_key": "4iq0Y6zQtEKkoyAxY-dSeQ",
+    "name": "Mission XP98k S68k 10x110",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 126,
+    "flux_max": 126,
+    "xp_min": 98200,
+    "xp_max": 98400,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 68000,
+        "max": 68000
+      }
+    ]
+  },
+  {
+    "id": "Drops:7Sr1uHUE5ESQLmbDq77Z7Q",
+    "source_key": "7Sr1uHUE5ESQLmbDq77Z7Q",
+    "name": "Mission: prog: Unknown Data",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": 1,
+    "flux_min": 18,
+    "flux_max": 20,
+    "xp_min": 1000,
+    "xp_max": 1000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "d6H3w_34pk2ghaQcXYBDag",
+        "name": "Hydrogen Crystal",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 25,
+        "max": 35
+      }
+    ]
+  },
+  {
+    "id": "Drops:eTPJWKSk5k2Djp9-1_-hjA",
+    "source_key": "eTPJWKSk5k2Djp9-1_-hjA",
+    "name": "Moth Zero Gland 1%",
+    "crate": true,
+    "crate_chance": 0.0103,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "VU_9kHJKEE-58cF6TUU41g",
+        "name": "Moth Zero Gland",
+        "chance": 1,
+        "effective_chance": 0.0103,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:3gLvecTpZUCe7N6m25SuFg",
+    "source_key": "3gLvecTpZUCe7N6m25SuFg",
+    "name": "Moth Zero Gland 100%",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "VU_9kHJKEE-58cF6TUU41g",
+        "name": "Moth Zero Gland",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:pU99HkjT0UG1x1EKxi1sZw",
+    "source_key": "pU99HkjT0UG1x1EKxi1sZw",
+    "name": "Nexar Blaster",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "j7fr4_g73k2B0dEymC3AGQ",
+        "name": "Nexar Blaster",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:1z5I2aVRoUO4sPu1sHceJg",
+    "source_key": "1z5I2aVRoUO4sPu1sHceJg",
+    "name": "Nexar Bomb",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "-Z-ZrNoPgki8dfdwz76dZw",
+        "name": "Nexar Bomb",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:_JBJWcV7LESTOuoBU-RgFA",
+    "source_key": "_JBJWcV7LESTOuoBU-RgFA",
+    "name": "Nexar Light Wave",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "uWn7ceBXtka-N7d1o9-7ig",
+        "name": "Nexar Light Wave Generator",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:yGiCoX9bYkeotHNecc6qYg",
+    "source_key": "yGiCoX9bYkeotHNecc6qYg",
+    "name": "Nexar Projector",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "aP9eZvbVyUSmHZfUBPqlCw",
+        "name": "Nexar Projector",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:0278E0F4-BA63-0FB7-03CB-499DC44A40B1",
+    "source_key": "0278E0F4-BA63-0FB7-03CB-499DC44A40B1",
+    "name": "Phase Crystal",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "569EF4C8-A8A5-C1C7-C8D8-0FA49F4F24B0",
+        "name": "Phase Crystal",
+        "chance": 0.99,
+        "effective_chance": 0.99,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:fz1MOEpW6USYxmX-4DFB3g",
+    "source_key": "fz1MOEpW6USYxmX-4DFB3g",
+    "name": "Plankton Siphoner 0.5%",
+    "crate": true,
+    "crate_chance": 0.004200000000000001,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "7kEmyTJywU61ei7qbNHJvg",
+        "name": "Plankton Siphon Gland",
+        "chance": 1,
+        "effective_chance": 0.004200000000000001,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:pI8CwHx900quCOBeGcYicA",
+    "source_key": "pI8CwHx900quCOBeGcYicA",
+    "name": "Plasma Torpedos 0.6%",
+    "crate": true,
+    "crate_chance": 0.0063,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "QTnppBLp6Um_I1n_oYsc2w",
+        "name": "Plasma Torpedos",
+        "chance": 1,
+        "effective_chance": 0.0063,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:7E7LQzbzGEiFWLFYkA0WwA",
+    "source_key": "7E7LQzbzGEiFWLFYkA0WwA",
+    "name": "Plasma Torpedos 100%",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "QTnppBLp6Um_I1n_oYsc2w",
+        "name": "Plasma Torpedos",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:PgAJvJPZSUC6lN23vkHu9A",
+    "source_key": "PgAJvJPZSUC6lN23vkHu9A",
+    "name": "Polyhedric Fabric",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "_bvZ7JfYQEaEq7ap06_O6Q",
+        "name": "Polyhedric Fabric",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:N1NXhIHTb0KE8OlbXg3B_w",
+    "source_key": "N1NXhIHTb0KE8OlbXg3B_w",
+    "name": "Pvp Drop",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": []
+  },
+  {
+    "id": "Drops:zs9vLUVzaUSCzntmEJxRTg",
+    "source_key": "zs9vLUVzaUSCzntmEJxRTg",
+    "name": "Queen Spit Gland 100%",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "O8hefLyssEeQPyDTNAYvbg",
+        "name": "Moth Queen Spit Gland",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:NFbeNUs2IUiy122reWxrDg",
+    "source_key": "NFbeNUs2IUiy122reWxrDg",
+    "name": "Radiated Junk",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "-1XaRBMHpEyTJxGsUtxGXw",
+        "name": "Radiated Junk",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:bDe4E9TvOE2Qkwdvfmkgmw",
+    "source_key": "bDe4E9TvOE2Qkwdvfmkgmw",
+    "name": "Railgun 1%",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "9oxG9iGQ5kSvTGV3h0VXcA",
+        "name": "Railgun",
+        "chance": 0.01,
+        "effective_chance": 0.01,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:bgXwJC2ZB0ioZEgBRLSbYA",
+    "source_key": "bgXwJC2ZB0ioZEgBRLSbYA",
+    "name": "Ram 5%",
+    "crate": true,
+    "crate_chance": 0.050100000000000006,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "TAMavpvGe0-bkiSnrqo5aw",
+        "name": "Ram Missiles X-22",
+        "chance": 1,
+        "effective_chance": 0.050100000000000006,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:4jFmhrqwiked_oNEG4zQVQ",
+    "source_key": "4jFmhrqwiked_oNEG4zQVQ",
+    "name": "Repair Nanobot Launcher 1%",
+    "crate": true,
+    "crate_chance": 0.0103,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "Yi4-fvgTbUyheJoebrUwvQ",
+        "name": "Repair-Nanobot Launcher",
+        "chance": 1,
+        "effective_chance": 0.0103,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:nVRaPlI21E6qbWfMM0SmSw",
+    "source_key": "nVRaPlI21E6qbWfMM0SmSw",
+    "name": "Shadow Flame 100%",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "uIx11wVzCk6Qp9_2oiJGiA",
+        "name": "Shadowflame",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:va54N6vLaE-CrLb8mFWTIQ",
+    "source_key": "va54N6vLaE-CrLb8mFWTIQ",
+    "name": "Shield Pack",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": []
+  },
+  {
+    "id": "Drops:-j9iRUSSNUeKZRKdEwV5TA",
+    "source_key": "-j9iRUSSNUeKZRKdEwV5TA",
+    "name": "Shield Pack Large",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": []
+  },
+  {
+    "id": "Drops:X49B46cOvEOvJd7Z4zaZZQ",
+    "source_key": "X49B46cOvEOvJd7Z4zaZZQ",
+    "name": "Shruiken 0.5%",
+    "crate": true,
+    "crate_chance": 0.004200000000000001,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "ixCpU_pYIUSRVTcpaRdXbA",
+        "name": "Razor",
+        "chance": 1,
+        "effective_chance": 0.004200000000000001,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:xGFIWp48zUGgsGSu7ZFI0w",
+    "source_key": "xGFIWp48zUGgsGSu7ZFI0w",
+    "name": "Shuriken 100%",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "ixCpU_pYIUSRVTcpaRdXbA",
+        "name": "Razor",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:rzB4ku2hgk-TvG6RxP8B4w",
+    "source_key": "rzB4ku2hgk-TvG6RxP8B4w",
+    "name": "Simple Data Chip",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "HUilxrgrQ0eCLftFf2CSLw",
+        "name": "Simple Data Chip",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:b2pyD9QnRE29dZPif32evA",
+    "source_key": "b2pyD9QnRE29dZPif32evA",
+    "name": "The Infestation: Part 9",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 3,
+    "xp_min": 500,
+    "xp_max": 600,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "I2W7v1C8h0iDVUAFHC2Ytg",
+        "name": "Advanced Data Chip",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:-mqnNwOx_0SIRiv7HBwhCQ",
+    "source_key": "-mqnNwOx_0SIRiv7HBwhCQ",
+    "name": "The infestation: Part 10",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": 30,
+    "flux_max": 35,
+    "xp_min": 1200,
+    "xp_max": 1200,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "-gio6BLfHky85vQ5PRYFHw",
+        "name": "Sonic Launcher",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:tGZyRh8mjEmnYZZgE55r7A",
+    "source_key": "tGZyRh8mjEmnYZZgE55r7A",
+    "name": "Toxic Waste",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "hZ2FpZBh-kmRldjIi3rEwg",
+        "name": "Toxic Waste",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:FhH9NmQcekSlNXH3fBfGWA",
+    "source_key": "FhH9NmQcekSlNXH3fBfGWA",
+    "name": "Unknown Data 6",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 500,
+    "xp_max": 500,
+    "items": []
+  },
+  {
+    "id": "Drops:txqJoqHQ5EOa9tqVZQncgA",
+    "source_key": "txqJoqHQ5EOa9tqVZQncgA",
+    "name": "Unknown Data 7",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 5,
+    "flux_max": 8,
+    "xp_min": 750,
+    "xp_max": 750,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "d6H3w_34pk2ghaQcXYBDag",
+        "name": "Hydrogen Crystal",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 45,
+        "max": 78
+      },
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 400,
+        "max": 600
+      }
+    ]
+  },
+  {
+    "id": "Drops:89rgRTZAAEGEKbppslMIsw",
+    "source_key": "89rgRTZAAEGEKbppslMIsw",
+    "name": "Unknown Data 8",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 0,
+    "flux_max": 0,
+    "xp_min": 800,
+    "xp_max": 800,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 800,
+        "max": 800
+      }
+    ]
+  },
+  {
+    "id": "Drops:PVxG4GVbIEmAER3s-N0D_Q",
+    "source_key": "PVxG4GVbIEmAER3s-N0D_Q",
+    "name": "Unknown Data 9",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 18,
+    "flux_max": 20,
+    "xp_min": 1200,
+    "xp_max": 1200,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "9oxG9iGQ5kSvTGV3h0VXcA",
+        "name": "Railgun",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:OoTO7RyFPki_60i9uTstZA",
+    "source_key": "OoTO7RyFPki_60i9uTstZA",
+    "name": "Wasp Bait",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "a9FIWFhatE2LpFS-nMegRw",
+        "name": "Wasp Bait",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:lEiSuQEJzkW4fK3dXSi-DA",
+    "source_key": "lEiSuQEJzkW4fK3dXSi-DA",
+    "name": "Weapon Crate Event",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "-l-o9K_yMUaeaBydO1_xXw",
+        "name": "Void Tentacles",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "4rJMW6ID_Umh_YIN_hNzow",
+        "name": "Concussion Sphere",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "4uoJyvPOEUup6qCH53Ethg",
+        "name": "Aureus Corrosive Manipulator",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "7kEmyTJywU61ei7qbNHJvg",
+        "name": "Plankton Siphon Gland",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "8UQFwHFLOUyJBnzzia_xSA",
+        "name": "Aureus Energy Manipulator",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "8bYpzP2SBkig_Y0RJRf15w",
+        "name": "Aureus Kinetic Manipulator",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "9oxG9iGQ5kSvTGV3h0VXcA",
+        "name": "Railgun",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "bbhTz2fDuUm9aY7GklMwvg",
+        "name": "Hell Fire",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "EbAa-Nt2tEuuM70r0txFqA",
+        "name": "Locust Hatchery",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "eSdFRP2jdUqRUd2h5orNAw",
+        "name": "M2 Launcher",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "iQis4FtiYECE7CWjUmexhg",
+        "name": "Piraya",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "ixCpU_pYIUSRVTcpaRdXbA",
+        "name": "Razor",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "JYj8LiTqwEixlkvCl-n55Q",
+        "name": "Acid Spore",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "N9gvkhkgS0OAprh5n_GdwQ",
+        "name": "Aureus Drone Controller",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "oI0YOkiSMke6wDXLZ3jHWA",
+        "name": "Eagle Needle",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "z2lW_0_JmEagzFPNVKchDg",
+        "name": "Flame Trail",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "QTnppBLp6Um_I1n_oYsc2w",
+        "name": "Plasma Torpedos",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "psmh2tj1rUuuLK3WGpIHbA",
+        "name": "Infested Missiles",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "oNg_pJWmD0yhOVILCDsZWw",
+        "name": "Hunter-killer Launcher",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "YXzpvPGTU0e6oO6GqafTfw",
+        "name": "Skeletor Lightning",
+        "chance": 0.01,
+        "effective_chance": 0.01,
+        "min": 0,
+        "max": 0
+      },
+      {
+        "table": "Weapons",
+        "key": "VU_9kHJKEE-58cF6TUU41g",
+        "name": "Moth Zero Gland",
+        "chance": 0.01,
+        "effective_chance": 0.01,
+        "min": 0,
+        "max": 0
+      },
+      {
+        "table": "Weapons",
+        "key": "PsYyhEznMkmXuS62VZiuIw",
+        "name": "X-73 Constructor",
+        "chance": 0.01,
+        "effective_chance": 0.01,
+        "min": 0,
+        "max": 0
+      },
+      {
+        "table": "Weapons",
+        "key": "9oxG9iGQ5kSvTGV3h0VXcA",
+        "name": "Railgun",
+        "chance": 0.01,
+        "effective_chance": 0.01,
+        "min": 0,
+        "max": 0
+      },
+      {
+        "table": "Weapons",
+        "key": "TOaofFTM20KGHYtjQlqDfw",
+        "name": "Prismatic Crystal",
+        "chance": 0.01,
+        "effective_chance": 0.01,
+        "min": 0,
+        "max": 0
+      },
+      {
+        "table": "Weapons",
+        "key": "z5Kl-eXMmkaYAcboQHL9ng",
+        "name": "Particle Gun",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "YmwsyoCIsUC_3cQZZteX8A",
+        "name": "Repair-Nanobot Spray",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "s2giIoDnX0y8wKB9gNTorQ",
+        "name": "X-42 Constructor",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "PsYyhEznMkmXuS62VZiuIw",
+        "name": "X-73 Constructor",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "OU-YTdEF4Em3GR8TZFNaOg",
+        "name": "Teeth",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "oI0YOkiSMke6wDXLZ3jHWA",
+        "name": "Eagle Needle",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "ogZHQsvEakqBrtf8esDP6g",
+        "name": "C-4",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "mG64bGPqEUaJHvf2sadUHg",
+        "name": "Chrono Beam",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "F-Sxt4t05kyrLQtsBD8V0g",
+        "name": "Plasma Blaster",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "-l-o9K_yMUaeaBydO1_xXw",
+        "name": "Void Tentacles",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "YXzpvPGTU0e6oO6GqafTfw",
+        "name": "Skeletor Lightning",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "XHdm9PPMckOrNVJa08mGlg",
+        "name": "Algea Nova Gland",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:TPBjsxZRX0Gi-IaQtKeDNQ",
+    "source_key": "TPBjsxZRX0Gi-IaQtKeDNQ",
+    "name": "Weapon Crate Event Small",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "36zNgerYkEyhUVB0kPGS7Q",
+        "name": "Missile Launcher",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "3vTQQ8KpUESpliXfdGASYg",
+        "name": "Sticky Bombs",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "5aPC1xQS9kC1be2z56Z6eQ",
+        "name": "Flamethrower",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "7kEmyTJywU61ei7qbNHJvg",
+        "name": "Plankton Siphon Gland",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "9oxG9iGQ5kSvTGV3h0VXcA",
+        "name": "Railgun",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "bob4DnmRb0mt24Pb8gNycA",
+        "name": "Beamer",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "by-9mh1gt0WFFygKJjfqWA",
+        "name": "Acid Spray",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "dzmNj9Yzr0CFxvZSBSaEeg",
+        "name": "Gatling Laser",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "ixCpU_pYIUSRVTcpaRdXbA",
+        "name": "Razor",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "JYj8LiTqwEixlkvCl-n55Q",
+        "name": "Acid Spore",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "ogZHQsvEakqBrtf8esDP6g",
+        "name": "C-4",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "QTnppBLp6Um_I1n_oYsc2w",
+        "name": "Plasma Torpedos",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "VU_9kHJKEE-58cF6TUU41g",
+        "name": "Moth Zero Gland",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "wVhdBk9kKUikW7AhNLOnCg",
+        "name": "Gatling Gun",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "table": "Weapons",
+        "key": "Yi4-fvgTbUyheJoebrUwvQ",
+        "name": "Repair-Nanobot Launcher",
+        "chance": 0.03,
+        "effective_chance": 0.03,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:xL_i6sVErEeNg4Tab0A7Sw",
+    "source_key": "xL_i6sVErEeNg4Tab0A7Sw",
+    "name": "X-32",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "nyESCdT8vUiQ5Qv400qGlw",
+        "name": "X-32 Constructor",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:KJfCG-Zzhk6aE5P7obX9zw",
+    "source_key": "KJfCG-Zzhk6aE5P7obX9zw",
+    "name": "X-42",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "s2giIoDnX0y8wKB9gNTorQ",
+        "name": "X-42 Constructor",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:H7nlun_fUEu1KNTrumAxSg",
+    "source_key": "H7nlun_fUEu1KNTrumAxSg",
+    "name": "X-73",
+    "crate": true,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": [
+      {
+        "table": "Weapons",
+        "key": "PsYyhEznMkmXuS62VZiuIw",
+        "name": "X-73 Constructor",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 1,
+        "max": 1
+      }
+    ]
+  },
+  {
+    "id": "Drops:IKPRHgAWkUyrCsnMX3gHcg",
+    "source_key": "IKPRHgAWkUyrCsnMX3gHcg",
+    "name": "quad_damage",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": 0,
+    "flux_min": null,
+    "flux_max": null,
+    "xp_min": null,
+    "xp_max": null,
+    "items": []
+  },
+  {
+    "id": "Drops:clu7pQBfwkOtBOzHR3Igxw",
+    "source_key": "clu7pQBfwkOtBOzHR3Igxw",
+    "name": "timed vors t1",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 1,
+    "flux_max": 4,
+    "xp_min": 5000,
+    "xp_max": 7500,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 2000,
+        "max": 3500
+      }
+    ]
+  },
+  {
+    "id": "Drops:UnWQDHCCV0G6_71SXyiP7g",
+    "source_key": "UnWQDHCCV0G6_71SXyiP7g",
+    "name": "timed vors t2",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 2,
+    "flux_max": 4,
+    "xp_min": 4000,
+    "xp_max": 8000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 3000,
+        "max": 4500
+      }
+    ]
+  },
+  {
+    "id": "Drops:F2ZPiyzfs0mA3FB_7qw-mA",
+    "source_key": "F2ZPiyzfs0mA3FB_7qw-mA",
+    "name": "timed vors t3e",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 5,
+    "flux_max": 12,
+    "xp_min": 25000,
+    "xp_max": 46000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 5000,
+        "max": 7500
+      }
+    ]
+  },
+  {
+    "id": "Drops:kkCoDypwaUiQwqLC63-AZg",
+    "source_key": "kkCoDypwaUiQwqLC63-AZg",
+    "name": "timed vors t4e",
+    "crate": false,
+    "crate_chance": 1,
+    "artifact_chance": null,
+    "flux_min": 6,
+    "flux_max": 16,
+    "xp_min": 42000,
+    "xp_max": 54000,
+    "items": [
+      {
+        "table": "Commodities",
+        "key": "flpbTKautkC1QzjWT28gkw",
+        "name": "Steel",
+        "chance": 1,
+        "effective_chance": 1,
+        "min": 5000,
+        "max": 10000
+      }
+    ]
+  }
+]
