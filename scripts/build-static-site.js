@@ -319,12 +319,16 @@ function routeMap(manifest, cache = null) {
 
 function entityLink(table, key, cache, routes, fallback = null) {
   key = refKey(table, key);
-  if (!table || !key) return "<span>n/a</span>";
+  if (!table || !key) return missingValue("n/a");
   const id = `${table}:${key}`;
   const record = cache[table]?.[key];
   const label = fallback || (record ? titleFor(record, key) : key);
   const href = routes.get(id);
   return href ? `<a href="${escapeAttr(href)}">${escapeHtml(label)}</a>` : `<span>${escapeHtml(label)}</span>`;
+}
+
+function missingValue(label = "n/a") {
+  return `<span class="missing-value">${escapeHtml(label)}</span>`;
 }
 
 function refKey(table, value) {
@@ -347,12 +351,12 @@ function refKey(table, value) {
 
 function entityLinks(table, value, cache, routes) {
   if (!Array.isArray(value)) return entityLink(table, value, cache, routes);
-  const links = value.map((item) => entityLink(table, item, cache, routes)).filter((html) => !html.includes(">n/a<"));
-  return links.length ? links.join(", ") : "<span>n/a</span>";
+  const links = value.map((item) => entityLink(table, item, cache, routes)).filter((html) => !html.includes('class="missing-value"'));
+  return links.length ? links.join(", ") : missingValue();
 }
 
 function soundLink(key, cache, routes) {
-  return cache.Sounds?.[key] ? entityLink("Sounds", key, cache, routes) : "<span>n/a</span>";
+  return cache.Sounds?.[key] ? entityLink("Sounds", key, cache, routes) : missingValue();
 }
 
 function valueLabel(value) {
@@ -363,7 +367,8 @@ function valueLabel(value) {
 }
 
 function statCard(label, value, hint = "") {
-  return `<div class="stat-card"><span>${escapeHtml(label)}</span><strong>${escapeHtml(valueLabel(value))}</strong>${hint ? `<small>${escapeHtml(hint)}</small>` : ""}</div>`;
+  const missing = value === null || value === undefined || value === "";
+  return `<div class="stat-card"><span>${escapeHtml(label)}</span><strong${missing ? ' class="missing-value"' : ""}>${missing ? escapeHtml("n/a") : escapeHtml(valueLabel(value))}</strong>${hint ? `<small>${escapeHtml(hint)}</small>` : ""}</div>`;
 }
 
 function tip(label, text) {
@@ -912,6 +917,71 @@ function uniqueArtifactSourceStatus(item, cache) {
   return "Sprite only";
 }
 
+function uniqueArtifactEffectRole(item) {
+  const text = `${item.stat ? artifactStatLabel(item.stat) : ""} ${item.stat ? (UNIQUE_ARTIFACT_DESCRIPTIONS[item.stat] || "") : ""}`.toLowerCase();
+  const buffMatch = /(increase|adds?|improv|boost|grant|regen|recovery|heal|leech|doubles?)/.test(text);
+  const debuffMatch = /(reduce|reduces|reduc|slow|disable|ignite|overload|penetrat|drain|shockwave|reflect)/.test(text);
+  if (buffMatch && debuffMatch) return "Mixed";
+  if (debuffMatch) return "Debuff";
+  if (buffMatch) return "Buff";
+  if (item.stat) return "Utility";
+  return "Unknown";
+}
+
+function uniqueArtifactBossSummary(item, cache, routes) {
+  if (!item.bossKeys.length) return "<span class=\"muted\">No strict boss match in client data</span>";
+  return item.bossKeys.map((bossKey) => {
+    const boss = cache.Bosses?.[bossKey];
+    const artDrops = artifactDropEntries(boss, cache);
+    const dropText = artDrops.length
+      ? artDrops.map((dropItem) => `${entityLink("Drops", dropItem.drop, cache, routes)} x${escapeHtml(rangeText(dropItem.min, dropItem.max))} @ ${escapeHtml(percentLabel(dropItem.chance ?? 1))}`).join("<br>")
+      : "<span class=\"muted\">Artifact roll not exposed</span>";
+    return `${entityLink("Bosses", bossKey, cache, routes)}<div class=\"muted\">${dropText}</div>`;
+  }).join("<br>");
+}
+
+function uniqueArtifactRowNotes(item) {
+  if (item.stat && UNIQUE_ARTIFACT_TYPES.has(item.stat)) {
+    return UNIQUE_ARTIFACT_DESCRIPTIONS[item.stat] || artifactStatLabel(item.stat);
+  }
+  return "The downloaded client cache does not expose a fixed stat type or value for this sprite.";
+}
+
+function uniqueArtifactMainRows(cache, media, routes) {
+  return uniqueArtifactCatalog(cache).map((item) => {
+    const statText = item.stat && UNIQUE_ARTIFACT_TYPES.has(item.stat)
+      ? `${artifactStatLabel(item.stat)}: ${UNIQUE_ARTIFACT_DESCRIPTIONS[item.stat] || item.stat}`
+      : "Fixed stat not exposed by the downloaded client cache";
+    return `<tr data-search="${escapeAttr(`${item.label} ${item.stat} ${uniqueArtifactSourceStatus(item, cache)} ${item.bossKeys.map((bossKey) => titleFor(cache.Bosses?.[bossKey], bossKey)).join(" ")} ${UNIQUE_ARTIFACT_DESCRIPTIONS[item.stat] || ""}`)}" data-stat="${escapeAttr(item.stat || "")}" data-role="${escapeAttr(uniqueArtifactEffectRole(item))}" data-source-status="${escapeAttr(uniqueArtifactSourceStatus(item, cache))}"><td>${renderImageThumb(item.image, media)}<a href="${escapeAttr(item.url)}">${escapeHtml(item.label)}</a></td><td>${escapeHtml(statText)}${item.stat ? `<br><code class="source-key">${escapeHtml(item.stat)}</code>` : ""}</td><td>${escapeHtml(uniqueArtifactEffectRole(item))}</td><td>${uniqueArtifactBossSummary(item, cache, routes)}</td><td class="missing-value">unknown</td><td>${escapeHtml(uniqueArtifactRowNotes(item))}</td></tr>`;
+  }).join("");
+}
+
+function classicArtifactRows(artifacts, cache, media, routes) {
+  return artifacts.filter(({ record }) => !artifactIsUnique(record)).map(({ entry, key, record }) => {
+    const imageKey = primaryImageKey("ArtifactTypes", record, cache);
+    const image = cache.Images?.[imageKey];
+    const icon = image ? renderImageThumb(image, media) : "";
+    const rarity = artifactRarityLabel(record);
+    const upgradeable = artifactUpgradeLabel(record);
+    const range = artifactValueRange(record);
+    const levelRange = artifactLevelRange(record);
+    const dropWeight = valueLabel(record.dropRate);
+    const eligible = artifacts.filter(({ record: other }) => {
+      if (artifactIsUnique(other)) return false;
+      const min = other.minLevel ?? 1;
+      const max = other.maxLevel ?? 150;
+      const recordMin = record.minLevel ?? 1;
+      const recordMax = record.maxLevel ?? 150;
+      return Math.max(min, recordMin) <= Math.min(max, recordMax);
+    });
+    const totalWeight = eligible.reduce((sum, artifact) => sum + numberValue(artifact.record.dropRate), 0);
+    const typeChance = totalWeight ? numberValue(record.dropRate) / totalWeight : 0;
+    const searchText = `${entry.name} ${key} ${record.type || ""} ${rarity} ${upgradeable} ${range} ${levelRange}`;
+    const href = entry.url || routes.get(`ArtifactTypes:${key}`) || `/${entry.slug}.html`;
+    return `<tr data-search="${escapeAttr(searchText)}" data-stat="${escapeAttr(artifactBaseType(record.type))}" data-rarity="${escapeAttr(rarity)}" data-unique="0"><td>${icon}<a href="${escapeAttr(href)}">${escapeHtml(entry.name)}</a></td><td>${escapeHtml(artifactStatLabel(record.type))}<br><code class="source-key">${escapeHtml(record.type)}</code></td><td>${escapeHtml(artifactBaseType(record.type))}</td><td>${escapeHtml(range)}</td><td>${rarity === "Unknown" ? missingValue(rarity) : escapeHtml(rarity)}</td><td>${upgradeable === "Unknown" ? missingValue(upgradeable) : escapeHtml(upgradeable)}</td><td>${escapeHtml(dropWeight)}</td><td>${levelRange === "Any" ? missingValue(levelRange) : escapeHtml(levelRange)}</td><td>${escapeHtml(percentLabel(typeChance))}</td></tr>`;
+  }).join("");
+}
+
 function uniqueArtifactRows(cache, media, routes) {
   const uniqueDrop = Object.entries(cache.Drops || {}).find(([, drop]) => /unique artifact/i.test(drop.name || ""));
   return UNIQUE_ARTIFACT_STATS.map(([type, label]) => {
@@ -1435,57 +1505,47 @@ function renderArtifactListing(entries, cache, media, routes) {
     valueMax: artifactNumericRange(record).max,
     valueText: artifactValueRange(record)
   }));
-  const rows = artifacts.map(({ entry, key, record }) => {
-    const icon = cache.Images?.[record.bitmap] ? renderImageThumb(cache.Images[record.bitmap], media) : "";
-    const range = artifactNumericRange(record);
-    const materials = (record.recycleItems || []).map((item) => titleFor(cache.Commodities?.[item.item], item.item)).join(" ");
-    return `<tr data-search="${escapeAttr(`${entry.name} ${record.type} ${artifactStatLabel(record.type)} ${artifactValueRange(record)} ${artifactRarityLabel(record)} ${materials}`)}" data-special="${record.special ? "1" : "0"}" data-unique="${artifactIsUnique(record) ? "1" : "0"}" data-stat="${escapeAttr(artifactBaseType(record.type))}" data-level-min="${escapeAttr(record.minLevel ?? 1)}" data-level-max="${escapeAttr(record.maxLevel ?? 150)}" data-drop="${escapeAttr(record.dropRate ?? 0)}" data-value-min="${escapeAttr(range.min)}" data-value-max="${escapeAttr(range.max)}"><td>${icon}<a href="/${entry.slug}.html">${escapeHtml(entry.name)}</a></td><td>${escapeHtml(artifactStatLabel(record.type))}</td><td>${escapeHtml(artifactValueRange(record))}</td><td>${escapeHtml(artifactRarityLabel(record))}</td><td>${escapeHtml(artifactUpgradeLabel(record))}</td><td>${escapeHtml(valueLabel(record.dropRate))}</td><td>${escapeHtml(artifactLevelRange(record))}</td><td>${(record.recycleItems || []).map((item) => `${entityLink("Commodities", item.item, cache, routes)} x${escapeHtml(rangeText(item.min, item.max))}`).join("<br>")}</td></tr>`;
-  }).join("");
+  const artifactOptions = [...data].sort((a, b) => a.name.localeCompare(b.name)).map(({ key, name }) => `<option value="${escapeAttr(key)}">${escapeHtml(name)}</option>`).join("");
+  const classicRows = classicArtifactRows(artifacts, cache, media, routes);
   const statOptions = [...new Set(artifacts.map(({ record }) => artifactBaseType(record.type)))].sort()
     .map((stat) => `<option value="${escapeAttr(stat)}">${escapeHtml(artifactStatLabel(stat))}</option>`).join("");
-  const artifactOptions = artifacts
-    .sort((a, b) => a.entry.name.localeCompare(b.entry.name))
-    .map(({ entry, key }) => `<option value="${escapeAttr(key)}">${escapeHtml(entry.name)}</option>`).join("");
-  const bossRows = bossArtifactDropRows(cache, routes);
-  const uniqueIconRows = uniqueArtifactIconRows(cache, media, routes);
-  const bossUniqueRows = bossUniqueArtifactRows(cache, media, routes);
-  const uniqueDrop = uniqueDropEntry(cache);
+  const rarityOptions = [...new Set(artifacts.map(({ record }) => artifactRarityLabel(record)))].sort().map((rarity) => `<option value="${escapeAttr(rarity)}">${escapeHtml(rarity)}</option>`).join("");
+  const uniqueRows = uniqueArtifactMainRows(cache, media, routes);
   return `<h1>Artifacts</h1>
-<p class="muted">All artifact type records are listed here with icons, special flags, level gates, recycle outputs, and drop weights. The calculator estimates odds from the artifact type drop weights among records eligible for the selected level.</p>
+<p class="muted">Classic artifacts are listed with their roll range, rarity, level gate, and drop weight. Use the calculator first, then filter the table if you want to narrow the pool.</p>
 <section class="content-grid">
   <article>
-    <h2>Drop Calculator</h2>
+    <h2>Classic Artifact Calculator</h2>
+    <p class="muted">Pick an artifact, set the level, and the calculator estimates its share of the eligible pool.</p>
     <div class="calculator" id="artifact-calculator" data-artifacts="${escapeAttr(JSON.stringify(data))}">
-      <label>Target artifact <select id="artifact-target"><option value="">Any matching artifact</option>${artifactOptions}</select></label>
-      <label>Stat family <select id="artifact-stat-target"><option value="">Any stat</option>${statOptions}</select></label>
-      <label>Min value <input id="artifact-value-min" type="number" step="0.01" placeholder="any"></label>
-      <label>Max value <input id="artifact-value-max" type="number" step="0.01" placeholder="any"></label>
+      <label>Target artifact <select id="artifact-target">${artifactOptions}</select></label>
       <label>Artifact level <input id="artifact-level" type="number" min="1" max="150" value="80"></label>
       <label>Artifact drop chance <input id="artifact-drop-chance" type="number" min="0" max="100" step="0.1" value="100"><span>%</span></label>
       <label>Attempts <input id="artifact-attempts" type="number" min="1" value="100"></label>
-      <output id="artifact-result">Choose values to estimate odds.</output>
+      <output id="artifact-result">Choose an artifact to estimate odds.</output>
     </div>
   </article>
   <article>
-    <h2>Artifact Filters</h2>
+    <h2>Classic Artifacts</h2>
+    <p class="muted">The table below keeps the important details on one line per artifact so the regular pool is easy to scan.</p>
+    <div class="filter-panel" data-table-filter="classic-artifact-table">
+      <input id="classic-artifact-filter-text" name="classic-artifact-filter-text" data-filter-text type="search" placeholder="Search classic artifact, stat, rarity">
+      <select id="classic-artifact-filter-stat" name="classic-artifact-filter-stat" data-filter-attr="stat"><option value="">All stats</option>${statOptions}</select>
+      <select id="classic-artifact-filter-rarity" name="classic-artifact-filter-rarity" data-filter-attr="rarity"><option value="">All rarities</option>${rarityOptions}</select>
+    </div>
+    <div class="table-wrap"><table id="classic-artifact-table" class="sortable filterable"><thead><tr><th>Sprite</th><th>Artifact</th><th>Stat family</th><th>Value range</th><th>Rarity</th><th>Upgradeable</th><th>Drop weight</th><th>Levels</th><th>Type odds</th></tr></thead><tbody>${classicRows}</tbody></table></div>
+  </article>
+  <article>
+    <h2>Unique Artifact Sources</h2>
+    <p class="muted">Unique artifacts stay in the same catalog with their boss sources, so the page is easier to scan.</p>
     <div class="filter-panel" data-table-filter="artifact-table">
-      <input id="artifact-filter-text" name="artifact-filter-text" data-filter-text type="search" placeholder="Search artifact, stat, material">
+      <input id="artifact-filter-text" name="artifact-filter-text" data-filter-text type="search" placeholder="Search unique artifact, stat, boss, note">
       <select id="artifact-filter-stat" name="artifact-filter-stat" data-filter-attr="stat"><option value="">All stats</option>${statOptions}</select>
-      <label class="check"><input id="artifact-filter-special" name="artifact-filter-special" data-filter-flag="special" type="checkbox"> Special only</label>
-      <label class="check"><input id="artifact-filter-unique" name="artifact-filter-unique" data-filter-flag="unique" type="checkbox"> Unique-effect stats only</label>
-      <label>Level includes <input id="artifact-filter-level" name="artifact-filter-level" data-filter-between="level" type="number" min="1" max="150" placeholder="any"></label>
-      <label>Value at least <input id="artifact-filter-value-min" name="artifact-filter-value-min" data-filter-range-min="value" type="number" step="0.01" placeholder="any"></label>
-      <label>Value at most <input id="artifact-filter-value-max" name="artifact-filter-value-max" data-filter-range-max="value" type="number" step="0.01" placeholder="any"></label>
-      <label>Drop weight at least <input id="artifact-filter-drop-min" name="artifact-filter-drop-min" data-filter-min="drop" type="number" step="0.01" placeholder="any"></label>
+      <select id="artifact-filter-role" name="artifact-filter-role" data-filter-attr="role"><option value="">All roles</option><option value="Buff">Buff</option><option value="Debuff">Debuff</option><option value="Mixed">Mixed</option><option value="Utility">Utility</option><option value="Unknown">Unknown</option></select>
     </div>
   </article>
 </section>
-<div class="table-wrap"><table id="artifact-table" class="sortable filterable"><thead><tr><th>Artifact</th><th>Stat</th><th>Value Range</th><th>Rarity</th><th>Upgradeable</th><th>Drop Weight</th><th>Levels</th><th>Recycles Into</th></tr></thead><tbody>${rows}</tbody></table></div>
-<section class="content-grid"><article><h2>Unique Artifact Crate</h2><p class="muted">${uniqueDrop ? `${escapeHtml(uniqueDrop[1].name)} is in the drop cache as a crate with ${escapeHtml(percentLabel(uniqueDrop[1].chance))} crate chance and ${escapeHtml(percentLabel(uniqueDrop[1].artifactChance))} artifact chance.` : "The unique artifact crate was not found in this cache."} The client marks spawned drops with <code>containsUniqueArtifact</code> and loads the actual artifact instance from the server on pickup, so fixed values are shown only when the client source exposes the stat family.</p></article>
-<article><h2>Boss Unique Artifact Mapping</h2><p class="muted">This table is restricted to evidence found locally: boss artifact drop rows, unique artifact sprites, and <code>ArtifactStat.isUnique</code>. It does not invent a hidden server-side key when the client cache does not expose one.</p><div class="table-wrap"><table class="sortable"><thead><tr><th>Boss</th><th>Matched unique artifact</th><th>Artifact drop rows</th><th>Evidence</th></tr></thead><tbody>${bossUniqueRows}</tbody></table></div></article></section>
-<section class="content-grid"><article><h2>Unique Artifact Catalog</h2><input class="table-filter" name="table-filter" placeholder="Filter unique artifacts"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Unique artifact</th><th>Stat / effect</th><th>Boss evidence</th><th>Crate</th><th>Source status</th></tr></thead><tbody>${uniqueIconRows}</tbody></table></div></article></section>
-<section class="content-grid"><article><h2>Boss Artifact Crates</h2><p class="muted">These rows follow boss loot entries into artifact drop tables and show the effective artifact roll chance when the cache exposes it.</p><div class="table-wrap"><table class="sortable"><thead><tr><th>Boss</th><th>Drop table</th><th>Kind</th><th>Boss drop</th><th>Crate roll</th><th>Artifact roll</th><th>Effective</th><th>Qty</th><th>Artifacts</th><th>Level</th></tr></thead><tbody>${bossRows}</tbody></table></div></article></section>
-<section class="content-grid"><article><h2>Unique Artifact Effects</h2><p class="muted">This is the technical unique-effect list from <code>ArtifactStat.isUnique</code>. These stat families cannot be upgraded.</p><div class="table-wrap"><table class="sortable"><thead><tr><th>Unique effect</th><th>Game effect</th><th>Stat family</th><th>Upgradeable</th><th>Known source</th></tr></thead><tbody>${uniqueArtifactRows(cache, media, routes)}</tbody></table></div></article></section>`;
+<div class="table-wrap"><table id="artifact-table" class="sortable filterable"><thead><tr><th>Sprite</th><th>Unique artifact</th><th>Stat family</th><th>Buff / debuff</th><th>Bosses</th><th>Level</th><th>Additional notes</th></tr></thead><tbody>${uniqueRows}</tbody></table></div>`;
 }
 
 function isStationBody(body) {
@@ -1841,23 +1901,23 @@ function renderUniqueArtifactPage(item, cache, media, routes) {
     ? `<tr><td>${escapeHtml(artifactStatLabel(item.stat))}<br><code class="source-key">${escapeHtml(item.stat)}</code></td><td>${escapeHtml(UNIQUE_ARTIFACT_DESCRIPTIONS[item.stat] || item.stat)}</td><td>No</td></tr>`
     : `<tr><td>Server-generated artifact instance</td><td>The downloaded client cache does not expose a fixed stat type or value for this sprite.</td><td>No, when the received stat is one of <code>ArtifactStat.isUnique</code></td></tr>`;
   const sourceRows = [
-    ["Sprite", `Cache image ${item.imageKey} / ${item.image.textureName}`],
+    ["Sprite", `Atlas image ${item.imageKey} / ${item.image.textureName}`],
     ["Crate", drop ? `${drop[1].name}: crate ${percentLabel(drop[1].chance)}, artifact ${percentLabel(drop[1].artifactChance)}` : "No unique crate record found"],
-    ["Runtime", "DropManager reads a containsUniqueArtifact flag from the server spawn message, then Player loads the actual artifact id on pickup."],
-    ["Stat rule", item.stat ? "ArtifactStat.isUnique marks this stat family as unique and non-upgradeable." : "No fixed stat row is present in the downloaded client cache."],
-    ["Boss evidence", item.bossKeys.length ? "Boss name matches the unique sprite name and the boss has artifact drop rows." : "No direct boss-name match in client data."]
+    ["How it shows up", "Unique artifacts are spawned from the server and resolved when the item is picked up."],
+    ["Stat rule", item.stat ? "This family is marked unique and cannot be upgraded." : "No fixed stat row is present in the downloaded client cache."],
+    ["Boss link", item.bossKeys.length ? "The boss name matches the artifact and the boss has drop rows." : "No direct boss match in the client data."]
   ].map(([kind, text]) => `<tr><td>${escapeHtml(kind)}</td><td>${escapeHtml(text)}</td></tr>`).join("");
   return `<section class="entity-hero unique-artifact-hero"><div class="hero-visual">${renderImageCard(item.image, item.imageKey, media, true)}</div><div class="hero-main"><p class="eyebrow">Unique artifact</p><h1>${escapeHtml(item.label)}</h1><span class="pill">${escapeHtml(uniqueArtifactSourceStatus(item, cache))}</span></div><div class="stat-grid compact">${statCard("Upgradeable", "No")}${statCard("Source", drop ? drop[1].name : "Unique crate")}${statCard("Sprite", item.image.textureName)}${statCard("Mapped stat", item.stat ? artifactStatLabel(item.stat) : "Server-side")}</div></section>
 <section class="content-grid">
   <article><h2>Stats</h2><div class="table-wrap"><table><thead><tr><th>Stat</th><th>Effect</th><th>Upgradeable</th></tr></thead><tbody>${statRows}</tbody></table></div></article>
-  ${bossRows ? `<article><h2>Boss Evidence</h2><div class="table-wrap"><table><thead><tr><th>Boss</th><th>Artifact drop rows</th></tr></thead><tbody>${bossRows}</tbody></table></div></article>` : ""}
-  <article><h2>Source Evidence</h2><div class="table-wrap"><table><thead><tr><th>Source</th><th>What the client data proves</th></tr></thead><tbody>${sourceRows}</tbody></table></div></article>
+  ${bossRows ? `<article><h2>Bosses</h2><div class="table-wrap"><table><thead><tr><th>Boss</th><th>Artifact drop rows</th></tr></thead><tbody>${bossRows}</tbody></table></div></article>` : ""}
+  <article><h2>Where It Comes From</h2><div class="table-wrap"><table><thead><tr><th>Source</th><th>Notes</th></tr></thead><tbody>${sourceRows}</tbody></table></div></article>
 </section>`;
 }
 
 function buildUniqueArtifactPages(cache, media, routes) {
   const rows = uniqueArtifactIconRows(cache, media, routes);
-  writePage(path.join(DIST_DIR, "artifacts", "unique", "index.html"), "Unique Artifacts", `<h1>Unique Artifacts</h1><p class="muted">Sprites come from the GameFS atlas; stat families come from <code>ArtifactStat.isUnique</code> when the downloaded client source exposes a stable mapping.</p><input class="table-filter" name="table-filter" placeholder="Filter unique artifacts"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Unique artifact</th><th>Stat / effect</th><th>Boss evidence</th><th>Crate</th><th>Source status</th></tr></thead><tbody>${rows}</tbody></table></div>`);
+  writePage(path.join(DIST_DIR, "artifacts", "unique", "index.html"), "Unique Artifacts", `<h1>Unique Artifacts</h1><p class="muted">Sprites come from the GameFS atlas, and unique stat families are marked when the client exposes a stable mapping.</p><input class="table-filter" name="table-filter" placeholder="Filter unique artifacts"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Unique artifact</th><th>Stat / effect</th><th>Bosses</th><th>Crate</th><th>Source status</th></tr></thead><tbody>${rows}</tbody></table></div>`);
   for (const item of uniqueArtifactCatalog(cache)) {
     writePage(path.join(DIST_DIR, `${item.slug}.html`), item.label, renderUniqueArtifactPage(item, cache, media, routes));
   }
@@ -1953,32 +2013,21 @@ function weaponComparisonRow(entry, record, cache, media) {
 }
 
 function renderArtifactGuide(cache, manifest, media, routes) {
-  const entries = (manifest.ArtifactTypes || []).map((entry) => ({ entry, record: cache.ArtifactTypes?.[entryKey(entry)] })).filter((item) => item.record);
-  const specialRows = entries
-    .filter(({ record }) => record.special)
-    .sort((a, b) => numberValue(b.record.dropRate) - numberValue(a.record.dropRate))
-    .map(({ entry, record }) => {
-      const icon = cache.Images?.[record.bitmap] ? renderImageThumb(cache.Images[record.bitmap], media) : "";
-      return `<tr><td>${icon}<a href="/${entry.slug}.html">${escapeHtml(entry.name)}</a></td><td>${escapeHtml(artifactStatLabel(record.type))}</td><td>${escapeHtml(artifactValueRange(record))}</td><td>${escapeHtml(valueLabel(record.dropRate))}</td><td>${escapeHtml(artifactLevelRange(record))}</td></tr>`;
-    })
-    .join("");
-  const sourceRows = Object.entries(cache.Drops || {})
-    .filter(([, drop]) => numberValue(drop.artifactChance) > 0)
-    .map(([dropKey, drop]) => `<tr><td>${entityLink("Drops", dropKey, cache, routes)}</td><td>${escapeHtml(percentLabel((drop.crate ? numberValue(drop.chance, 1) : 1) * numberValue(drop.artifactChance, 0)))}</td><td>${escapeHtml(valueLabel(drop.type || "drop"))}</td><td>${escapeHtml(rangeText(drop.artifactAmount, drop.artifactAmount))}</td><td>${escapeHtml(valueLabel(drop.artifactLevel))}</td></tr>`)
-    .join("");
-  const bossRows = bossArtifactDropRows(cache, routes);
-  const uniqueIconRows = uniqueArtifactIconRows(cache, media, routes);
-  const bossUniqueRows = bossUniqueArtifactRows(cache, media, routes);
+  const uniqueDrop = uniqueDropEntry(cache);
+  const artifacts = Object.entries(cache.ArtifactTypes || {}).map(([key, record]) => ({
+    key,
+    record,
+    entry: { slug: `artifacts/${key}`, name: titleFor(record, key) }
+  }));
+  const classicRows = classicArtifactRows(artifacts, cache, media, routes);
+  const uniqueRows = uniqueArtifactMainRows(cache, media, routes);
   return `<h1>Artifact Guide</h1>
 <section class="content-grid">
-  <article><h2>What Matters</h2><p>Read artifacts by stat family, value range, special flag, unique flag, level gate, and drop weight. Unique artifacts use stat types from <code>ArtifactStat.isUnique</code> and cannot be upgraded.</p><p><a class="button-link" href="/artifacts/">Open artifact database and calculator</a></p></article>
-  <article><h2>Artifact Drop Tables</h2><div class="table-wrap"><table class="sortable"><thead><tr><th>Drop</th><th>Artifact chance</th><th>Type</th><th>Amount</th><th>Level</th></tr></thead><tbody>${sourceRows}</tbody></table></div></article>
-  <article><h2>Boss Unique Artifact Mapping</h2><div class="table-wrap"><table class="sortable"><thead><tr><th>Boss</th><th>Matched unique artifact</th><th>Artifact drop rows</th><th>Evidence</th></tr></thead><tbody>${bossUniqueRows}</tbody></table></div></article>
-  <article><h2>Unique Artifact Catalog</h2><div class="table-wrap"><table class="sortable"><thead><tr><th>Unique artifact</th><th>Stat / effect</th><th>Boss evidence</th><th>Crate</th><th>Source status</th></tr></thead><tbody>${uniqueIconRows}</tbody></table></div></article>
-  <article><h2>Boss Artifact Crates</h2><div class="table-wrap"><table class="sortable"><thead><tr><th>Boss</th><th>Drop table</th><th>Kind</th><th>Boss drop</th><th>Crate roll</th><th>Artifact roll</th><th>Effective</th><th>Qty</th><th>Artifacts</th><th>Level</th></tr></thead><tbody>${bossRows}</tbody></table></div></article>
-  <article><h2>Unique Artifact Effects</h2><div class="table-wrap"><table class="sortable"><thead><tr><th>Unique effect</th><th>Game effect</th><th>Stat family</th><th>Upgradeable</th><th>Known source</th></tr></thead><tbody>${uniqueArtifactRows(cache, media, routes)}</tbody></table></div></article>
-  <article><h2>Special Artifacts</h2><input class="table-filter" name="table-filter" placeholder="Filter special artifacts"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Artifact</th><th>Stat</th><th>Value Range</th><th>Drop Weight</th><th>Levels</th></tr></thead><tbody>${specialRows}</tbody></table></div></article>
-</section>`;
+  <article><h2>Artifact Database</h2><p>The full artifact database is on the main artifacts page. It includes the calculator, the classic pool, and the unique-source table in one place.</p><p><a class="button-link" href="/artifacts/">Open artifact database</a></p></article>
+  <article><h2>Unique Artifact Sources</h2><p>Unique artifacts come from the crate and from boss-linked evidence. The rows below keep the source details close to the artifact name.</p></article>
+</section>
+<div class="table-wrap"><table class="sortable"><thead><tr><th>Sprite</th><th>Artifact</th><th>Stat family</th><th>Value range</th><th>Rarity</th><th>Upgradeable</th><th>Drop weight</th><th>Levels</th><th>Type odds</th></tr></thead><tbody>${classicRows}</tbody></table></div>
+<div class="table-wrap"><table id="artifact-table" class="sortable filterable"><thead><tr><th>Sprite</th><th>Unique artifact</th><th>Stat family</th><th>Buff / debuff</th><th>Bosses</th><th>Level</th><th>Additional notes</th></tr></thead><tbody>${uniqueRows}</tbody></table></div>`;
 }
 
 function renderFarmingGuide(cache, manifest, media, routes) {
@@ -2872,14 +2921,14 @@ function parseAtlasXml(file) {
 
 function writeAssets(searchEntries = [], media = {}) {
   const mapBackground = media.atlasByName?.get("star_map") || null;
-  const css = `:root{color-scheme:dark;--bg:#0b1016;--panel:#121a23;--text:#e6edf3;--muted:#9fb0c0;--line:#263545;--accent:#6ee7f9}
+  const css = `:root{color-scheme:dark;--bg:#0b1016;--panel:#121a23;--text:#e6edf3;--muted:#9fb0c0;--missing:#c8d1db;--line:#263545;--accent:#6ee7f9}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
 header{position:sticky;top:0;z-index:10;display:flex;gap:18px;align-items:center;padding:12px 20px;background:#0b1016ee;border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
 a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}.brand{font-weight:700;color:var(--text)}nav{display:flex;gap:14px;flex-wrap:wrap}
 main{max-width:1160px;margin:0 auto;padding:28px 20px 56px}h1{font-size:32px;margin:0 0 18px}h2{margin-top:32px;border-bottom:1px solid var(--line);padding-bottom:6px}
 .site-footer{border-top:1px solid var(--line);padding:18px 20px;color:var(--muted);text-align:center;background:#080d13}.site-footer p{margin:0}
 code{background:#17212b;border:1px solid var(--line);border-radius:4px;padding:1px 4px}.source-key{display:inline-block;margin-top:4px;opacity:.38;font-size:11px}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:8px}table{width:100%;border-collapse:collapse}th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#111b25;color:#fff}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:22px 0}.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px}.card strong{display:block;color:var(--text);font-size:18px}.card span,.listing span{display:block;color:var(--muted);font-size:12px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:22px 0}.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px}.card strong{display:block;color:var(--text);font-size:18px}.card span,.listing span{display:block;color:var(--muted);font-size:12px}.missing-value{color:var(--missing)!important}.missing-value a,.missing-value code{color:var(--missing)!important}.stat-card strong.missing-value,.stat-card .missing-value{color:var(--missing)!important}
 .listing{padding-left:0;list-style:none;columns:2;column-gap:28px}.listing li{break-inside:avoid;padding:8px 0;border-bottom:1px solid var(--line)}
 canvas{width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:#071019}
 .site-search{position:relative;min-width:220px;flex:1;max-width:420px}.site-search input{width:100%;height:34px;border:1px solid var(--line);border-radius:6px;background:#111b25;color:var(--text);padding:0 10px}.search-results{position:absolute;top:40px;left:0;right:0;background:#101923;border:1px solid var(--line);border-radius:8px;box-shadow:0 16px 40px #0008;overflow:hidden}.search-results a{display:block;padding:9px 11px;border-bottom:1px solid var(--line);color:var(--text)}.search-results span{display:block;color:var(--muted);font-size:12px}
@@ -2902,6 +2951,7 @@ const input=document.getElementById("search-input");
 const results=document.getElementById("search-results");
 const esc=s=>String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
 const tableRank={Guides:0,Commodities:1,Weapons:2,ArtifactTypes:3,"Unique Artifacts":3,Enemies:4,Bosses:5,Stations:6,Bodies:6,SolarSystems:7,Drops:8};
+function markMissingValues(root=document){for(const el of root.querySelectorAll('span,strong,small,td,th,dd,li,p,option,code')){if(el.children.length)continue;const text=el.textContent.trim();if(!text)continue;if(/^(n\/a|unknown)$/i.test(text)||/^(not found|missing)$/i.test(text)||/^no direct .* client data$/i.test(text)||/^artifact roll not exposed$/i.test(text)){el.classList.add('missing-value');}}}
 function searchScore(item,q){
   const name=String(item.name||"").toLowerCase();
   const table=String(item.table||"").toLowerCase();
@@ -2915,13 +2965,14 @@ function searchScore(item,q){
   return 99;
 }
 if(input&&results){input.addEventListener("input",()=>{const q=input.value.trim().toLowerCase();if(q.length<2){results.hidden=true;results.innerHTML="";return;}const hits=SEARCH_INDEX.map(x=>({x,score:searchScore(x,q)})).filter(item=>item.score<99).sort((a,b)=>a.score-b.score||(tableRank[a.x.table]??20)-(tableRank[b.x.table]??20)||a.x.name.localeCompare(b.x.name,navigator.language||'en',{numeric:true})).slice(0,10).map(item=>item.x);results.innerHTML=hits.map(x=>'<a href="'+x.url+'"><strong>'+esc(x.name)+'</strong><span>'+esc(x.table)+(x.type?' / '+esc(x.type):'')+'</span></a>').join("");results.hidden=hits.length===0;});document.addEventListener("click",e=>{if(!e.target.closest(".site-search"))results.hidden=true;});}
+document.addEventListener("DOMContentLoaded",()=>markMissingValues(document.body));
 for(const table of document.querySelectorAll('table.sortable')){for(const th of table.querySelectorAll('th')){th.tabIndex=0;th.addEventListener('click',()=>sortTable(table,[...th.parentNode.children].indexOf(th)));th.addEventListener('keydown',e=>{if(e.key==='Enter')sortTable(table,[...th.parentNode.children].indexOf(th));});}}
 function sortTable(table,col){const body=table.tBodies[0];const rows=[...body.rows];const asc=table.dataset.sortCol!=col||table.dataset.sortDir==='desc';rows.sort((a,b)=>a.cells[col].innerText.localeCompare(b.cells[col].innerText,navigator.language||'en',{numeric:true}));if(!asc)rows.reverse();table.dataset.sortCol=col;table.dataset.sortDir=asc?'asc':'desc';rows.forEach(r=>body.appendChild(r));}
 for(const filter of document.querySelectorAll('.table-filter')){const table=filter.nextElementSibling?.querySelector('table');if(!table)continue;filter.addEventListener('input',()=>{const q=filter.value.toLowerCase();for(const row of table.tBodies[0].rows){row.hidden=!row.innerText.toLowerCase().includes(q);}});}
 for(const sprite of document.querySelectorAll('.atlas-sprite[data-frames]')){let frames=[];try{frames=JSON.parse(sprite.dataset.frames)}catch{}if(frames.length<2)continue;let i=0;setInterval(()=>{i=(i+1)%frames.length;sprite.setAttribute('style',frames[i].style);sprite.setAttribute('aria-label',frames[i].name);},180);}
 for(const panel of document.querySelectorAll('.filter-panel[data-table-filter]')){const table=document.getElementById(panel.dataset.tableFilter);if(!table||!table.tBodies[0])continue;const controls=[...panel.querySelectorAll('input,select')];const apply=()=>{for(const row of table.tBodies[0].rows){let ok=true;for(const control of controls){if(control.type==='checkbox'&&control.dataset.filterFlag){if(control.checked&&row.dataset[control.dataset.filterFlag]!=='1')ok=false;continue;}const value=String(control.value||'').trim().toLowerCase();if(!value)continue;if('filterText' in control.dataset){const text=(row.dataset.search||row.innerText).toLowerCase();if(!text.includes(value))ok=false;}if(control.dataset.filterAttr){if(String(row.dataset[control.dataset.filterAttr]||'').toLowerCase()!==value)ok=false;}if(control.dataset.filterContains){if(!String(row.dataset[control.dataset.filterContains]||'').toLowerCase().includes(value))ok=false;}if(control.dataset.filterMin){if(Number(row.dataset[control.dataset.filterMin]||0)<Number(value))ok=false;}if(control.dataset.filterMax){if(Number(row.dataset[control.dataset.filterMax]||0)>Number(value))ok=false;}if(control.dataset.filterBetween){const min=Number(row.dataset[control.dataset.filterBetween+'Min']||0);const max=Number(row.dataset[control.dataset.filterBetween+'Max']||0);const n=Number(value);if(n<min||n>max)ok=false;}if(control.dataset.filterRangeMin){const base=control.dataset.filterRangeMin;const minRaw=row.dataset[base+'Min'];const maxRaw=row.dataset[base+'Max'];const n=Number(value);if(minRaw===''||maxRaw===''||Number(maxRaw)<n)ok=false;}if(control.dataset.filterRangeMax){const base=control.dataset.filterRangeMax;const minRaw=row.dataset[base+'Min'];const maxRaw=row.dataset[base+'Max'];const n=Number(value);if(minRaw===''||maxRaw===''||Number(minRaw)>n)ok=false;}}row.hidden=!ok;}};controls.forEach(c=>c.addEventListener('input',apply));controls.forEach(c=>c.addEventListener('change',apply));}
 for(const box of document.querySelectorAll('.elite-calculator')){const from=box.querySelector('.elite-from');const to=box.querySelector('.elite-to');const out=box.querySelector('.elite-result');const cost=(lvl,total)=>Math.round(Math.pow(1.025,lvl-1)/432.548654*total);const sum=(a,b,total)=>{let s=0;for(let i=Math.max(1,a);i<=Math.min(100,b);i++)s+=cost(i,total);return s;};const fmt=n=>Number(n||0).toLocaleString('en-US');const update=()=>{const a=Number(from.value)+1;const b=Number(to.value);if(!out)return;if(b<a){out.textContent='Choose a target above the current level.';return;}out.textContent='Cost '+fmt(sum(a,b,3200000))+' primary, '+fmt(sum(a,b,540000))+' secondary, or '+fmt(sum(a,b,12000))+' Flux.';};from?.addEventListener('input',update);to?.addEventListener('input',update);update();}
-for(const calc of document.querySelectorAll('#artifact-calculator')){let data=[];try{data=JSON.parse(calc.dataset.artifacts||'[]')}catch{}const target=calc.querySelector('#artifact-target');const stat=calc.querySelector('#artifact-stat-target');const valueMin=calc.querySelector('#artifact-value-min');const valueMax=calc.querySelector('#artifact-value-max');const level=calc.querySelector('#artifact-level');const drop=calc.querySelector('#artifact-drop-chance');const attempts=calc.querySelector('#artifact-attempts');const out=calc.querySelector('#artifact-result');const update=()=>{const targetKey=target?.value||'';const statKey=stat?.value||'';const minText=String(valueMin?.value||'').trim();const maxText=String(valueMax?.value||'').trim();const minValue=minText===''?null:Number(minText);const maxValue=maxText===''?null:Number(maxText);const lvl=Number(level?.value||1);const eligible=data.filter(x=>lvl>=Number(x.minLevel||1)&&lvl<=Number(x.maxLevel||150));const matches=eligible.filter(x=>{if(targetKey&&x.key!==targetKey)return false;if(statKey&&x.statFamily!==statKey)return false;if(minValue!==null&&Number(x.valueMax)<minValue)return false;if(maxValue!==null&&Number(x.valueMin)>maxValue)return false;return true;});const total=eligible.reduce((s,x)=>s+Number(x.dropRate||0),0);const hitWeight=matches.reduce((s,x)=>s+Number(x.dropRate||0),0);const typeChance=total?hitWeight/total:0;const perTry=typeChance*(Number(drop?.value||0)/100);const tries=Math.max(1,Number(attempts?.value||1));const chance=1-Math.pow(1-perTry,tries);const label=targetKey&&matches[0]?matches[0].name:matches.length+' matching artifact type'+(matches.length===1?'':'s');if(out)out.textContent=label+': '+(100*typeChance).toFixed(2)+'% of eligible artifact rolls, '+(100*chance).toFixed(2)+'% after '+tries+' attempts.';};[target,stat,valueMin,valueMax,level,drop,attempts].forEach(x=>x?.addEventListener('input',update));[target,stat,valueMin,valueMax,level,drop,attempts].forEach(x=>x?.addEventListener('change',update));update();}
+for(const calc of document.querySelectorAll('#artifact-calculator')){let data=[];try{data=JSON.parse(calc.dataset.artifacts||'[]')}catch{}const target=calc.querySelector('#artifact-target');const level=calc.querySelector('#artifact-level');const drop=calc.querySelector('#artifact-drop-chance');const attempts=calc.querySelector('#artifact-attempts');const out=calc.querySelector('#artifact-result');const update=()=>{const targetKey=target?.value||'';const selected=targetKey?data.find(x=>x.key===targetKey):null;if(!out)return;if(!selected){out.textContent='Choose an artifact to estimate odds.';return;}const lvl=Number(level?.value||1);const eligible=data.filter(x=>lvl>=Number(x.minLevel||1)&&lvl<=Number(x.maxLevel||150));const total=eligible.reduce((s,x)=>s+Number(x.dropRate||0),0);const hit=eligible.find(x=>x.key===selected.key);const typeChance=total&&hit?Number(hit.dropRate||0)/total:0;const perTry=typeChance*(Number(drop?.value||0)/100);const tries=Math.max(1,Number(attempts?.value||1));const chance=1-Math.pow(1-perTry,tries);out.textContent=selected.name+': '+(100*typeChance).toFixed(2)+'% of eligible artifact rolls, '+(100*chance).toFixed(2)+'% after '+tries+' attempts.';};[target,level,drop,attempts].forEach(x=>x?.addEventListener('input',update));[target,level,drop,attempts].forEach(x=>x?.addEventListener('change',update));update();}
 function initGalaxyMap(id,systems,warpPaths,routes){const canvas=document.getElementById(id);if(!canvas)return;const ctx=canvas.getContext('2d');const controls=document.querySelector('[data-map-controls="'+id+'"]');const search=controls?.querySelector('input[type=search]');const galaxy=controls?.querySelector('select');const pathsToggle=controls?.querySelector('input[type=checkbox]');const readout=document.getElementById(id+'-readout');const bg=new Image();bg.src=MAP_BACKGROUND?.url||'/assets/source-images/background.jpg';const xs=systems.map(s=>Number(s.x||0));const ys=systems.map(s=>Number(s.y||0));const minX=Math.min(...xs),maxX=Math.max(...xs),minY=Math.min(...ys),maxY=Math.max(...ys);const color=g=>{let h=0;for(const c of String(g||''))h=(h*31+c.charCodeAt(0))%360;return 'hsl('+h+' 78% 66%)';};const scale=(v,min,max,size)=>max===min?size/2:70+((v-min)/(max-min))*(size-140);let points=[];let pointByKey=new Map();function pathEnds(path){return{a:path.solarSystem1||path.stats?.solarSystem1,b:path.solarSystem2||path.stats?.solarSystem2,transit:Boolean(path.transit||path.stats?.transit),name:path.name||path.stats?.name||''};}function drawBackground(){const grad=ctx.createLinearGradient(0,0,canvas.width,canvas.height);grad.addColorStop(0,'#02060b');grad.addColorStop(.48,'#081522');grad.addColorStop(1,'#02050a');ctx.fillStyle=grad;ctx.fillRect(0,0,canvas.width,canvas.height);if(bg.complete&&bg.naturalWidth){ctx.save();ctx.globalAlpha=(MAP_BACKGROUND&&MAP_BACKGROUND.url&&MAP_BACKGROUND.url.includes('texture_gui')) ? .92 : .36;if(MAP_BACKGROUND&&Number.isFinite(MAP_BACKGROUND.x)){ctx.drawImage(bg,MAP_BACKGROUND.x,MAP_BACKGROUND.y,MAP_BACKGROUND.width,MAP_BACKGROUND.height,0,0,canvas.width,canvas.height);}else{ctx.drawImage(bg,0,0,canvas.width,canvas.height);}ctx.restore();}ctx.fillStyle='rgba(1,5,10,.38)';ctx.fillRect(0,0,canvas.width,canvas.height);for(let i=0;i<170;i++){const x=(i*97+53)%canvas.width;const y=(i*193+29)%canvas.height;const r=i%17===0?1.6:i%5===0?1.1:.7;ctx.globalAlpha=.18+(i%7)*.045;ctx.fillStyle=i%9===0?'#b7efff':'#ffffff';ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();}ctx.globalAlpha=1;}function visibleSystems(){const q=(search?.value||'').trim().toLowerCase();const g=galaxy?.value||'';const base=systems.filter(s=>(!g||s.galaxy===g));if(!q)return base.map(s=>({s,match:false,neighbor:false}));const matched=new Set(base.filter(s=>String(s.name||'').toLowerCase().includes(q)).map(s=>s.key));const linked=new Set(matched);for(const path of warpPaths){const ends=pathEnds(path);if(matched.has(ends.a))linked.add(ends.b);if(matched.has(ends.b))linked.add(ends.a);}return base.filter(s=>linked.has(s.key)).map(s=>({s,match:matched.has(s.key),neighbor:!matched.has(s.key)}));}function drawPath(a,b,transit,selected){const dx=b.x-a.x,dy=b.y-a.y,len=Math.max(1,Math.hypot(dx,dy));const sx=a.x+dx/len*(a.r+3),sy=a.y+dy/len*(a.r+3);const ex=b.x-dx/len*(b.r+3),ey=b.y-dy/len*(b.r+3);ctx.strokeStyle=selected?'rgba(255,255,255,.72)':transit?'rgba(110,231,249,.5)':'rgba(255,180,84,.38)';ctx.lineWidth=transit?2.2:1.4;ctx.beginPath();ctx.moveTo(sx,sy);ctx.lineTo(ex,ey);ctx.stroke();if(transit){const angle=Math.atan2(dy,dx);for(const t of [.22,.78]){const x=sx+(ex-sx)*t,y=sy+(ey-sy)*t;ctx.save();ctx.translate(x,y);ctx.rotate(angle);ctx.fillStyle='rgba(110,231,249,.75)';ctx.beginPath();ctx.moveTo(7,0);ctx.lineTo(-5,-4);ctx.lineTo(-5,4);ctx.closePath();ctx.fill();ctx.restore();}}}function draw(){const q=(search?.value||'').trim().toLowerCase();drawBackground();const display=visibleSystems();points=display.map(item=>({s:item.s,match:item.match,neighbor:item.neighbor,x:scale(Number(item.s.x||0),minX,maxX,canvas.width),y:scale(Number(item.s.y||0),minY,maxY,canvas.height),r:Math.max(5,Math.min(14,Number(item.s.size||7)))}));pointByKey=new Map(points.map(p=>[p.s.key,p]));if(pathsToggle?.checked!==false){for(const path of warpPaths){const ends=pathEnds(path);const a=pointByKey.get(ends.a);const b=pointByKey.get(ends.b);if(!a||!b)continue;if(q&&!(a.match||b.match))continue;drawPath(a,b,ends.transit,q&&(a.match||b.match));}}for(const p of points){const systemColor=p.s.type&&String(p.s.type).includes('pvp')?'#ffb454':color(p.s.galaxy);ctx.globalAlpha=p.neighbor ? .72 : 1;ctx.beginPath();ctx.fillStyle=systemColor;ctx.shadowColor=systemColor;ctx.shadowBlur=p.match?18:10;ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill();if(p.match){ctx.lineWidth=2;ctx.strokeStyle='#fff';ctx.stroke();}ctx.shadowBlur=0;ctx.globalAlpha=1;ctx.fillStyle='#e6edf3';ctx.font=(p.match?'600 ':'')+'13px system-ui';if(canvas.width>800||p.r>8)ctx.fillText(p.s.name,p.x+p.r+5,p.y+4);}}function pick(e){const box=canvas.getBoundingClientRect();const mx=(e.clientX-box.left)*canvas.width/box.width;const my=(e.clientY-box.top)*canvas.height/box.height;return points.find(p=>Math.hypot(mx-p.x,my-p.y)<=p.r+7);}canvas.addEventListener('mousemove',e=>{const hit=pick(e);canvas.style.cursor=hit?'pointer':'default';if(readout){if(hit){const links=(hit.s.links||[]).slice(0,5).map(x=>x.name).join(', ');readout.textContent=hit.s.name+' / '+(hit.s.galaxy||'Unknown galaxy')+' / '+(hit.s.type||'regular')+' / coords '+hit.s.x+', '+hit.s.y+(links?' / links: '+links:'');}else{readout.textContent='Hover a system to inspect level range, galaxy, coordinates, and connected systems.';}}});canvas.addEventListener('click',e=>{const hit=pick(e);if(hit&&routes[hit.s.key])location.href=routes[hit.s.key];});[search,galaxy,pathsToggle].forEach(x=>x?.addEventListener('input',draw));[search,galaxy,pathsToggle].forEach(x=>x?.addEventListener('change',draw));bg.onload=draw;draw();}
 function initGalaxyMapStatus(id,systems,warpPaths,routes){const canvas=document.getElementById(id);if(!canvas)return;const ctx=canvas.getContext('2d');const controls=document.querySelector('[data-map-controls="'+id+'"]');const search=controls?.querySelector('input[type=search]');const galaxy=controls?.querySelector('select');const pathsToggle=controls?.querySelector('input[type=checkbox]');const readout=document.getElementById(id+'-readout');const bg=new Image();bg.src=MAP_BACKGROUND?.url||'/assets/source-images/background.jpg';const xs=systems.map(s=>Number(s.x||0));const ys=systems.map(s=>Number(s.y||0));const minX=Math.min(...xs),maxX=Math.max(...xs),minY=Math.min(...ys),maxY=Math.max(...ys);const scale=(v,min,max,size)=>max===min?size/2:70+((v-min)/(max-min))*(size-140);const color=g=>{let h=0;for(const c of String(g||''))h=(h*31+c.charCodeAt(0))%360;return 'hsl('+h+' 78% 66%)';};let points=[];function pathEnds(path){return{a:path.solarSystem1||path.stats?.solarSystem1,b:path.solarSystem2||path.stats?.solarSystem2,transit:Boolean(path.transit||path.stats?.transit)}}function background(){const grad=ctx.createLinearGradient(0,0,canvas.width,canvas.height);grad.addColorStop(0,'#02060b');grad.addColorStop(.5,'#081522');grad.addColorStop(1,'#02050a');ctx.fillStyle=grad;ctx.fillRect(0,0,canvas.width,canvas.height);if(bg.complete&&bg.naturalWidth){ctx.save();ctx.globalAlpha=(MAP_BACKGROUND&&MAP_BACKGROUND.url&&MAP_BACKGROUND.url.includes('texture_gui')) ? .9:.35;if(MAP_BACKGROUND&&Number.isFinite(MAP_BACKGROUND.x))ctx.drawImage(bg,MAP_BACKGROUND.x,MAP_BACKGROUND.y,MAP_BACKGROUND.width,MAP_BACKGROUND.height,0,0,canvas.width,canvas.height);else ctx.drawImage(bg,0,0,canvas.width,canvas.height);ctx.restore();}ctx.fillStyle='rgba(1,5,10,.42)';ctx.fillRect(0,0,canvas.width,canvas.height);for(let i=0;i<150;i++){ctx.globalAlpha=.18+(i%7)*.045;ctx.fillStyle=i%9===0?'#b7efff':'#fff';ctx.beginPath();ctx.arc((i*97+53)%canvas.width,(i*193+29)%canvas.height,i%17===0?1.6:.8,0,Math.PI*2);ctx.fill();}ctx.globalAlpha=1;}function visible(){const q=(search?.value||'').trim().toLowerCase();const g=galaxy?.value||'';const base=systems.filter(s=>!g||s.galaxy===g);if(!q)return base.map(s=>({s,match:false,neighbor:false}));const matched=new Set(base.filter(s=>String(s.name||'').toLowerCase().includes(q)).map(s=>s.key));const linked=new Set(matched);for(const path of warpPaths){const e=pathEnds(path);if(matched.has(e.a))linked.add(e.b);if(matched.has(e.b))linked.add(e.a);}return base.filter(s=>linked.has(s.key)).map(s=>({s,match:matched.has(s.key),neighbor:!matched.has(s.key)}));}function drawPath(a,b,transit,hot){const dx=b.x-a.x,dy=b.y-a.y,len=Math.max(1,Math.hypot(dx,dy));ctx.strokeStyle=hot?'rgba(255,255,255,.72)':transit?'rgba(110,231,249,.5)':'rgba(255,180,84,.36)';ctx.lineWidth=transit?2.2:1.3;ctx.beginPath();ctx.moveTo(a.x+dx/len*(a.r+3),a.y+dy/len*(a.r+3));ctx.lineTo(b.x-dx/len*(b.r+3),b.y-dy/len*(b.r+3));ctx.stroke();}function draw(){const q=(search?.value||'').trim().toLowerCase();background();points=visible().map(item=>({s:item.s,match:item.match,neighbor:item.neighbor,x:scale(Number(item.s.x||0),minX,maxX,canvas.width),y:scale(Number(item.s.y||0),minY,maxY,canvas.height),r:Math.max(5,Math.min(14,Number(item.s.size||7)))}));const byKey=new Map(points.map(p=>[p.s.key,p]));if(pathsToggle?.checked!==false){for(const path of warpPaths){const e=pathEnds(path),a=byKey.get(e.a),b=byKey.get(e.b);if(!a||!b)continue;if(q&&!(a.match||b.match))continue;drawPath(a,b,e.transit,q&&(a.match||b.match));}}for(const p of points){const destroyed=p.s.destroyed||p.s.statusKey==='destroyed';const fill=destroyed?'#ff6b52':p.s.type&&String(p.s.type).includes('pvp')?'#ffb454':color(p.s.galaxy);ctx.globalAlpha=p.neighbor?.valueOf()? .72:1;ctx.fillStyle=fill;ctx.shadowColor=fill;ctx.shadowBlur=p.match?18:10;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill();ctx.shadowBlur=0;if(destroyed){ctx.lineWidth=2;ctx.strokeStyle='#ffd166';ctx.beginPath();ctx.arc(p.x,p.y,p.r+5,0,Math.PI*2);ctx.stroke();ctx.beginPath();ctx.moveTo(p.x-p.r-5,p.y-p.r-5);ctx.lineTo(p.x+p.r+5,p.y+p.r+5);ctx.moveTo(p.x+p.r+5,p.y-p.r-5);ctx.lineTo(p.x-p.r-5,p.y+p.r+5);ctx.stroke();}else if(p.match){ctx.lineWidth=2;ctx.strokeStyle='#fff';ctx.stroke();}ctx.globalAlpha=1;ctx.fillStyle=destroyed?'#ffd6c9':'#e6edf3';ctx.font=(p.match?'600 ':'')+'13px system-ui';if(canvas.width>800||p.r>8)ctx.fillText(p.s.name,p.x+p.r+7,p.y+4);if(destroyed&&canvas.width>800){ctx.fillStyle='#ffb4a2';ctx.font='11px system-ui';ctx.fillText('Destroyed',p.x+p.r+7,p.y+18);}}}function pick(e){const box=canvas.getBoundingClientRect();const mx=(e.clientX-box.left)*canvas.width/box.width;const my=(e.clientY-box.top)*canvas.height/box.height;return points.find(p=>Math.hypot(mx-p.x,my-p.y)<=p.r+8);}canvas.addEventListener('mousemove',e=>{const hit=pick(e);canvas.style.cursor=hit?'pointer':'default';if(!readout)return;if(hit){const links=(hit.s.links||[]).slice(0,5).map(x=>x.name).join(', ');const status=hit.s.status?(' / '+hit.s.status+(hit.s.access?' - '+hit.s.access:'')):'';readout.textContent=hit.s.name+status+' / '+(hit.s.galaxy||'Unknown galaxy')+' / '+(hit.s.type||'regular')+' / coords '+hit.s.x+', '+hit.s.y+(links?' / links: '+links:'');}else readout.textContent='Hover a system to inspect level range, galaxy, coordinates, access status, and connected systems.';});canvas.addEventListener('click',e=>{const hit=pick(e);if(hit&&routes[hit.s.key])location.href=routes[hit.s.key];});[search,galaxy,pathsToggle].forEach(x=>x?.addEventListener('input',draw));[search,galaxy,pathsToggle].forEach(x=>x?.addEventListener('change',draw));bg.onload=draw;draw();}
 function initSystemMap(id,data){const canvas=document.getElementById(id);if(!canvas)return;const ctx=canvas.getContext('2d');const readout=document.getElementById(id+'-readout');const bodies=data.bodies||[],spawners=data.spawners||[],bosses=data.bosses||[];const all=[...bodies,...spawners,...bosses];const xs=all.map(x=>Number(x.x||0)),ys=all.map(x=>Number(x.y||0));const minX=Math.min(...xs),maxX=Math.max(...xs),minY=Math.min(...ys),maxY=Math.max(...ys);const pad=54;const sx=x=>maxX===minX?canvas.width/2:pad+((x-minX)/(maxX-minX))*(canvas.width-pad*2);const sy=y=>maxY===minY?canvas.height/2:pad+((y-minY)/(maxY-minY))*(canvas.height-pad*2);const colors={sun:'#ffd166',planet:'#d7f5ff',warpGate:'#6ee7f9',research:'#ffb454',shop:'#7cc7ff','junk yard':'#c792ea',hangar:'#ff8fa3',cantina:'#a5d6a7',paintShop:'#ff74c7',warning:'#f7c948',hidden:'#8a9bad',boss:'#ff6b52'};let points=[];function draw(){ctx.fillStyle='#06101a';ctx.fillRect(0,0,canvas.width,canvas.height);const grad=ctx.createRadialGradient(canvas.width*.45,canvas.height*.42,20,canvas.width*.45,canvas.height*.42,canvas.width*.7);grad.addColorStop(0,'rgba(32,62,91,.55)');grad.addColorStop(1,'rgba(2,5,10,.08)');ctx.fillStyle=grad;ctx.fillRect(0,0,canvas.width,canvas.height);ctx.strokeStyle='rgba(110,231,249,.08)';ctx.lineWidth=1;for(let x=40;x<canvas.width;x+=60){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,canvas.height);ctx.stroke();}for(let y=40;y<canvas.height;y+=60){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(canvas.width,y);ctx.stroke();}for(const body of bodies.filter(b=>b.type==='warning'&&b.warningRadius)){const x=sx(body.x),y=sy(body.y);const scale=Math.min((canvas.width-pad*2)/Math.max(1,maxX-minX),(canvas.height-pad*2)/Math.max(1,maxY-minY));ctx.fillStyle='rgba(247,201,72,.10)';ctx.strokeStyle='rgba(247,201,72,.55)';ctx.lineWidth=2;ctx.beginPath();ctx.arc(x,y,Math.max(14,body.warningRadius*scale),0,Math.PI*2);ctx.fill();ctx.stroke();}points=[];for(const body of bodies){const x=sx(body.x),y=sy(body.y);const r=body.type==='sun'?9:body.station?7:body.type==='warning'?5:body.type==='hidden'?4:6;const fill=colors[body.type]||'#d7f5ff';ctx.fillStyle=fill;ctx.strokeStyle=body.station?'#fff':'rgba(255,255,255,.35)';ctx.lineWidth=body.station?1.5:1;ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();ctx.stroke();if(body.type==='boss'){ctx.strokeStyle='#ff6b52';ctx.beginPath();ctx.moveTo(x-7,y-7);ctx.lineTo(x+7,y+7);ctx.moveTo(x+7,y-7);ctx.lineTo(x-7,y+7);ctx.stroke();}if(body.station||body.type==='sun'||body.type==='boss'){ctx.fillStyle='#e6edf3';ctx.font='12px system-ui';ctx.fillText(body.name,x+r+5,y+4);}points.push({kind:'body',item:body,x,y,r:r+6,url:data.routes?.Bodies?.[body.key]});}for(const sp of spawners){const x=sx(sp.x),y=sy(sp.y);ctx.fillStyle=sp.bossSpawner?'#ff6b52':'#c792ea';ctx.strokeStyle=sp.hidden?'#8a9bad':'#fff';ctx.lineWidth=1.2;ctx.beginPath();ctx.rect(x-4,y-4,8,8);ctx.fill();ctx.stroke();points.push({kind:'spawner',item:sp,x,y,r:10,url:data.routes?.Spawners?.[sp.key]});}for(const boss of bosses){const x=sx(boss.x),y=sy(boss.y);ctx.strokeStyle='#ff6b52';ctx.lineWidth=2;ctx.beginPath();ctx.arc(x,y,13,0,Math.PI*2);ctx.stroke();points.push({kind:'boss',item:boss,x,y,r:14,url:data.routes?.Bosses?.[boss.key]});}}function pick(e){const box=canvas.getBoundingClientRect();const mx=(e.clientX-box.left)*canvas.width/box.width;const my=(e.clientY-box.top)*canvas.height/box.height;return points.find(p=>Math.hypot(mx-p.x,my-p.y)<=p.r);}canvas.addEventListener('mousemove',e=>{const p=pick(e);canvas.style.cursor=p?.url?'pointer':'default';if(!readout)return;if(!p){readout.textContent='Hover a marker to inspect location, spawner, boss, or elite-zone data.';return;}const item=p.item;if(p.kind==='spawner')readout.textContent='Spawner: '+item.name+' / '+(item.bodyName||'unknown body')+' / '+(item.enemyName||'no enemy')+' / drops: '+(item.drops||[]).join(', ');else if(p.kind==='boss')readout.textContent='Boss: '+item.name;else readout.textContent=item.name+' / '+item.type+' / level '+(item.level||'n/a')+' / coords '+item.x+', '+item.y;});canvas.addEventListener('click',e=>{const p=pick(e);if(p?.url)location.href=p.url;});draw();}
