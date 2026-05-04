@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Time Flux Relic - Astroflux Wiki</title>
+  <link rel="icon" href="/assets/favicon.ico">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="/">Astroflux Wiki</a>
+    <form class="site-search" role="search">
+      <input id="search-input" type="search" placeholder="Search wiki" autocomplete="off">
+      <div id="search-results" class="search-results" hidden></div>
+    </form>
+    <nav>
+      <a href="/guides/">Guides</a>
+      <a href="/systems/">Systems</a>
+      <a href="/stations/">Stations</a>
+      <a href="/enemies/">Enemies</a>
+      <a href="/bosses/">Bosses</a>
+      <a href="/weapons/">Weapons</a>
+      <a href="/commodities/">Items</a>
+      <a href="/artifacts/">Artifacts</a>
+      <a href="/drops/">Drops</a>
+      <a href="/media/">Media</a>
+      <a href="/map/">Map</a>
+    </nav>
+  </header>
+  
+  <main><section class="entity-hero unique-artifact-hero"><div class="hero-visual"><figure class="media-card atlas-card primary"><span class="atlas-sprite" style="width:111px;height:111px;background-image:url(&#39;/assets/atlases/texture_gui2.png&#39;);background-size:2765px 2765px;background-position:-1206px -1733px" role="img" aria-label="artifact_unique_time_flux_relic.png"></span><figcaption>artifact_unique_time_flux_relic.png</figcaption></figure></div><div class="hero-main"><p class="eyebrow">Unique artifact</p><h1>Time Flux Relic</h1><span class="pill">Sprite only</span></div><div class="stat-grid compact"><div class="stat-card"><span>Upgradeable</span><strong>No</strong></div><div class="stat-card"><span>Source</span><strong>Crate Unique Artifact</strong></div><div class="stat-card"><span>Sprite</span><strong>artifact_unique_time_flux_relic</strong></div><div class="stat-card"><span>Mapped stat</span><strong>Server-side</strong></div></div></section>
+<section class="content-grid">
+  <article><h2>Stats</h2><div class="table-wrap"><table><thead><tr><th>Stat</th><th>Effect</th><th>Upgradeable</th></tr></thead><tbody><tr><td>Server-generated artifact instance</td><td>The downloaded client cache does not expose a fixed stat type or value for this sprite.</td><td>No, when the received stat is one of <code>ArtifactStat.isUnique</code></td></tr></tbody></table></div></article>
+  
+  <article><h2>Source Evidence</h2><div class="table-wrap"><table><thead><tr><th>Source</th><th>What the client data proves</th></tr></thead><tbody><tr><td>Sprite</td><td>Cache image 64BC6C95-6693-3A13-843E-91B1472BC66D / artifact_unique_time_flux_relic</td></tr><tr><td>Crate</td><td>Crate Unique Artifact: crate 99.8%, artifact 99.9%</td></tr><tr><td>Runtime</td><td>DropManager reads a containsUniqueArtifact flag from the server spawn message, then Player loads the actual artifact id on pickup.</td></tr><tr><td>Stat rule</td><td>No fixed stat row is present in the downloaded client cache.</td></tr><tr><td>Boss evidence</td><td>No direct boss-name match in client data.</td></tr></tbody></table></div></article>
+</section></main>
+  <footer class="site-footer">
+    <p>Want to improve this wiki? Contributions are welcome on <a href="https://github.com/guedesite/astroflux-wiki">github.com/guedesite/astroflux-wiki</a>.</p>
+  </footer>
+  <script src="/assets/search.js"></script>
+</body>
+</html>
