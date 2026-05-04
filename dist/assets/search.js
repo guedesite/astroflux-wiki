@@ -92,10 +92,10 @@ window.initSystemMap=initSystemMapZoomable;
     };
   }
 
-  function createWorldView(canvas, bounds, maxScale = 6) {
+  function createWorldView(canvas, bounds, maxScale = 6, fitBounds = bounds) {
     const state = { bounds, scale: 1, viewX: bounds.x, viewY: bounds.y };
 
-    const minScale = () => fitScaleForBounds(canvas, state.bounds);
+    const minScale = () => fitScaleForBounds(canvas, fitBounds);
     const viewSize = () => ({
       width: canvas.width / state.scale,
       height: canvas.height / state.scale
@@ -124,8 +124,8 @@ window.initSystemMap=initSystemMapZoomable;
     function reset() {
       state.scale = minScale();
       const size = viewSize();
-      state.viewX = state.bounds.x + (state.bounds.width - size.width) / 2;
-      state.viewY = state.bounds.y + (state.bounds.height - size.height) / 2;
+      state.viewX = fitBounds.x + (fitBounds.width - size.width) / 2;
+      state.viewY = fitBounds.y + (fitBounds.height - size.height) / 2;
       clampState();
     }
 
@@ -744,7 +744,7 @@ window.initSystemMap=initSystemMapZoomable;
       bounds,
       stars: createStarfield(backgroundBounds, 180, 41)
     };
-    const view = createWorldView(canvas, bounds, 6);
+    const view = createWorldView(canvas, bounds, 6, backgroundBounds);
     const backgroundImage = backgroundImageFor(background);
     const interaction = setupInteractiveScene(canvas, view, {
       toolbar,
@@ -786,7 +786,7 @@ window.initSystemMap=initSystemMapZoomable;
       bounds,
       stars: createStarfield(backgroundBounds, 150, 97)
     };
-    const view = createWorldView(canvas, bounds, 7);
+    const view = createWorldView(canvas, bounds, 7, backgroundBounds);
     const backgroundImage = backgroundImageFor(background);
     const interaction = setupInteractiveScene(canvas, view, {
       toolbar,

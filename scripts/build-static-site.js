@@ -621,6 +621,24 @@ function artifactLevelRange(record) {
   return rangeText(record.minLevel ?? 1, record.maxLevel ?? 150);
 }
 
+const ARTIFACT_FINDER_BANDS = [
+  { id: "1-49", label: "1-49", min: 1, max: 49 },
+  { id: "50-60", label: "50-60", min: 50, max: 60 },
+  { id: "61-70", label: "61-70", min: 61, max: 70 },
+  { id: "71-80", label: "71-80", min: 71, max: 80 },
+  { id: "81-90", label: "81-90", min: 81, max: 90 },
+  { id: "91-100", label: "91-100", min: 91, max: 100 },
+  { id: "101-110", label: "101-110", min: 101, max: 110 },
+  { id: "111-120", label: "111-120", min: 111, max: 120 },
+  { id: "121-130", label: "121-130", min: 121, max: 130 },
+  { id: "131-150", label: "131-150", min: 131, max: 150 }
+];
+
+function artifactFinderBandFor(level) {
+  const value = numberValue(level, 0);
+  return ARTIFACT_FINDER_BANDS.find((band) => value >= band.min && value <= band.max) || ARTIFACT_FINDER_BANDS[ARTIFACT_FINDER_BANDS.length - 1];
+}
+
 function artifactIsUnique(record) {
   return UNIQUE_ARTIFACT_TYPES.has(record?.type);
 }
@@ -859,6 +877,107 @@ function bossArtifactDropRows(cache, routes) {
   return rows
     .sort((a, b) => Number(/unique/i.test(b.kind)) - Number(/unique/i.test(a.kind)) || b.effective - a.effective || a.bossName.localeCompare(b.bossName) || a.dropName.localeCompare(b.dropName))
     .map((row) => `<tr><td>${row.bossKey ? entityLink("Bosses", row.bossKey, cache, routes, row.bossName) : `<span>${escapeHtml(row.bossName)}</span>`}</td><td>${entityLink("Drops", row.dropKey, cache, routes, row.dropName)}</td><td>${escapeHtml(row.kind)}</td><td>${escapeHtml(percentLabel(row.bossDropChance))}</td><td>${escapeHtml(percentLabel(row.crateChance))}</td><td>${escapeHtml(percentLabel(row.artifactChance))}</td><td>${escapeHtml(percentLabel(row.effective))}</td><td>${escapeHtml(row.qty)}</td><td>${escapeHtml(valueLabel(row.amount))}</td><td>${escapeHtml(valueLabel(row.level))}</td></tr>`)
+    .join("");
+}
+
+function artifactFinderRollChance(drop) {
+  const chance = numberValue(drop?.artifactChance, 0);
+  if (chance > 0) return chance;
+  return numberValue(drop?.artifactAmount, 0) > 0 ? 1 : 0;
+}
+
+function artifactFinderEligiblePool(artifacts, artifactLevel) {
+  return artifacts
+    .filter(({ record }) => !artifactIsUnique(record))
+    .filter(({ record }) => artifactLevel >= numberValue(record.minLevel, 1) && artifactLevel <= numberValue(record.maxLevel, 150))
+    .sort((a, b) => a.entry.name.localeCompare(b.entry.name));
+}
+
+function artifactFinderPoolHtml(pool, cache, routes) {
+  if (!pool.length) return missingValue("n/a");
+  const preview = pool
+    .slice(0, 5)
+    .map(({ key, entry }) => entityLink("ArtifactTypes", key, cache, routes, entry.name))
+    .join(", ");
+  const extra = pool.length - 5;
+  return `${preview}${extra > 0 ? `<br><span class="muted">+${escapeHtml(valueLabel(extra))} more eligible artifacts</span>` : ""}`;
+}
+
+function artifactFinderSourceHtml(source, cache, routes, sourceType) {
+  if (!source) return `<span>${escapeHtml(sourceType)}</span>`;
+  if (source.table === "Spawners") {
+    const parts = [entityLink("Spawners", source.key, cache, routes)];
+    if (source.enemy) parts.push(`Enemy: ${entityLink("Enemies", source.enemy, cache, routes)}`);
+    if (source.boss) parts.push(`Boss: ${entityLink("Bosses", source.boss, cache, routes)}`);
+    return `${parts[0]}${parts.length > 1 ? `<div class="muted">${parts.slice(1).join(" / ")}</div>` : ""}`;
+  }
+  return entityLink(source.table, source.key, cache, routes);
+}
+
+function artifactFinderRows(artifacts, cache, routes) {
+  const rows = [];
+  for (const [dropKey, drop] of Object.entries(cache.Drops || {})) {
+    const artifactLevel = numberValue(drop.artifactLevel, 0);
+    const artifactRollChance = artifactFinderRollChance(drop);
+    if (!artifactLevel || (!artifactRollChance && !/artifact/i.test(drop.name || ""))) continue;
+    if (/unique artifact/i.test(drop.name || "")) continue;
+
+    const eligiblePool = artifactFinderEligiblePool(artifacts, artifactLevel);
+    if (!eligiblePool.length) continue;
+
+    const band = artifactFinderBandFor(artifactLevel);
+    const crateChance = drop.crate ? numberValue(drop.chance, 1) : 1;
+    const dropName = drop.name || dropKey;
+    const qtyText = numberValue(drop.artifactAmount, 0) > 0 ? valueLabel(drop.artifactAmount) : "1 roll";
+    const dropSources = dropSourceData(dropKey, cache);
+
+    const pushRow = (source, location, sourceType) => {
+      const effective = numberValue(source?.chance, 1) * crateChance * artifactRollChance;
+      const systemHtml = location
+        ? entityLink("SolarSystems", location.systemKey, cache, routes, location.systemName)
+        : sourceType === "Mission reward"
+          ? `<span>Mission reward</span>`
+          : missingValue("n/a");
+      const locationHtml = location
+        ? `${entityLink("Bodies", location.bodyKey, cache, routes, location.bodyName)}${location.extraLocations ? `<br><span class="muted">+${escapeHtml(valueLabel(location.extraLocations))} more known locations</span>` : ""}`
+        : sourceType === "Mission reward"
+          ? `<span class="muted">Mission table</span>`
+          : missingValue("n/a");
+      const sourceHtml = artifactFinderSourceHtml(source, cache, routes, sourceType);
+      const poolNames = eligiblePool.map(({ entry }) => entry.name).join(" ");
+      const sourceName = source ? titleFor(cache[source.table]?.[source.key], source.key) : sourceType;
+      const enemyName = source?.enemy ? titleFor(cache.Enemies?.[source.enemy], source.enemy) : "";
+      const bossName = source?.boss ? titleFor(cache.Bosses?.[source.boss], source.boss) : "";
+      rows.push({
+        band,
+        artifactLevel,
+        effective,
+        systemHtml,
+        locationHtml,
+        sourceHtml,
+        dropHtml: entityLink("Drops", dropKey, cache, routes, dropName),
+        rollText: percentLabel(effective),
+        qtyText,
+        poolHtml: artifactFinderPoolHtml(eligiblePool, cache, routes),
+        searchText: `${band.label} ${artifactLevel} ${dropName} ${sourceName} ${enemyName} ${bossName} ${location?.systemName || ""} ${location?.bodyName || ""} ${poolNames}`
+      });
+    };
+
+    if (!dropSources.length) {
+      if (drop.type === "mission") pushRow(null, null, "Mission reward");
+      continue;
+    }
+
+    for (const source of dropSources) {
+      const location = sourceLocationInfo(source, cache);
+      if (source.table === "Spawners" && !location) continue;
+      pushRow(source, location, source.type || "Source");
+    }
+  }
+
+  return rows
+    .sort((a, b) => a.band.min - b.band.min || b.artifactLevel - a.artifactLevel || b.effective - a.effective || a.searchText.localeCompare(b.searchText))
+    .map((row) => `<tr data-search="${escapeAttr(row.searchText)}" data-band="${escapeAttr(row.band.id)}" data-level="${escapeAttr(row.artifactLevel)}"><td>${escapeHtml(row.band.label)}</td><td>${escapeHtml(valueLabel(row.artifactLevel))}</td><td>${row.systemHtml}</td><td>${row.locationHtml}</td><td>${row.sourceHtml}</td><td>${row.dropHtml}</td><td>${escapeHtml(row.rollText)}</td><td>${escapeHtml(row.qtyText)}</td><td>${row.poolHtml}</td></tr>`)
     .join("");
 }
 
@@ -1102,7 +1221,7 @@ function renderHeroFacts(table, record, cache) {
     cards.push(statCard("Levels", artifactLevelRange(record)));
   }
   if (record.landable !== undefined) cards.push(statCard("Landable", record.landable));
-  return cards.length ? `<div class="stat-grid compact">${cards.slice(0, 6).join("")}</div>` : "";
+  return cards.length ? `<div class="hero-facts"><div class="stat-grid compact">${cards.slice(0, 6).join("")}</div></div>` : "";
 }
 
 function buildListing(dir, title, entries, table, cache, media, routes) {
@@ -1289,9 +1408,11 @@ function renderArtifactListing(entries, cache, media, routes) {
   }));
   const artifactOptions = [...data].sort((a, b) => a.name.localeCompare(b.name)).map(({ key, name }) => `<option value="${escapeAttr(key)}">${escapeHtml(name)}</option>`).join("");
   const classicRows = classicArtifactRows(artifacts, cache, media, routes);
+  const finderRows = artifactFinderRows(artifacts, cache, routes);
   const statOptions = [...new Set(artifacts.map(({ record }) => artifactBaseType(record.type)))].sort()
     .map((stat) => `<option value="${escapeAttr(stat)}">${escapeHtml(artifactStatLabel(stat))}</option>`).join("");
   const rarityOptions = [...new Set(artifacts.map(({ record }) => artifactRarityLabel(record)))].sort().map((rarity) => `<option value="${escapeAttr(rarity)}">${escapeHtml(rarity)}</option>`).join("");
+  const bandOptions = ARTIFACT_FINDER_BANDS.map((band) => `<option value="${escapeAttr(band.id)}">${escapeHtml(band.label)}</option>`).join("");
   const uniqueRows = uniqueArtifactMainRows(cache, media, routes);
   return `<h1>Artifacts</h1>
 <p class="muted">Classic artifacts are listed with their roll range, rarity, level gate, and drop weight. Use the calculator first, then filter the table if you want to narrow the pool.</p>
@@ -1306,6 +1427,15 @@ function renderArtifactListing(entries, cache, media, routes) {
       <label>Attempts <input id="artifact-attempts" type="number" min="1" value="100"></label>
       <output id="artifact-result">Choose an artifact to estimate odds.</output>
     </div>
+  </article>
+  <article>
+    <h2>Artifact Finder</h2>
+    <p class="muted">Choose a preset artifact roll band to see where classic artifacts of that level can drop. The table shows the system, location, enemy / spawner / boss context, and the eligible classic artifact pool for that exact roll level.</p>
+    <div class="filter-panel" data-table-filter="artifact-finder-table">
+      <select id="artifact-finder-band" name="artifact-finder-band" data-filter-attr="band"><option value="">All predefined level ranges</option>${bandOptions}</select>
+      <input id="artifact-finder-text" name="artifact-finder-text" data-filter-text type="search" placeholder="Search system, body, enemy, spawner, boss, artifact">
+    </div>
+    <div class="table-wrap"><table id="artifact-finder-table" class="sortable filterable"><thead><tr><th>Band</th><th>Artifact lvl</th><th>System</th><th>Location</th><th>Mob / Spawner / Boss</th><th>Drop table</th><th>Effective artifact roll</th><th>Qty</th><th>Eligible classic artifacts</th></tr></thead><tbody>${finderRows}</tbody></table></div>
   </article>
   <article>
     <h2>Classic Artifacts</h2>
@@ -1373,6 +1503,50 @@ function hiddenBodyDisplayName(bodyKey, body, cache) {
   return "";
 }
 
+function bodyDisplayName(bodyKey, body, cache) {
+  const sourceName = titleFor(body, bodyKey);
+  return hiddenBodyDisplayName(bodyKey, body, cache)
+    || (isGenericHiddenBodyName(sourceName, body) ? "Hidden location" : sourceName);
+}
+
+function bodyLocationInfo(bodyKey, cache) {
+  const body = cache.Bodies?.[bodyKey];
+  if (!body) return null;
+  const systemKey = body.solarSystem;
+  if (!isVisibleMapSystem(cache.SolarSystems?.[systemKey], systemKey)) return null;
+  return {
+    systemKey,
+    systemName: titleFor(cache.SolarSystems?.[systemKey], systemKey),
+    bodyKey,
+    bodyName: bodyDisplayName(bodyKey, body, cache)
+  };
+}
+
+function sourceLocationInfo(source, cache) {
+  const dedupe = (items) => [...new Map(items.filter(Boolean).map((item) => [`${item.systemKey}:${item.bodyKey}`, item])).values()];
+  if (source.body) {
+    const direct = bodyLocationInfo(source.body, cache);
+    if (direct) return { ...direct, extraLocations: 0 };
+  }
+  if (source.table === "Enemies") {
+    const locations = dedupe(Object.entries(cache.Spawners || {})
+      .filter(([, spawner]) => spawner.enemy === source.key || spawner.enemy2 === source.key || (spawner.enemies || []).some((enemy) => refKey("Enemies", enemy) === source.key))
+      .map(([, spawner]) => bodyLocationInfo(spawner.body, cache)));
+    if (locations.length) return { ...locations[0], extraLocations: locations.length - 1 };
+  }
+  if (source.table === "Bosses") {
+    const bodyLocations = dedupe(Object.entries(cache.Bodies || {})
+      .filter(([, body]) => body.boss === source.key)
+      .map(([bodyKey]) => bodyLocationInfo(bodyKey, cache)));
+    if (bodyLocations.length) return { ...bodyLocations[0], extraLocations: bodyLocations.length - 1 };
+    const spawnerLocations = dedupe(Object.entries(cache.Spawners || {})
+      .filter(([, spawner]) => spawner.bossSpawner === source.key || spawner.bossSpawner2 === source.key)
+      .map(([, spawner]) => bodyLocationInfo(spawner.body, cache)));
+    if (spawnerLocations.length) return { ...spawnerLocations[0], extraLocations: spawnerLocations.length - 1 };
+  }
+  return null;
+}
+
 function resolvedSystemBodies(systemKey, cache) {
   const entries = Object.entries(cache.Bodies || {}).filter(([, body]) => body.solarSystem === systemKey);
   const byKey = new Map(entries);
@@ -1399,8 +1573,7 @@ function resolvedSystemBodies(systemKey, cache) {
   return entries.map(([bodyKey, body]) => {
     const pos = positionFor(bodyKey);
     const sourceName = titleFor(body, bodyKey);
-    const displayName = hiddenBodyDisplayName(bodyKey, body, cache)
-      || (isGenericHiddenBodyName(sourceName, body) ? "Hidden location" : sourceName);
+    const displayName = bodyDisplayName(bodyKey, body, cache);
     return {
       key: bodyKey,
       name: displayName,
@@ -1729,7 +1902,7 @@ function renderUniqueArtifactPage(item, cache, media, routes) {
     ["Stat rule", item.stat ? "This family is marked unique and cannot be upgraded." : "No fixed stat row is present in the downloaded client cache."],
     ["Boss link", item.bossKeys.length ? "The boss name matches the artifact and the boss has drop rows." : "No direct boss match in the client data."]
   ].map(([kind, text]) => `<tr><td>${escapeHtml(kind)}</td><td>${escapeHtml(text)}</td></tr>`).join("");
-  return `<section class="entity-hero unique-artifact-hero"><div class="hero-visual">${renderImageCard(item.image, item.imageKey, media, true)}</div><div class="hero-main"><p class="eyebrow">Unique artifact</p><h1>${escapeHtml(item.label)}</h1><span class="pill">${escapeHtml(uniqueArtifactSourceStatus(item, cache))}</span></div><div class="stat-grid compact">${statCard("Upgradeable", "No")}${statCard("Source", drop ? drop[1].name : "Unique crate")}${statCard("Sprite", item.image.textureName)}${statCard("Mapped stat", item.stat ? artifactStatLabel(item.stat) : "Server-side")}</div></section>
+  return `<section class="entity-hero unique-artifact-hero"><div class="hero-visual">${renderImageCard(item.image, item.imageKey, media, true)}</div><div class="hero-main"><p class="eyebrow">Unique artifact</p><h1>${escapeHtml(item.label)}</h1><span class="pill">${escapeHtml(uniqueArtifactSourceStatus(item, cache))}</span></div><div class="hero-facts"><div class="stat-grid compact">${statCard("Upgradeable", "No")}${statCard("Source", drop ? drop[1].name : "Unique crate")}${statCard("Sprite", item.image.textureName)}${statCard("Mapped stat", item.stat ? artifactStatLabel(item.stat) : "Server-side")}</div></div></section>
 <section class="content-grid">
   <article><h2>Stats</h2><div class="table-wrap"><table><thead><tr><th>Stat</th><th>Effect</th><th>Upgradeable</th></tr></thead><tbody>${statRows}</tbody></table></div></article>
   ${bossRows ? `<article><h2>Bosses</h2><div class="table-wrap"><table><thead><tr><th>Boss</th><th>Artifact drop rows</th></tr></thead><tbody>${bossRows}</tbody></table></div></article>` : ""}
