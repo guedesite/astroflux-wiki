@@ -2,8 +2,8 @@ import fs from "node:fs";
 import http from "node:http";
 import path from "node:path";
 
-const ROOT = process.cwd();
-const DIST_DIR = path.join(ROOT, "dist");
+import { DIST_DIR, ROOT } from "./lib/project-paths.js";
+
 const PORT = Number(process.env.PORT || 8080);
 const HOST = process.env.HOST || "127.0.0.1";
 

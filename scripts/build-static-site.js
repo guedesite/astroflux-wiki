@@ -1,262 +1,25 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const ROOT = process.cwd();
-const SOURCE_DIR = path.join(ROOT, "source");
-const CONTENT_DIR = path.join(ROOT, "content");
-const INDEX_DIR = path.join(ROOT, "data", "index");
-const RAW_DIR = path.join(ROOT, "data", "raw");
-const DIST_DIR = path.join(ROOT, "dist");
-
-const DAMAGE_TYPES = [
-  "Kinetic",
-  "Energy",
-  "Corrosive",
-  "50% Kinetic + 50% Energy",
-  "50% Corrosive + 50% Kinetic",
-  "All",
-  "Health",
-  "Kinetic + Energy + Corrosive",
-  "None",
-  "50% Energy + 50% Corrosive"
-];
-
-const GUIDE_PAGES = [
-  ["Guides", "guides/", "Start here"],
-  ["Combat Guide", "guides/combat.html", "Damage, resistances, and threat reading"],
-  ["Weapon Finder", "guides/weapons.html", "Compare damage, range, heat, and reload"],
-  ["Artifact Guide", "guides/artifacts.html", "Artifact stats, special rolls, and drop odds"],
-  ["Farming Guide", "guides/farming.html", "Find where items and resources drop"],
-  ["Travel Guide", "guides/travel.html", "Systems, locations, shops, and hostiles"],
-  ["Stations", "stations/", "Filter shops, warp gates, research, hangars, cantinas, and recycle stations"]
-];
-
-const STATION_TYPES = new Set(["paintShop", "warpGate", "research", "shop", "junk yard", "hangar", "cantina"]);
-
-const DESTROYED_SYSTEMS = new Map([
-  ["DrMy6JjyO0OI0ui7c80bNw", {
-    status: "Destroyed",
-    access: "Not selectable on the game star map unless it is the current system.",
-    note: "The game client hard-codes Azuron as destroyed in SolarSystem.isDestroyed(). The wiki keeps the page visible so players can still inspect the remaining data, lore hooks, locations, and links."
-  }]
-]);
-
-const WEAPON_ELITE_TECHS = [
-  ["AddKineticDamage", "Kinetic Damage"],
-  ["AddEnergyDamage", "Energy Damage"],
-  ["AddCorrosiveDamage", "Corrosive Damage"],
-  ["AddKineticBaseDamage", "Kinetic Damage"],
-  ["AddEnergyBaseDamage", "Energy Damage"],
-  ["AddCorrosiveBaseDamage", "Corrosive Damage"],
-  ["AddKineticDot5", "Kinetic DoT 5 Seconds"],
-  ["AddEnergyDot5", "Energy DoT 5 Seconds"],
-  ["AddCorrosiveDot5", "Corrosive DoT 5 Seconds"],
-  ["AddKineticDot10", "Kinetic DoT 10 Seconds"],
-  ["AddEnergyDot10", "Energy DoT 10 Seconds"],
-  ["AddCorrosiveDot10", "Corrosive DoT 10 Seconds"],
-  ["AddKineticDot20", "Kinetic DoT 20 Seconds"],
-  ["AddEnergyDot20", "Energy DoT 20 Seconds"],
-  ["AddCorrosiveDot20", "Corrosive DoT 20 Seconds"],
-  ["AddEnergyBurn", "Energy Burn 10 Seconds"],
-  ["AddCorrosiveBurn", "Corrosive Burn 10 Seconds"],
-  ["AddHealthVamp", "Health Leech"],
-  ["AddShieldVamp", "Shield Leech"],
-  ["AddDualVamp", "Health and Shield Leech"],
-  ["KineticPenetration", "Reduce Kinetic Resistance"],
-  ["EnergyPenetration", "Reduce Energy Resistance"],
-  ["CorrosivePenetration", "Reduce Corrosive Resistance"],
-  ["AddExtraProjectiles", "Extra Projectiles"],
-  ["IncreaseDirectDamage", "Improved Direct Damage"],
-  ["IncreaseDebuffDamage", "Improved DoT"],
-  ["IncreaseRange", "Improved Range"],
-  ["IncreaseRefire", "Improved Attack Speed"],
-  ["IncreaseGuidance", "Improved Velocity and Guidance"],
-  ["ReducePowerCost", "Reduced Power Cost"],
-  ["DisableHealing", "Disables Target Healing"],
-  ["DisableShieldRegen", "Disables Target Shield Regen"],
-  ["ReduceTargetDamage", "Reduce Target Damage"],
-  ["ReduceTargetArmor", "Reduce Target Armor"],
-  ["IncreaseAOE", "Improved Area Of Effect"],
-  ["AddAOE", "Added Area Of Effect"],
-  ["IncreaseNrHits", "Improved Number of Hits"],
-  ["IncreaseSpeed", "Increase Speed"],
-  ["IncreasePetHp", "Increase Pet HP and Shield"]
-];
-
-const ELITE_TECH_COST = {
-  increase: 1.025,
-  sum: 432.548654,
-  primary: 3200000,
-  secondary: 540000,
-  flux: 12000
-};
-
-const ARTIFACT_STAT_LABELS = {
-  healthAdd: "Flat health",
-  healthMulti: "Percent health",
-  armorAdd: "Flat armor",
-  armorMulti: "Percent armor",
-  corrosiveAdd: "Flat corrosive damage",
-  corrosiveMulti: "Percent corrosive damage",
-  energyAdd: "Flat energy damage",
-  energyMulti: "Percent energy damage",
-  kineticAdd: "Flat kinetic damage",
-  kineticMulti: "Percent kinetic damage",
-  shieldAdd: "Flat shield",
-  shieldMulti: "Percent shield",
-  shieldRegen: "Shield regen",
-  corrosiveResist: "Corrosive resist",
-  energyResist: "Energy resist",
-  kineticResist: "Kinetic resist",
-  allResist: "All resist",
-  allAdd: "Flat all damage",
-  allMulti: "Percent all damage",
-  dotDamage: "Debuff damage",
-  dotDuration: "Debuff duration",
-  directDamage: "Direct damage",
-  speed: "Speed",
-  refire: "Attack speed",
-  convHp: "HP converted to shield",
-  convShield: "Shield converted to HP",
-  powerReg: "Power regen",
-  powerMax: "Maximum power",
-  cooldown: "Cooldown reduction",
-  increaseRecyleRate: "Recycle yield",
-  damageReduction: "Damage reduction",
-  damageReductionWithLowHealth: "Low health damage reduction",
-  damageReductionWithLowShield: "Low shield damage reduction",
-  healthRegenAdd: "Health regen",
-  shieldVamp: "Shield leech",
-  healthVamp: "Health leech",
-  kineticChanceToPenetrateShield: "Kinetic shield penetration",
-  energyChanceToShieldOverload: "Energy shield overload",
-  corrosiveChanceToIgnite: "Corrosive ignite",
-  beamAndMissileDoesBonusDamage: "Beam and missile bonus",
-  recycleCatalyst: "Recycle catalyst",
-  velocityCore: "Velocity core",
-  slowDown: "Slow debuff",
-  mantisCore: "Close target damage core",
-  thermofangCore: "Burning target kinetic core",
-  reduceKineticResistance: "Kinetic resistance debuff",
-  reduceCorrosiveResistance: "Corrosive resistance debuff",
-  reduceEnergyResistance: "Energy resistance debuff",
-  crownOfXhersix: "Cleansing crown",
-  veilOfYhgvis: "Cloak ambush veil",
-  fistOfZharix: "Kill shockwave",
-  bloodlineSurge: "On-kill surge",
-  dotDamageUnique: "Unique debuff damage",
-  directDamageUnique: "Unique direct damage",
-  reflectDamageUnique: "Reflect damage",
-  damageReductionUnique: "Unique damage reduction",
-  damageReductionWithLowHealthUnique: "Unique low health reduction",
-  damageReductionWithLowShieldUnique: "Unique low shield reduction",
-  damageReductionWhileStationaryUnique: "Stationary damage reduction",
-  overmind: "Overmind",
-  upgrade: "Legacy ship upgrade",
-  lucaniteCore: "Lucanite core"
-};
-
-const UNIQUE_ARTIFACT_STATS = [
-  ["slowDown", "Slowing debuff"],
-  ["kineticChanceToPenetrateShield", "Kinetic shield penetration"],
-  ["energyChanceToShieldOverload", "Energy shield overload"],
-  ["corrosiveChanceToIgnite", "Corrosive ignite"],
-  ["recycleCatalyst", "Recycle Catalyst"],
-  ["beamAndMissileDoesBonusDamage", "Beam and Missile Core"],
-  ["velocityCore", "Velocity Core"],
-  ["damageReductionUnique", "Unique damage reduction"],
-  ["damageReductionWithLowShieldUnique", "Unique low shield reduction"],
-  ["damageReductionWithLowHealthUnique", "Unique low health reduction"],
-  ["damageReductionWhileStationaryUnique", "Fortress Lock"],
-  ["overmind", "Overmind"],
-  ["upgrade", "Legacy hull upgrade"],
-  ["lucaniteCore", "Lucanite Core"],
-  ["mantisCore", "Mantis Core"],
-  ["thermofangCore", "Thermofang Core"],
-  ["reduceKineticResistance", "Kinetic resistance debuff"],
-  ["reduceCorrosiveResistance", "Corrosive resistance debuff"],
-  ["reduceEnergyResistance", "Energy resistance debuff"],
-  ["crownOfXhersix", "Crown of Xhersix"],
-  ["veilOfYhgvis", "Veil of Yhgvis"],
-  ["fistOfZharix", "Fist of Zharix"],
-  ["bloodlineSurge", "Bloodline Surge"],
-  ["dotDamageUnique", "Unique debuff damage"],
-  ["directDamageUnique", "Unique direct damage"],
-  ["reflectDamageUnique", "Unique reflect damage"]
-];
-
-const UNIQUE_ARTIFACT_TYPES = new Set(UNIQUE_ARTIFACT_STATS.map(([type]) => type));
-
-const UNIQUE_ARTIFACT_DESCRIPTIONS = {
-  slowDown: "Hits can slow enemy movement for 4 seconds.",
-  kineticChanceToPenetrateShield: "Kinetic hits can bypass shields and deal part of the kinetic damage directly to hull.",
-  energyChanceToShieldOverload: "Energy hits can overload shields for extra energy damage.",
-  corrosiveChanceToIgnite: "Corrosive hits can splice the hull for extra corrosive damage.",
-  recycleCatalyst: "Recycling junk has a better rare-material chance and higher yield.",
-  beamAndMissileDoesBonusDamage: "Beam and missile weapons gain bonus damage.",
-  velocityCore: "Large ship speed increase.",
-  damageReductionUnique: "Reduces incoming damage.",
-  damageReductionWithLowShieldUnique: "Adds damage reduction when shields are low.",
-  damageReductionWithLowHealthUnique: "Adds damage reduction when health is low.",
-  damageReductionWhileStationaryUnique: "Adds damage reduction while stationary.",
-  overmind: "Doubles pet count and increases pet health.",
-  upgrade: "Legacy hull, shield, and armor upgrade for ships.",
-  lucaniteCore: "Weapons can reduce the target's outgoing damage for 4 seconds.",
-  mantisCore: "Adds damage when the target is close.",
-  thermofangCore: "Adds kinetic damage against burning targets.",
-  reduceKineticResistance: "Weapons can reduce target kinetic resistance for 4 seconds.",
-  reduceCorrosiveResistance: "Weapons can reduce target corrosive resistance for 4 seconds.",
-  reduceEnergyResistance: "Weapons can reduce target energy resistance for 4 seconds.",
-  crownOfXhersix: "Automatically cleanses debuffs on a timer.",
-  veilOfYhgvis: "Gives damage reduction while cloaked and bonus ambush damage.",
-  fistOfZharix: "Kills trigger a shockwave that damages nearby enemies.",
-  bloodlineSurge: "Kills grant a short stackable damage and mitigation boost.",
-  dotDamageUnique: "Increases damage dealt by debuffs.",
-  directDamageUnique: "Increases direct weapon damage.",
-  reflectDamageUnique: "Reflects damage back to attackers when hit."
-};
-
-const UNIQUE_ARTIFACT_ICON_HINTS = {
-  artifact_unique_armorlock_protocol: { stat: "damageReductionWhileStationaryUnique", confidence: "inferred-stat" },
-  artifact_unique_bloodline_surge: { stat: "bloodlineSurge", confidence: "direct-stat-name" },
-  artifact_unique_bullwark_prism: { stat: "damageReductionWithLowShieldUnique", confidence: "inferred-stat" },
-  artifact_unique_cleaner: { bossNames: ["The Cleaner"], confidence: "boss-sprite-match" },
-  artifact_unique_crown_of_xhersix: { stat: "crownOfXhersix", bossNames: ["Three Emperors"], confidence: "direct-stat-name" },
-  artifact_unique_eternal_aegis: { stat: "damageReductionUnique", confidence: "inferred-stat" },
-  artifact_unique_fist_of_zharix: { stat: "fistOfZharix", bossNames: ["Three Emperors"], confidence: "direct-stat-name" },
-  artifact_unique_hyper_acid_splicer: { stat: "corrosiveChanceToIgnite", confidence: "inferred-stat" },
-  artifact_unique_impact_emitter_core: { stat: "slowDown", confidence: "inferred-stat" },
-  artifact_unique_legacy_core: { stat: "upgrade", confidence: "inferred-stat" },
-  artifact_unique_lunacite_core: { stat: "lucaniteCore", confidence: "direct-stat-name" },
-  artifact_unique_mantis_core: { stat: "mantisCore", confidence: "direct-stat-name" },
-  artifact_unique_motherbrain: { stat: "overmind", bossNames: ["Mother Brain"], confidence: "boss-sprite-match" },
-  artifact_unique_omega_shield_driver: { stat: "energyChanceToShieldOverload", confidence: "inferred-stat" },
-  artifact_unique_phase_nullifier: { stat: "kineticChanceToPenetrateShield", confidence: "inferred-stat" },
-  artifact_unique_plasma_disruptor_relic: { stat: "reduceEnergyResistance", confidence: "inferred-stat" },
-  artifact_unique_ring_of_yxthal: { stat: "reduceKineticResistance", confidence: "inferred-stat" },
-  artifact_unique_scourgebinder_core: { stat: "reduceCorrosiveResistance", confidence: "inferred-stat" },
-  artifact_unique_tefat: { bossNames: ["Tefat"], confidence: "boss-sprite-match" },
-  artifact_unique_thermofang_core: { stat: "thermofangCore", confidence: "direct-stat-name" },
-  artifact_unique_titanheart_core: { stat: "damageReductionWithLowHealthUnique", confidence: "inferred-stat" },
-  artifact_unique_veil_of_yhgvis: { stat: "veilOfYhgvis", bossNames: ["Three Emperors"], confidence: "direct-stat-name" },
-  artifact_unique_velocity_core: { stat: "velocityCore", confidence: "direct-stat-name" },
-  artifact_unique_virex_injector: { stat: "dotDamageUnique", confidence: "inferred-stat" }
-};
-
-function ensureDir(dir) {
-  fs.mkdirSync(dir, { recursive: true });
-}
-
-function cleanDir(dir) {
-  ensureDir(dir);
-  for (const entry of fs.readdirSync(dir)) {
-    fs.rmSync(path.join(dir, entry), { recursive: true, force: true });
-  }
-}
-
-function readJson(file) {
-  return JSON.parse(fs.readFileSync(file, "utf8"));
-}
+import {
+  ARTIFACT_STAT_LABELS,
+  DAMAGE_TYPES,
+  DESTROYED_SYSTEMS,
+  ELITE_TECH_COST,
+  GUIDE_PAGES,
+  STATION_TYPES,
+  UNIQUE_ARTIFACT_DESCRIPTIONS,
+  UNIQUE_ARTIFACT_ICON_HINTS,
+  UNIQUE_ARTIFACT_STATS,
+  UNIQUE_ARTIFACT_TYPES,
+  WEAPON_ELITE_TECHS
+} from "./lib/build-constants.js";
+import { writeAssets } from "./lib/build-assets.js";
+import { cleanDir, ensureDir, readJson } from "./lib/file-utils.js";
+import { CONTENT_DIR, DIST_DIR, INDEX_DIR, RAW_DIR, ROOT, ROOT_INDEX_FILE, SOURCE_DIR } from "./lib/project-paths.js";
+import { titleFor } from "./lib/record-utils.js";
+import { writeRootIndexPage } from "./lib/root-index.js";
+import { siteBaseHref, stripLeadingSlashSiteUrls } from "./lib/site-url-utils.js";
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -281,10 +44,6 @@ function inlineMarkdown(value) {
   return escapeHtml(value)
     .replace(/`([^`]+)`/g, "<code>$1</code>")
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
-}
-
-function titleFor(record, key) {
-  return record?.name || record?.title || record?.fileName || record?.textureName || key;
 }
 
 function slugify(value) {
@@ -1190,35 +949,36 @@ function renderTable(lines) {
   ].join("\n");
 }
 
-function pageShell(title, body, nav = "", assetPrefix = "") {
+function pageShell(title, body, nav = "", baseHref = "./") {
   return `<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="${baseHref}">
   <title>${escapeHtml(title)} - Astroflux Wiki</title>
-  <link rel="icon" href="${assetPrefix}favicon.ico">
-  <link rel="stylesheet" href="${assetPrefix}site.css">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
   <header>
-    <a class="brand" href="/">Astroflux Wiki</a>
+    <a class="brand" href=".">Astroflux Wiki</a>
     <form class="site-search" role="search">
       <input id="search-input" type="search" placeholder="Search wiki" autocomplete="off">
       <div id="search-results" class="search-results" hidden></div>
     </form>
     <nav>
-      <a href="/guides/">Guides</a>
-      <a href="/systems/">Systems</a>
-      <a href="/stations/">Stations</a>
-      <a href="/enemies/">Enemies</a>
-      <a href="/bosses/">Bosses</a>
-      <a href="/weapons/">Weapons</a>
-      <a href="/commodities/">Items</a>
-      <a href="/artifacts/">Artifacts</a>
-      <a href="/drops/">Drops</a>
-      <a href="/media/">Media</a>
-      <a href="/map/">Map</a>
+      <a href="guides/">Guides</a>
+      <a href="systems/">Systems</a>
+      <a href="stations/">Stations</a>
+      <a href="enemies/">Enemies</a>
+      <a href="bosses/">Bosses</a>
+      <a href="weapons/">Weapons</a>
+      <a href="commodities/">Items</a>
+      <a href="artifacts/">Artifacts</a>
+      <a href="drops/">Drops</a>
+      <a href="media/">Media</a>
+      <a href="map/">Map</a>
     </nav>
   </header>
   ${nav}
@@ -1226,21 +986,15 @@ function pageShell(title, body, nav = "", assetPrefix = "") {
   <footer class="site-footer">
     <p>Want to improve this wiki? Contributions are welcome on <a href="https://github.com/guedesite/astroflux-wiki">github.com/guedesite/astroflux-wiki</a>.</p>
   </footer>
-  <script src="${assetPrefix}search.js"></script>
+  <script src="assets/search.js"></script>
 </body>
 </html>`;
 }
 
 function writePage(file, title, body, nav = "") {
   ensureDir(path.dirname(file));
-  const assetPrefix = path.relative(path.dirname(file), path.join(DIST_DIR, "assets"));
-  const normalizedPrefix = assetPrefix ? `${assetPrefix.replace(/\\/g, "/")}/` : "";
-  fs.writeFileSync(file, pageShell(title, body, nav, normalizedPrefix), "utf8");
-}
-
-function writeRootIndexPage(sourceFile, targetFile) {
-  const html = fs.readFileSync(sourceFile, "utf8").replace(/(["'])\/(?!\/)/g, "$1dist/");
-  fs.writeFileSync(targetFile, html, "utf8");
+  const html = pageShell(title, body, nav, siteBaseHref(file, DIST_DIR));
+  fs.writeFileSync(file, stripLeadingSlashSiteUrls(html), "utf8");
 }
 
 function buildContentPages(manifest, cache, media, graph, routes) {
@@ -1587,6 +1341,38 @@ function systemStatusInfo(system, key = "") {
   return { key: "accessible", label: "Accessible", access: "Selectable", note: "Visible in the player star map data." };
 }
 
+function isGenericHiddenBodyName(name, body = null) {
+  const normalized = String(name || "").trim().toLowerCase();
+  if (!normalized) return false;
+  if (!body && /\bhidden\b/.test(normalized)) return true;
+  if (normalized === "hidden" || normalized === "hidden body") return true;
+  if (body?.type === "hidden" && /\bhidden\b/.test(normalized)) return true;
+  return false;
+}
+
+function hiddenBodyDisplayName(bodyKey, body, cache) {
+  const name = titleFor(body, bodyKey);
+  if (!isGenericHiddenBodyName(name, body)) return name;
+
+  const spawners = Object.entries(cache.Spawners || {}).filter(([, spawner]) => spawner.body === bodyKey);
+  const enemyNames = [...new Set(spawners
+    .map(([, spawner]) => titleFor(cache.Enemies?.[spawner.enemy || spawner.enemy2], spawner.enemy || spawner.enemy2 || ""))
+    .filter((label) => label && !isGenericHiddenBodyName(label)))];
+  if (enemyNames.length === 1) return enemyNames[0];
+
+  const bossNames = [...new Set(spawners
+    .map(([, spawner]) => titleFor(cache.Bosses?.[spawner.bossSpawner || spawner.bossSpawner2], spawner.bossSpawner || spawner.bossSpawner2 || ""))
+    .filter((label) => label && !isGenericHiddenBodyName(label)))];
+  if (bossNames.length === 1) return bossNames[0];
+
+  const spawnerNames = [...new Set(spawners
+    .map(([spawnerKey, spawner]) => titleFor(spawner, spawnerKey))
+    .filter((label) => label && !isGenericHiddenBodyName(label)))];
+  if (spawnerNames.length === 1) return spawnerNames[0];
+
+  return "";
+}
+
 function resolvedSystemBodies(systemKey, cache) {
   const entries = Object.entries(cache.Bodies || {}).filter(([, body]) => body.solarSystem === systemKey);
   const byKey = new Map(entries);
@@ -1612,9 +1398,14 @@ function resolvedSystemBodies(systemKey, cache) {
   };
   return entries.map(([bodyKey, body]) => {
     const pos = positionFor(bodyKey);
+    const sourceName = titleFor(body, bodyKey);
+    const displayName = hiddenBodyDisplayName(bodyKey, body, cache)
+      || (isGenericHiddenBodyName(sourceName, body) ? "Hidden location" : sourceName);
     return {
       key: bodyKey,
-      name: titleFor(body, bodyKey),
+      name: displayName,
+      sourceName,
+      displayName,
       type: body.type || "body",
       level: body.level ?? "",
       x: Math.round(pos.x),
@@ -1631,7 +1422,7 @@ function resolvedSystemBodies(systemKey, cache) {
   });
 }
 
-function renderSystemLocalMap(systemKey, record, cache, routes) {
+function renderSystemLocalMap(systemKey, record, cache, media, routes) {
   const bodies = resolvedSystemBodies(systemKey, cache);
   if (!bodies.length) return "";
   const bodyByKey = new Map(bodies.map((body) => [body.key, body]));
@@ -1645,7 +1436,7 @@ function renderSystemLocalMap(systemKey, record, cache, routes) {
         key: spawnerKey,
         name: titleFor(spawner, spawnerKey),
         body: spawner.body,
-        bodyName: anchor?.name || "",
+        bodyName: anchor?.displayName || anchor?.name || "",
         enemy: spawner.enemy || spawner.enemy2 || "",
         enemyName: titleFor(cache.Enemies?.[spawner.enemy || spawner.enemy2], spawner.enemy || spawner.enemy2 || ""),
         level: spawner.level ?? "",
@@ -1661,6 +1452,7 @@ function renderSystemLocalMap(systemKey, record, cache, routes) {
     .map((body) => ({ key: body.boss, name: titleFor(cache.Bosses?.[body.boss], body.boss), bodyKey: body.key, x: body.x, y: body.y }));
   const data = {
     name: titleFor(record, systemKey),
+    background: resolveCanvasImageAsset(record.background, cache, media),
     bodies,
     spawners,
     bosses: bossMarkers,
@@ -1690,7 +1482,7 @@ function renderSystemListing(entries, cache, routes) {
 function renderPlayerSections(table, key, record, cache, media, routes) {
   switch (table) {
     case "SolarSystems":
-      return renderSystemPage(key, record, cache, routes);
+      return renderSystemPage(key, record, cache, media, routes);
     case "Bodies":
       return renderBodyPage(key, record, cache, routes);
     case "Weapons":
@@ -1718,19 +1510,20 @@ function renderPlayerSections(table, key, record, cache, media, routes) {
   }
 }
 
-function renderSystemPage(key, record, cache, routes) {
+function renderSystemPage(key, record, cache, media, routes) {
   const bodies = Object.entries(cache.Bodies || {}).filter(([, body]) => body.solarSystem === key);
   const resolved = new Map(resolvedSystemBodies(key, cache).map((body) => [body.key, body]));
   const bodyRows = bodies.map(([bodyKey, body]) => {
     const pos = resolved.get(bodyKey);
-    return `<tr><td>${entityLink("Bodies", bodyKey, cache, routes)}</td><td>${escapeHtml(valueLabel(body.type))}</td><td>${escapeHtml(valueLabel(body.level))}</td><td>${escapeHtml(valueLabel(body.landable))}</td><td>${escapeHtml(valueLabel(body.explorable))}</td><td>${escapeHtml(coordinateLabel(pos?.x))}, ${escapeHtml(coordinateLabel(pos?.y))}</td></tr>`;
+    const bodyLabel = pos?.displayName || (pos?.hidden ? "Hidden location" : null);
+    return `<tr><td>${entityLink("Bodies", bodyKey, cache, routes, bodyLabel)}</td><td>${escapeHtml(valueLabel(body.type))}</td><td>${escapeHtml(valueLabel(body.level))}</td><td>${escapeHtml(valueLabel(body.landable))}</td><td>${escapeHtml(valueLabel(body.explorable))}</td><td>${escapeHtml(coordinateLabel(pos?.x))}, ${escapeHtml(coordinateLabel(pos?.y))}</td></tr>`;
   }).join("");
   const warpLinks = renderSystemWarpLinks(key, cache, routes);
   const status = systemStatusInfo(record, key);
   const statusNotice = status.key === "destroyed"
     ? `<article class="notice status-notice"><h2>Destroyed System</h2><p>${escapeHtml(status.note)}</p><p class="muted">${escapeHtml(status.access)}</p></article>`
     : "";
-  const map = renderSystemLocalMap(key, record, cache, routes);
+  const map = renderSystemLocalMap(key, record, cache, media, routes);
   return `<section class="system-first">
     <div class="system-title"><p class="eyebrow">Solar system</p><h1>${escapeHtml(titleFor(record, key))}</h1><span class="status-pill status-${escapeAttr(status.key)}">${escapeHtml(status.label)}</span></div>
     ${map}
@@ -2216,10 +2009,10 @@ function buildIndex(manifest, tables, warnings, media, map, cache) {
   ${media.atlasByName.size} GameFS atlas sprites were indexed from downloaded texture atlases.
   ${media.availableAudio.length} audio files were found locally.
 </section>
-<details class="source-details"><summary>Build and validation details</summary><p>${warnings.length} unresolved references were found. See <code>data/index/warnings.json</code>.</p><div class="table-wrap"><table><thead><tr><th>Table</th><th>Rows</th></tr></thead><tbody>${tableRows}</tbody></table></div></details>`;
+  <details class="source-details"><summary>Build and validation details</summary><p>${warnings.length} unresolved references were found. See <code>data/index/warnings.json</code>.</p><div class="table-wrap"><table><thead><tr><th>Table</th><th>Rows</th></tr></thead><tbody>${tableRows}</tbody></table></div></details>`;
 
   writePage(path.join(DIST_DIR, "index.html"), "Home", body);
-  writeRootIndexPage(path.join(DIST_DIR, "index.html"), path.join(ROOT, "index.html"));
+  writeRootIndexPage(ROOT_INDEX_FILE);
 }
 
 function renderMediaPanel(table, record, cache, media) {
@@ -2262,6 +2055,29 @@ function renderImageThumb(image, media) {
   const atlas = findAtlasSprite(media, image);
   if (!atlas) return "";
   return `<span class="thumb atlas-sprite" style="${escapeAttr(atlasStyle(atlas.frames[0], false))}" role="img" aria-label="${escapeAttr(image.fileName || atlas.label)}"></span>`;
+}
+
+function resolveCanvasImageAsset(imageKey, cache, media) {
+  if (!imageKey) return null;
+  const image = cache.Images?.[imageKey];
+  if (!image) return null;
+  const local = media.byGameFile.get(image.fileName);
+  if (local && isImageFile(image.fileName)) {
+    return { url: local.url, label: image.fileName || image.textureName || imageKey };
+  }
+  const atlas = findAtlasSprite(media, image);
+  const frame = atlas?.frames?.[0];
+  if (!frame) return null;
+  return {
+    url: frame.url,
+    x: frame.x,
+    y: frame.y,
+    width: frame.width,
+    height: frame.height,
+    atlasWidth: frame.atlasWidth,
+    atlasHeight: frame.atlasHeight,
+    label: atlas.label || image.fileName || image.textureName || imageKey
+  };
 }
 
 function mediaImageStatus(image, media) {
@@ -2950,86 +2766,6 @@ function parseAtlasXml(file) {
     });
   }
   return entries;
-}
-
-function writeAssets(searchEntries = [], media = {}) {
-  const mapBackground = media.atlasByName?.get("star_map") || null;
-  const css = `:root{color-scheme:dark;--bg:#0b1016;--panel:#121a23;--text:#e6edf3;--muted:#9fb0c0;--missing:#c8d1db;--line:#263545;--accent:#6ee7f9}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
-header{position:sticky;top:0;z-index:10;display:flex;gap:18px;align-items:center;padding:12px 20px;background:#0b1016ee;border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
-a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}.brand{font-weight:700;color:var(--text)}nav{display:flex;gap:14px;flex-wrap:wrap}
-main{max-width:1160px;margin:0 auto;padding:28px 20px 56px}h1{font-size:32px;margin:0 0 18px}h2{margin-top:32px;border-bottom:1px solid var(--line);padding-bottom:6px}
-.site-footer{border-top:1px solid var(--line);padding:18px 20px;color:var(--muted);text-align:center;background:#080d13}.site-footer p{margin:0}
-code{background:#17212b;border:1px solid var(--line);border-radius:4px;padding:1px 4px}.source-key{display:inline-block;margin-top:4px;opacity:.38;font-size:11px}.table-wrap{max-height:min(80vh,760px);overflow:auto;border:1px solid var(--line);border-radius:8px}table{width:100%;border-collapse:separate;border-spacing:0}th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#111b25;color:#fff}.table-wrap thead th{position:sticky;top:0;z-index:2}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:22px 0}.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px}.card strong{display:block;color:var(--text);font-size:18px}.card span,.listing span{display:block;color:var(--muted);font-size:12px}.missing-value{color:var(--missing)!important}.missing-value a,.missing-value code{color:var(--missing)!important}.stat-card strong.missing-value,.stat-card .missing-value{color:var(--missing)!important}
-.listing{padding-left:0;list-style:none;columns:2;column-gap:28px}.listing li{break-inside:avoid;padding:8px 0;border-bottom:1px solid var(--line)}
-canvas{width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:#071019}
-.site-search{position:relative;min-width:220px;flex:1;max-width:420px}.site-search input{width:100%;height:34px;border:1px solid var(--line);border-radius:6px;background:#111b25;color:var(--text);padding:0 10px}.search-results{position:absolute;top:40px;left:0;right:0;background:#101923;border:1px solid var(--line);border-radius:8px;box-shadow:0 16px 40px #0008;overflow:hidden}.search-results a{display:block;padding:9px 11px;border-bottom:1px solid var(--line);color:var(--text)}.search-results span{display:block;color:var(--muted);font-size:12px}
-.home-hero{display:flex;gap:22px;align-items:center;padding:28px;background:linear-gradient(90deg,#121a23,#0d141c);border:1px solid var(--line);border-radius:8px}.home-hero img{max-width:260px;width:32%;min-width:140px}.notice{padding:14px 16px;background:#14202b;border:1px solid var(--line);border-radius:8px;color:#d7e6f3}
-.media-panel{margin-bottom:26px}.media-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.media-card{margin:0;display:flex;flex-direction:column;gap:8px;justify-content:center;min-height:104px;padding:12px;background:var(--panel);border:1px solid var(--line);border-radius:8px}.media-card img{max-width:100%;max-height:160px;object-fit:contain}.media-card span,.media-card figcaption{color:var(--muted);font-size:12px}.media-card.missing{border-style:dashed}.media-label{color:var(--muted);text-transform:uppercase;font-size:11px}.atlas-card,.image-card{align-items:center}.atlas-sprite{display:block;background-repeat:no-repeat;image-rendering:auto;filter:drop-shadow(0 8px 12px #0008)}
-details.source-details{margin:18px 0;padding:8px 10px;border:1px solid var(--line);border-radius:8px;color:var(--muted);font-size:12px;opacity:.48}details.source-details:hover,details.source-details[open]{opacity:.9}details.source-details summary{cursor:pointer;color:var(--muted)}
-.entity-hero{display:grid;grid-template-columns:auto minmax(220px,1fr) minmax(260px,.75fr);gap:22px;align-items:center;margin-bottom:20px;padding:22px;background:#111a24;border:1px solid var(--line);border-radius:8px}.hero-visual .media-card{min-width:180px;min-height:170px;background:#0c131b}.hero-visual figcaption{max-width:220px;text-align:center}.hero-main h1{font-size:38px;line-height:1.05;margin-bottom:10px}.system-first{margin:0 0 22px}.system-title{display:flex;align-items:end;gap:12px;flex-wrap:wrap;margin-bottom:10px}.system-title h1{margin:0;font-size:36px;line-height:1}.system-map-wrap{position:relative}.system-map-card{margin:0}.system-map-card h2{margin-top:0}.map-legend{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;color:var(--muted);font-size:12px}.map-legend span{display:inline-flex;align-items:center;gap:5px}.legend-dot{width:10px;height:10px;border-radius:50%;display:inline-block}.eyebrow{margin:0 0 4px;color:var(--muted);text-transform:uppercase;font-size:12px;letter-spacing:0}.pill{display:inline-block;padding:3px 8px;border:1px solid var(--line);border-radius:999px;color:#d7e6f3;background:#172332}.button-link{display:inline-flex;align-items:center;min-height:34px;padding:6px 10px;border:1px solid var(--line);border-radius:6px;background:#162332;color:var(--text)}.steps{padding-left:22px}.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}.stat-grid.compact{min-width:360px}.stat-card{padding:10px 12px;background:var(--panel);border:1px solid var(--line);border-radius:8px}.stat-card span{display:block;color:var(--muted);font-size:12px}.stat-card strong{display:block;font-size:18px;color:#fff}.stat-card small{display:block;color:var(--muted)}.content-grid{display:grid;gap:18px}.link-list{padding-left:18px}.table-filter{width:100%;max-width:360px;height:32px;margin:0 0 8px;border:1px solid var(--line);border-radius:6px;background:#111b25;color:var(--text);padding:0 10px}.sortable th{cursor:pointer}.muted{color:var(--muted)}.thumb{width:36px;height:36px;object-fit:contain;margin-right:8px;vertical-align:middle}.thumb.atlas-sprite{display:inline-block}
-.name-cell .thumb,.name-cell .thumb.atlas-sprite{width:52px;height:52px}.tip{border-bottom:1px dotted #7fa7ba;cursor:help}.filter-panel,.map-controls,.calculator,.elite-calculator{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:12px 0 16px;padding:12px;background:#101923;border:1px solid var(--line);border-radius:8px}.filter-panel input,.filter-panel select,.map-controls input,.map-controls select,.calculator input,.calculator select,.elite-calculator input{height:32px;border:1px solid var(--line);border-radius:6px;background:#0c131b;color:var(--text);padding:0 9px}.filter-panel label,.calculator label,.elite-calculator label{display:inline-flex;gap:6px;align-items:center;color:var(--muted)}.filter-panel input[type=search]{min-width:260px}.check input{height:auto}.calculator output,.elite-calculator output,.map-readout{display:block;min-height:32px;padding:7px 10px;background:#0c131b;border:1px solid var(--line);border-radius:6px;color:#d7e6f3}.map-section{margin:24px 0}.map-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start}.map-head h2{margin-top:0}.map-section canvas{background:#03070d}.map-readout{margin-top:8px}.map-toolbar{display:inline-flex;gap:6px;flex-wrap:wrap;align-items:center}.map-toolbar button{height:32px;min-width:36px;padding:0 10px;border:1px solid var(--line);border-radius:6px;background:#162332;color:#d7e6f3;cursor:pointer}.map-toolbar button:hover{background:#1b2c41}.source-rank{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;padding:0;list-style:none}.source-rank li{padding:10px 12px;background:var(--panel);border:1px solid var(--line);border-radius:8px}.source-rank strong,.source-rank span,.source-rank small{display:block}.source-rank small{color:var(--muted)}
-.boss-layered-preview{position:relative;max-width:100%;overflow:hidden;margin:12px auto 4px;background:radial-gradient(circle at center,#132030 0,#071019 68%);border:1px solid var(--line);border-radius:8px}.boss-layer{position:absolute;display:block;animation:boss-layer-drift 3.6s ease-in-out infinite alternate;will-change:transform}.boss-layer-sprite{display:block;background-repeat:no-repeat;image-rendering:auto;filter:drop-shadow(0 10px 14px #0009);transform:rotate(var(--base-rot,0deg));transform-origin:center}.boss-layer-sprite.spinning{animation:boss-layer-spin linear infinite}.boss-layer-sprite.dead-state{filter:drop-shadow(0 10px 14px #0009) saturate(.82)}.boss-layer-sprite.hidden-start{opacity:.78}.boss-mini-preview,.boss-card-preview{position:relative;display:inline-block;vertical-align:middle;overflow:hidden;background:radial-gradient(circle at center,#132030 0,#071019 70%);border:1px solid var(--line);border-radius:6px}.boss-mini-preview{margin-right:8px}.boss-card-preview{margin:auto}.boss-mini-layer{position:absolute;display:block}.boss-mini-sprite{display:block;background-repeat:no-repeat;image-rendering:auto;filter:drop-shadow(0 4px 7px #0009);transform:rotate(var(--base-rot,0deg));transform-origin:center}.boss-assembled-card{align-items:center}.boss-assembled-card figcaption{text-align:center}@keyframes boss-layer-drift{from{transform:translate3d(var(--drift-x-neg),var(--drift-y-neg),0)}to{transform:translate3d(var(--drift-x),var(--drift-y),0)}}@keyframes boss-layer-spin{from{transform:rotate(var(--base-rot,0deg))}to{transform:rotate(calc(var(--base-rot,0deg) + var(--spin,360deg)))}}
-.boss-sprite-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}.boss-part{display:grid;gap:8px;align-content:start;padding:10px;background:#101923;border:1px solid var(--line);border-radius:8px}.boss-part .media-card{min-height:120px;background:#0a1118}.boss-part dl{display:grid;grid-template-columns:auto 1fr;gap:2px 8px;margin:0;color:var(--muted);font-size:12px}.boss-part dd{margin:0;color:#d7e6f3}
-.status-pill{display:inline-block;padding:2px 7px;border:1px solid var(--line);border-radius:999px;background:#172332;color:#d7e6f3;font-size:12px}.status-destroyed{border-color:#9a3a2f;background:#3a1818;color:#ffd6c9}.status-accessible{border-color:#315f44;background:#12251a;color:#b8f7c6}.status-hidden{opacity:.65}.system-map-wrap{position:relative;display:grid;gap:8px}.system-map-wrap canvas,.map-section canvas{background:#06101a;touch-action:none;cursor:grab}.system-map-wrap canvas:active,.map-section canvas:active{cursor:grabbing}.map-tooltip{position:absolute;min-width:180px;max-width:min(320px,calc(100% - 24px));padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:rgba(8,16,26,.96);box-shadow:0 10px 24px rgba(0,0,0,.35);color:#e6edf3;font-size:12px;line-height:1.35;white-space:pre-line;pointer-events:none;display:none;z-index:2}.boss-layer-sprite,.boss-mini-sprite{transform:rotate(var(--base-rot,0deg)) scaleX(var(--mirror,1))}@keyframes boss-layer-spin{from{transform:rotate(var(--base-rot,0deg)) scaleX(var(--mirror,1))}to{transform:rotate(calc(var(--base-rot,0deg) + var(--spin,360deg))) scaleX(var(--mirror,1))}}
-@media(max-width:900px){.entity-hero{grid-template-columns:1fr}.stat-grid.compact{min-width:0}.hero-main h1{font-size:32px}.hero-visual{justify-self:start}}@media(max-width:760px){header{align-items:flex-start;flex-direction:column}.site-search{width:100%;max-width:none}.listing{columns:1}.home-hero{flex-direction:column;align-items:flex-start}.home-hero img{width:70%}}`;
-  ensureDir(path.join(DIST_DIR, "assets"));
-  fs.writeFileSync(path.join(DIST_DIR, "assets", "favicon.ico"), Buffer.from("AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "base64"));
-  fs.writeFileSync(path.join(DIST_DIR, "assets", "site.css"), css, "utf8");
-
-  const js = `const SEARCH_INDEX=${JSON.stringify(searchEntries)};
-const MAP_BACKGROUND=${JSON.stringify(mapBackground)};
-const input=document.getElementById("search-input");
-const results=document.getElementById("search-results");
-const esc=s=>String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
-const tableRank={Guides:0,Commodities:1,Weapons:2,ArtifactTypes:3,"Unique Artifacts":3,Enemies:4,Bosses:5,Stations:6,Bodies:6,SolarSystems:7,Drops:8};
-function markMissingValues(root=document){for(const el of root.querySelectorAll('span,strong,small,td,th,dd,li,p,option,code')){if(el.children.length)continue;const text=el.textContent.trim();if(!text)continue;if(/^(n\\/a|unknown)$/i.test(text)||/^(not found|missing)$/i.test(text)||/^no direct .* client data$/i.test(text)||/^artifact roll not exposed$/i.test(text)){el.classList.add('missing-value');}}}
-function coordinateLabel(value){const num=Number(value);if(!Number.isFinite(num))return value===null||value===undefined||value===''?'n/a':String(value);return (num*0.025).toFixed(3).replace(/\.?0+$/,'');}
-function searchScore(item,q){
-  const name=String(item.name||"").toLowerCase();
-  const table=String(item.table||"").toLowerCase();
-  const type=String(item.type||"").toLowerCase();
-  if(name===q)return 0;
-  if(name.startsWith(q))return 1;
-  if(name.split(/\\s+/).some(part=>part.startsWith(q)))return 2;
-  if(name.includes(q))return 3;
-  if(table.includes(q))return 4;
-  if(type.includes(q))return 5;
-  return 99;
-}
-if(input&&results){input.addEventListener("input",()=>{const q=input.value.trim().toLowerCase();if(q.length<2){results.hidden=true;results.innerHTML="";return;}const hits=SEARCH_INDEX.map(x=>({x,score:searchScore(x,q)})).filter(item=>item.score<99).sort((a,b)=>a.score-b.score||(tableRank[a.x.table]??20)-(tableRank[b.x.table]??20)||a.x.name.localeCompare(b.x.name,navigator.language||'en',{numeric:true})).slice(0,10).map(item=>item.x);results.innerHTML=hits.map(x=>'<a href="'+x.url+'"><strong>'+esc(x.name)+'</strong><span>'+esc(x.table)+(x.type?' / '+esc(x.type):'')+'</span></a>').join("");results.hidden=hits.length===0;});document.addEventListener("click",e=>{if(!e.target.closest(".site-search"))results.hidden=true;});}
-document.addEventListener("DOMContentLoaded",()=>markMissingValues(document.body));
-for(const table of document.querySelectorAll('table.sortable')){for(const th of table.querySelectorAll('th')){th.tabIndex=0;th.addEventListener('click',()=>sortTable(table,[...th.parentNode.children].indexOf(th)));th.addEventListener('keydown',e=>{if(e.key==='Enter')sortTable(table,[...th.parentNode.children].indexOf(th));});}}
-function sortTable(table,col){const body=table.tBodies[0];const rows=[...body.rows];const asc=table.dataset.sortCol!=col||table.dataset.sortDir==='desc';rows.sort((a,b)=>a.cells[col].innerText.localeCompare(b.cells[col].innerText,navigator.language||'en',{numeric:true}));if(!asc)rows.reverse();table.dataset.sortCol=col;table.dataset.sortDir=asc?'asc':'desc';rows.forEach(r=>body.appendChild(r));}
-for(const filter of document.querySelectorAll('.table-filter')){const table=filter.nextElementSibling?.querySelector('table');if(!table)continue;filter.addEventListener('input',()=>{const q=filter.value.toLowerCase();for(const row of table.tBodies[0].rows){row.hidden=!row.innerText.toLowerCase().includes(q);}});}
-for(const sprite of document.querySelectorAll('.atlas-sprite[data-frames]')){let frames=[];try{frames=JSON.parse(sprite.dataset.frames)}catch{}if(frames.length<2)continue;let i=0;setInterval(()=>{i=(i+1)%frames.length;sprite.setAttribute('style',frames[i].style);sprite.setAttribute('aria-label',frames[i].name);},180);}
-for(const panel of document.querySelectorAll('.filter-panel[data-table-filter]')){const table=document.getElementById(panel.dataset.tableFilter);if(!table||!table.tBodies[0])continue;const controls=[...panel.querySelectorAll('input,select')];const apply=()=>{for(const row of table.tBodies[0].rows){let ok=true;for(const control of controls){if(control.type==='checkbox'&&control.dataset.filterFlag){if(control.checked&&row.dataset[control.dataset.filterFlag]!=='1')ok=false;continue;}const value=String(control.value||'').trim().toLowerCase();if(!value)continue;if('filterText' in control.dataset){const text=(row.dataset.search||row.innerText).toLowerCase();if(!text.includes(value))ok=false;}if(control.dataset.filterAttr){if(String(row.dataset[control.dataset.filterAttr]||'').toLowerCase()!==value)ok=false;}if(control.dataset.filterContains){if(!String(row.dataset[control.dataset.filterContains]||'').toLowerCase().includes(value))ok=false;}if(control.dataset.filterMin){if(Number(row.dataset[control.dataset.filterMin]||0)<Number(value))ok=false;}if(control.dataset.filterMax){if(Number(row.dataset[control.dataset.filterMax]||0)>Number(value))ok=false;}if(control.dataset.filterBetween){const min=Number(row.dataset[control.dataset.filterBetween+'Min']||0);const max=Number(row.dataset[control.dataset.filterBetween+'Max']||0);const n=Number(value);if(n<min||n>max)ok=false;}if(control.dataset.filterRangeMin){const base=control.dataset.filterRangeMin;const minRaw=row.dataset[base+'Min'];const maxRaw=row.dataset[base+'Max'];const n=Number(value);if(minRaw===''||maxRaw===''||Number(maxRaw)<n)ok=false;}if(control.dataset.filterRangeMax){const base=control.dataset.filterRangeMax;const minRaw=row.dataset[base+'Min'];const maxRaw=row.dataset[base+'Max'];const n=Number(value);if(minRaw===''||maxRaw===''||Number(minRaw)>n)ok=false;}}row.hidden=!ok;}};controls.forEach(c=>c.addEventListener('input',apply));controls.forEach(c=>c.addEventListener('change',apply));}
-for(const box of document.querySelectorAll('.elite-calculator')){const from=box.querySelector('.elite-from');const to=box.querySelector('.elite-to');const out=box.querySelector('.elite-result');const cost=(lvl,total)=>Math.round(Math.pow(1.025,lvl-1)/432.548654*total);const sum=(a,b,total)=>{let s=0;for(let i=Math.max(1,a);i<=Math.min(100,b);i++)s+=cost(i,total);return s;};const fmt=n=>Number(n||0).toLocaleString('en-US');const update=()=>{const a=Number(from.value)+1;const b=Number(to.value);if(!out)return;if(b<a){out.textContent='Choose a target above the current level.';return;}out.textContent='Cost '+fmt(sum(a,b,3200000))+' primary, '+fmt(sum(a,b,540000))+' secondary, or '+fmt(sum(a,b,12000))+' Flux.';};from?.addEventListener('input',update);to?.addEventListener('input',update);update();}
-for(const calc of document.querySelectorAll('#artifact-calculator')){let data=[];try{data=JSON.parse(calc.dataset.artifacts||'[]')}catch{}const target=calc.querySelector('#artifact-target');const level=calc.querySelector('#artifact-level');const drop=calc.querySelector('#artifact-drop-chance');const attempts=calc.querySelector('#artifact-attempts');const out=calc.querySelector('#artifact-result');const update=()=>{const targetKey=target?.value||'';const selected=targetKey?data.find(x=>x.key===targetKey):null;if(!out)return;if(!selected){out.textContent='Choose an artifact to estimate odds.';return;}const lvl=Number(level?.value||1);const eligible=data.filter(x=>lvl>=Number(x.minLevel||1)&&lvl<=Number(x.maxLevel||150));const total=eligible.reduce((s,x)=>s+Number(x.dropRate||0),0);const hit=eligible.find(x=>x.key===selected.key);const typeChance=total&&hit?Number(hit.dropRate||0)/total:0;const perTry=typeChance*(Number(drop?.value||0)/100);const tries=Math.max(1,Number(attempts?.value||1));const chance=1-Math.pow(1-perTry,tries);out.textContent=selected.name+': '+(100*typeChance).toFixed(2)+'% of eligible artifact rolls, '+(100*chance).toFixed(2)+'% after '+tries+' attempts.';};[target,level,drop,attempts].forEach(x=>x?.addEventListener('input',update));[target,level,drop,attempts].forEach(x=>x?.addEventListener('change',update));update();}
-function initGalaxyMap(id,systems,warpPaths,routes){const canvas=document.getElementById(id);if(!canvas)return;const ctx=canvas.getContext('2d');const controls=document.querySelector('[data-map-controls="'+id+'"]');const search=controls?.querySelector('input[type=search]');const galaxy=controls?.querySelector('select');const pathsToggle=controls?.querySelector('input[type=checkbox]');const readout=document.getElementById(id+'-readout');const bg=new Image();bg.src=MAP_BACKGROUND?.url||'/assets/source-images/background.jpg';const xs=systems.map(s=>Number(s.x||0));const ys=systems.map(s=>Number(s.y||0));const minX=Math.min(...xs),maxX=Math.max(...xs),minY=Math.min(...ys),maxY=Math.max(...ys);const color=g=>{let h=0;for(const c of String(g||''))h=(h*31+c.charCodeAt(0))%360;return 'hsl('+h+' 78% 66%)';};const scale=(v,min,max,size)=>max===min?size/2:70+((v-min)/(max-min))*(size-140);let points=[];let pointByKey=new Map();function pathEnds(path){return{a:path.solarSystem1||path.stats?.solarSystem1,b:path.solarSystem2||path.stats?.solarSystem2,transit:Boolean(path.transit||path.stats?.transit),name:path.name||path.stats?.name||''};}function drawBackground(){const grad=ctx.createLinearGradient(0,0,canvas.width,canvas.height);grad.addColorStop(0,'#02060b');grad.addColorStop(.48,'#081522');grad.addColorStop(1,'#02050a');ctx.fillStyle=grad;ctx.fillRect(0,0,canvas.width,canvas.height);if(bg.complete&&bg.naturalWidth){ctx.save();ctx.globalAlpha=(MAP_BACKGROUND&&MAP_BACKGROUND.url&&MAP_BACKGROUND.url.includes('texture_gui')) ? .92 : .36;if(MAP_BACKGROUND&&Number.isFinite(MAP_BACKGROUND.x)){ctx.drawImage(bg,MAP_BACKGROUND.x,MAP_BACKGROUND.y,MAP_BACKGROUND.width,MAP_BACKGROUND.height,0,0,canvas.width,canvas.height);}else{ctx.drawImage(bg,0,0,canvas.width,canvas.height);}ctx.restore();}ctx.fillStyle='rgba(1,5,10,.38)';ctx.fillRect(0,0,canvas.width,canvas.height);for(let i=0;i<170;i++){const x=(i*97+53)%canvas.width;const y=(i*193+29)%canvas.height;const r=i%17===0?1.6:i%5===0?1.1:.7;ctx.globalAlpha=.18+(i%7)*.045;ctx.fillStyle=i%9===0?'#b7efff':'#ffffff';ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();}ctx.globalAlpha=1;}function visibleSystems(){const q=(search?.value||'').trim().toLowerCase();const g=galaxy?.value||'';const base=systems.filter(s=>(!g||s.galaxy===g));if(!q)return base.map(s=>({s,match:false,neighbor:false}));const matched=new Set(base.filter(s=>String(s.name||'').toLowerCase().includes(q)).map(s=>s.key));const linked=new Set(matched);for(const path of warpPaths){const ends=pathEnds(path);if(matched.has(ends.a))linked.add(ends.b);if(matched.has(ends.b))linked.add(ends.a);}return base.filter(s=>linked.has(s.key)).map(s=>({s,match:matched.has(s.key),neighbor:!matched.has(s.key)}));}function drawPath(a,b,transit,selected){const dx=b.x-a.x,dy=b.y-a.y,len=Math.max(1,Math.hypot(dx,dy));const sx=a.x+dx/len*(a.r+3),sy=a.y+dy/len*(a.r+3);const ex=b.x-dx/len*(b.r+3),ey=b.y-dy/len*(b.r+3);ctx.strokeStyle=selected?'rgba(255,255,255,.72)':transit?'rgba(110,231,249,.5)':'rgba(255,180,84,.38)';ctx.lineWidth=transit?2.2:1.4;ctx.beginPath();ctx.moveTo(sx,sy);ctx.lineTo(ex,ey);ctx.stroke();if(transit){const angle=Math.atan2(dy,dx);for(const t of [.22,.78]){const x=sx+(ex-sx)*t,y=sy+(ey-sy)*t;ctx.save();ctx.translate(x,y);ctx.rotate(angle);ctx.fillStyle='rgba(110,231,249,.75)';ctx.beginPath();ctx.moveTo(7,0);ctx.lineTo(-5,-4);ctx.lineTo(-5,4);ctx.closePath();ctx.fill();ctx.restore();}}}function draw(){const q=(search?.value||'').trim().toLowerCase();drawBackground();const display=visibleSystems();points=display.map(item=>({s:item.s,match:item.match,neighbor:item.neighbor,x:scale(Number(item.s.x||0),minX,maxX,canvas.width),y:scale(Number(item.s.y||0),minY,maxY,canvas.height),r:Math.max(5,Math.min(14,Number(item.s.size||7)))}));pointByKey=new Map(points.map(p=>[p.s.key,p]));if(pathsToggle?.checked!==false){for(const path of warpPaths){const ends=pathEnds(path);const a=pointByKey.get(ends.a);const b=pointByKey.get(ends.b);if(!a||!b)continue;if(q&&!(a.match||b.match))continue;drawPath(a,b,ends.transit,q&&(a.match||b.match));}}for(const p of points){const systemColor=p.s.type&&String(p.s.type).includes('pvp')?'#ffb454':color(p.s.galaxy);ctx.globalAlpha=p.neighbor ? .72 : 1;ctx.beginPath();ctx.fillStyle=systemColor;ctx.shadowColor=systemColor;ctx.shadowBlur=p.match?18:10;ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill();if(p.match){ctx.lineWidth=2;ctx.strokeStyle='#fff';ctx.stroke();}ctx.shadowBlur=0;ctx.globalAlpha=1;ctx.fillStyle='#e6edf3';ctx.font=(p.match?'600 ':'')+'13px system-ui';if(canvas.width>800||p.r>8)ctx.fillText(p.s.name,p.x+p.r+5,p.y+4);}}function pick(e){const box=canvas.getBoundingClientRect();const mx=(e.clientX-box.left)*canvas.width/box.width;const my=(e.clientY-box.top)*canvas.height/box.height;return points.find(p=>Math.hypot(mx-p.x,my-p.y)<=p.r+7);}canvas.addEventListener('mousemove',e=>{const hit=pick(e);canvas.style.cursor=hit?'pointer':'default';if(readout){if(hit){const links=(hit.s.links||[]).slice(0,5).map(x=>x.name).join(', ');readout.textContent=hit.s.name+' / '+(hit.s.galaxy||'Unknown galaxy')+' / '+(hit.s.type||'regular')+' / coords '+hit.s.x+', '+hit.s.y+(links?' / links: '+links:'');}else{readout.textContent='Hover a system to inspect level range, galaxy, coordinates, and connected systems.';}}});canvas.addEventListener('click',e=>{const hit=pick(e);if(hit&&routes[hit.s.key])location.href=routes[hit.s.key];});[search,galaxy,pathsToggle].forEach(x=>x?.addEventListener('input',draw));[search,galaxy,pathsToggle].forEach(x=>x?.addEventListener('change',draw));bg.onload=draw;draw();}
-function initGalaxyMapStatus(id,systems,warpPaths,routes){const canvas=document.getElementById(id);if(!canvas)return;const ctx=canvas.getContext('2d');const controls=document.querySelector('[data-map-controls="'+id+'"]');const search=controls?.querySelector('input[type=search]');const galaxy=controls?.querySelector('select');const pathsToggle=controls?.querySelector('input[type=checkbox]');const readout=document.getElementById(id+'-readout');const bg=new Image();bg.src=MAP_BACKGROUND?.url||'/assets/source-images/background.jpg';const xs=systems.map(s=>Number(s.x||0));const ys=systems.map(s=>Number(s.y||0));const minX=Math.min(...xs),maxX=Math.max(...xs),minY=Math.min(...ys),maxY=Math.max(...ys);const scale=(v,min,max,size)=>max===min?size/2:70+((v-min)/(max-min))*(size-140);const color=g=>{let h=0;for(const c of String(g||''))h=(h*31+c.charCodeAt(0))%360;return 'hsl('+h+' 78% 66%)';};let points=[];function pathEnds(path){return{a:path.solarSystem1||path.stats?.solarSystem1,b:path.solarSystem2||path.stats?.solarSystem2,transit:Boolean(path.transit||path.stats?.transit)}}function background(){const grad=ctx.createLinearGradient(0,0,canvas.width,canvas.height);grad.addColorStop(0,'#02060b');grad.addColorStop(.5,'#081522');grad.addColorStop(1,'#02050a');ctx.fillStyle=grad;ctx.fillRect(0,0,canvas.width,canvas.height);if(bg.complete&&bg.naturalWidth){ctx.save();ctx.globalAlpha=(MAP_BACKGROUND&&MAP_BACKGROUND.url&&MAP_BACKGROUND.url.includes('texture_gui')) ? .9:.35;if(MAP_BACKGROUND&&Number.isFinite(MAP_BACKGROUND.x))ctx.drawImage(bg,MAP_BACKGROUND.x,MAP_BACKGROUND.y,MAP_BACKGROUND.width,MAP_BACKGROUND.height,0,0,canvas.width,canvas.height);else ctx.drawImage(bg,0,0,canvas.width,canvas.height);ctx.restore();}ctx.fillStyle='rgba(1,5,10,.42)';ctx.fillRect(0,0,canvas.width,canvas.height);for(let i=0;i<150;i++){ctx.globalAlpha=.18+(i%7)*.045;ctx.fillStyle=i%9===0?'#b7efff':'#fff';ctx.beginPath();ctx.arc((i*97+53)%canvas.width,(i*193+29)%canvas.height,i%17===0?1.6:.8,0,Math.PI*2);ctx.fill();}ctx.globalAlpha=1;}function visible(){const q=(search?.value||'').trim().toLowerCase();const g=galaxy?.value||'';const base=systems.filter(s=>!g||s.galaxy===g);if(!q)return base.map(s=>({s,match:false,neighbor:false}));const matched=new Set(base.filter(s=>String(s.name||'').toLowerCase().includes(q)).map(s=>s.key));const linked=new Set(matched);for(const path of warpPaths){const e=pathEnds(path);if(matched.has(e.a))linked.add(e.b);if(matched.has(e.b))linked.add(e.a);}return base.filter(s=>linked.has(s.key)).map(s=>({s,match:matched.has(s.key),neighbor:!matched.has(s.key)}));}function drawPath(a,b,transit,hot){const dx=b.x-a.x,dy=b.y-a.y,len=Math.max(1,Math.hypot(dx,dy));ctx.strokeStyle=hot?'rgba(255,255,255,.72)':transit?'rgba(110,231,249,.5)':'rgba(255,180,84,.36)';ctx.lineWidth=transit?2.2:1.3;ctx.beginPath();ctx.moveTo(a.x+dx/len*(a.r+3),a.y+dy/len*(a.r+3));ctx.lineTo(b.x-dx/len*(b.r+3),b.y-dy/len*(b.r+3));ctx.stroke();}function draw(){const q=(search?.value||'').trim().toLowerCase();background();points=visible().map(item=>({s:item.s,match:item.match,neighbor:item.neighbor,x:scale(Number(item.s.x||0),minX,maxX,canvas.width),y:scale(Number(item.s.y||0),minY,maxY,canvas.height),r:Math.max(5,Math.min(14,Number(item.s.size||7)))}));const byKey=new Map(points.map(p=>[p.s.key,p]));if(pathsToggle?.checked!==false){for(const path of warpPaths){const e=pathEnds(path),a=byKey.get(e.a),b=byKey.get(e.b);if(!a||!b)continue;if(q&&!(a.match||b.match))continue;drawPath(a,b,e.transit,q&&(a.match||b.match));}}for(const p of points){const destroyed=p.s.destroyed||p.s.statusKey==='destroyed';const fill=destroyed?'#ff6b52':p.s.type&&String(p.s.type).includes('pvp')?'#ffb454':color(p.s.galaxy);ctx.globalAlpha=p.neighbor?.valueOf()? .72:1;ctx.fillStyle=fill;ctx.shadowColor=fill;ctx.shadowBlur=p.match?18:10;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill();ctx.shadowBlur=0;if(destroyed){ctx.lineWidth=2;ctx.strokeStyle='#ffd166';ctx.beginPath();ctx.arc(p.x,p.y,p.r+5,0,Math.PI*2);ctx.stroke();ctx.beginPath();ctx.moveTo(p.x-p.r-5,p.y-p.r-5);ctx.lineTo(p.x+p.r+5,p.y+p.r+5);ctx.moveTo(p.x+p.r+5,p.y-p.r-5);ctx.lineTo(p.x-p.r-5,p.y+p.r+5);ctx.stroke();}else if(p.match){ctx.lineWidth=2;ctx.strokeStyle='#fff';ctx.stroke();}ctx.globalAlpha=1;ctx.fillStyle=destroyed?'#ffd6c9':'#e6edf3';ctx.font=(p.match?'600 ':'')+'13px system-ui';if(canvas.width>800||p.r>8)ctx.fillText(p.s.name,p.x+p.r+7,p.y+4);if(destroyed&&canvas.width>800){ctx.fillStyle='#ffb4a2';ctx.font='11px system-ui';ctx.fillText('Destroyed',p.x+p.r+7,p.y+18);}}}function pick(e){const box=canvas.getBoundingClientRect();const mx=(e.clientX-box.left)*canvas.width/box.width;const my=(e.clientY-box.top)*canvas.height/box.height;return points.find(p=>Math.hypot(mx-p.x,my-p.y)<=p.r+8);}canvas.addEventListener('mousemove',e=>{const hit=pick(e);canvas.style.cursor=hit?'pointer':'default';if(!readout)return;if(hit){const links=(hit.s.links||[]).slice(0,5).map(x=>x.name).join(', ');const status=hit.s.status?(' / '+hit.s.status+(hit.s.access?' - '+hit.s.access:'')):'';readout.textContent=hit.s.name+status+' / '+(hit.s.galaxy||'Unknown galaxy')+' / '+(hit.s.type||'regular')+' / coords '+hit.s.x+', '+hit.s.y+(links?' / links: '+links:'');}else readout.textContent='Hover a system to inspect level range, galaxy, coordinates, access status, and connected systems.';});canvas.addEventListener('click',e=>{const hit=pick(e);if(hit&&routes[hit.s.key])location.href=routes[hit.s.key];});[search,galaxy,pathsToggle].forEach(x=>x?.addEventListener('input',draw));[search,galaxy,pathsToggle].forEach(x=>x?.addEventListener('change',draw));bg.onload=draw;draw();}
-function initSystemMap(id,data){const canvas=document.getElementById(id);if(!canvas)return;const ctx=canvas.getContext('2d');const readout=document.getElementById(id+'-readout');const bodies=data.bodies||[],spawners=data.spawners||[],bosses=data.bosses||[];const all=[...bodies,...spawners,...bosses];const xs=all.map(x=>Number(x.x||0)),ys=all.map(x=>Number(x.y||0));const minX=Math.min(...xs),maxX=Math.max(...xs),minY=Math.min(...ys),maxY=Math.max(...ys);const pad=54;const sx=x=>maxX===minX?canvas.width/2:pad+((x-minX)/(maxX-minX))*(canvas.width-pad*2);const sy=y=>maxY===minY?canvas.height/2:pad+((y-minY)/(maxY-minY))*(canvas.height-pad*2);const colors={sun:'#ffd166',planet:'#d7f5ff',warpGate:'#6ee7f9',research:'#ffb454',shop:'#7cc7ff','junk yard':'#c792ea',hangar:'#ff8fa3',cantina:'#a5d6a7',paintShop:'#ff74c7',warning:'#f7c948',hidden:'#8a9bad',boss:'#ff6b52'};let points=[];function draw(){ctx.fillStyle='#06101a';ctx.fillRect(0,0,canvas.width,canvas.height);const grad=ctx.createRadialGradient(canvas.width*.45,canvas.height*.42,20,canvas.width*.45,canvas.height*.42,canvas.width*.7);grad.addColorStop(0,'rgba(32,62,91,.55)');grad.addColorStop(1,'rgba(2,5,10,.08)');ctx.fillStyle=grad;ctx.fillRect(0,0,canvas.width,canvas.height);ctx.strokeStyle='rgba(110,231,249,.08)';ctx.lineWidth=1;for(let x=40;x<canvas.width;x+=60){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,canvas.height);ctx.stroke();}for(let y=40;y<canvas.height;y+=60){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(canvas.width,y);ctx.stroke();}for(const body of bodies.filter(b=>b.type==='warning'&&b.warningRadius)){const x=sx(body.x),y=sy(body.y);const scale=Math.min((canvas.width-pad*2)/Math.max(1,maxX-minX),(canvas.height-pad*2)/Math.max(1,maxY-minY));ctx.fillStyle='rgba(247,201,72,.10)';ctx.strokeStyle='rgba(247,201,72,.55)';ctx.lineWidth=2;ctx.beginPath();ctx.arc(x,y,Math.max(14,body.warningRadius*scale),0,Math.PI*2);ctx.fill();ctx.stroke();}points=[];for(const body of bodies){const x=sx(body.x),y=sy(body.y);const r=body.type==='sun'?9:body.station?7:body.type==='warning'?5:body.type==='hidden'?4:6;const fill=colors[body.type]||'#d7f5ff';ctx.fillStyle=fill;ctx.strokeStyle=body.station?'#fff':'rgba(255,255,255,.35)';ctx.lineWidth=body.station?1.5:1;ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();ctx.stroke();if(body.type==='boss'){ctx.strokeStyle='#ff6b52';ctx.beginPath();ctx.moveTo(x-7,y-7);ctx.lineTo(x+7,y+7);ctx.moveTo(x+7,y-7);ctx.lineTo(x-7,y+7);ctx.stroke();}if(body.station||body.type==='sun'||body.type==='boss'){ctx.fillStyle='#e6edf3';ctx.font='12px system-ui';ctx.fillText(body.name,x+r+5,y+4);}points.push({kind:'body',item:body,x,y,r:r+6,url:data.routes?.Bodies?.[body.key]});}for(const sp of spawners){const x=sx(sp.x),y=sy(sp.y);ctx.fillStyle=sp.bossSpawner?'#ff6b52':'#c792ea';ctx.strokeStyle=sp.hidden?'#8a9bad':'#fff';ctx.lineWidth=1.2;ctx.beginPath();ctx.rect(x-4,y-4,8,8);ctx.fill();ctx.stroke();points.push({kind:'spawner',item:sp,x,y,r:10,url:data.routes?.Spawners?.[sp.key]});}for(const boss of bosses){const x=sx(boss.x),y=sy(boss.y);ctx.strokeStyle='#ff6b52';ctx.lineWidth=2;ctx.beginPath();ctx.arc(x,y,13,0,Math.PI*2);ctx.stroke();points.push({kind:'boss',item:boss,x,y,r:14,url:data.routes?.Bosses?.[boss.key]});}}function pick(e){const box=canvas.getBoundingClientRect();const mx=(e.clientX-box.left)*canvas.width/box.width;const my=(e.clientY-box.top)*canvas.height/box.height;return points.find(p=>Math.hypot(mx-p.x,my-p.y)<=p.r);}canvas.addEventListener('mousemove',e=>{const p=pick(e);canvas.style.cursor=p?.url?'pointer':'default';if(!readout)return;if(!p){readout.textContent='Hover a marker to inspect location, spawner, boss, or elite-zone data.';return;}const item=p.item;if(p.kind==='spawner')readout.textContent='Spawner: '+item.name+' / '+(item.bodyName||'unknown body')+' / '+(item.enemyName||'no enemy')+' / drops: '+(item.drops||[]).join(', ');else if(p.kind==='boss')readout.textContent='Boss: '+item.name;else readout.textContent=item.name+' / '+item.type+' / level '+(item.level||'n/a')+' / coords '+coordinateLabel(item.x)+', '+coordinateLabel(item.y);});canvas.addEventListener('click',e=>{const p=pick(e);if(p?.url)location.href=p.url;});draw();}
-function initSystemMapReadable(id,data){const canvas=document.getElementById(id);if(!canvas)return;const ctx=canvas.getContext('2d');const readout=document.getElementById(id+'-readout');const bodies=data.bodies||[],spawners=data.spawners||[],bosses=data.bosses||[];const all=[...bodies,...spawners,...bosses];const xs=all.map(x=>Number(x.x||0)),ys=all.map(x=>Number(x.y||0));const minX=Math.min(...xs),maxX=Math.max(...xs),minY=Math.min(...ys),maxY=Math.max(...ys);const pad=70;const spanX=Math.max(1,maxX-minX),spanY=Math.max(1,maxY-minY);const scale=Math.min((canvas.width-pad*2)/spanX,(canvas.height-pad*2)/spanY);const sx=x=>canvas.width/2+(Number(x||0)-(minX+maxX)/2)*scale;const sy=y=>canvas.height/2+(Number(y||0)-(minY+maxY)/2)*scale;const bg=new Image();bg.src=MAP_BACKGROUND?.url||'/assets/source-images/background.jpg';const colors={sun:'#ffd166',planet:'#d7f5ff',warpGate:'#6ee7f9',research:'#ffb454',shop:'#7cc7ff','junk yard':'#c792ea',hangar:'#ff8fa3',cantina:'#a5d6a7',paintShop:'#ff74c7',warning:'#f7c948',hidden:'#8a9bad',boss:'#ff6b52'};let points=[];function markerRadius(body){if(body.type==='sun')return 13;if(body.station)return 10;if(body.type==='warning')return 5;if(body.hidden)return 4;return Math.max(5,Math.min(11,Math.sqrt(Number(body.radius||80))/2.8));}function background(){const grad=ctx.createRadialGradient(canvas.width*.48,canvas.height*.42,60,canvas.width*.5,canvas.height*.5,canvas.width*.75);grad.addColorStop(0,'#14263a');grad.addColorStop(.58,'#06101b');grad.addColorStop(1,'#02050a');ctx.fillStyle=grad;ctx.fillRect(0,0,canvas.width,canvas.height);if(bg.complete&&bg.naturalWidth){ctx.save();ctx.globalAlpha=(MAP_BACKGROUND&&MAP_BACKGROUND.url&&MAP_BACKGROUND.url.includes('texture_gui'))?.valueOf()?0.35:0.22;if(MAP_BACKGROUND&&Number.isFinite(MAP_BACKGROUND.x))ctx.drawImage(bg,MAP_BACKGROUND.x,MAP_BACKGROUND.y,MAP_BACKGROUND.width,MAP_BACKGROUND.height,0,0,canvas.width,canvas.height);else ctx.drawImage(bg,0,0,canvas.width,canvas.height);ctx.restore();}ctx.fillStyle='rgba(0,0,0,.3)';ctx.fillRect(0,0,canvas.width,canvas.height);for(let i=0;i<130;i++){ctx.globalAlpha=.15+(i%6)*.045;ctx.fillStyle=i%8?'#fff':'#b7efff';ctx.beginPath();ctx.arc((i*83+47)%canvas.width,(i*157+31)%canvas.height,i%19?0.75:1.6,0,Math.PI*2);ctx.fill();}ctx.globalAlpha=1;ctx.strokeStyle='rgba(110,231,249,.08)';ctx.lineWidth=1;for(let x=pad;x<canvas.width-pad;x+=90){ctx.beginPath();ctx.moveTo(x,pad*.55);ctx.lineTo(x,canvas.height-pad*.55);ctx.stroke();}for(let y=pad;y<canvas.height-pad;y+=90){ctx.beginPath();ctx.moveTo(pad*.55,y);ctx.lineTo(canvas.width-pad*.55,y);ctx.stroke();}}function drawOrbitLinks(){const byKey=new Map(bodies.map(b=>[b.key,b]));for(const body of bodies){if(!body.parent||!byKey.has(body.parent))continue;const parent=byKey.get(body.parent);const px=sx(parent.x),py=sy(parent.y),x=sx(body.x),y=sy(body.y);ctx.strokeStyle='rgba(180,210,230,.16)';ctx.lineWidth=1;ctx.beginPath();ctx.arc(px,py,Math.hypot(x-px,y-py),0,Math.PI*2);ctx.stroke();ctx.strokeStyle='rgba(180,210,230,.12)';ctx.beginPath();ctx.moveTo(px,py);ctx.lineTo(x,y);ctx.stroke();}}function drawLabel(text,x,y,color='#e6edf3'){ctx.font='12px system-ui';ctx.fillStyle='rgba(0,0,0,.55)';ctx.fillRect(x+8,y-10,ctx.measureText(text).width+8,16);ctx.fillStyle=color;ctx.fillText(text,x+12,y+2);}function draw(){background();drawOrbitLinks();for(const body of bodies.filter(b=>b.type==='warning'&&b.warningRadius)){const x=sx(body.x),y=sy(body.y),r=Math.max(18,Number(body.warningRadius||0)*scale);ctx.fillStyle='rgba(247,201,72,.08)';ctx.strokeStyle='rgba(247,201,72,.62)';ctx.lineWidth=2;ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();ctx.stroke();}points=[];for(const body of bodies){const x=sx(body.x),y=sy(body.y),r=markerRadius(body),fill=colors[body.type]||'#d7f5ff';ctx.shadowColor=fill;ctx.shadowBlur=body.station||body.type==='sun'?12:5;ctx.fillStyle=fill;ctx.strokeStyle=body.station?'#fff':'rgba(255,255,255,.45)';ctx.lineWidth=body.station?1.7:1;if(body.station){ctx.beginPath();ctx.moveTo(x,y-r);ctx.lineTo(x+r,y);ctx.lineTo(x,y+r);ctx.lineTo(x-r,y);ctx.closePath();ctx.fill();ctx.stroke();}else{ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();ctx.stroke();}ctx.shadowBlur=0;if(body.type==='boss'){ctx.strokeStyle='#ff6b52';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(x-8,y-8);ctx.lineTo(x+8,y+8);ctx.moveTo(x+8,y-8);ctx.lineTo(x-8,y+8);ctx.stroke();}if(body.station||body.type==='sun'||body.type==='boss')drawLabel(body.name,x+r,y,body.type==='boss'?'#ffd6c9':'#e6edf3');points.push({kind:'body',item:body,x,y,r:r+8,url:data.routes?.Bodies?.[body.key]});}for(const sp of spawners){const x=sx(sp.x),y=sy(sp.y);ctx.fillStyle=sp.bossSpawner?'#ff6b52':'#c792ea';ctx.strokeStyle=sp.hidden?'#8a9bad':'#fff';ctx.lineWidth=1.2;ctx.beginPath();ctx.rect(x-5,y-5,10,10);ctx.fill();ctx.stroke();points.push({kind:'spawner',item:sp,x,y,r:12,url:data.routes?.Spawners?.[sp.key]});}for(const boss of bosses){const x=sx(boss.x),y=sy(boss.y);ctx.strokeStyle='#ff6b52';ctx.lineWidth=2.4;ctx.beginPath();ctx.arc(x,y,16,0,Math.PI*2);ctx.stroke();drawLabel(boss.name,x+13,y+14,'#ffd6c9');points.push({kind:'boss',item:boss,x,y,r:17,url:data.routes?.Bosses?.[boss.key]});}}function pick(e){const box=canvas.getBoundingClientRect();const mx=(e.clientX-box.left)*canvas.width/box.width;const my=(e.clientY-box.top)*canvas.height/box.height;return points.find(p=>Math.hypot(mx-p.x,my-p.y)<=p.r);}canvas.addEventListener('mousemove',e=>{const p=pick(e);canvas.style.cursor=p?.url?'pointer':'default';if(!readout)return;if(!p){readout.textContent='Hover a marker to inspect location, spawner, boss, or elite-zone data.';return;}const item=p.item;if(p.kind==='spawner')readout.textContent='Spawner: '+item.name+' / '+(item.bodyName||'unknown body')+' / '+(item.enemyName||'no enemy')+' / drops: '+(item.drops||[]).join(', ');else if(p.kind==='boss')readout.textContent='Boss: '+item.name;else readout.textContent=item.name+' / '+item.type+' / level '+(item.level||'n/a')+' / coords '+coordinateLabel(item.x)+', '+coordinateLabel(item.y)+(item.parent?' / orbiting another body':'');});canvas.addEventListener('click',e=>{const p=pick(e);if(p?.url)location.href=p.url;});bg.onload=draw;draw();}
-function installMapNavigation(canvas, options){const ctx=canvas.getContext('2d');const state={scale:options.scale,offsetX:options.offsetX,offsetY:options.offsetY,initialScale:options.scale,initialOffsetX:options.offsetX,initialOffsetY:options.offsetY,dragging:false,dragStartX:0,dragStartY:0,dragOffsetX:0,dragOffsetY:0};const clampScale=(value)=>Math.max(options.minScale??.35,Math.min(options.maxScale??4,value));const toScreen=(x,y)=>({x:Number(x||0)*state.scale+state.offsetX,y:Number(y||0)*state.scale+state.offsetY});const toWorld=(x,y)=>({x:(x-state.offsetX)/state.scale,y:(y-state.offsetY)/state.scale});const boxPoint=(event)=>{const box=canvas.getBoundingClientRect();return{x:(event.clientX-box.left)*canvas.width/box.width,y:(event.clientY-box.top)*canvas.height/box.height,box};};const showTooltip=(event,text)=>{if(!options.tooltip)return;options.tooltip.textContent=text;const wrap=canvas.parentElement?.getBoundingClientRect();if(!wrap)return;const x=event.clientX-wrap.left;const y=event.clientY-wrap.top;options.tooltip.style.left=Math.max(12,Math.min(wrap.width-12,x+16))+'px';options.tooltip.style.top=Math.max(12,Math.min(wrap.height-12,y+16))+'px';options.tooltip.style.display='block';};const hideTooltip=()=>{if(!options.tooltip)return;options.tooltip.style.display='none';options.tooltip.textContent='';};let points=[];const redraw=()=>{points=options.getPoints({state,toScreen,toWorld});options.drawScene({ctx,canvas,state,points,toScreen,toWorld});};const pick=(event)=>{const {x,y}=boxPoint(event);return points.find(p=>Math.hypot(x-p.x,y-p.y)<=p.r);};const zoomAt=(event,factor)=>{const {x,y}=boxPoint(event);const world=toWorld(x,y);const nextScale=clampScale(state.scale*factor);state.offsetX=x-world.x*nextScale;state.offsetY=y-world.y*nextScale;state.scale=nextScale;};const resetView=()=>{state.scale=clampScale(state.initialScale);state.offsetX=state.initialOffsetX;state.offsetY=state.initialOffsetY;redraw();};const startDrag=(event)=>{state.dragging=true;if(canvas.setPointerCapture)canvas.setPointerCapture(event.pointerId);const {x,y}=boxPoint(event);state.dragStartX=x;state.dragStartY=y;state.dragOffsetX=state.offsetX;state.dragOffsetY=state.offsetY;canvas.style.cursor='grabbing';hideTooltip();};const moveDrag=(event)=>{if(!state.dragging)return;const {x,y}=boxPoint(event);state.offsetX=state.dragOffsetX+(x-state.dragStartX);state.offsetY=state.dragOffsetY+(y-state.dragStartY);redraw();};const stopDrag=(event)=>{state.dragging=false;if(canvas.releasePointerCapture)canvas.releasePointerCapture(event.pointerId);canvas.style.cursor='grab';};const zoomMap=(factor)=>{const centerX=canvas.width/2;const centerY=canvas.height/2;const world=toWorld(centerX,centerY);const nextScale=clampScale(state.scale*factor);state.scale=nextScale;state.offsetX=centerX-world.x*nextScale;state.offsetY=centerY-world.y*nextScale;redraw();};const toolbarButtons=canvas.parentElement?.querySelectorAll('[data-map-action]');toolbarButtons?.forEach((button)=>button.addEventListener('click',()=>{const action=button.dataset.mapAction;if(action==='zoom-in')zoomMap(1.2);else if(action==='zoom-out')zoomMap(1/1.2);else if(action==='zoom-reset')resetView();}));canvas.addEventListener('mousemove',event=>{if(state.dragging){moveDrag(event);return;}const hit=pick(event);canvas.style.cursor=hit?'pointer':'grab';if(options.readout)options.readout.textContent=hit?options.describe(hit):options.idleText;if(hit)showTooltip(event,options.describe(hit));else hideTooltip();});canvas.addEventListener('mouseleave',()=>{if(!state.dragging)canvas.style.cursor='grab';hideTooltip();});canvas.addEventListener('pointerdown',startDrag);canvas.addEventListener('pointermove',moveDrag);canvas.addEventListener('pointerup',stopDrag);canvas.addEventListener('pointercancel',stopDrag);canvas.addEventListener('wheel',event=>{event.preventDefault();zoomAt(event,Math.exp(-event.deltaY*0.0015));redraw();},{passive:false});canvas.addEventListener('dblclick',event=>{event.preventDefault();resetView();});canvas.addEventListener('click',event=>{const hit=pick(event);if(hit&&options.onClick)options.onClick(hit);});redraw();return{redraw,resetView,state,clampScale};}
-
-function adjustMapZoom(map, canvas, factor) {
-  const state = map.state;
-  const centerX = canvas.width / 2;
-  const centerY = canvas.height / 2;
-  const worldX = (centerX - state.offsetX) / state.scale;
-  const worldY = (centerY - state.offsetY) / state.scale;
-  const nextScale = map.clampScale(state.scale * factor);
-  state.scale = nextScale;
-  state.offsetX = centerX - worldX * nextScale;
-  state.offsetY = centerY - worldY * nextScale;
-  map.redraw();
-}
-function initGalaxyMapZoomable(id,systems,warpPaths,routes){const canvas=document.getElementById(id);if(!canvas)return;const controls=document.querySelector('[data-map-controls="'+id+'"]');const search=controls?.querySelector('input[type=search]');const galaxy=controls?.querySelector('select');const pathsToggle=controls?.querySelector('input[type=checkbox]');const readout=document.getElementById(id+'-readout');const tooltip=document.getElementById(id+'-tooltip');const bg=new Image();bg.src=MAP_BACKGROUND?.url||'/assets/source-images/background.jpg';const xs=systems.map(s=>Number(s.x||0));const ys=systems.map(s=>Number(s.y||0));const minX=Math.min(...xs),maxX=Math.max(...xs),minY=Math.min(...ys),maxY=Math.max(...ys);const fitScale=Math.min((canvas.width-140)/Math.max(1,maxX-minX),(canvas.height-140)/Math.max(1,maxY-minY));const centerX=(minX+maxX)/2;const centerY=(minY+maxY)/2;const color=g=>{let h=0;for(const c of String(g||''))h=(h*31+c.charCodeAt(0))%360;return 'hsl('+h+' 78% 66%)';};let visibleSystems=[];function pathEnds(path){return{a:path.solarSystem1||path.stats?.solarSystem1,b:path.solarSystem2||path.stats?.solarSystem2,transit:Boolean(path.transit||path.stats?.transit),name:path.name||path.stats?.name||''};}function drawBackground(ctx,canvas){const grad=ctx.createLinearGradient(0,0,canvas.width,canvas.height);grad.addColorStop(0,'#02060b');grad.addColorStop(.48,'#081522');grad.addColorStop(1,'#02050a');ctx.fillStyle=grad;ctx.fillRect(0,0,canvas.width,canvas.height);if(bg.complete&&bg.naturalWidth){ctx.save();ctx.globalAlpha=(MAP_BACKGROUND&&MAP_BACKGROUND.url&&MAP_BACKGROUND.url.includes('texture_gui'))?.valueOf()?0.92:0.36;if(MAP_BACKGROUND&&Number.isFinite(MAP_BACKGROUND.x)){ctx.drawImage(bg,MAP_BACKGROUND.x,MAP_BACKGROUND.y,MAP_BACKGROUND.width,MAP_BACKGROUND.height,0,0,canvas.width,canvas.height);}else{ctx.drawImage(bg,0,0,canvas.width,canvas.height);}ctx.restore();}ctx.fillStyle='rgba(1,5,10,.38)';ctx.fillRect(0,0,canvas.width,canvas.height);for(let i=0;i<170;i++){const x=(i*97+53)%canvas.width;const y=(i*193+29)%canvas.height;const r=i%17===0?1.6:i%5===0?1.1:.7;ctx.globalAlpha=.18+(i%7)*.045;ctx.fillStyle=i%9===0?'#b7efff':'#ffffff';ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();}ctx.globalAlpha=1;}function filterSystems(){const q=(search?.value||'').trim().toLowerCase();const g=galaxy?.value||'';const base=systems.filter(s=>(!g||s.galaxy===g));if(!q)return base.map(s=>({s,match:false,neighbor:false}));const matched=new Set(base.filter(s=>String(s.name||'').toLowerCase().includes(q)).map(s=>s.key));const linked=new Set(matched);for(const path of warpPaths){const ends=pathEnds(path);if(matched.has(ends.a))linked.add(ends.b);if(matched.has(ends.b))linked.add(ends.a);}return base.filter(s=>linked.has(s.key)).map(s=>({s,match:matched.has(s.key),neighbor:!matched.has(s.key)}));}function drawPath(ctx,a,b,transit,selected){const dx=b.x-a.x,dy=b.y-a.y,len=Math.max(1,Math.hypot(dx,dy));const sx=a.x+dx/len*(a.r+3),sy=a.y+dy/len*(a.r+3);const ex=b.x-dx/len*(b.r+3),ey=b.y-dy/len*(b.r+3);ctx.strokeStyle=selected?'rgba(255,255,255,.72)':transit?'rgba(110,231,249,.5)':'rgba(255,180,84,.38)';ctx.lineWidth=transit?2.2:1.4;ctx.beginPath();ctx.moveTo(sx,sy);ctx.lineTo(ex,ey);ctx.stroke();if(transit){const angle=Math.atan2(dy,dx);for(const t of [.22,.78]){const x=sx+(ex-sx)*t,y=sy+(ey-sy)*t;ctx.save();ctx.translate(x,y);ctx.rotate(angle);ctx.fillStyle='rgba(110,231,249,.75)';ctx.beginPath();ctx.moveTo(7,0);ctx.lineTo(-5,-4);ctx.lineTo(-5,4);ctx.closePath();ctx.fill();ctx.restore();}}}const map=installMapNavigation(canvas,{scale:Math.max(.35,Math.min(4,fitScale)),offsetX:canvas.width/2-centerX*fitScale,offsetY:canvas.height/2-centerY*fitScale,minScale:.35,maxScale:4,readout,tooltip,idleText:'Hover a system to inspect level range, galaxy, coordinates, and connected systems.',getPoints:({state,toScreen})=>{visibleSystems=filterSystems();return visibleSystems.map(item=>{const pos=toScreen(Number(item.s.x||0),Number(item.s.y||0));const size=Math.max(5,Math.min(14,Number(item.s.size||7)));return{s:item.s,match:item.match,neighbor:item.neighbor,x:pos.x,y:pos.y,r:Math.max(4,size*state.scale)};});},drawScene:({ctx,canvas,points})=>{drawBackground(ctx,canvas);const byKey=new Map(points.map(p=>[p.s.key,p]));const q=(search?.value||'').trim().toLowerCase();if(pathsToggle?.checked!==false){for(const path of warpPaths){const ends=pathEnds(path);const a=byKey.get(ends.a);const b=byKey.get(ends.b);if(!a||!b)continue;if(q&&!(a.match||b.match))continue;drawPath(ctx,a,b,ends.transit,q&&(a.match||b.match));}}for(const p of points){const systemColor=p.s.type&&String(p.s.type).includes('pvp')?'#ffb454':color(p.s.galaxy);ctx.globalAlpha=p.neighbor?.valueOf()?0.72:1;ctx.beginPath();ctx.fillStyle=systemColor;ctx.shadowColor=systemColor;ctx.shadowBlur=p.match?18:10;ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill();if(p.match){ctx.lineWidth=2;ctx.strokeStyle='#fff';ctx.stroke();}ctx.shadowBlur=0;ctx.globalAlpha=1;ctx.fillStyle='#e6edf3';ctx.font=(p.match?'600 ':'')+'13px system-ui';if(canvas.width>800||p.r>8)ctx.fillText(p.s.name,p.x+p.r+5,p.y+4);}},describe:(hit)=>{const links=(hit.s.links||[]).slice(0,5).map(x=>x.name).join(', ');return hit.s.name+' / '+(hit.s.galaxy||'Unknown galaxy')+' / '+(hit.s.type||'regular')+' / coords '+hit.s.x+', '+hit.s.y+(hit.s.status?(' / '+hit.s.status+(hit.s.access?' - '+hit.s.access:'')): '')+(links?' / links: '+links:'');},onClick:(hit)=>{if(routes[hit.s.key])location.href=routes[hit.s.key];}});[search,galaxy,pathsToggle].forEach(x=>x?.addEventListener('input',map.redraw));[search,galaxy,pathsToggle].forEach(x=>x?.addEventListener('change',map.redraw));bg.onload=map.redraw;map.redraw();}
-window.initGalaxyMap=initGalaxyMapZoomable;
-function initSystemMapZoomable(id,data){const canvas=document.getElementById(id);if(!canvas)return;const readout=document.getElementById(id+'-readout');const tooltip=document.getElementById(id+'-tooltip');const bodies=data.bodies||[],spawners=data.spawners||[],bosses=data.bosses||[];const all=[...bodies,...spawners,...bosses];const xs=all.map(x=>Number(x.x||0)),ys=all.map(x=>Number(x.y||0));const minX=Math.min(...xs),maxX=Math.max(...xs),minY=Math.min(...ys),maxY=Math.max(...ys);const pad=70;const spanX=Math.max(1,maxX-minX),spanY=Math.max(1,maxY-minY);const fitScale=Math.min((canvas.width-pad*2)/spanX,(canvas.height-pad*2)/spanY);const centerX=(minX+maxX)/2;const centerY=(minY+maxY)/2;const bg=new Image();bg.src=MAP_BACKGROUND?.url||'/assets/source-images/background.jpg';const colors={sun:'#ffd166',planet:'#d7f5ff',warpGate:'#6ee7f9',research:'#ffb454',shop:'#7cc7ff','junk yard':'#c792ea',hangar:'#ff8fa3',cantina:'#a5d6a7',paintShop:'#ff74c7',warning:'#f7c948',hidden:'#8a9bad',boss:'#ff6b52'};let visiblePoints=[];const nav=installMapNavigation(canvas,{scale:Math.max(.35,Math.min(4,fitScale)),offsetX:canvas.width/2-centerX*fitScale,offsetY:canvas.height/2-centerY*fitScale,minScale:.35,maxScale:4,readout,tooltip,idleText:'Hover a marker to inspect location, spawner, boss, or elite-zone data.',getPoints:({state,toScreen})=>{const scaleBody=(body)=>{if(body.type==='sun')return 13;if(body.station)return 10;if(body.type==='warning')return 5;if(body.hidden)return 4;return Math.max(5,Math.min(11,Math.sqrt(Number(body.radius||80))/2.8));};visiblePoints=[];const byKey=new Map(bodies.map(body=>[body.key,body]));for(const body of bodies){const pos=toScreen(body.x,body.y);visiblePoints.push({kind:'body',item:body,x:pos.x,y:pos.y,r:scaleBody(body)*state.scale+8,url:data.routes?.Bodies?.[body.key]});}for(const sp of spawners){const pos=toScreen(sp.x,sp.y);visiblePoints.push({kind:'spawner',item:sp,x:pos.x,y:pos.y,r:10*state.scale+2,url:data.routes?.Spawners?.[sp.key]});}for(const boss of bosses){const pos=toScreen(boss.x,boss.y);visiblePoints.push({kind:'boss',item:boss,x:pos.x,y:pos.y,r:13*state.scale+4,url:data.routes?.Bosses?.[boss.key]});}return visiblePoints;},drawScene:({ctx,canvas,state,points,toScreen})=>{ctx.fillStyle='#06101a';ctx.fillRect(0,0,canvas.width,canvas.height);const grad=ctx.createRadialGradient(canvas.width*.48,canvas.height*.42,60,canvas.width*.5,canvas.height*.5,canvas.width*.75);grad.addColorStop(0,'#14263a');grad.addColorStop(.58,'#06101b');grad.addColorStop(1,'#02050a');ctx.fillStyle=grad;ctx.fillRect(0,0,canvas.width,canvas.height);if(bg.complete&&bg.naturalWidth){ctx.save();ctx.globalAlpha=(MAP_BACKGROUND&&MAP_BACKGROUND.url&&MAP_BACKGROUND.url.includes('texture_gui'))?.valueOf()?0.35:0.22;if(MAP_BACKGROUND&&Number.isFinite(MAP_BACKGROUND.x))ctx.drawImage(bg,MAP_BACKGROUND.x,MAP_BACKGROUND.y,MAP_BACKGROUND.width,MAP_BACKGROUND.height,0,0,canvas.width,canvas.height);else ctx.drawImage(bg,0,0,canvas.width,canvas.height);ctx.restore();}ctx.fillStyle='rgba(0,0,0,.3)';ctx.fillRect(0,0,canvas.width,canvas.height);for(let i=0;i<130;i++){ctx.globalAlpha=.15+(i%6)*.045;ctx.fillStyle=i%8?'#fff':'#b7efff';ctx.beginPath();ctx.arc((i*83+47)%canvas.width,(i*157+31)%canvas.height,i%19?0.75:1.6,0,Math.PI*2);ctx.fill();}ctx.globalAlpha=1;ctx.strokeStyle='rgba(110,231,249,.08)';ctx.lineWidth=1;for(let x=pad;x<canvas.width-pad;x+=90){ctx.beginPath();ctx.moveTo(x,pad*.55);ctx.lineTo(x,canvas.height-pad*.55);ctx.stroke();}for(let y=pad;y<canvas.height-pad;y+=90){ctx.beginPath();ctx.moveTo(pad*.55,y);ctx.lineTo(canvas.width-pad*.55,y);ctx.stroke();}const byKey=new Map(points.filter(point=>point.kind==='body').map(point=>[point.item.key,point]));for(const body of bodies.filter(body=>body.type==='warning'&&body.warningRadius)){const pos=toScreen(body.x,body.y);const radius=Math.max(18,Number(body.warningRadius||0)*state.scale);ctx.fillStyle='rgba(247,201,72,.08)';ctx.strokeStyle='rgba(247,201,72,.62)';ctx.lineWidth=2;ctx.beginPath();ctx.arc(pos.x,pos.y,radius,0,Math.PI*2);ctx.fill();ctx.stroke();}for(const body of bodies){const pos=toScreen(body.x,body.y);const r=body.type==='sun'?13*state.scale:body.station?10*state.scale:body.type==='warning'?5*state.scale:body.hidden?4*state.scale:Math.max(5,Math.min(11,Math.sqrt(Number(body.radius||80))/2.8))*state.scale;const fill=colors[body.type]||'#d7f5ff';ctx.shadowColor=fill;ctx.shadowBlur=body.station||body.type==='sun'?12:5;ctx.fillStyle=fill;ctx.strokeStyle=body.station?'#fff':'rgba(255,255,255,.45)';ctx.lineWidth=body.station?1.7:1;if(body.station){ctx.beginPath();ctx.moveTo(pos.x,pos.y-r);ctx.lineTo(pos.x+r,pos.y);ctx.lineTo(pos.x,pos.y+r);ctx.lineTo(pos.x-r,pos.y);ctx.closePath();ctx.fill();ctx.stroke();}else{ctx.beginPath();ctx.arc(pos.x,pos.y,r,0,Math.PI*2);ctx.fill();ctx.stroke();}ctx.shadowBlur=0;if(body.type==='boss'){ctx.strokeStyle='#ff6b52';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(pos.x-8,pos.y-8);ctx.lineTo(pos.x+8,pos.y+8);ctx.moveTo(pos.x+8,pos.y-8);ctx.lineTo(pos.x-8,pos.y+8);ctx.stroke();}if(body.station||body.type==='sun'||body.type==='boss'||state.scale>1){ctx.font='12px system-ui';ctx.fillStyle=body.type==='boss'?'#ffd6c9':'#e6edf3';ctx.fillText(body.name,pos.x+r+5,pos.y+4);} }for(const sp of spawners){const pos=toScreen(sp.x,sp.y);ctx.fillStyle=sp.bossSpawner?'#ff6b52':'#c792ea';ctx.strokeStyle=sp.hidden?'#8a9bad':'#fff';ctx.lineWidth=1.2;ctx.beginPath();ctx.rect(pos.x-4,pos.y-4,8,8);ctx.fill();ctx.stroke();}for(const boss of bosses){const pos=toScreen(boss.x,boss.y);ctx.strokeStyle='#ff6b52';ctx.lineWidth=2.4;ctx.beginPath();ctx.arc(pos.x,pos.y,16*state.scale,0,Math.PI*2);ctx.stroke();}} ,describe:(hit)=>{if(hit.kind==='spawner')return 'Spawner: '+hit.item.name+'\\nBody: '+(hit.item.bodyName||'unknown body')+'\\nEnemy: '+(hit.item.enemyName||'no enemy')+'\\nDrops: '+((hit.item.drops||[]).join(', ')||'n/a');if(hit.kind==='boss')return 'Boss: '+hit.item.name+'\\nCoords: '+coordinateLabel(hit.item.x)+', '+coordinateLabel(hit.item.y);return hit.item.name+'\\nType: '+(hit.item.type||'body')+'\\nLevel: '+(hit.item.level||'n/a')+'\\nCoords: '+coordinateLabel(hit.item.x)+', '+coordinateLabel(hit.item.y)+(hit.item.parent?'\\nOrbiting: '+hit.item.parent:'');},onClick:(hit)=>{if(hit?.url)location.href=hit.url;}});canvas.addEventListener('click',e=>{const hit=visiblePoints.find(point=>Math.hypot(((e.clientX-canvas.getBoundingClientRect().left)*canvas.width/canvas.getBoundingClientRect().width)-point.x,((e.clientY-canvas.getBoundingClientRect().top)*canvas.height/canvas.getBoundingClientRect().height)-point.y)<=point.r);if(hit?.url)location.href=hit.url;});nav.redraw();bg.onload=nav.redraw;}
-window.initSystemMap=initSystemMapZoomable;`;
-  fs.writeFileSync(path.join(DIST_DIR, "assets", "search.js"), js, "utf8");
 }
 
 function buildSearchEntries(manifest, cache) {
