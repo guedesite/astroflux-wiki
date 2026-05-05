@@ -206,6 +206,35 @@ export const UNIQUE_ARTIFACT_DESCRIPTIONS = {
   reflectDamageUnique: "Reflects damage back to attackers when hit."
 };
 
+export const UNIQUE_ARTIFACT_BUILD_HINTS = {
+  slowDown: { focus: "Control / kiting" },
+  kineticChanceToPenetrateShield: { damageType: "Kinetic", focus: "Shield-bypass hits" },
+  energyChanceToShieldOverload: { damageType: "Energy", focus: "Shield-burst hits" },
+  corrosiveChanceToIgnite: { damageType: "Corrosive", focus: "Hull burn / corrosive hits" },
+  recycleCatalyst: { focus: "Recycling / farming" },
+  beamAndMissileDoesBonusDamage: { focus: "Beam and missile weapons" },
+  velocityCore: { focus: "Mobility / travel" },
+  damageReductionUnique: { focus: "Tank / survival" },
+  damageReductionWithLowShieldUnique: { focus: "Low-shield survival" },
+  damageReductionWithLowHealthUnique: { focus: "Low-health survival" },
+  damageReductionWhileStationaryUnique: { focus: "Stationary tanking" },
+  overmind: { focus: "Pet builds" },
+  upgrade: { focus: "Legacy ship upgrade" },
+  lucaniteCore: { focus: "Enemy damage reduction" },
+  mantisCore: { focus: "Close-range brawling" },
+  thermofangCore: { damageType: "Kinetic", focus: "Burn synergy" },
+  reduceKineticResistance: { damageType: "Kinetic", focus: "Resistance shred" },
+  reduceCorrosiveResistance: { damageType: "Corrosive", focus: "Resistance shred" },
+  reduceEnergyResistance: { damageType: "Energy", focus: "Resistance shred" },
+  crownOfXhersix: { focus: "Cleanse / defense" },
+  veilOfYhgvis: { focus: "Cloak ambush" },
+  fistOfZharix: { focus: "On-kill AoE" },
+  bloodlineSurge: { focus: "On-kill snowballing" },
+  dotDamageUnique: { focus: "DoT / debuff builds" },
+  directDamageUnique: { focus: "Direct-damage weapons" },
+  reflectDamageUnique: { focus: "Reflect tanking" }
+};
+
 export const UNIQUE_ARTIFACT_ICON_HINTS = {
   artifact_unique_armorlock_protocol: { stat: "damageReductionWhileStationaryUnique", confidence: "inferred-stat" },
   artifact_unique_bloodline_surge: { stat: "bloodlineSurge", confidence: "direct-stat-name" },
@@ -213,22 +242,22 @@ export const UNIQUE_ARTIFACT_ICON_HINTS = {
   artifact_unique_cleaner: { bossNames: ["The Cleaner"], confidence: "boss-sprite-match" },
   artifact_unique_crown_of_xhersix: { stat: "crownOfXhersix", bossNames: ["Three Emperors"], confidence: "direct-stat-name" },
   artifact_unique_eternal_aegis: { stat: "damageReductionUnique", confidence: "inferred-stat" },
-  artifact_unique_fist_of_zharix: { stat: "fistOfZharix", bossNames: ["Three Emperors"], confidence: "direct-stat-name" },
-  artifact_unique_hyper_acid_splicer: { stat: "corrosiveChanceToIgnite", confidence: "inferred-stat" },
-  artifact_unique_impact_emitter_core: { stat: "slowDown", confidence: "inferred-stat" },
+  artifact_unique_fist_of_zharix: { stat: "fistOfZharix", bossNames: ["Three Emperors"], confidence: "direct-stat-name", focus: "On-kill AoE burst" },
+  artifact_unique_hyper_acid_splicer: { stat: "corrosiveChanceToIgnite", confidence: "inferred-stat", damageType: "Corrosive", focus: "Corrosive hit builds" },
+  artifact_unique_impact_emitter_core: { stat: "slowDown", confidence: "inferred-stat", focus: "Control / slow builds" },
   artifact_unique_legacy_core: { stat: "upgrade", confidence: "inferred-stat" },
   artifact_unique_lunacite_core: { stat: "lucaniteCore", confidence: "direct-stat-name" },
   artifact_unique_mantis_core: { stat: "mantisCore", confidence: "direct-stat-name" },
   artifact_unique_motherbrain: { stat: "overmind", bossNames: ["Mother Brain"], confidence: "boss-sprite-match" },
-  artifact_unique_omega_shield_driver: { stat: "energyChanceToShieldOverload", confidence: "inferred-stat" },
-  artifact_unique_phase_nullifier: { stat: "kineticChanceToPenetrateShield", confidence: "inferred-stat" },
-  artifact_unique_plasma_disruptor_relic: { stat: "reduceEnergyResistance", confidence: "inferred-stat" },
-  artifact_unique_ring_of_yxthal: { stat: "reduceKineticResistance", confidence: "inferred-stat" },
-  artifact_unique_scourgebinder_core: { stat: "reduceCorrosiveResistance", confidence: "inferred-stat" },
+  artifact_unique_omega_shield_driver: { stat: "energyChanceToShieldOverload", confidence: "inferred-stat", damageType: "Energy" },
+  artifact_unique_phase_nullifier: { stat: "kineticChanceToPenetrateShield", confidence: "inferred-stat", damageType: "Kinetic" },
+  artifact_unique_plasma_disruptor_relic: { stat: "reduceEnergyResistance", confidence: "inferred-stat", damageType: "Energy" },
+  artifact_unique_ring_of_yxthal: { stat: "reduceKineticResistance", confidence: "inferred-stat", damageType: "Kinetic" },
+  artifact_unique_scourgebinder_core: { stat: "reduceCorrosiveResistance", confidence: "inferred-stat", damageType: "Corrosive" },
   artifact_unique_tefat: { bossNames: ["Tefat"], confidence: "boss-sprite-match" },
-  artifact_unique_thermofang_core: { stat: "thermofangCore", confidence: "direct-stat-name" },
+  artifact_unique_thermofang_core: { stat: "thermofangCore", confidence: "direct-stat-name", damageType: "Kinetic", focus: "Burn synergy" },
   artifact_unique_titanheart_core: { stat: "damageReductionWithLowHealthUnique", confidence: "inferred-stat" },
   artifact_unique_veil_of_yhgvis: { stat: "veilOfYhgvis", bossNames: ["Three Emperors"], confidence: "direct-stat-name" },
   artifact_unique_velocity_core: { stat: "velocityCore", confidence: "direct-stat-name" },
-  artifact_unique_virex_injector: { stat: "dotDamageUnique", confidence: "inferred-stat" }
+  artifact_unique_virex_injector: { stat: "dotDamageUnique", confidence: "inferred-stat", damageType: "Corrosive", focus: "Corrosive DoT builds" }
 };

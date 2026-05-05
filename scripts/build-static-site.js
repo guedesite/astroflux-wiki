@@ -8,6 +8,7 @@ import {
   ELITE_TECH_COST,
   GUIDE_PAGES,
   STATION_TYPES,
+  UNIQUE_ARTIFACT_BUILD_HINTS,
   UNIQUE_ARTIFACT_DESCRIPTIONS,
   UNIQUE_ARTIFACT_ICON_HINTS,
   UNIQUE_ARTIFACT_STATS,
@@ -105,7 +106,7 @@ function refKey(table, value) {
     Bodies: "body",
     Commodities: "item"
   };
-  return value[byTable[table]] || value.key || value.id || value.item || value.weapon || "";
+  return value[byTable[table]] || value.drop || value.key || value.id || value.item || value.weapon || "";
 }
 
 function entityLinks(table, value, cache, routes) {
@@ -317,16 +318,33 @@ function renderSpawnerDropItems(items, cache, routes) {
   return links.length ? links.join("<br>") : "<span>n/a</span>";
 }
 
+function normalizeDropRefs(value) {
+  const items = Array.isArray(value) ? value : (value ? [value] : []);
+  return items
+    .map((item) => {
+      const key = refKey("Drops", item);
+      if (!key) return null;
+      return {
+        key,
+        chance: typeof item === "object" ? numberValue(item.chance, 1) : 1,
+        qty: typeof item === "object" ? rangeText(item.min, item.max) : ""
+      };
+    })
+    .filter(Boolean);
+}
+
 function dropSourceData(dropKey, cache) {
   const rows = [];
   for (const [enemyKey, enemy] of Object.entries(cache.Enemies || {})) {
-    if ((enemy.drops || []).some((item) => refKey("Drops", item) === dropKey)) {
-      rows.push({ table: "Enemies", key: enemyKey, type: "Enemy", chance: 1, level: enemy.level, context: `Level ${valueLabel(enemy.level)}` });
+    for (const dropRef of normalizeDropRefs(enemy.drops)) {
+      if (dropRef.key !== dropKey) continue;
+      rows.push({ table: "Enemies", key: enemyKey, type: "Enemy", chance: dropRef.chance, qty: dropRef.qty, level: enemy.level, context: `Level ${valueLabel(enemy.level)}` });
     }
   }
   for (const [bossKey, boss] of Object.entries(cache.Bosses || {})) {
-    if (refKey("Drops", boss.drops) === dropKey) {
-      rows.push({ table: "Bosses", key: bossKey, type: "Boss", chance: 1, level: boss.level, context: `Level ${valueLabel(boss.level)}` });
+    for (const dropRef of normalizeDropRefs(boss.drops)) {
+      if (dropRef.key !== dropKey) continue;
+      rows.push({ table: "Bosses", key: bossKey, type: "Boss", chance: dropRef.chance, qty: dropRef.qty, level: boss.level, context: `Level ${valueLabel(boss.level)}` });
     }
   }
   for (const [spawnerKey, spawner] of Object.entries(cache.Spawners || {})) {
@@ -339,6 +357,7 @@ function dropSourceData(dropKey, cache) {
           key: spawnerKey,
           type: "Spawner",
           chance: numberValue(item.chance, 1),
+          qty: rangeText(item.min, item.max),
           level: spawner.level,
           body: spawner.body,
           enemy: enemyKey,
@@ -352,24 +371,46 @@ function dropSourceData(dropKey, cache) {
   return rows;
 }
 
+function dropSourceLocationHtml(source, cache, routes) {
+  const location = sourceLocationInfo(source, cache);
+  if (!location) return missingValue("n/a");
+  return `${entityLink("Bodies", location.bodyKey, cache, routes, location.bodyName)}${location.extraLocations ? `<br><span class="muted">+${escapeHtml(valueLabel(location.extraLocations))} more</span>` : ""}`;
+}
+
+function dropSourceSystemHtml(source, cache, routes) {
+  const location = sourceLocationInfo(source, cache);
+  return location ? entityLink("SolarSystems", location.systemKey, cache, routes, location.systemName) : missingValue("n/a");
+}
+
+function dropSourceContextHtml(source, cache, routes) {
+  if (source.table === "Spawners") {
+    const parts = [];
+    if (source.enemy) parts.push(`Enemy: ${entityLink("Enemies", source.enemy, cache, routes)}`);
+    if (source.boss) parts.push(`Boss: ${entityLink("Bosses", source.boss, cache, routes)}`);
+    if (source.level !== undefined && source.level !== "") parts.push(`Level ${escapeHtml(valueLabel(source.level))}`);
+    return parts.length ? parts.join("<br>") : "<span class=\"muted\">Spawner source</span>";
+  }
+  return escapeHtml(source.context || "");
+}
+
 function dropSourceRows(dropKey, cache, routes) {
-  return dropSourceData(dropKey, cache).slice(0, 120).map((source) => {
-    const context = source.table === "Spawners"
-      ? `${source.body ? entityLink("Bodies", source.body, cache, routes) : "<span>No linked body</span>"}${source.enemy ? ` / ${entityLink("Enemies", source.enemy, cache, routes)}` : ""}${source.boss ? ` / ${entityLink("Bosses", source.boss, cache, routes)}` : ""}`
-      : escapeHtml(source.context);
-    return `<tr><td>${entityLink(source.table, source.key, cache, routes)}</td><td>${escapeHtml(source.type)}</td><td>${context}</td><td>${escapeHtml(percentLabel(source.chance))}</td></tr>`;
-  }).join("");
+  return dropSourceData(dropKey, cache)
+    .sort((a, b) => numberValue(b.chance, 0) - numberValue(a.chance, 0) || String(a.type).localeCompare(String(b.type)) || String(a.key).localeCompare(String(b.key)))
+    .slice(0, 120)
+    .map((source) => `<tr><td>${entityLink(source.table, source.key, cache, routes)}</td><td>${escapeHtml(source.type)}</td><td>${dropSourceSystemHtml(source, cache, routes)}</td><td>${dropSourceLocationHtml(source, cache, routes)}</td><td>${dropSourceContextHtml(source, cache, routes)}</td><td>${escapeHtml(percentLabel(source.chance))}</td><td>${escapeHtml(source.qty || "n/a")}</td></tr>`)
+    .join("");
 }
 
 function dropSourceSummary(dropKey, cache, routes) {
   const sources = dropSourceData(dropKey, cache).slice(0, 3);
-  if (!sources.length) return "<span>n/a</span>";
+  if (!sources.length) return "<span class=\"muted\">No direct enemy, boss, or spawner reference found in cache</span>";
   return sources.map((source) => {
-    if (source.table === "Spawners") {
-      const context = `${source.body ? entityLink("Bodies", source.body, cache, routes) : "<span>No linked body</span>"}${source.enemy ? ` / ${entityLink("Enemies", source.enemy, cache, routes)}` : ""}${source.boss ? ` / ${entityLink("Bosses", source.boss, cache, routes)}` : ""}`;
-      return `${entityLink(source.table, source.key, cache, routes)}<br><span class="muted">${context}</span>`;
-    }
-    return `${entityLink(source.table, source.key, cache, routes)}<br><span class="muted">${escapeHtml(source.context)}</span>`;
+    const system = sourceLocationInfo(source, cache)?.systemName || "";
+    const location = sourceLocationInfo(source, cache)?.bodyName || "";
+    const context = source.table === "Spawners"
+      ? `${location || "unknown body"}${source.enemy ? ` / ${titleFor(cache.Enemies?.[source.enemy], source.enemy)}` : ""}${source.boss ? ` / ${titleFor(cache.Bosses?.[source.boss], source.boss)}` : ""}`
+      : `${system ? `${system} / ` : ""}${source.context || ""}`;
+    return `${entityLink(source.table, source.key, cache, routes)}<br><span class="muted">${escapeHtml(context)}${context ? " / " : ""}${escapeHtml(percentLabel(source.chance))}</span>`;
   }).join("<br>");
 }
 
@@ -683,6 +724,7 @@ function uniqueArtifactCatalog(cache) {
     .map(([imageKey, image]) => {
       const textureName = image.textureName || "";
       const hint = UNIQUE_ARTIFACT_ICON_HINTS[textureName] || {};
+      const statHint = UNIQUE_ARTIFACT_BUILD_HINTS[hint.stat] || {};
       const label = uniqueArtifactLabelFromTexture(textureName);
       const bossNames = [...(hint.bossNames || [])];
       const textureBoss = bossByName.get(normalizedLookupName(label));
@@ -699,7 +741,9 @@ function uniqueArtifactCatalog(cache) {
         label,
         stat: hint.stat || "",
         confidence: hint.confidence || (bossKeys.length ? "boss-sprite-match" : "sprite-only"),
-        bossKeys
+        bossKeys,
+        damageType: hint.damageType || statHint.damageType || "",
+        focus: hint.focus || statHint.focus || ""
       };
     })
     .sort((a, b) => a.label.localeCompare(b.label));
@@ -725,6 +769,20 @@ function uniqueArtifactEffectRole(item) {
   return "Unknown";
 }
 
+function uniqueArtifactFocusSummary(item) {
+  const parts = [];
+  const damageType = String(item.damageType || "");
+  const focus = String(item.focus || "");
+  if (damageType && (!focus || !focus.toLowerCase().includes(damageType.toLowerCase()))) parts.push(damageType);
+  if (focus && !parts.includes(focus)) parts.push(focus);
+  return parts.join(" / ");
+}
+
+function uniqueArtifactFocusCell(item, fallback = "unconfirmed") {
+  const summary = uniqueArtifactFocusSummary(item);
+  return summary ? escapeHtml(summary) : missingValue(fallback);
+}
+
 function uniqueArtifactBossSummary(item, cache, routes) {
   if (!item.bossKeys.length) return "<span class=\"muted\">No strict boss match in client data</span>";
   return item.bossKeys.map((bossKey) => {
@@ -738,18 +796,24 @@ function uniqueArtifactBossSummary(item, cache, routes) {
 }
 
 function uniqueArtifactRowNotes(item) {
+  const focus = uniqueArtifactFocusSummary(item);
   if (item.stat && UNIQUE_ARTIFACT_TYPES.has(item.stat)) {
-    return UNIQUE_ARTIFACT_DESCRIPTIONS[item.stat] || artifactStatLabel(item.stat);
+    return focus
+      ? `${UNIQUE_ARTIFACT_DESCRIPTIONS[item.stat] || artifactStatLabel(item.stat)} Best fit: ${focus}.`
+      : UNIQUE_ARTIFACT_DESCRIPTIONS[item.stat] || artifactStatLabel(item.stat);
   }
-  return "The downloaded client cache does not expose a fixed stat type or value for this sprite.";
+  return focus
+    ? `Best fit: ${focus}. The downloaded client cache does not expose a fixed stat type or value for this sprite.`
+    : "The downloaded client cache does not expose a fixed stat type or value for this sprite.";
 }
 
 function uniqueArtifactMainRows(cache, media, routes) {
   return uniqueArtifactCatalog(cache).map((item) => {
+    const focus = uniqueArtifactFocusSummary(item);
     const statText = item.stat && UNIQUE_ARTIFACT_TYPES.has(item.stat)
       ? `${artifactStatLabel(item.stat)}: ${UNIQUE_ARTIFACT_DESCRIPTIONS[item.stat] || item.stat}`
       : "Fixed stat not exposed by the downloaded client cache";
-    return `<tr data-search="${escapeAttr(`${item.label} ${item.stat} ${uniqueArtifactSourceStatus(item, cache)} ${item.bossKeys.map((bossKey) => titleFor(cache.Bosses?.[bossKey], bossKey)).join(" ")} ${UNIQUE_ARTIFACT_DESCRIPTIONS[item.stat] || ""}`)}" data-stat="${escapeAttr(item.stat || "")}" data-role="${escapeAttr(uniqueArtifactEffectRole(item))}" data-source-status="${escapeAttr(uniqueArtifactSourceStatus(item, cache))}"><td>${renderImageThumb(item.image, media)}<a href="${escapeAttr(item.url)}">${escapeHtml(item.label)}</a></td><td>${escapeHtml(statText)}${item.stat ? `<br><code class="source-key">${escapeHtml(item.stat)}</code>` : ""}</td><td>${escapeHtml(uniqueArtifactEffectRole(item))}</td><td>${uniqueArtifactBossSummary(item, cache, routes)}</td><td class="missing-value">unknown</td><td>${escapeHtml(uniqueArtifactRowNotes(item))}</td></tr>`;
+    return `<tr data-search="${escapeAttr(`${item.label} ${item.stat} ${focus} ${uniqueArtifactSourceStatus(item, cache)} ${item.bossKeys.map((bossKey) => titleFor(cache.Bosses?.[bossKey], bossKey)).join(" ")} ${UNIQUE_ARTIFACT_DESCRIPTIONS[item.stat] || ""}`)}" data-stat="${escapeAttr(item.stat || "")}" data-role="${escapeAttr(uniqueArtifactEffectRole(item))}" data-source-status="${escapeAttr(uniqueArtifactSourceStatus(item, cache))}"><td>${renderImageThumb(item.image, media)}<a href="${escapeAttr(item.url)}">${escapeHtml(item.label)}</a></td><td>${escapeHtml(statText)}${item.stat ? `<br><code class="source-key">${escapeHtml(item.stat)}</code>` : ""}</td><td>${uniqueArtifactFocusCell(item)}</td><td>${escapeHtml(uniqueArtifactEffectRole(item))}</td><td>${uniqueArtifactBossSummary(item, cache, routes)}</td><td>${escapeHtml(uniqueArtifactRowNotes(item))}</td></tr>`;
   }).join("");
 }
 
@@ -791,6 +855,7 @@ function uniqueArtifactRows(cache, media, routes) {
 function uniqueArtifactIconRows(cache, media, routes) {
   const drop = uniqueDropEntry(cache);
   return uniqueArtifactCatalog(cache).map((item) => {
+    const focus = uniqueArtifactFocusSummary(item);
     const statText = item.stat && UNIQUE_ARTIFACT_TYPES.has(item.stat)
       ? `${artifactStatLabel(item.stat)}: ${UNIQUE_ARTIFACT_DESCRIPTIONS[item.stat] || item.stat}`
       : "Fixed stat not exposed by the downloaded client cache";
@@ -802,7 +867,7 @@ function uniqueArtifactIconRows(cache, media, routes) {
         return `${entityLink("Bosses", bossKey, cache, routes)}${qty ? ` <span class="muted">artifact rolls ${escapeHtml(qty)}</span>` : ""}`;
       }).join("<br>")
       : "<span class=\"muted\">No direct boss name match in client data</span>";
-    return `<tr data-search="${escapeAttr(`${item.label} ${item.stat} ${uniqueArtifactSourceStatus(item, cache)} ${item.bossKeys.map((bossKey) => titleFor(cache.Bosses?.[bossKey], bossKey)).join(" ")}`)}"><td>${renderImageThumb(item.image, media)}<a href="${escapeAttr(item.url)}">${escapeHtml(item.label)}</a></td><td>${escapeHtml(statText)}${item.stat ? `<br><code class="source-key">${escapeHtml(item.stat)}</code>` : ""}</td><td>${bosses}</td><td>${drop ? entityLink("Drops", drop[0], cache, routes) : "<span>n/a</span>"}</td><td>${escapeHtml(uniqueArtifactSourceStatus(item, cache))}</td></tr>`;
+    return `<tr data-search="${escapeAttr(`${item.label} ${item.stat} ${focus} ${uniqueArtifactSourceStatus(item, cache)} ${item.bossKeys.map((bossKey) => titleFor(cache.Bosses?.[bossKey], bossKey)).join(" ")}`)}"><td>${renderImageThumb(item.image, media)}<a href="${escapeAttr(item.url)}">${escapeHtml(item.label)}</a></td><td>${escapeHtml(statText)}${item.stat ? `<br><code class="source-key">${escapeHtml(item.stat)}</code>` : ""}</td><td>${uniqueArtifactFocusCell(item)}</td><td>${bosses}</td><td>${drop ? entityLink("Drops", drop[0], cache, routes) : "<span>n/a</span>"}</td><td>${escapeHtml(uniqueArtifactSourceStatus(item, cache))}</td></tr>`;
   }).join("");
 }
 
@@ -1457,7 +1522,7 @@ function renderArtifactListing(entries, cache, media, routes) {
     </div>
   </article>
 </section>
-<div class="table-wrap"><table id="artifact-table" class="sortable filterable"><thead><tr><th>Sprite</th><th>Unique artifact</th><th>Stat family</th><th>Buff / debuff</th><th>Bosses</th><th>Level</th><th>Additional notes</th></tr></thead><tbody>${uniqueRows}</tbody></table></div>`;
+<div class="table-wrap"><table id="artifact-table" class="sortable filterable"><thead><tr><th>Sprite</th><th>Unique artifact</th><th>Stat family</th><th>Damage / build focus</th><th>Buff / debuff</th><th>Bosses</th><th>Additional notes</th></tr></thead><tbody>${uniqueRows}</tbody></table></div>`;
 }
 
 function isStationBody(body) {
@@ -1793,7 +1858,10 @@ function renderDropPage(key, record, cache, routes) {
     return `<tr><td>${entityLink(item.table, item.item, cache, routes)}</td><td>${escapeHtml(item.table || "")}</td><td>${escapeHtml(percentLabel(item.chance))}</td><td>${escapeHtml(percentLabel(effective))}</td><td>${escapeHtml(rangeText(item.min, item.max))}</td></tr>`;
   }).join("");
   const sources = dropSourceRows(key, cache, routes);
-  return `<section class="content-grid"><article><h2>Loot Summary</h2><div class="stat-grid">${statCard("Crate", record.crate)}${statCard("Crate chance", percentLabel(crateChance))}${statCard("Artifact chance", percentLabel(record.artifactChance))}${statCard("Flux", rangeText(record.fluxMin, record.fluxMax))}${statCard("XP", rangeText(record.xpMin, record.xpMax))}</div></article>${rows ? `<article><h2>Possible Items</h2><input class="table-filter" name="table-filter" placeholder="Filter loot"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Item</th><th>Table</th><th>Chance</th><th>Effective</th><th>Qty</th></tr></thead><tbody>${rows}</tbody></table></div></article>` : ""}${sources ? `<article><h2>Where It Appears</h2><input class="table-filter" name="table-filter" placeholder="Filter sources"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Source</th><th>Type</th><th>Context</th><th>Source chance</th></tr></thead><tbody>${sources}</tbody></table></div></article>` : ""}</section>`;
+  const sourceSection = sources
+    ? `<article><h2>Where It Appears</h2><input class="table-filter" name="table-filter" placeholder="Filter sources"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Source</th><th>Type</th><th>System</th><th>Location</th><th>Context</th><th>Source chance</th><th>Qty</th></tr></thead><tbody>${sources}</tbody></table></div></article>`
+    : `<article><h2>Where It Appears</h2><p class="muted">No direct enemy, boss, or spawner reference for this drop table was found in the downloaded client cache. Some drops still appear only through indirect or server-side logic.</p></article>`;
+  return `<section class="content-grid"><article><h2>Loot Summary</h2><div class="stat-grid">${statCard("Crate", record.crate)}${statCard("Crate chance", percentLabel(crateChance))}${statCard("Artifact chance", percentLabel(record.artifactChance))}${statCard("Flux", rangeText(record.fluxMin, record.fluxMax))}${statCard("XP", rangeText(record.xpMin, record.xpMax))}</div></article>${rows ? `<article><h2>Possible Items</h2><input class="table-filter" name="table-filter" placeholder="Filter loot"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Item</th><th>Table</th><th>Chance</th><th>Effective</th><th>Qty</th></tr></thead><tbody>${rows}</tbody></table></div></article>` : ""}${sourceSection}</section>`;
 }
 
 function renderCommodityPage(key, record, cache, routes) {
@@ -1885,6 +1953,7 @@ function renderArtifactPage(key, record, cache, routes) {
 
 function renderUniqueArtifactPage(item, cache, media, routes) {
   const drop = uniqueDropEntry(cache);
+  const focus = uniqueArtifactFocusSummary(item);
   const bossRows = item.bossKeys.map((bossKey) => {
     const boss = cache.Bosses?.[bossKey];
     const artDrops = artifactDropEntries(boss, cache)
@@ -1893,18 +1962,25 @@ function renderUniqueArtifactPage(item, cache, media, routes) {
     return `<tr><td>${entityLink("Bosses", bossKey, cache, routes)}</td><td>${artDrops || "<span>n/a</span>"}</td></tr>`;
   }).join("");
   const statRows = item.stat && UNIQUE_ARTIFACT_TYPES.has(item.stat)
-    ? `<tr><td>${escapeHtml(artifactStatLabel(item.stat))}<br><code class="source-key">${escapeHtml(item.stat)}</code></td><td>${escapeHtml(UNIQUE_ARTIFACT_DESCRIPTIONS[item.stat] || item.stat)}</td><td>No</td></tr>`
-    : `<tr><td>Server-generated artifact instance</td><td>The downloaded client cache does not expose a fixed stat type or value for this sprite.</td><td>No, when the received stat is one of <code>ArtifactStat.isUnique</code></td></tr>`;
+    ? `<tr><td>${escapeHtml(artifactStatLabel(item.stat))}<br><code class="source-key">${escapeHtml(item.stat)}</code></td><td>${escapeHtml(UNIQUE_ARTIFACT_DESCRIPTIONS[item.stat] || item.stat)}</td><td>${uniqueArtifactFocusCell(item, "general")}</td><td>No</td></tr>`
+    : `<tr><td>Server-generated artifact instance</td><td>The downloaded client cache does not expose a fixed stat type or value for this sprite.</td><td>${uniqueArtifactFocusCell(item, "unconfirmed")}</td><td>No, when the received stat is one of <code>ArtifactStat.isUnique</code></td></tr>`;
+  const synergyRows = [
+    ["Damage type", item.damageType || ""],
+    ["Build focus", item.focus || ""],
+    ["Best fit", focus || ""]
+  ].filter(([, text]) => text).map(([kind, text]) => `<tr><td>${escapeHtml(kind)}</td><td>${escapeHtml(text)}</td></tr>`).join("");
   const sourceRows = [
     ["Sprite", `Atlas image ${item.imageKey} / ${item.image.textureName}`],
     ["Crate", drop ? `${drop[1].name}: crate ${percentLabel(drop[1].chance)}, artifact ${percentLabel(drop[1].artifactChance)}` : "No unique crate record found"],
     ["How it shows up", "Unique artifacts are spawned from the server and resolved when the item is picked up."],
     ["Stat rule", item.stat ? "This family is marked unique and cannot be upgraded." : "No fixed stat row is present in the downloaded client cache."],
-    ["Boss link", item.bossKeys.length ? "The boss name matches the artifact and the boss has drop rows." : "No direct boss match in the client data."]
+    ["Boss link", item.bossKeys.length ? "The boss name matches the artifact and the boss has drop rows." : "No direct boss match in the client data."],
+    ["Combat read", focus || "No stable combat focus exposed in the downloaded client cache."]
   ].map(([kind, text]) => `<tr><td>${escapeHtml(kind)}</td><td>${escapeHtml(text)}</td></tr>`).join("");
-  return `<section class="entity-hero unique-artifact-hero"><div class="hero-visual">${renderImageCard(item.image, item.imageKey, media, true)}</div><div class="hero-main"><p class="eyebrow">Unique artifact</p><h1>${escapeHtml(item.label)}</h1><span class="pill">${escapeHtml(uniqueArtifactSourceStatus(item, cache))}</span></div><div class="hero-facts"><div class="stat-grid compact">${statCard("Upgradeable", "No")}${statCard("Source", drop ? drop[1].name : "Unique crate")}${statCard("Sprite", item.image.textureName)}${statCard("Mapped stat", item.stat ? artifactStatLabel(item.stat) : "Server-side")}</div></div></section>
+  return `<section class="entity-hero unique-artifact-hero"><div class="hero-visual">${renderImageCard(item.image, item.imageKey, media, true)}</div><div class="hero-main"><p class="eyebrow">Unique artifact</p><h1>${escapeHtml(item.label)}</h1><span class="pill">${escapeHtml(uniqueArtifactSourceStatus(item, cache))}</span></div><div class="hero-facts"><div class="stat-grid compact">${statCard("Upgradeable", "No")}${statCard("Source", drop ? drop[1].name : "Unique crate")}${statCard("Sprite", item.image.textureName)}${statCard("Mapped stat", item.stat ? artifactStatLabel(item.stat) : "Server-side")}${statCard("Build focus", focus || "Unconfirmed")}</div></div></section>
 <section class="content-grid">
-  <article><h2>Stats</h2><div class="table-wrap"><table><thead><tr><th>Stat</th><th>Effect</th><th>Upgradeable</th></tr></thead><tbody>${statRows}</tbody></table></div></article>
+  <article><h2>Stats</h2><div class="table-wrap"><table><thead><tr><th>Stat</th><th>Effect</th><th>Build focus</th><th>Upgradeable</th></tr></thead><tbody>${statRows}</tbody></table></div></article>
+  ${synergyRows ? `<article><h2>Build Focus</h2><div class="table-wrap"><table><thead><tr><th>Aspect</th><th>Details</th></tr></thead><tbody>${synergyRows}</tbody></table></div></article>` : ""}
   ${bossRows ? `<article><h2>Bosses</h2><div class="table-wrap"><table><thead><tr><th>Boss</th><th>Artifact drop rows</th></tr></thead><tbody>${bossRows}</tbody></table></div></article>` : ""}
   <article><h2>Where It Comes From</h2><div class="table-wrap"><table><thead><tr><th>Source</th><th>Notes</th></tr></thead><tbody>${sourceRows}</tbody></table></div></article>
 </section>`;
@@ -1912,7 +1988,7 @@ function renderUniqueArtifactPage(item, cache, media, routes) {
 
 function buildUniqueArtifactPages(cache, media, routes) {
   const rows = uniqueArtifactIconRows(cache, media, routes);
-  writePage(path.join(DIST_DIR, "artifacts", "unique", "index.html"), "Unique Artifacts", `<h1>Unique Artifacts</h1><p class="muted">Sprites come from the GameFS atlas, and unique stat families are marked when the client exposes a stable mapping.</p><input class="table-filter" name="table-filter" placeholder="Filter unique artifacts"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Unique artifact</th><th>Stat / effect</th><th>Bosses</th><th>Crate</th><th>Source status</th></tr></thead><tbody>${rows}</tbody></table></div>`);
+  writePage(path.join(DIST_DIR, "artifacts", "unique", "index.html"), "Unique Artifacts", `<h1>Unique Artifacts</h1><p class="muted">Sprites come from the GameFS atlas, and unique stat families are marked when the client exposes a stable mapping.</p><input class="table-filter" name="table-filter" placeholder="Filter unique artifacts"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Unique artifact</th><th>Stat / effect</th><th>Damage / build focus</th><th>Bosses</th><th>Crate</th><th>Source status</th></tr></thead><tbody>${rows}</tbody></table></div>`);
   for (const item of uniqueArtifactCatalog(cache)) {
     writePage(path.join(DIST_DIR, `${item.slug}.html`), item.label, renderUniqueArtifactPage(item, cache, media, routes));
   }
@@ -2022,7 +2098,7 @@ function renderArtifactGuide(cache, manifest, media, routes) {
   <article><h2>Unique Artifact Sources</h2><p>Unique artifacts come from the crate and from boss-linked evidence. The rows below keep the source details close to the artifact name.</p></article>
 </section>
 <div class="table-wrap"><table class="sortable"><thead><tr><th>Sprite</th><th>Artifact</th><th>Stat family</th><th>Value range</th><th>Rarity</th><th>Upgradeable</th><th>Drop weight</th><th>Levels</th><th>Type odds</th></tr></thead><tbody>${classicRows}</tbody></table></div>
-<div class="table-wrap"><table id="artifact-table" class="sortable filterable"><thead><tr><th>Sprite</th><th>Unique artifact</th><th>Stat family</th><th>Buff / debuff</th><th>Bosses</th><th>Level</th><th>Additional notes</th></tr></thead><tbody>${uniqueRows}</tbody></table></div>`;
+<div class="table-wrap"><table id="artifact-table" class="sortable filterable"><thead><tr><th>Sprite</th><th>Unique artifact</th><th>Stat family</th><th>Damage / build focus</th><th>Buff / debuff</th><th>Bosses</th><th>Additional notes</th></tr></thead><tbody>${uniqueRows}</tbody></table></div>`;
 }
 
 function renderFarmingGuide(cache, manifest, media, routes) {
