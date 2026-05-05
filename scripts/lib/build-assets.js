@@ -37,7 +37,7 @@ const MAP_BACKGROUND=${JSON.stringify(mapBackground)};
 const input=document.getElementById("search-input");
 const results=document.getElementById("search-results");
 const esc=s=>String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
-const tableRank={Guides:0,Commodities:1,Weapons:2,ArtifactTypes:3,"Unique Artifacts":3,Enemies:4,Bosses:5,Stations:6,Bodies:6,SolarSystems:7,Drops:8};
+const tableRank={Guides:0,Quests:1,Commodities:2,Weapons:3,ArtifactTypes:4,"Unique Artifacts":4,Enemies:5,Bosses:6,Stations:7,Bodies:7,SolarSystems:8,Drops:9};
 function markMissingValues(root=document){for(const el of root.querySelectorAll('span,strong,small,td,th,dd,li,p,option,code')){if(el.children.length)continue;const text=el.textContent.trim();if(!text)continue;if(/^(n\\/a|unknown)$/i.test(text)||/^(not found|missing)$/i.test(text)||/^no direct .* client data$/i.test(text)||/^artifact roll not exposed$/i.test(text)){el.classList.add('missing-value');}}}
 function coordinateLabel(value){const num=Number(value);if(!Number.isFinite(num))return value===null||value===undefined||value===''?'n/a':String(value);return (num*0.025).toFixed(3).replace(/\.?0+$/,'');}
 function searchScore(item,q){
