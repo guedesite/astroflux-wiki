@@ -22,8 +22,9 @@ if(input&&results){input.addEventListener("input",()=>{const q=input.value.trim(
 document.addEventListener("DOMContentLoaded",()=>markMissingValues(document.body));
 for(const table of document.querySelectorAll('table.sortable')){for(const th of table.querySelectorAll('th')){th.tabIndex=0;th.addEventListener('click',()=>sortTable(table,[...th.parentNode.children].indexOf(th)));th.addEventListener('keydown',e=>{if(e.key==='Enter')sortTable(table,[...th.parentNode.children].indexOf(th));});}}
 function sortTable(table,col){const body=table.tBodies[0];const rows=[...body.rows];const asc=table.dataset.sortCol!=col||table.dataset.sortDir==='desc';rows.sort((a,b)=>a.cells[col].innerText.localeCompare(b.cells[col].innerText,navigator.language||'en',{numeric:true}));if(!asc)rows.reverse();table.dataset.sortCol=col;table.dataset.sortDir=asc?'asc':'desc';rows.forEach(r=>body.appendChild(r));}
-for(const filter of document.querySelectorAll('.table-filter')){const table=filter.nextElementSibling?.querySelector('table');if(!table)continue;filter.addEventListener('input',()=>{const q=filter.value.toLowerCase();for(const row of table.tBodies[0].rows){row.hidden=!row.innerText.toLowerCase().includes(q);}});}
-for(const sprite of document.querySelectorAll('.atlas-sprite[data-frames]')){let frames=[];try{frames=JSON.parse(sprite.dataset.frames)}catch{}if(frames.length<2)continue;let i=0;setInterval(()=>{i=(i+1)%frames.length;sprite.setAttribute('style',frames[i].style);sprite.setAttribute('aria-label',frames[i].name);},180);}
+ for(const filter of document.querySelectorAll('.table-filter')){const table=filter.nextElementSibling?.querySelector('table');if(!table)continue;filter.addEventListener('input',()=>{const q=filter.value.toLowerCase();for(const row of table.tBodies[0].rows){row.hidden=!row.innerText.toLowerCase().includes(q);}});}
+ function initAnimatedSprites(){const states=[];const byElement=new WeakMap();let observer=null;let raf=0;let last=0;const paint=(state,index)=>{if(state.index===index)return;const frame=state.frames[index];state.index=index;state.el.setAttribute('style',frame.style);state.el.setAttribute('aria-label',frame.name||state.label);};const shouldRun=state=>state.visible&&state.el.isConnected&&!state.el.hidden&&state.el.offsetParent!==null;const tick=now=>{if(document.hidden){raf=window.requestAnimationFrame(tick);return;}if(now-last>=180){last=now;let active=0;for(const state of states){if(!shouldRun(state))continue;active+=1;paint(state,(state.index+1)%state.frames.length);}if(!active){raf=0;return;}}raf=window.requestAnimationFrame(tick);};const ensureLoop=()=>{if(!raf&&states.some(shouldRun))raf=window.requestAnimationFrame(tick);};if('IntersectionObserver'in window){observer=new IntersectionObserver(entries=>{for(const entry of entries){const state=byElement.get(entry.target);if(!state)continue;state.visible=entry.isIntersecting&&entry.intersectionRatio>0;}ensureLoop();},{threshold:[0,.01]});}for(const sprite of document.querySelectorAll('.atlas-sprite[data-frames]')){let frames=[];try{frames=JSON.parse(sprite.dataset.frames)}catch{}if(frames.length<2)continue;const state={el:sprite,frames,index:0,label:sprite.getAttribute('aria-label')||'',visible:!observer};states.push(state);byElement.set(sprite,state);observer?.observe(sprite);}document.addEventListener('visibilitychange',ensureLoop);document.addEventListener('input',ensureLoop,true);document.addEventListener('change',ensureLoop,true);window.addEventListener('resize',ensureLoop);ensureLoop();}
+ initAnimatedSprites();
 for(const panel of document.querySelectorAll('.filter-panel[data-table-filter]')){const table=document.getElementById(panel.dataset.tableFilter);if(!table||!table.tBodies[0])continue;const controls=[...panel.querySelectorAll('input,select')];const apply=()=>{for(const row of table.tBodies[0].rows){let ok=true;for(const control of controls){if(control.type==='checkbox'&&control.dataset.filterFlag){if(control.checked&&row.dataset[control.dataset.filterFlag]!=='1')ok=false;continue;}const value=String(control.value||'').trim().toLowerCase();if(!value)continue;if('filterText' in control.dataset){const text=(row.dataset.search||row.innerText).toLowerCase();if(!text.includes(value))ok=false;}if(control.dataset.filterAttr){if(String(row.dataset[control.dataset.filterAttr]||'').toLowerCase()!==value)ok=false;}if(control.dataset.filterContains){if(!String(row.dataset[control.dataset.filterContains]||'').toLowerCase().includes(value))ok=false;}if(control.dataset.filterMin){if(Number(row.dataset[control.dataset.filterMin]||0)<Number(value))ok=false;}if(control.dataset.filterMax){if(Number(row.dataset[control.dataset.filterMax]||0)>Number(value))ok=false;}if(control.dataset.filterBetween){const min=Number(row.dataset[control.dataset.filterBetween+'Min']||0);const max=Number(row.dataset[control.dataset.filterBetween+'Max']||0);const n=Number(value);if(n<min||n>max)ok=false;}if(control.dataset.filterRangeMin){const base=control.dataset.filterRangeMin;const minRaw=row.dataset[base+'Min'];const maxRaw=row.dataset[base+'Max'];const n=Number(value);if(minRaw===''||maxRaw===''||Number(maxRaw)<n)ok=false;}if(control.dataset.filterRangeMax){const base=control.dataset.filterRangeMax;const minRaw=row.dataset[base+'Min'];const maxRaw=row.dataset[base+'Max'];const n=Number(value);if(minRaw===''||maxRaw===''||Number(minRaw)>n)ok=false;}}row.hidden=!ok;}};controls.forEach(c=>c.addEventListener('input',apply));controls.forEach(c=>c.addEventListener('change',apply));apply();}
 for(const box of document.querySelectorAll('.elite-calculator')){const from=box.querySelector('.elite-from');const to=box.querySelector('.elite-to');const out=box.querySelector('.elite-result');const cost=(lvl,total)=>Math.round(Math.pow(1.025,lvl-1)/432.548654*total);const sum=(a,b,total)=>{let s=0;for(let i=Math.max(1,a);i<=Math.min(100,b);i++)s+=cost(i,total);return s;};const fmt=n=>Number(n||0).toLocaleString('en-US');const update=()=>{const a=Number(from.value)+1;const b=Number(to.value);if(!out)return;if(b<a){out.textContent='Choose a target above the current level.';return;}out.textContent='Cost '+fmt(sum(a,b,3200000))+' primary, '+fmt(sum(a,b,540000))+' secondary, or '+fmt(sum(a,b,12000))+' Flux.';};from?.addEventListener('input',update);to?.addEventListener('input',update);update();}
 for(const calc of document.querySelectorAll('#artifact-calculator')){let data=[];try{data=JSON.parse(calc.dataset.artifacts||'[]')}catch{}const target=calc.querySelector('#artifact-target');const level=calc.querySelector('#artifact-level');const drop=calc.querySelector('#artifact-drop-chance');const attempts=calc.querySelector('#artifact-attempts');const out=calc.querySelector('#artifact-result');const update=()=>{const targetKey=target?.value||'';const selected=targetKey?data.find(x=>x.key===targetKey):null;if(!out)return;if(!selected){out.textContent='Choose an artifact to estimate odds.';return;}const lvl=Number(level?.value||1);const eligible=data.filter(x=>lvl>=Number(x.minLevel||1)&&lvl<=Number(x.maxLevel||150));const total=eligible.reduce((s,x)=>s+Number(x.dropRate||0),0);const hit=eligible.find(x=>x.key===selected.key);const typeChance=total&&hit?Number(hit.dropRate||0)/total:0;const perTry=typeChance*(Number(drop?.value||0)/100);const tries=Math.max(1,Number(attempts?.value||1));const chance=1-Math.pow(1-perTry,tries);out.textContent=selected.name+': '+(100*typeChance).toFixed(2)+'% of eligible artifact rolls, '+(100*chance).toFixed(2)+'% after '+tries+' attempts.';};[target,level,drop,attempts].forEach(x=>x?.addEventListener('input',update));[target,level,drop,attempts].forEach(x=>x?.addEventListener('change',update));update();}
@@ -161,6 +162,15 @@ window.initSystemMap=initSystemMapZoomable;
       clampState();
     }
 
+    function centerOn(x, y, scale = state.scale) {
+      state.scale = scale;
+      clampState();
+      const size = viewSize();
+      state.viewX = x - size.width / 2;
+      state.viewY = y - size.height / 2;
+      clampState();
+    }
+
     reset();
 
     return {
@@ -171,6 +181,7 @@ window.initSystemMap=initSystemMapZoomable;
       clampState,
       zoomAt,
       panBy,
+      centerOn,
       toScreenX,
       toScreenY,
       toWorldX,
@@ -283,6 +294,33 @@ window.initSystemMap=initSystemMapZoomable;
       ctx.fillStyle = "#0d1724";
       ctx.fillRect(left, top, width, height);
     }
+    ctx.restore();
+  }
+
+  function drawSystemFocusMarker(ctx, x, y, radius) {
+    const ringRadius = Math.max(radius + 10, 18);
+    const tipY = y - ringRadius - 4;
+    const headWidth = 14;
+    const stemTop = tipY - 28;
+    ctx.save();
+    ctx.strokeStyle = "#6ee7f9";
+    ctx.fillStyle = "#6ee7f9";
+    ctx.shadowColor = "#6ee7f9";
+    ctx.shadowBlur = 18;
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.arc(x, y, ringRadius, 0, Math.PI * 2);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(x, stemTop);
+    ctx.lineTo(x, tipY - 10);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(x, tipY);
+    ctx.lineTo(x - headWidth, tipY - 18);
+    ctx.lineTo(x + headWidth, tipY - 18);
+    ctx.closePath();
+    ctx.fill();
     ctx.restore();
   }
 
@@ -610,6 +648,7 @@ window.initSystemMap=initSystemMapZoomable;
       hidden: "#8a9bad",
       boss: "#ff6b52"
     };
+    const focusBodyKey = scene.focus?.kind === "body" ? scene.focus.key : "";
 
     const points = [];
     for (const body of scene.bodies || []) {
@@ -659,8 +698,11 @@ window.initSystemMap=initSystemMapZoomable;
         ctx.lineTo(x - 8, y + 8);
         ctx.stroke();
       }
+      if (focusBodyKey && body.key === focusBodyKey) {
+        drawSystemFocusMarker(ctx, x, y, radius);
+      }
       const label = bodyDisplayName(body);
-      if (label && (body.station || body.type === "sun" || body.type === "boss" || view.state.scale > view.minScale() * 1.15)) {
+      if (label && (body.key === focusBodyKey || body.station || body.type === "sun" || body.type === "boss" || view.state.scale > view.minScale() * 1.15)) {
         ctx.fillStyle = body.type === "boss" ? "#ffd6c9" : "#e6edf3";
         ctx.font = "12px system-ui";
         ctx.fillText(label, x + radius + 6, y + 4);
@@ -787,12 +829,26 @@ window.initSystemMap=initSystemMapZoomable;
       stars: createStarfield(backgroundBounds, 150, 97)
     };
     const view = createWorldView(canvas, bounds, 7, backgroundBounds);
+    const focusBody = scene.focus?.kind === "body"
+      ? scene.bodies?.find((body) => body.key === scene.focus.key)
+      : null;
+    if (focusBody) {
+      const baseReset = view.reset;
+      const focusScale = Math.max(view.minScale(), Math.min(7, view.minScale() * 1.45));
+      view.reset = () => {
+        baseReset();
+        view.centerOn(toNumber(focusBody.x), toNumber(focusBody.y), focusScale);
+      };
+      view.reset();
+    }
     const backgroundImage = backgroundImageFor(background);
     const interaction = setupInteractiveScene(canvas, view, {
       toolbar,
       readout,
       tooltip,
-      idleText: "Hover a marker to inspect location, spawner, boss, or elite-zone data.",
+      idleText: focusBody
+        ? `Focused marker shows ${bodyReadoutName(focusBody)}. Hover a marker to inspect location, spawner, boss, or elite-zone data.`
+        : "Hover a marker to inspect location, spawner, boss, or elite-zone data.",
       draw(currentView) {
         return drawSystemScene(canvas.getContext("2d"), canvas, currentView, scene, backgroundImage);
       },
@@ -803,7 +859,8 @@ window.initSystemMap=initSystemMapZoomable;
         if (target.kind === "boss") {
           return `Boss: ${target.item.name}\nCoords: ${coordinateLabel(target.item.x)}, ${coordinateLabel(target.item.y)}`;
         }
-        return `${bodyReadoutName(target.item)}\nType: ${target.item.type || "body"}\nLevel: ${target.item.level || "n/a"}\nCoords: ${coordinateLabel(target.item.x)}, ${coordinateLabel(target.item.y)}${target.item.parent ? `\nOrbiting: ${target.item.parent}` : ""}`;
+        const focusNote = focusBody && target.item.key === focusBody.key ? "\nFocus: current station" : "";
+        return `${bodyReadoutName(target.item)}\nType: ${target.item.type || "body"}\nLevel: ${target.item.level || "n/a"}\nCoords: ${coordinateLabel(target.item.x)}, ${coordinateLabel(target.item.y)}${target.item.parent ? `\nOrbiting: ${target.item.parent}` : ""}${focusNote}`;
       },
       onClick(target) {
         if (target.url) location.href = target.url;

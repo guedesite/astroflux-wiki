@@ -111,6 +111,15 @@
       clampState();
     }
 
+    function centerOn(x, y, scale = state.scale) {
+      state.scale = scale;
+      clampState();
+      const size = viewSize();
+      state.viewX = x - size.width / 2;
+      state.viewY = y - size.height / 2;
+      clampState();
+    }
+
     reset();
 
     return {
@@ -121,6 +130,7 @@
       clampState,
       zoomAt,
       panBy,
+      centerOn,
       toScreenX,
       toScreenY,
       toWorldX,
@@ -233,6 +243,33 @@
       ctx.fillStyle = "#0d1724";
       ctx.fillRect(left, top, width, height);
     }
+    ctx.restore();
+  }
+
+  function drawSystemFocusMarker(ctx, x, y, radius) {
+    const ringRadius = Math.max(radius + 10, 18);
+    const tipY = y - ringRadius - 4;
+    const headWidth = 14;
+    const stemTop = tipY - 28;
+    ctx.save();
+    ctx.strokeStyle = "#6ee7f9";
+    ctx.fillStyle = "#6ee7f9";
+    ctx.shadowColor = "#6ee7f9";
+    ctx.shadowBlur = 18;
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.arc(x, y, ringRadius, 0, Math.PI * 2);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(x, stemTop);
+    ctx.lineTo(x, tipY - 10);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(x, tipY);
+    ctx.lineTo(x - headWidth, tipY - 18);
+    ctx.lineTo(x + headWidth, tipY - 18);
+    ctx.closePath();
+    ctx.fill();
     ctx.restore();
   }
 
@@ -560,6 +597,7 @@
       hidden: "#8a9bad",
       boss: "#ff6b52"
     };
+    const focusBodyKey = scene.focus?.kind === "body" ? scene.focus.key : "";
 
     const points = [];
     for (const body of scene.bodies || []) {
@@ -609,8 +647,11 @@
         ctx.lineTo(x - 8, y + 8);
         ctx.stroke();
       }
+      if (focusBodyKey && body.key === focusBodyKey) {
+        drawSystemFocusMarker(ctx, x, y, radius);
+      }
       const label = bodyDisplayName(body);
-      if (label && (body.station || body.type === "sun" || body.type === "boss" || view.state.scale > view.minScale() * 1.15)) {
+      if (label && (body.key === focusBodyKey || body.station || body.type === "sun" || body.type === "boss" || view.state.scale > view.minScale() * 1.15)) {
         ctx.fillStyle = body.type === "boss" ? "#ffd6c9" : "#e6edf3";
         ctx.font = "12px system-ui";
         ctx.fillText(label, x + radius + 6, y + 4);
@@ -737,12 +778,26 @@
       stars: createStarfield(backgroundBounds, 150, 97)
     };
     const view = createWorldView(canvas, bounds, 7, backgroundBounds);
+    const focusBody = scene.focus?.kind === "body"
+      ? scene.bodies?.find((body) => body.key === scene.focus.key)
+      : null;
+    if (focusBody) {
+      const baseReset = view.reset;
+      const focusScale = Math.max(view.minScale(), Math.min(7, view.minScale() * 1.45));
+      view.reset = () => {
+        baseReset();
+        view.centerOn(toNumber(focusBody.x), toNumber(focusBody.y), focusScale);
+      };
+      view.reset();
+    }
     const backgroundImage = backgroundImageFor(background);
     const interaction = setupInteractiveScene(canvas, view, {
       toolbar,
       readout,
       tooltip,
-      idleText: "Hover a marker to inspect location, spawner, boss, or elite-zone data.",
+      idleText: focusBody
+        ? `Focused marker shows ${bodyReadoutName(focusBody)}. Hover a marker to inspect location, spawner, boss, or elite-zone data.`
+        : "Hover a marker to inspect location, spawner, boss, or elite-zone data.",
       draw(currentView) {
         return drawSystemScene(canvas.getContext("2d"), canvas, currentView, scene, backgroundImage);
       },
@@ -753,7 +808,8 @@
         if (target.kind === "boss") {
           return `Boss: ${target.item.name}\nCoords: ${coordinateLabel(target.item.x)}, ${coordinateLabel(target.item.y)}`;
         }
-        return `${bodyReadoutName(target.item)}\nType: ${target.item.type || "body"}\nLevel: ${target.item.level || "n/a"}\nCoords: ${coordinateLabel(target.item.x)}, ${coordinateLabel(target.item.y)}${target.item.parent ? `\nOrbiting: ${target.item.parent}` : ""}`;
+        const focusNote = focusBody && target.item.key === focusBody.key ? "\nFocus: current station" : "";
+        return `${bodyReadoutName(target.item)}\nType: ${target.item.type || "body"}\nLevel: ${target.item.level || "n/a"}\nCoords: ${coordinateLabel(target.item.x)}, ${coordinateLabel(target.item.y)}${target.item.parent ? `\nOrbiting: ${target.item.parent}` : ""}${focusNote}`;
       },
       onClick(target) {
         if (target.url) location.href = target.url;

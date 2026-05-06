@@ -1891,7 +1891,7 @@ function resolvedSystemBodies(systemKey, cache) {
   });
 }
 
-function renderSystemLocalMap(systemKey, record, cache, media, routes) {
+function renderSystemLocalMap(systemKey, record, cache, media, routes, options = {}) {
   const bodies = resolvedSystemBodies(systemKey, cache);
   if (!bodies.length) return "";
   const bodyByKey = new Map(bodies.map((body) => [body.key, body]));
@@ -1919,20 +1919,28 @@ function renderSystemLocalMap(systemKey, record, cache, media, routes) {
   const bossMarkers = bodies
     .filter((body) => body.boss)
     .map((body) => ({ key: body.boss, name: titleFor(cache.Bosses?.[body.boss], body.boss), bodyKey: body.key, x: body.x, y: body.y }));
+  const focusBody = options.focusBodyKey ? bodyByKey.get(options.focusBodyKey) : null;
   const data = {
     name: titleFor(record, systemKey),
     background: resolveCanvasImageAsset(record.background, cache, media),
     bodies,
     spawners,
     bosses: bossMarkers,
+    focus: focusBody ? { kind: "body", key: focusBody.key, label: focusBody.displayName || focusBody.name || focusBody.key } : null,
     routes: {
       Bodies: Object.fromEntries(bodies.map((body) => [body.key, routes.get(`Bodies:${body.key}`) || ""])),
       Spawners: Object.fromEntries(spawners.map((spawner) => [spawner.key, routes.get(`Spawners:${spawner.key}`) || ""])),
       Bosses: Object.fromEntries(bossMarkers.map((boss) => [boss.key, routes.get(`Bosses:${boss.key}`) || ""]))
     }
   };
-  const canvasId = `system-map-${systemKey.replace(/[^a-z0-9_-]/gi, "").slice(0, 24)}`;
-  return `<article class="system-map-card"><h2>System Map</h2><p class="muted">2D placement from body coordinates and orbit data. Yellow rings are elite zones; station, boss, and spawner markers are clickable when a page exists. Use the mouse wheel to zoom and drag to pan.</p><div class="system-map-wrap"><div class="map-toolbar"><button type="button" data-map-action="zoom-out">-</button><button type="button" data-map-action="zoom-reset">Reset</button><button type="button" data-map-action="zoom-in">+</button></div><canvas id="${escapeAttr(canvasId)}" width="1080" height="660" aria-label="${escapeAttr(titleFor(record, systemKey))} local map"></canvas><div class="map-tooltip" id="${escapeAttr(canvasId)}-tooltip" aria-hidden="true"></div><div class="map-readout" id="${escapeAttr(canvasId)}-readout">Hover a marker to inspect location, spawner, boss, or elite-zone data.</div><div class="map-legend"><span><i class="legend-dot" style="background:#ffd166"></i>Sun</span><span><i class="legend-dot" style="background:#6ee7f9"></i>Station</span><span><i class="legend-dot" style="background:#d7f5ff"></i>Body</span><span><i class="legend-dot" style="background:#c792ea"></i>Spawner</span><span><i class="legend-dot" style="background:#ff6b52"></i>Boss</span></div></div><script>window.addEventListener("DOMContentLoaded",()=>initSystemMap("${canvasId}",${JSON.stringify(data)}));</script></article>`;
+  const canvasSuffix = `${systemKey}-${options.focusBodyKey || ""}`.replace(/[^a-z0-9_-]/gi, "").slice(0, 40);
+  const canvasId = `system-map-${canvasSuffix}`;
+  const mapTitle = options.title || "System Map";
+  const intro = options.description || "2D placement from body coordinates and orbit data. Yellow rings are elite zones; station, boss, and spawner markers are clickable when a page exists. Use the mouse wheel to zoom and drag to pan.";
+  const readout = focusBody
+    ? `Focused marker shows ${focusBody.displayName || focusBody.name || focusBody.key}. Hover a marker to inspect location, spawner, boss, or elite-zone data.`
+    : "Hover a marker to inspect location, spawner, boss, or elite-zone data.";
+  return `<article class="system-map-card"><h2>${escapeHtml(mapTitle)}</h2><p class="muted">${escapeHtml(intro)}</p><div class="system-map-wrap"><div class="map-toolbar"><button type="button" data-map-action="zoom-out">-</button><button type="button" data-map-action="zoom-reset">Reset</button><button type="button" data-map-action="zoom-in">+</button></div><canvas id="${escapeAttr(canvasId)}" width="1080" height="660" aria-label="${escapeAttr(titleFor(record, systemKey))} local map"></canvas><div class="map-tooltip" id="${escapeAttr(canvasId)}-tooltip" aria-hidden="true"></div><div class="map-readout" id="${escapeAttr(canvasId)}-readout">${escapeHtml(readout)}</div><div class="map-legend"><span><i class="legend-dot" style="background:#ffd166"></i>Sun</span><span><i class="legend-dot" style="background:#6ee7f9"></i>Station</span><span><i class="legend-dot" style="background:#d7f5ff"></i>Body</span><span><i class="legend-dot" style="background:#c792ea"></i>Spawner</span><span><i class="legend-dot" style="background:#ff6b52"></i>Boss</span></div></div><script>window.addEventListener("DOMContentLoaded",()=>initSystemMap("${canvasId}",${JSON.stringify(data)}));</script></article>`;
 }
 
 function renderSystemListing(entries, cache, routes) {
@@ -1953,7 +1961,7 @@ function renderPlayerSections(table, key, record, cache, media, routes) {
     case "SolarSystems":
       return renderSystemPage(key, record, cache, media, routes);
     case "Bodies":
-      return renderBodyPage(key, record, cache, routes);
+      return renderBodyPage(key, record, cache, media, routes);
     case "Weapons":
       return renderWeaponPage(key, record, cache, routes);
     case "Enemies":
@@ -2005,11 +2013,19 @@ function renderSystemPage(key, record, cache, media, routes) {
   </section>`;
 }
 
-function renderBodyPage(key, record, cache, routes) {
+function renderBodyPage(key, record, cache, media, routes) {
   const spawners = Object.entries(cache.Spawners || {}).filter(([, spawner]) => spawner.body === key);
+  const systemRecord = cache.SolarSystems?.[record.solarSystem];
+  const map = isStationBody(record) && isVisibleMapSystem(systemRecord, record.solarSystem)
+    ? renderSystemLocalMap(record.solarSystem, systemRecord, cache, media, routes, {
+      focusBodyKey: key,
+      title: "Station Position In System",
+      description: `2D system map centered on ${bodyDisplayName(key, record, cache)}. The large cyan marker shows exactly where this station sits inside the system.`
+    })
+    : "";
   const shopRows = (record.shopItems || []).map((item) => `<tr><td>${shopItemLink(item, cache, routes)}</td><td>${escapeHtml(valueLabel(item.available))}</td><td>${shopItemPriceHtml(item, cache, routes)}</td></tr>`).join("");
   const spawnerRows = spawners.map(([spawnerKey, spawner]) => `<tr><td>${entityLink("Spawners", spawnerKey, cache, routes, spawner.name || spawnerKey)}</td><td>${entityLink("Enemies", spawner.enemy, cache, routes)}</td><td>${entityLink("Bosses", spawner.bossSpawner, cache, routes)}</td><td>${renderSpawnerDropItems(spawner.drops, cache, routes)}</td><td>${escapeHtml(valueLabel(spawner.level))}</td></tr>`).join("");
-  return `<section class="content-grid">
+  return `${map}<section class="content-grid">
     <article><h2>Location Info</h2><div class="stat-grid">${statCard("System", record.solarSystem ? titleFor(cache.SolarSystems?.[record.solarSystem], record.solarSystem) : "n/a")}${statCard("Safe zone", record.safeZoneRadius)}${statCard("Orbit", record.orbitRadius)}${statCard("Spawners", spawners.length)}</div></article>
     <article><h2>Travel Links</h2><ul class="link-list"><li>System: ${entityLink("SolarSystems", record.solarSystem, cache, routes)}</li><li>Coordinates: ${escapeHtml(coordinateLabel(record.x))}, ${escapeHtml(coordinateLabel(record.y))}</li><li>Type: ${escapeHtml(valueLabel(record.type))}</li></ul></article>
     ${shopRows ? `<article><h2>Shop Items</h2><input class="table-filter" name="table-filter" placeholder="Filter shop"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Item</th><th>Available</th><th>Price</th></tr></thead><tbody>${shopRows}</tbody></table></div></article>` : ""}
