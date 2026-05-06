@@ -333,6 +333,31 @@ function normalizeDropRefs(value) {
     .filter(Boolean);
 }
 
+function dedupeDropRefs(dropRefs) {
+  const seen = new Set();
+  return dropRefs.filter((dropRef) => {
+    const signature = `${dropRef.key}|${dropRef.chance}|${dropRef.qty || ""}`;
+    if (seen.has(signature)) return false;
+    seen.add(signature);
+    return true;
+  });
+}
+
+function linkedEnemySpawners(enemyKey, cache) {
+  return Object.entries(cache.Spawners || {}).filter(([, spawner]) =>
+    spawner.enemy === enemyKey
+    || spawner.enemy2 === enemyKey
+    || (spawner.enemies || []).some((item) => refKey("Enemies", item) === enemyKey)
+  );
+}
+
+function enemyDropRefs(enemyKey, record, cache) {
+  return dedupeDropRefs([
+    ...normalizeDropRefs(record?.drops),
+    ...linkedEnemySpawners(enemyKey, cache).flatMap(([, spawner]) => normalizeDropRefs([...(spawner.drops || []), ...(spawner.drops2 || [])]))
+  ]);
+}
+
 function dropSourceData(dropKey, cache) {
   const rows = [];
   for (const [enemyKey, enemy] of Object.entries(cache.Enemies || {})) {
@@ -2113,7 +2138,7 @@ function renderBodyPage(key, record, cache, media, routes) {
     })
     : "";
   const shopRows = (record.shopItems || []).map((item) => `<tr><td>${shopItemLink(item, cache, routes)}</td><td>${escapeHtml(valueLabel(item.available))}</td><td>${shopItemPriceHtml(item, cache, routes)}</td></tr>`).join("");
-  const spawnerRows = spawners.map(([spawnerKey, spawner]) => `<tr><td>${entityLink("Spawners", spawnerKey, cache, routes, spawner.name || spawnerKey)}</td><td>${entityLink("Enemies", spawner.enemy, cache, routes)}</td><td>${entityLink("Bosses", spawner.bossSpawner, cache, routes)}</td><td>${renderSpawnerDropItems(spawner.drops, cache, routes)}</td><td>${escapeHtml(valueLabel(spawner.level))}</td></tr>`).join("");
+  const spawnerRows = spawners.map(([spawnerKey, spawner]) => `<tr><td>${entityLink("Spawners", spawnerKey, cache, routes, spawner.name || spawnerKey)}</td><td>${entityLink("Enemies", spawner.enemy, cache, routes)}</td><td>${entityLink("Bosses", spawner.bossSpawner, cache, routes)}</td><td>${renderSpawnerDropItems([...(spawner.drops || []), ...(spawner.drops2 || [])], cache, routes)}</td><td>${escapeHtml(valueLabel(spawner.level))}</td></tr>`).join("");
   return `${map}<section class="content-grid">
     <article><h2>Location Info</h2><div class="stat-grid">${statCard("System", record.solarSystem ? titleFor(cache.SolarSystems?.[record.solarSystem], record.solarSystem) : "n/a")}${statCard("Safe zone", record.safeZoneRadius)}${statCard("Orbit", record.orbitRadius)}${statCard("Spawners", spawners.length)}</div></article>
     <article><h2>Travel Links</h2><ul class="link-list"><li>System: ${entityLink("SolarSystems", record.solarSystem, cache, routes)}</li><li>Coordinates: ${escapeHtml(coordinateLabel(record.x))}, ${escapeHtml(coordinateLabel(record.y))}</li><li>Type: ${escapeHtml(valueLabel(record.type))}</li></ul></article>
@@ -2152,16 +2177,18 @@ function renderWeaponPage(key, record, cache, routes) {
 function renderEnemyPage(key, record, cache, media, routes) {
   const stats = enemyShipStats(record, cache);
   const loadout = (record.weapons || []).map((weapon) => renderWeaponLoadout(weapon, cache, routes)).join("");
-  const dropRefs = normalizeDropRefs(record.drops);
-  const spawnerRows = Object.entries(cache.Spawners || {})
-    .filter(([, spawner]) => spawner.enemy === key || spawner.enemy2 === key || (spawner.enemies || []).some((item) => refKey("Enemies", item) === key))
+  const dropRefs = enemyDropRefs(key, record, cache);
+  const lootLinks = [...new Set(dropRefs.map((item) => item.key))]
+    .map((dropKey) => entityLink("Drops", dropKey, cache, routes))
+    .join(", ");
+  const spawnerRows = linkedEnemySpawners(key, cache)
     .slice(0, 60)
-    .map(([spawnerKey, spawner]) => `<tr><td>${entityLink("Spawners", spawnerKey, cache, routes)}</td><td>${entityLink("Bodies", spawner.body, cache, routes)}</td><td>${escapeHtml(valueLabel(spawner.level))}</td><td>${renderSpawnerDropItems(spawner.drops, cache, routes)}</td></tr>`)
+    .map(([spawnerKey, spawner]) => `<tr><td>${entityLink("Spawners", spawnerKey, cache, routes)}</td><td>${entityLink("Bodies", spawner.body, cache, routes)}</td><td>${escapeHtml(valueLabel(spawner.level))}</td><td>${renderSpawnerDropItems([...(spawner.drops || []), ...(spawner.drops2 || [])], cache, routes)}</td></tr>`)
     .join("");
   return `<section class="content-grid">
     <article><h2>Threat Profile</h2><div class="stat-grid">${statCard("Traits", enemyTraits(record, false))}${statCard("Damage type", damageTypeLabel(record.damageType))}${statCard("Damage", record.damage || record.kamikazeDmg)}${statCard("Range", record.range || record.aggroRange)}${statCard("Refire", record.refire)}${statCard("XP", record.xp)}</div>${renderDescription(record.description)}</article>
     <article><h2>Survival Info</h2><div class="stat-grid">${statCard("Max HP", stats.hpMax)}${record.startHp !== undefined ? statCard("Starts With HP", stats.startHp, `${valueLabel(record.startHp)}% of max`) : ""}${statCard("Shield", stats.shieldMax)}${statCard("Armor", stats.armor)}${statCard("Kinetic resist", record.kineticResist)}${statCard("Energy resist", record.energyResist)}${statCard("Corrosive resist", record.corrosiveResist)}</div></article>
-    <article><h2>Equipment</h2><ul class="link-list"><li>Ship sprite/base stats: ${entityLink("Ships", record.ship, cache, routes)}${stats.body ? ` <span class="muted">${escapeHtml(stats.body)}</span>` : ""}</li><li>Engine: ${entityLink("Engines", record.engine, cache, routes)}</li><li>Loot: ${entityLinks("Drops", record.drops, cache, routes)}</li>${loadout}</ul></article>
+    <article><h2>Equipment</h2><ul class="link-list"><li>Ship sprite/base stats: ${entityLink("Ships", record.ship, cache, routes)}${stats.body ? ` <span class="muted">${escapeHtml(stats.body)}</span>` : ""}</li><li>Engine: ${entityLink("Engines", record.engine, cache, routes)}</li><li>Loot: ${lootLinks || missingValue()}</li>${loadout}</ul></article>
     ${renderSourceDropArticles("Enemy", dropRefs, cache, media, routes)}
     ${spawnerRows ? `<article><h2>Found At</h2><input class="table-filter" name="table-filter" placeholder="Filter spawn locations"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Spawner</th><th>Location</th><th>Level</th><th>Spawner drops</th></tr></thead><tbody>${spawnerRows}</tbody></table></div></article>` : ""}
   </section>`;
