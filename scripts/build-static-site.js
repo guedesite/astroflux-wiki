@@ -3188,7 +3188,36 @@ function renderAtlasCard(atlas, image, primary = false) {
     name: item.name
   }));
   const frameAttr = framePayload.length > 1 ? ` data-frame-data="${escapeAttr(JSON.stringify(framePayload))}"` : "";
-  return `<figure class="media-card atlas-card${primary ? " primary" : ""}"><span class="atlas-stage" style="width:${escapeAttr(metrics.boxWidth)}px;height:${escapeAttr(metrics.boxHeight)}px"><span class="atlas-sprite atlas-card-sprite"${frameAttr} style="${escapeAttr(atlasThumbStyle(frame, metrics))}" role="img" aria-label="${escapeAttr(image.fileName || atlas.label)}"></span></span><figcaption>${escapeHtml(image.fileName || atlas.label)}${framePayload.length > 1 ? ` (${framePayload.length} frames)` : ""}</figcaption></figure>`;
+  return `<figure class="media-card atlas-card${primary ? " primary" : ""}"><span class="atlas-stage" style="--stage-w:${escapeAttr(metrics.boxWidth)}px;--stage-h:${escapeAttr(metrics.boxHeight)}px;--stage-max-h:${escapeAttr(primary ? 220 : 160)}px"><span class="atlas-sprite atlas-card-sprite"${frameAttr} style="${escapeAttr(atlasThumbStyle(frame, metrics))}" role="img" aria-label="${escapeAttr(image.fileName || atlas.label)}"></span></span><figcaption>${escapeHtml(image.fileName || atlas.label)}${framePayload.length > 1 ? ` (${framePayload.length} frames)` : ""}</figcaption></figure>`;
+}
+
+function renderBossPartCard(image, key, media) {
+  const local = media.byGameFile.get(image?.fileName);
+  if (local && isImageFile(image?.fileName)) {
+    return `<figure class="media-card image-card boss-part-visual"><span class="boss-part-stage"><img loading="lazy" decoding="async" src="${escapeAttr(local.url)}" alt="${escapeAttr(image.fileName || key)}"></span><figcaption>${escapeHtml(image.fileName || key)}</figcaption></figure>`;
+  }
+  const atlas = findAtlasSprite(media, image);
+  if (!atlas) return "";
+  const frames = sampleAnimationFrames(atlas.frames, 10);
+  const metrics = atlasCardMetrics(frames, false);
+  const fitScale = Math.min(metrics.scale, 128 / Math.max(metrics.boxWidth || 1, 1), 96 / Math.max(metrics.boxHeight || 1, 1));
+  const bounded = {
+    scale: fitScale,
+    boxWidth: Math.max(1, Math.round(Math.max(...frames.map((frame) => numberValue(frame?.width, 1)), 1) * fitScale)),
+    boxHeight: Math.max(1, Math.round(Math.max(...frames.map((frame) => numberValue(frame?.height, 1)), 1) * fitScale)),
+    atlasWidth: metrics.atlasWidth,
+    atlasHeight: metrics.atlasHeight
+  };
+  const frame = frames[0];
+  const framePayload = frames.map((item) => ({
+    x: Math.round(item.x * bounded.scale),
+    y: Math.round(item.y * bounded.scale),
+    width: Math.max(1, Math.round(item.width * bounded.scale)),
+    height: Math.max(1, Math.round(item.height * bounded.scale)),
+    name: item.name
+  }));
+  const frameAttr = framePayload.length > 1 ? ` data-frame-data="${escapeAttr(JSON.stringify(framePayload))}"` : "";
+  return `<figure class="media-card atlas-card boss-part-visual"><span class="atlas-stage boss-part-stage" style="--stage-w:${escapeAttr(bounded.boxWidth)}px;--stage-h:${escapeAttr(bounded.boxHeight)}px"><span class="atlas-sprite atlas-card-sprite"${frameAttr} style="${escapeAttr(atlasThumbStyle(frame, bounded))}" role="img" aria-label="${escapeAttr(image.fileName || atlas.label)}"></span></span><figcaption>${escapeHtml(image.fileName || atlas.label)}${framePayload.length > 1 ? ` (${framePayload.length} frames)` : ""}</figcaption></figure>`;
 }
 
 function renderBossSpriteThumb(record, cache, media) {
@@ -3429,7 +3458,7 @@ function renderBossSpriteParts(record, cache, media, routes) {
   const parts = bossLayeredParts(record, cache, media);
   if (!parts.length) return "";
   const cards = parts.slice(0, 120).map((part) => {
-    const card = renderImageCard(part.image, part.imageKey, media, false);
+    const card = renderBossPartCard(part.image, part.imageKey, media);
     const source = part.refTable && part.refKey ? entityLink(part.refTable, part.refKey, cache, routes) : escapeHtml(part.image.fileName || part.imageKey);
     return card ? `<div class="boss-part">${card}<dl><dt>Kind</dt><dd>${escapeHtml(valueLabel(part.kind))}</dd><dt>Part</dt><dd>${escapeHtml(part.obj.name || "Sprite part")}</dd><dt>Source</dt><dd>${source}</dd><dt>Layer</dt><dd>${escapeHtml(valueLabel(part.layer))}</dd><dt>HP</dt><dd>${escapeHtml(valueLabel(part.obj.hp))}</dd><dt>Position</dt><dd>${escapeHtml(valueLabel(part.sourceX))}, ${escapeHtml(valueLabel(part.sourceY))}</dd></dl></div>` : "";
   }).join("");
