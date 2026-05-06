@@ -414,6 +414,84 @@ function dropSourceSummary(dropKey, cache, routes) {
   }).join("<br>");
 }
 
+function dropKindLabel(drop) {
+  if (!drop) return "Drop table";
+  const name = String(drop.name || "").toLowerCase();
+  if (name.includes("unique artifact")) return "Unique artifact crate";
+  if (drop.crate && (numberValue(drop.artifactChance, 0) > 0 || numberValue(drop.artifactLevel, 0) > 0 || name.includes("artifact"))) return "Artifact crate";
+  if (drop.crate) return "Crate";
+  if (numberValue(drop.artifactChance, 0) > 0 || numberValue(drop.artifactLevel, 0) > 0 || name.includes("artifact")) return "Artifact roll";
+  return "Drop table";
+}
+
+function entityThumbLinkHtml(table, key, cache, media, routes, fallback = null) {
+  if (!table || !key) return fallback ? `<span>${escapeHtml(fallback)}</span>` : "<span>n/a</span>";
+  const record = cache[table]?.[key];
+  const imageKey = record ? primaryImageKey(table, record, cache) : "";
+  const image = imageKey ? cache.Images?.[imageKey] : null;
+  const icon = image ? renderImageThumb(image, media) : "";
+  return `${icon}${entityLink(table, key, cache, routes, fallback)}`;
+}
+
+function sourceDropSummaryRows(dropRefs, cache, routes) {
+  return dropRefs
+    .map((dropRef) => {
+      const drop = cache.Drops?.[dropRef.key];
+      if (!drop) return "";
+      const sourceChance = numberValue(dropRef.chance, 1);
+      const crateChance = drop.crate ? numberValue(drop.chance, 1) : 1;
+      const effectiveOpen = sourceChance * crateChance;
+      const rewardCount = numberValue(drop.artifactAmount, 0) > 0
+        ? `${valueLabel(drop.artifactAmount)} artifact roll${numberValue(drop.artifactAmount, 0) === 1 ? "" : "s"}`
+        : `${valueLabel((drop.dropItems || []).length)} item row${(drop.dropItems || []).length === 1 ? "" : "s"}`;
+      return {
+        sort: effectiveOpen,
+        html: `<tr><td>${entityLink("Drops", dropRef.key, cache, routes, drop.name || dropRef.key)}</td><td>${escapeHtml(dropKindLabel(drop))}</td><td>${escapeHtml(percentLabel(sourceChance))}</td><td>${escapeHtml(percentLabel(crateChance))}</td><td>${escapeHtml(percentLabel(effectiveOpen))}</td><td>${escapeHtml(dropRef.qty || "1")}</td><td>${escapeHtml(valueLabel(drop.artifactLevel || ""))}</td><td>${escapeHtml(percentLabel(drop.artifactChance))}</td><td>${escapeHtml(rangeText(drop.xpMin, drop.xpMax))}</td><td>${escapeHtml(rangeText(drop.fluxMin, drop.fluxMax))}</td><td>${escapeHtml(rewardCount)}</td></tr>`
+      };
+    })
+    .filter((row) => row.html)
+    .sort((a, b) => b.sort - a.sort)
+    .map((row) => row.html)
+    .join("");
+}
+
+function sourceDropRewardRows(dropRefs, cache, media, routes) {
+  const rows = [];
+  for (const dropRef of dropRefs) {
+    const drop = cache.Drops?.[dropRef.key];
+    if (!drop) continue;
+    const sourceChance = numberValue(dropRef.chance, 1);
+    const crateChance = drop.crate ? numberValue(drop.chance, 1) : 1;
+    for (const item of drop.dropItems || []) {
+      const table = item.table || "";
+      const key = item.item || refKey(table, item);
+      const itemChance = numberValue(item.chance, 1);
+      const effective = sourceChance * crateChance * itemChance;
+      const searchText = `${drop.name || dropRef.key} ${table} ${titleFor(cache[table]?.[key], key)} ${dropKindLabel(drop)}`;
+      rows.push({
+        effective,
+        searchText,
+        html: `<tr data-search="${escapeAttr(searchText)}"><td>${entityThumbLinkHtml(table, key, cache, media, routes)}</td><td>${escapeHtml(valueLabel(table))}</td><td>${entityLink("Drops", dropRef.key, cache, routes, drop.name || dropRef.key)}</td><td>${escapeHtml(percentLabel(sourceChance))}</td><td>${escapeHtml(percentLabel(itemChance))}</td><td>${escapeHtml(percentLabel(effective))}</td><td>${escapeHtml(rangeText(item.min, item.max))}</td><td>${escapeHtml(valueLabel(drop.artifactLevel || ""))}</td></tr>`
+      });
+    }
+  }
+  return rows
+    .sort((a, b) => b.effective - a.effective || a.searchText.localeCompare(b.searchText))
+    .slice(0, 220)
+    .map((row) => row.html)
+    .join("");
+}
+
+function renderSourceDropArticles(label, dropRefs, cache, media, routes) {
+  if (!dropRefs.length) return `<article><h2>${escapeHtml(label)} Loot</h2><p class="muted">No direct drop table is linked from the downloaded client cache for this source.</p></article>`;
+  const summaryRows = sourceDropSummaryRows(dropRefs, cache, routes);
+  const rewardRows = sourceDropRewardRows(dropRefs, cache, media, routes);
+  return [
+    `<article><h2>${escapeHtml(label)} Loot Tables</h2><input class="table-filter" name="table-filter" placeholder="Filter loot tables"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Drop table</th><th>Type</th><th>Source chance</th><th>Crate open</th><th>Effective open</th><th>Qty / rolls</th><th>Artifact lvl</th><th>Artifact chance</th><th>XP</th><th>Flux</th><th>Rewards</th></tr></thead><tbody>${summaryRows}</tbody></table></div></article>`,
+    rewardRows ? `<article><h2>Possible Rewards</h2><input class="table-filter" name="table-filter" placeholder="Filter rewards"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Reward</th><th>Table</th><th>From drop</th><th>Source chance</th><th>Item chance</th><th>Effective</th><th>Qty</th><th>Artifact lvl</th></tr></thead><tbody>${rewardRows}</tbody></table></div></article>` : ""
+  ].filter(Boolean).join("");
+}
+
 function sourceSortScore(row) {
   const name = `${row.sourceName || ""} ${row.contextText || ""}`.toLowerCase();
   const penalty = /dev|test|dummy/.test(name) || row.hidden ? -10 : 0;
@@ -1208,6 +1286,17 @@ function renderEntityPage(table, key, record, cache, media, graph, routes) {
   const name = titleFor(record, key);
   const type = record.type ? `<span class="pill">${escapeHtml(record.type)}</span>` : "";
   const visual = renderPrimaryVisual(table, record, cache, media);
+  if (table === "Bosses") {
+    const sections = renderBossPageSections(record, cache, media, routes);
+    return [
+      `<section class="entity-hero">${visual}<div class="hero-main"><p class="eyebrow">${escapeHtml(playerTableName(table))}</p><h1>${escapeHtml(name)}</h1>${type}</div>${renderHeroFacts(table, record, cache)}</section>`,
+      sections.preMedia,
+      renderMediaPanel(table, record, cache, media),
+      sections.postMedia,
+      renderRelations(table, key, cache, graph, routes),
+      renderAdvancedDetails(table, key, record)
+    ].filter(Boolean).join("\n");
+  }
   return [
     `<section class="entity-hero">${visual}<div class="hero-main"><p class="eyebrow">${escapeHtml(playerTableName(table))}</p><h1>${escapeHtml(name)}</h1>${type}</div>${renderHeroFacts(table, record, cache)}</section>`,
     renderMediaPanel(table, record, cache, media),
@@ -1965,7 +2054,7 @@ function renderPlayerSections(table, key, record, cache, media, routes) {
     case "Weapons":
       return renderWeaponPage(key, record, cache, routes);
     case "Enemies":
-      return renderEnemyPage(key, record, cache, routes);
+      return renderEnemyPage(key, record, cache, media, routes);
     case "Bosses":
       return renderBossPage(record, cache, media, routes);
     case "Drops":
@@ -2060,9 +2149,10 @@ function renderWeaponPage(key, record, cache, routes) {
   </section>`;
 }
 
-function renderEnemyPage(key, record, cache, routes) {
+function renderEnemyPage(key, record, cache, media, routes) {
   const stats = enemyShipStats(record, cache);
   const loadout = (record.weapons || []).map((weapon) => renderWeaponLoadout(weapon, cache, routes)).join("");
+  const dropRefs = normalizeDropRefs(record.drops);
   const spawnerRows = Object.entries(cache.Spawners || {})
     .filter(([, spawner]) => spawner.enemy === key || spawner.enemy2 === key || (spawner.enemies || []).some((item) => refKey("Enemies", item) === key))
     .slice(0, 60)
@@ -2072,6 +2162,7 @@ function renderEnemyPage(key, record, cache, routes) {
     <article><h2>Threat Profile</h2><div class="stat-grid">${statCard("Traits", enemyTraits(record, false))}${statCard("Damage type", damageTypeLabel(record.damageType))}${statCard("Damage", record.damage || record.kamikazeDmg)}${statCard("Range", record.range || record.aggroRange)}${statCard("Refire", record.refire)}${statCard("XP", record.xp)}</div>${renderDescription(record.description)}</article>
     <article><h2>Survival Info</h2><div class="stat-grid">${statCard("Max HP", stats.hpMax)}${record.startHp !== undefined ? statCard("Starts With HP", stats.startHp, `${valueLabel(record.startHp)}% of max`) : ""}${statCard("Shield", stats.shieldMax)}${statCard("Armor", stats.armor)}${statCard("Kinetic resist", record.kineticResist)}${statCard("Energy resist", record.energyResist)}${statCard("Corrosive resist", record.corrosiveResist)}</div></article>
     <article><h2>Equipment</h2><ul class="link-list"><li>Ship sprite/base stats: ${entityLink("Ships", record.ship, cache, routes)}${stats.body ? ` <span class="muted">${escapeHtml(stats.body)}</span>` : ""}</li><li>Engine: ${entityLink("Engines", record.engine, cache, routes)}</li><li>Loot: ${entityLinks("Drops", record.drops, cache, routes)}</li>${loadout}</ul></article>
+    ${renderSourceDropArticles("Enemy", dropRefs, cache, media, routes)}
     ${spawnerRows ? `<article><h2>Found At</h2><input class="table-filter" name="table-filter" placeholder="Filter spawn locations"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Spawner</th><th>Location</th><th>Level</th><th>Spawner drops</th></tr></thead><tbody>${spawnerRows}</tbody></table></div></article>` : ""}
   </section>`;
 }
@@ -2085,7 +2176,13 @@ function renderWeaponLoadout(loadout, cache, routes) {
 }
 
 function renderBossPage(record, cache, media, routes) {
+  const sections = renderBossPageSections(record, cache, media, routes);
+  return [sections.preMedia, sections.postMedia].filter(Boolean).join("");
+}
+
+function renderBossPageSections(record, cache, media, routes) {
   const hp = bossHpStats(record, cache);
+  const dropRefs = normalizeDropRefs(record.drops);
   const lootLinks = [...new Set((record.drops || []).map((item) => item.drop).filter(Boolean))]
     .map((dropKey) => entityLink("Drops", dropKey, cache, routes))
     .join(", ");
@@ -2095,7 +2192,10 @@ function renderBossPage(record, cache, media, routes) {
   const turretLinks = [...new Set((record.turrets || []).map((item) => item.turret).filter(Boolean))]
     .map((turretKey) => `<li>Turret: ${entityLink("Turrets", turretKey, cache, routes)}</li>`)
     .join("");
-  return `<section class="content-grid"><article><h2>Boss Stats</h2><div class="stat-grid">${statCard("Level", record.level)}${statCard("HP", hp.displayHp !== "" ? formatNumber(hp.displayHp, 0) : "", hp.source)}${statCard("Total part HP", hp.totalPartHp !== "" ? formatNumber(hp.totalPartHp, 0) : "")}${statCard("Highest part HP", hp.highestPartHp !== "" ? formatNumber(hp.highestPartHp, 0) : "")}${statCard("Destructible parts", hp.destructibleParts)}${statCard("XP", record.xp)}${statCard("Regen", record.regen)}${statCard("Radius", record.radius)}${statCard("Speed", record.speed)}${statCard("Reset", record.resetTime)}${statCard("Body sprites", (record.basicObjs || []).length)}${statCard("Turret sprites", (record.turrets || []).length)}${statCard("Spawner sprites", (record.spawners || []).length)}${statCard("Kinetic resist", record.kineticResist)}${statCard("Energy resist", record.energyResist)}${statCard("Corrosive resist", record.corrosiveResist)}</div></article>${renderBossLayeredPreview(record, cache, media)}${renderBossSpriteParts(record, cache, media, routes)}<article><h2>Encounter Links</h2><ul class="link-list"><li>Loot: ${lootLinks || "<span>n/a</span>"}</li><li>Explosion sound: ${entityLink("Sounds", record.explosionSound, cache, routes)}</li>${spawnerLinks}${turretLinks}</ul></article></section>`;
+  return {
+    preMedia: `<section class="content-grid">${renderSourceDropArticles("Boss", dropRefs, cache, media, routes)}<article><h2>Boss Stats</h2><div class="stat-grid">${statCard("Level", record.level)}${statCard("HP", hp.displayHp !== "" ? formatNumber(hp.displayHp, 0) : "", hp.source)}${statCard("Total part HP", hp.totalPartHp !== "" ? formatNumber(hp.totalPartHp, 0) : "")}${statCard("Highest part HP", hp.highestPartHp !== "" ? formatNumber(hp.highestPartHp, 0) : "")}${statCard("Destructible parts", hp.destructibleParts)}${statCard("XP", record.xp)}${statCard("Regen", record.regen)}${statCard("Radius", record.radius)}${statCard("Speed", record.speed)}${statCard("Reset", record.resetTime)}${statCard("Body sprites", (record.basicObjs || []).length)}${statCard("Turret sprites", (record.turrets || []).length)}${statCard("Spawner sprites", (record.spawners || []).length)}${statCard("Kinetic resist", record.kineticResist)}${statCard("Energy resist", record.energyResist)}${statCard("Corrosive resist", record.corrosiveResist)}</div></article></section>`,
+    postMedia: `<section class="content-grid">${renderBossLayeredPreview(record, cache, media)}${renderBossSpriteParts(record, cache, media, routes)}<article><h2>Encounter Links</h2><ul class="link-list"><li>Loot: ${lootLinks || "<span>n/a</span>"}</li><li>Explosion sound: ${entityLink("Sounds", record.explosionSound, cache, routes)}</li>${spawnerLinks}${turretLinks}</ul></article></section>`
+  };
 }
 
 function renderDropPage(key, record, cache, routes) {
@@ -2923,15 +3023,22 @@ function renderImageCard(image, key, media, primary = false) {
 
 function renderImageThumb(image, media) {
   const local = media.byGameFile.get(image.fileName);
-  if (local && isImageFile(image.fileName)) return `<img class="thumb" src="${escapeAttr(local.url)}" alt="">`;
+  if (local && isImageFile(image.fileName)) {
+    return `<span class="thumb-frame"><img class="thumb" loading="lazy" decoding="async" src="${escapeAttr(local.url)}" alt=""></span>`;
+  }
   const atlas = findAtlasSprite(media, image);
   if (!atlas) return "";
-  const frames = atlas.frames.map((item) => ({
-    style: atlasStyle(item, false),
+  const frames = sampleAnimationFrames(atlas.frames, 12);
+  const metrics = atlasThumbMetrics(frames);
+  const framePayload = frames.map((item) => ({
+    x: Math.round(item.x * metrics.scale),
+    y: Math.round(item.y * metrics.scale),
+    width: Math.max(1, Math.round(item.width * metrics.scale)),
+    height: Math.max(1, Math.round(item.height * metrics.scale)),
     name: item.name
   }));
-  const frameAttr = frames.length > 1 ? ` data-frames="${escapeAttr(JSON.stringify(frames))}"` : "";
-  return `<span class="thumb atlas-sprite"${frameAttr} style="${escapeAttr(atlasStyle(atlas.frames[0], false))}" role="img" aria-label="${escapeAttr(image.fileName || atlas.label)}"></span>`;
+  const frameAttr = framePayload.length > 1 ? ` data-frame-data="${escapeAttr(JSON.stringify(framePayload))}"` : "";
+  return `<span class="thumb-frame"><span class="thumb atlas-sprite"${frameAttr} style="${escapeAttr(atlasThumbStyle(frames[0], metrics))}" role="img" aria-label="${escapeAttr(image.fileName || atlas.label)}"></span></span>`;
 }
 
 function resolveCanvasImageAsset(imageKey, cache, media) {
@@ -2994,6 +3101,35 @@ function atlasFramesForTexture(media, prefix) {
     .sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true }));
 }
 
+function sampleAnimationFrames(frames, limit = 12) {
+  if (!Array.isArray(frames) || frames.length <= limit) return frames || [];
+  const sampled = [];
+  const seen = new Set();
+  for (let index = 0; index < limit; index += 1) {
+    const frame = frames[Math.min(frames.length - 1, Math.floor(index * frames.length / limit))];
+    if (!frame || seen.has(frame.name)) continue;
+    sampled.push(frame);
+    seen.add(frame.name);
+  }
+  return sampled.length ? sampled : frames.slice(0, limit);
+}
+
+function atlasThumbMetrics(frames) {
+  const maxFrameWidth = Math.max(...frames.map((frame) => numberValue(frame?.width, 1)), 1);
+  const maxFrameHeight = Math.max(...frames.map((frame) => numberValue(frame?.height, 1)), 1);
+  const box = 36;
+  const scale = Math.min(1, box / maxFrameWidth, box / maxFrameHeight);
+  const atlasWidth = Math.max(...frames.map((frame) => numberValue(frame?.atlasWidth, 1)), 1);
+  const atlasHeight = Math.max(...frames.map((frame) => numberValue(frame?.atlasHeight, 1)), 1);
+  return {
+    scale,
+    boxWidth: Math.max(1, Math.round(maxFrameWidth * scale)),
+    boxHeight: Math.max(1, Math.round(maxFrameHeight * scale)),
+    atlasWidth,
+    atlasHeight
+  };
+}
+
 function atlasFrameStyle(frame, scale = 1) {
   return [
     `width:${Math.max(1, Math.round(frame.width * scale))}px`,
@@ -3012,14 +3148,47 @@ function atlasStyle(frame, primary = false) {
   return atlasFrameStyle(frame, scale);
 }
 
+function atlasThumbStyle(frame, metrics) {
+  return [
+    `width:${Math.max(1, Math.round(frame.width * metrics.scale))}px`,
+    `height:${Math.max(1, Math.round(frame.height * metrics.scale))}px`,
+    `background-image:url('${escapeAttr(frame.url)}')`,
+    `background-size:${Math.round(metrics.atlasWidth * metrics.scale)}px ${Math.round(metrics.atlasHeight * metrics.scale)}px`,
+    `background-position:-${Math.round(frame.x * metrics.scale)}px -${Math.round(frame.y * metrics.scale)}px`
+  ].join(";");
+}
+
+function atlasCardMetrics(frames, primary = false) {
+  const maxFrameWidth = Math.max(...frames.map((frame) => numberValue(frame?.width, 1)), 1);
+  const maxFrameHeight = Math.max(...frames.map((frame) => numberValue(frame?.height, 1)), 1);
+  const maxWidth = primary ? 260 : 180;
+  const maxHeight = primary ? 220 : 160;
+  const minScale = primary ? 1.35 : 1;
+  const scale = Math.min(minScale, maxWidth / maxFrameWidth, maxHeight / maxFrameHeight);
+  const atlasWidth = Math.max(...frames.map((frame) => numberValue(frame?.atlasWidth, 1)), 1);
+  const atlasHeight = Math.max(...frames.map((frame) => numberValue(frame?.atlasHeight, 1)), 1);
+  return {
+    scale,
+    boxWidth: Math.max(1, Math.round(maxFrameWidth * scale)),
+    boxHeight: Math.max(1, Math.round(maxFrameHeight * scale)),
+    atlasWidth,
+    atlasHeight
+  };
+}
+
 function renderAtlasCard(atlas, image, primary = false) {
-  const frame = atlas.frames[0];
-  const frames = atlas.frames.map((item) => ({
-    style: atlasStyle(item),
+  const frames = sampleAnimationFrames(atlas.frames, primary ? 18 : 12);
+  const metrics = atlasCardMetrics(frames, primary);
+  const frame = frames[0];
+  const framePayload = frames.map((item) => ({
+    x: Math.round(item.x * metrics.scale),
+    y: Math.round(item.y * metrics.scale),
+    width: Math.max(1, Math.round(item.width * metrics.scale)),
+    height: Math.max(1, Math.round(item.height * metrics.scale)),
     name: item.name
   }));
-  const frameAttr = frames.length > 1 ? ` data-frames="${escapeAttr(JSON.stringify(frames))}"` : "";
-  return `<figure class="media-card atlas-card${primary ? " primary" : ""}"><span class="atlas-sprite"${frameAttr} style="${escapeAttr(atlasStyle(frame, primary))}" role="img" aria-label="${escapeAttr(image.fileName || atlas.label)}"></span><figcaption>${escapeHtml(image.fileName || atlas.label)}${frames.length > 1 ? ` (${frames.length} frames)` : ""}</figcaption></figure>`;
+  const frameAttr = framePayload.length > 1 ? ` data-frame-data="${escapeAttr(JSON.stringify(framePayload))}"` : "";
+  return `<figure class="media-card atlas-card${primary ? " primary" : ""}"><span class="atlas-stage" style="width:${escapeAttr(metrics.boxWidth)}px;height:${escapeAttr(metrics.boxHeight)}px"><span class="atlas-sprite atlas-card-sprite"${frameAttr} style="${escapeAttr(atlasThumbStyle(frame, metrics))}" role="img" aria-label="${escapeAttr(image.fileName || atlas.label)}"></span></span><figcaption>${escapeHtml(image.fileName || atlas.label)}${framePayload.length > 1 ? ` (${framePayload.length} frames)` : ""}</figcaption></figure>`;
 }
 
 function renderBossSpriteThumb(record, cache, media) {
