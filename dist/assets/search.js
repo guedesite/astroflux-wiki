@@ -465,6 +465,10 @@ window.initSystemMap=initSystemMapZoomable;
     for (const boss of data.bosses || []) {
       entries.push({ x: toNumber(boss.x), y: toNumber(boss.y), radius: 110 });
     }
+    for (const line of data.deathLines || []) {
+      entries.push({ x: toNumber(line.x), y: toNumber(line.y), radius: 24 });
+      entries.push({ x: toNumber(line.x2), y: toNumber(line.y2), radius: 24 });
+    }
     if (!entries.length) return { x: -600, y: -400, width: 1200, height: 800 };
     const minX = Math.min(...entries.map((entry) => entry.x - entry.radius));
     const minY = Math.min(...entries.map((entry) => entry.y - entry.radius));
@@ -601,6 +605,30 @@ window.initSystemMap=initSystemMapZoomable;
     drawBackgroundLayer(ctx, view, scene.backgroundBounds, backgroundImage, scene.background, scene.background ? 0.42 : 0.24);
     drawStars(ctx, view, scene.stars);
     drawWorldGrid(ctx, view, scene.backgroundBounds, 120, "rgba(110,231,249,.08)");
+
+    for (const line of scene.deathLines || []) {
+      const x1 = view.toScreenX(toNumber(line.x));
+      const y1 = view.toScreenY(toNumber(line.y));
+      const x2 = view.toScreenX(toNumber(line.x2));
+      const y2 = view.toScreenY(toNumber(line.y2));
+      ctx.save();
+      ctx.strokeStyle = "rgba(255,77,109,.9)";
+      ctx.shadowColor = "rgba(255,77,109,.65)";
+      ctx.shadowBlur = 8;
+      ctx.lineWidth = clamp(2.4 * Math.sqrt(view.state.scale), 1.8, 5.5);
+      ctx.beginPath();
+      ctx.moveTo(x1, y1);
+      ctx.lineTo(x2, y2);
+      ctx.stroke();
+      ctx.shadowBlur = 0;
+      ctx.strokeStyle = "rgba(255,205,214,.35)";
+      ctx.lineWidth = Math.max(1, ctx.lineWidth * 0.28);
+      ctx.beginPath();
+      ctx.moveTo(x1, y1);
+      ctx.lineTo(x2, y2);
+      ctx.stroke();
+      ctx.restore();
+    }
 
     const bodyByKey = new Map((scene.bodies || []).map((body) => [body.key, body]));
     for (const body of scene.bodies || []) {

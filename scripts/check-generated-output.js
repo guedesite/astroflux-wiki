@@ -51,9 +51,10 @@ function checkHtmlLinks() {
     for (const match of matches) {
       const href = match[1];
       if (href.startsWith("http:") || href.startsWith("https:") || href.startsWith("#")) continue;
-      const rel = href.startsWith("/")
-        ? href.slice(1)
-        : path.join(baseDir, href);
+      const cleanHref = href.split("#")[0].split("?")[0];
+      const rel = cleanHref.startsWith("/")
+        ? cleanHref.slice(1)
+        : path.join(baseDir, cleanHref);
       const normalizedRel = rel === "." || rel === "" ? "index.html" : rel.endsWith("/") ? path.join(rel, "index.html") : rel;
       const target = path.join(DIST_DIR, normalizedRel);
       if (!fs.existsSync(target)) {

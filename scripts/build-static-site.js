@@ -22,6 +22,8 @@ import { titleFor } from "./lib/record-utils.js";
 import { writeRootIndexPage } from "./lib/root-index.js";
 import { siteBaseHref, stripLeadingSlashSiteUrls } from "./lib/site-url-utils.js";
 
+const ASSET_VERSION = Date.now().toString(36);
+
 function escapeHtml(value) {
   return String(value ?? "")
     .replaceAll("&", "&amp;")
@@ -1245,7 +1247,7 @@ function pageShell(title, body, nav = "", baseHref = "./") {
   <base href="${baseHref}">
   <title>${escapeHtml(title)} - Astroflux Wiki</title>
   <link rel="icon" href="assets/favicon.ico">
-  <link rel="stylesheet" href="assets/site.css">
+  <link rel="stylesheet" href="assets/site.css?v=${ASSET_VERSION}">
 </head>
 <body>
   <header>
@@ -1275,7 +1277,7 @@ function pageShell(title, body, nav = "", baseHref = "./") {
   <footer class="site-footer">
     <p>Want to improve this wiki? Contributions are welcome on <a href="https://github.com/guedesite/astroflux-wiki">github.com/guedesite/astroflux-wiki</a>.</p>
   </footer>
-  <script src="assets/search.js"></script>
+  <script src="assets/search.js?v=${ASSET_VERSION}"></script>
 </body>
 </html>`;
 }
@@ -2033,6 +2035,15 @@ function renderSystemLocalMap(systemKey, record, cache, media, routes, options =
   const bossMarkers = bodies
     .filter((body) => body.boss)
     .map((body) => ({ key: body.boss, name: titleFor(cache.Bosses?.[body.boss], body.boss), bodyKey: body.key, x: body.x, y: body.y }));
+  const deathLines = (record.deathLines || [])
+    .map((line, index) => ({
+      key: `${systemKey}-death-line-${index}`,
+      x: numberValue(line?.x, NaN),
+      y: numberValue(line?.y, NaN),
+      x2: numberValue(line?.x2, NaN),
+      y2: numberValue(line?.y2, NaN)
+    }))
+    .filter((line) => Number.isFinite(line.x) && Number.isFinite(line.y) && Number.isFinite(line.x2) && Number.isFinite(line.y2));
   const focusBody = options.focusBodyKey ? bodyByKey.get(options.focusBodyKey) : null;
   const data = {
     name: titleFor(record, systemKey),
@@ -2040,6 +2051,7 @@ function renderSystemLocalMap(systemKey, record, cache, media, routes, options =
     bodies,
     spawners,
     bosses: bossMarkers,
+    deathLines,
     focus: focusBody ? { kind: "body", key: focusBody.key, label: focusBody.displayName || focusBody.name || focusBody.key } : null,
     routes: {
       Bodies: Object.fromEntries(bodies.map((body) => [body.key, routes.get(`Bodies:${body.key}`) || ""])),
@@ -2050,11 +2062,11 @@ function renderSystemLocalMap(systemKey, record, cache, media, routes, options =
   const canvasSuffix = `${systemKey}-${options.focusBodyKey || ""}`.replace(/[^a-z0-9_-]/gi, "").slice(0, 40);
   const canvasId = `system-map-${canvasSuffix}`;
   const mapTitle = options.title || "System Map";
-  const intro = options.description || "2D placement from body coordinates and orbit data. Yellow rings are elite zones; station, boss, and spawner markers are clickable when a page exists. Use the mouse wheel to zoom and drag to pan.";
+  const intro = options.description || "2D placement from body coordinates and orbit data. Red lines mark movement-death barriers, yellow rings are elite zones, and station, boss, and spawner markers are clickable when a page exists. Use the mouse wheel to zoom and drag to pan.";
   const readout = focusBody
     ? `Focused marker shows ${focusBody.displayName || focusBody.name || focusBody.key}. Hover a marker to inspect location, spawner, boss, or elite-zone data.`
     : "Hover a marker to inspect location, spawner, boss, or elite-zone data.";
-  return `<article class="system-map-card"><h2>${escapeHtml(mapTitle)}</h2><p class="muted">${escapeHtml(intro)}</p><div class="system-map-wrap"><div class="map-toolbar"><button type="button" data-map-action="zoom-out">-</button><button type="button" data-map-action="zoom-reset">Reset</button><button type="button" data-map-action="zoom-in">+</button></div><canvas id="${escapeAttr(canvasId)}" width="1080" height="660" aria-label="${escapeAttr(titleFor(record, systemKey))} local map"></canvas><div class="map-tooltip" id="${escapeAttr(canvasId)}-tooltip" aria-hidden="true"></div><div class="map-readout" id="${escapeAttr(canvasId)}-readout">${escapeHtml(readout)}</div><div class="map-legend"><span><i class="legend-dot" style="background:#ffd166"></i>Sun</span><span><i class="legend-dot" style="background:#6ee7f9"></i>Station</span><span><i class="legend-dot" style="background:#d7f5ff"></i>Body</span><span><i class="legend-dot" style="background:#c792ea"></i>Spawner</span><span><i class="legend-dot" style="background:#ff6b52"></i>Boss</span></div></div><script>window.addEventListener("DOMContentLoaded",()=>initSystemMap("${canvasId}",${JSON.stringify(data)}));</script></article>`;
+  return `<article class="system-map-card"><h2>${escapeHtml(mapTitle)}</h2><p class="muted">${escapeHtml(intro)}</p><div class="system-map-wrap"><div class="map-toolbar"><button type="button" data-map-action="zoom-out">-</button><button type="button" data-map-action="zoom-reset">Reset</button><button type="button" data-map-action="zoom-in">+</button></div><canvas id="${escapeAttr(canvasId)}" width="1080" height="660" aria-label="${escapeAttr(titleFor(record, systemKey))} local map"></canvas><div class="map-tooltip" id="${escapeAttr(canvasId)}-tooltip" aria-hidden="true"></div><div class="map-readout" id="${escapeAttr(canvasId)}-readout">${escapeHtml(readout)}</div><div class="map-legend"><span><i class="legend-dot" style="background:#ffd166"></i>Sun</span><span><i class="legend-dot" style="background:#6ee7f9"></i>Station</span><span><i class="legend-dot" style="background:#d7f5ff"></i>Body</span><span><i class="legend-dot" style="background:#c792ea"></i>Spawner</span><span><i class="legend-dot" style="background:#ff6b52"></i>Boss</span><span><i class="legend-dot" style="background:#ff4d6d"></i>Death line</span></div></div><script>window.addEventListener("DOMContentLoaded",()=>initSystemMap("${canvasId}",${JSON.stringify(data)}));</script></article>`;
 }
 
 function renderSystemListing(entries, cache, routes) {
