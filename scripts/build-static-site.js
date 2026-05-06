@@ -1159,6 +1159,7 @@ function pageShell(title, body, nav = "", baseHref = "./") {
       <a href="enemies/">Enemies</a>
       <a href="bosses/">Bosses</a>
       <a href="weapons/">Weapons</a>
+      <a href="ships/">Ships</a>
       <a href="commodities/">Items</a>
       <a href="artifacts/">Artifacts</a>
       <a href="drops/">Drops</a>
@@ -1309,6 +1310,7 @@ function renderSpecialListing(dir, entries, table, cache, media, routes) {
   if (dir === "enemies") return renderEnemyListing(entries, cache, media, routes);
   if (dir === "bosses") return renderBossListing(entries, cache, media, routes);
   if (dir === "bodies") return renderBodyListing(entries, cache, routes);
+  if (dir === "ships") return renderShipListing(entries, cache, media, routes);
   if (dir === "drops") return renderDropListing(entries, cache, routes);
   if (dir === "commodities") return renderCommodityListing(entries, cache, media, routes);
   if (dir === "artifacts") return renderArtifactListing(entries, cache, media, routes);
@@ -1407,6 +1409,234 @@ function renderBodyListing(entries, cache, routes) {
     return `<tr><td><a href="/${entry.slug}.html">${escapeHtml(entry.name)}</a></td><td>${entityLink("SolarSystems", body.solarSystem, cache, routes)}</td><td>${escapeHtml(valueLabel(body.type))}</td><td>${escapeHtml(valueLabel(body.level))}</td><td>${escapeHtml(valueLabel(body.landable))}</td><td>${escapeHtml(valueLabel((body.shopItems || []).length))}</td><td>${escapeHtml(valueLabel(spawnersByBody.get(key) || 0))}</td><td>${escapeHtml(coordinateLabel(body.x))}, ${escapeHtml(coordinateLabel(body.y))}</td></tr>`;
   }).join("");
   return `<h1>Bodies and Locations</h1><p class="muted">Locations are grouped around systems. Use shop count and hostile count to find practical destinations quickly.</p><input class="table-filter" name="table-filter" placeholder="Filter locations"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Location</th><th>System</th><th>Type</th><th>Level</th><th>Landable</th><th>Shop items</th><th>Hostiles</th><th>Coords</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+}
+
+function shipUsageSummary(key, cache) {
+  const enemies = Object.values(cache.Enemies || {}).filter((enemy) => enemy.ship === key).length;
+  const turrets = Object.values(cache.Turrets || {}).filter((turret) => turret.body === key).length;
+  const skins = Object.values(cache.Skins || {}).filter((skin) => skin.ship === key).length;
+  return {
+    enemies,
+    turrets,
+    skins
+  };
+}
+
+function shipBitmapImage(record, cache) {
+  return cache.Images?.[record?.bitmap] || null;
+}
+
+function imageAnimationStatus(image, media) {
+  if (!image) return { animated: false, frames: [] };
+  const atlas = findAtlasSprite(media, image);
+  const frames = atlas?.frames || [];
+  const animated = frames.length > 1
+    || Boolean(image.animate)
+    || numberValue(image.animationCells, 0) > 1
+    || /\.gif$/i.test(image.fileName || "");
+  return { animated, frames };
+}
+
+function resolveShopItem(item, cache) {
+  const key = item?.item || item?.key || item?.itemKey || "";
+  const table = item?.table || item?.itemTable || item?.type || "";
+  if (table && key) {
+    return { table, key, name: item?.name || titleFor(cache[table]?.[key], key) };
+  }
+  for (const candidate of ["Skins", "Weapons", "Commodities", "Ships", "ArtifactTypes", "Engines"]) {
+    if (key && cache[candidate]?.[key]) {
+      return { table: candidate, key, name: item?.name || titleFor(cache[candidate]?.[key], key) };
+    }
+  }
+  return { table: "", key, name: item?.name || key || "n/a" };
+}
+
+function shopItemLink(item, cache, routes) {
+  const resolved = resolveShopItem(item, cache);
+  if (resolved.table === "Skins" && cache.Skins?.[resolved.key]?.ship) {
+    return entityLink("Ships", cache.Skins[resolved.key].ship, cache, routes, resolved.name);
+  }
+  return resolved.table
+    ? entityLink(resolved.table, resolved.key, cache, routes, resolved.name)
+    : `<span>${escapeHtml(resolved.name)}</span>`;
+}
+
+function shopItemPriceHtml(item, cache, routes) {
+  return (item?.priceItems || []).length
+    ? item.priceItems.map((price) => `${entityLink("Commodities", price.item, cache, routes)} x${escapeHtml(valueLabel(price.amount))}`).join("<br>")
+    : "<span>n/a</span>";
+}
+
+function shipPlayerSources(shipKey, cache) {
+  const skinKeys = new Set(
+    Object.entries(cache.Skins || {})
+      .filter(([, skin]) => skin.ship === shipKey)
+      .map(([skinKey]) => skinKey)
+  );
+  const sources = [];
+  for (const [bodyKey, body] of Object.entries(cache.Bodies || {})) {
+    const system = cache.SolarSystems?.[body.solarSystem];
+    for (const item of body.shopItems || []) {
+      const resolved = resolveShopItem(item, cache);
+      const matchesShip = resolved.table === "Ships" && resolved.key === shipKey;
+      const matchesSkin = resolved.table === "Skins" && skinKeys.has(resolved.key);
+      if (!matchesShip && !matchesSkin) continue;
+      const sourceKey = `${bodyKey}:${resolved.table}:${resolved.key}`;
+      if (sources.some((source) => source.sourceKey === sourceKey)) continue;
+      sources.push({
+        sourceKey,
+        bodyKey,
+        bodyName: titleFor(body, bodyKey),
+        systemKey: body.solarSystem,
+        systemName: titleFor(system, body.solarSystem),
+        available: item.available !== false,
+        item,
+        resolved
+      });
+    }
+  }
+  return sources.sort((left, right) => {
+    if (left.available !== right.available) return left.available ? -1 : 1;
+    return left.bodyName.localeCompare(right.bodyName, "en", { numeric: true });
+  });
+}
+
+function shipAcquireSummary(shipKey, cache, routes) {
+  const sources = shipPlayerSources(shipKey, cache);
+  const buyableSources = sources.filter((source) => source.available);
+  const primarySources = (buyableSources.length ? buyableSources : sources).slice(0, 2);
+  const summary = primarySources.map((source) => entityLink("Bodies", source.bodyKey, cache, routes)).join(", ");
+  const extra = (buyableSources.length ? buyableSources : sources).length - primarySources.length;
+  return {
+    isUserShip: sources.length > 0,
+    sources,
+    buyableSources,
+    status: !sources.length ? "NPC / enemy asset" : buyableSources.length ? "Buyable ship" : "Obtainable ship",
+    summaryHtml: sources.length ? `${summary}${extra > 0 ? ` <span class="muted">+${escapeHtml(valueLabel(extra))} more</span>` : ""}` : "<span class=\"muted\">No player acquisition found</span>",
+    searchText: sources.map((source) => `${source.bodyName} ${source.systemName} ${source.resolved.name}`).join(" ")
+  };
+}
+
+function primaryShipSkin(shipKey, cache) {
+  const skins = Object.entries(cache.Skins || {})
+    .filter(([, skin]) => skin.ship === shipKey)
+    .map(([skinKey, skin]) => ({ key: skinKey, skin }));
+  if (!skins.length) return null;
+  const sources = shipPlayerSources(shipKey, cache);
+  const sourceWithSkin = sources.find((source) => source.available && source.resolved.table === "Skins")
+    || sources.find((source) => source.resolved.table === "Skins");
+  if (sourceWithSkin) {
+    const match = skins.find((entry) => entry.key === sourceWithSkin.resolved.key);
+    if (match) return match;
+  }
+  return skins[0];
+}
+
+function shipSkinWeapons(skin, cache) {
+  return (skin?.upgrades || [])
+    .filter((upgrade) => cache.Weapons?.[upgrade.tech])
+    .map((upgrade, index) => ({
+      index,
+      name: upgrade.name || titleFor(cache.Weapons?.[upgrade.tech], upgrade.tech),
+      level: upgrade.level,
+      key: upgrade.tech,
+      record: cache.Weapons?.[upgrade.tech]
+    }));
+}
+
+function shipSkinBasicTechs(skin, cache) {
+  return (skin?.upgrades || [])
+    .filter((upgrade) => cache.BasicTechs?.[upgrade.tech])
+    .map((upgrade, index) => ({
+      index,
+      name: upgrade.name || titleFor(cache.BasicTechs?.[upgrade.tech], upgrade.tech),
+      level: upgrade.level,
+      key: upgrade.tech,
+      record: cache.BasicTechs?.[upgrade.tech]
+    }));
+}
+
+function techIconThumb(imageKey, cache, media) {
+  return imageKey && cache.Images?.[imageKey] ? renderImageThumb(cache.Images[imageKey], media) : "";
+}
+
+function shipSkinBaseStats(skin) {
+  return [
+    ["Base health", skin?.statHealth],
+    ["Base shield", skin?.statShield],
+    ["Base shield regen", skin?.statShieldRegen],
+    ["Base armor", skin?.statArmor],
+    ["Base speed", skin?.statSpeed],
+    ["Base turn speed", skin?.statTurnSpeed],
+    ["Base power", skin?.statPower],
+    ["Base power regen", skin?.statPowerRegen],
+    ["Base cargo", skin?.statCargo]
+  ].filter(([, value]) => value !== undefined && value !== null && value !== "");
+}
+
+function shipSpecialLabel(key) {
+  return ({
+    powerReg: "Power regen",
+    powerMax: "Max power",
+    refire: "Refire / reload",
+    cooldown: "Cooldown efficiency",
+    speed: "Speed",
+    kineticMulti: "Kinetic damage",
+    energyMulti: "Energy damage",
+    corrosiveMulti: "Corrosive damage",
+    kineticAdd: "Flat kinetic damage",
+    energyAdd: "Flat energy damage",
+    corrosiveAdd: "Flat corrosive damage"
+  })[key] || key;
+}
+
+function shipSpecialValue(key, value) {
+  if (value === null || value === undefined || value === "") return "";
+  if (["kineticAdd", "energyAdd", "corrosiveAdd"].includes(key)) return valueLabel(value);
+  return `${valueLabel(value)}%`;
+}
+
+function shipSkinSpecialRows(skin) {
+  return Object.entries(skin?.specials || {})
+    .filter(([, value]) => numberValue(value, 0) !== 0)
+    .map(([key, value]) => ({ key, label: shipSpecialLabel(key), value: shipSpecialValue(key, value) }));
+}
+
+function renderShipListing(entries, cache, media, routes) {
+  const typeOptions = [...new Set(entries.map((entry) => cache.Ships?.[entryKey(entry)]?.type).filter(Boolean))]
+    .sort()
+    .map((type) => `<option value="${escapeAttr(type)}">${escapeHtml(type)}</option>`)
+    .join("");
+  const rows = entries
+    .map((entry) => {
+      const key = entryKey(entry);
+      const ship = cache.Ships?.[key];
+      if (!ship) return "";
+      const image = shipBitmapImage(ship, cache);
+      const icon = image ? renderImageThumb(image, media) : "";
+      const usage = shipUsageSummary(key, cache);
+      const acquisition = shipAcquireSummary(key, cache, routes);
+      const animation = imageAnimationStatus(image, media);
+      const usageText = [
+        usage.enemies ? `${usage.enemies} ${usage.enemies === 1 ? "enemy" : "enemies"}` : "",
+        usage.turrets ? `${usage.turrets} turret${usage.turrets === 1 ? "" : "s"}` : "",
+        usage.skins ? `${usage.skins} skin${usage.skins === 1 ? "" : "s"}` : ""
+      ].filter(Boolean).join(" / ") || "No direct reuse";
+      const animated = animation.animated ? "yes" : "no";
+      return `<tr data-search="${escapeAttr(`${entry.name} ${ship.type || ""} ${usageText} ${acquisition.searchText}`)}" data-type="${escapeAttr(ship.type || "")}" data-hp="${escapeAttr(numberValue(ship.hp, 0))}" data-shield="${escapeAttr(numberValue(ship.shieldHp, 0))}" data-armor="${escapeAttr(numberValue(ship.armor, 0))}" data-animated="${escapeAttr(animated)}" data-user="${acquisition.isUserShip ? "1" : "0"}"><td class="name-cell">${icon}<a href="/${entry.slug}.html">${escapeHtml(entry.name)}</a></td><td>${escapeHtml(valueLabel(ship.type))}</td><td>${escapeHtml(valueLabel(ship.hp))}</td><td>${escapeHtml(valueLabel(ship.shieldHp))}</td><td>${escapeHtml(valueLabel(ship.shieldRegen))}</td><td>${escapeHtml(valueLabel(ship.armor))}</td><td>${escapeHtml(valueLabel(ship.collisionRadius))}</td><td>${escapeHtml(animated === "yes" ? "Yes" : "No")}</td><td>${escapeHtml(acquisition.status)}</td><td>${acquisition.summaryHtml}</td><td>${escapeHtml(usageText)}</td></tr>`;
+    })
+    .join("");
+  return `<h1>Ships</h1><p class="muted">This index starts on the ships a player can actually obtain. Those entries are resolved from hangar shop items that point to ship skins, which in turn point to the underlying ship hull. Uncheck the default filter if you want to inspect NPC and boss assets too.</p>
+<div class="filter-panel" data-table-filter="ships-table">
+  <input id="ship-filter-text" name="ship-filter-text" data-filter-text type="search" placeholder="Search ship, type, reuse">
+  <select id="ship-filter-type" name="ship-filter-type" data-filter-attr="type"><option value="">All ship types</option>${typeOptions}</select>
+  <label>Min HP <input id="ship-filter-min-hp" name="ship-filter-min-hp" data-filter-min="hp" type="number" min="0"></label>
+  <label>Min shield <input id="ship-filter-min-shield" name="ship-filter-min-shield" data-filter-min="shield" type="number" min="0"></label>
+  <label>Min armor <input id="ship-filter-min-armor" name="ship-filter-min-armor" data-filter-min="armor" type="number" min="0"></label>
+  <label class="check"><input id="ship-filter-user" name="ship-filter-user" data-filter-flag="user" type="checkbox" checked> User ships only</label>
+  <select id="ship-filter-animated" name="ship-filter-animated" data-filter-attr="animated"><option value="">Animated + static</option><option value="yes">Animated only</option><option value="no">Static only</option></select>
+</div>
+<div class="table-wrap"><table id="ships-table" class="sortable filterable"><thead><tr><th>Ship</th><th>Type</th><th>HP</th><th>Shield</th><th>Shield regen</th><th>Armor</th><th>Radius</th><th>Animated</th><th>Access</th><th>Where to buy</th><th>Referenced by</th></tr></thead><tbody>${rows}</tbody></table></div>`;
 }
 
 function renderDropListing(entries, cache, routes) {
@@ -1733,7 +1963,7 @@ function renderPlayerSections(table, key, record, cache, media, routes) {
     case "Drops":
       return renderDropPage(key, record, cache, routes);
     case "Ships":
-      return renderShipPage(record, cache, routes);
+      return renderShipPage(key, record, cache, media, routes);
     case "Commodities":
       return renderCommodityPage(key, record, cache, routes);
     case "ArtifactTypes":
@@ -1777,7 +2007,7 @@ function renderSystemPage(key, record, cache, media, routes) {
 
 function renderBodyPage(key, record, cache, routes) {
   const spawners = Object.entries(cache.Spawners || {}).filter(([, spawner]) => spawner.body === key);
-  const shopRows = (record.shopItems || []).map((item) => `<tr><td>${entityLink(item.table, item.item, cache, routes, item.name)}</td><td>${escapeHtml(valueLabel(item.available))}</td><td>${(item.priceItems || []).map((p) => `${entityLink("Commodities", p.item, cache, routes)} x${escapeHtml(valueLabel(p.amount))}`).join("<br>")}</td></tr>`).join("");
+  const shopRows = (record.shopItems || []).map((item) => `<tr><td>${shopItemLink(item, cache, routes)}</td><td>${escapeHtml(valueLabel(item.available))}</td><td>${shopItemPriceHtml(item, cache, routes)}</td></tr>`).join("");
   const spawnerRows = spawners.map(([spawnerKey, spawner]) => `<tr><td>${entityLink("Spawners", spawnerKey, cache, routes, spawner.name || spawnerKey)}</td><td>${entityLink("Enemies", spawner.enemy, cache, routes)}</td><td>${entityLink("Bosses", spawner.bossSpawner, cache, routes)}</td><td>${renderSpawnerDropItems(spawner.drops, cache, routes)}</td><td>${escapeHtml(valueLabel(spawner.level))}</td></tr>`).join("");
   return `<section class="content-grid">
     <article><h2>Location Info</h2><div class="stat-grid">${statCard("System", record.solarSystem ? titleFor(cache.SolarSystems?.[record.solarSystem], record.solarSystem) : "n/a")}${statCard("Safe zone", record.safeZoneRadius)}${statCard("Orbit", record.orbitRadius)}${statCard("Spawners", spawners.length)}</div></article>
@@ -2003,8 +2233,22 @@ function renderEnginePage(record, cache, routes) {
   return `<section class="content-grid"><article><h2>Engine Stats</h2><div class="stat-grid">${statCard("Acceleration", record.acceleration)}${statCard("Max speed", record.maxSpeed)}${statCard("Rotation speed", record.rotationSpeed)}${statCard("Friction", record.friction)}${statCard("Booster", record.booster)}${statCard("Sound", cache.Sounds?.[record.sound]?.fileName || "n/a")}</div></article></section>`;
 }
 
-function renderShipPage(record, cache, routes) {
-  return `<section class="content-grid"><article><h2>Ship Stats</h2><div class="stat-grid">${statCard("HP", record.hp)}${statCard("Shield", record.shieldHp)}${statCard("Regen", record.shieldRegen)}${statCard("Armor", record.armor)}${statCard("Radius", record.collisionRadius)}${statCard("Image", titleFor(cache.Images?.[record.bitmap], record.bitmap))}</div></article></section>`;
+function renderShipPage(key, record, cache, media, routes) {
+  const acquisition = shipAcquireSummary(key, cache, routes);
+  const playerSkin = primaryShipSkin(key, cache);
+  const skin = playerSkin?.skin;
+  const weaponRows = shipSkinWeapons(skin, cache)
+    .map((weapon) => `<tr><td class="name-cell">${techIconThumb(weapon.record?.techIcon, cache, media)}${entityLink("Weapons", weapon.key, cache, routes, weapon.name)}</td><td>${escapeHtml(valueLabel(weapon.level))}</td><td>${escapeHtml(valueLabel(weapon.index + 1))}</td><td>${escapeHtml(valueLabel(weapon.record?.type))}</td></tr>`)
+    .join("");
+  const basicTechRows = shipSkinBasicTechs(skin, cache)
+    .map((tech) => `<tr><td class="name-cell">${techIconThumb(tech.record?.techIcon, cache, media)}${escapeHtml(tech.name)}</td><td>${escapeHtml(valueLabel(tech.level))}</td><td>${escapeHtml((tech.record?.description || "").replace(/\s+/g, " ").trim() || "n/a")}</td></tr>`)
+    .join("");
+  const baseStats = shipSkinBaseStats(skin);
+  const specialRows = shipSkinSpecialRows(skin)
+    .map((item) => `<tr><td>${escapeHtml(item.label)}</td><td>${escapeHtml(item.value)}</td></tr>`)
+    .join("");
+  const sourceRows = acquisition.sources.map((source) => `<tr><td>${entityLink("Bodies", source.bodyKey, cache, routes)}</td><td>${entityLink("SolarSystems", source.systemKey, cache, routes)}</td><td>${shopItemLink(source.item, cache, routes)}</td><td>${escapeHtml(source.available ? "Yes" : "Listed but unavailable")}</td><td>${shopItemPriceHtml(source.item, cache, routes)}</td></tr>`).join("");
+  return `<section class="content-grid">${skin ? `<article><h2>Player Ship Profile</h2><div class="stat-grid">${statCard("Engine", titleFor(cache.Engines?.[skin.engine], skin.engine))}${statCard("Default weapons", shipSkinWeapons(skin, cache).length)}${statCard("Base techs", shipSkinBasicTechs(skin, cache).length)}${statCard("Special traits", shipSkinSpecialRows(skin).length)}${baseStats.map(([label, value]) => statCard(label, value)).join("")}</div>${skin.upgradeDescription ? `<p>${escapeHtml(skin.upgradeDescription)}</p>` : ""}${skin.specialDescription ? `<p>${escapeHtml(skin.specialDescription)}</p>` : ""}</article>` : ""}<article><h2>Ship Stats</h2><div class="stat-grid">${statCard("HP", record.hp)}${statCard("Shield", record.shieldHp)}${statCard("Regen", record.shieldRegen)}${statCard("Armor", record.armor)}${statCard("Radius", record.collisionRadius)}${statCard("Image", titleFor(cache.Images?.[record.bitmap], record.bitmap))}${statCard("Player access", acquisition.status)}${statCard("Known hangars", acquisition.sources.length)}</div></article>${weaponRows ? `<article><h2>Default Weapons</h2><div class="table-wrap"><table class="sortable"><thead><tr><th>Weapon</th><th>Start level</th><th>Slot</th><th>Type</th></tr></thead><tbody>${weaponRows}</tbody></table></div></article>` : ""}${basicTechRows ? `<article><h2>Default Upgrades</h2><div class="table-wrap"><table class="sortable"><thead><tr><th>Tech</th><th>Start level</th><th>What it gives</th></tr></thead><tbody>${basicTechRows}</tbody></table></div></article>` : ""}${specialRows ? `<article><h2>Ship Specialties</h2><div class="table-wrap"><table class="sortable"><thead><tr><th>Trait</th><th>Bonus</th></tr></thead><tbody>${specialRows}</tbody></table></div></article>` : ""}${sourceRows ? `<article><h2>Where To Buy / Obtain It</h2><input class="table-filter" name="table-filter" placeholder="Filter hangars"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Hangar</th><th>System</th><th>Shop entry</th><th>Available</th><th>Price</th></tr></thead><tbody>${sourceRows}</tbody></table></div></article>` : `<article><h2>Where To Buy / Obtain It</h2><p class="muted">No player-facing hangar or skin shop entry references this hull in the downloaded client cache, so it is treated as an NPC / enemy asset.</p></article>`}</section>`;
 }
 
 function questCategoryInfo(record = {}) {
@@ -2551,10 +2795,10 @@ function renderStationsPage(cache, routes) {
   const rows = stations.map(([bodyKey, body]) => {
     const system = cache.SolarSystems?.[body.solarSystem];
     const shopItems = body.shopItems || [];
-    const topItems = shopItems.slice(0, 5).map((item) => entityLink(item.table, item.item, cache, routes, item.name)).join(", ");
+    const topItems = shopItems.slice(0, 5).map((item) => shopItemLink(item, cache, routes)).join(", ");
     const status = systemStatusInfo(system, body.solarSystem);
-    return `<tr data-search="${escapeAttr(`${titleFor(body, bodyKey)} ${body.type} ${titleFor(system, body.solarSystem)} ${shopItems.map((item) => item.name || titleFor(cache[item.table]?.[item.item], item.item)).join(" ")}`)}" data-system="${escapeAttr(body.solarSystem)}" data-kind="${escapeAttr(body.type || "")}" data-status="${escapeAttr(status.key)}" data-shop="${escapeAttr(shopItems.length)}"><td>${entityLink("Bodies", bodyKey, cache, routes)}</td><td>${escapeHtml(valueLabel(body.type))}</td><td>${entityLink("SolarSystems", body.solarSystem, cache, routes)}</td><td><span class="status-pill status-${escapeAttr(status.key)}">${escapeHtml(status.label)}</span></td><td>${escapeHtml(valueLabel(body.level))}</td><td>${escapeHtml(valueLabel(body.x))}, ${escapeHtml(valueLabel(body.y))}</td><td>${escapeHtml(valueLabel(shopItems.length))}</td><td>${topItems || "<span>n/a</span>"}</td></tr>`;
-    return `<tr data-search="${escapeAttr(`${titleFor(body, bodyKey)} ${body.type} ${titleFor(system, body.solarSystem)} ${shopItems.map((item) => item.name || titleFor(cache[item.table]?.[item.item], item.item)).join(" ")}`)}" data-system="${escapeAttr(body.solarSystem)}" data-kind="${escapeAttr(body.type || "")}" data-status="${escapeAttr(status.key)}" data-shop="${escapeAttr(shopItems.length)}"><td>${entityLink("Bodies", bodyKey, cache, routes)}</td><td>${escapeHtml(valueLabel(body.type))}</td><td>${entityLink("SolarSystems", body.solarSystem, cache, routes)}</td><td><span class="status-pill status-${escapeAttr(status.key)}">${escapeHtml(status.label)}</span></td><td>${escapeHtml(valueLabel(body.level))}</td><td>${escapeHtml(coordinateLabel(body.x))}, ${escapeHtml(coordinateLabel(body.y))}</td><td>${escapeHtml(valueLabel(shopItems.length))}</td><td>${topItems || "<span>n/a</span>"}</td></tr>`;
+    return `<tr data-search="${escapeAttr(`${titleFor(body, bodyKey)} ${body.type} ${titleFor(system, body.solarSystem)} ${shopItems.map((item) => resolveShopItem(item, cache).name).join(" ")}`)}" data-system="${escapeAttr(body.solarSystem)}" data-kind="${escapeAttr(body.type || "")}" data-status="${escapeAttr(status.key)}" data-shop="${escapeAttr(shopItems.length)}"><td>${entityLink("Bodies", bodyKey, cache, routes)}</td><td>${escapeHtml(valueLabel(body.type))}</td><td>${entityLink("SolarSystems", body.solarSystem, cache, routes)}</td><td><span class="status-pill status-${escapeAttr(status.key)}">${escapeHtml(status.label)}</span></td><td>${escapeHtml(valueLabel(body.level))}</td><td>${escapeHtml(valueLabel(body.x))}, ${escapeHtml(valueLabel(body.y))}</td><td>${escapeHtml(valueLabel(shopItems.length))}</td><td>${topItems || "<span>n/a</span>"}</td></tr>`;
+    return `<tr data-search="${escapeAttr(`${titleFor(body, bodyKey)} ${body.type} ${titleFor(system, body.solarSystem)} ${shopItems.map((item) => resolveShopItem(item, cache).name).join(" ")}`)}" data-system="${escapeAttr(body.solarSystem)}" data-kind="${escapeAttr(body.type || "")}" data-status="${escapeAttr(status.key)}" data-shop="${escapeAttr(shopItems.length)}"><td>${entityLink("Bodies", bodyKey, cache, routes)}</td><td>${escapeHtml(valueLabel(body.type))}</td><td>${entityLink("SolarSystems", body.solarSystem, cache, routes)}</td><td><span class="status-pill status-${escapeAttr(status.key)}">${escapeHtml(status.label)}</span></td><td>${escapeHtml(valueLabel(body.level))}</td><td>${escapeHtml(coordinateLabel(body.x))}, ${escapeHtml(coordinateLabel(body.y))}</td><td>${escapeHtml(valueLabel(shopItems.length))}</td><td>${topItems || "<span>n/a</span>"}</td></tr>`;
   }).join("");
   return `<h1>Stations</h1><p class="muted">A player-facing index for shops, warp gates, research stations, hangars, cantinas, paint shops, and recycle stations. Filter by system or station type, then open the station page for stock, prices, hostiles nearby, and related links.</p>
 <div class="filter-panel" data-table-filter="stations-table">
@@ -2666,7 +2910,12 @@ function renderImageThumb(image, media) {
   if (local && isImageFile(image.fileName)) return `<img class="thumb" src="${escapeAttr(local.url)}" alt="">`;
   const atlas = findAtlasSprite(media, image);
   if (!atlas) return "";
-  return `<span class="thumb atlas-sprite" style="${escapeAttr(atlasStyle(atlas.frames[0], false))}" role="img" aria-label="${escapeAttr(image.fileName || atlas.label)}"></span>`;
+  const frames = atlas.frames.map((item) => ({
+    style: atlasStyle(item, false),
+    name: item.name
+  }));
+  const frameAttr = frames.length > 1 ? ` data-frames="${escapeAttr(JSON.stringify(frames))}"` : "";
+  return `<span class="thumb atlas-sprite"${frameAttr} style="${escapeAttr(atlasStyle(atlas.frames[0], false))}" role="img" aria-label="${escapeAttr(image.fileName || atlas.label)}"></span>`;
 }
 
 function resolveCanvasImageAsset(imageKey, cache, media) {
@@ -2797,6 +3046,7 @@ function bossLayeredParts(record, cache, media) {
       image,
       imageKey,
       frame,
+      frames: atlas.frames,
       index,
       x: numberValue(obj.xpos, 0) + numberValue(obj.imageOffsetX, 0),
       y: numberValue(obj.ypos, 0) + numberValue(obj.imageOffsetY, 0),
@@ -2904,6 +3154,9 @@ function bossLayeredStage(parts, options = {}) {
         `--spin:${part.rotationSpeed < 0 ? "-360deg" : "360deg"}`,
         part.rotationSpeed ? `animation-duration:${duration.toFixed(2)}s` : ""
       ].filter(Boolean).join(";");
+      const frameAttr = (part.frames || []).length > 1
+        ? ` data-frames="${escapeAttr(JSON.stringify(part.frames.map((item) => ({ style: `${atlasFrameStyle(item, spriteScale)};--base-rot:${part.angle}deg;${part.mirror ? "--mirror:-1;" : ""}${part.rotationSpeed ? `--spin:${part.rotationSpeed < 0 ? "-360deg" : "360deg"};animation-duration:${duration.toFixed(2)}s;` : ""}`, name: item.name }))))}"`
+        : "";
       const stateClass = `${part.rotationSpeed ? " spinning" : ""}${part.isDeadState ? " dead-state" : ""}${part.isHiddenAtStart ? " hidden-start" : ""} ${part.kind || "body"}-part`;
       const title = [
         part.kind ? `${part.kind} part` : "Boss part",
@@ -2913,7 +3166,7 @@ function bossLayeredStage(parts, options = {}) {
         part.refTable && part.refKey ? `${part.refTable}:${part.refKey}` : "",
         part.imageOffsetX || part.imageOffsetY ? `image offset ${valueLabel(part.imageOffsetX)}, ${valueLabel(part.imageOffsetY)}` : ""
       ].filter(Boolean).join(" / ");
-      return `<span class="${layerClass}" style="${escapeAttr(layerStyle)}" title="${escapeAttr(title)}"><span class="${spriteClass}${stateClass}" style="${escapeAttr(spriteStyle)}" role="img" aria-label="${escapeAttr(part.image.fileName || part.obj.name || "Boss part")}"></span></span>`;
+      return `<span class="${layerClass}" style="${escapeAttr(layerStyle)}" title="${escapeAttr(title)}"><span class="${spriteClass}${stateClass}"${frameAttr} style="${escapeAttr(spriteStyle)}" role="img" aria-label="${escapeAttr(part.image.fileName || part.obj.name || "Boss part")}"></span></span>`;
     }).join("");
   return {
     html: `<div class="${containerClass}" style="width:${stageWidth}px;height:${stageHeight}px">${layers}</div>`,
@@ -2937,7 +3190,7 @@ function renderBossLayeredMini(record, cache, media) {
     containerClass: "boss-mini-preview",
     layerClass: "boss-mini-layer",
     spriteClass: "boss-mini-sprite",
-    animate: false
+    animate: true
   }).html;
 }
 
@@ -2954,7 +3207,7 @@ function renderBossLayeredCard(record, cache, media) {
     containerClass: "boss-card-preview",
     layerClass: "boss-mini-layer",
     spriteClass: "boss-mini-sprite",
-    animate: false
+    animate: true
   });
   return `<figure class="media-card boss-assembled-card primary">${stage.html}<figcaption>${escapeHtml(record.name || "Boss")} assembled from ${rawParts.length} sprite part${rawParts.length === 1 ? "" : "s"}</figcaption></figure>`;
 }
