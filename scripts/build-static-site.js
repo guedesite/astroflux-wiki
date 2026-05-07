@@ -371,8 +371,8 @@ function renderSpawnerDropItems(items, cache, routes) {
   if (!Array.isArray(items) || !items.length) return "<span>n/a</span>";
   const links = items
     .map((item) => {
-      if (typeof item === "object" && item?.drop) return `${entityLink("Drops", item.drop, cache, routes)}${item.chance !== undefined ? ` <span class="muted">${percentLabel(item.chance)}</span>` : ""}`;
-      return entityLink("Drops", item, cache, routes);
+      if (typeof item === "object" && item?.drop) return `${dropLinkSummaryHtml(item.drop, cache, routes)}${item.chance !== undefined ? ` <span class="muted">${percentLabel(item.chance)}</span>` : ""}`;
+      return dropLinkSummaryHtml(item, cache, routes);
     })
     .filter(Boolean)
     .slice(0, 5);
@@ -518,6 +518,25 @@ function dropKindLabel(drop) {
   if (drop.crate) return "Crate";
   if (numberValue(drop.artifactChance, 0) > 0 || numberValue(drop.artifactLevel, 0) > 0 || name.includes("artifact")) return "Artifact roll";
   return "Drop table";
+}
+
+function dropArtifactSummaryText(drop) {
+  if (!drop) return "";
+  const parts = [];
+  if (numberValue(drop.artifactLevel, 0) > 0) parts.push(`artifact lvl ${valueLabel(drop.artifactLevel)}`);
+  if (numberValue(drop.artifactAmount, 0) > 0) {
+    const amount = numberValue(drop.artifactAmount, 0);
+    parts.push(`${valueLabel(drop.artifactAmount)} roll${amount === 1 ? "" : "s"}`);
+  }
+  if (numberValue(drop.artifactChance, 0) > 0) parts.push(`${percentLabel(drop.artifactChance)} artifact chance`);
+  return parts.join(" / ");
+}
+
+function dropLinkSummaryHtml(dropKey, cache, routes, label = null) {
+  if (!dropKey) return "<span>n/a</span>";
+  const drop = cache.Drops?.[dropKey];
+  const summary = dropArtifactSummaryText(drop);
+  return `${entityLink("Drops", dropKey, cache, routes, label || drop?.name || dropKey)}${summary ? ` <span class="muted">(${escapeHtml(summary)})</span>` : ""}`;
 }
 
 function entityThumbLinkHtml(table, key, cache, media, routes, fallback = null) {
@@ -1549,7 +1568,7 @@ function renderEnemyListing(entries, cache, media, routes) {
       const record = cache.Enemies?.[key];
       if (!record) return "";
       const imageKey = primaryImageKey("Enemies", record, cache);
-      const icon = cache.Images?.[imageKey] ? renderImageThumb(cache.Images[imageKey], media) : "";
+      const icon = cache.Images?.[imageKey] ? renderImageThumb(cache.Images[imageKey], media, { size: 64, frameClass: "enemy-thumb" }) : "";
       const stats = enemyShipStats(record, cache);
       const traits = enemyTraits(record, false);
       const effective = numberValue(stats.hpMax) + numberValue(stats.shieldMax);
@@ -2265,7 +2284,7 @@ function renderEnemyPage(key, record, cache, media, routes) {
     ? `<article><h2>Special Effect Flags</h2><div class="stat-grid">${statCard("Mini-boss", record.miniBoss)}${statCard("Rare mode", rareMode.label, rareMode.hint)}${statCard("Effect pool", rareEffects.length ? rareEffects.map((effect) => effect.label).join(", ") : "No named rare family")}${statCard("Loot source model", enemyLootSourceMode(key, record, cache))}</div><p class="muted">${rareEffects.length ? `Enabled rare families: ${escapeHtml(rareEffects.map((effect) => `${effect.label} - ${effect.hint}`).join(" | "))}` : "The client cache does not publish exact random-effect multipliers for this enemy. Use the enemy effects guide for the global summary of what is exposed."}</p><p><a class="button-link" href="/guides/enemy-effects.html">Open enemy effects guide</a></p></article>`
     : "";
   const lootLinks = [...new Set(dropRefs.map((item) => item.key))]
-    .map((dropKey) => entityLink("Drops", dropKey, cache, routes))
+    .map((dropKey) => dropLinkSummaryHtml(dropKey, cache, routes))
     .join(", ");
   const spawnerRows = linkedEnemySpawners(key, cache)
     .slice(0, 60)
@@ -2549,6 +2568,56 @@ function missionChainEntries(missionKey, cache) {
   return chain;
 }
 
+function missionChainStartKey(missionKey, cache) {
+  return missionChainEntries(missionKey, cache)[0] || missionKey;
+}
+
+function missionChainTitle(startKey, cache) {
+  const chain = missionChainEntries(startKey, cache);
+  const preferredKey = chain.find((key) => {
+    const name = titleFor(cache.MissionTypes?.[key], key);
+    return name && name !== key;
+  }) || startKey;
+  const preferredName = titleFor(cache.MissionTypes?.[preferredKey], preferredKey);
+  if (preferredName && preferredName !== preferredKey) {
+    const normalized = preferredName
+      .replace(/\s*[:\-]\s*part\s*1$/i, "")
+      .replace(/\s*\(\s*part\s*1\s*\)$/i, "")
+      .trim();
+    return normalized || preferredName;
+  }
+  const starter = missionStarterInfo(startKey, cache);
+  if (starter?.bodyName) return `${starter.bodyName} story chain`;
+  return `Story chain ${startKey.slice(0, 8)}`;
+}
+
+function missionChainSlug(startKey, cache) {
+  return slugify(`${missionChainTitle(startKey, cache)}-${startKey}`);
+}
+
+function missionChainUrl(startKey, cache) {
+  return `/quests/story/${missionChainSlug(startKey, cache)}.html`;
+}
+
+function storyMissionChains(entries, cache) {
+  const storyEntries = entries.filter((entry) => questCategoryInfo(cache.MissionTypes?.[entryKey(entry)]).id === "story");
+  const chains = [...new Map(storyEntries.map((entry) => {
+    const key = entryKey(entry);
+    const startKey = missionChainStartKey(key, cache);
+    const chain = missionChainEntries(startKey, cache);
+    const firstRecord = cache.MissionTypes?.[startKey];
+    return [startKey, {
+      startKey,
+      chain,
+      title: missionChainTitle(startKey, cache),
+      slug: missionChainSlug(startKey, cache),
+      url: missionChainUrl(startKey, cache),
+      record: firstRecord
+    }];
+  })).values()];
+  return chains.sort((a, b) => a.title.localeCompare(b.title, "en", { numeric: true }));
+}
+
 function missionCountValue(record) {
   for (const field of ["value", "targetLvlReq", "reqLvl"]) {
     if (record?.[field] !== undefined && record[field] !== null && record[field] !== "") return record[field];
@@ -2727,6 +2796,8 @@ function renderMissionPage(key, record, cache, routes) {
   const amount = missionCountValue(record);
   const previousKey = missionPreviousKey(key, cache);
   const chain = missionChainEntries(key, cache);
+  const chainStartKey = chain[0] || key;
+  const chainUrl = missionChainUrl(chainStartKey, cache);
   const chainRows = chain.map((missionKey, index) => {
     const mission = cache.MissionTypes?.[missionKey];
     return `<tr><td>${index + 1}</td><td>${missionKey === key ? `<strong>${entityLink("MissionTypes", missionKey, cache, routes)}</strong>` : entityLink("MissionTypes", missionKey, cache, routes)}</td><td>${escapeHtml(questCategoryInfo(mission).label)}</td><td>${escapeHtml(valueLabel(mission?.type))}</td></tr>`;
@@ -2737,7 +2808,7 @@ function renderMissionPage(key, record, cache, routes) {
     <article><h2>Where To Go</h2><ul class="link-list">${systems.length ? systems.map((system) => `<li>System: ${entityLink("SolarSystems", system.systemKey, cache, routes, system.systemName)}</li>`).join("") : "<li>No fixed system was resolved from the structured fields.</li>"}${bodies.length ? bodies.map((body) => `<li>Location: ${entityLink("Bodies", body.bodyKey, cache, routes, body.bodyName)}${body.systemKey ? ` <span class="muted">in ${entityLink("SolarSystems", body.systemKey, cache, routes, body.systemName)}</span>` : ""}</li>`).join("") : ""}</ul></article>
     <article><h2>What To Kill / Collect</h2><ul class="link-list">${enemies.length ? `<li>Targets: ${enemies.map((enemy) => entityLink(enemy.table, enemy.key, cache, routes)).join(", ")}</li>` : ""}${item ? `<li>Item: ${entityLink("Commodities", item.key, cache, routes, item.name)}</li>` : ""}${!enemies.length && !item ? "<li>No explicit enemy or item target was exposed in the structured fields.</li>" : ""}</ul></article>
     ${missionRewardArticle(record, cache, routes)}
-    ${chainRows ? `<article><h2>Quest Chain</h2><div class="stat-grid">${statCard("Previous", previousKey ? titleFor(cache.MissionTypes?.[previousKey], previousKey) : "Start of chain")}${statCard("Next", record.nextMission ? titleFor(cache.MissionTypes?.[record.nextMission], record.nextMission) : "End of chain")}${statCard("Chain size", chain.length || 1)}${statCard("Current step", chain.includes(key) ? `${chain.indexOf(key) + 1}/${chain.length}` : "n/a")}</div><div class="table-wrap"><table><thead><tr><th>Step</th><th>Quest</th><th>Category</th><th>Type</th></tr></thead><tbody>${chainRows}</tbody></table></div></article>` : ""}
+    ${chainRows ? `<article><h2>Quest Chain</h2><div class="stat-grid">${statCard("Previous", previousKey ? titleFor(cache.MissionTypes?.[previousKey], previousKey) : "Start of chain")}${statCard("Next", record.nextMission ? titleFor(cache.MissionTypes?.[record.nextMission], record.nextMission) : "End of chain")}${statCard("Chain size", chain.length || 1)}${statCard("Current step", chain.includes(key) ? `${chain.indexOf(key) + 1}/${chain.length}` : "n/a")}</div>${category.id === "story" ? `<p><a class="button-link" href="${escapeAttr(chainUrl)}">Open grouped chain page</a></p>` : ""}<div class="table-wrap"><table><thead><tr><th>Step</th><th>Quest</th><th>Category</th><th>Type</th></tr></thead><tbody>${chainRows}</tbody></table></div></article>` : ""}
     ${missionSolutionSteps(key, record, cache, routes)}
     <article><h2>Quest Text</h2><h3>Description</h3>${renderQuestNarrative(record.description, "No description was exposed for this quest.")}<h3>Completion</h3>${renderQuestNarrative(record.completeDescription, "No completion text was exposed for this quest.")}${questHasPlaceholders(record.description) || questHasPlaceholders(record.completeDescription) ? `<p class="muted">This quest still contains placeholder markers in the client cache, so some counts or location names may only be partially resolved automatically.</p>` : ""}</article>
   </section>`;
@@ -2778,6 +2849,58 @@ function renderDailyMissionPage(item, cache, media, routes) {
   <article><h2>Targets</h2><ul class="link-list">${systemKey ? `<li>System: ${entityLink("SolarSystems", systemKey, cache, routes)}</li>` : ""}${planetKey ? `<li>Planet: ${entityLink("Bodies", planetKey, cache, routes)}</li>` : ""}${enemyTargets.length ? `<li>Enemies / bosses: ${enemyTargets.map((enemy) => entityLink(enemy.table, enemy.key, cache, routes)).join(", ")}</li>` : ""}${targets.type ? `<li>Item: ${entityLink("Commodities", targets.type, cache, routes)}</li>` : ""}${targets.any ? "<li>Any matching target is valid.</li>" : ""}</ul></article>
   <article><h2>Rewards</h2>${rewardRows ? `<div class="table-wrap"><table><thead><tr><th>Reward</th><th>Amount / roll</th></tr></thead><tbody>${rewardRows}</tbody></table></div>` : `<p class="muted">No resolved reward rows were found for this daily quest.</p>`}</article>
   <article><h2>Detected Solution Path</h2><ol class="steps">${steps.map((step) => `<li>${step}</li>`).join("")}</ol></article>
+</section>`;
+}
+
+function renderStoryQuestRows(entries, cache, routes) {
+  return storyMissionChains(entries, cache).map((item) => {
+    const starter = missionStarterInfo(item.startKey, cache);
+    const systems = [...new Map(item.chain.flatMap((missionKey) => missionSystemTargets(cache.MissionTypes?.[missionKey], cache))
+      .map((system) => [system.systemKey, system])).values()];
+    const rewards = [...new Map(item.chain.map((missionKey) => {
+      const record = cache.MissionTypes?.[missionKey];
+      return record?.drop ? [record.drop, cache.Drops?.[record.drop]] : null;
+    }).filter(Boolean)).entries()];
+    const objective = missionObjectiveSummaryHtml(cache.MissionTypes?.[item.startKey], cache, routes);
+    return `<tr data-search="${escapeAttr(`${item.title} story chain ${starter?.bodyName || ""} ${systems.map((system) => system.systemName).join(" ")}`)}" data-steps="${escapeAttr(String(item.chain.length))}"><td><a href="${escapeAttr(item.url)}">${escapeHtml(item.title)}</a></td><td>${item.chain.length}</td><td>${starter ? `${entityLink("Bodies", starter.bodyKey, cache, routes, starter.bodyName)}<div class="muted">${entityLink("SolarSystems", starter.systemKey, cache, routes, starter.systemName)}</div>` : `<span class="muted">No explicit starter body</span>`}</td><td>${systems.length ? systems.map((system) => entityLink("SolarSystems", system.systemKey, cache, routes, system.systemName)).join(", ") : `<span class="muted">No fixed system</span>`}</td><td>${objective}</td><td>${rewards.length ? rewards.map(([dropKey, drop]) => entityLink("Drops", dropKey, cache, routes, drop?.name || dropKey)).join(", ") : `<span class="muted">No reward table</span>`}</td></tr>`;
+  }).join("");
+}
+
+function renderStoryQuestChainPage(item, cache, routes) {
+  const starter = missionStarterInfo(item.startKey, cache);
+  const systems = [...new Map(item.chain.flatMap((missionKey) => missionSystemTargets(cache.MissionTypes?.[missionKey], cache))
+    .map((system) => [system.systemKey, system])).values()];
+  const bodies = [...new Map(item.chain.flatMap((missionKey) => missionBodyTargets(cache.MissionTypes?.[missionKey], cache))
+    .map((body) => [body.bodyKey, body])).values()];
+  const enemies = [...new Map(item.chain.flatMap((missionKey) => missionEnemyTargets(cache.MissionTypes?.[missionKey], cache))
+    .map((enemy) => [`${enemy.table}:${enemy.key}`, enemy])).values()];
+  const itemTargets = [...new Map(item.chain.map((missionKey) => {
+    const target = missionItemInfo(cache.MissionTypes?.[missionKey], cache);
+    return target ? [target.key, target] : null;
+  }).filter(Boolean)).values()];
+  const rewardDrops = [...new Map(item.chain.map((missionKey) => {
+    const record = cache.MissionTypes?.[missionKey];
+    return record?.drop ? [record.drop, cache.Drops?.[record.drop]] : null;
+  }).filter(Boolean)).entries()];
+  const stepRows = item.chain.map((missionKey, index) => {
+    const mission = cache.MissionTypes?.[missionKey];
+    return `<tr><td>${index + 1}</td><td>${entityLink("MissionTypes", missionKey, cache, routes)}</td><td>${escapeHtml(valueLabel(mission?.type))}</td><td>${missionObjectiveSummaryHtml(mission, cache, routes)}</td><td>${mission?.drop ? entityLink("Drops", mission.drop, cache, routes, cache.Drops?.[mission.drop]?.name || mission.drop) : `<span class="muted">No reward table</span>`}</td></tr>`;
+  }).join("");
+  const stepSections = item.chain.map((missionKey, index) => {
+    const mission = cache.MissionTypes?.[missionKey];
+    const category = questCategoryInfo(mission);
+    return `<article><h2>Part ${index + 1}: ${entityLink("MissionTypes", missionKey, cache, routes)}</h2><div class="stat-grid">${statCard("Category", category.label)}${statCard("Type", mission?.type || "n/a")}${statCard("Subtype", mission?.subtype || "n/a")}${statCard("Level range", missionLevelRange(mission))}${statCard("Reward", mission?.drop ? titleFor(cache.Drops?.[mission.drop], mission.drop) : "No reward table")}</div><p>${missionObjectiveSummaryHtml(mission, cache, routes)}</p>${missionSolutionSteps(missionKey, mission, cache, routes)}<h3>Description</h3>${renderQuestNarrative(mission?.description, "No description was exposed for this quest.")}<h3>Completion</h3>${renderQuestNarrative(mission?.completeDescription, "No completion text was exposed for this quest.")}</article>`;
+  }).join("");
+  return `<section class="entity-hero"><div class="hero-main"><p class="eyebrow">Story quest chain</p><h1>${escapeHtml(item.title)}</h1><span class="pill">${escapeHtml(valueLabel(item.chain.length))} parts</span></div><div class="hero-facts"><div class="stat-grid compact">${statCard("Starter", starter?.bodyName || "No explicit starter body")}${statCard("Systems", systems.length || "n/a")}${statCard("Targets", enemies.length + itemTargets.length || "n/a")}${statCard("Rewards", rewardDrops.length || "n/a")}</div></div></section>
+<section class="content-grid">
+  <article><h2>Chain Overview</h2><div class="stat-grid">${statCard("Start", starter ? starter.bodyName : "No explicit starter body")}${statCard("System", starter?.systemName || "n/a")}${statCard("Parts", item.chain.length)}${statCard("First quest", titleFor(cache.MissionTypes?.[item.startKey], item.startKey))}</div><p>${missionObjectiveSummaryHtml(cache.MissionTypes?.[item.startKey], cache, routes)}</p></article>
+  <article><h2>Route & Targets</h2><ul class="link-list">${systems.length ? systems.map((system) => `<li>System: ${entityLink("SolarSystems", system.systemKey, cache, routes, system.systemName)}</li>`).join("") : "<li>No fixed system was resolved from the structured fields.</li>"}${bodies.length ? bodies.map((body) => `<li>Location: ${entityLink("Bodies", body.bodyKey, cache, routes, body.bodyName)}${body.systemKey ? ` <span class="muted">in ${entityLink("SolarSystems", body.systemKey, cache, routes, body.systemName)}</span>` : ""}</li>`).join("") : ""}${enemies.length ? `<li>Targets: ${enemies.map((enemy) => entityLink(enemy.table, enemy.key, cache, routes)).join(", ")}</li>` : ""}${itemTargets.length ? `<li>Items: ${itemTargets.map((target) => entityLink("Commodities", target.key, cache, routes, target.name)).join(", ")}</li>` : ""}</ul></article>
+  <article><h2>Reward Tables Across The Chain</h2>${rewardDrops.length ? `<div class="table-wrap"><table><thead><tr><th>Reward table</th><th>XP</th><th>Flux</th><th>Source step</th></tr></thead><tbody>${rewardDrops.map(([dropKey, drop]) => {
+    const firstIndex = item.chain.findIndex((missionKey) => cache.MissionTypes?.[missionKey]?.drop === dropKey);
+    return `<tr><td>${entityLink("Drops", dropKey, cache, routes, drop?.name || dropKey)}</td><td>${escapeHtml(rangeText(drop?.xpMin, drop?.xpMax))}</td><td>${escapeHtml(rangeText(drop?.fluxMin, drop?.fluxMax))}</td><td>${firstIndex >= 0 ? `Part ${firstIndex + 1}` : `<span class="muted">n/a</span>`}</td></tr>`;
+  }).join("")}</tbody></table></div>` : `<p class="muted">No structured reward tables were linked anywhere in this story chain.</p>`}</article>
+  <article><h2>All Parts</h2><div class="table-wrap"><table><thead><tr><th>Step</th><th>Quest</th><th>Type</th><th>Objective</th><th>Reward</th></tr></thead><tbody>${stepRows}</tbody></table></div></article>
+  ${stepSections}
 </section>`;
 }
 
@@ -2822,26 +2945,34 @@ function renderQuestCategoryPage(title, description, tableId, rows) {
   return `<h1>${escapeHtml(title)}</h1><p class="muted">${escapeHtml(description)}</p><div class="filter-panel" data-table-filter="${escapeAttr(tableId)}"><input id="${escapeAttr(tableId)}-filter-text" name="${escapeAttr(tableId)}-filter-text" data-filter-text type="search" placeholder="Search quest, type, target, system"></div><div class="table-wrap"><table id="${escapeAttr(tableId)}" class="sortable filterable"><thead><tr><th>Quest</th><th>Category</th><th>Type</th><th>Start</th><th>System</th><th>Objective</th><th>Reward</th><th>Chain</th></tr></thead><tbody>${rows}</tbody></table></div>`;
 }
 
+function renderStoryQuestCategoryPage(rows) {
+  return `<h1>Story Quests</h1><p class="muted">Story quests are grouped by their main chain title here. Open a chain page to read every part in order, with the linked systems, targets, rewards, and mission text on one page.</p><div class="filter-panel" data-table-filter="story-quests-table"><input id="story-quests-filter-text" name="story-quests-filter-text" data-filter-text type="search" placeholder="Search story chain, starter, system"></div><div class="table-wrap"><table id="story-quests-table" class="sortable filterable"><thead><tr><th>Story chain</th><th>Parts</th><th>Start</th><th>Systems</th><th>Opening objective</th><th>Rewards</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+}
+
 function renderDailyCategoryPage(cache, routes) {
   return `<h1>Daily Quests</h1><p class="muted">Daily quests use a cleaner data structure than story missions, so the targets and rewards can be resolved much more directly.</p><div class="filter-panel" data-table-filter="daily-quests-table"><input id="daily-quests-filter-text" name="daily-quests-filter-text" data-filter-text type="search" placeholder="Search daily, target, system"><select id="daily-quests-filter-kind" name="daily-quests-filter-kind" data-filter-attr="kind"><option value="">All daily types</option><option value="kill">Kill</option><option value="pickup">Pickup</option><option value="land_on_planet">Land on planet</option><option value="upgrade_tech">Upgrade tech</option></select></div><div class="table-wrap"><table id="daily-quests-table" class="sortable filterable"><thead><tr><th>Quest</th><th>Level</th><th>Type</th><th>Place</th><th>Target</th><th>Rewards</th></tr></thead><tbody>${renderDailyQuestRows(cache, routes)}</tbody></table></div>`;
 }
 
 function buildQuestPages(manifest, cache, media, routes) {
   const missionEntries = manifest.MissionTypes || [];
-  const storyRows = renderQuestRows(missionEntries, cache, routes, (record) => questCategoryInfo(record).id === "story");
+  const storyChains = storyMissionChains(missionEntries, cache);
+  const storyRows = renderStoryQuestRows(missionEntries, cache, routes);
   const timedRows = renderQuestRows(missionEntries, cache, routes, (record) => questCategoryInfo(record).id === "timed");
   const pvpRows = renderQuestRows(missionEntries, cache, routes, (record) => questCategoryInfo(record).id === "pvp");
   const cards = [
-    ["Story", "/quests/story/", missionEntries.filter((entry) => questCategoryInfo(cache.MissionTypes?.[entryKey(entry)]).id === "story").length, "Main quest chains and static world quests."],
+    ["Story", "/quests/story/", storyChains.length, "Main story chains grouped by their root quest."],
     ["Timed", "/quests/timed/", missionEntries.filter((entry) => questCategoryInfo(cache.MissionTypes?.[entryKey(entry)]).id === "timed").length, "Timed missions with rotating objectives and placeholder-heavy text."],
     ["Daily", "/quests/daily/", Object.keys(cache.DailyMissions || {}).length, "Structured daily missions with resolved targets and rewards."],
     ["PvP", "/quests/pvp/", missionEntries.filter((entry) => questCategoryInfo(cache.MissionTypes?.[entryKey(entry)]).id === "pvp").length, "PvP chains and progression quests."]
   ].map(([label, href, count, desc]) => `<a class="card" href="${escapeAttr(href)}"><strong>${escapeHtml(label)}</strong><span>${escapeHtml(valueLabel(count))} quests</span><span>${escapeHtml(desc)}</span></a>`).join("");
   writePage(path.join(DIST_DIR, "quests", "index.html"), "Quests", `<h1>Quests</h1><p class="muted">This hub groups story quests, timed quests, daily missions, and PvP chains. Story and timed pages reuse the enriched mission detail pages, while daily quests get dedicated pages under <code>/quests/daily/</code>.</p><section class="cards">${cards}</section><section class="notice"><strong>Tip:</strong> use the category pages to filter by objective, then open a quest detail page for the full chain, reward table, and detected solution path.</section>`);
-  writePage(path.join(DIST_DIR, "quests", "story", "index.html"), "Story Quests", renderQuestCategoryPage("Story Quests", "Static quest chains and world quests reconstructed from MissionTypes and starter bodies.", "story-quests-table", storyRows));
+  writePage(path.join(DIST_DIR, "quests", "story", "index.html"), "Story Quests", renderStoryQuestCategoryPage(storyRows));
   writePage(path.join(DIST_DIR, "quests", "timed", "index.html"), "Timed Quests", renderQuestCategoryPage("Timed Quests", "Timed missions often rely on placeholder-heavy text, so the guide keeps both structured targets and the raw narrative hints.", "timed-quests-table", timedRows));
   writePage(path.join(DIST_DIR, "quests", "pvp", "index.html"), "PvP Quests", renderQuestCategoryPage("PvP Quests", "PvP chains are separated here so they do not get mixed into regular progression quests.", "pvp-quests-table", pvpRows));
   writePage(path.join(DIST_DIR, "quests", "daily", "index.html"), "Daily Quests", renderDailyCategoryPage(cache, routes));
+  for (const item of storyChains) {
+    writePage(path.join(DIST_DIR, "quests", "story", `${item.slug}.html`), item.title, renderStoryQuestChainPage(item, cache, routes));
+  }
   for (const item of dailyMissionCatalog(cache)) {
     writePage(path.join(DIST_DIR, `${item.slug}.html`), item.name, renderDailyMissionPage(item, cache, media, routes));
   }
@@ -3167,15 +3298,17 @@ function renderImageCard(image, key, media, primary = false) {
   return `<div class="media-card missing"><strong>${escapeHtml(image.fileName || image.textureName || key)}</strong><span>GameFS texture ref: ${escapeHtml(image.type || "unknown")} / ${escapeHtml(image.textureName || "no textureName")}</span></div>`;
 }
 
-function renderImageThumb(image, media) {
+function renderImageThumb(image, media, options = {}) {
+  const size = Math.max(16, numberValue(options.size, 36));
+  const frameClass = options.frameClass ? ` ${options.frameClass}` : "";
   const local = media.byGameFile.get(image.fileName);
   if (local && isImageFile(image.fileName)) {
-    return `<span class="thumb-frame"><img class="thumb" loading="lazy" decoding="async" src="${escapeAttr(local.url)}" alt=""></span>`;
+    return `<span class="thumb-frame${escapeAttr(frameClass)}" style="width:${escapeAttr(size)}px;height:${escapeAttr(size)}px"><img class="thumb" loading="lazy" decoding="async" src="${escapeAttr(local.url)}" alt=""></span>`;
   }
   const atlas = findAtlasSprite(media, image);
   if (!atlas) return "";
   const frames = sampleAnimationFrames(atlas.frames, 12);
-  const metrics = atlasThumbMetrics(frames);
+  const metrics = atlasThumbMetrics(frames, size);
   const framePayload = frames.map((item) => ({
     x: Math.round(item.x * metrics.scale),
     y: Math.round(item.y * metrics.scale),
@@ -3184,7 +3317,7 @@ function renderImageThumb(image, media) {
     name: item.name
   }));
   const frameAttr = framePayload.length > 1 ? ` data-frame-data="${escapeAttr(JSON.stringify(framePayload))}"` : "";
-  return `<span class="thumb-frame"><span class="thumb atlas-sprite"${frameAttr} style="${escapeAttr(atlasThumbStyle(frames[0], metrics))}" role="img" aria-label="${escapeAttr(image.fileName || atlas.label)}"></span></span>`;
+  return `<span class="thumb-frame${escapeAttr(frameClass)}" style="width:${escapeAttr(size)}px;height:${escapeAttr(size)}px"><span class="thumb atlas-sprite"${frameAttr} style="${escapeAttr(atlasThumbStyle(frames[0], metrics))}" role="img" aria-label="${escapeAttr(image.fileName || atlas.label)}"></span></span>`;
 }
 
 function resolveCanvasImageAsset(imageKey, cache, media) {
@@ -3260,10 +3393,9 @@ function sampleAnimationFrames(frames, limit = 12) {
   return sampled.length ? sampled : frames.slice(0, limit);
 }
 
-function atlasThumbMetrics(frames) {
+function atlasThumbMetrics(frames, box = 36) {
   const maxFrameWidth = Math.max(...frames.map((frame) => numberValue(frame?.width, 1)), 1);
   const maxFrameHeight = Math.max(...frames.map((frame) => numberValue(frame?.height, 1)), 1);
-  const box = 36;
   const scale = Math.min(1, box / maxFrameWidth, box / maxFrameHeight);
   const atlasWidth = Math.max(...frames.map((frame) => numberValue(frame?.atlasWidth, 1)), 1);
   const atlasHeight = Math.max(...frames.map((frame) => numberValue(frame?.atlasHeight, 1)), 1);
@@ -4012,6 +4144,9 @@ function buildSearchEntries(manifest, cache) {
   }
   for (const item of uniqueArtifactCatalog(cache)) {
     entries.push({ name: item.label, table: "Unique Artifacts", type: uniqueArtifactSourceStatus(item, cache), url: item.url });
+  }
+  for (const item of storyMissionChains(manifest.MissionTypes || [], cache)) {
+    entries.push({ name: item.title, table: "Quests", type: "Story Chain", url: item.url });
   }
   for (const [name, href, type] of GUIDE_PAGES) {
     entries.push({ name, table: "Guides", type, url: `/${href}` });
