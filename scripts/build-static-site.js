@@ -301,6 +301,65 @@ function enemyTraitItems(record) {
   return flags.filter(([field]) => record[field]).map(([, label, hint]) => ({ label, hint }));
 }
 
+const ENEMY_RARE_EFFECTS = [
+  {
+    field: "rareAttacker",
+    label: "Attacker",
+    hint: "The name suggests an offense-oriented rare roll. The client cache does not expose the exact damage or refire multiplier."
+  },
+  {
+    field: "rareDefender",
+    label: "Defender",
+    hint: "The name suggests a survivability-oriented rare roll. The client cache does not expose the exact HP, shield, armor, or resistance multiplier."
+  },
+  {
+    field: "rareLegend",
+    label: "Legend",
+    hint: "A distinct rare family used by high-tier named enemies. The client cache exposes the flag but not the exact stat formula behind it."
+  },
+  {
+    field: "rareSpeeder",
+    label: "Speeder",
+    hint: "The name suggests a movement-focused rare roll. The client cache does not expose the exact speed or chase-range multiplier."
+  },
+  {
+    field: "rareUnique",
+    label: "Unique",
+    hint: "A distinct rare family used by a smaller set of named enemies. The client cache does not expose a separate global loot rule for it."
+  }
+];
+
+function enemyRareEffectItems(record) {
+  return ENEMY_RARE_EFFECTS
+    .filter((effect) => record?.[effect.field])
+    .map((effect) => ({ ...effect, active: true }));
+}
+
+function enemyRareMode(record) {
+  if (record?.alwaysRare) {
+    return {
+      label: "Always rare",
+      hint: "This enemy record is already wired as a rare-profile hostile in the client cache."
+    };
+  }
+  if (record?.rareSettings) {
+    return {
+      label: "Random rare effect enabled",
+      hint: "This enemy can roll from the rare-effect families exposed by the client cache."
+    };
+  }
+  if (enemyRareEffectItems(record).length) {
+    return {
+      label: "Rare flags present",
+      hint: "The record exposes rare-family flags, but the client cache does not mark it as alwaysRare."
+    };
+  }
+  return {
+    label: "No rare effect flag",
+    hint: "The client cache does not expose a random rare-effect flag for this enemy."
+  };
+}
+
 function enemyTraits(record, html = false) {
   const items = enemyTraitItems(record);
   if (!items.length) return html ? tip("Standard", "No special AI flag was found in the enemy record.") : "Standard";
@@ -358,6 +417,16 @@ function enemyDropRefs(enemyKey, record, cache) {
     ...normalizeDropRefs(record?.drops),
     ...linkedEnemySpawners(enemyKey, cache).flatMap(([, spawner]) => normalizeDropRefs([...(spawner.drops || []), ...(spawner.drops2 || [])]))
   ]);
+}
+
+function enemyLootSourceMode(enemyKey, record, cache) {
+  const directKeys = new Set(normalizeDropRefs(record?.drops).map((item) => item.key));
+  const allKeys = new Set(enemyDropRefs(enemyKey, record, cache).map((item) => item.key));
+  const spawnerOnly = [...allKeys].filter((key) => !directKeys.has(key));
+  if (!allKeys.size) return "No enemy/spawner loot link in client cache";
+  if (directKeys.size && spawnerOnly.length) return "Direct enemy + spawner-linked loot";
+  if (directKeys.size) return "Direct enemy loot";
+  return "Spawner-linked loot";
 }
 
 function dropSourceData(dropKey, cache) {
@@ -1487,7 +1556,7 @@ function renderEnemyListing(entries, cache, media, routes) {
       return `<tr data-search="${escapeAttr(`${entry.name} ${traits} ${damageTypeLabel(record.damageType)} ${stats.body}`)}" data-trait="${escapeAttr(traits)}" data-damage="${escapeAttr(record.damageType ?? "")}" data-level="${escapeAttr(record.level ?? 0)}" data-hp="${escapeAttr(effective)}" data-kres="${escapeAttr(record.kineticResist ?? 0)}" data-eres="${escapeAttr(record.energyResist ?? 0)}" data-cres="${escapeAttr(record.corrosiveResist ?? 0)}"><td class="name-cell">${icon}<a href="/${entry.slug}.html">${escapeHtml(entry.name)}</a></td><td>${escapeHtml(valueLabel(record.level))}</td><td>${escapeHtml(valueLabel(stats.hpMax))}</td><td>${escapeHtml(valueLabel(stats.shieldMax))}</td><td>${escapeHtml(valueLabel(record.xp))}</td><td>${enemyTraits(record, true)}</td><td>${escapeHtml(damageTypeLabel(record.damageType))}</td><td>${escapeHtml(valueLabel(record.kineticResist))}</td><td>${escapeHtml(valueLabel(record.energyResist))}</td><td>${escapeHtml(valueLabel(record.corrosiveResist))}</td></tr>`;
     })
     .join("");
-  return `<h1>Enemies</h1><p class="muted">The useful first pass for a player: sprite, name, level, survivability, special behavior, damage type, and resistances. HP is taken from the linked ship record; <code>startHp</code> is shown on detail pages when an enemy starts damaged.</p><p><a class="button-link" href="/guides/combat.html">Open combat guide</a></p>
+  return `<h1>Enemies</h1><p class="muted">The useful first pass for a player: sprite, name, level, survivability, special behavior, damage type, and resistances. HP is taken from the linked ship record; <code>startHp</code> is shown on detail pages when an enemy starts damaged.</p><p><a class="button-link" href="/guides/combat.html">Open combat guide</a> <a class="button-link" href="/guides/enemy-effects.html">Open enemy effects guide</a></p>
 <div class="filter-panel" data-table-filter="enemies-table">
   <input id="enemy-filter-text" name="enemy-filter-text" data-filter-text type="search" placeholder="Search enemy, trait, ship">
   <select id="enemy-filter-trait" name="enemy-filter-trait" data-filter-contains="trait"><option value="">All traits</option>${traitOptions}</select>
@@ -2190,6 +2259,11 @@ function renderEnemyPage(key, record, cache, media, routes) {
   const stats = enemyShipStats(record, cache);
   const loadout = (record.weapons || []).map((weapon) => renderWeaponLoadout(weapon, cache, routes)).join("");
   const dropRefs = enemyDropRefs(key, record, cache);
+  const rareEffects = enemyRareEffectItems(record);
+  const rareMode = enemyRareMode(record);
+  const rareArticle = record?.miniBoss || record?.rareSettings || record?.alwaysRare || rareEffects.length
+    ? `<article><h2>Special Effect Flags</h2><div class="stat-grid">${statCard("Mini-boss", record.miniBoss)}${statCard("Rare mode", rareMode.label, rareMode.hint)}${statCard("Effect pool", rareEffects.length ? rareEffects.map((effect) => effect.label).join(", ") : "No named rare family")}${statCard("Loot source model", enemyLootSourceMode(key, record, cache))}</div><p class="muted">${rareEffects.length ? `Enabled rare families: ${escapeHtml(rareEffects.map((effect) => `${effect.label} - ${effect.hint}`).join(" | "))}` : "The client cache does not publish exact random-effect multipliers for this enemy. Use the enemy effects guide for the global summary of what is exposed."}</p><p><a class="button-link" href="/guides/enemy-effects.html">Open enemy effects guide</a></p></article>`
+    : "";
   const lootLinks = [...new Set(dropRefs.map((item) => item.key))]
     .map((dropKey) => entityLink("Drops", dropKey, cache, routes))
     .join(", ");
@@ -2200,6 +2274,7 @@ function renderEnemyPage(key, record, cache, media, routes) {
   return `<section class="content-grid">
     <article><h2>Threat Profile</h2><div class="stat-grid">${statCard("Traits", enemyTraits(record, false))}${statCard("Damage type", damageTypeLabel(record.damageType))}${statCard("Damage", record.damage || record.kamikazeDmg)}${statCard("Range", record.range || record.aggroRange)}${statCard("Refire", record.refire)}${statCard("XP", record.xp)}</div>${renderDescription(record.description)}</article>
     <article><h2>Survival Info</h2><div class="stat-grid">${statCard("Max HP", stats.hpMax)}${record.startHp !== undefined ? statCard("Starts With HP", stats.startHp, `${valueLabel(record.startHp)}% of max`) : ""}${statCard("Shield", stats.shieldMax)}${statCard("Armor", stats.armor)}${statCard("Kinetic resist", record.kineticResist)}${statCard("Energy resist", record.energyResist)}${statCard("Corrosive resist", record.corrosiveResist)}</div></article>
+    ${rareArticle}
     <article><h2>Equipment</h2><ul class="link-list"><li>Ship sprite/base stats: ${entityLink("Ships", record.ship, cache, routes)}${stats.body ? ` <span class="muted">${escapeHtml(stats.body)}</span>` : ""}</li><li>Engine: ${entityLink("Engines", record.engine, cache, routes)}</li><li>Loot: ${lootLinks || missingValue()}</li>${loadout}</ul></article>
     ${renderSourceDropArticles("Enemy", dropRefs, cache, media, routes)}
     ${spawnerRows ? `<article><h2>Found At</h2><input class="table-filter" name="table-filter" placeholder="Filter spawn locations"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Spawner</th><th>Location</th><th>Level</th><th>Spawner drops</th></tr></thead><tbody>${spawnerRows}</tbody></table></div></article>` : ""}
@@ -2783,6 +2858,7 @@ function buildGuidePages(cache, manifest, media, routes) {
     .join("");
   writePage(path.join(DIST_DIR, "guides", "index.html"), "Guides", `<h1>Guides</h1><p class="muted">These pages turn the source tables into practical questions: what to equip, what to farm, where to go, and what a hostile can do.</p><section class="cards">${guideCards}</section><section class="notice"><strong>Tip:</strong> every guide table is sortable and filterable. Open a row when you need exact source data, sprites, sounds, drops, and related pages.</section>`);
   writePage(path.join(DIST_DIR, "guides", "combat.html"), "Combat Guide", renderCombatGuide(cache));
+  writePage(path.join(DIST_DIR, "guides", "enemy-effects.html"), "Enemy Effects Guide", renderEnemyEffectsGuide(cache, routes));
   writePage(path.join(DIST_DIR, "guides", "weapons.html"), "Weapon Finder", renderWeaponGuide(cache, manifest, media, routes));
   writePage(path.join(DIST_DIR, "guides", "artifacts.html"), "Artifact Guide", renderArtifactGuide(cache, manifest, media, routes));
   writePage(path.join(DIST_DIR, "guides", "farming.html"), "Farming Guide", renderFarmingGuide(cache, manifest, media, routes));
@@ -2809,6 +2885,37 @@ function renderCombatGuide(cache) {
   <article><h2>How To Read Enemy Pages</h2><p>Start with traits, damage type, and resistances. Then inspect the weapon loadout and spawn location. A low-HP enemy with teleport or kamikaze behavior can be more dangerous than a static high-HP target.</p><div class="table-wrap"><table><thead><tr><th>Trait</th><th>Player meaning</th></tr></thead><tbody>${traitRows}</tbody></table></div></article>
   <article><h2>Fast Workflow</h2><ol class="steps"><li>Find the enemy in <a href="/enemies/">Enemies</a>.</li><li>Check its weakest resistance and damage type.</li><li>Open its weapons to see range and projectile behavior.</li><li>Open its drops or spawn location when farming.</li></ol></article>
 </section>`;
+}
+
+function renderEnemyEffectsGuide(cache, routes) {
+  const tracked = Object.entries(cache.Enemies || {})
+    .map(([key, record]) => ({ key, record, effects: enemyRareEffectItems(record), rareMode: enemyRareMode(record) }))
+    .filter(({ record, effects }) => record?.miniBoss || record?.rareSettings || record?.alwaysRare || effects.length);
+  const miniBossCount = tracked.filter(({ record }) => record?.miniBoss).length;
+  const randomRareCount = tracked.filter(({ record }) => record?.rareSettings).length;
+  const alwaysRareCount = tracked.filter(({ record }) => record?.alwaysRare).length;
+  const familyRows = ENEMY_RARE_EFFECTS.map((effect) => {
+    const enemies = tracked.filter(({ record }) => record?.[effect.field]);
+    const examples = enemies.slice(0, 4).map(({ key }) => entityLink("Enemies", key, cache, routes)).join(", ");
+    return `<tr><td>${escapeHtml(effect.label)}</td><td><code>${escapeHtml(effect.field)}</code></td><td>${escapeHtml(effect.hint)}</td><td>No global multiplier is exposed. Check the enemy page for direct and spawner-linked loot tables.</td><td>${escapeHtml(valueLabel(enemies.length))}</td><td>${escapeHtml(valueLabel(enemies.filter(({ record }) => record?.miniBoss).length))}</td><td>${escapeHtml(valueLabel(enemies.filter(({ record }) => record?.alwaysRare).length))}</td><td>${examples || "<span>n/a</span>"}</td></tr>`;
+  }).join("");
+  const enemyRows = tracked
+    .sort((a, b) => numberValue(b.record?.level, 0) - numberValue(a.record?.level, 0) || titleFor(a.record, a.key).localeCompare(titleFor(b.record, b.key)))
+    .map(({ key, record, effects, rareMode }) => {
+      const lootRefs = enemyDropRefs(key, record, cache);
+      const lootPreview = [...new Set(lootRefs.map((item) => cache.Drops?.[item.key]?.name || item.key))]
+        .slice(0, 3)
+        .join(", ");
+      return `<tr data-search="${escapeAttr(`${titleFor(record, key)} ${effects.map((effect) => effect.label).join(" ")} ${rareMode.label}`)}"><td>${entityLink("Enemies", key, cache, routes)}</td><td>${escapeHtml(valueLabel(record.level))}</td><td>${escapeHtml(valueLabel(record.miniBoss))}</td><td>${escapeHtml(rareMode.label)}</td><td>${effects.length ? effects.map((effect) => escapeHtml(effect.label)).join(", ") : "<span>n/a</span>"}</td><td>${escapeHtml(enemyLootSourceMode(key, record, cache))}</td><td>${lootPreview ? escapeHtml(lootPreview) : "<span>n/a</span>"}</td></tr>`;
+    })
+    .join("");
+  return `<h1>Enemy Effects Guide</h1>
+<section class="content-grid">
+  <article><h2>What The Client Cache Exposes</h2><p>The random special-effect system is only partially exposed in the downloaded client data. The cache gives stable flags such as <code>miniBoss</code>, <code>rareSettings</code>, <code>alwaysRare</code>, and named rare families like <code>rareAttacker</code> or <code>rareLegend</code>. It does <strong>not</strong> publish a numeric table for the exact stat multipliers or a global loot-bonus formula, so this guide stays factual about what can be proven from the data.</p></article>
+  <article><h2>Observed Coverage</h2><div class="stat-grid">${statCard("Tracked hostiles", tracked.length)}${statCard("Mini-boss flagged", miniBossCount)}${statCard("Random rare enabled", randomRareCount)}${statCard("Always rare", alwaysRareCount)}${statCard("Rare families", ENEMY_RARE_EFFECTS.length)}</div><p class="muted">Use each enemy page for the exact loot tables. This guide explains the special-effect flags and shows which enemies are wired for them.</p></article>
+</section>
+<article><h2>Rare Effect Families</h2><div class="table-wrap"><table class="sortable"><thead><tr><th>Family</th><th>Cache flag</th><th>Observable stat signal</th><th>Observable loot signal</th><th>Eligible enemies</th><th>Mini-bosses</th><th>Always rare</th><th>Examples</th></tr></thead><tbody>${familyRows}</tbody></table></div></article>
+<article><h2>Tracked Enemy Records</h2><p class="muted">Rows below include enemies that are mini-bosses, have rare-mode enabled, are always rare, or expose one of the named rare families.</p><input class="table-filter" name="table-filter" placeholder="Filter effect family, enemy, or rare mode"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Enemy</th><th>Level</th><th>Mini-boss</th><th>Rare mode</th><th>Effect pool</th><th>Loot wiring</th><th>Loot preview</th></tr></thead><tbody>${enemyRows}</tbody></table></div></article>`;
 }
 
 function renderWeaponGuide(cache, manifest, media, routes) {

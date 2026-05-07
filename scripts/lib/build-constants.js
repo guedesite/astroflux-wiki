@@ -14,6 +14,7 @@ export const DAMAGE_TYPES = [
 export const GUIDE_PAGES = [
   ["Guides", "guides/", "Start here"],
   ["Combat Guide", "guides/combat.html", "Damage, resistances, and threat reading"],
+  ["Enemy Effects Guide", "guides/enemy-effects.html", "Mini-bosses, rare rolls, and observable loot changes"],
   ["Weapon Finder", "guides/weapons.html", "Compare damage, range, heat, and reload"],
   ["Artifact Guide", "guides/artifacts.html", "Artifact stats, special rolls, and drop odds"],
   ["Farming Guide", "guides/farming.html", "Find where items and resources drop"],
