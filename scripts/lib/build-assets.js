@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { createHash } from "node:crypto";
 
 import { DIST_DIR } from "./project-paths.js";
 import { ensureDir } from "./file-utils.js";
@@ -117,12 +118,21 @@ window.initSystemMap=initSystemMapZoomable;`;
 
 export function writeAssets(searchEntries = [], media = {}) {
   const mapBackground = media.atlasByName?.get("star_map") || null;
+  const css = buildSiteCss();
   const js = stripLeadingSlashSiteUrls(`${buildClientScript(searchEntries, mapBackground)}\n${MAP_NAVIGATION_TEMPLATE}`);
   const apacheCacheConfig = buildApacheCacheConfig();
+  const assetVersion = createHash("sha256")
+    .update(css)
+    .update("\0")
+    .update(js)
+    .digest("hex")
+    .slice(0, 12);
 
   ensureDir(path.join(DIST_DIR, "assets"));
   fs.writeFileSync(path.join(DIST_DIR, "assets", "favicon.ico"), Buffer.from(FAVICON_BASE64, "base64"));
-  fs.writeFileSync(path.join(DIST_DIR, "assets", "site.css"), buildSiteCss(), "utf8");
+  fs.writeFileSync(path.join(DIST_DIR, "assets", "site.css"), css, "utf8");
   fs.writeFileSync(path.join(DIST_DIR, "assets", "search.js"), js, "utf8");
   fs.writeFileSync(path.join(DIST_DIR, ".htaccess"), apacheCacheConfig, "utf8");
+
+  return { assetVersion };
 }

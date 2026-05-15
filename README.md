@@ -12,7 +12,7 @@ The project turns extracted game data into a browsable static website:
 
 1. read game source files from `source\`
 2. normalize and index the data
-3. generate Markdown content and HTML pages
+3. generate Markdown content
 4. build the final static site in `dist\`
 
 The result is a wiki with:
@@ -39,6 +39,7 @@ In practice:
 - `npm run extract` **requires** `source\`
 - `npm run build` rebuilds the static site from generated data already present in the repo
 - `npm run check` validates generated output
+- GitHub Actions publishes `dist\` to GitHub Pages, so `dist\` itself is not committed
 
 ## How it works
 
@@ -66,7 +67,7 @@ This script reads the indexed data and generates the static website in:
 
 - `dist\`
 
-It also generates the root `index.html`, which redirects to `dist\`.
+It also generates the root `index.html`, which redirects to `dist\` for local previews.
 
 ### 3. Validate
 
@@ -109,7 +110,7 @@ This serves the generated site locally for quick inspection.
 | `data\raw\` | Generated raw JSON output |
 | `data\index\` | Generated normalized indexes and manifests |
 | `content\` | Generated Markdown content |
-| `dist\` | Final static site |
+| `dist\` | Local build output and GitHub Pages artifact, not tracked by git |
 | `scripts\` | Extraction, build, validation, and utility scripts |
 | `scripts\lib\` | Shared helpers used by the generator |
 
@@ -121,6 +122,7 @@ This serves the generated site locally for quick inspection.
 | `scripts\build-static-site.js` | Builds the final static wiki |
 | `scripts\check-generated-output.js` | Validates generated files |
 | `scripts\serve-dist.js` | Serves `dist\` locally |
+| `scripts\compare-dist-output.js` | Compares a rebuilt `dist\` against a baseline output |
 | `scripts\fetch-gamefs-assets.js` | Utility script for game asset retrieval |
 
 ## Contributing
@@ -149,8 +151,9 @@ If your change is only about the static renderer or documentation, you may not a
 ### Contribution rules
 
 - **Do not commit `source\`**
+- **Do not commit `dist\`**; GitHub Actions builds and publishes it
 - prefer changing generator scripts instead of editing generated output by hand
-- treat `data\raw\`, `data\index\`, `content\`, and `dist\` as generated artifacts
+- treat `data\raw\`, `data\index\`, and `content\` as generated inputs for the static build
 - if a page is wrong, fix the generation logic first
 - keep the project focused on helping players understand progression, systems, and useful game data
 

@@ -9,6 +9,7 @@
     "check": "node scripts/check-generated-output.js",
     "serve:dist": "node scripts/serve-dist.js",
     "fetch:assets": "node scripts/fetch-gamefs-assets.js",
+    "compare:dist": "node scripts/compare-dist-output.js",
     "test": "node --test",
     "wiki": "npm run extract && npm run build"
   }
