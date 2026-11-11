@@ -111,13 +111,15 @@
       clampState();
     }
 
-    function centerOn(x, y, scale = state.scale) {
+    function centerOn(x, y, scale = state.scale, allowOutsideBounds = false) {
       state.scale = scale;
       clampState();
       const size = viewSize();
       state.viewX = x - size.width / 2;
       state.viewY = y - size.height / 2;
-      clampState();
+      // A focused body near the system edge cannot be centered while staying
+      // inside the pan bounds; skip the final clamp so the marker is exact.
+      if (!allowOutsideBounds) clampState();
     }
 
     reset();
@@ -679,7 +681,7 @@
         drawSystemFocusMarker(ctx, x, y, radius);
       }
       const label = bodyDisplayName(body);
-      if (label && (body.key === focusBodyKey || body.station || body.type === "sun" || body.type === "boss" || view.state.scale > view.minScale() * 1.15)) {
+      if (label && !body.hidden && (body.key === focusBodyKey || body.station || body.type === "sun" || body.type === "planet" || body.type === "boss" || view.state.scale > view.minScale() * 1.15)) {
         ctx.fillStyle = body.type === "boss" ? "#ffd6c9" : "#e6edf3";
         ctx.font = "12px system-ui";
         ctx.fillText(label, x + radius + 6, y + 4);
@@ -811,10 +813,14 @@
       : null;
     if (focusBody) {
       const baseReset = view.reset;
-      const focusScale = Math.max(view.minScale(), Math.min(7, view.minScale() * 1.45));
+      // Show a neighbourhood around the body instead of the whole system, so
+      // its orbit and nearby stations/spawners are readable. Orbiting bodies
+      // get a proportionally wider view; fixed stations get a 12k-unit window.
+      const focusSpan = Math.max(12000, Math.min(40000, toNumber(focusBody.orbitRadius, 0) * 4));
+      const focusScale = Math.max(view.minScale(), Math.min(7, canvas.height / focusSpan));
       view.reset = () => {
         baseReset();
-        view.centerOn(toNumber(focusBody.x), toNumber(focusBody.y), focusScale);
+        view.centerOn(toNumber(focusBody.x), toNumber(focusBody.y), focusScale, true);
       };
       view.reset();
     }

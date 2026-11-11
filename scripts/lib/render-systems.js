@@ -129,18 +129,27 @@ export function renderSystemPage(key, record, cache, media, routes) {
 export function renderBodyPage(key, record, cache, media, routes) {
   const spawners = Object.entries(cache.Spawners || {}).filter(([, spawner]) => spawner.body === key);
   const systemRecord = cache.SolarSystems?.[record.solarSystem];
-  const map = isStationBody(record) && isVisibleMapSystem(systemRecord, record.solarSystem)
+  const resolvedBodies = record.solarSystem ? resolvedSystemBodies(record.solarSystem, cache) : [];
+  const resolvedBody = resolvedBodies.find((body) => body.key === key) || null;
+  const rawX = numberValue(record.x, 0);
+  const rawY = numberValue(record.y, 0);
+  const posX = resolvedBody ? resolvedBody.x : rawX;
+  const posY = resolvedBody ? resolvedBody.y : rawY;
+  const hiddenMapBody = String(record.type || "").toLowerCase() === "hidden";
+  const orbitAngle = Number.isFinite(Number(record.orbitAngle)) ? Number(record.orbitAngle) : null;
+  const orbitAngleHint = orbitAngle === null ? "" : `${Math.round(orbitAngle * 180 / Math.PI)} degrees`;
+  const map = !hiddenMapBody && systemRecord && isVisibleMapSystem(systemRecord, record.solarSystem)
     ? renderSystemLocalMap(record.solarSystem, systemRecord, cache, media, routes, {
       focusBodyKey: key,
-      title: "Station Position In System",
-      description: `2D system map centered on ${bodyDisplayName(key, record, cache)}. The large cyan marker shows exactly where this station sits inside the system.`
+      title: "Position In System",
+      description: `2D system map centered on ${bodyDisplayName(key, record, cache)}. The large cyan marker shows where this location sits inside the system, using its resolved orbit position.`
     })
     : "";
   const shopRows = (record.shopItems || []).map((item) => `<tr><td>${shopItemLink(item, cache, routes)}</td><td>${escapeHtml(valueLabel(item.available))}</td><td>${shopItemPriceHtml(item, cache, routes)}</td></tr>`).join("");
   const spawnerRows = spawners.map(([spawnerKey, spawner]) => `<tr><td>${entityLink("Spawners", spawnerKey, cache, routes, spawner.name || spawnerKey)}</td><td>${entityLink("Enemies", spawner.enemy, cache, routes)}</td><td>${entityLink("Bosses", spawner.bossSpawner, cache, routes)}</td><td>${renderSpawnerDropItems([...(spawner.drops || []), ...(spawner.drops2 || [])], cache, routes)}</td><td>${escapeHtml(valueLabel(spawner.level))}</td></tr>`).join("");
   return `${map}<section class="content-grid">
-    <article><h2>Location Info</h2><div class="stat-grid">${statCard("System", record.solarSystem ? titleFor(cache.SolarSystems?.[record.solarSystem], record.solarSystem) : "n/a")}${statCard("Safe zone", record.safeZoneRadius)}${statCard("Orbit", record.orbitRadius)}${statCard("Spawners", spawners.length)}</div></article>
-    <article><h2>Travel Links</h2><ul class="link-list"><li>System: ${entityLink("SolarSystems", record.solarSystem, cache, routes)}</li><li>Coordinates: ${escapeHtml(coordinateLabel(record.x))}, ${escapeHtml(coordinateLabel(record.y))}</li><li>Type: ${escapeHtml(valueLabel(record.type))}</li></ul></article>
+    <article><h2>Location Info</h2><div class="stat-grid">${statCard("System", record.solarSystem ? titleFor(cache.SolarSystems?.[record.solarSystem], record.solarSystem) : "n/a")}${statCard("Safe zone", record.safeZoneRadius)}${statCard("Orbit radius", record.orbitRadius)}${statCard("Orbit angle", record.orbitAngle, orbitAngleHint)}${statCard("Spawners", spawners.length)}</div>${record.parent ? `<p class="muted">This body orbits ${entityLink("Bodies", record.parent, cache, routes)}. Its map position is ${escapeHtml(coordinateLabel(posX))}, ${escapeHtml(coordinateLabel(posY))}, computed from the parent position plus orbit radius and angle (the raw <code>x</code>/<code>y</code> fields are ${escapeHtml(coordinateLabel(rawX))}, ${escapeHtml(coordinateLabel(rawY))}).</p>` : ""}</article>
+    <article><h2>Travel Links</h2><ul class="link-list"><li>System: ${entityLink("SolarSystems", record.solarSystem, cache, routes)}</li><li>Coordinates: ${escapeHtml(coordinateLabel(posX))}, ${escapeHtml(coordinateLabel(posY))}</li>${record.parent ? `<li>Orbits: ${entityLink("Bodies", record.parent, cache, routes)}</li>` : ""}<li>Type: ${escapeHtml(valueLabel(record.type))}</li></ul></article>
     ${shopRows ? `<article><h2>Shop Items</h2><input class="table-filter" name="table-filter" placeholder="Filter shop"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Item</th><th>Available</th><th>Price</th></tr></thead><tbody>${shopRows}</tbody></table></div></article>` : ""}
     ${spawnerRows ? `<article><h2>Hostiles Around This Location</h2><input class="table-filter" name="table-filter" placeholder="Filter hostiles"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Spawner</th><th>Enemy</th><th>Boss</th><th>Loot</th><th>Level</th></tr></thead><tbody>${spawnerRows}</tbody></table></div></article>` : ""}
   </section>`;
