@@ -63,3 +63,9 @@ type: "projectile"
 | `fireEffect` | DOT Acid (Effects) |
 | `dotEffect` | DOT Acid (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Baby Moth lvl 7 (Enemies) |
+

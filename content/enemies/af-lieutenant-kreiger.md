@@ -52,6 +52,7 @@ type: null
 | --- | --- |
 | `ship` | Eagle (Ships) |
 | `engine` | Player Eagle (Engines) |
+| `weapons` | AF Eagle Needle (Weapons) |
 
 ## Referenced By
 

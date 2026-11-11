@@ -54,4 +54,9 @@ type: "mech"
 | `bitmap` | boss_advectorion_chain2.png (Images) |
 | `enemy` | Renegade Fighter lvl 18 (Enemies) |
 | `enemy2` | Renegade Tanker lvl 78 (Enemies) |
+| `turrets` | Turret Sniper, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
 

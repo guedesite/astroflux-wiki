@@ -33,3 +33,9 @@ type: "kill"
 | `subtype` | spawner |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Timed 6a (Drops) |
+

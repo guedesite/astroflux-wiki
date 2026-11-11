@@ -64,3 +64,9 @@ type: "projectile"
 | `fireSound` | moth-spit1.mp3 (Sounds) |
 | `sound` | laser1.mp3 (Sounds) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Dread Queen lvl 68 (Enemies) |
+

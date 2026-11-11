@@ -44,4 +44,5 @@ type: null
 | Relation | Target |
 | --- | --- |
 | `body` | AFIS HQ (Bodies) |
+| `enemies` | AF Agent (Enemies) |
 

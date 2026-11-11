@@ -53,6 +53,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Stalker lvl 3 (Ships) |
 | `engine` | Enemy Stalker lvl 3 (Engines) |
+| `weapons` | Enemy Stalker Blaster lvl 3 (Weapons) |
 
 ## Referenced By
 
@@ -69,5 +70,6 @@ type: null
 | `enemy` | Kapello, visible 7, lvl 2 (Spawners) |
 | `enemy` | Kapello, visible 8, lvl 2 (Spawners) |
 | `enemy` | Test (Spawners) |
+| `enemies` | Test (Spawners) |
 | `enemy2` | Venturi, Stalker, lvl 2 (Spawners) |
 

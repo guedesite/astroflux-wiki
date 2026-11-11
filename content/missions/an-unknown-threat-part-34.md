@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Operative Smith: “What do you mean empty? No pilot? A drone ship? That’s too bad… guess we have to look to the bigger classes if we want to find a manned vessel… maybe an Aureus Sidus will do...” |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP9.6k S3.4k a2x80 (Drops) |
+

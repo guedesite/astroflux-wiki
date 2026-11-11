@@ -58,5 +58,8 @@ type: "mech"
 | `bitmap` | spawner_1.png (Images) |
 | `enemy` | Stalker lvl 3 (Enemies) |
 | `enemy2` | Seeker Lvl 2 (Enemies) |
+| `enemies` | Stalker lvl 3 (Enemies) |
+| `enemies` | Aureus Monachus lvl 160 (Enemies) |
+| `enemies2` | Seeker Lvl 2 (Enemies) |
 | `explosionEffect` | Explosion Mech Spawner (Effects) |
 

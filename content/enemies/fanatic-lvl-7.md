@@ -58,10 +58,17 @@ type: null
 | --- | --- |
 | `ship` | Enemy Fanatic lvl 7 (Ships) |
 | `engine` | Enemy Fanatic lvl 7 (Engines) |
+| `weapons` | Enemy Fanatic Plasma lvl 7 (Weapons) |
+| `weapons` | Enemy Fanatic Sniper lvl 7 (Weapons) |
+| `weapons` | Enemy Fanatic Beamer lvl 7 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemy` | Arrenius, Fanatic, lvl 7 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
 

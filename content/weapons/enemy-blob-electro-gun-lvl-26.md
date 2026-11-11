@@ -104,3 +104,10 @@ type: "beam"
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelMineral` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Electro Blob lvl 26 (Enemies) |
+| `weapons` | Electro Blob lvl 29 (Enemies) |
+

@@ -51,6 +51,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Dread Moth lvl 60 (Ships) |
 | `engine` | Enemy Dread Moth lvl 24 (Engines) |
+| `weapons` | Enemy Dread Zero lvl 24 (Weapons) |
 
 ## Referenced By
 

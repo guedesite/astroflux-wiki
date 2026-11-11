@@ -57,6 +57,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Deamon lvl 62 (Ships) |
 | `engine` | Enemy Deamon lvl 27 (Engines) |
+| `weapons` | Enemy Deamon Teeth lvl 62 (Weapons) |
 
 ## Referenced By
 
@@ -70,4 +71,8 @@ type: null
 | `enemy` | Cynapsian, turret + deamon lvl 60 (Spawners) |
 | `enemy` | Cynapsian, turret + deamon lvl 66 (Spawners) |
 | `enemy` | Cynapsian, turret lvl 64 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
 

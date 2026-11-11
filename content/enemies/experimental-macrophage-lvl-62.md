@@ -60,6 +60,9 @@ type: null
 | --- | --- |
 | `ship` | Enemy Macrophage lvl 62 (Ships) |
 | `engine` | Enemy Macrofag Engine lvl 62 (Engines) |
+| `weapons` | Enemy Macrofag Cloud lvl 62 (Weapons) |
+| `weapons` | Enemy Macrofag Mine lvl 62 (Weapons) |
+| `weapons` | Enemy Macrophage Lightning lvl 62 (Weapons) |
 
 ## Referenced By
 

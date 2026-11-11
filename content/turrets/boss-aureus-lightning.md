@@ -38,3 +38,24 @@ type: null
 | --- | --- |
 | `weapon` | Boss Aureus Executor Lightning (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Executor (Bosses) |
+| `turrets` | Executor (Bosses) |
+| `turrets` | Executor (Bosses) |
+| `turrets` | Executor (Bosses) |
+| `turrets` | Executor (Bosses) |
+| `turrets` | Executor (Bosses) |
+| `turrets` | Executor (Bosses) |
+| `turrets` | Executor (Bosses) |
+| `turrets` | Executor (Bosses) |
+| `turrets` | Executor (Bosses) |
+| `turrets` | Executor (Bosses) |
+| `turrets` | Executor (Bosses) |
+| `turrets` | Executor (Bosses) |
+| `turrets` | Executor (Bosses) |
+| `turrets` | Executor (Bosses) |
+| `turrets` | Executor (Bosses) |
+

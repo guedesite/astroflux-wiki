@@ -56,5 +56,6 @@ type: "mech"
 | `bitmap` | spawner_3.png (Images) |
 | `enemy` | Elite Triad lvl 4 (Enemies) |
 | `enemy2` | Zlatte Lvl 4 (Enemies) |
+| `turrets` | Elite Cannon Turret lvl 4 (Turrets) |
 | `explosionEffect` | Explosion Mech Spawner (Effects) |
 

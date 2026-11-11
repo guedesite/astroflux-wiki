@@ -51,4 +51,7 @@ type: null
 | Relation | Target |
 | --- | --- |
 | `body` | AFIS HQ (Bodies) |
+| `enemies` | Aureus Judicator lvl 94 (Enemies) |
+| `enemies2` | Aureus Monachus lvl 73 (Enemies) |
+| `enemies2` | Aureus Warrior lvl 75 (Enemies) |
 

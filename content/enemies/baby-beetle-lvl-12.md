@@ -58,6 +58,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Baby Beetle lvl 12 (Ships) |
 | `engine` | Enemy Baby Beetle lvl 12 (Engines) |
+| `weapons` | Enemy Baby Beetle Thorn lvl 12 (Weapons) |
 
 ## Referenced By
 

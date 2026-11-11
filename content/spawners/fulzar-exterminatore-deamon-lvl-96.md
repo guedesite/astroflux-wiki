@@ -59,5 +59,12 @@ type: "mech"
 | `body` | Mazim (Bodies) |
 | `bitmap` | boss_advectorion_chain2.png (Images) |
 | `enemy2` | Bionic Queen lvl 80 (Enemies) |
+| `enemies` | Bionic Daemon lvl 73 (Enemies) |
+| `enemies2` | Nezerian Regius Exterminatore (Enemies) |
+| `turrets` | Turret Sniper, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
 | `explosionEffect` | Explosion Organic Large (Effects) |
 

@@ -32,3 +32,9 @@ type: "kill"
 | `subtype` | ship |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP28k S5.8 A5x95 (Drops) |
+

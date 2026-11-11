@@ -86,6 +86,7 @@ type: "petSpawner"
 | `techIcon` | ti_orb3.png (Images) |
 | `fireSound` | laser4.mp3 (Sounds) |
 | `dotEffect` | DOT Acid (Effects) |
+| `enemy` | Corrosive Orb (Enemies) |
 | `techLevelProjectile` | Piercing lvl 1 (Projectiles) |
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelProjectile` | Piercing lvl 1 (Projectiles) |

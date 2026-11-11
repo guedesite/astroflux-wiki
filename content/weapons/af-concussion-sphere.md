@@ -97,3 +97,10 @@ type: "projectile"
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelMineral` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | AF Admiral Cheng (Enemies) |
+| `weapons` | AF Admiral Cheng (Enemies) |
+

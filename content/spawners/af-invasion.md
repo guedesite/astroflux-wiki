@@ -50,4 +50,7 @@ type: null
 | Relation | Target |
 | --- | --- |
 | `body` | Hidden New Erath (Bodies) |
+| `enemies` | AF Admiral Cheng (Enemies) |
+| `enemies2` | AF Agent Ace II (Enemies) |
+| `enemies2` | AF Peacekeeper III (Enemies) |
 

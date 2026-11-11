@@ -32,3 +32,9 @@ type: "kill"
 | `completeDescription` | AF Transmission: "It looks like we have found a few interesting things while you attacked Graven. Apparently the weapons are transported via Kapello.Its probably the supply line for all enemy strongholds in the Antor system. We need to put at stop to it." |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP 2400-2800 (Drops) |
+

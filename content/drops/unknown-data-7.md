@@ -40,3 +40,9 @@ type: "mission"
 | `dropItem` | Hydrogen Crystal (Commodities) |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Unknown Data: Part 8 (MissionTypes) |
+

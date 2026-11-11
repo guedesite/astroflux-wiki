@@ -32,3 +32,9 @@ type: "kill"
 | `nextMission` | 942bXaYGkUKIYJTvr_XuCQ |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP 5600-5800 + 3 Flux (Drops) |
+

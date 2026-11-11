@@ -50,10 +50,13 @@ type: null
 | --- | --- |
 | `ship` | Enemy Renegade Spy-1 (Ships) |
 | `engine` | Player Spy-1 (Engines) |
+| `weapons` | Enemy Infested Missiles (Weapons) |
+| `weapons` | Enemy Elite Gatling Gun (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemy` | Zergilin, Renegade Spy-1 lvl 45 (Spawners) |
+| `enemies` | Zergilin, Renegade Spy-1 lvl 45 (Spawners) |
 

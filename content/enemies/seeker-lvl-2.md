@@ -47,6 +47,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Seeker lvl 2 (Ships) |
 | `engine` | Enemy Seeker Engine lvl 2 (Engines) |
+| `weapons` | Enemy Seeker Slug lvl 2 (Weapons) |
 
 ## Referenced By
 
@@ -79,6 +80,7 @@ type: null
 | `enemy2` | Kapello, visible 6, lvl 2 (Spawners) |
 | `enemy2` | Kapello, visible 8, lvl 2 (Spawners) |
 | `enemy2` | Test (Spawners) |
+| `enemies2` | Test (Spawners) |
 | `enemy` | Venturi, Stalker, lvl 2 (Spawners) |
 | `enemy` | Venturi, Triad, lvl 2 (Spawners) |
 | `enemy` | Venturi, visible 19, lvl 2 (Spawners) |

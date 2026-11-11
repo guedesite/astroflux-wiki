@@ -69,4 +69,12 @@ type: null
 | --- | --- |
 | `ship` | Enemy Ant lvl 12 (Ships) |
 | `engine` | Enemy Ant lvl 12 (Engines) |
+| `weapons` | Enemy Ant Gun lvl 12 (Weapons) |
+| `weapons` | Enemy Ant Missiles lvl 12 (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies` | Kapello, Ant lvl 12 (Spawners) |
 

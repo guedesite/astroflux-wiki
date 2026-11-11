@@ -103,6 +103,10 @@ type: null
 | `enemy2` | Kritillian, Swarm Mature/Dire lvl 8 (Spawners) |
 | `enemy2` | Kritillian, Swarm Mature/Dire lvl 8 (Spawners) |
 | `enemy` | Kritillian, Thorn/Dire Moth lvl 8 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
 | `enemy2` | Zergilin, Locust lvl 10 (Spawners) |
 | `enemy2` | Zergilin, Locust lvl 10 (Spawners) |
 | `enemy2` | Zergilin, Locust lvl 10 (Spawners) |

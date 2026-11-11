@@ -42,3 +42,9 @@ type: null
 | --- | --- |
 | `weapon` | Boss Chelonidron Flame (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Chelonidron (Bosses) |
+

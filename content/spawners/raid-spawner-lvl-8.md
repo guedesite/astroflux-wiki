@@ -47,4 +47,5 @@ type: "mech"
 | `body` | Raid Spawner (Bodies) |
 | `bitmap` | spawner_3.png (Images) |
 | `enemy` | Fanatic Purifier lvl 8 (Enemies) |
+| `turrets` | Sniper 360 arc Turret lvl 6 (Turrets) |
 

@@ -7,11 +7,11 @@ import {
   enemyRareEffectItems,
   enemyRareMode,
   enemyShipStats,
-  enemyTraits,
-  linkedEnemySpawners
+  enemyTraits
 } from "./enemy-utils.js";
 import { entityLink, missingValue, refKey } from "./entity-links.js";
 import { escapeAttr, escapeHtml } from "./html-utils.js";
+import { bossPlacements, enemySpawnerPlacements, enemySummonSources, placementConditionLabels } from "./location-utils.js";
 import { titleFor } from "./record-utils.js";
 import { renderDescription } from "./text-utils.js";
 
@@ -61,18 +61,79 @@ export function renderEnemyPage(key, record, cache, media, routes, { dropLinkSum
   const lootLinks = [...new Set(dropRefs.map((item) => item.key))]
     .map((dropKey) => dropLinkSummaryHtml(dropKey, cache, routes))
     .join(", ");
-  const spawnerRows = linkedEnemySpawners(key, cache)
+  const placements = enemySpawnerPlacements(key, cache);
+  const spawnerRows = placements
     .slice(0, 60)
-    .map(([spawnerKey, spawner]) => `<tr><td>${entityLink("Spawners", spawnerKey, cache, routes)}</td><td>${entityLink("Bodies", spawner.body, cache, routes)}</td><td>${escapeHtml(valueLabel(spawner.level))}</td><td>${renderSpawnerDropItems([...(spawner.drops || []), ...(spawner.drops2 || [])], cache, routes)}</td></tr>`)
+    .map((placement) => {
+      const conditions = placementConditionLabels(placement);
+      const conditionHtml = conditions.length
+        ? conditions.map((label) => `<span class="status-pill">${escapeHtml(label)}</span>`).join(" ")
+        : '<span class="status-pill status-accessible">Open world</span>';
+      return `<tr><td>${entityLink("Spawners", placement.spawnerKey, cache, routes)}</td><td>${placement.systemKey ? entityLink("SolarSystems", placement.systemKey, cache, routes) : missingValue()}</td><td>${placement.bodyKey ? entityLink("Bodies", placement.bodyKey, cache, routes) : missingValue()}</td><td>${escapeHtml(valueLabel(placement.level))}</td><td>${conditionHtml}</td><td>${renderSpawnerDropItems([...(placement.spawner.drops || []), ...(placement.spawner.drops2 || [])], cache, routes)}</td></tr>`;
+    })
     .join("");
+  const reachableCount = placements.filter((placement) => placement.systemVisible && placement.bodyActive && !placement.hidden).length;
+  const encounterNote = record?.excludeFromEnctounter
+    ? '<p class="muted"><code>excludeFromEnctounter</code> is set on this enemy: it is excluded from the normal encounter generator, so the spawners below are the only scripted/invasion routes to it.</p>'
+    : "";
+  const placementArticle = spawnerRows
+    ? `<article><h2>Where To Find</h2><p class="muted">World locations come from the spawners that reference this enemy (<code>enemy</code>, <code>enemy2</code>, <code>enemies</code>, <code>enemies2</code>), resolved to their body and solar system. Conditions show when a spawner is hidden, mission-triggered, on an event body, or in a Dev/hidden system. ${escapeHtml(valueLabel(placements.length))} spawner link(s), ${escapeHtml(valueLabel(reachableCount))} in a reachable open-world system.</p>${encounterNote}<input class="table-filter" name="table-filter" placeholder="Filter spawn locations"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Spawner</th><th>System</th><th>Location</th><th>Level</th><th>Conditions</th><th>Spawner drops</th></tr></thead><tbody>${spawnerRows}</tbody></table></div></article>`
+    : renderEnemyPlacementFallback(key, record, cache, routes);
   return `<section class="content-grid">
     <article><h2>Threat Profile</h2><div class="stat-grid">${statCard("Traits", enemyTraits(record, false))}${statCard("Damage type", damageTypeLabel(record.damageType))}${statCard("Damage", record.damage || record.kamikazeDmg)}${statCard("Range", record.range || record.aggroRange)}${statCard("Refire", record.refire)}${statCard("XP", record.xp)}</div>${renderDescription(record.description)}</article>
     <article><h2>Survival Info</h2><div class="stat-grid">${statCard("Max HP", stats.hpMax)}${record.startHp !== undefined ? statCard("Starts With HP", stats.startHp, `${valueLabel(record.startHp)}% of max`) : ""}${statCard("Shield", stats.shieldMax)}${statCard("Armor", stats.armor)}${statCard("Kinetic resist", record.kineticResist)}${statCard("Energy resist", record.energyResist)}${statCard("Corrosive resist", record.corrosiveResist)}</div></article>
     ${rareArticle}
     <article><h2>Equipment</h2><ul class="link-list"><li>Ship sprite/base stats: ${entityLink("Ships", record.ship, cache, routes)}${stats.body ? ` <span class="muted">${escapeHtml(stats.body)}</span>` : ""}</li><li>Engine: ${entityLink("Engines", record.engine, cache, routes)}</li><li>Loot: ${lootLinks || missingValue()}</li>${loadout}</ul></article>
     ${renderSourceDropArticles("Enemy", dropRefs, cache, media, routes)}
-    ${spawnerRows ? `<article><h2>Found At</h2><input class="table-filter" name="table-filter" placeholder="Filter spawn locations"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Spawner</th><th>Location</th><th>Level</th><th>Spawner drops</th></tr></thead><tbody>${spawnerRows}</tbody></table></div></article>` : ""}
+    ${placementArticle}
   </section>`;
+}
+
+function renderEnemyPlacementFallback(key, record, cache, routes) {
+  const summon = enemySummonSources(key, cache);
+  const items = [];
+  if (summon.byEnemies.length) {
+    const parents = summon.byEnemies.map(({ key: enemyKey }) => {
+      const systems = [...new Set(enemySpawnerPlacements(enemyKey, cache)
+        .filter((placement) => placement.systemVisible)
+        .map((placement) => placement.systemKey)
+        .filter(Boolean))];
+      const location = systems.slice(0, 2).map((systemKey) => entityLink("SolarSystems", systemKey, cache, routes)).join(", ");
+      return `${entityLink("Enemies", enemyKey, cache, routes)}${location ? ` (${location})` : ""}`;
+    });
+    items.push(`Summoned by enemy: ${parents.join(", ")}`);
+  }
+  for (const weapon of summon.weapons) {
+    const owners = [];
+    if (weapon.enemies.length) owners.push(`hostiles: ${weapon.enemies.map(({ key: enemyKey }) => entityLink("Enemies", enemyKey, cache, routes)).join(", ")}`);
+    if (weapon.playerSkins.length) {
+      const ships = [...new Set(weapon.playerSkins.map(({ record: skin }) => skin.ship).filter(Boolean))];
+      owners.push(`player ships: ${ships.map((shipKey) => entityLink("Ships", shipKey, cache, routes)).join(", ")}`);
+    }
+    if (weapon.shopBodies.length) {
+      owners.push(`sold at: ${weapon.shopBodies.slice(0, 3).map(({ key: bodyKey }) => entityLink("Bodies", bodyKey, cache, routes)).join(", ")}`);
+    }
+    if (weapon.drops.length) {
+      owners.push(`loot: ${weapon.drops.slice(0, 3).map(({ key: dropKey }) => entityLink("Drops", dropKey, cache, routes)).join(", ")}`);
+    }
+    items.push(`Summoned by weapon ${entityLink("Weapons", weapon.key, cache, routes)}${owners.length ? ` (${owners.join("; ")})` : ""}`);
+  }
+  for (const mount of summon.bossMounts || []) {
+    const hosts = mount.bosses.filter(({ record: boss }) => !/^\?+$/.test(String(boss?.name || "").trim()));
+    const hostBits = hosts.map(({ key: bossKey }) => {
+      const systems = [...new Set(bossPlacements(bossKey, cache).map((placement) => placement.systemKey).filter(Boolean))];
+      const location = systems.slice(0, 2).map((systemKey) => entityLink("SolarSystems", systemKey, cache, routes)).join(", ");
+      return `${entityLink("Bosses", bossKey, cache, routes)}${location ? ` (${location})` : ""}`;
+    });
+    items.push(hostBits.length
+      ? `Part of boss encounter ${hostBits.join(", ")} <span class="muted">— mounted spawner ${entityLink("Spawners", mount.spawnerKey, cache, routes)}</span>`
+      : `Mounted spawner ${entityLink("Spawners", mount.spawnerKey, cache, routes)} with no world body <span class="muted">— likely a boss/part mount</span>`);
+  }
+  const flags = [];
+  if (record?.excludeFromEnctounter) flags.push("<code>excludeFromEnctounter</code>: excluded from normal encounters (scripted or legacy spawn)");
+  if (record?.hasSpawn) flags.push("<code>hasSpawn</code>: the record can spawn helpers of its own");
+  if (record?.miniBoss) flags.push("<code>miniBoss</code>: flagged as a mini-boss variant");
+  return `<article><h2>Where To Find</h2><p class="muted">No open-world spawner places this enemy in a system body. The links and flags below explain how it enters play.</p>${items.length ? `<ul class="link-list">${items.map((item) => `<li>${item}</li>`).join("")}</ul>` : ""}${flags.length ? `<p class="muted">${flags.join(" · ")}.</p>` : ""}${!items.length && !flags.length ? "<p class=\"muted\">No spawner, summon, weapon, or encounter flag explains how it enters play. It may be driven by server-side encounter logic or be an unused asset.</p>" : ""}</article>`;
 }
 
 function renderWeaponLoadout(loadout, cache, routes) {

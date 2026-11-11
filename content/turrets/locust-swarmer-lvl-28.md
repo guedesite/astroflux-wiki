@@ -42,3 +42,35 @@ type: null
 | --- | --- |
 | `weapon` | Enemy Locust lvl 28 (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Neurona, Blade lvl 29 (Spawners) |
+| `turrets` | Neurona, Blade lvl 29 (Spawners) |
+| `turrets` | Neurona, Moth Alpha lvl 30 (Spawners) |
+| `turrets` | Neurona, Moth Servus lvl 30 (Spawners) |
+| `turrets` | Neurona, Moth Servus lvl 30 (Spawners) |
+| `turrets` | Neurona, Moth Servus lvl 30 (Spawners) |
+| `turrets` | Neurona, Scarab Big lvl 32 (Spawners) |
+| `turrets` | Neurona, Scarab Big lvl 32 (Spawners) |
+| `turrets` | Neurona, Scarab Big lvl 32 (Spawners) |
+| `turrets` | Neurona, Scarab Big lvl 32 (Spawners) |
+| `turrets` | Neurona, Scarab Big lvl 32 (Spawners) |
+| `turrets` | Neurona, Scarab Big lvl 32 (Spawners) |
+| `turrets` | Neurona, Scarab lvl 29 (Spawners) |
+| `turrets` | Neurona, Servus lvl 30 (Spawners) |
+| `turrets` | Sarkinon, Alpha lvl 30 (Spawners) |
+| `turrets` | Sarkinon, Blade lvl 29 (Spawners) |
+| `turrets` | Sarkinon, Blade lvl 29 (Spawners) |
+| `turrets` | Sarkinon, Blade lvl 29 (Spawners) |
+| `turrets` | Sarkinon, Blade lvl 29 (Spawners) |
+| `turrets` | Sarkinon, Blade lvl 29 (Spawners) |
+| `turrets` | Sarkinon, Blade lvl 29 (Spawners) |
+| `turrets` | Sarkinon, Blade lvl 29 (Spawners) |
+| `turrets` | Sarkinon, Moth Alpha lvl 30 (Spawners) |
+| `turrets` | Sarkinon, Scarab Big lvl 29 (Spawners) |
+| `turrets` | Sarkinon, Scarab lvl 29 (Spawners) |
+| `turrets` | Sarkinon, Servus lvl 28 (Spawners) |
+| `turrets` | Sarkinon, Servus lvl 30 (Spawners) |
+

@@ -33,3 +33,9 @@ type: "kill"
 | `subtype` | ship |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP3k S1.2 A2x35 (Drops) |
+

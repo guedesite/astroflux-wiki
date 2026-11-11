@@ -89,4 +89,12 @@ type: null
 | --- | --- |
 | `ship` | Emperor Xhersix (Ships) |
 | `engine` | Emperor Xhersix (Engines) |
+| `weapons` | Emperor Xhersix Plasma Torpedo (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies` | Boss Emperor Xhersix (Spawners) |
+| `enemies` | Dev Nexar Test (Spawners) |
 

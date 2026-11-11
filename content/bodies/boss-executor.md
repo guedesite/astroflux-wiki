@@ -45,4 +45,5 @@ type: "boss"
 | Relation | Target |
 | --- | --- |
 | `solarSystem` | Fulzar (SolarSystems) |
+| `boss` | Executor (Bosses) |
 

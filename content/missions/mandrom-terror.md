@@ -29,6 +29,12 @@ type: "kill"
 | `available` | true |
 | `majorType` | time |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Mandrom (Drops) |
+
 ## Referenced By
 
 | Relation | Source |

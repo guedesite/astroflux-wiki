@@ -45,4 +45,5 @@ type: "boss"
 | Relation | Target |
 | --- | --- |
 | `solarSystem` | Sarkinon (SolarSystems) |
+| `boss` | Advectorian (Bosses) |
 

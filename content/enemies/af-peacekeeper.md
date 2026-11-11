@@ -51,6 +51,7 @@ type: null
 | --- | --- |
 | `ship` | AF Peacekeeper (Ships) |
 | `engine` | Player Police Thruster (Engines) |
+| `weapons` | AF Blaster (Weapons) |
 
 ## Referenced By
 
@@ -59,6 +60,7 @@ type: null
 | `enemy2` | Arrenius, AF Hidden (Spawners) |
 | `enemy` | Durian, AF Security Gate (Spawners) |
 | `enemy2` | Fulzar, New Erath (Spawners) |
+| `enemies2` | Fulzar, New Erath (Spawners) |
 | `enemy2` | Hyperion, AF Lieutenant Kreiger (Spawners) |
 | `enemy` | Hyperion, AF Peacekeeper (Spawners) |
 | `enemy2` | Hyperion, AF Peacekeeper (Spawners) |

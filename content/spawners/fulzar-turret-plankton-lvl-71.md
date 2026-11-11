@@ -60,5 +60,12 @@ type: "mech"
 | `bitmap` | boss_advectorion_chain2.png (Images) |
 | `enemy` | Bionic Plankton lvl 69 (Enemies) |
 | `enemy2` | Bionic Daemon lvl 73 (Enemies) |
+| `enemies` | Bionic Plankton lvl 69 (Enemies) |
+| `enemies2` | Bionic Daemon lvl 73 (Enemies) |
+| `turrets` | Turret Sniper, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
 | `explosionEffect` | Explosion Organic Large (Effects) |
 

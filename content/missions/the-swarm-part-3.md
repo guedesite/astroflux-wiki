@@ -30,3 +30,9 @@ type: "kill"
 | `completeDescription` | Lieutenant Keryn: "The Queen died, but it made little difference except keeping the Arrenius system under control for another hour. However, we urge you to explore the Gellan sector to put an end to this." |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Timed 28a (Drops) |
+

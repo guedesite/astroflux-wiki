@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Xhargreg: ”Finally... that took forever... Zzzz.. are you even trying? Return to me with the poison... and please... do it before the world ends... " |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP 4000-4200 + 8 Flux (Drops) |
+

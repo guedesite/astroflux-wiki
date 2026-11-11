@@ -32,3 +32,9 @@ type: "pickup"
 | `completeDescription` | John McClain: “Wohooo! I can’t believe you made it. The crystal looks prestine and I will give you 10% of the market price. Yes, I always reward hard working people like you.Now I have enough funding for my grand expedition, I want you to bring me down safely on the Kal sphere. I heard the spheres seem to have an atmosphere that can support life but that no lifeforms exist and its uncertain what the purpose of the spheres actually is.Once I’m there I will start my excavation and see if I can reveal its origin and purpose.” |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission 20k Steel (Drops) |
+

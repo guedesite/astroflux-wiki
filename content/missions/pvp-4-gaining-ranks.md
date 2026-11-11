@@ -33,3 +33,9 @@ type: "kill"
 | `policeMission` | false |
 | `majorType` | pvpChain |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission PvP Level 10 (Drops) |
+

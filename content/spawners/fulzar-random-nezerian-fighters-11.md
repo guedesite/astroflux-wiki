@@ -54,4 +54,9 @@ type: "mech"
 | --- | --- |
 | `body` | Hidden, Nezerian Fighters lvl 68-70 (Bodies) |
 | `bitmap` | boss_advectorion_chain2.png (Images) |
+| `enemies` | Nezerian Fighter lvl 66 (Enemies) |
+| `enemies2` | Bionic Plankton lvl 69 (Enemies) |
+| `enemies2` | Bionic Macrophage lvl 71 (Enemies) |
+| `enemies2` | Bionic Daemon lvl 73 (Enemies) |
+| `enemies2` | Nezerian Battlecruiser lvl 67 (Enemies) |
 

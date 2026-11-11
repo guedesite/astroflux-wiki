@@ -50,4 +50,5 @@ type: null
 | Relation | Target |
 | --- | --- |
 | `body` | Sun (Bodies) |
+| `enemies` | Mysterious Wanderer lvl 120 (Enemies) |
 

@@ -37,3 +37,11 @@ type: null
 | `arc` | 360 |
 | `rotationSpeed` | 0 |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | The Cleaner (Bosses) |
+| `turrets` | The Cleaner (Bosses) |
+| `turrets` | The Cleaner (Bosses) |
+

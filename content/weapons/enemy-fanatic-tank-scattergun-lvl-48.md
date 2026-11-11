@@ -58,3 +58,9 @@ type: "blaster"
 | `projectile` | Scattergun Bullet (Projectiles) |
 | `fireSound` | laser3.mp3 (Sounds) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Fanatic Tank lvl 72 (Enemies) |
+

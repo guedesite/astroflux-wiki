@@ -57,6 +57,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Confused Repair Probe lvl 14 (Ships) |
 | `engine` | Enemy Elite Repair Probe lvl 22 (Engines) |
+| `weapons` | Enemy Confused Repair lvl 14 (Weapons) |
 
 ## Referenced By
 

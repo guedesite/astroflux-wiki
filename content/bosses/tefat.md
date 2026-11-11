@@ -48,4 +48,19 @@ type: "mech"
 | --- | --- |
 | `explosionEffect` | Explosion HUGE (Effects) |
 | `explosionSound` | explosion_huge.mp3 (Sounds) |
+| `turrets` | Boss Tefat Turret Lightning (Turrets) |
+| `turrets` | Boss Tefat Turret Lightning (Turrets) |
+| `turrets` | Boss Tefat Turret Lightning (Turrets) |
+| `turrets` | Boss Tefat Turret Lightning (Turrets) |
+| `turrets` | Boss Tefat Turret Lightning (Turrets) |
+| `turrets` | Boss Tefat Turret Lightning (Turrets) |
+| `turrets` | Boss Tefat Turret Lightning (Turrets) |
+| `turrets` | Boss Tefat Turret Lightning (Turrets) |
+| `turrets` | Boss Tefat Turret Missile (Turrets) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `boss` | Boss Tefat (Bodies) |
 

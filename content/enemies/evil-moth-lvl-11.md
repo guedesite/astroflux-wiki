@@ -73,6 +73,9 @@ type: null
 | Relation | Source |
 | --- | --- |
 | `enemy` | Hozar, Dire Swarm, lvl 11 (Spawners) |
+| `enemies` | Hozar, Dire Swarm, lvl 11 (Spawners) |
 | `enemy` | Hozar, Dire Swarm, lvl 11 (Spawners) |
+| `enemies` | Hozar, Dire Swarm, lvl 11 (Spawners) |
 | `enemy` | Hozar, Dire Swarm, lvl 11 (Spawners) |
+| `enemies` | Hozar, Dire Swarm, lvl 11 (Spawners) |
 

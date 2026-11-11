@@ -49,4 +49,39 @@ type: "mech"
 | --- | --- |
 | `explosionEffect` | Explosion HUGE (Effects) |
 | `explosionSound` | explosion_huge.mp3 (Sounds) |
+| `turrets` | Boss Mech Blaster (Turrets) |
+| `turrets` | Boss Mech Blaster (Turrets) |
+| `turrets` | Boss Mech Missile Launcher (Turrets) |
+| `turrets` | Boss Mech Blaster (Turrets) |
+| `turrets` | Boss Mech Blaster (Turrets) |
+| `turrets` | Boss Mech Missile Launcher (Turrets) |
+| `turrets` | Boss Mech Missile Launcher (Turrets) |
+| `turrets` | Boss Mech Missile Launcher (Turrets) |
+| `turrets` | Boss Mech Missile Launcher (Turrets) |
+| `turrets` | Boss Mech Blaster (Turrets) |
+| `turrets` | Boss Mech Blaster (Turrets) |
+| `turrets` | Boss Mech Blaster (Turrets) |
+| `turrets` | Boss Mech Blaster (Turrets) |
+| `turrets` | Boss Mech Blaster (Turrets) |
+| `turrets` | Boss Mech Blaster (Turrets) |
+| `turrets` | Boss Mech Blade (Turrets) |
+| `turrets` | Boss Mech Blade (Turrets) |
+| `turrets` | Boss Mech Blade (Turrets) |
+| `turrets` | Boss Mech Blade (Turrets) |
+| `turrets` | Boss Mech Blade (Turrets) |
+| `turrets` | Boss Mech Blade (Turrets) |
+| `turrets` | Boss Mech Blade (Turrets) |
+| `turrets` | Boss Mech Blade (Turrets) |
+| `turrets` | Boss Mech Turret Lightning (Turrets) |
+| `turrets` | Boss Mech Turret Lightning (Turrets) |
+| `turrets` | Boss Mech Turret Lightning (Turrets) |
+| `turrets` | Boss Mech Turret Lightning (Turrets) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `boss` | Boss (Bodies) |
+| `boss` | Boss Spawner (Bodies) |
+| `boss` | Boss spawner (Bodies) |
 

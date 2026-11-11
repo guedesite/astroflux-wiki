@@ -30,3 +30,9 @@ type: "kill"
 | `completeDescription` | We successfully destroyed the Motherbrain but there is no indication of any change on infestation. It's apparent from the remnants that the Motherbrain indeed was created by the Nezerians, however it must have been a failure as it was completely out of control. |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Motherbrain (Drops) |
+

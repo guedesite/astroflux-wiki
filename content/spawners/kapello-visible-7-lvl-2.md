@@ -56,5 +56,6 @@ type: "mech"
 | `bitmap` | spawner_1.png (Images) |
 | `enemy` | Stalker lvl 3 (Enemies) |
 | `enemy2` | Zlatte Lvl 2 (Enemies) |
+| `turrets` | Blaster 280 arc Turret lvl 3 (Turrets) |
 | `explosionEffect` | Explosion Mech Spawner (Effects) |
 

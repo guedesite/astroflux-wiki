@@ -103,6 +103,13 @@ type: null
 | --- | --- |
 | `ship` | Enemy Aureus Star lvl 82 (Ships) |
 | `engine` | Enemy Aureus Still (Engines) |
+| `weapons` | Enemy Aureus Star Light 1 (Weapons) |
+| `weapons` | Enemy Aureus Star Light 2 (Weapons) |
+| `weapons` | Enemy Aureus Star Light 3 (Weapons) |
+| `weapons` | Enemy Aureus Star Light 4 (Weapons) |
+| `weapons` | Enemy Aureus Star Light 5 (Weapons) |
+| `weapons` | Enemy Aureus Star Light 6 (Weapons) |
+| `weapons` | Enemy Aureus Star Light 7 (Weapons) |
 | `enemies` | Aureus Sidus Shard 88 (Enemies) |
 
 ## Referenced By
@@ -111,13 +118,23 @@ type: null
 | --- | --- |
 | `enemy2` | Dev, aureus test lvl 82 (Spawners) |
 | `enemy2` | Fulzar, Big Random lvl 82 (Spawners) |
+| `enemies2` | Fulzar, Big Random lvl 82 (Spawners) |
 | `enemy2` | Fulzar, Big Random lvl 82 (Spawners) |
+| `enemies2` | Fulzar, Big Random lvl 82 (Spawners) |
 | `enemy2` | Fulzar, Big Random lvl 82 (Spawners) |
+| `enemies2` | Fulzar, Big Random lvl 82 (Spawners) |
 | `enemy2` | Fulzar, Big Random lvl 82 (Spawners) |
+| `enemies2` | Fulzar, Big Random lvl 82 (Spawners) |
 | `enemy2` | Fulzar, Big Random lvl 82 (Spawners) |
+| `enemies2` | Fulzar, Big Random lvl 82 (Spawners) |
 | `enemy2` | Fulzar, Big Random lvl 82 (Spawners) |
+| `enemies2` | Fulzar, Big Random lvl 82 (Spawners) |
 | `enemy2` | Fulzar, Big Random lvl 82 (Spawners) |
+| `enemies2` | Fulzar, Big Random lvl 82 (Spawners) |
 | `enemy2` | Fulzar, Big Random lvl 82 (Spawners) |
+| `enemies2` | Fulzar, Big Random lvl 82 (Spawners) |
 | `enemy2` | Fulzar, aureus lvl 90 (Spawners) |
+| `enemies2` | Fulzar, aureus lvl 90 (Spawners) |
 | `enemy2` | Fulzar, aureus lvl 90 (Spawners) |
+| `enemies2` | Fulzar, aureus lvl 90 (Spawners) |
 

@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | We just received an emergency distress call from Jahaar on Centurion. Something has happened...  |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Timed 10a (Drops) |
+

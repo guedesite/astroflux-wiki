@@ -74,3 +74,9 @@ type: "projectile"
 | `sound` | laser1.mp3 (Sounds) |
 | `dotEffect` | DOT Flame (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Emperor Xhersix lvl 160 (Enemies) |
+

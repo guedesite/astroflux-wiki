@@ -67,6 +67,10 @@ type: null
 | --- | --- |
 | `ship` | Enemy Fanatic Purifier lvl 8 (Ships) |
 | `engine` | Enemy Fanatic lvl 7 (Engines) |
+| `weapons` | Enemy Fanatic Plasma lvl 7 (Weapons) |
+| `weapons` | Enemy Fanatic Beamer lvl 7 (Weapons) |
+| `weapons` | Enemy Fanatic Launcher lvl 8 (Weapons) |
+| `weapons` | Enemy Fanatic Sniper lvl 7 (Weapons) |
 
 ## Referenced By
 

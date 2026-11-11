@@ -64,4 +64,12 @@ type: null
 | --- | --- |
 | `ship` | Enemy Dread Moth lvl 24 (Ships) |
 | `engine` | Enemy Dread Moth lvl 24 (Engines) |
+| `weapons` | Enemy Dread Zero lvl 24 (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies` | Survival, Invasion (Spawners) |
+| `enemies` | Survival, Invasion (Spawners) |
 

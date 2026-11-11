@@ -42,3 +42,15 @@ type: "mech"
 | `shieldHp` | 0 |
 | `visonRange` | 750 |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `enemies` | Emperor Yhgvis lvl 160 (Enemies) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `spawners` | Three Emperors (Bosses) |
+

@@ -39,3 +39,9 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Regius Exterminatore! (MissionTypes) |
+

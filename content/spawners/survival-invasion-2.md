@@ -44,4 +44,5 @@ type: null
 | Relation | Target |
 | --- | --- |
 | `body` | Hidden (Bodies) |
+| `enemies` | Dread Moth lvl 25 (Enemies) |
 

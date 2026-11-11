@@ -31,3 +31,9 @@ type: "mission"
 | Item | Table | Chance | Effective Chance | Quantity |
 | --- | --- | ---: | ---: | --- |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | A New Beginning: Part 11 (MissionTypes) |
+

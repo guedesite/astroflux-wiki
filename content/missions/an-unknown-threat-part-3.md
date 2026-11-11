@@ -32,3 +32,9 @@ type: "kill"
 | `subtype` | ship |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP 1600-1800 (Drops) |
+

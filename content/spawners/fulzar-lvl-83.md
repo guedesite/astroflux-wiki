@@ -47,4 +47,5 @@ type: null
 | --- | --- |
 | `body` | Black Hole (Bodies) |
 | `enemy` | ??? lvl ?? (Enemies) |
+| `enemies` | ??? lvl ?? (Enemies) |
 

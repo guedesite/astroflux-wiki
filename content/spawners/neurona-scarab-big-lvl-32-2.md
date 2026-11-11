@@ -55,4 +55,5 @@ type: "organic"
 | `bitmap` | organic_spawner_4.png (Images) |
 | `enemy` | Scarab lvl 32 (Enemies) |
 | `enemy2` | Locust lvl 22 (Enemies) |
+| `turrets` | Locust Swarmer lvl 28 (Turrets) |
 

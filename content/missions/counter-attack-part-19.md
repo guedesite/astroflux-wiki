@@ -30,3 +30,9 @@ type: "transport"
 | `type` | transport |
 | `maxLvl` | 0 |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP28k S5.8 A5x95 (Drops) |
+

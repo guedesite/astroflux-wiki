@@ -54,6 +54,7 @@ type: null
 | --- | --- |
 | `ship` | Juggernaut (Ships) |
 | `engine` | Player Juggernaut (Engines) |
+| `weapons` | AF M2 Launcher (Weapons) |
 
 ## Referenced By
 

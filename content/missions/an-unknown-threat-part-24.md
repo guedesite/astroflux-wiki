@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Operative Smith: “Very heavily armored… long range gatling gun… good weapons and armor… good quality equipment… but still… nothing exceptionally high tech...” |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP3.2k S1.2k A2x50 (Drops) |
+

@@ -91,6 +91,7 @@ type: "petSpawner"
 | `fireSound` | shot2.mp3 (Sounds) |
 | `sound` | laser1.mp3 (Sounds) |
 | `dotEffect` | DOT Acid (Effects) |
+| `enemy` | X-32 Zlatte (Enemies) |
 | `techLevelProjectile` | Acid Spore (Projectiles) |
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelProjectile` | Acid Spore (Projectiles) |

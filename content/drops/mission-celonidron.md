@@ -44,3 +44,9 @@ type: "mission"
 | `dropItem` | Plasma Fluids (Commodities) |
 | `dropItem` | Toxic Waste (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Chelonidron Horror (MissionTypes) |
+

@@ -40,3 +40,10 @@ type: "mission"
 | `dropItem` | Steel (Commodities) |
 | `dropItem` | Plasma Fluids (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | (PvP-6) Only the strongest (MissionTypes) |
+| `drop` | (PvP-6) A new opportunity (MissionTypes) |
+

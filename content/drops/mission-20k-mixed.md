@@ -45,3 +45,9 @@ type: "mission"
 | `dropItem` | Iridium (Commodities) |
 | `dropItem` | Hydrogen Crystal (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | The New Frontier: Part 5 (MissionTypes) |
+

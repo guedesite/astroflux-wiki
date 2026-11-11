@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Priest: “Alas! The god is forgiving, he refuses more than a tenth of our usual sacrifice to show his kindness to the people. Prepare the small harvest of a hundred souls!” |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission 100 hearts (Drops) |
+

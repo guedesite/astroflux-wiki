@@ -78,4 +78,11 @@ type: null
 | --- | --- |
 | `ship` | Pet Guardian (Ships) |
 | `engine` | Enemy Elite Guardian lvl 8 (Engines) |
+| `weapons` | Enemy Elite Guardian Slug lvl 6 (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemy` | X-73 Constructor (Weapons) |
 

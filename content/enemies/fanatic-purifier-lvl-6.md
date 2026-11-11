@@ -64,6 +64,8 @@ type: null
 | --- | --- |
 | `ship` | Enemy Fanatic Purifier lvl 6 (Ships) |
 | `engine` | Enemy Fanatic lvl 6 (Engines) |
+| `weapons` | Enemy Fanatic Blaster lvl 6 (Weapons) |
+| `weapons` | Enemy Fanatic Launcher lvl 6 (Weapons) |
 
 ## Referenced By
 

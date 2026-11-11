@@ -50,6 +50,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Guardian lvl 4 (Ships) |
 | `engine` | Enemy Guardian lvl 4 (Engines) |
+| `weapons` | Enemy Guardian Slug lvl 4 (Weapons) |
 
 ## Referenced By
 

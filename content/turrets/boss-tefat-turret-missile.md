@@ -37,3 +37,9 @@ type: null
 | --- | --- |
 | `weapon` | Enemy Launcher lvl 3 (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Tefat (Bosses) |
+

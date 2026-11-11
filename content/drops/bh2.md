@@ -39,3 +39,9 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Bounty Hunter Vorsran: Part 2 (MissionTypes) |
+

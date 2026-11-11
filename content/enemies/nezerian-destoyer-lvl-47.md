@@ -71,6 +71,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Nezerian Destroyer lvl 47 (Ships) |
 | `engine` | Enemy Nezerian Destroyer lvl 47 (Engines) |
+| `weapons` | Enemy Nezerian Destoryer Lightning lvl 47 (Weapons) |
 
 ## Referenced By
 

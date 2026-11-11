@@ -29,3 +29,9 @@ type: "kill"
 | `completeDescription` | Admiral Ymer: “I can’t believe it! You did it! You are a true hero! Although our losses where heavy, this is great news! We have finally been able to deal a real blow to them! Maybe the settlers of New Erath can finally feel safe.” |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP98k S68k 10x110 (Drops) |
+

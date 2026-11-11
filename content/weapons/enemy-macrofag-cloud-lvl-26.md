@@ -60,3 +60,10 @@ type: "blaster"
 | `projectile` | Acid Cloud Dark (Projectiles) |
 | `dotEffect` | DOT Acid Red (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Blood Macrophage lvl 26 (Enemies) |
+| `weapons` | Blood Macrophage lvl 31 (Enemies) |
+

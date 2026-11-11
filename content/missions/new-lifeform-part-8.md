@@ -30,3 +30,9 @@ type: "transport"
 | `type` | transport |
 | `maxLvl` | 0 |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP 4000-4200 + 8 Flux (Drops) |
+

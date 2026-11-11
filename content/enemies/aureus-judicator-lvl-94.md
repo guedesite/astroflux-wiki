@@ -84,6 +84,9 @@ type: null
 | --- | --- |
 | `ship` | Enemy Aureus Leech lvl 84 (Ships) |
 | `engine` | Enemy Aureus Judicator (Engines) |
+| `weapons` | Enemy Aureus Judicator Light 1 (Weapons) |
+| `weapons` | Enemy Aureus Judicator Light 2 (Weapons) |
+| `weapons` | Enemy Aureus Chrono Beam lvl 85 (Weapons) |
 | `enemies` | Aureus Orb lvl 74 (Enemies) |
 | `enemies` | Aureus Orb lvl 74 (Enemies) |
 | `enemies` | Aureus Orb lvl 74 (Enemies) |
@@ -101,5 +104,15 @@ type: null
 
 | Relation | Source |
 | --- | --- |
+| `enemies` | Arrenius Judicator Mission (Spawners) |
+| `enemies2` | Fulzar, Big Random lvl 82 (Spawners) |
+| `enemies2` | Fulzar, Big Random lvl 82 (Spawners) |
+| `enemies2` | Fulzar, Big Random lvl 82 (Spawners) |
+| `enemies2` | Fulzar, Big Random lvl 82 (Spawners) |
+| `enemies2` | Fulzar, Big Random lvl 82 (Spawners) |
+| `enemies2` | Fulzar, Big Random lvl 82 (Spawners) |
+| `enemies2` | Fulzar, Big Random lvl 82 (Spawners) |
+| `enemies2` | Fulzar, Big Random lvl 82 (Spawners) |
 | `enemy2` | Fulzar, aureus lvl 94 (Spawners) |
+| `enemies2` | Fulzar, aureus lvl 94 (Spawners) |
 

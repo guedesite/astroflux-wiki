@@ -56,5 +56,6 @@ type: "mech"
 | `bitmap` | spawner_1.png (Images) |
 | `enemy` | Triad lvl 3 (Enemies) |
 | `enemy2` | Seeker Lvl 1 (Enemies) |
+| `turrets` | Blaster 280 arc Turret lvl 3 (Turrets) |
 | `explosionEffect` | Explosion Mech Spawner (Effects) |
 

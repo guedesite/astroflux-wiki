@@ -57,14 +57,20 @@ type: null
 | --- | --- |
 | `ship` | Enemy Elite Flamer lvl 26 (Ships) |
 | `engine` | Enemy Elite Flamer lvl 22 (Engines) |
+| `weapons` | Enemy Elite Flamethrower lvl 22 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemy` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `enemies` | Mitrilion, Elite, lvl 22 (Spawners) |
 | `enemy` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `enemies` | Mitrilion, Elite, lvl 22 (Spawners) |
 | `enemy` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `enemies` | Mitrilion, Elite, lvl 22 (Spawners) |
 | `enemy` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `enemies` | Mitrilion, Elite, lvl 22 (Spawners) |
 | `enemy` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `enemies` | Mitrilion, Elite, lvl 22 (Spawners) |
 

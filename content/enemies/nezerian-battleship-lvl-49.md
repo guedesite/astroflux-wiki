@@ -59,6 +59,8 @@ type: null
 | --- | --- |
 | `ship` | Enemy Nezerian Battleship lvl 49 (Ships) |
 | `engine` | Enemy Nezerian Battleship lvl 48 (Engines) |
+| `weapons` | Enemy Nezerian Battleship Launcher lvl 49 (Weapons) |
+| `weapons` | Enemy Nezerian Battleship Plasma Torpedo lvl 49 (Weapons) |
 
 ## Referenced By
 

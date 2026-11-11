@@ -38,3 +38,10 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Reach Level 50 (MissionTypes) |
+| `drop` | Eternal Mission (MissionTypes) |
+

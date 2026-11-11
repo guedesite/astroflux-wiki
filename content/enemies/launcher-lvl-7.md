@@ -49,6 +49,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Launcher lvl 7 (Ships) |
 | `engine` | Enemy Launcher lvl 3 (Engines) |
+| `weapons` | Enemy Launcher lvl 7 (Weapons) |
 
 ## Referenced By
 
@@ -60,4 +61,8 @@ type: null
 | `enemy` | Arrenius, Visible 21, lvl 7 (Spawners) |
 | `enemy` | Arrenius, Visible 22, lvl 7 (Spawners) |
 | `enemy` | Arrenius, Visible 36, lvl 7 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
 

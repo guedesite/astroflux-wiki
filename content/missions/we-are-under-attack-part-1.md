@@ -31,6 +31,12 @@ type: "kill"
 | `completeDescription` | Operative Smith: Excellent work there! You’re getting quite proficient at this killing business... However, it doesn't seem to be enough to stop them. Their ranks are refilling too quickly. We have identified an enemy commander, whom we believe is in charge of the invading force. Take him out and maybe they will pull back... |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Fulzar Inv1 (Drops) |
+
 ## Referenced By
 
 | Relation | Source |

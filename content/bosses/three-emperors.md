@@ -49,4 +49,13 @@ type: "mech"
 | --- | --- |
 | `explosionEffect` | Explosion HUGE (Effects) |
 | `explosionSound` | explosion_huge2.mp3 (Sounds) |
+| `spawners` | Boss Emperor Xhersix (Spawners) |
+| `spawners` | Boss Emperor Yhgvis (Spawners) |
+| `spawners` | Boss Emperor Zharix (Spawners) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `boss` | BossBody (Bodies) |
 

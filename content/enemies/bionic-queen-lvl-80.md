@@ -96,6 +96,10 @@ type: null
 | --- | --- |
 | `ship` | Enemy Bionic Queen lvl 85 (Ships) |
 | `engine` | Enemy Dread Queen lvl 26 (Engines) |
+| `weapons` | Enemy Bionic Lightning lvl 75 (Weapons) |
+| `weapons` | Enemy Bionic Queen Cloud lvl 80 (Weapons) |
+| `weapons` | Enemy Bionic Queen Zero Nova lvl 26 (Weapons) |
+| `weapons` | Enemy Bionic Queen Zero Wave lvl 26 (Weapons) |
 | `enemies` | Bionic Larva lvl 80 (Enemies) |
 
 ## Referenced By
@@ -104,10 +108,23 @@ type: null
 | --- | --- |
 | `enemy2` | Fulzar, Exterminatore + deamon lvl 96 (Spawners) |
 | `enemy2` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
+| `enemies2` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
 | `enemy2` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
+| `enemies2` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
 | `enemy2` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
+| `enemies2` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
 | `enemy2` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
+| `enemies2` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
 | `enemy2` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
+| `enemies2` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
 | `enemy2` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
+| `enemies2` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
 | `enemy2` | Fulzar, Queen + plankton lvl 71 (Spawners) |
+| `enemies2` | Fulzar, Queen + plankton lvl 71 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
 

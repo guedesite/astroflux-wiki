@@ -77,6 +77,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Moth Servus lvl 28 (Ships) |
 | `engine` | Enemy Moth Servus lvl 28 (Engines) |
+| `weapons` | Enemy Alpha Locust lvl 28 (Weapons) |
 
 ## Referenced By
 
@@ -84,12 +85,18 @@ type: null
 | --- | --- |
 | `enemy` | Neurona, Moth Alpha lvl 30 (Spawners) |
 | `enemy` | Neurona, Moth Servus lvl 30 (Spawners) |
+| `enemies` | Neurona, Moth Servus lvl 30 (Spawners) |
 | `enemy` | Neurona, Moth Servus lvl 30 (Spawners) |
+| `enemies` | Neurona, Moth Servus lvl 30 (Spawners) |
 | `enemy` | Neurona, Moth Servus lvl 30 (Spawners) |
+| `enemies` | Neurona, Moth Servus lvl 30 (Spawners) |
 | `enemy2` | Neurona, Scarab Big lvl 32 (Spawners) |
 | `enemy` | Neurona, Servus lvl 30 (Spawners) |
+| `enemies` | Neurona, Servus lvl 30 (Spawners) |
 | `enemy` | Sarkinon, Alpha lvl 30 (Spawners) |
 | `enemy` | Sarkinon, Moth Alpha lvl 30 (Spawners) |
 | `enemy` | Sarkinon, Servus lvl 28 (Spawners) |
+| `enemies` | Sarkinon, Servus lvl 28 (Spawners) |
 | `enemy` | Sarkinon, Servus lvl 30 (Spawners) |
+| `enemies` | Sarkinon, Servus lvl 30 (Spawners) |
 

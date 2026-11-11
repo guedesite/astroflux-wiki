@@ -31,3 +31,12 @@ type: "mission"
 | Item | Table | Chance | Effective Chance | Quantity |
 | --- | --- | ---: | ---: | --- |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | The Sacrifice: Part 7 (MissionTypes) |
+| `drop` | New Lifeform: Part 8 (MissionTypes) |
+| `drop` | Questions about that past: Part 15 (MissionTypes) |
+| `drop` | The Ultimate Poison: Part 5 (MissionTypes) |
+

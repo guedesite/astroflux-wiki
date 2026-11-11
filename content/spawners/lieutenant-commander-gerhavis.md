@@ -44,4 +44,5 @@ type: null
 | Relation | Target |
 | --- | --- |
 | `body` | Sun (Bodies) |
+| `enemies` | Lieutenant Commander Gerhavis lvl 85 (Enemies) |
 

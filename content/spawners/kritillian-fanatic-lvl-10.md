@@ -56,5 +56,9 @@ type: "mech"
 | `bitmap` | spawner_3.png (Images) |
 | `enemy` | Elite Fanatic lvl 12 (Enemies) |
 | `enemy2` | Elite Fanatic lvl 11 (Enemies) |
+| `turrets` | Rocket 360 arc Turret lvl 9 (Turrets) |
+| `turrets` | Rocket 360 arc Turret lvl 9 (Turrets) |
+| `turrets` | Rocket 360 arc Turret lvl 9 (Turrets) |
+| `turrets` | Rocket 360 arc Turret lvl 9 (Turrets) |
 | `explosionEffect` | Explosion Organic Large (Effects) |
 

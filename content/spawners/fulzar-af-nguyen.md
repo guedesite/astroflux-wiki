@@ -50,4 +50,6 @@ type: null
 | Relation | Target |
 | --- | --- |
 | `body` | AF Recycle Station (Bodies) |
+| `enemies` | AF Lieutenant Nguyen (Enemies) |
+| `enemies2` | AF Peacekeeper II (Enemies) |
 

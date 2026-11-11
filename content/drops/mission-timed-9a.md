@@ -40,3 +40,23 @@ type: "mission"
 | `dropItem` | Steel (Commodities) |
 | `dropItem` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Recycle [amount] (MissionTypes) |
+| `drop` | Kill the Seekers! (MissionTypes) |
+| `drop` | Transport assistance (MissionTypes) |
+| `drop` | Unknown Data: Part 2 (MissionTypes) |
+| `drop` | Kill the Zappers (MissionTypes) |
+| `drop` | Questions about that past: Part 7 (MissionTypes) |
+| `drop` | Fanatics are not fun (MissionTypes) |
+| `drop` | Kill the Triads! (MissionTypes) |
+| `drop` | The Infestation: Part 2 (MissionTypes) |
+| `drop` | The Twins: Part 2 (MissionTypes) |
+| `drop` | Kill the Spawners! (MissionTypes) |
+| `drop` | Kill the Beamers (MissionTypes) |
+| `drop` | Kill the Launchers! (MissionTypes) |
+| `drop` | Questions about that past: Part 9 (MissionTypes) |
+| `drop` | Recycle [amount] (MissionTypes) |
+

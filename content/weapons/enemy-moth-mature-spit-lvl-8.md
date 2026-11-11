@@ -76,3 +76,10 @@ type: "projectile"
 | `fireEffect` | DOT Acid Red (Effects) |
 | `dotEffect` | DOT Acid Red (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Mature Moth lvl 8 (Enemies) |
+| `weapons` | Swarming Moth lvl 8 (Enemies) |
+

@@ -39,3 +39,9 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | The Judgement Day! (MissionTypes) |
+

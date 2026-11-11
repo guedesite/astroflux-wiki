@@ -42,3 +42,18 @@ type: null
 | --- | --- |
 | `weapon` | Enemy Locust lvl 12 (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Hozar, Turret Swarm (Spawners) |
+| `turrets` | Hozar, Turret Swarm (Spawners) |
+| `turrets` | Hozar, Turret Swarm (Spawners) |
+| `turrets` | Hozar, Turret Swarm (Spawners) |
+| `turrets` | Hozar, Turret Swarm (Spawners) |
+| `turrets` | Hozar, Turret Swarm (Spawners) |
+| `turrets` | Hozar, Turret Swarm (Spawners) |
+| `turrets` | Zergilin, Locust Swarmer lvl 12 (Spawners) |
+| `turrets` | Zergilin, Locust Swarmer lvl 12 (Spawners) |
+| `turrets` | Zergilin, Locust Swarmer lvl 12 (Spawners) |
+

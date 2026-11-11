@@ -40,3 +40,9 @@ type: "mission"
 | `dropItem` | Steel (Commodities) |
 | `dropItem` | Hydrogen Crystal (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Nezerian Dreadnoughts! (MissionTypes) |
+

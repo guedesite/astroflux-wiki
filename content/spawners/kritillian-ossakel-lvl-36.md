@@ -47,4 +47,5 @@ type: null
 | --- | --- |
 | `body` | Hidden Ossakel (Bodies) |
 | `enemy` | Ossakel lvl 36 (Enemies) |
+| `enemies` | Ossakel lvl 36 (Enemies) |
 

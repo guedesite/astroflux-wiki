@@ -65,3 +65,9 @@ type: "blaster"
 | `projectile` | Neutron Particle (Projectiles) |
 | `fireSound` | fire2.mp3 (Sounds) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Ant lvl 12 (Enemies) |
+

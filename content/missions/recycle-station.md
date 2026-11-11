@@ -31,3 +31,9 @@ type: "recycle"
 | `type` | recycle |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Tutorial 4 (Drops) |
+

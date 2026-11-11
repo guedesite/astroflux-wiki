@@ -69,3 +69,9 @@ type: "projectile"
 | `fireSound` | fire2.mp3 (Sounds) |
 | `dotEffect` | DOT Nexar Light Wave (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Nexar Skirmisher lvl 85 (Enemies) |
+

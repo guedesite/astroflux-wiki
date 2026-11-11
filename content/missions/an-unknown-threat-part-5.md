@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Operative Smith: “You are indeed quite skilled… not a wasted of time… make haste… return to the Warp Gate in Kritillian… I have uncovered some potentially valuable intel.” |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP6k S2.5k A3x35 (Drops) |
+

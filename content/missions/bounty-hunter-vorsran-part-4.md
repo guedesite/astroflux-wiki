@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Operative Smith: “Unbelievable! You definitely earned the reward!”  |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | BH4 (Drops) |
+

@@ -46,3 +46,13 @@ type: "mission"
 | `dropItem` | Fusion Core (Commodities) |
 | `dropItem` | Engine Part (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | The Daemon Hunt (MissionTypes) |
+| `drop` | The Cult: Part 7 (MissionTypes) |
+| `drop` | The Swarm: Part 3 (MissionTypes) |
+| `drop` | The Infestation: Part 6 (MissionTypes) |
+| `drop` | Stolen Technology: Part 3 (MissionTypes) |
+

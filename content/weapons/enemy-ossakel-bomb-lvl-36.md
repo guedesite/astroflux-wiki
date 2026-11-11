@@ -68,3 +68,9 @@ type: "blaster"
 | `fireSound` | moth-spit3.mp3 (Sounds) |
 | `dotEffect` | DOT Acid Red (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Ossakel lvl 36 (Enemies) |
+

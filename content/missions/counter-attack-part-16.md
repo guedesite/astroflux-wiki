@@ -32,3 +32,9 @@ type: "kill"
 | `subtype` | spawner |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP16k F8 (Drops) |
+

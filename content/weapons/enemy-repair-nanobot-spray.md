@@ -94,3 +94,9 @@ type: "blaster"
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelMineral` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Renegade Medic lvl 75 (Enemies) |
+

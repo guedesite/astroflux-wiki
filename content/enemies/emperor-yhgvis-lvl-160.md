@@ -81,4 +81,12 @@ type: null
 | --- | --- |
 | `ship` | Emperor Yhgvis (Ships) |
 | `engine` | Emperor Yhgvis (Engines) |
+| `weapons` | Emperor Yhgvis Blade (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies` | Boss Emperor Yhgvis (Spawners) |
+| `enemies` | Dev Nexar Test (Spawners) |
 

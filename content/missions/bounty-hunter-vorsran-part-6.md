@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Operative Smith: “That’s great news Captain! Rear Admiral Vorghis is no more! This should severely disrupt their defensive capabilities. You have truly earned the bounty. Ready for next mark?“ |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | BH6 (Drops) |
+

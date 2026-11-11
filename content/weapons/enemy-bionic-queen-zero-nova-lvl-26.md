@@ -71,3 +71,9 @@ type: "projectile"
 | `fireSound` | moth-spit1.mp3 (Sounds) |
 | `sound` | laser1.mp3 (Sounds) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Bionic Queen lvl 80 (Enemies) |
+

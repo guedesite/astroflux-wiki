@@ -39,3 +39,17 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Design Effort (MissionTypes) |
+| `drop` | Eldorado: Part 8 (MissionTypes) |
+| `drop` | Milk Run (MissionTypes) |
+| `drop` | The New Frontier: Part 1 (MissionTypes) |
+| `drop` | Eldorado: Part 5 (MissionTypes) |
+| `drop` | Eldorado: Part 4 (MissionTypes) |
+| `drop` | Eldorado: Part 7 (MissionTypes) |
+| `drop` | Design Effort 2 (MissionTypes) |
+| `drop` | Eldorado: Part 3 (MissionTypes) |
+

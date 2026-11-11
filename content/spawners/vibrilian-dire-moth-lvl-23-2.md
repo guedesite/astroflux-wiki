@@ -57,5 +57,7 @@ type: "organic"
 | `bitmap` | organic_spawner_4.png (Images) |
 | `enemy` | Locust lvl 22 (Enemies) |
 | `enemy2` | Mature Dire Moth lvl 23 (Enemies) |
+| `enemies` | Locust lvl 22 (Enemies) |
+| `enemies2` | Mature Dire Moth lvl 23 (Enemies) |
 | `explosionEffect` | Explosion Organic Large Red (Effects) |
 

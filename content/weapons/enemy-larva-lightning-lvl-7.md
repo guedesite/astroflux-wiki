@@ -94,3 +94,9 @@ type: "beam"
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelMineral` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Larva lvl 7 (Enemies) |
+

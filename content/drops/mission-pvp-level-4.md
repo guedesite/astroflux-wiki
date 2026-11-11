@@ -38,3 +38,10 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | (PvP-2) Law and order (MissionTypes) |
+| `drop` | (PvP-2) Make a name (MissionTypes) |
+

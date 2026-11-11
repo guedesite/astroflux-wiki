@@ -31,3 +31,9 @@ type: "pickup"
 | `type` | pickup |
 | `maxLvl` | 0 |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP32k (Drops) |
+

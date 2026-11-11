@@ -65,4 +65,6 @@ type: "projectile"
 | `weapon` | Boss Chelonidron Claw (Turrets) |
 | `weapon` | Boss Chelonidron Claw2 (Turrets) |
 | `weapon` | Boss Chelonidron Claw3 (Turrets) |
+| `weapons` | Infested Fanatic Raider lvl 38 (Enemies) |
+| `weapons` | Infested Fanatic lvl 35 (Enemies) |
 

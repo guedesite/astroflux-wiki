@@ -83,13 +83,25 @@ type: null
 | --- | --- |
 | `enemy` | Hozar, Alpha Moth, lvl 11 (Spawners) |
 | `enemy` | Hozar, Alpha Moth, lvl 11 (Spawners) |
+| `enemies` | Hozar, Alpha Moth, lvl 11 (Spawners) |
 | `enemy` | Hozar, Alpha Moth, lvl 11 (Spawners) |
+| `enemies` | Hozar, Alpha Moth, lvl 11 (Spawners) |
 | `enemy` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `enemies` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
 | `enemy` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `enemies` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
 | `enemy` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `enemies` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
 | `enemy` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `enemies` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
 | `enemy` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `enemies` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
 | `enemy` | Hozar, Turret Swarm (Spawners) |
 | `enemy` | Kritillian, Jagged/Moth Alpha (Spawners) |
 | `enemy` | Kritillian, Moth Alpha (Spawners) |
+| `enemies` | Kritillian, Moth Alpha (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
 

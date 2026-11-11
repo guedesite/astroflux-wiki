@@ -29,3 +29,9 @@ type: "transport"
 | `type` | transport |
 | `majorType` | time |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Timed 6a (Drops) |
+

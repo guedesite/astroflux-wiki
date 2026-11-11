@@ -57,5 +57,7 @@ type: "organic"
 | `bitmap` | organic_spawner_4.png (Images) |
 | `enemy` | Daemon lvl 27 (Enemies) |
 | `enemy2` | Locust lvl 22 (Enemies) |
+| `enemies` | Daemon lvl 27 (Enemies) |
+| `enemies2` | Locust lvl 22 (Enemies) |
 | `explosionEffect` | Explosion Organic Large Red (Effects) |
 

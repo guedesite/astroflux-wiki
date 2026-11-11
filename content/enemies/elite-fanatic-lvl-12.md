@@ -50,6 +50,9 @@ type: null
 | --- | --- |
 | `ship` | Enemy Fanatic Elite lvl 10 (Ships) |
 | `engine` | Enemy Fanatic lvl 10 (Engines) |
+| `weapons` | Enemy Fanatic Plasma lvl 10 (Weapons) |
+| `weapons` | Enemy Fanatic Sticky Bomb lvl 10 (Weapons) |
+| `weapons` | Enemy Fanatic Sniper lvl 10 (Weapons) |
 
 ## Referenced By
 

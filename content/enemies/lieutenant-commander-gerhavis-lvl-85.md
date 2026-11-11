@@ -84,4 +84,11 @@ type: null
 | --- | --- |
 | `ship` | Enemy Nexar Projector S1 (Ships) |
 | `engine` | Enemy Nexar Projector (Engines) |
+| `weapons` | Enemy Nexar Projection (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies` | Lieutenant Commander Gerhavis (Spawners) |
 

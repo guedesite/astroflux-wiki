@@ -87,4 +87,12 @@ type: null
 | --- | --- |
 | `ship` | Enemy Scrap Collector lvl 18 (Ships) |
 | `engine` | Enemy Scrap Collector lvl 18 (Engines) |
+| `weapons` | Enemy Fanatic Mine lvl 10 (Weapons) |
+| `weapons` | Enemy Elite Flamethrower lvl 22 (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies` | Arrenius, Scrap Collector (Spawners) |
 

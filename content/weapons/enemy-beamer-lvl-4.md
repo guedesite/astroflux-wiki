@@ -63,3 +63,10 @@ type: "beam"
 | `fireEffect` | Beam start (Effects) |
 | `hitEffect` | Beam end (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Beamer lvl 4 (Enemies) |
+| `weapons` | Hattur lvl 4 (Enemies) |
+

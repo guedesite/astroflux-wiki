@@ -56,5 +56,7 @@ type: "mech"
 | `bitmap` | spawner_3.png (Images) |
 | `enemy` | Zapper lvl 5 (Enemies) |
 | `enemy2` | Seeker Lvl 4 (Enemies) |
+| `turrets` | Blaster 280 arc Turret lvl 3 (Turrets) |
+| `turrets` | Blaster 280 arc Turret lvl 3 (Turrets) |
 | `explosionEffect` | Explosion Mech Spawner (Effects) |
 

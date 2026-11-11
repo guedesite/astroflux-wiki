@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Captain, Ono says she found something very interesting. It seem like there is a huge bioenergy reading in the middle of this system. She suspect that there is a Queen here and she insists that we have to kill it. It might reveal more about the insects and whats behind the rapid infestation. |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Timed 22a (Drops) |
+

@@ -92,4 +92,11 @@ type: null
 | --- | --- |
 | `ship` | Enemy Wasp Small (Ships) |
 | `engine` | Enemy Dread Queen lvl 26 (Engines) |
+| `weapons` | Wasp Acid Spray Low (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies` | Fulzar Large Mutated Wasps (Spawners) |
 

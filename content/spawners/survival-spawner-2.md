@@ -47,4 +47,8 @@ type: "mech"
 | --- | --- |
 | `body` | Something (Bodies) |
 | `bitmap` | spawner_3.png (Images) |
+| `enemies` | Drak lvl 26 (Enemies) |
+| `enemies` | Moth Queen lvl 18 (Enemies) |
+| `enemies` | Ossakel lvl 36 (Enemies) |
+| `turrets` | Rocket 360 arc Turret lvl 9 (Turrets) |
 

@@ -57,5 +57,7 @@ type: "organic"
 | `bitmap` | organic_spawner_4.png (Images) |
 | `enemy` | Mature Dire Moth lvl 23 (Enemies) |
 | `enemy2` | Fire Moth lvl 25 (Enemies) |
+| `enemies` | Mature Dire Moth lvl 23 (Enemies) |
+| `enemies2` | Fire Moth lvl 25 (Enemies) |
 | `explosionEffect` | Explosion Organic Large Red (Effects) |
 

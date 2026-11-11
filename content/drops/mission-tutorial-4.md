@@ -31,3 +31,12 @@ type: "mission"
 | Item | Table | Chance | Effective Chance | Quantity |
 | --- | --- | ---: | ---: | --- |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | The Warp Gate (MissionTypes) |
+| `drop` | Junk is valuable (MissionTypes) |
+| `drop` | Recycle Station (MissionTypes) |
+| `drop` | A New Beginning: Part 4 (MissionTypes) |
+

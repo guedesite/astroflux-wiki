@@ -63,3 +63,10 @@ type: "blaster"
 | `projectile` | Blaster Bullet lvl 6 (Projectiles) |
 | `fireSound` | fire2.mp3 (Sounds) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Nezerian Fighter lvl 46 (Enemies) |
+| `weapons` | Nezerian Invading Fighter lvl 48 (Enemies) |
+

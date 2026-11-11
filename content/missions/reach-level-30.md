@@ -29,3 +29,9 @@ type: "level"
 | `type` | level |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Reach Level 30 (Drops) |
+

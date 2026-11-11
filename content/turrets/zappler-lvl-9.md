@@ -34,3 +34,128 @@ type: null
 | --- | --- |
 | `weapon` | Enemy Zappler lvl 9 (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Hozar, Alpha Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Alpha Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Alpha Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Alpha Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Alpha Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Alpha Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Alpha Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Alpha Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Alpha Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Alpha Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Alpha Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Alpha Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Alpha Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Alpha Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Alpha Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Alpha Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Alpha Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Alpha Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `turrets` | Hozar, Dire Moth, lvl 8 (Spawners) |
+| `turrets` | Hozar, Dire Moth, lvl 8 (Spawners) |
+| `turrets` | Hozar, Dire Moth, lvl 8 (Spawners) |
+| `turrets` | Hozar, Dire Moth, lvl 8 (Spawners) |
+| `turrets` | Hozar, Dire Moth, lvl 8 (Spawners) |
+| `turrets` | Hozar, Dire Moth, lvl 8 (Spawners) |
+| `turrets` | Hozar, Dire Swarm, lvl 11 (Spawners) |
+| `turrets` | Hozar, Dire Swarm, lvl 11 (Spawners) |
+| `turrets` | Hozar, Dire Swarm, lvl 11 (Spawners) |
+| `turrets` | Hozar, Dire Swarm, lvl 11 (Spawners) |
+| `turrets` | Hozar, Dire Swarm, lvl 11 (Spawners) |
+| `turrets` | Hozar, Dire Swarm, lvl 11 (Spawners) |
+| `turrets` | Hozar, Dire Swarm, lvl 11 (Spawners) |
+| `turrets` | Hozar, Dire Swarm, lvl 11 (Spawners) |
+| `turrets` | Hozar, Dire Swarm, lvl 11 (Spawners) |
+| `turrets` | Hozar, Dire Swarm, lvl 11 (Spawners) |
+| `turrets` | Hozar, Dire Swarm, lvl 11 (Spawners) |
+| `turrets` | Hozar, Dire Swarm, lvl 11 (Spawners) |
+| `turrets` | Hozar, Dire Swarm, lvl 11 (Spawners) |
+| `turrets` | Hozar, Dire Swarm, lvl 11 (Spawners) |
+| `turrets` | Hozar, Dire Swarm, lvl 11 (Spawners) |
+| `turrets` | Hozar, Dire Swarm, lvl 11 (Spawners) |
+| `turrets` | Hozar, Dire Swarm, lvl 11 (Spawners) |
+| `turrets` | Hozar, Dire Swarm, lvl 11 (Spawners) |
+| `turrets` | Hozar, Ice Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Ice Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Ice Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Ice Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Ice Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Ice Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Ice Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Ice Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Ice Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Ice Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Ice Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, Ice Moth, lvl 11 (Spawners) |
+| `turrets` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `turrets` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `turrets` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `turrets` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `turrets` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `turrets` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `turrets` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `turrets` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `turrets` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `turrets` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `turrets` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `turrets` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `turrets` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `turrets` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `turrets` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `turrets` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `turrets` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `turrets` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `turrets` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `turrets` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `turrets` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `turrets` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `turrets` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `turrets` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `turrets` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
+| `turrets` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
+| `turrets` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
+| `turrets` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
+| `turrets` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
+| `turrets` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
+| `turrets` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
+| `turrets` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
+| `turrets` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
+| `turrets` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
+| `turrets` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
+| `turrets` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
+

@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Operative Smith: “Very heavily armored… heavy missiles… now those plasma torpedoes… that’s something new... acquiring the technology behind those would be a big achievement… anyway thats enough data… we can deal some damage to them… but it looks bad… they are still very strong… I doubt AF could put up much of a fight as it stands to today… fortunately.. I have a solution.. let’s kidnap a Nezerian Scientist… we have located a ‘nearly’ undefended Nezerian research facility…“ |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP4.2k S2k A2x55 (Drops) |
+

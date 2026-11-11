@@ -51,4 +51,5 @@ type: null
 | Relation | Target |
 | --- | --- |
 | `body` | Hidden Nexar (Bodies) |
+| `enemies` | Nexar Skirmisher lvl 85 (Enemies) |
 

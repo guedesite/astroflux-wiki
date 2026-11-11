@@ -44,4 +44,5 @@ type: null
 | Relation | Target |
 | --- | --- |
 | `body` | Weapon Factory (Bodies) |
+| `enemies` | Opertive Smith (Enemies) |
 

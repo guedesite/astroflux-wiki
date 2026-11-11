@@ -48,4 +48,20 @@ type: "mech"
 | --- | --- |
 | `explosionEffect` | Explosion HUGE (Effects) |
 | `explosionSound` | explosion_huge.mp3 (Sounds) |
+| `turrets` | Boss Rotator Saw (Turrets) |
+| `turrets` | Boss Rotator Saw (Turrets) |
+| `turrets` | Boss Rotator Saw (Turrets) |
+| `turrets` | Boss Rotator Saw (Turrets) |
+| `turrets` | Boss Rotator Saw (Turrets) |
+| `turrets` | Boss Rotator Saw (Turrets) |
+| `turrets` | Boss Rotator Blaster (Turrets) |
+| `turrets` | Boss Rotator Blaster (Turrets) |
+| `turrets` | Boss Rotator Blaster (Turrets) |
+| `turrets` | Boss Rotator Blaster (Turrets) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `boss` | Boss (Bodies) |
 

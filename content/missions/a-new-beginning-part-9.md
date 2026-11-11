@@ -34,3 +34,9 @@ type: "kill"
 | `subtype` | ship |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Tutorial 9 (Drops) |
+

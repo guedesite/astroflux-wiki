@@ -45,4 +45,5 @@ type: "boss"
 | Relation | Target |
 | --- | --- |
 | `solarSystem` | Arrenius (SolarSystems) |
+| `boss` | Mandrom (Bosses) |
 

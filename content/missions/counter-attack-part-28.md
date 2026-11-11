@@ -30,3 +30,9 @@ type: "transport"
 | `type` | transport |
 | `drop` | qMffjxjWKkumepxsTOPbeA |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP 16800 (Drops) |
+

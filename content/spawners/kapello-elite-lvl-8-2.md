@@ -56,5 +56,6 @@ type: "mech"
 | `bitmap` | spawner_3.png (Images) |
 | `enemy` | Elite Guardian lvl 8 (Enemies) |
 | `enemy2` | Zlatte Lvl 4 (Enemies) |
+| `turrets` | Elite Turret Nova lvl 8 (Turrets) |
 | `explosionEffect` | Explosion Mech Spawner (Effects) |
 

@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Operative Smith: “Excellent work captain, this assassination business seems to suit you very well.”  |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | BH7 (Drops) |
+

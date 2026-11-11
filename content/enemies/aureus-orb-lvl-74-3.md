@@ -69,10 +69,12 @@ type: null
 | --- | --- |
 | `ship` | Enemy Aureus Orb 1 (Ships) |
 | `engine` | Enemy Aureus Still (Engines) |
+| `weapons` | Enemy Aureus Orb 1 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemies` | Aureus Judicator lvl 94 (Enemies) |
+| `enemies` | Boss Aureus (Spawners) |
 

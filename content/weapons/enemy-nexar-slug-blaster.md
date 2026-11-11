@@ -95,3 +95,9 @@ type: "blaster"
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelMineral` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Nexar Fighter lvl 95 (Enemies) |
+

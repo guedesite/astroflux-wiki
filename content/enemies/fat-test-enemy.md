@@ -56,4 +56,11 @@ type: null
 | --- | --- |
 | `ship` | Fat Test Ship (Ships) |
 | `engine` | Enemy Beamer lvl 4 (Engines) |
+| `weapons` | AF Blaster (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies` | Test Fat Ship (Spawners) |
 

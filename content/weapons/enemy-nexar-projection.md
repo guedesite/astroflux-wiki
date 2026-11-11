@@ -71,3 +71,10 @@ type: "projectile"
 | `fireEffect` | DOT Acid Red (Effects) |
 | `dotEffect` | DOT Reduced Armor (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Lieutenant Commander Gerhavis lvl 85 (Enemies) |
+| `weapons` | Nexar Projector lvl 90 (Enemies) |
+

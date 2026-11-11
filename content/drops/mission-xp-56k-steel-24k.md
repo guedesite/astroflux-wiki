@@ -39,3 +39,13 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Counter attack! - Part 1 (MissionTypes) |
+| `drop` | An Unknown Threat: Part 32 (MissionTypes) |
+| `drop` | Counter attack! - Part 9 (MissionTypes) |
+| `drop` | Counter attack! - Part 2 (MissionTypes) |
+| `drop` | Counter attack! - Part 4 (MissionTypes) |
+

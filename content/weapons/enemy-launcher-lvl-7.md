@@ -63,3 +63,9 @@ type: "projectile"
 | `fireSound` | missile.mp3 (Sounds) |
 | `sound` | fire2.mp3 (Sounds) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Launcher lvl 7 (Enemies) |
+

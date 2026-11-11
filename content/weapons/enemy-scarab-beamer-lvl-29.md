@@ -80,3 +80,9 @@ type: "beam"
 | `hitEffect` | Beam end (Effects) |
 | `dotEffect` | DOT Flame (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Scarab lvl 32 (Enemies) |
+

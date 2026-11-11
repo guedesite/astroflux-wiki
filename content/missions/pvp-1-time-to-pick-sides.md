@@ -32,3 +32,9 @@ type: "kill"
 | `nextMissionPolice` | tcHbshJMe0uvQDacb7xPDg |
 | `majorType` | pvpChain |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission PvP Level 2 (Drops) |
+

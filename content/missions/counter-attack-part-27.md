@@ -30,3 +30,9 @@ type: "transport"
 | `type` | transport |
 | `maxLvl` | 0 |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP54k + F26 A5x140 (Drops) |
+

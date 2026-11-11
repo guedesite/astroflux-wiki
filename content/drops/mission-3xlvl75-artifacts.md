@@ -32,3 +32,10 @@ type: "mission"
 | Item | Table | Chance | Effective Chance | Quantity |
 | --- | --- | ---: | ---: | --- |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | The Sacrifice: Part 6 (MissionTypes) |
+| `drop` | New Lifeform: Part 9 (MissionTypes) |
+

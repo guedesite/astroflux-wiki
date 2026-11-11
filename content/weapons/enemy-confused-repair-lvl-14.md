@@ -98,3 +98,9 @@ type: "blaster"
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelMineral` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Confused Repair Probe lvl 14 (Enemies) |
+

@@ -32,3 +32,9 @@ type: "kill"
 | `completeDescription` | Lieutenant Kreiger: “Thank you! Take out that station and land on the planet and check out what’s going on with the colony While you’re down there feel free to scavenge for minerals.”  |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Tutorial 7 (Drops) |
+

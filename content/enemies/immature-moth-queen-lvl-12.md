@@ -84,10 +84,12 @@ type: null
 | --- | --- |
 | `ship` | Enemy Moth Immature Queen lvl 12 (Ships) |
 | `engine` | Enemy Moth Dire lvl 8 (Engines) |
+| `weapons` | Enemy Moth Queen Spit lvl 18 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemy` | Swarm3 (Spawners) |
+| `enemies` | Swarm3 (Spawners) |
 

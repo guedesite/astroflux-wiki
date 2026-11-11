@@ -44,3 +44,10 @@ type: "mission"
 | `dropItem` | Engine Part (Commodities) |
 | `dropItem` | Alien Alloys (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Data Recycle 3! (MissionTypes) |
+| `drop` | Data Collection 3! (MissionTypes) |
+

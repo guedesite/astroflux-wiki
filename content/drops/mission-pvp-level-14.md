@@ -38,3 +38,10 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | (PvP-5) Gaining fame (MissionTypes) |
+| `drop` | (PvP-5) A new hunting ground (MissionTypes) |
+

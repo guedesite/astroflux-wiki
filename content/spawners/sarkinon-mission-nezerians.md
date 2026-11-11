@@ -44,4 +44,5 @@ type: null
 | Relation | Target |
 | --- | --- |
 | `body` | Hidden Spawner (Bodies) |
+| `enemies` | Nezerian Invading Fighter lvl 48 (Enemies) |
 

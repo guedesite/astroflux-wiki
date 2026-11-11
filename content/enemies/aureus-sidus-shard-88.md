@@ -86,6 +86,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Aureus Broken Star lvl 82 (Ships) |
 | `engine` | Enemy Aureus Broken Star (Engines) |
+| `weapons` | Enemy Aureus Broken Star Light 1 (Weapons) |
 
 ## Referenced By
 

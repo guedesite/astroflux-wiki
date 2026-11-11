@@ -57,12 +57,15 @@ type: null
 | --- | --- |
 | `ship` | Enemy Macrofag Blood lvl 31 (Ships) |
 | `engine` | Enemy Macrofag Engine lvl 26 (Engines) |
+| `weapons` | Enemy Macrofag Cloud lvl 26 (Weapons) |
+| `weapons` | Enemy Macrofag Spit lvl 26 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemy2` | Boss Blob Spawner 2 lvl 30 (Spawners) |
+| `enemies2` | Boss Blob Spawner 2 lvl 30 (Spawners) |
 | `enemy` | Neurona, Shuriken Macrofag (Spawners) |
 | `enemy` | Neurona, Shuriken Macrofag (Spawners) |
 | `enemy` | Sarkinon, Shuriken Macrofag (Spawners) |

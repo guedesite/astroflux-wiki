@@ -39,3 +39,10 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | The New Frontier: Part 6 (MissionTypes) |
+| `drop` | New Lifeform: Part 13 (MissionTypes) |
+

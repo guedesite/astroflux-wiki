@@ -39,3 +39,9 @@ type: null
 | `rebuildTime` | 1 |
 | `shieldHp` | 0 |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `enemies` | Aureus Monachus lvl 73 (Enemies) |
+

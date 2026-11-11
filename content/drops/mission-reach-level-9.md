@@ -38,3 +38,9 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Plasma Fluids (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Reach Level 9 (MissionTypes) |
+

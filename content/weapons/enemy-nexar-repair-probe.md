@@ -99,3 +99,9 @@ type: "blaster"
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelMineral` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Nexar Repair Probe lvl 80 (Enemies) |
+

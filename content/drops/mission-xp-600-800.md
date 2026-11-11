@@ -31,3 +31,18 @@ type: "mission"
 | Item | Table | Chance | Effective Chance | Quantity |
 | --- | --- | ---: | ---: | --- |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | The Cult: Part 4 (MissionTypes) |
+| `drop` | Questions about that past: Part 13 (MissionTypes) |
+| `drop` | Questions about that past: Part 11 (MissionTypes) |
+| `drop` | Questions about that past: Part 14 (MissionTypes) |
+| `drop` | The Cult: Part 1 (MissionTypes) |
+| `drop` | Questions about that past: Part 8 (MissionTypes) |
+| `drop` | Questions about that past: Part 6 (MissionTypes) |
+| `drop` | Questions about that past: Part 5 (MissionTypes) |
+| `drop` | Questions about that past: Part 2 (MissionTypes) |
+| `drop` | The Ultimate Poison: Part 2 (MissionTypes) |
+

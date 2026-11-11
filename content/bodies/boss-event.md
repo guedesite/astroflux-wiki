@@ -46,4 +46,5 @@ type: "boss"
 | Relation | Target |
 | --- | --- |
 | `solarSystem` | Arrenius (SolarSystems) |
+| `boss` | Mysterious Chest (Bosses) |
 

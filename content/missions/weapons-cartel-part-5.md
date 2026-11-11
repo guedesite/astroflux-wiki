@@ -30,3 +30,9 @@ type: "kill"
 | `completeDescription` | AF Transmission: "With the Rotator gone we managed to stop a lot of weapon transports into this system. The technology found on the Rotator is Nezerian. Its a hostile spieces most active in the Gellan and Rapir System. Although we have very little information about whats happening in the Rapir system.You have done us a great favour. Collect the reward and we might contact you again." |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Enemy Strongholds: Part 5 (Drops) |
+

@@ -53,4 +53,6 @@ type: null
 | Relation | Target |
 | --- | --- |
 | `body` | Black Hole (Bodies) |
+| `enemies` | Nexar Commander lvl 110 (Enemies) |
+| `enemies2` | Nexar Vanguard lvl 84 (Enemies) |
 

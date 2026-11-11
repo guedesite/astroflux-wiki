@@ -83,5 +83,13 @@ type: null
 | --- | --- |
 | `ship` | Enemy Hattur lvl 4 (Ships) |
 | `engine` | Enemy Hattur lvl 4 (Engines) |
+| `weapons` | Enemy Beamer lvl 4 (Weapons) |
+| `weapons` | Enemy Guardian Slug lvl 4 (Weapons) |
 | `enemies` | Zlatte Lvl 4 (Enemies) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies` | Hyperion, Hattur (Spawners) |
 

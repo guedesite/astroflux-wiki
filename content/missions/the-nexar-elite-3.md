@@ -32,3 +32,9 @@ type: "kill"
 | `completeDescription` | n/a |
 | `majorType` | time |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | timed vors t3e (Drops) |
+

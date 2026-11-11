@@ -45,4 +45,5 @@ type: "boss"
 | Relation | Target |
 | --- | --- |
 | `solarSystem` | Co-op Survival (SolarSystems) |
+| `boss` | Mandrom (Bosses) |
 

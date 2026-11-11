@@ -93,6 +93,8 @@ type: null
 | --- | --- |
 | `ship` | Enemy Nether Blob lvl 120 (Ships) |
 | `engine` | Enemy Nether Blobl lvl 83 (Engines) |
+| `weapons` | Enemy ??? Beam lvl 89 (Weapons) |
+| `weapons` | Enemy ??? Void Tentacle (Weapons) |
 
 ## Referenced By
 
@@ -100,5 +102,7 @@ type: null
 | --- | --- |
 | `enemy` | Durian, ??? lvl 83 (Spawners) |
 | `enemy` | Fulzar, ??? lvl 83 (Spawners) |
+| `enemies` | Fulzar, ??? lvl 83 (Spawners) |
 | `enemy` | Fulzar, ??? lvl 83 (Spawners) |
+| `enemies` | Fulzar, ??? lvl 83 (Spawners) |
 

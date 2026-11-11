@@ -67,10 +67,39 @@ type: null
 | --- | --- |
 | `ship` | Enemy Bionic Deamon lvl 75 (Ships) |
 | `engine` | Enemy Deamon lvl 27 (Engines) |
+| `weapons` | Enemy Bionic Teeth lvl 75 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
+| `enemies` | Fulzar, Exterminatore + deamon lvl 96 (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy2` | Fulzar, turret + plankton lvl 71 (Spawners) |
+| `enemies2` | Fulzar, turret + plankton lvl 71 (Spawners) |
 

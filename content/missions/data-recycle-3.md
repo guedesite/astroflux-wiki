@@ -30,3 +30,9 @@ type: "recycle"
 | `type` | recycle |
 | `majorType` | time |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Data Chip 3 (Drops) |
+

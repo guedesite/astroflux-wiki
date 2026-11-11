@@ -78,6 +78,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy The Blob Electro lvl 29 (Ships) |
 | `engine` | Enemy The Blob Electro lvl 26 (Engines) |
+| `weapons` | Enemy Blob Electro Gun lvl 26 (Weapons) |
 
 ## Referenced By
 

@@ -31,3 +31,9 @@ type: "kill"
 | `available` | true |
 | `majorType` | time |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | timed vors t4e (Drops) |
+

@@ -68,3 +68,9 @@ type: "blaster"
 | `fireSound` | fire2.mp3 (Sounds) |
 | `dotEffect` | DOT Plasma (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Triad Pirate lvl 20 (Enemies) |
+

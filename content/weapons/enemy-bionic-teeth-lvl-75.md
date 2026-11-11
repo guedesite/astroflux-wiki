@@ -94,3 +94,9 @@ type: "blaster"
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelMineral` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Bionic Daemon lvl 73 (Enemies) |
+

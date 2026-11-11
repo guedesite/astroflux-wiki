@@ -78,4 +78,11 @@ type: null
 | --- | --- |
 | `ship` | Enemy Nexar Elite Blade (Ships) |
 | `engine` | Enemy Nexar Blade (Engines) |
+| `weapons` | Enemy Nexar Blade (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies2` | Vorsran, Nexar Cmdr Zherghur (Spawners) |
 

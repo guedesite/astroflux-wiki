@@ -29,3 +29,9 @@ type: "transport"
 | `type` | transport |
 | `drop` | -mqnNwOx_0SIRiv7HBwhCQ |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | The infestation: Part 10 (Drops) |
+

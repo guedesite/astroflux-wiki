@@ -31,6 +31,12 @@ type: "transport"
 | `type` | transport |
 | `drop` | r8g0OMu-zUSIrvym2BgXcQ |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Timed 3a (Drops) |
+
 ## Referenced By
 
 | Relation | Source |

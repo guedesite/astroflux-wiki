@@ -69,10 +69,12 @@ type: null
 | --- | --- |
 | `ship` | Enemy Aureus Square 3 (Ships) |
 | `engine` | Enemy Aureus Still No Rot (Engines) |
+| `weapons` | Enemy Aureus Square Split 3 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemies` | Aureus Judicator lvl 94 (Enemies) |
+| `enemies2` | Boss Aureus (Spawners) |
 

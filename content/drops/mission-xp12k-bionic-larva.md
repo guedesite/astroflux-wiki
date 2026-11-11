@@ -39,3 +39,9 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Bionic Larva (Skins) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Bug Legs: Part 17 (MissionTypes) |
+

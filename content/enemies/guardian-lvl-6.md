@@ -50,6 +50,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Guardian lvl 6 (Ships) |
 | `engine` | Enemy Guardian lvl 6 (Engines) |
+| `weapons` | Enemy Guardian Slug lvl 6 (Weapons) |
 
 ## Referenced By
 
@@ -58,4 +59,8 @@ type: null
 | `enemy` | Arrenius, Guardian/Seeker, lvl 6 (Spawners) |
 | `enemy` | Arrenius, Guardian/Seeker, lvl 6 (Spawners) |
 | `enemy2` | Arrenius, Visible 38, lvl 7 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
 

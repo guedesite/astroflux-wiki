@@ -71,3 +71,10 @@ type: "projectile"
 | `fireEffect` | DOT Acid Red (Effects) |
 | `dotEffect` | DOT Nexar Vinicator (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Nexar Elite Vindicator lvl 126 (Enemies) |
+| `weapons` | Vice Admiral Ahrgeris lvl 126 (Enemies) |
+

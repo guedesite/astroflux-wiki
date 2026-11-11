@@ -57,4 +57,7 @@ type: "mech"
 | `bitmap` | boss_blob_spawner.png (Images) |
 | `enemy` | Renegade Spy-1 (Enemies) |
 | `enemy2` | Zlatte Lvl 30 (Enemies) |
+| `enemies` | Renegade Spy-1 (Enemies) |
+| `enemies2` | Zlatte Lvl 30 (Enemies) |
+| `turrets` | Boss Mother Brain Shuriken (Turrets) |
 

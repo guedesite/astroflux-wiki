@@ -46,4 +46,6 @@ type: "mech"
 | --- | --- |
 | `body` | Ruined Scrap Yard (Bodies) |
 | `bitmap` | spawner_2.png (Images) |
+| `enemies` | Scrap Collector lvl 18 (Enemies) |
+| `turrets` | Elite Flameball Turret lvl 22 (Turrets) |
 

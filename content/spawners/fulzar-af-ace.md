@@ -50,4 +50,6 @@ type: null
 | Relation | Target |
 | --- | --- |
 | `body` | AF Upgrade Station (Bodies) |
+| `enemies` | AF Agent Ace (Enemies) |
+| `enemies2` | AF Agent (Enemies) |
 

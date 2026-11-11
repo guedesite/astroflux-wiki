@@ -55,4 +55,6 @@ type: null
 | --- | --- |
 | `body` | Hangar (Bodies) |
 | `enemy2` | AF Peacekeeper (Enemies) |
+| `enemies` | AF Agent (Enemies) |
+| `enemies2` | Opertive Smith (Enemies) |
 

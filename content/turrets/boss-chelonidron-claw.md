@@ -42,3 +42,10 @@ type: null
 | --- | --- |
 | `weapon` | Boss Chelonidron Claw (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Chelonidron (Bosses) |
+| `turrets` | Chelonidron (Bosses) |
+

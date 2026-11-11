@@ -66,6 +66,9 @@ type: null
 | --- | --- |
 | `ship` | Enemy Fanatic Infested lvl 30 (Ships) |
 | `engine` | Enemy Fanatic lvl 10 (Engines) |
+| `weapons` | Boss Chelonidron Claw (Weapons) |
+| `weapons` | Enemy Plankton Beam lvl 24 (Weapons) |
+| `weapons` | Enemy Locust lvl 28 (Weapons) |
 
 ## Referenced By
 

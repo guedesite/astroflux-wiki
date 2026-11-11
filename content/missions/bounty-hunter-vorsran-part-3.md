@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Operative Smith: “Well done captain! Read for something a bit more troublesome?” |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | BH3 (Drops) |
+

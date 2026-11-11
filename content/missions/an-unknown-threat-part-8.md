@@ -30,3 +30,9 @@ type: "transport"
 | `type` | transport |
 | `maxLvl` | 0 |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP 1600-1800 (Drops) |
+

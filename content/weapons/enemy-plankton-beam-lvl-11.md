@@ -65,3 +65,9 @@ type: "beam"
 | `fireEffect` | Plankton Beam Start (Effects) |
 | `hitEffect` | Plankton Beam End (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Plankton lvl 11 (Enemies) |
+

@@ -54,3 +54,9 @@ type: "blaster"
 | `fireSound` | fire2.mp3 (Sounds) |
 | `dotEffect` | DOT Plasma (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Triad lvl 6 (Enemies) |
+

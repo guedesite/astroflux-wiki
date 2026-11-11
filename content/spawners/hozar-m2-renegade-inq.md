@@ -51,4 +51,5 @@ type: null
 | Relation | Target |
 | --- | --- |
 | `body` | Pirate Bay (Bodies) |
+| `enemies` | Renegade Inquisitor lvl 40 (Enemies) |
 

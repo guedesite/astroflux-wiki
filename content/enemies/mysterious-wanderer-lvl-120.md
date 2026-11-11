@@ -72,4 +72,12 @@ type: null
 | --- | --- |
 | `ship` | Enemy Mysterious Traveler (Ships) |
 | `engine` | Enemy Wanderer (Engines) |
+| `weapons` | Enemy Flak Cannon (Weapons) |
+| `weapons` | Enemy Ram Missiles X-22 (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies` | Mysterious Wanderer (Spawners) |
 

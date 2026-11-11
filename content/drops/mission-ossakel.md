@@ -42,3 +42,9 @@ type: "mission"
 | `dropItem` | Alien Alloys (Commodities) |
 | `dropItem` | Medium Data Chip (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Bone Excavation! (MissionTypes) |
+

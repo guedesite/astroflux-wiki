@@ -91,3 +91,10 @@ type: "blaster"
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelMineral` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Gigantic Mutated Wasp (Enemies) |
+| `weapons` | Gigantic Teleporting Mutated Wasp (Enemies) |
+

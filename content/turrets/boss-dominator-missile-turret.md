@@ -35,3 +35,10 @@ type: null
 | --- | --- |
 | `weapon` | Boss Dominator Launcher (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Dominator (Bosses) |
+| `turrets` | Dominator (Bosses) |
+

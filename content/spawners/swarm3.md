@@ -54,4 +54,6 @@ type: null
 | `body` | Swarm (Bodies) |
 | `enemy` | Swarming Moth lvl 8 (Enemies) |
 | `enemy2` | Swarming Dire Moth lvl 7 (Enemies) |
+| `enemies` | Swarming Moth lvl 8 (Enemies) |
+| `enemies2` | Swarming Dire Moth lvl 7 (Enemies) |
 

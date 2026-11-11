@@ -45,4 +45,6 @@ type: null
 | Relation | Target |
 | --- | --- |
 | `body` | Hidden Nexar (Bodies) |
+| `enemies` | Nexar Vanguard lvl 84 (Enemies) |
+| `enemies` | Nexar Stealth Bomber lvl 80 (Enemies) |
 

@@ -29,3 +29,9 @@ type: "transport"
 | `type` | transport |
 | `drop` | banaWVv7LUeym6TF3nRj8A |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP 4000-4200 + 8 Flux (Drops) |
+

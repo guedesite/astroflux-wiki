@@ -100,3 +100,9 @@ type: "beam"
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelMineral` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Nezerian Destoyer lvl 47 (Enemies) |
+

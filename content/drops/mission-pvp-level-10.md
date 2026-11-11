@@ -40,3 +40,9 @@ type: "mission"
 | `dropItem` | Steel (Commodities) |
 | `dropItem` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | (PvP-4) Gaining Ranks (MissionTypes) |
+

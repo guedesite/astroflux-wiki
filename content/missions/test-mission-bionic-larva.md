@@ -30,3 +30,9 @@ type: "kill"
 | `completeDescription` | wooopido! |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Bionic Larva (Drops) |
+

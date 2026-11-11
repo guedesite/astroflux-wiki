@@ -60,5 +60,7 @@ type: "mech"
 | `bitmap` | enemy_aureus_spawner_active.png (Images) |
 | `enemy` | Aureus Warrior lvl 75 (Enemies) |
 | `enemy2` | Aureus Judicator lvl 94 (Enemies) |
+| `enemies` | Aureus Warrior lvl 75 (Enemies) |
+| `enemies2` | Aureus Judicator lvl 94 (Enemies) |
 | `explosionEffect` | Explosion Organic Large (Effects) |
 

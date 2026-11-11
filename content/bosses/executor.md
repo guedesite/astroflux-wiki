@@ -54,4 +54,27 @@ type: "mech"
 | --- | --- |
 | `explosionEffect` | Explosion HUGE (Effects) |
 | `explosionSound` | explosion_huge2.mp3 (Sounds) |
+| `spawners` | Boss Aureus (Spawners) |
+| `turrets` | Boss Aureus Lightning (Turrets) |
+| `turrets` | Boss Aureus Lightning (Turrets) |
+| `turrets` | Boss Aureus Lightning (Turrets) |
+| `turrets` | Boss Aureus Lightning (Turrets) |
+| `turrets` | Boss Aureus Lightning (Turrets) |
+| `turrets` | Boss Aureus Lightning (Turrets) |
+| `turrets` | Boss Aureus Lightning (Turrets) |
+| `turrets` | Boss Aureus Lightning (Turrets) |
+| `turrets` | Boss Aureus Lightning (Turrets) |
+| `turrets` | Boss Aureus Lightning (Turrets) |
+| `turrets` | Boss Aureus Lightning (Turrets) |
+| `turrets` | Boss Aureus Lightning (Turrets) |
+| `turrets` | Boss Aureus Lightning (Turrets) |
+| `turrets` | Boss Aureus Lightning (Turrets) |
+| `turrets` | Boss Aureus Lightning (Turrets) |
+| `turrets` | Boss Aureus Lightning (Turrets) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `boss` | Boss Executor (Bodies) |
 

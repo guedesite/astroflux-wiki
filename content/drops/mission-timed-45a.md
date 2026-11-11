@@ -44,3 +44,18 @@ type: "mission"
 | `dropItem` | Fusion Core (Commodities) |
 | `dropItem` | Engine Part (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Nezerian Ka-Boom! (MissionTypes) |
+| `drop` | Massacre 2! (MissionTypes) |
+| `drop` | Destroy Nezerian! (MissionTypes) |
+| `drop` | Dr. Drak (MissionTypes) |
+| `drop` | The Infestation: Part 7 (MissionTypes) |
+| `drop` | Massacre 3! (MissionTypes) |
+| `drop` | DMAT Fighting! (MissionTypes) |
+| `drop` | Nezerian Bloody Cruise! (MissionTypes) |
+| `drop` | Nezerian Takedown (MissionTypes) |
+| `drop` | Zap-zap-zap! (MissionTypes) |
+

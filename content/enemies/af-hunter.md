@@ -51,6 +51,7 @@ type: null
 | --- | --- |
 | `ship` | AF Peacekeeper (Ships) |
 | `engine` | Player Police Thruster (Engines) |
+| `weapons` | AF Blaster (Weapons) |
 
 ## Referenced By
 

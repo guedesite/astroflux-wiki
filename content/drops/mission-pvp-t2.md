@@ -38,3 +38,9 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | (PvP) Reputation (MissionTypes) |
+

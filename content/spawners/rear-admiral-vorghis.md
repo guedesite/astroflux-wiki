@@ -45,4 +45,5 @@ type: null
 | Relation | Target |
 | --- | --- |
 | `body` | Sun (Bodies) |
+| `enemies` | Rear Admiral Vorghis lvl 124 (Enemies) |
 

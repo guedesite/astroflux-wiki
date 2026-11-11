@@ -70,10 +70,17 @@ type: null
 | --- | --- |
 | `ship` | Enemy Nezerian Dreadnought lvl 76 (Ships) |
 | `engine` | Enemy Nezerian Dreadnought lvl 76 (Engines) |
+| `weapons` | Enemy Nezerian Beamer 1 lvl 76 (Weapons) |
+| `weapons` | Enemy Nezerian Beamer 2 lvl 76 (Weapons) |
+| `weapons` | Enemy Nezerian Beamer 3 lvl 76 (Weapons) |
+| `weapons` | Enemy Nezerian Heavy Launcher lvl 76 (Weapons) |
+| `weapons` | Enemy Nezerian Hunterkiller Launcher lvl 76 (Weapons) |
+| `weapons` | Enemy Nezerian Plasma Blaster lvl 81 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemy` | Sarkinon, Dreadnaught Invasion (Spawners) |
+| `enemies` | Sarkinon, Dreadnaught Invasion (Spawners) |
 

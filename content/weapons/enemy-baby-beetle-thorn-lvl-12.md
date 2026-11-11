@@ -62,3 +62,9 @@ type: "projectile"
 | `projectile` | Beetle Thorn (Projectiles) |
 | `dotEffect` | DOT Reduced Armor (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Baby Beetle lvl 12 (Enemies) |
+

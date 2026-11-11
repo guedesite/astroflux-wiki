@@ -69,6 +69,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Beetle lvl 16 (Ships) |
 | `engine` | Enemy Beetle lvl 16 (Engines) |
+| `weapons` | Enemy Beetle Thorn lvl 16 (Weapons) |
 
 ## Referenced By
 

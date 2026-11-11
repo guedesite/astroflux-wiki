@@ -63,10 +63,12 @@ type: null
 | --- | --- |
 | `ship` | Enemy Renegade Crystal (Ships) |
 | `engine` | Enemy Crystal (Engines) |
+| `weapons` | Enemy Prismatic Crystal (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemy` | Durian, Renegade Elite Zone (Spawners) |
+| `enemies` | Durian, Renegade Elite Zone (Spawners) |
 

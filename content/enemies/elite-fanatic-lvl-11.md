@@ -50,6 +50,9 @@ type: null
 | --- | --- |
 | `ship` | Enemy Fanatic Elite lvl 10 (Ships) |
 | `engine` | Enemy Fanatic lvl 11 (Engines) |
+| `weapons` | Enemy Fanatic Blaster lvl 10 (Weapons) |
+| `weapons` | Enemy Fanatic Launcher lvl 10 (Weapons) |
+| `weapons` | Enemy Fanatic Lightning lvl 10 (Weapons) |
 
 ## Referenced By
 

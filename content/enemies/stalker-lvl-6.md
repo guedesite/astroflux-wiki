@@ -50,6 +50,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Stalker lvl 6 (Ships) |
 | `engine` | Enemy Elite Stalker lvl 4 (Engines) |
+| `weapons` | Enemy Stalker Blaster lvl 6 (Weapons) |
 
 ## Referenced By
 

@@ -102,3 +102,9 @@ type: "projectile"
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelMineral` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Mysterious Wanderer lvl 120 (Enemies) |
+

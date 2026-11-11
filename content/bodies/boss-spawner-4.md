@@ -39,4 +39,5 @@ type: "boss"
 | Relation | Target |
 | --- | --- |
 | `solarSystem` | Azuron (SolarSystems) |
+| `boss` | Mandrom (Bosses) |
 

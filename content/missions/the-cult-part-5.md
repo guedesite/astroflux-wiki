@@ -32,3 +32,9 @@ type: "recycle"
 | `completeDescription` | Note from Kaalifax: "Thanks for paying my debt.. hehehe... bye!" |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP 2400-2800 (Drops) |
+

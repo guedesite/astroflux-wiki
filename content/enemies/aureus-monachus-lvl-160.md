@@ -87,4 +87,11 @@ type: null
 | --- | --- |
 | `ship` | Enemy Aureus Monachus lvl 76 (Ships) |
 | `engine` | Enemy Aureus Monachus (Engines) |
+| `weapons` | Enemy Aureus Flamer lvl 75 (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies` | Test (Spawners) |
 

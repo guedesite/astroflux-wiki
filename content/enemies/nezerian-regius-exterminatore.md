@@ -81,5 +81,17 @@ type: null
 | --- | --- |
 | `ship` | Enemy Nezerian Devectorian lvl 86 (Ships) |
 | `engine` | Enemy Nezerian Devectorian lvl 88 (Engines) |
+| `weapons` | Enemy Nezerian Nuke Very Long (Weapons) |
+| `weapons` | Enemy Nezerian Nuke Extreme (Weapons) |
+| `weapons` | Enemy Nezerian Nuke Short (Weapons) |
+| `weapons` | Enemy Nezerian Nuke Long (Weapons) |
 | `enemies` | Nezerian Praetorian lvl 82 (Enemies) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies` | Dev test 82 (Spawners) |
+| `enemies` | Dev, aureus test lvl 82 (Spawners) |
+| `enemies2` | Fulzar, Exterminatore + deamon lvl 96 (Spawners) |
 

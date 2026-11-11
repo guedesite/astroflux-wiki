@@ -67,3 +67,9 @@ type: "projectile"
 | `projectile` | Space Squid Wave (Projectiles) |
 | `dotEffect` | DOT Acid Dark (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Space Squid lvl 18 (Enemies) |
+

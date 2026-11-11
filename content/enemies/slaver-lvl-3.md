@@ -59,6 +59,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Slaver lvl 2 (Ships) |
 | `engine` | Enemy Stalker lvl 3 (Engines) |
+| `weapons` | Enemy Stalker Blaster lvl 3 (Weapons) |
 
 ## Referenced By
 

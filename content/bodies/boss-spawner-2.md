@@ -45,4 +45,5 @@ type: "boss"
 | Relation | Target |
 | --- | --- |
 | `solarSystem` | Neurona (SolarSystems) |
+| `boss` | Mother Brain (Bosses) |
 

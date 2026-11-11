@@ -44,3 +44,22 @@ type: "mission"
 | `dropItem` | Iridium (Commodities) |
 | `dropItem` | Plasma Fluids (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Kill the Beetles! (MissionTypes) |
+| `drop` | The Infestation: Part 3 (MissionTypes) |
+| `drop` | The Swarm: Part 1 (MissionTypes) |
+| `drop` | Bug Smash II (MissionTypes) |
+| `drop` | Stolen Technology: Part 2 (MissionTypes) |
+| `drop` | Suicide Mission (MissionTypes) |
+| `drop` | Polueno Mission (MissionTypes) |
+| `drop` | Mission Impossible I (MissionTypes) |
+| `drop` | Ice Breaker II (MissionTypes) |
+| `drop` | Queen Hideout (MissionTypes) |
+| `drop` | Melifon Research (MissionTypes) |
+| `drop` | Bug Legs! (MissionTypes) |
+| `drop` | Thorn Ambush II (MissionTypes) |
+| `drop` | Deep Waters (MissionTypes) |
+

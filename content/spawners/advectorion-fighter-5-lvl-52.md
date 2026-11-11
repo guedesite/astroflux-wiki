@@ -46,3 +46,9 @@ type: "mech"
 | `bitmap` | boss_advectorion_chain2.png (Images) |
 | `enemy` | Nezerian Fighter lvl 46 (Enemies) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `spawners` | Advectorian (Bosses) |
+

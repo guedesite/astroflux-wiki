@@ -81,3 +81,9 @@ type: "beam"
 | `fireSound` | laser3.mp3 (Sounds) |
 | `dotEffect` | Debuff Concussion Shere (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Emperor Yhgvis lvl 160 (Enemies) |
+

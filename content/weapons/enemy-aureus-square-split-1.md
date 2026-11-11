@@ -94,3 +94,9 @@ type: "projectile"
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelMineral` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Aureus Square lvl 74 (Enemies) |
+

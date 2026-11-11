@@ -57,5 +57,7 @@ type: "abstract"
 | --- | --- |
 | `bitmap` | enemy_aureus_spawner_active.png (Images) |
 | `enemy2` | Aureus Sidus lvl 90 (Enemies) |
+| `enemies` | Nezerian Regius Exterminatore (Enemies) |
+| `enemies2` | Nezerian Battlecruiser lvl 67 (Enemies) |
 | `explosionEffect` | Explosion Organic Large (Effects) |
 

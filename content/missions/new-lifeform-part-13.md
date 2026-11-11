@@ -30,3 +30,9 @@ type: "transport"
 | `type` | transport |
 | `maxLvl` | 0 |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission 50k Steel + 5 (lvl80) arts (Drops) |
+

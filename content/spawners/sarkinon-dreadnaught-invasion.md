@@ -54,4 +54,6 @@ type: null
 | `body` | Dreadnaught Invasion (Bodies) |
 | `enemy` | Nezerian Dreadnought lvl 82 (Enemies) |
 | `enemy2` | Nezerian Invading Fighter lvl 48 (Enemies) |
+| `enemies` | Nezerian Dreadnought lvl 82 (Enemies) |
+| `enemies2` | Nezerian Invading Fighter lvl 48 (Enemies) |
 

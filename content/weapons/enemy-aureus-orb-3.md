@@ -66,3 +66,9 @@ type: "projectile"
 | `projectile` | Orb 3 (Projectiles) |
 | `fireSound` | missile.mp3 (Sounds) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Aureus Orb lvl 74 (Enemies) |
+

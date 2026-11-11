@@ -33,3 +33,9 @@ type: "kill"
 | `subtype` | ship |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP 12400-12800 + 16 Flux (Drops) |
+

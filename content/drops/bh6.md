@@ -39,3 +39,9 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Hydrogen Crystal (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Bounty Hunter Vorsran: Part 6 (MissionTypes) |
+

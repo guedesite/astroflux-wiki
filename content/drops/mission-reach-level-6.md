@@ -38,3 +38,10 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Hydrogen Crystal (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | (PvP-4) Demoralize the lawless (MissionTypes) |
+| `drop` | Reach Level 6 (MissionTypes) |
+

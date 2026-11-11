@@ -31,3 +31,11 @@ type: "mission"
 | Item | Table | Chance | Effective Chance | Quantity |
 | --- | --- | ---: | ---: | --- |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | The Ultimate Poison: Part 14 (MissionTypes) |
+| `drop` | The Ultimate Poison: Part 9 (MissionTypes) |
+| `drop` | The New Frontier: Part 2 (MissionTypes) |
+

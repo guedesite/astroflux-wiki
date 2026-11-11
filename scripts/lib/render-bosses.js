@@ -1,8 +1,9 @@
 import { formatNumber, numberValue, statCard, valueLabel } from "./display-utils.js";
 import { normalizeDropRefs } from "./drop-utils.js";
 import { bossHpStats } from "./enemy-utils.js";
-import { entityLink, refKey } from "./entity-links.js";
+import { entityLink, missingValue, refKey } from "./entity-links.js";
 import { escapeAttr, escapeHtml } from "./html-utils.js";
+import { bossPlacements, eventLabel, placementConditionLabels } from "./location-utils.js";
 import { atlasFrameStyle, findAtlasSprite, renderBossPartCard, renderImageThumb } from "./media-utils.js";
 import { renderSourceDropArticles } from "./render-drops.js";
 
@@ -39,11 +40,35 @@ export function renderBossListing(entries, cache, media, routes) {
     if (!boss) return "";
     const sprite = renderBossSpriteThumb(boss, cache, media);
     const hp = bossHpStats(boss, cache);
-    return `<tr data-hp="${escapeAttr(hp.displayHp || 0)}"><td class="name-cell">${sprite}<a href="/${entry.slug}.html">${escapeHtml(entry.name)}</a></td><td>${escapeHtml(valueLabel(boss.level))}</td><td>${escapeHtml(hp.displayHp !== "" ? formatNumber(hp.displayHp, 0) : "n/a")}</td><td>${escapeHtml(valueLabel(boss.xp))}</td><td>${escapeHtml(valueLabel((boss.basicObjs || []).length))}</td><td>${escapeHtml(valueLabel((boss.turrets || []).length))}</td><td>${entityLink("Drops", boss.drops, cache, routes)}</td><td>${escapeHtml(valueLabel(boss.kineticResist))}</td><td>${escapeHtml(valueLabel(boss.energyResist))}</td><td>${escapeHtml(valueLabel(boss.corrosiveResist))}</td></tr>`;
+    return `<tr data-hp="${escapeAttr(hp.displayHp || 0)}"><td class="name-cell">${sprite}<a href="/${entry.slug}.html">${escapeHtml(entry.name)}</a></td><td>${bossLocationSummary(key, cache, routes)}</td><td>${escapeHtml(valueLabel(boss.level))}</td><td>${escapeHtml(hp.displayHp !== "" ? formatNumber(hp.displayHp, 0) : "n/a")}</td><td>${escapeHtml(valueLabel(boss.xp))}</td><td>${escapeHtml(valueLabel((boss.basicObjs || []).length))}</td><td>${escapeHtml(valueLabel((boss.turrets || []).length))}</td><td>${entityLink("Drops", boss.drops, cache, routes)}</td><td>${escapeHtml(valueLabel(boss.kineticResist))}</td><td>${escapeHtml(valueLabel(boss.energyResist))}</td><td>${escapeHtml(valueLabel(boss.corrosiveResist))}</td></tr>`;
   }).join("");
-  return `<h1>Bosses</h1><p class="muted">Boss sprites are assembled from the boss <code>basicObjs</code> parts used by the game client. HP is calculated from boss HP, linked ship HP, or the sum of destructible sprite-part HP when the boss is made from parts.</p><input class="table-filter" name="table-filter" placeholder="Filter bosses"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Boss</th><th>Level</th><th>HP</th><th>XP</th><th>Sprite parts</th><th>Turrets</th><th>Loot</th><th>Kinetic res</th><th>Energy res</th><th>Corrosive res</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+  return `<h1>Bosses</h1><p class="muted">Boss sprites are assembled from the boss <code>basicObjs</code> parts used by the game client. HP is calculated from boss HP, linked ship HP, or the sum of destructible sprite-part HP when the boss is made from parts. <strong>Found in</strong> is resolved from the body whose <code>boss</code> field points at the boss.</p><input class="table-filter" name="table-filter" placeholder="Filter bosses"><div class="table-wrap"><table class="sortable filterable"><thead><tr><th>Boss</th><th>Found in</th><th>Level</th><th>HP</th><th>XP</th><th>Sprite parts</th><th>Turrets</th><th>Loot</th><th>Kinetic res</th><th>Energy res</th><th>Corrosive res</th></tr></thead><tbody>${rows}</tbody></table></div>`;
 }
 
+
+function conditionPills(labels) {
+  return labels.length
+    ? labels.map((label) => `<span class="status-pill">${escapeHtml(label)}</span>`).join(" ")
+    : '<span class="status-pill status-accessible">Open world</span>';
+}
+
+function bossLocationSummary(bossKey, cache, routes) {
+  const placements = bossPlacements(bossKey, cache);
+  if (!placements.length) return missingValue();
+  const systems = [...new Set(placements.map((placement) => placement.systemKey).filter(Boolean))];
+  const shown = systems.slice(0, 2).map((systemKey) => entityLink("SolarSystems", systemKey, cache, routes));
+  return `${shown.join(", ")}${systems.length > shown.length ? ` <span class="muted">+${escapeHtml(valueLabel(systems.length - shown.length))}</span>` : ""}`;
+}
+
+function renderBossPlacementArticle(record, cache, routes) {
+  const placements = bossPlacements(record.key, cache);
+  if (!placements.length) {
+    return `<article><h2>Where To Find</h2><p class="muted">No body in the <code>Bodies</code> table points at this boss and none of its spawner mounts resolves to a world body. The client cache therefore has no reachable placement for it: it may be unused, scripted, or spawned by server-side logic.</p></article>`;
+  }
+  const rows = placements.map((placement) => `<tr><td>${placement.systemKey ? entityLink("SolarSystems", placement.systemKey, cache, routes) : missingValue()}</td><td>${entityLink("Bodies", placement.bodyKey, cache, routes)}<br><span class="muted">${escapeHtml(placement.bodyName)}</span></td><td>${escapeHtml(valueLabel(placement.body?.type))}</td><td>${conditionPills(placementConditionLabels(placement))}</td></tr>`).join("");
+  const bossEvent = record?.event ? `<p class="muted">The boss record itself carries <code>event: ${escapeHtml(record.event)}</code> (${escapeHtml(eventLabel(record.event))}).</p>` : "";
+  return `<article><h2>Where To Find</h2><p class="muted">Placement is derived from <code>Bodies.boss</code>, which is how the client spawns the boss body inside a system. Conditions come from the body and system records: event bodies, inactive bodies, hidden spawners, and Dev/hidden systems.</p>${bossEvent}<div class="table-wrap"><table class="sortable"><thead><tr><th>System</th><th>Boss body</th><th>Body type</th><th>Conditions</th></tr></thead><tbody>${rows}</tbody></table></div></article>`;
+}
 
 export function renderBossPage(record, cache, media, routes) {
   const sections = renderBossPageSections(record, cache, media, routes);
@@ -63,7 +88,7 @@ export function renderBossPageSections(record, cache, media, routes) {
     .map((turretKey) => `<li>Turret: ${entityLink("Turrets", turretKey, cache, routes)}</li>`)
     .join("");
   return {
-    preMedia: `<section class="content-grid">${renderSourceDropArticles("Boss", dropRefs, cache, media, routes)}<article><h2>Boss Stats</h2><div class="stat-grid">${statCard("Level", record.level)}${statCard("HP", hp.displayHp !== "" ? formatNumber(hp.displayHp, 0) : "", hp.source)}${statCard("Total part HP", hp.totalPartHp !== "" ? formatNumber(hp.totalPartHp, 0) : "")}${statCard("Highest part HP", hp.highestPartHp !== "" ? formatNumber(hp.highestPartHp, 0) : "")}${statCard("Destructible parts", hp.destructibleParts)}${statCard("XP", record.xp)}${statCard("Regen", record.regen)}${statCard("Radius", record.radius)}${statCard("Speed", record.speed)}${statCard("Reset", record.resetTime)}${statCard("Body sprites", (record.basicObjs || []).length)}${statCard("Turret sprites", (record.turrets || []).length)}${statCard("Spawner sprites", (record.spawners || []).length)}${statCard("Kinetic resist", record.kineticResist)}${statCard("Energy resist", record.energyResist)}${statCard("Corrosive resist", record.corrosiveResist)}</div></article></section>`,
+    preMedia: `<section class="content-grid">${renderSourceDropArticles("Boss", dropRefs, cache, media, routes)}${renderBossPlacementArticle(record, cache, routes)}<article><h2>Boss Stats</h2><div class="stat-grid">${statCard("Level", record.level)}${statCard("HP", hp.displayHp !== "" ? formatNumber(hp.displayHp, 0) : "", hp.source)}${statCard("Total part HP", hp.totalPartHp !== "" ? formatNumber(hp.totalPartHp, 0) : "")}${statCard("Highest part HP", hp.highestPartHp !== "" ? formatNumber(hp.highestPartHp, 0) : "")}${statCard("Destructible parts", hp.destructibleParts)}${statCard("XP", record.xp)}${statCard("Regen", record.regen)}${statCard("Radius", record.radius)}${statCard("Speed", record.speed)}${statCard("Reset", record.resetTime)}${statCard("Body sprites", (record.basicObjs || []).length)}${statCard("Turret sprites", (record.turrets || []).length)}${statCard("Spawner sprites", (record.spawners || []).length)}${statCard("Kinetic resist", record.kineticResist)}${statCard("Energy resist", record.energyResist)}${statCard("Corrosive resist", record.corrosiveResist)}</div></article></section>`,
     postMedia: `<section class="content-grid">${renderBossLayeredPreview(record, cache, media)}${renderBossSpriteParts(record, cache, media, routes)}<article><h2>Encounter Links</h2><ul class="link-list"><li>Loot: ${lootLinks || "<span>n/a</span>"}</li><li>Explosion sound: ${entityLink("Sounds", record.explosionSound, cache, routes)}</li>${spawnerLinks}${turretLinks}</ul></article></section>`
   };
 }

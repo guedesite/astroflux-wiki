@@ -34,3 +34,9 @@ type: "kill"
 | `subtype` | frenzy |
 | `majorType` | pvpChain |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission PvP Level 18 (Drops) |
+

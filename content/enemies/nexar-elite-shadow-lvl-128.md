@@ -78,4 +78,17 @@ type: null
 | --- | --- |
 | `ship` | Enemy Nexar Elite Shadow (Ships) |
 | `engine` | Enemy Nexar Elite Shadow (Engines) |
+| `weapons` | Enemy Nexar Shadow Blaster (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies2` | Vorsran, Nexar T10 lvl 100 (Spawners) |
+| `enemies2` | Vorsran, Nexar T10 lvl 100 (Spawners) |
+| `enemies2` | Vorsran, Nexar T10 lvl 100 (Spawners) |
+| `enemies2` | Vorsran, Nexar T10 lvl 100 (Spawners) |
+| `enemies2` | Vorsran, Nexar T10 lvl 100 (Spawners) |
+| `enemies2` | Vorsran, Nexar T10 lvl 100 (Spawners) |
+| `enemies2` | Vorsran, Nexar T9 lvl 100 (Spawners) |
 

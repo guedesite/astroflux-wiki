@@ -46,3 +46,9 @@ type: "mech"
 | `bitmap` | boss_advectorion_chain2.png (Images) |
 | `enemy` | Nezerian Battlecruiser lvl 48 (Enemies) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `spawners` | Advectorian (Bosses) |
+

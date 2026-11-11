@@ -50,14 +50,20 @@ type: null
 | --- | --- |
 | `ship` | Enemy Elite Repair Probe lvl 26 (Ships) |
 | `engine` | Enemy Elite Repair Probe lvl 22 (Engines) |
+| `weapons` | Enemy Elite Repair lvl 22 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemy2` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `enemies2` | Mitrilion, Elite, lvl 22 (Spawners) |
 | `enemy2` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `enemies2` | Mitrilion, Elite, lvl 22 (Spawners) |
 | `enemy2` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `enemies2` | Mitrilion, Elite, lvl 22 (Spawners) |
 | `enemy2` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `enemies2` | Mitrilion, Elite, lvl 22 (Spawners) |
 | `enemy2` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `enemies2` | Mitrilion, Elite, lvl 22 (Spawners) |
 

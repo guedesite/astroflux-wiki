@@ -81,22 +81,56 @@ type: null
 | --- | --- |
 | `ship` | Enemy Nezerian Fighter lvl 68 (Ships) |
 | `engine` | Enemy Nezerian Fighter lvl 46 (Engines) |
+| `weapons` | Enemy Nezerian Fighter Blaster lvl 75 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
+| `enemies` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies` | Fulzar, Random Nezerian Fighters (Spawners) |
 | `enemy2` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies2` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy2` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies2` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy2` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies2` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy2` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies2` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy2` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies2` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy2` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies2` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy2` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies2` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy2` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies2` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy2` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies2` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy2` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies2` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy2` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies2` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy2` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies2` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy2` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies2` | Fulzar, turret + fighter lvl 68 (Spawners) |
 

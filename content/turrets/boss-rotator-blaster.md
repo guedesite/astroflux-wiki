@@ -37,3 +37,12 @@ type: null
 | --- | --- |
 | `weapon` | Boss Rotator Turret Blaster (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Rotator (Bosses) |
+| `turrets` | Rotator (Bosses) |
+| `turrets` | Rotator (Bosses) |
+| `turrets` | Rotator (Bosses) |
+

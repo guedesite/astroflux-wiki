@@ -42,3 +42,12 @@ type: null
 | --- | --- |
 | `weapon` | Enemy Locust lvl 18 (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Mitrilion, Squid, lvl 18 (Spawners) |
+| `turrets` | Mitrilion, Squid, lvl 18 (Spawners) |
+| `turrets` | Mitrilion, Squid, lvl 18 (Spawners) |
+| `turrets` | Mitrilion, Squid, lvl 18 (Spawners) |
+

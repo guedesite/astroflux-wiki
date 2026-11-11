@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Priest: “Bless us all! The saviour has once more appeared on the sky and the spinning daemons were vanquished. Hail our saviour! Prepare a the fiest of a thousand virgins!” |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission 1000 hearts (Drops) |
+

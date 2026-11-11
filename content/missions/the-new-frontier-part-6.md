@@ -30,3 +30,9 @@ type: "pickup"
 | `type` | pickup |
 | `maxLvl` | 0 |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission 50k Steel + 5 (lvl80) arts (Drops) |
+

@@ -67,10 +67,14 @@ type: null
 | --- | --- |
 | `ship` | Enemy Fanatic Tank lvl 72 (Ships) |
 | `engine` | Enemy Fanatic Tank lvl 48 (Engines) |
+| `weapons` | Enemy Fanatic Tank Cluster Missiles lvl 48 (Weapons) |
+| `weapons` | Enemy Fanatic Tank Scattergun lvl 48 (Weapons) |
+| `weapons` | Enemy Fanatic Tank Plasma Torpedo lvl 48 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemy` | Hidden Fanatic Tank (Spawners) |
+| `enemies` | Hidden Fanatic Tank (Spawners) |
 

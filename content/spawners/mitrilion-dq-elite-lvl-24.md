@@ -59,5 +59,7 @@ type: "organic"
 | `bitmap` | organic_spawner_4.png (Images) |
 | `enemy` | Dread Queen lvl 68 (Enemies) |
 | `enemy2` | Larva lvl 14 (Enemies) |
+| `enemies` | Dread Queen lvl 68 (Enemies) |
+| `enemies2` | Larva lvl 14 (Enemies) |
 | `explosionEffect` | Explosion Organic Large (Effects) |
 

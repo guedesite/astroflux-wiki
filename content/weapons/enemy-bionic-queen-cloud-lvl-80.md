@@ -66,3 +66,9 @@ type: "blaster"
 | `projectile` | Dread Queen Acid Cloud (Projectiles) |
 | `dotEffect` | DOT Acid Dark (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Bionic Queen lvl 80 (Enemies) |
+

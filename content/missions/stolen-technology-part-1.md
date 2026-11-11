@@ -33,6 +33,12 @@ type: "transport"
 | `completeDescription` | We don't know who it was, but they seem to have stolen some sort of valuable technology from the Fanatics. And they left a warp trail leading to Hozar. |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Timed 13a (Drops) |
+
 ## Referenced By
 
 | Relation | Source |

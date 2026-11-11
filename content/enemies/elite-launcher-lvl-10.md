@@ -49,6 +49,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Elite Launcher lvl 10 (Ships) |
 | `engine` | Enemy Launcher lvl 7 (Engines) |
+| `weapons` | Enemy Elite Launcher lvl 10 (Weapons) |
 
 ## Referenced By
 

@@ -44,3 +44,9 @@ type: "mission"
 | `dropItem` | Engine Part (Commodities) |
 | `dropItem` | Fusion Core (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Nezerian Ultimate! (MissionTypes) |
+

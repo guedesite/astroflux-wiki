@@ -30,6 +30,12 @@ type: "transport"
 | `type` | transport |
 | `maxLvl` | 0 |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP 5600-5800 + 3 Flux (Drops) |
+
 ## Referenced By
 
 | Relation | Source |

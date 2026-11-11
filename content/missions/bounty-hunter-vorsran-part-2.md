@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Operative Smith: “Again… excellent work. Those sniper types are not so thought when it gets close and personal, right? |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | BH2 (Drops) |
+

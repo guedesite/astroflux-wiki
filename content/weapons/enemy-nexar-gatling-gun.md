@@ -96,3 +96,10 @@ type: "blaster"
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelMineral` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Lieutenant Xhaveris lvl 84 (Enemies) |
+| `weapons` | Nexar Tank lvl 100 (Enemies) |
+

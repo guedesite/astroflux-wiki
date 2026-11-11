@@ -40,3 +40,22 @@ type: "mission"
 | `dropItem` | Steel (Commodities) |
 | `dropItem` | Plasma Fluids (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Larva Research (MissionTypes) |
+| `drop` | Bug Smash (MissionTypes) |
+| `drop` | Questions about that past: Part 3 (MissionTypes) |
+| `drop` | Dimensional Rift (MissionTypes) |
+| `drop` | Alpha Hunt Kritillian (MissionTypes) |
+| `drop` | Larva Extermination (MissionTypes) |
+| `drop` | Plagued Locust (MissionTypes) |
+| `drop` | Livin' Through Chemistry (MissionTypes) |
+| `drop` | Questions about that past: Part 10 (MissionTypes) |
+| `drop` | Blade Swarm (MissionTypes) |
+| `drop` | Endless Invasions (MissionTypes) |
+| `drop` | Thorn Ambush (MissionTypes) |
+| `drop` | Unknown Data: Part 4 (MissionTypes) |
+| `drop` | Fanatic Invasion (MissionTypes) |
+

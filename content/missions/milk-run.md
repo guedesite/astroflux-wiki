@@ -29,3 +29,9 @@ type: "transport"
 | `type` | transport |
 | `majorType` | time |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission 20k Steel (Drops) |
+

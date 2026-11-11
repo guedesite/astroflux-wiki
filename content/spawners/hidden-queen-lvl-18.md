@@ -48,4 +48,5 @@ type: "organic"
 | --- | --- |
 | `body` | Hidden Root (Bodies) |
 | `enemy` | Moth Queen lvl 18 (Enemies) |
+| `enemies` | Moth Queen lvl 18 (Enemies) |
 

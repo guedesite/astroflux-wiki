@@ -34,3 +34,34 @@ type: null
 | --- | --- |
 | `weapon` | Enemy Turret Blaster lvl 6 (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Arrenius, Beamer/Seeker, lvl 7 (Spawners) |
+| `turrets` | Arrenius, Beamer/Zlatte, lvl 7 (Spawners) |
+| `turrets` | Arrenius, Beamer/Zlatte, lvl 7 (Spawners) |
+| `turrets` | Arrenius, Fanatic, lvl 6 (Spawners) |
+| `turrets` | Arrenius, Fanatic, lvl 6 (Spawners) |
+| `turrets` | Arrenius, Fanatic, lvl 6 (Spawners) |
+| `turrets` | Arrenius, Fanatic, lvl 7 (Spawners) |
+| `turrets` | Arrenius, Fanatic, lvl 7 (Spawners) |
+| `turrets` | Arrenius, Fanatic, lvl 7 (Spawners) |
+| `turrets` | Arrenius, Fanatic, lvl 7 (Spawners) |
+| `turrets` | Arrenius, Triads lvl 6 (Spawners) |
+| `turrets` | Arrenius, Triads lvl 6 (Spawners) |
+| `turrets` | Arrenius, Trigun, lvl 5 (Spawners) |
+| `turrets` | Arrenius, Trigun, lvl 5 (Spawners) |
+| `turrets` | Arrenius, Trigun, lvl 5 (Spawners) |
+| `turrets` | Arrenius, Visible 19, lvl 7 (Spawners) |
+| `turrets` | Arrenius, Visible 24, lvl 6 (Spawners) |
+| `turrets` | Arrenius, Visible 33, lvl 7 (Spawners) |
+| `turrets` | Arrenius, Visible 35, lvl 7 (Spawners) |
+| `turrets` | Arrenius, Visible 38, lvl 7 (Spawners) |
+| `turrets` | Arrenius, Zapper, lvl 6 (Spawners) |
+| `turrets` | Arrenius, Zapper, lvl 6 (Spawners) |
+| `turrets` | Arrenius, visible 17, lvl 6 (Spawners) |
+| `turrets` | Arrenius, visible 17, lvl 6 (Spawners) |
+| `turrets` | Arrenius, visible 18, lvl 6 (Spawners) |
+| `turrets` | Kapello, Fanatic outpost (Spawners) |
+

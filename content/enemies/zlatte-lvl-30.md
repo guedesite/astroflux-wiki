@@ -59,12 +59,14 @@ type: null
 | --- | --- |
 | `ship` | Enemy Zlat lvl 4 (Ships) |
 | `engine` | Enemy Zlatte Engine lvl 4 (Engines) |
+| `weapons` | Enemy Zlatte Blaster lvl 30 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemy2` | Kritillian, Renegade DMAT-90 lvl 30 (Spawners) |
+| `enemies2` | Kritillian, Renegade DMAT-90 lvl 30 (Spawners) |
 | `enemy2` | Neurona, Infested Fanatic R lvl 38 (Spawners) |
 | `enemy2` | Neurona, Infested Fanatic R lvl 38 (Spawners) |
 | `enemy2` | Neurona, Infested Fanatic R lvl 38 (Spawners) |
@@ -78,4 +80,5 @@ type: null
 | `enemy2` | Neurona, Shuriken Macrofag (Spawners) |
 | `enemy2` | Neurona, Shuriken Macrofag (Spawners) |
 | `enemy2` | Zergilin, Renegade Spy-1 lvl 45 (Spawners) |
+| `enemies2` | Zergilin, Renegade Spy-1 lvl 45 (Spawners) |
 

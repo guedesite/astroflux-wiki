@@ -50,6 +50,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Plankton lvl 11 (Ships) |
 | `engine` | Enemy Plankton lvl 11 (Engines) |
+| `weapons` | Enemy Plankton Beam lvl 11 (Weapons) |
 
 ## Referenced By
 

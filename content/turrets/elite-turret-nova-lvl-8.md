@@ -37,3 +37,11 @@ type: null
 | --- | --- |
 | `weapon` | Enemy Elite Turret Nova lvl 8 (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Kapello, Elite, lvl 8 (Spawners) |
+| `turrets` | Kapello, Elite, lvl 8 (Spawners) |
+| `turrets` | Kapello, Elite, lvl 8 (Spawners) |
+

@@ -105,3 +105,9 @@ type: "projectile"
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelMineral` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Aureus Judicator lvl 94 (Enemies) |
+

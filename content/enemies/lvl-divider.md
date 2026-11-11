@@ -101,5 +101,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Nether Blob lvl 100 (Ships) |
 | `engine` | Enemy Nether Blobl lvl 83 (Engines) |
+| `weapons` | Enemy ??? Beam lvl 89 (Weapons) |
+| `weapons` | Enemy ??? Void Tentacle (Weapons) |
 | `enemies` | ??? lvl ?? Divided (Enemies) |
 

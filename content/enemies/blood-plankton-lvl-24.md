@@ -57,11 +57,13 @@ type: null
 | --- | --- |
 | `ship` | Enemy Plankton Blood lvl 24 (Ships) |
 | `engine` | Enemy Plankton lvl 11 (Engines) |
+| `weapons` | Enemy Plankton Beam lvl 24 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
+| `enemies` | Boss Blob Spawner 2 lvl 30 (Spawners) |
 | `enemy2` | Vibrilian, Electro Blob, lvl 26 (Spawners) |
 | `enemy` | Vibrilian, Fire Moth lvl 24 (Spawners) |
 | `enemy` | Vibrilian, Fire Moth lvl 25 (Spawners) |

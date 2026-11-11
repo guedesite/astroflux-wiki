@@ -87,6 +87,7 @@ type: null
 | `enemy` | Boss Wax Spawner (Spawners) |
 | `enemy2` | Vibrilian, Dire Moth lvl 23 (Spawners) |
 | `enemy2` | Vibrilian, Dire Moth lvl 23 (Spawners) |
+| `enemies2` | Vibrilian, Dire Moth lvl 23 (Spawners) |
 | `enemy2` | Vibrilian, Dire Moth lvl 23 (Spawners) |
 | `enemy2` | Vibrilian, Dire Moth lvl 23 (Spawners) |
 | `enemy2` | Vibrilian, Dire Moth lvl 23 (Spawners) |
@@ -97,6 +98,7 @@ type: null
 | `enemy` | Vibrilian, Dire Swarm, lvl 23 (Spawners) |
 | `enemy2` | Vibrilian, Electro Blob, lvl 26 (Spawners) |
 | `enemy` | Vibrilian, Fire Moth lvl 25 (Spawners) |
+| `enemies` | Vibrilian, Fire Moth lvl 25 (Spawners) |
 | `enemy` | Vibrilian, Fire Moth lvl 25 (Spawners) |
 | `enemy` | Vibrilian, Hidden Jagged Swarm (Spawners) |
 | `enemy2` | Vibrilian, Jagged Star lvl 25 (Spawners) |
@@ -104,6 +106,7 @@ type: null
 | `enemy2` | Vibrilian, Jagged Star lvl 25 (Spawners) |
 | `enemy2` | Vibrilian, Jagged Star lvl 25 (Spawners) |
 | `enemy2` | Vibrilian, Jagged Star lvl 25 (Spawners) |
+| `enemies2` | Vibrilian, Jagged Star lvl 25 (Spawners) |
 | `enemy2` | Vibrilian, Plankton lvl 24 (Spawners) |
 | `enemy2` | Vibrilian, Plankton lvl 24 (Spawners) |
 | `enemy2` | Vibrilian, Plankton lvl 24 (Spawners) |

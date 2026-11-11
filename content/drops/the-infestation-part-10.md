@@ -40,3 +40,9 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Sonic Launcher (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | The Infestation: Part 10 (MissionTypes) |
+

@@ -59,5 +59,7 @@ type: "organic"
 | `bitmap` | organic_boss_wax_spawner_active1.png (Images) |
 | `enemy` | Dread Algea lvl 24 (Enemies) |
 | `enemy2` | Larva lvl 14 (Enemies) |
+| `enemies` | Dread Algea lvl 24 (Enemies) |
+| `enemies2` | Larva lvl 14 (Enemies) |
 | `explosionEffect` | Explosion Organic Large (Effects) |
 

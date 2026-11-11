@@ -56,4 +56,11 @@ type: null
 | --- | --- |
 | `ship` | AF Peacekeeper 2 (Ships) |
 | `engine` | Player Police Thruster (Engines) |
+| `weapons` | AF Blaster 2 (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies2` | AF Invasion (Spawners) |
 

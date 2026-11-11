@@ -34,3 +34,12 @@ type: null
 | --- | --- |
 | `weapon` | Boss Mech Lightning (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Mandrom (Bosses) |
+| `turrets` | Mandrom (Bosses) |
+| `turrets` | Mandrom (Bosses) |
+| `turrets` | Mandrom (Bosses) |
+

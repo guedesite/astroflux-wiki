@@ -31,6 +31,12 @@ type: "kill"
 | `completeDescription` | Operative Smith: “Excellent work captain, your skills never stops amazing me. Ready for more work?” |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | BH1 (Drops) |
+
 ## Referenced By
 
 | Relation | Source |

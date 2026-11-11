@@ -60,5 +60,15 @@ type: "mech"
 | `body` | Vorsran, Hidden T3 (Bodies) |
 | `bitmap` | nexar_spawner_active1.png (Images) |
 | `enemy2` | Larva lvl 14 (Enemies) |
+| `enemies` | Nexar Fighter lvl 95 (Enemies) |
+| `enemies` | Nexar Blade lvl 95 (Enemies) |
+| `enemies` | Nexar Twin lvl 90 (Enemies) |
+| `enemies` | Nexar Projector lvl 90 (Enemies) |
+| `enemies` | Nexar Tank lvl 100 (Enemies) |
+| `enemies2` | Nexar Stealth Bomber lvl 80 (Enemies) |
+| `turrets` | Nexar Wave Generator lvl 120 (Turrets) |
+| `turrets` | Nexar Wave Generator lvl 120 (Turrets) |
+| `turrets` | Nexar Wave Generator lvl 120 (Turrets) |
+| `turrets` | Nexar Wave Generator lvl 120 (Turrets) |
 | `explosionEffect` | Explosion Organic Large (Effects) |
 

@@ -57,6 +57,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Elite Guardian lvl 8 (Ships) |
 | `engine` | Enemy Elite Guardian lvl 8 (Engines) |
+| `weapons` | Enemy Elite Guardian Slug lvl 6 (Weapons) |
 
 ## Referenced By
 

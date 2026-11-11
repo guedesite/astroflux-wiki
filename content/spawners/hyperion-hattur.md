@@ -46,4 +46,6 @@ type: "mech"
 | --- | --- |
 | `body` | Hidden Hattur (Bodies) |
 | `bitmap` | spawner_1.png (Images) |
+| `enemies` | Hattur lvl 4 (Enemies) |
+| `turrets` | Blaster 360 arc Turret lvl 4 (Turrets) |
 

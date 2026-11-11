@@ -97,4 +97,12 @@ type: null
 | --- | --- |
 | `ship` | Enemy Wasp Large (Ships) |
 | `engine` | Enemy Dread Queen lvl 26 (Engines) |
+| `weapons` | Wasp Acid Spray High (Weapons) |
+| `weapons` | Wasp Acid Spore (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies` | Fulzar Gigantic Teleporting Mutated Wasps (Spawners) |
 

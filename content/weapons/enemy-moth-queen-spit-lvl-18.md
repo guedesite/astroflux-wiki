@@ -68,3 +68,10 @@ type: "projectile"
 | `fireEffect` | DOT Acid Red (Effects) |
 | `dotEffect` | DOT Acid Red (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Immature Moth Queen lvl 12 (Enemies) |
+| `weapons` | Moth Queen lvl 18 (Enemies) |
+

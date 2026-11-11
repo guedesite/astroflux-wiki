@@ -32,3 +32,9 @@ type: "transport"
 | `type` | transport |
 | `drop` | s46g7anU802tL933nOtrVw |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP 8400-8600 (Drops) |
+

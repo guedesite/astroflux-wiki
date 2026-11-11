@@ -50,6 +50,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Jagged Star Blood lvl 25 (Ships) |
 | `engine` | Enemy Jagged Star lvl 18 (Engines) |
+| `weapons` | Enemy Jagged Star Blood lvl 25 (Weapons) |
 
 ## Referenced By
 
@@ -61,4 +62,5 @@ type: null
 | `enemy` | Vibrilian, Jagged Star lvl 25 (Spawners) |
 | `enemy` | Vibrilian, Jagged Star lvl 25 (Spawners) |
 | `enemy` | Vibrilian, Jagged Star lvl 25 (Spawners) |
+| `enemies` | Vibrilian, Jagged Star lvl 25 (Spawners) |
 

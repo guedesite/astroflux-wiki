@@ -67,3 +67,9 @@ type: "beam"
 | `fireEffect` | Beam start (Effects) |
 | `hitEffect` | Beam end (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Beamer lvl 7 (Enemies) |
+

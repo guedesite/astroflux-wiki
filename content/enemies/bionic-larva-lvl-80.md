@@ -65,6 +65,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Bionic Larva (Ships) |
 | `engine` | Player Larva (Engines) |
+| `weapons` | Enemy Larva Lightning lvl 72 (Weapons) |
 
 ## Referenced By
 

@@ -67,24 +67,60 @@ type: null
 | --- | --- |
 | `ship` | Enemy Bionic Plankto lvl 71 (Ships) |
 | `engine` | Enemy Plankton lvl 11 (Engines) |
+| `weapons` | Enemy Bionic Beam lvl 75 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemy` | Fulzar, Queen + plankton lvl 71 (Spawners) |
+| `enemies` | Fulzar, Queen + plankton lvl 71 (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
 | `enemy` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
 | `enemy` | Fulzar, turret + plankton lvl 71 (Spawners) |
+| `enemies` | Fulzar, turret + plankton lvl 71 (Spawners) |
 

@@ -37,3 +37,14 @@ type: null
 | --- | --- |
 | `weapon` | Boss Cleaner Lightning (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | The Cleaner (Bosses) |
+| `turrets` | The Cleaner (Bosses) |
+| `turrets` | The Cleaner (Bosses) |
+| `turrets` | The Cleaner (Bosses) |
+| `turrets` | The Cleaner (Bosses) |
+| `turrets` | The Cleaner (Bosses) |
+

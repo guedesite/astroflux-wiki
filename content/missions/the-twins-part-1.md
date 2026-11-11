@@ -31,6 +31,12 @@ type: "transport"
 | `type` | transport |
 | `maxLvl` | 0 |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Timed 6a (Drops) |
+
 ## Referenced By
 
 | Relation | Source |

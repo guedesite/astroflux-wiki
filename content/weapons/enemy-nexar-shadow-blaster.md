@@ -99,3 +99,10 @@ type: "blaster"
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelMineral` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Admiral Zhersis lvl 130 (Enemies) |
+| `weapons` | Nexar Elite Shadow lvl 128 (Enemies) |
+

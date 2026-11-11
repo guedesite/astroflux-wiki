@@ -31,3 +31,9 @@ type: "recycle"
 | `type` | recycle |
 | `maxLvl` | 0 |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Tutorial 5 (Drops) |
+

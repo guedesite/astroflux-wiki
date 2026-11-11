@@ -29,3 +29,9 @@ type: "transport"
 | `type` | transport |
 | `drop` | Jx83VwX4U0CUy-Yx8pCO9Q |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Timed 9a (Drops) |
+

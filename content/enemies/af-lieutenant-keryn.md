@@ -58,6 +58,8 @@ type: null
 | --- | --- |
 | `ship` | Prophecy (Ships) |
 | `engine` | Player Prophecy (Engines) |
+| `weapons` | AF Flamethrower (Weapons) |
+| `weapons` | AF Hell Fire (Weapons) |
 
 ## Referenced By
 

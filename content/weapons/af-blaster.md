@@ -95,3 +95,11 @@ type: "blaster"
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelMineral` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | AF Hunter (Enemies) |
+| `weapons` | AF Peacekeeper (Enemies) |
+| `weapons` | Fat Test Enemy (Enemies) |
+

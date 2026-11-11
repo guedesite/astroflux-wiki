@@ -76,6 +76,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Renegade Tanker (Ships) |
 | `engine` | Enemy Tanker (Engines) |
+| `weapons` | Enemy Concussion Sphere (Weapons) |
 
 ## Referenced By
 
@@ -83,6 +84,8 @@ type: null
 | --- | --- |
 | `enemy2` | Durian, Renegade Elite Low (Spawners) |
 | `enemy2` | Durian, Renegade Elite Zone (Spawners) |
+| `enemies2` | Durian, Renegade Elite Zone (Spawners) |
 | `enemy2` | Durian, Renegade Elite Zone (Spawners) |
 | `enemy2` | Durian, Renegade Elite Zone (Spawners) |
+| `enemies2` | Durian, Renegade Elite Zone (Spawners) |
 

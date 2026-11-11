@@ -78,4 +78,11 @@ type: null
 | --- | --- |
 | `ship` | Enemy Sax lvl 8 (Ships) |
 | `engine` | Enemy Sax lvl 8 (Engines) |
+| `weapons` | Enemy Sax Lightning lvl 8 (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies` | Venturi, Sax (Spawners) |
 

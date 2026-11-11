@@ -57,6 +57,8 @@ type: null
 | --- | --- |
 | `ship` | Enemy Macrofag Blood lvl 26 (Ships) |
 | `engine` | Enemy Macrofag Engine lvl 26 (Engines) |
+| `weapons` | Enemy Macrofag Cloud lvl 26 (Weapons) |
+| `weapons` | Enemy Macrofag Spit lvl 26 (Weapons) |
 
 ## Referenced By
 
@@ -67,5 +69,6 @@ type: null
 | `enemy` | Vibrilian, Blood Macrofag, lvl 26 (Spawners) |
 | `enemy` | Vibrilian, Blood Macrofag, lvl 26 (Spawners) |
 | `enemy` | Vibrilian, Blood Macrofag, lvl 26 (Spawners) |
+| `enemies` | Vibrilian, Blood Macrofag, lvl 26 (Spawners) |
 | `enemy` | Vibrilian, Hidden Macrofag Swarm, lvl 26 (Spawners) |
 

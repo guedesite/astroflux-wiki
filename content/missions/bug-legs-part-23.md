@@ -30,3 +30,9 @@ type: "transport"
 | `type` | transport |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP12k A10x100 (Drops) |
+

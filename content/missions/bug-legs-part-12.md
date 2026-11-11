@@ -32,3 +32,9 @@ type: "kill"
 | `completeDescription` | Xhargreg: ”The Wasps have gather small pile of junk from their Nezerians victims… you can have it when if you return here… ” |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP26k F16 (Drops) |
+

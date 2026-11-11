@@ -55,3 +55,9 @@ type: "blaster"
 | `fireSound` | laser1.mp3 (Sounds) |
 | `sound` | laser1.mp3 (Sounds) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Seeker Lvl 6 (Enemies) |
+

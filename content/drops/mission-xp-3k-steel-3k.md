@@ -39,3 +39,10 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | An Unknown Threat: Part 12 (MissionTypes) |
+| `drop` | An Unknown Threat: Part 9 (MissionTypes) |
+

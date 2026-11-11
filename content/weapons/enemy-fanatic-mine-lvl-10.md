@@ -55,3 +55,9 @@ type: "projectile"
 | --- | --- |
 | `projectile` | Mine lvl 6 (Projectiles) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Scrap Collector lvl 18 (Enemies) |
+

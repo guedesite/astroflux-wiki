@@ -47,4 +47,18 @@ type: "mech"
 | --- | --- |
 | `body` | Something (Bodies) |
 | `bitmap` | spawner_2.png (Images) |
+| `enemies` | Beamer lvl 7 (Enemies) |
+| `enemies` | Dire Moth lvl 8 (Enemies) |
+| `enemies` | Daemon lvl 56 (Enemies) |
+| `enemies` | Moth Alpha lvl 13 (Enemies) |
+| `enemies` | Launcher lvl 7 (Enemies) |
+| `enemies` | Guardian lvl 6 (Enemies) |
+| `enemies` | Fanatic lvl 7 (Enemies) |
+| `enemies` | Elite Triad lvl 4 (Enemies) |
+| `enemies` | Elite Stalker lvl 4 (Enemies) |
+| `enemies` | Elite Gunner lvl 10 (Enemies) |
+| `enemies` | Black Moth lvl 17 (Enemies) |
+| `enemies` | Zapper lvl 5 (Enemies) |
+| `enemies` | Trigun lvl 5 (Enemies) |
+| `turrets` | Sniper 360 arc Turret lvl 6 (Turrets) |
 

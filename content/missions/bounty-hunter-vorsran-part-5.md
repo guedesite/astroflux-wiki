@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Operative Smith: “Amazing work there Captain!" |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | BH5 (Drops) |
+

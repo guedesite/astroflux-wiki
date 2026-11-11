@@ -39,3 +39,13 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Nexar Sniper Duel (MissionTypes) |
+| `drop` | Nexar Cluster (MissionTypes) |
+| `drop` | Nexar “Nuke” Threat (MissionTypes) |
+| `drop` | Nexar Anti-repair (MissionTypes) |
+| `drop` | Nexar Skirmish (MissionTypes) |
+

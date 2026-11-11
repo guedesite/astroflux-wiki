@@ -84,7 +84,11 @@ type: null
 | Relation | Source |
 | --- | --- |
 | `enemy` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `enemies` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
 | `enemy` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `enemies` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
 | `enemy` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `enemies` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
 | `enemy` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `enemies` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
 

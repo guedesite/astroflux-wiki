@@ -92,3 +92,10 @@ type: "projectile"
 | `hitEffect` | Beam end (Effects) |
 | `dotEffect` | DOT Nexar Wave (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Captain Xhargrefh lvl 120 (Enemies) |
+| `weapons` | Nexar Elite Phaser lvl 120 (Enemies) |
+

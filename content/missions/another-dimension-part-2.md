@@ -32,3 +32,9 @@ type: "transport"
 | `type` | transport |
 | `drop` | YYP6dAijEk-d87LlXbpCbQ |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Timed 34a (Drops) |
+

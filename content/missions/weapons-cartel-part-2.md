@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | AF Transmission: "You have once again proven your skills as a captain. I think its time to move on and do us a real favour. We have located the weapon cartel and need you to take action." |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP 1600-1800 (Drops) |
+

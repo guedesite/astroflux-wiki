@@ -32,3 +32,16 @@ type: null
 | `arc` | 360 |
 | `rotationSpeed` | 0 |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Mandrom (Bosses) |
+| `turrets` | Mandrom (Bosses) |
+| `turrets` | Mandrom (Bosses) |
+| `turrets` | Mandrom (Bosses) |
+| `turrets` | Mandrom (Bosses) |
+| `turrets` | Mandrom (Bosses) |
+| `turrets` | Mandrom (Bosses) |
+| `turrets` | Mandrom (Bosses) |
+

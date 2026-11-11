@@ -35,3 +35,11 @@ type: null
 | --- | --- |
 | `weapon` | Enemy Elite Turret Cannon lvl 4 (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Hyperion, Elite , lvl 4 (Spawners) |
+| `turrets` | Hyperion, Elite , lvl 4 (Spawners) |
+| `turrets` | Hyperion, Elite , lvl 4 (Spawners) |
+

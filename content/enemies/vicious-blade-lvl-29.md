@@ -84,6 +84,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Thorn Blade 2 lvl 29 (Ships) |
 | `engine` | Enemy Thorn Blade 2 lvl 29 (Engines) |
+| `weapons` | Enemy Viscous Blade lvl 29 (Weapons) |
 
 ## Referenced By
 

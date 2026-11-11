@@ -73,3 +73,9 @@ type: "projectile"
 | `sound` | fire2.mp3 (Sounds) |
 | `dotEffect` | DOT Acid Dark (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Nezerian Dreadnought lvl 82 (Enemies) |
+

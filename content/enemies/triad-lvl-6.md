@@ -50,6 +50,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Triad lvl 6 (Ships) |
 | `engine` | Enemy Triad lvl 6 (Engines) |
+| `weapons` | Enemy Triad Plasma lvl 6 (Weapons) |
 
 ## Referenced By
 

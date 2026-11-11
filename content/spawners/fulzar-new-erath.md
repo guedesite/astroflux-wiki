@@ -57,4 +57,10 @@ type: "mech"
 | `body` | Hidden New Erath (Bodies) |
 | `bitmap` | af_turret_platform_active.png (Images) |
 | `enemy2` | AF Peacekeeper (Enemies) |
+| `enemies` | AF Admiral Ymer (Enemies) |
+| `enemies2` | AF Peacekeeper (Enemies) |
+| `turrets` | AF Turret (Turrets) |
+| `turrets` | AF Turret (Turrets) |
+| `turrets` | AF Turret (Turrets) |
+| `turrets` | AF Turret (Turrets) |
 

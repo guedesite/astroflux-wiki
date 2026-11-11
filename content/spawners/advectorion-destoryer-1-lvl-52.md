@@ -46,3 +46,9 @@ type: "mech"
 | `bitmap` | boss_advectorion_chain2.png (Images) |
 | `enemy` | Nezerian Destoyer lvl 47 (Enemies) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `spawners` | Advectorian (Bosses) |
+

@@ -37,3 +37,22 @@ type: null
 | --- | --- |
 | `weapon` | Enemy Nezerian Turret Plasma Torpedo lvl 49 (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Advectorian (Bosses) |
+| `turrets` | Advectorian (Bosses) |
+| `turrets` | Advectorian (Bosses) |
+| `turrets` | Advectorian (Bosses) |
+| `turrets` | Advectorian (Bosses) |
+| `turrets` | Advectorian (Bosses) |
+| `turrets` | Advectorian (Bosses) |
+| `turrets` | Advectorian (Bosses) |
+| `turrets` | Advectorian (Bosses) |
+| `turrets` | Advectorian (Bosses) |
+| `turrets` | Advectorian (Bosses) |
+| `turrets` | Advectorian (Bosses) |
+| `turrets` | Advectorian (Bosses) |
+| `turrets` | Advectorian (Bosses) |
+

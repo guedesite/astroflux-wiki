@@ -39,3 +39,10 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Push back the Nexar Army! (MissionTypes) |
+| `drop` | Fulzar Strongholds (MissionTypes) |
+

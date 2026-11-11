@@ -31,6 +31,12 @@ type: "kill"
 | `completeDescription` | AF Transmission: "Good work captain! This area will not threat us for a while. We will send you another missions soon. However, we still need to find out how they aquire all the weapons." |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP 1600-1800 (Drops) |
+
 ## Referenced By
 
 | Relation | Source |

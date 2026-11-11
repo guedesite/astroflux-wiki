@@ -89,6 +89,7 @@ type: "petSpawner"
 | `techIcon` | ti_monachus.png (Images) |
 | `sound` | laser1.mp3 (Sounds) |
 | `dotEffect` | DOT Flame (Effects) |
+| `enemy` | Monachus (Enemies) |
 | `techLevelProjectile` | Flame (Projectiles) |
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelProjectile` | Flame (Projectiles) |

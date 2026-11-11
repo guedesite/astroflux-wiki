@@ -57,6 +57,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Deamon (Ships) |
 | `engine` | Enemy Deamon lvl 27 (Engines) |
+| `weapons` | Enemy Deamon Teeth lvl 27 (Weapons) |
 
 ## Referenced By
 
@@ -64,6 +65,7 @@ type: null
 | --- | --- |
 | `enemy2` | Vibrilian, Deamon lvl 27 (Spawners) |
 | `enemy` | Vibrilian, Deamon lvl 27 (Spawners) |
+| `enemies` | Vibrilian, Deamon lvl 27 (Spawners) |
 | `enemy2` | Vibrilian, Deamon lvl 27 (Spawners) |
 | `enemy` | Vibrilian, Deamon lvl 27 (Spawners) |
 

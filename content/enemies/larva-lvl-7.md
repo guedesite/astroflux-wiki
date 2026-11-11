@@ -49,36 +49,53 @@ type: null
 | --- | --- |
 | `ship` | Enemy Larva lvl 7 (Ships) |
 | `engine` | Enemy Larva lvl 7 (Engines) |
+| `weapons` | Enemy Larva Lightning lvl 7 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemy2` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `enemies2` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
 | `enemy2` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `enemies2` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
 | `enemy2` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `enemies2` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
 | `enemy2` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `enemies2` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
 | `enemy2` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
+| `enemies2` | Hozar, Alpha Swarm, lvl 13 (Spawners) |
 | `enemy2` | Hozar, Baby Ice Swarm Belt, lvl 10 (Spawners) |
 | `enemy2` | Hozar, Dire Swarm, lvl 11 (Spawners) |
+| `enemies2` | Hozar, Dire Swarm, lvl 11 (Spawners) |
 | `enemy2` | Hozar, Dire Swarm, lvl 11 (Spawners) |
+| `enemies2` | Hozar, Dire Swarm, lvl 11 (Spawners) |
 | `enemy2` | Hozar, Dire Swarm, lvl 11 (Spawners) |
+| `enemies2` | Hozar, Dire Swarm, lvl 11 (Spawners) |
 | `enemy2` | Hozar, Locust lvl 10 (Spawners) |
 | `enemy2` | Hozar, Locust lvl 10 (Spawners) |
 | `enemy2` | Hozar, Locust lvl 10 (Spawners) |
 | `enemy2` | Hozar, Plankton Swarm Belt, lvl 11 (Spawners) |
 | `enemy2` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `enemies2` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
 | `enemy2` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `enemies2` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
 | `enemy2` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `enemies2` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
 | `enemy2` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
+| `enemies2` | Hozar, The Blob Swarm, lvl 10 (Spawners) |
 | `enemy2` | Hozar, Turret Swarm (Spawners) |
 | `enemy2` | Hozar, Turret Swarm (Spawners) |
 | `enemy2` | Hozar, Turret Swarm (Spawners) |
 | `enemy2` | Hozar, Turret Swarm (Spawners) |
 | `enemy2` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
+| `enemies2` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
 | `enemy2` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
+| `enemies2` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
 | `enemy2` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
+| `enemies2` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
 | `enemy2` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
+| `enemies2` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
 | `enemy2` | Kritillian, Baby Moth lvl 7 (Spawners) |
 | `enemy2` | Kritillian, Baby Moth lvl 7 (Spawners) |
 | `enemy2` | Kritillian, Baby Moth lvl 7 (Spawners) |
@@ -102,6 +119,7 @@ type: null
 | `enemy2` | Kritillian, Mature Moth lvl 8 (Spawners) |
 | `enemy2` | Kritillian, Mature Moth lvl 8 (Spawners) |
 | `enemy2` | Kritillian, Moth Alpha (Spawners) |
+| `enemies2` | Kritillian, Moth Alpha (Spawners) |
 | `enemy2` | Zergilin Jagged Star lvl 12 (Spawners) |
 | `enemy2` | Zergilin Jagged Star lvl 12 (Spawners) |
 | `enemy2` | Zergilin Jagged Star lvl 12 (Spawners) |

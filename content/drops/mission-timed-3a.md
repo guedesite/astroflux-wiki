@@ -38,3 +38,23 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Transport assistance (MissionTypes) |
+| `drop` | Recycle [amount] (MissionTypes) |
+| `drop` | Kill the Triad! (MissionTypes) |
+| `drop` | Enemy takedown Kapello (MissionTypes) |
+| `drop` | Unknown Data: Part 1 (MissionTypes) |
+| `drop` | Unknown Data: Part 3 (MissionTypes) |
+| `drop` | Recycle [amount] (MissionTypes) |
+| `drop` | Kill [amount] Spawners! (MissionTypes) |
+| `drop` | Zlatte takedown (MissionTypes) |
+| `drop` | Kill the Launcher! (MissionTypes) |
+| `drop` | The Evil Stalkers (MissionTypes) |
+| `drop` | Questions about that past: Part 1 (MissionTypes) |
+| `drop` | Transport assistance (MissionTypes) |
+| `drop` | Transport assistance (MissionTypes) |
+| `drop` | Recycle [amount] (MissionTypes) |
+

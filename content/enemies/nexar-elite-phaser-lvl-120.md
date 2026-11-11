@@ -79,4 +79,32 @@ type: null
 | --- | --- |
 | `ship` | Enemy Nexar Elite Phaser (Ships) |
 | `engine` | Enemy Nexar Elite Phaser (Engines) |
+| `weapons` | Enemy Nexar Phaser (Weapons) |
+| `weapons` | Enemy Nexar Twin Plasma (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T9 lvl 100 (Spawners) |
 

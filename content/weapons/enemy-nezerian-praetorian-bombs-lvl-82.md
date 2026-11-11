@@ -71,3 +71,9 @@ type: "blaster"
 | `fireSound` | fire2.mp3 (Sounds) |
 | `fireEffect` | DOT Acid Red (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Nezerian Praetorian lvl 82 (Enemies) |
+

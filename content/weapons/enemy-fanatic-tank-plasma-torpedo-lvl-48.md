@@ -67,3 +67,9 @@ type: "projectile"
 | `sound` | laser1.mp3 (Sounds) |
 | `dotEffect` | DOT Flame (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Fanatic Tank lvl 72 (Enemies) |
+

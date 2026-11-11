@@ -45,4 +45,5 @@ type: "boss"
 | Relation | Target |
 | --- | --- |
 | `solarSystem` | Vibrilian (SolarSystems) |
+| `boss` | Chelonidron (Bosses) |
 

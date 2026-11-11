@@ -48,4 +48,18 @@ type: "organic"
 | --- | --- |
 | `explosionEffect` | Explosion HUGE (Effects) |
 | `explosionSound` | explosion_huge.mp3 (Sounds) |
+| `spawners` | Boss Blob Spawner lvl 30 (Spawners) |
+| `spawners` | Boss Blob Spawner lvl 30 (Spawners) |
+| `spawners` | Boss Blob Spawner 2 lvl 30 (Spawners) |
+| `spawners` | Boss Blob Spawner 2 lvl 30 (Spawners) |
+| `turrets` | Boss Mother Brain Shuriken (Turrets) |
+| `turrets` | Boss Mother Brain Shuriken (Turrets) |
+| `turrets` | Boss Mother Brain Shuriken (Turrets) |
+| `turrets` | Boss Mother Brain Shuriken (Turrets) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `boss` | Boss Spawner (Bodies) |
 

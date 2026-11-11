@@ -61,10 +61,13 @@ type: null
 | --- | --- |
 | `ship` | Enemy Renegade Medic (Ships) |
 | `engine` | Enemy Medic (Engines) |
+| `weapons` | Enemy Repair-Nanobot Spray (Weapons) |
+| `weapons` | Enemy Repair lvl 70 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemy` | Durian, Renegade Elite Zone (Spawners) |
+| `enemies` | Durian, Renegade Elite Zone (Spawners) |
 

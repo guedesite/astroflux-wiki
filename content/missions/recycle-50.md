@@ -30,3 +30,9 @@ type: "recycle"
 | `type` | recycle |
 | `majorType` | time |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Timed 1a (Drops) |
+

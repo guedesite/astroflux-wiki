@@ -81,3 +81,11 @@ type: "beam"
 | `fireSound` | laser3.mp3 (Sounds) |
 | `dotEffect` | DOT Reduced Armor (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Nexar Commander lvl 110 (Enemies) |
+| `weapons` | Nexar Elite Blade lvl 124 (Enemies) |
+| `weapons` | Rear Admiral Vorghis lvl 124 (Enemies) |
+

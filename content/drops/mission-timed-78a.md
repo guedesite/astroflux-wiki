@@ -41,3 +41,10 @@ type: "mission"
 | `dropItem` | Polyhedric Fabric (Commodities) |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | The Daemon hunt 3! (MissionTypes) |
+| `drop` | Kill [amount] Aureus Warriors (MissionTypes) |
+

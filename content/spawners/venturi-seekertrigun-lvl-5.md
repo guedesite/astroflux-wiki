@@ -56,5 +56,6 @@ type: "mech"
 | `bitmap` | spawner_3.png (Images) |
 | `enemy` | Seeker Lvl 4 (Enemies) |
 | `enemy2` | Trigun lvl 5 (Enemies) |
+| `turrets` | Blaster 280 arc Turret lvl 3 (Turrets) |
 | `explosionEffect` | Explosion Mech Spawner (Effects) |
 

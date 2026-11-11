@@ -55,4 +55,11 @@ type: null
 | --- | --- |
 | `ship` | AF Lieutenant Nguyen (Ships) |
 | `engine` | Player Crystal (Engines) |
+| `weapons` | AF Prismatic Crystal (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies` | Fulzar, AF Nguyen (Spawners) |
 

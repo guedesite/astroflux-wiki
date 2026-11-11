@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Operative Smith: “Agile, and armed with high power plasters… luckily they are lacking in armor and shields… lets continue with the heavier ships…” |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP3.2k S1.2k A2x50 (Drops) |
+

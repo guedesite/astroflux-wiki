@@ -66,3 +66,11 @@ type: "blaster"
 | `projectile` | Enemy Stalker Bullet (Projectiles) |
 | `fireSound` | fire2.mp3 (Sounds) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Slaver lvl 2 (Enemies) |
+| `weapons` | Slaver lvl 3 (Enemies) |
+| `weapons` | Stalker lvl 3 (Enemies) |
+

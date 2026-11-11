@@ -1,6 +1,7 @@
 import { numberValue, tip } from "./display-utils.js";
 import { dedupeDropRefs, normalizeDropRefs } from "./drop-utils.js";
 import { refKey } from "./entity-links.js";
+import { spawnerEnemyKeys } from "./location-utils.js";
 
 export const ENEMY_RARE_EFFECTS = [
   {
@@ -82,9 +83,7 @@ export function bossHpStats(record, cache) {
 
 export function linkedEnemySpawners(enemyKey, cache) {
   return Object.entries(cache.Spawners || {}).filter(([, spawner]) =>
-    spawner.enemy === enemyKey
-    || spawner.enemy2 === enemyKey
-    || (spawner.enemies || []).some((item) => refKey("Enemies", item) === enemyKey)
+    spawnerEnemyKeys(spawner).includes(enemyKey)
   );
 }
 

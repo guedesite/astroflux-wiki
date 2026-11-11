@@ -35,3 +35,12 @@ type: null
 | --- | --- |
 | `weapon` | Boss Dominator Blaster (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Dominator (Bosses) |
+| `turrets` | Dominator (Bosses) |
+| `turrets` | Dominator (Bosses) |
+| `turrets` | Dominator (Bosses) |
+

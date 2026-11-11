@@ -57,5 +57,11 @@ type: "organic"
 | `bitmap` | organic_spawner_4.png (Images) |
 | `enemy` | Ice Moth lvl 11 (Enemies) |
 | `enemy2` | Larva lvl 14 (Enemies) |
+| `turrets` | Zappler lvl 9 (Turrets) |
+| `turrets` | Zappler lvl 9 (Turrets) |
+| `turrets` | Zappler lvl 9 (Turrets) |
+| `turrets` | Zappler lvl 9 (Turrets) |
+| `turrets` | Zappler lvl 9 (Turrets) |
+| `turrets` | Zappler lvl 9 (Turrets) |
 | `explosionEffect` | Explosion Organic Large (Effects) |
 

@@ -39,3 +39,9 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Advanced Data Chip (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Counter attack! - Part 11 (MissionTypes) |
+

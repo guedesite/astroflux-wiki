@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Priest: “Hail the new god! A sign appeared on the sky again and an army of blobs were slayed. May he be worshipped in eternity and prepare the fiest of a thousand souls!” |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission 1000 hearts (Drops) |
+

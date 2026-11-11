@@ -46,4 +46,9 @@ type: "mech"
 | --- | --- |
 | `body` | hidden (Bodies) |
 | `bitmap` | boss_advectorion_chain2.png (Images) |
+| `turrets` | Turret Sniper, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
 

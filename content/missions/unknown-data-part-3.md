@@ -33,3 +33,9 @@ type: "transport"
 | `completeDescription` | Hmm... Jahaar told us we could get the new weapon if we helped him gather data on the Elite Stalkers in the northern Hyperion.  |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Timed 3a (Drops) |
+

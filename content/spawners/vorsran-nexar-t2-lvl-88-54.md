@@ -60,5 +60,12 @@ type: "mech"
 | `body` | Vorsran, Hidden T2 (Bodies) |
 | `bitmap` | nexar_spawner_active1.png (Images) |
 | `enemy2` | Larva lvl 14 (Enemies) |
+| `enemies` | Nexar Cluster Bomber lvl 85 (Enemies) |
+| `enemies` | Nexar Blade lvl 95 (Enemies) |
+| `enemies` | Nexar Projector lvl 90 (Enemies) |
+| `enemies` | Nexar Fighter lvl 95 (Enemies) |
+| `enemies` | Nexar Twin lvl 90 (Enemies) |
+| `enemies` | Nexar Stealth Bomber lvl 80 (Enemies) |
+| `enemies2` | Nexar Stealth Bomber lvl 80 (Enemies) |
 | `explosionEffect` | Explosion Organic Large (Effects) |
 

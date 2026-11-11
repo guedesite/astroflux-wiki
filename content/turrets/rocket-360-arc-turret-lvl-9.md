@@ -34,3 +34,15 @@ type: null
 | --- | --- |
 | `weapon` | Enemy Turret Heavy Launcher (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Kapello, Ant lvl 12 (Spawners) |
+| `turrets` | Kritillian, Fanatic lvl 10 (Spawners) |
+| `turrets` | Kritillian, Fanatic lvl 10 (Spawners) |
+| `turrets` | Kritillian, Fanatic lvl 10 (Spawners) |
+| `turrets` | Kritillian, Fanatic lvl 10 (Spawners) |
+| `turrets` | Survival, Spawner 2 (Spawners) |
+| `turrets` | Survival, Spawner 2 (Spawners) |
+

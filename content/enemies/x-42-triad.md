@@ -70,4 +70,11 @@ type: null
 | --- | --- |
 | `ship` | Pet Triad (Ships) |
 | `engine` | Enemy Elite Triad lvl 4 (Engines) |
+| `weapons` | Enemy Elite Triad Plasma lvl 4 (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemy` | X-42 Constructor (Weapons) |
 

@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Priest: “A miracle has happened! The god has bestowed great power in me, thus I will continue to watch over you, my beloved, but very few children. Hail me and let the fiest of seven sould begin!” |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission 7 hearts (Drops) |
+

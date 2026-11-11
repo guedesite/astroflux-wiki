@@ -50,6 +50,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Zapper lvl 6 (Ships) |
 | `engine` | Enemy Zapper lvl 6 (Engines) |
+| `weapons` | Enemy Zapper lvl 6 (Weapons) |
 
 ## Referenced By
 

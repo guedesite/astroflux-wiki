@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Lieutenant Kreiger: “I can’t believe it! You made it! Truly amazing! You’ve been a great help all civilized beings in the Hyperion system. I’m sorry for my attitude when we first met.” |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Tutorial 10 (Drops) |
+

@@ -31,3 +31,9 @@ type: "pickup"
 | `type` | pickup |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Tutorial 4 (Drops) |
+

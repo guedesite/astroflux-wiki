@@ -29,3 +29,9 @@ type: "transport"
 | `type` | transport |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Tutorial 6 (Drops) |
+

@@ -31,3 +31,18 @@ type: "mission"
 | Item | Table | Chance | Effective Chance | Quantity |
 | --- | --- | ---: | ---: | --- |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | The Ultimate Poison: Part 4 (MissionTypes) |
+| `drop` | The Ultimate Poison: Part 1 (MissionTypes) |
+| `drop` | Counter attack! - Part 7 (MissionTypes) |
+| `drop` | An Unknown Threat: Part 1 (MissionTypes) |
+| `drop` | An Unknown Threat: Part 15 (MissionTypes) |
+| `drop` | The Ultimate Poison: Part 6 (MissionTypes) |
+| `drop` | Eldorado: Part 1 (MissionTypes) |
+| `drop` | The Cult: Part 2 (MissionTypes) |
+| `drop` | An Unknown Threat: Part 2 (MissionTypes) |
+| `drop` | Eldorado: Part 2 (MissionTypes) |
+

@@ -75,4 +75,11 @@ type: null
 | --- | --- |
 | `ship` | Enemy Zlat lvl 1 (Ships) |
 | `engine` | Player Zlatte Weapon (Engines) |
+| `weapons` | Pet Zlatte Blaster (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemy` | X-32 Constructor (Weapons) |
 

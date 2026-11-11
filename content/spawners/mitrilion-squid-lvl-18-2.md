@@ -57,5 +57,7 @@ type: "organic"
 | `bitmap` | organic_spawner_4.png (Images) |
 | `enemy` | Space Squid lvl 18 (Enemies) |
 | `enemy2` | Larva lvl 14 (Enemies) |
+| `turrets` | Locust Swarmer lvl 18 (Turrets) |
+| `turrets` | Locust Swarmer lvl 18 (Turrets) |
 | `explosionEffect` | Explosion Organic Large (Effects) |
 

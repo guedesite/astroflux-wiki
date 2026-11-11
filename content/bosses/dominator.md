@@ -48,4 +48,18 @@ type: "mech"
 | --- | --- |
 | `explosionEffect` | Explosion HUGE (Effects) |
 | `explosionSound` | explosion_huge.mp3 (Sounds) |
+| `turrets` | Boss Dominator Missile Turret (Turrets) |
+| `turrets` | Boss Dominator Missile Turret (Turrets) |
+| `turrets` | Boss Dominator Saw (Turrets) |
+| `turrets` | Boss Dominator Saw (Turrets) |
+| `turrets` | Boss Dominator Turrret (Turrets) |
+| `turrets` | Boss Dominator Turrret (Turrets) |
+| `turrets` | Boss Dominator Turrret (Turrets) |
+| `turrets` | Boss Dominator Turrret (Turrets) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `boss` | Hidden Boss Spawner (Bodies) |
 

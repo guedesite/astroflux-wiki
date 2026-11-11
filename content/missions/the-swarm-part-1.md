@@ -31,6 +31,12 @@ type: "kill"
 | `subtype` | ship |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Timed 16a (Drops) |
+
 ## Referenced By
 
 | Relation | Source |

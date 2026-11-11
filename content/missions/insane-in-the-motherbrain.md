@@ -29,3 +29,9 @@ type: "kill"
 | `available` | true |
 | `majorType` | time |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Motherbrain (Drops) |
+

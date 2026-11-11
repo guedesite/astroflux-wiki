@@ -68,4 +68,5 @@ type: "projectile"
 | Relation | Source |
 | --- | --- |
 | `weapon` | Boss Tefat Turret Missile (Turrets) |
+| `weapons` | Launcher lvl 3 (Enemies) |
 

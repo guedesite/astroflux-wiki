@@ -95,3 +95,10 @@ type: "blaster"
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelMineral` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | AF Peacekeeper II (Enemies) |
+| `weapons` | AF Peacekeeper III (Enemies) |
+

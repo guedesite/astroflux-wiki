@@ -42,3 +42,10 @@ type: "mission"
 | `dropItem` | Fusion Core (Commodities) |
 | `dropItem` | Big Metal Scrap (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Data Collection 2! (MissionTypes) |
+| `drop` | Data Recycle 2! (MissionTypes) |
+

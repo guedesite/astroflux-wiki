@@ -86,4 +86,11 @@ type: null
 | --- | --- |
 | `ship` | Pet Monachus (Ships) |
 | `engine` | Enemy Aureus Monachus (Engines) |
+| `weapons` | Pet Flamer (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemy` | Aureus Drone Controller (Weapons) |
 

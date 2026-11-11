@@ -89,11 +89,13 @@ type: null
 | --- | --- |
 | `ship` | Pet Trax 1 (Ships) |
 | `engine` | Player Scull (Engines) |
+| `weapons` | Trax Pet Beam (Weapons) |
 | `enemies` | Trax Mirror 1 (Enemies) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
+| `enemy` | Clone Tool (Weapons) |
 | `enemies` | Trax Mirror 1 (Enemies) |
 

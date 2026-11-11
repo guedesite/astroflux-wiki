@@ -30,6 +30,12 @@ type: "transport"
 | `type` | transport |
 | `maxLvl` | 0 |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission 20k Steel (Drops) |
+
 ## Referenced By
 
 | Relation | Source |

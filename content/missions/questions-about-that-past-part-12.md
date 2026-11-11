@@ -30,3 +30,9 @@ type: "kill"
 | `completeDescription` | Dr. Mira: “Looks like we got their log keeping… thingy, I’ll need to decrypt and translate them. I need a drink after all this action, so let’s head back to the Anchorhead Cantina.” |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Timed 22a (Drops) |
+

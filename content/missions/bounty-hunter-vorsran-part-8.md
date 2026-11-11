@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Operative Smith: “Outstanding captain! To be fair I never expected to see you again. You keep exceeding our wildest expectations! You have really earned the reward this time!” |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | BH8 (Drops) |
+

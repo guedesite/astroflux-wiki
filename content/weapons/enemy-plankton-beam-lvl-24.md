@@ -71,3 +71,11 @@ type: "beam"
 | `fireEffect` | Beam start (Effects) |
 | `hitEffect` | Beam end (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Blood Plankton lvl 24 (Enemies) |
+| `weapons` | Infested Fanatic Raider lvl 38 (Enemies) |
+| `weapons` | Infested Fanatic lvl 35 (Enemies) |
+

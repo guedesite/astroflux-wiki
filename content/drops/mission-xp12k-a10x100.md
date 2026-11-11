@@ -32,3 +32,10 @@ type: "mission"
 | Item | Table | Chance | Effective Chance | Quantity |
 | --- | --- | ---: | ---: | --- |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Bug Legs: Part 23 (MissionTypes) |
+| `drop` | Bug Legs: Part 21 (MissionTypes) |
+

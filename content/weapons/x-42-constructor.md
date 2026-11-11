@@ -91,6 +91,7 @@ type: "petSpawner"
 | `fireSound` | shot2.mp3 (Sounds) |
 | `sound` | laser1.mp3 (Sounds) |
 | `dotEffect` | DOT Plasma (Effects) |
+| `enemy` | X-42 Triad (Enemies) |
 | `techLevelProjectile` | Acid Spore (Projectiles) |
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelProjectile` | Acid Spore (Projectiles) |

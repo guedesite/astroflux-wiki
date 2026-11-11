@@ -68,16 +68,45 @@ type: null
 | --- | --- |
 | `ship` | Enemy Nezerian Battlecruiser lvl 70 (Ships) |
 | `engine` | Enemy Nezerian Battlecruiser lvl 48 (Engines) |
+| `weapons` | Enemy Nezerian Battlecruiser Blaster lvl 69 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemy2` | Dev test 82 (Spawners) |
+| `enemies2` | Dev test 82 (Spawners) |
+| `enemies2` | Dev, aureus test lvl 82 (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
 | `enemy2` | Fulzar, turret + Cruiser lvl 69 (Spawners) |
+| `enemies2` | Fulzar, turret + Cruiser lvl 69 (Spawners) |
 | `enemy2` | Fulzar, turret + Cruiser lvl 69 (Spawners) |
+| `enemies2` | Fulzar, turret + Cruiser lvl 69 (Spawners) |
 | `enemy2` | Fulzar, turret + Cruiser lvl 69 (Spawners) |
+| `enemies2` | Fulzar, turret + Cruiser lvl 69 (Spawners) |
 | `enemy2` | Fulzar, turret + Cruiser lvl 69 (Spawners) |
+| `enemies2` | Fulzar, turret + Cruiser lvl 69 (Spawners) |
 | `enemy2` | Fulzar, turret + Cruiser lvl 69 (Spawners) |
+| `enemies2` | Fulzar, turret + Cruiser lvl 69 (Spawners) |
 | `enemy2` | Fulzar, turret + Cruiser lvl 69 (Spawners) |
+| `enemies2` | Fulzar, turret + Cruiser lvl 69 (Spawners) |
 

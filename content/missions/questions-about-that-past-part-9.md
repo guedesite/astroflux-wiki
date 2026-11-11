@@ -30,3 +30,9 @@ type: "pickup"
 | `type` | pickup |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Timed 9a (Drops) |
+

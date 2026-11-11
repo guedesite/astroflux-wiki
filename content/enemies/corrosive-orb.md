@@ -69,4 +69,11 @@ type: null
 | --- | --- |
 | `ship` | Pet Orb 3 (Ships) |
 | `engine` | Enemy Aureus Still (Engines) |
+| `weapons` | Pet Orb 3 (Corrosive) (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemy` | Aureus Corrosive Manipulator (Weapons) |
 

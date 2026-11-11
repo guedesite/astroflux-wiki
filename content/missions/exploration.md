@@ -30,3 +30,9 @@ type: "explore"
 | `type` | explore |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Tutorial 3 (Drops) |
+

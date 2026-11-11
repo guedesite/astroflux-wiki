@@ -57,5 +57,7 @@ type: "organic"
 | `bitmap` | organic_spawner_4.png (Images) |
 | `enemy` | Moth Alpha lvl 13 (Enemies) |
 | `enemy2` | Larva lvl 7 (Enemies) |
+| `enemies` | Moth Alpha lvl 13 (Enemies) |
+| `enemies2` | Larva lvl 7 (Enemies) |
 | `explosionEffect` | Explosion Organic Large (Effects) |
 

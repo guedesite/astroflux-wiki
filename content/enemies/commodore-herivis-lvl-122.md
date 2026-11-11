@@ -79,4 +79,12 @@ type: null
 | --- | --- |
 | `ship` | Enemy Nexar Elite Edge (Ships) |
 | `engine` | Enemy Nexar Elite Edge (Engines) |
+| `weapons` | Enemy Nexar Edge Blade (Weapons) |
+| `weapons` | Enemy Nexar Edge Wave (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies2` | Vorsran, Nexar Cmdr Herivis (Spawners) |
 

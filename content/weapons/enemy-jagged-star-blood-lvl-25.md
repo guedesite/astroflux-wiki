@@ -56,3 +56,10 @@ type: "blaster"
 | --- | --- |
 | `projectile` | Thorn (Projectiles) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Jagged Star Blood lvl 25 (Enemies) |
+| `weapons` | Jagged Star Blood lvl 28 (Enemies) |
+

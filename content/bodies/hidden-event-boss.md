@@ -46,4 +46,5 @@ type: "boss"
 | Relation | Target |
 | --- | --- |
 | `solarSystem` | Fulzar (SolarSystems) |
+| `boss` | Huge Mysterious Chest (Bosses) |
 

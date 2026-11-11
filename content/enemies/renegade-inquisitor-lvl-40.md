@@ -64,4 +64,16 @@ type: null
 | --- | --- |
 | `ship` | Enemy Renegade Inquisitor (Ships) |
 | `engine` | Enemy Renegade Inquisitor (Engines) |
+| `weapons` | Enemy Renegade Hell Fire (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies` | Arrenius, M Renegade Inq (Spawners) |
+| `enemies` | Hozar, M1 Renegade Inq (Spawners) |
+| `enemies` | Hozar, M2 Renegade Inq (Spawners) |
+| `enemies` | Mitrilion, M1 Renegade Inq (Spawners) |
+| `enemies` | Mitrilion, M2 Renegade Inq (Spawners) |
+| `enemies` | Vibrilian, M Renegade Inq (Spawners) |
 

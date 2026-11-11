@@ -44,3 +44,14 @@ type: "mission"
 | `dropItem` | Core Charge (Commodities) |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | I Spy, with my little Eye (MissionTypes) |
+| `drop` | The Daemon Hunt 2! (MissionTypes) |
+| `drop` | Turret Touchdown! (MissionTypes) |
+| `drop` | Kill [amount] Dread Moths! (MissionTypes) |
+| `drop` | Alien Touchdown! (MissionTypes) |
+| `drop` | Hells Touchdown! (MissionTypes) |
+

@@ -56,5 +56,16 @@ type: "mech"
 | --- | --- |
 | `bitmap` | boss_blob_spawner.png (Images) |
 | `enemy2` | Blood Macrophage lvl 31 (Enemies) |
+| `enemies` | Blood Plankton lvl 24 (Enemies) |
+| `enemies2` | Blood Macrophage lvl 31 (Enemies) |
 | `explosionEffect` | Explosion Mech Spawner (Effects) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `spawners` | ??? (Bosses) |
+| `spawners` | ??? (Bosses) |
+| `spawners` | Mother Brain (Bosses) |
+| `spawners` | Mother Brain (Bosses) |
 

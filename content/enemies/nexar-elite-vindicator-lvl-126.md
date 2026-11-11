@@ -83,4 +83,33 @@ type: null
 | --- | --- |
 | `ship` | Enemy Nexar Elite Vindicator (Ships) |
 | `engine` | Enemy Nexar Elite Vindicator (Engines) |
+| `weapons` | Enemy Nexar Vindicator Blaster (Weapons) |
+| `weapons` | Enemy Nexar Cluster Vindicator (Weapons) |
+| `weapons` | Enemy Nexar Vindicator Projection (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies2` | Vorsran, Nexar T10 lvl 100 (Spawners) |
+| `enemies2` | Vorsran, Nexar T10 lvl 100 (Spawners) |
+| `enemies2` | Vorsran, Nexar T10 lvl 100 (Spawners) |
+| `enemies2` | Vorsran, Nexar T10 lvl 100 (Spawners) |
+| `enemies2` | Vorsran, Nexar T10 lvl 100 (Spawners) |
+| `enemies2` | Vorsran, Nexar T10 lvl 100 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T9 lvl 100 (Spawners) |
 

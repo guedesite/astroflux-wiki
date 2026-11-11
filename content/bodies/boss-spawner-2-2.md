@@ -45,4 +45,5 @@ type: "boss"
 | Relation | Target |
 | --- | --- |
 | `solarSystem` | Cynapsian (SolarSystems) |
+| `boss` | The Cleaner (Bosses) |
 

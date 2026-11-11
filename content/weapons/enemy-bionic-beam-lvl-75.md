@@ -80,3 +80,9 @@ type: "beam"
 | `fireEffect` | Beam start (Effects) |
 | `hitEffect` | Beam end (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Bionic Plankton lvl 69 (Enemies) |
+

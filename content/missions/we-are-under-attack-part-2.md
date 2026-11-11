@@ -30,3 +30,9 @@ type: "kill"
 | `completeDescription` | Operative Smith: Seems like their ranks are disoriented for now. But there is still no sign of a withdrawal... We have to think of something else. |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Fulzar Inv2 (Drops) |
+

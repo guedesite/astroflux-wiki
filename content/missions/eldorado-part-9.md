@@ -29,3 +29,9 @@ type: "transport"
 | `type` | transport |
 | `drop` | -wxUrUIVhkuznDs-eNuayw |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission 5xlvl90 Artifacts (Drops) |
+

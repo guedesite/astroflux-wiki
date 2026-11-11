@@ -59,6 +59,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Nezerian Battlecruiser lvl 46 (Ships) |
 | `engine` | Enemy Nezerian Battlecruiser lvl 48 (Engines) |
+| `weapons` | Enemy Nezerian Battlecruiser Blaster lvl 48 (Weapons) |
 
 ## Referenced By
 

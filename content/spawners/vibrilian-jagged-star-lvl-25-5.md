@@ -57,5 +57,7 @@ type: "organic"
 | `bitmap` | organic_spawner_4.png (Images) |
 | `enemy` | Jagged Star Blood lvl 25 (Enemies) |
 | `enemy2` | Mature Dire Moth lvl 23 (Enemies) |
+| `enemies` | Jagged Star Blood lvl 25 (Enemies) |
+| `enemies2` | Mature Dire Moth lvl 23 (Enemies) |
 | `explosionEffect` | Explosion Organic Large Red (Effects) |
 

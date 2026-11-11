@@ -108,3 +108,9 @@ type: "beam"
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelMineral` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Sax lvl 8 (Enemies) |
+

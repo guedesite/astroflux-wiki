@@ -83,6 +83,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Nezerian Praetorian lvl 82 (Ships) |
 | `engine` | Enemy Nezerian Praetorian lvl 82 (Engines) |
+| `weapons` | Enemy Nezerian Praetorian Bombs lvl 82 (Weapons) |
 
 ## Referenced By
 

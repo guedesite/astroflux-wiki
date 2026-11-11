@@ -37,3 +37,16 @@ type: null
 | --- | --- |
 | `weapon` | Boss Tefat Lightning lvl 3 (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Tefat (Bosses) |
+| `turrets` | Tefat (Bosses) |
+| `turrets` | Tefat (Bosses) |
+| `turrets` | Tefat (Bosses) |
+| `turrets` | Tefat (Bosses) |
+| `turrets` | Tefat (Bosses) |
+| `turrets` | Tefat (Bosses) |
+| `turrets` | Tefat (Bosses) |
+

@@ -45,4 +45,5 @@ type: "boss"
 | Relation | Target |
 | --- | --- |
 | `solarSystem` | Durian (SolarSystems) |
+| `boss` | Dominator (Bosses) |
 

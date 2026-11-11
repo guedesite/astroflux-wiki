@@ -83,10 +83,15 @@ type: null
 | --- | --- |
 | `ship` | Enemy Moth Queen lvl 18 (Ships) |
 | `engine` | Enemy Moth Queen lvl 18 (Engines) |
+| `weapons` | Enemy Queen Locust lvl 18 (Weapons) |
+| `weapons` | Enemy Moth Queen Spit lvl 18 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemy` | Hidden Queen lvl 18 (Spawners) |
+| `enemies` | Hidden Queen lvl 18 (Spawners) |
+| `enemies` | Survival, Spawner 2 (Spawners) |
+| `enemies` | Survival, Spawner 2 (Spawners) |
 

@@ -39,3 +39,10 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Heart (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | The Sacrifice: Part 3 (MissionTypes) |
+| `drop` | The Sacrifice: Part 2 (MissionTypes) |
+

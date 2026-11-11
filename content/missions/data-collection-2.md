@@ -30,3 +30,9 @@ type: "pickup"
 | `type` | pickup |
 | `majorType` | time |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Data Chip 2 (Drops) |
+

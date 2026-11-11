@@ -56,5 +56,6 @@ type: "mech"
 | `bitmap` | spawner_3.png (Images) |
 | `enemy` | Triad lvl 3 (Enemies) |
 | `enemy2` | Beamer lvl 4 (Enemies) |
+| `turrets` | Blaster 360 arc Turret lvl 4 (Turrets) |
 | `explosionEffect` | Explosion Mech Spawner (Effects) |
 

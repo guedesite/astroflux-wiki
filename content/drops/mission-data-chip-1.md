@@ -42,3 +42,11 @@ type: "mission"
 | `dropItem` | Big Metal Scrap (Commodities) |
 | `dropItem` | Core Charge (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Data Collection! (MissionTypes) |
+| `drop` | Unknown Data: Part 5 (MissionTypes) |
+| `drop` | Data Recycle! (MissionTypes) |
+

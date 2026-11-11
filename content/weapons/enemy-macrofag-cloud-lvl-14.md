@@ -57,3 +57,9 @@ type: "blaster"
 | --- | --- |
 | `projectile` | Acid Cloud (Projectiles) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Macrophage lvl 14 (Enemies) |
+

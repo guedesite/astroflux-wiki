@@ -68,6 +68,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Nezerian Fighter lvl 46 (Ships) |
 | `engine` | Enemy Nezerian Fighter lvl 46 (Engines) |
+| `weapons` | Enemy Nezerian Fighter Blaster lvl 46 (Weapons) |
 
 ## Referenced By
 

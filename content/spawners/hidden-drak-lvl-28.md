@@ -47,4 +47,5 @@ type: null
 | --- | --- |
 | `body` | Hidden Drak (Bodies) |
 | `enemy` | Drak lvl 26 (Enemies) |
+| `enemies` | Drak lvl 26 (Enemies) |
 

@@ -54,4 +54,22 @@ type: "abstract"
 | Relation | Target |
 | --- | --- |
 | `bitmap` | enemy_aureus_spawner_active.png (Images) |
+| `enemies` | Aureus Orb lvl 74 (Enemies) |
+| `enemies` | Aureus Orb lvl 74 (Enemies) |
+| `enemies` | Aureus Orb lvl 74 (Enemies) |
+| `enemies` | Aureus Radiant lvl 74 (Enemies) |
+| `enemies` | Aureus Radiant lvl 74 (Enemies) |
+| `enemies` | Aureus Radiant lvl 74 (Enemies) |
+| `enemies2` | Aureus Square lvl 74 (Enemies) |
+| `enemies2` | Aureus Square lvl 74 (Enemies) |
+| `enemies2` | Aureus Square lvl 74 (Enemies) |
+| `enemies2` | Aureus Triad lvl 74 (Enemies) |
+| `enemies2` | Aureus Triad lvl 74 (Enemies) |
+| `enemies2` | Aureus Triad lvl 74 (Enemies) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `spawners` | Executor (Bosses) |
 

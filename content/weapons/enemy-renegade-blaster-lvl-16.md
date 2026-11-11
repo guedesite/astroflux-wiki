@@ -67,3 +67,9 @@ type: "blaster"
 | `projectile` | Blaster Bullet lvl 6 (Projectiles) |
 | `fireSound` | fire2.mp3 (Sounds) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Renegade Fighter lvl 18 (Enemies) |
+

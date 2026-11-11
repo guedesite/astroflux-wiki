@@ -66,3 +66,9 @@ type: "blaster"
 | `projectile` | Enemy Stalker Bullet (Projectiles) |
 | `fireSound` | fire2.mp3 (Sounds) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Elite Stalker lvl 4 (Enemies) |
+

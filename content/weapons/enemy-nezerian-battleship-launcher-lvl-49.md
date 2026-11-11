@@ -79,3 +79,9 @@ type: "projectile"
 | `sound` | fire2.mp3 (Sounds) |
 | `techLevelProjectile` | Boss Homing Missle (Projectiles) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Nezerian Battleship lvl 49 (Enemies) |
+

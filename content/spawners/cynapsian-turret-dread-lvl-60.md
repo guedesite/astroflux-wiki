@@ -47,4 +47,9 @@ type: "mech"
 | `body` | hidden (Bodies) |
 | `bitmap` | boss_advectorion_chain2.png (Images) |
 | `enemy` | Dread Moth lvl 52 (Enemies) |
+| `turrets` | Turret Sniper, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
 

@@ -49,6 +49,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Launcher lvl 3 (Ships) |
 | `engine` | Enemy Launcher lvl 3 (Engines) |
+| `weapons` | Enemy Launcher lvl 3 (Weapons) |
 
 ## Referenced By
 

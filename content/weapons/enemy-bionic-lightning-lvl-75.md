@@ -111,3 +111,10 @@ type: "beam"
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelMineral` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Bionic Macrophage lvl 71 (Enemies) |
+| `weapons` | Bionic Queen lvl 80 (Enemies) |
+

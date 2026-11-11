@@ -54,5 +54,6 @@ type: "mech"
 | `bitmap` | spawner_3.png (Images) |
 | `enemy` | Beamer lvl 7 (Enemies) |
 | `enemy2` | Zlatte Lvl 4 (Enemies) |
+| `turrets` | Sniper 360 arc Turret lvl 6 (Turrets) |
 | `explosionEffect` | Explosion Mech Spawner (Effects) |
 

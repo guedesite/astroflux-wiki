@@ -57,5 +57,11 @@ type: "mech"
 | --- | --- |
 | `bitmap` | boss_advectorion_chain2.png (Images) |
 | `enemy2` | Nezerian Battlecruiser lvl 67 (Enemies) |
+| `enemies` | Nezerian Regius Exterminatore (Enemies) |
+| `enemies2` | Nezerian Battlecruiser lvl 67 (Enemies) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
 | `explosionEffect` | Explosion Organic Large (Effects) |
 

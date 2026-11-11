@@ -69,3 +69,11 @@ type: "beam"
 | `fireEffect` | Beam start (Effects) |
 | `hitEffect` | Beam end (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Fanatic Purifier lvl 10 (Enemies) |
+| `weapons` | Fanatic Purifier lvl 8 (Enemies) |
+| `weapons` | Fanatic lvl 7 (Enemies) |
+

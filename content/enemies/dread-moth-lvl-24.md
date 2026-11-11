@@ -50,10 +50,12 @@ type: null
 | --- | --- |
 | `ship` | Enemy Dread Moth lvl 24 (Ships) |
 | `engine` | Enemy Dread Moth lvl 24 (Engines) |
+| `weapons` | Enemy Dread Zero lvl 24 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemy` | Mitrilion, Elite, lvl 24 (Spawners) |
+| `enemies` | Mitrilion, Elite, lvl 24 (Spawners) |
 

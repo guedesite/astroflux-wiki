@@ -89,3 +89,10 @@ type: "blaster"
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelMineral` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Elite Flamer lvl 26 (Enemies) |
+| `weapons` | Scrap Collector lvl 18 (Enemies) |
+

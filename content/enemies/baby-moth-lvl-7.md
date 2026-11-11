@@ -44,6 +44,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Moth Baby lvl 7 (Ships) |
 | `engine` | Enemy Moth Baby lvl 7 (Engines) |
+| `weapons` | Enemy Moth Baby Spit lvl 7 (Weapons) |
 
 ## Referenced By
 

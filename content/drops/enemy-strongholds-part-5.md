@@ -38,3 +38,9 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Weapons Cartel: Part 5 (MissionTypes) |
+

@@ -40,3 +40,9 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Nexar Light Wave Generator (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Skirmisher Wars (MissionTypes) |
+

@@ -37,3 +37,29 @@ type: null
 | --- | --- |
 | `weapon` | Enemy Elite Fire Cannon  lvl 22 (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Arrenius, Scrap Collector (Spawners) |
+| `turrets` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `turrets` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `turrets` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `turrets` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `turrets` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `turrets` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `turrets` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `turrets` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `turrets` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `turrets` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `turrets` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `turrets` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `turrets` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `turrets` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `turrets` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `turrets` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `turrets` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `turrets` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `turrets` | Mitrilion, Elite, lvl 22 (Spawners) |
+| `turrets` | Mitrilion, Elite, lvl 22 (Spawners) |
+

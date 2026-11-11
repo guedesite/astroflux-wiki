@@ -54,4 +54,6 @@ type: null
 | `body` | Swarm (Bodies) |
 | `enemy` | Immature Moth Queen lvl 12 (Enemies) |
 | `enemy2` | Swarming Dire Moth lvl 7 (Enemies) |
+| `enemies` | Immature Moth Queen lvl 12 (Enemies) |
+| `enemies2` | Swarming Dire Moth lvl 7 (Enemies) |
 

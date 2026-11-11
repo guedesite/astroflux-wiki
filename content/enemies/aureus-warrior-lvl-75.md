@@ -86,36 +86,74 @@ type: null
 | --- | --- |
 | `ship` | Enemy Aureus Fighter lvl 76 (Ships) |
 | `engine` | Enemy Aureus Warrior (Engines) |
+| `weapons` | Enemy Aureus Blaster lvl 75 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
+| `enemies2` | Arrenius Judicator Mission (Spawners) |
+| `enemies2` | Arrenius, M Renegade Inq (Spawners) |
+| `enemies` | Fulzar, Big Random lvl 82 (Spawners) |
+| `enemies` | Fulzar, Big Random lvl 82 (Spawners) |
+| `enemies` | Fulzar, Big Random lvl 82 (Spawners) |
+| `enemies` | Fulzar, Big Random lvl 82 (Spawners) |
+| `enemies` | Fulzar, Big Random lvl 82 (Spawners) |
+| `enemies` | Fulzar, Big Random lvl 82 (Spawners) |
+| `enemies` | Fulzar, Big Random lvl 82 (Spawners) |
+| `enemies` | Fulzar, Big Random lvl 82 (Spawners) |
 | `enemy` | Fulzar, aureus lvl 82 (Spawners) |
+| `enemies` | Fulzar, aureus lvl 82 (Spawners) |
 | `enemy` | Fulzar, aureus lvl 90 (Spawners) |
+| `enemies` | Fulzar, aureus lvl 90 (Spawners) |
 | `enemy` | Fulzar, aureus lvl 94 (Spawners) |
+| `enemies` | Fulzar, aureus lvl 94 (Spawners) |
 | `enemy` | Fulzar, small, aureus lvl 72 (Spawners) |
+| `enemies` | Fulzar, small, aureus lvl 72 (Spawners) |
 | `enemy` | Fulzar, small, aureus lvl 72 (Spawners) |
+| `enemies` | Fulzar, small, aureus lvl 72 (Spawners) |
 | `enemy` | Fulzar, small, aureus lvl 72 (Spawners) |
+| `enemies` | Fulzar, small, aureus lvl 72 (Spawners) |
 | `enemy` | Fulzar, small, aureus lvl 72 (Spawners) |
+| `enemies` | Fulzar, small, aureus lvl 72 (Spawners) |
 | `enemy` | Fulzar, small, aureus lvl 72 (Spawners) |
+| `enemies` | Fulzar, small, aureus lvl 72 (Spawners) |
 | `enemy` | Fulzar, small, aureus lvl 72 (Spawners) |
+| `enemies` | Fulzar, small, aureus lvl 72 (Spawners) |
 | `enemy` | Fulzar, small, aureus lvl 72 (Spawners) |
+| `enemies` | Fulzar, small, aureus lvl 72 (Spawners) |
 | `enemy` | Fulzar, small, aureus lvl 72 (Spawners) |
+| `enemies` | Fulzar, small, aureus lvl 72 (Spawners) |
 | `enemy` | Fulzar, small, aureus lvl 72 (Spawners) |
+| `enemies` | Fulzar, small, aureus lvl 72 (Spawners) |
 | `enemy` | Fulzar, small, aureus lvl 72 (Spawners) |
+| `enemies` | Fulzar, small, aureus lvl 72 (Spawners) |
 | `enemy` | Fulzar, small, aureus lvl 72 (Spawners) |
+| `enemies` | Fulzar, small, aureus lvl 72 (Spawners) |
 | `enemy` | Fulzar, small, aureus lvl 72 (Spawners) |
+| `enemies` | Fulzar, small, aureus lvl 72 (Spawners) |
 | `enemy` | Fulzar, small, aureus lvl 72 (Spawners) |
+| `enemies` | Fulzar, small, aureus lvl 72 (Spawners) |
 | `enemy` | Fulzar, small, aureus lvl 72 (Spawners) |
+| `enemies` | Fulzar, small, aureus lvl 72 (Spawners) |
 | `enemy` | Fulzar, small, aureus lvl 72 (Spawners) |
+| `enemies` | Fulzar, small, aureus lvl 72 (Spawners) |
 | `enemy` | Fulzar, small, aureus lvl 72 (Spawners) |
+| `enemies` | Fulzar, small, aureus lvl 72 (Spawners) |
 | `enemy` | Fulzar, small, aureus lvl 72 (Spawners) |
+| `enemies` | Fulzar, small, aureus lvl 72 (Spawners) |
 | `enemy` | Fulzar, small, aureus lvl 72 (Spawners) |
+| `enemies` | Fulzar, small, aureus lvl 72 (Spawners) |
 | `enemy` | Fulzar, small, aureus lvl 72 (Spawners) |
+| `enemies` | Fulzar, small, aureus lvl 72 (Spawners) |
 | `enemy` | Fulzar, small, aureus lvl 72 (Spawners) |
+| `enemies` | Fulzar, small, aureus lvl 72 (Spawners) |
 | `enemy` | Fulzar, small, aureus lvl 72 (Spawners) |
+| `enemies` | Fulzar, small, aureus lvl 72 (Spawners) |
 | `enemy` | Fulzar, small, aureus lvl 72 (Spawners) |
+| `enemies` | Fulzar, small, aureus lvl 72 (Spawners) |
 | `enemy` | Fulzar, small, aureus lvl 72 (Spawners) |
+| `enemies` | Fulzar, small, aureus lvl 72 (Spawners) |
 | `enemy` | Fulzar, small, aureus lvl 72 (Spawners) |
+| `enemies` | Fulzar, small, aureus lvl 72 (Spawners) |
 

@@ -30,3 +30,9 @@ type: "pickup"
 | `type` | pickup |
 | `majorType` | time |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Timed 72a (Drops) |
+

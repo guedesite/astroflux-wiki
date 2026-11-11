@@ -50,4 +50,6 @@ type: null
 | Relation | Target |
 | --- | --- |
 | `body` | Research Station (Bodies) |
+| `enemies` | AF Peacekeeper II (Enemies) |
+| `enemies2` | AF Admiral McArthur (Enemies) |
 

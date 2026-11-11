@@ -49,6 +49,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Larva lvl 14 (Ships) |
 | `engine` | Enemy Larva lvl 14 (Engines) |
+| `weapons` | Enemy Larva Lightning lvl 14 (Weapons) |
 
 ## Referenced By
 
@@ -69,7 +70,9 @@ type: null
 | `enemy2` | FULZAR test, Dread Moth lvl 60 (Spawners) |
 | `enemy2` | Hozar, Alpha Moth, lvl 11 (Spawners) |
 | `enemy2` | Hozar, Alpha Moth, lvl 11 (Spawners) |
+| `enemies2` | Hozar, Alpha Moth, lvl 11 (Spawners) |
 | `enemy2` | Hozar, Alpha Moth, lvl 11 (Spawners) |
+| `enemies2` | Hozar, Alpha Moth, lvl 11 (Spawners) |
 | `enemy2` | Hozar, Dire Moth, lvl 8 (Spawners) |
 | `enemy2` | Hozar, Ice Moth, lvl 11 (Spawners) |
 | `enemy2` | Hozar, Ice Moth, lvl 11 (Spawners) |
@@ -86,10 +89,14 @@ type: null
 | `enemy2` | Mitrilion, Black Swarm, lvl 13 (Spawners) |
 | `enemy2` | Mitrilion, Black Swarm, lvl 13 (Spawners) |
 | `enemy2` | Mitrilion, DQ Elite, lvl 24 (Spawners) |
+| `enemies2` | Mitrilion, DQ Elite, lvl 24 (Spawners) |
 | `enemy2` | Mitrilion, Dire Moth, lvl 18 (Spawners) |
 | `enemy2` | Mitrilion, Elite, lvl 24 (Spawners) |
+| `enemies2` | Mitrilion, Elite, lvl 24 (Spawners) |
 | `enemy2` | Mitrilion, Elite, lvl 24 (Spawners) |
+| `enemies2` | Mitrilion, Elite, lvl 24 (Spawners) |
 | `enemy2` | Mitrilion, Elite, lvl 24 (Spawners) |
+| `enemies2` | Mitrilion, Elite, lvl 24 (Spawners) |
 | `enemy2` | Mitrilion, Ice Moth, lvl 18 (Spawners) |
 | `enemy2` | Mitrilion, Jagged Star, lvl 18 (Spawners) |
 | `enemy2` | Mitrilion, Jagged Star, lvl 18 (Spawners) |
@@ -140,12 +147,6 @@ type: null
 | `enemy2` | Vorsran, Nexar T1B2 lvl 86 (Spawners) |
 | `enemy2` | Vorsran, Nexar T2 lvl 86 (Spawners) |
 | `enemy2` | Vorsran, Nexar T2 lvl 86 (Spawners) |
-| `enemy2` | Vorsran, Nexar T2 lvl 88 (Spawners) |
-| `enemy2` | Vorsran, Nexar T2 lvl 88 (Spawners) |
-| `enemy2` | Vorsran, Nexar T2 lvl 88 (Spawners) |
-| `enemy2` | Vorsran, Nexar T2 lvl 88 (Spawners) |
-| `enemy2` | Vorsran, Nexar T2 lvl 88 (Spawners) |
-| `enemy2` | Vorsran, Nexar T2 lvl 88 (Spawners) |
 | `enemy2` | Vorsran, Nexar T2 lvl 88 (Spawners) |
 | `enemy2` | Vorsran, Nexar T2 lvl 88 (Spawners) |
 | `enemy2` | Vorsran, Nexar T2 lvl 88 (Spawners) |

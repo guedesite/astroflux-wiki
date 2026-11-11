@@ -46,3 +46,18 @@ type: "mission"
 | `dropItem` | Engine Part (Commodities) |
 | `dropItem` | Big Metal Scrap (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Kill [amount] Dread Algea! (MissionTypes) |
+| `drop` | Mutant Mission! (MissionTypes) |
+| `drop` | Stolen Technology: Part 4 (MissionTypes) |
+| `drop` | Death to Scarabs! (MissionTypes) |
+| `drop` | Another Dimension: Part 2 (MissionTypes) |
+| `drop` | Kill Servus! (MissionTypes) |
+| `drop` | Infested Fanatics! (MissionTypes) |
+| `drop` | Health Care! (MissionTypes) |
+| `drop` | Massacre 1! (MissionTypes) |
+| `drop` | Kill [amount] Dread Moths! (MissionTypes) |
+

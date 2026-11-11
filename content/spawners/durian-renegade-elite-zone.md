@@ -56,4 +56,11 @@ type: "mech"
 | `bitmap` | boss_advectorion_chain2.png (Images) |
 | `enemy` | Renegade Medic lvl 75 (Enemies) |
 | `enemy2` | Renegade Tanker lvl 78 (Enemies) |
+| `enemies` | Renegade Medic lvl 75 (Enemies) |
+| `enemies2` | Renegade Tanker lvl 78 (Enemies) |
+| `turrets` | Turret Sniper, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
 

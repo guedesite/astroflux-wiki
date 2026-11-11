@@ -30,6 +30,12 @@ type: "kill"
 | `completeDescription` | Lieutenant John: "Good work captain, we have rescued a lot of civilians that had been captured. I hope these resources will do as payment." |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Timed 10a (Drops) |
+
 ## Referenced By
 
 | Relation | Source |

@@ -32,3 +32,9 @@ type: "pickup"
 | `completeDescription` | Wrengher Jones: “Alright, I got a few minutes to spare while the recycle finishes. What did you want to know? About Azuron? Sigh, I don’t wanna be reminded about past... I really don’t. Alright, if you help me out I’ll tell you what I know. The high hostile activity in this sector is threatening to ruin my business, hardly anyone dares to come here these days. Your ship looks quite capable… eh? Take out the 10 closest hostile stations and I’ll tell you what I know.” |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Timed 10a (Drops) |
+

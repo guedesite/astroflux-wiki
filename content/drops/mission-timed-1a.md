@@ -38,3 +38,16 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Enemy Takedown [amount] (MissionTypes) |
+| `drop` | Transport Needed (MissionTypes) |
+| `drop` | Recycle 50 (MissionTypes) |
+| `drop` | Seeker and Destroy (MissionTypes) |
+| `drop` | Enemy Takedown [amount] (MissionTypes) |
+| `drop` | Transport help needed (MissionTypes) |
+| `drop` | Junk pickup (MissionTypes) |
+| `drop` | Zlatte takedown (MissionTypes) |
+

@@ -38,3 +38,9 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Advanced Data Chip (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | The Infestation: Part 9 (MissionTypes) |
+

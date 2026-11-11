@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Xhargreg: ”Good… I have managed to record the energy signature of their teleport devices...I will need some of those Hydrogen Oscillators” |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP32k F32 (Drops) |
+

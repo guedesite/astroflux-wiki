@@ -30,6 +30,12 @@ type: "kill"
 | `completeDescription` | AF Agent: “Incredible! We were sure this would have been the end of us all. The Antor Federation is forever indebted to you!” |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Nezerian Threat (Drops) |
+
 ## Referenced By
 
 | Relation | Source |

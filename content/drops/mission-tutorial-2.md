@@ -38,3 +38,11 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Spawner takedown (MissionTypes) |
+| `drop` | A New Beginning: Part 2 (MissionTypes) |
+| `drop` | Upgrades (MissionTypes) |
+

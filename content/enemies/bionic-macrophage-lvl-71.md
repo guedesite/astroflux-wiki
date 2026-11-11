@@ -69,21 +69,62 @@ type: null
 | --- | --- |
 | `ship` | Enemy Bionic Macrophage lvl 73 (Ships) |
 | `engine` | Enemy Macrofag Engine lvl 62 (Engines) |
+| `weapons` | Enemy Macrofag Cloud lvl 62 (Weapons) |
+| `weapons` | Enemy Bionic Lightning lvl 75 (Weapons) |
+| `weapons` | Enemy Bionic Mine lvl 75 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemy` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
+| `enemies` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
 | `enemy` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
+| `enemies` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
 | `enemy` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
+| `enemies` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
 | `enemy` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
+| `enemies` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
 | `enemy` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
+| `enemies` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
 | `enemy` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
+| `enemies` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
+| `enemies2` | Fulzar, Random Nezerian Fighters (Spawners) |
 | `enemy` | Fulzar, turret + Cruiser lvl 69 (Spawners) |
+| `enemies` | Fulzar, turret + Cruiser lvl 69 (Spawners) |
 | `enemy` | Fulzar, turret + Cruiser lvl 69 (Spawners) |
+| `enemies` | Fulzar, turret + Cruiser lvl 69 (Spawners) |
 | `enemy` | Fulzar, turret + Cruiser lvl 69 (Spawners) |
+| `enemies` | Fulzar, turret + Cruiser lvl 69 (Spawners) |
 | `enemy` | Fulzar, turret + Cruiser lvl 69 (Spawners) |
+| `enemies` | Fulzar, turret + Cruiser lvl 69 (Spawners) |
 | `enemy` | Fulzar, turret + Cruiser lvl 69 (Spawners) |
+| `enemies` | Fulzar, turret + Cruiser lvl 69 (Spawners) |
 | `enemy` | Fulzar, turret + Cruiser lvl 69 (Spawners) |
+| `enemies` | Fulzar, turret + Cruiser lvl 69 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
+| `enemies` | Fulzar, turret + fighter lvl 68 (Spawners) |
 

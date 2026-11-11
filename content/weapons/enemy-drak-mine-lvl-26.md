@@ -60,3 +60,9 @@ type: "projectile"
 | `projectile` | Dark Plasma Mine (Projectiles) |
 | `dotEffect` | DOT Acid Dark (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Drak lvl 26 (Enemies) |
+

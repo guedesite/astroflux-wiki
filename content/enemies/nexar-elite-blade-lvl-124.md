@@ -78,4 +78,46 @@ type: null
 | --- | --- |
 | `ship` | Enemy Nexar Elite Blade (Ships) |
 | `engine` | Enemy Nexar Elite Blade (Engines) |
+| `weapons` | Enemy Nexar Elite Blade (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T6 lvl 96 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T8 lvl 98 (Spawners) |
+| `enemies2` | Vorsran, Nexar T9 lvl 100 (Spawners) |
+| `enemies` | Vorsran, Nexar V Adm Ahrgeris (Spawners) |
 

@@ -29,3 +29,9 @@ type: "transport"
 | `type` | transport |
 | `drop` | F60iXla7GkS_6QxdjGp1zg |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Timed 28a (Drops) |
+

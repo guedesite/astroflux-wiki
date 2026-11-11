@@ -84,4 +84,12 @@ type: null
 | --- | --- |
 | `ship` | Enemy Nexar Blade (Ships) |
 | `engine` | Enemy Nexar Blade (Engines) |
+| `weapons` | Enemy Nexar Blade (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies2` | Fulzar, Nexar Invasion (Spawners) |
+| `enemies` | Fulzar, Nexar Invasion Main (Spawners) |
 

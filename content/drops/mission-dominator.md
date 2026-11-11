@@ -38,3 +38,9 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Fusion Core (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Dominator Destruction (MissionTypes) |
+

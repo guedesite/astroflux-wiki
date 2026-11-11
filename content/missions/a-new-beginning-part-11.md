@@ -29,3 +29,9 @@ type: "transport"
 | `type` | transport |
 | `drop` | XkNUFPZt7UK62WmRd7zIHg |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Tutorial 11 (Drops) |
+

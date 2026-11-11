@@ -50,6 +50,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Zapper lvl 5 (Ships) |
 | `engine` | Enemy Zapper lvl 5 (Engines) |
+| `weapons` | Enemy Zapper lvl 5 (Weapons) |
 
 ## Referenced By
 
@@ -64,5 +65,9 @@ type: null
 | `enemy` | Durian, Visible 29, lvl 5 (Spawners) |
 | `enemy` | Durian, Visible 7, lvl 5 (Spawners) |
 | `enemy` | Durian, Zappers, lvl 5 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
 | `enemy2` | Venturi, Seeker/Zapper lvl 5 (Spawners) |
 

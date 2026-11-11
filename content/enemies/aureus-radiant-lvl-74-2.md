@@ -83,4 +83,5 @@ type: null
 | Relation | Source |
 | --- | --- |
 | `enemies` | Aureus Judicator lvl 94 (Enemies) |
+| `enemies` | Boss Aureus (Spawners) |
 

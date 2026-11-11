@@ -34,8 +34,13 @@ function addRefsFromValue(graph, warnings, cache, fromTable, fromKey, rel, toTab
     return;
   }
   if (typeof value === "object" && value !== null) {
-    if (isMeaningfulRef(value.key)) addEdge(graph, warnings, cache, fromTable, fromKey, rel, toTable, value.key, meta);
-    if (isMeaningfulRef(value.item)) addEdge(graph, warnings, cache, fromTable, fromKey, rel, toTable, value.item, meta);
+    // Mounted objects use a property named after the record they point at
+    // (`{ spawner }`, `{ weapon }`, `{ turret }`); flat references use key/item.
+    for (const field of ["key", "item", "spawner", "weapon", "turret"]) {
+      if (isMeaningfulRef(value[field])) {
+        addEdge(graph, warnings, cache, fromTable, fromKey, rel, toTable, value[field], meta);
+      }
+    }
     return;
   }
   addEdge(graph, warnings, cache, fromTable, fromKey, rel, toTable, value, meta);

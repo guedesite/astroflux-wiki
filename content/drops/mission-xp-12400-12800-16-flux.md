@@ -31,3 +31,10 @@ type: "mission"
 | Item | Table | Chance | Effective Chance | Quantity |
 | --- | --- | ---: | ---: | --- |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | The Ultimate Poison: Part 16 (MissionTypes) |
+| `drop` | Another Dimension: Part 4 (MissionTypes) |
+

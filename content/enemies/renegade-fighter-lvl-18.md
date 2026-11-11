@@ -59,6 +59,8 @@ type: null
 | --- | --- |
 | `ship` | Enemy Renegade Fighter (Ships) |
 | `engine` | Enemy Renegade Fighter (Engines) |
+| `weapons` | Enemy Renegade Blaster lvl 16 (Weapons) |
+| `weapons` | Enemy Renegade Cluster Missiles (Weapons) |
 
 ## Referenced By
 

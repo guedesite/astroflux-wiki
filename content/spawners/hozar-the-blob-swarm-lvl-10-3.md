@@ -57,5 +57,13 @@ type: "organic"
 | `bitmap` | organic_spawner_4.png (Images) |
 | `enemy` | The Blob lvl 10 (Enemies) |
 | `enemy2` | Larva lvl 7 (Enemies) |
+| `enemies` | The Blob lvl 10 (Enemies) |
+| `enemies2` | Larva lvl 7 (Enemies) |
+| `turrets` | Zappler lvl 9 (Turrets) |
+| `turrets` | Zappler lvl 9 (Turrets) |
+| `turrets` | Zappler lvl 9 (Turrets) |
+| `turrets` | Zappler lvl 9 (Turrets) |
+| `turrets` | Zappler lvl 9 (Turrets) |
+| `turrets` | Zappler lvl 9 (Turrets) |
 | `explosionEffect` | Explosion Organic Large (Effects) |
 

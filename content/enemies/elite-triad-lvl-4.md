@@ -50,6 +50,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Elite Triad lvl 4 (Ships) |
 | `engine` | Enemy Elite Triad lvl 4 (Engines) |
+| `weapons` | Enemy Elite Triad Plasma lvl 4 (Weapons) |
 
 ## Referenced By
 
@@ -58,4 +59,8 @@ type: null
 | `enemy` | Hyperion, Elite , lvl 4 (Spawners) |
 | `enemy` | Hyperion, Elite , lvl 4 (Spawners) |
 | `enemy` | Hyperion, Elite , lvl 4 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
 

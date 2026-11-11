@@ -38,3 +38,9 @@ type: "kill"
 | `subtype` | player |
 | `drop` | SNH9l4SZWE-wR89nx-aC6g |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission PvP Level 14 (Drops) |
+

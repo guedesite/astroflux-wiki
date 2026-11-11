@@ -51,4 +51,5 @@ type: null
 | Relation | Target |
 | --- | --- |
 | `body` | Hidden Spawner (Bodies) |
+| `enemies` | Renegade Inquisitor lvl 40 (Enemies) |
 

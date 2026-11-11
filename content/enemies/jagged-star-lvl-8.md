@@ -50,6 +50,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Jagged Star lvl 8 (Ships) |
 | `engine` | Enemy Jagged Star lvl 8 (Engines) |
+| `weapons` | Enemy Jagged Star lvl 8 (Weapons) |
 
 ## Referenced By
 

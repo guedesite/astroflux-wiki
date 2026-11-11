@@ -34,3 +34,9 @@ type: "kill"
 | `subtype` | spawner |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP 2.5k Steel 1.2k (Drops) |
+

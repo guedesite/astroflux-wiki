@@ -32,3 +32,9 @@ type: "pickup"
 | `subtype` | ship |
 | `drop` | JjTRoQzW8kCd_fvc158Keg |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP32k F32 (Drops) |
+

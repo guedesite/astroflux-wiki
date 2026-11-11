@@ -64,4 +64,5 @@ type: null
 | --- | --- |
 | `ship` | Abstractor Circle (Ships) |
 | `engine` | Enemy Moth Dire lvl 18 (Engines) |
+| `weapons` | Enemy Prismatic Crystal (Weapons) |
 

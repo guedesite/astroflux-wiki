@@ -46,4 +46,5 @@ type: "boss"
 | Relation | Target |
 | --- | --- |
 | `solarSystem` | Kapello (SolarSystems) |
+| `boss` | Rotator (Bosses) |
 

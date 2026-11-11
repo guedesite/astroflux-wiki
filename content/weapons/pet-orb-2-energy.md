@@ -77,3 +77,9 @@ type: "projectile"
 | `fireSound` | missile.mp3 (Sounds) |
 | `techLevelProjectile` | Orb 2 (Projectiles) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Energy Orb (Enemies) |
+

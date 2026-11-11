@@ -97,3 +97,10 @@ type: "blaster"
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelMineral` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Nexar Elite Vindicator lvl 126 (Enemies) |
+| `weapons` | Vice Admiral Ahrgeris lvl 126 (Enemies) |
+

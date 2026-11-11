@@ -48,4 +48,5 @@ type: "mech"
 | --- | --- |
 | `body` | Hidden Sax (Bodies) |
 | `bitmap` | spawner_1.png (Images) |
+| `enemies` | Sax lvl 8 (Enemies) |
 

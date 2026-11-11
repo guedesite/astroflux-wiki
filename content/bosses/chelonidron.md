@@ -48,4 +48,19 @@ type: "organic"
 | --- | --- |
 | `explosionEffect` | Explosion Organic Large Red (Effects) |
 | `explosionSound` | explosion_huge.mp3 (Sounds) |
+| `spawners` | Boss Wax Spawner (Spawners) |
+| `turrets` | Boss Chelonidron Claw (Turrets) |
+| `turrets` | Boss Chelonidron Claw2 (Turrets) |
+| `turrets` | Boss Chelonidron Claw3 (Turrets) |
+| `turrets` | Boss Chelonidron Claw (Turrets) |
+| `turrets` | Boss Chelonidron Claw2 (Turrets) |
+| `turrets` | Boss Chelonidron Claw3 (Turrets) |
+| `turrets` | Boss Chelonidron Head (Turrets) |
+| `turrets` | Boss Chelonidron Tail (Turrets) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `boss` | Boss Spawner (Bodies) |
 

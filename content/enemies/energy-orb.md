@@ -69,4 +69,11 @@ type: null
 | --- | --- |
 | `ship` | Pet Orb 2 (Ships) |
 | `engine` | Enemy Aureus Still (Engines) |
+| `weapons` | Pet Orb 2 (Energy) (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemy` | Aureus Energy Manipulator (Weapons) |
 

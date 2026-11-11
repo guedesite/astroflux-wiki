@@ -65,6 +65,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Moth Swarming lvl 8 (Ships) |
 | `engine` | Enemy Moth Mature lvl 8 (Engines) |
+| `weapons` | Enemy Moth Mature Spit lvl 8 (Weapons) |
 
 ## Referenced By
 
@@ -74,6 +75,7 @@ type: null
 | `enemy` | Swarm1 (Spawners) |
 | `enemy` | Swarm2 (Spawners) |
 | `enemy` | Swarm3 (Spawners) |
+| `enemies` | Swarm3 (Spawners) |
 | `enemy` | Swarm3 (Spawners) |
 | `enemy` | Swarm3 (Spawners) |
 

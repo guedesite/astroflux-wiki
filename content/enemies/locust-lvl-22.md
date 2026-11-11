@@ -73,8 +73,11 @@ type: null
 | `enemy2` | Neurona, Blade lvl 29 (Spawners) |
 | `enemy2` | Neurona, Moth Alpha lvl 30 (Spawners) |
 | `enemy2` | Neurona, Moth Servus lvl 30 (Spawners) |
+| `enemies2` | Neurona, Moth Servus lvl 30 (Spawners) |
 | `enemy2` | Neurona, Moth Servus lvl 30 (Spawners) |
+| `enemies2` | Neurona, Moth Servus lvl 30 (Spawners) |
 | `enemy2` | Neurona, Moth Servus lvl 30 (Spawners) |
+| `enemies2` | Neurona, Moth Servus lvl 30 (Spawners) |
 | `enemy2` | Neurona, Scarab Big lvl 32 (Spawners) |
 | `enemy2` | Neurona, Scarab Big lvl 32 (Spawners) |
 | `enemy2` | Neurona, Scarab Big lvl 32 (Spawners) |
@@ -83,6 +86,7 @@ type: null
 | `enemy2` | Neurona, Scarab Big lvl 32 (Spawners) |
 | `enemy2` | Neurona, Scarab lvl 29 (Spawners) |
 | `enemy2` | Neurona, Servus lvl 30 (Spawners) |
+| `enemies2` | Neurona, Servus lvl 30 (Spawners) |
 | `enemy2` | Sarkinon, Alpha lvl 30 (Spawners) |
 | `enemy2` | Sarkinon, Blade lvl 29 (Spawners) |
 | `enemy2` | Sarkinon, Blade lvl 29 (Spawners) |
@@ -95,18 +99,23 @@ type: null
 | `enemy2` | Sarkinon, Scarab Big lvl 29 (Spawners) |
 | `enemy2` | Sarkinon, Scarab lvl 29 (Spawners) |
 | `enemy2` | Sarkinon, Servus lvl 28 (Spawners) |
+| `enemies2` | Sarkinon, Servus lvl 28 (Spawners) |
 | `enemy2` | Sarkinon, Servus lvl 30 (Spawners) |
+| `enemies2` | Sarkinon, Servus lvl 30 (Spawners) |
 | `enemy2` | Vibrilian, Blood Macrofag, lvl 26 (Spawners) |
 | `enemy2` | Vibrilian, Blood Macrofag, lvl 26 (Spawners) |
 | `enemy2` | Vibrilian, Blood Macrofag, lvl 26 (Spawners) |
 | `enemy2` | Vibrilian, Blood Macrofag, lvl 26 (Spawners) |
 | `enemy2` | Vibrilian, Blood Macrofag, lvl 26 (Spawners) |
+| `enemies2` | Vibrilian, Blood Macrofag, lvl 26 (Spawners) |
 | `enemy` | Vibrilian, Deamon lvl 27 (Spawners) |
 | `enemy2` | Vibrilian, Deamon lvl 27 (Spawners) |
+| `enemies2` | Vibrilian, Deamon lvl 27 (Spawners) |
 | `enemy` | Vibrilian, Deamon lvl 27 (Spawners) |
 | `enemy2` | Vibrilian, Deamon lvl 27 (Spawners) |
 | `enemy` | Vibrilian, Dire Moth lvl 23 (Spawners) |
 | `enemy` | Vibrilian, Dire Moth lvl 23 (Spawners) |
+| `enemies` | Vibrilian, Dire Moth lvl 23 (Spawners) |
 | `enemy` | Vibrilian, Dire Moth lvl 23 (Spawners) |
 | `enemy` | Vibrilian, Dire Moth lvl 23 (Spawners) |
 | `enemy` | Vibrilian, Dire Moth lvl 23 (Spawners) |

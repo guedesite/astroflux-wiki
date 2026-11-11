@@ -66,3 +66,9 @@ type: "projectile"
 | `projectile` | Bionic Mine Red (Projectiles) |
 | `dotEffect` | DOT Acid Red (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Bionic Macrophage lvl 71 (Enemies) |
+

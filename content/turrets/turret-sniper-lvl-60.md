@@ -37,3 +37,36 @@ type: null
 | --- | --- |
 | `weapon` | Turrent Sniper lvl 60 (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Cynapsian, turret + deamon lvl 60 (Spawners) |
+| `turrets` | Cynapsian, turret + deamon lvl 60 (Spawners) |
+| `turrets` | Cynapsian, turret + deamon lvl 66 (Spawners) |
+| `turrets` | Cynapsian, turret + dread lvl 60 (Spawners) |
+| `turrets` | Cynapsian, turret + dread lvl 60 (Spawners) |
+| `turrets` | Cynapsian, turret + dread lvl 66 (Spawners) |
+| `turrets` | Cynapsian, turret lvl 60 (Spawners) |
+| `turrets` | Cynapsian, turret lvl 60 (Spawners) |
+| `turrets` | Cynapsian, turret lvl 60 (Spawners) |
+| `turrets` | Cynapsian, turret lvl 60 (Spawners) |
+| `turrets` | Cynapsian, turret lvl 60 (Spawners) |
+| `turrets` | Cynapsian, turret lvl 60 (Spawners) |
+| `turrets` | Cynapsian, turret lvl 60 (Spawners) |
+| `turrets` | Cynapsian, turret lvl 62 (Spawners) |
+| `turrets` | Cynapsian, turret lvl 64 (Spawners) |
+| `turrets` | Cynapsian, turret lvl 64 (Spawners) |
+| `turrets` | Durian, Renegade Elite Zone (Spawners) |
+| `turrets` | Durian, Renegade Elite Zone (Spawners) |
+| `turrets` | Durian, Renegade Elite Zone (Spawners) |
+| `turrets` | Fulzar, Exterminatore + deamon lvl 96 (Spawners) |
+| `turrets` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
+| `turrets` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
+| `turrets` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
+| `turrets` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
+| `turrets` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
+| `turrets` | Fulzar, Queen + macrofag lvl 73 (Spawners) |
+| `turrets` | Fulzar, Queen + plankton lvl 71 (Spawners) |
+| `turrets` | Fulzar, turret + plankton lvl 71 (Spawners) |
+

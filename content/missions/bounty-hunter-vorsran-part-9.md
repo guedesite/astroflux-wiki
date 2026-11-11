@@ -30,3 +30,9 @@ type: "kill"
 | `completeDescription` | Operative Smith: “Unbelievable! You did it! Finally we beat the Nexar!” |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | BH9 (Drops) |
+

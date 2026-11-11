@@ -58,5 +58,11 @@ type: "mech"
 | `bitmap` | boss_advectorion_chain2.png (Images) |
 | `enemy` | Bionic Plankton lvl 69 (Enemies) |
 | `enemy2` | Nezerian Fighter lvl 66 (Enemies) |
+| `enemies` | Bionic Plankton lvl 69 (Enemies) |
+| `enemies2` | Nezerian Fighter lvl 66 (Enemies) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
 | `explosionEffect` | Explosion Organic Large (Effects) |
 

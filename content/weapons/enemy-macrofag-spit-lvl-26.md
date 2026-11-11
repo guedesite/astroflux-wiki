@@ -62,3 +62,10 @@ type: "projectile"
 | `fireSound` | moth-spit3.mp3 (Sounds) |
 | `dotEffect` | DOT Acid Red (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Blood Macrophage lvl 26 (Enemies) |
+| `weapons` | Blood Macrophage lvl 31 (Enemies) |
+

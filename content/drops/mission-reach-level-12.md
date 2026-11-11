@@ -38,3 +38,10 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Reach Level 12 (MissionTypes) |
+| `drop` | Mission Reach Level 12 (MissionTypes) |
+

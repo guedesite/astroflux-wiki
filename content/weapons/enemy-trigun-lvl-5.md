@@ -50,3 +50,9 @@ type: "blaster"
 | `projectile` | Enemy Stalker Bullet (Projectiles) |
 | `fireSound` | fire2.mp3 (Sounds) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Trigun lvl 5 (Enemies) |
+

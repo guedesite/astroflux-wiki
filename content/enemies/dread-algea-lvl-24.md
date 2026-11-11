@@ -58,11 +58,14 @@ type: null
 | --- | --- |
 | `ship` | Enemy Dread Algea lvl 24 (Ships) |
 | `engine` | Enemy Dread Algea lvl 24 (Engines) |
+| `weapons` | Enemy Dread Algea Nova lvl 24 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemy` | Mitrilion, Elite, lvl 24 (Spawners) |
+| `enemies` | Mitrilion, Elite, lvl 24 (Spawners) |
 | `enemy` | Mitrilion, Elite, lvl 24 (Spawners) |
+| `enemies` | Mitrilion, Elite, lvl 24 (Spawners) |
 

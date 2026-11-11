@@ -60,5 +60,11 @@ type: "mech"
 | `body` | Vorsran, Hidden T1 (Bodies) |
 | `bitmap` | nexar_spawner_active1.png (Images) |
 | `enemy2` | Larva lvl 14 (Enemies) |
+| `enemies` | Nexar Fighter lvl 95 (Enemies) |
+| `enemies` | Nexar Cluster Bomber lvl 85 (Enemies) |
+| `enemies` | Nexar Tank lvl 100 (Enemies) |
+| `enemies` | Nexar Stealth Bomber lvl 80 (Enemies) |
+| `enemies` | Nexar Blade lvl 95 (Enemies) |
+| `enemies2` | Captain Xhargrefh lvl 120 (Enemies) |
 | `explosionEffect` | Explosion Organic Large (Effects) |
 

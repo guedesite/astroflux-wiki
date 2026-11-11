@@ -58,5 +58,7 @@ type: "mech"
 | `bitmap` | enemy_aureus_spawner_active.png (Images) |
 | `enemy` | Aureus Warrior lvl 75 (Enemies) |
 | `enemy2` | Aureus Monachus lvl 73 (Enemies) |
+| `enemies` | Aureus Warrior lvl 75 (Enemies) |
+| `enemies2` | Aureus Monachus lvl 73 (Enemies) |
 | `explosionEffect` | Explosion Organic Large (Effects) |
 

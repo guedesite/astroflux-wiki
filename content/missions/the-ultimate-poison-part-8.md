@@ -31,3 +31,9 @@ type: "transport"
 | `completeDescription` | Xhargreg: ”Most exquisit… this venom is just amazing. A single gram could kill thousands… and you brought back several barrels. I must be the luckiest person in the world… heheherhghrhgh.It has a very strange property of transferring the victims vital energies to the infector... I’m sure this could be highly useful if weaponized… luckily I love making weapons… what could be more fun? Oh, right, a reward… hmmm… have this wasp stinger… Now for next part" |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP 1600-1800 (Drops) |
+

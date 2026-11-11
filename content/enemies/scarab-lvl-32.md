@@ -70,6 +70,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Scarab lvl 29 (Ships) |
 | `engine` | Enemy Scarab lvl 29 (Engines) |
+| `weapons` | Enemy Scarab Beamer lvl 29 (Weapons) |
 
 ## Referenced By
 

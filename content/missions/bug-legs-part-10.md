@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Crew: “we received a message from Xhargreg, it goes something like: ‘Bzzzz! Bzzzz! BZZZZ!!!’”Crew: “Maybe we should return and check if Xhargreg is ok…”Crew: “or run away to a guaranteed wasp free place…” |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP 16800 (Drops) |
+

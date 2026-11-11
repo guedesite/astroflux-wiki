@@ -60,5 +60,12 @@ type: "mech"
 | `bitmap` | boss_advectorion_chain2.png (Images) |
 | `enemy` | Bionic Macrophage lvl 71 (Enemies) |
 | `enemy2` | Bionic Queen lvl 80 (Enemies) |
+| `enemies` | Bionic Macrophage lvl 71 (Enemies) |
+| `enemies2` | Bionic Queen lvl 80 (Enemies) |
+| `turrets` | Turret Sniper, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
 | `explosionEffect` | Explosion Organic Large (Effects) |
 

@@ -67,6 +67,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Elite Gunner lvl 10 (Ships) |
 | `engine` | Enemy Elite Gunner lvl 10 (Engines) |
+| `weapons` | Enemy Elite Gunner Gun lvl 10 (Weapons) |
 
 ## Referenced By
 
@@ -75,4 +76,8 @@ type: null
 | `enemy` | Arrenius, Elite, lvl 10 (Spawners) |
 | `enemy` | Arrenius, Elite, lvl 10 (Spawners) |
 | `enemy` | Arrenius, Elite, lvl 10 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
 

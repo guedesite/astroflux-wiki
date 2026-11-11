@@ -60,5 +60,7 @@ type: "mech"
 | `body` | Vorsran, Hidden T1 (Bodies) |
 | `bitmap` | nexar_spawner_active1.png (Images) |
 | `enemy2` | Larva lvl 14 (Enemies) |
+| `enemies` | Nexar Elite Blade lvl 124 (Enemies) |
+| `enemies2` | Vice Admiral Ahrgeris lvl 126 (Enemies) |
 | `explosionEffect` | Explosion Organic Large (Effects) |
 

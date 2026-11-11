@@ -91,4 +91,12 @@ type: null
 | --- | --- |
 | `ship` | Emperor Zharix (Ships) |
 | `engine` | Emperor Zharix (Engines) |
+| `weapons` | Emperor Zharix Shadow Blaster (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies` | Boss Emperor Zharix (Spawners) |
+| `enemies` | Dev Nexar Test (Spawners) |
 

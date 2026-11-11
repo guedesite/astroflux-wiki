@@ -37,3 +37,9 @@ type: null
 | --- | --- |
 | `weapon` | Boss Cleaner Torpedos (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | The Cleaner (Bosses) |
+

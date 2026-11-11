@@ -55,5 +55,6 @@ type: "mech"
 | `bitmap` | spawner_3.png (Images) |
 | `enemy` | Zapper lvl 6 (Enemies) |
 | `enemy2` | Seeker Lvl 6 (Enemies) |
+| `turrets` | Sniper 360 arc Turret lvl 6 (Turrets) |
 | `explosionEffect` | Explosion Mech Spawner (Effects) |
 

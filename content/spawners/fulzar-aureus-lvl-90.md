@@ -60,5 +60,7 @@ type: "mech"
 | `bitmap` | enemy_aureus_spawner_active.png (Images) |
 | `enemy` | Aureus Monachus lvl 73 (Enemies) |
 | `enemy2` | Aureus Sidus lvl 90 (Enemies) |
+| `enemies` | Aureus Monachus lvl 73 (Enemies) |
+| `enemies2` | Aureus Sidus lvl 90 (Enemies) |
 | `explosionEffect` | Explosion Organic Large (Effects) |
 

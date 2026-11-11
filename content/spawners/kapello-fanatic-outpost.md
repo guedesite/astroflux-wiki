@@ -56,4 +56,5 @@ type: "mech"
 | `bitmap` | spawner_3.png (Images) |
 | `enemy` | Fanatic Purifier lvl 10 (Enemies) |
 | `enemy2` | Seeker Lvl 4 (Enemies) |
+| `turrets` | Blaster 280 arc Turret lvl 6 (Turrets) |
 

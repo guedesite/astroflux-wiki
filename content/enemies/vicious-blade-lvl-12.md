@@ -77,13 +77,18 @@ type: null
 | --- | --- |
 | `ship` | Enemy Thorn Blade 2 lvl 12 (Ships) |
 | `engine` | Enemy Thorn Blade 2 lvl 12 (Engines) |
+| `weapons` | Enemy Thorn Blade 2 lvl 12 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemy` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
+| `enemies` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
 | `enemy` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
+| `enemies` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
 | `enemy` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
+| `enemies` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
 | `enemy` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
+| `enemies` | Hozar, Viscious Blade Swarm, lvl 12 (Spawners) |
 

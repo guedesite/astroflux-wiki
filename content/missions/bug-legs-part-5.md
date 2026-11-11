@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Xhargreg: ”Hurry back here!! I can’t wait to make more giant wasps!!”Crew: “Are you sure Captain?”Crew: “I hate wasps!!”Crew: “Uhg... this stuff can’t be healthy, let’s just dump it somewhere… ” |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP26k F16 (Drops) |
+

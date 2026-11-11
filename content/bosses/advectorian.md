@@ -49,4 +49,35 @@ type: "mech"
 | --- | --- |
 | `explosionEffect` | Explosion HUGE (Effects) |
 | `explosionSound` | explosion_huge2.mp3 (Sounds) |
+| `spawners` | Advectorion, Battleship 1, lvl 52 (Spawners) |
+| `spawners` | Advectorion, Destoryer 1, lvl 52 (Spawners) |
+| `spawners` | Advectorion, Battlecruiser 1, lvl 52 (Spawners) |
+| `spawners` | Advectorion, Fighter 1, lvl 52 (Spawners) |
+| `spawners` | Advectorion, Fighter 2, lvl 52 (Spawners) |
+| `spawners` | Advectorion, Fighter 3, lvl 52 (Spawners) |
+| `spawners` | Advectorion, Fighter 4, lvl 52 (Spawners) |
+| `spawners` | Advectorion, Fighter 5, lvl 52 (Spawners) |
+| `spawners` | Advectorion, Fighter 6, lvl 52 (Spawners) |
+| `turrets` | Advectorian Plasma Turret (Turrets) |
+| `turrets` | Advectorian Plasma Turret (Turrets) |
+| `turrets` | Advectorian Plasma Turret (Turrets) |
+| `turrets` | Advectorian Plasma Turret (Turrets) |
+| `turrets` | Advectorian Plasma Turret (Turrets) |
+| `turrets` | Advectorian Plasma Turret (Turrets) |
+| `turrets` | Advectorian Plasma Turret (Turrets) |
+| `turrets` | Advectorian Plasma Turret (Turrets) |
+| `turrets` | Advectorian Plasma Turret (Turrets) |
+| `turrets` | Advectorian Plasma Turret (Turrets) |
+| `turrets` | Advectorian Plasma Turret (Turrets) |
+| `turrets` | Advectorian Plasma Turret (Turrets) |
+| `turrets` | Advectorian Plasma Turret (Turrets) |
+| `turrets` | Advectorian Plasma Turret (Turrets) |
+| `turrets` | Boss Mother Brain Shuriken (Turrets) |
+| `turrets` | Boss Mother Brain Shuriken (Turrets) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `boss` | Advectorian (Bodies) |
 

@@ -83,7 +83,9 @@ type: null
 | `enemy2` | Swarm1 (Spawners) |
 | `enemy2` | Swarm2 (Spawners) |
 | `enemy2` | Swarm3 (Spawners) |
+| `enemies2` | Swarm3 (Spawners) |
 | `enemy2` | Swarm3 (Spawners) |
+| `enemies2` | Swarm3 (Spawners) |
 | `enemy2` | Swarm3 (Spawners) |
 | `enemy2` | Swarm3 (Spawners) |
 

@@ -75,3 +75,9 @@ type: "beam"
 | `hitEffect` | Beam end (Effects) |
 | `dotEffect` | DOT Acid Ice (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Ossakel lvl 36 (Enemies) |
+

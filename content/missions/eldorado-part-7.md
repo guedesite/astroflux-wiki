@@ -31,3 +31,9 @@ type: "pickup"
 | `type` | pickup |
 | `maxLvl` | 0 |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission 20k Steel (Drops) |
+

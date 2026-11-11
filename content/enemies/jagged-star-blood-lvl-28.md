@@ -50,6 +50,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Jagged Star Blood lvl 28 (Ships) |
 | `engine` | Enemy Jagged Star lvl 18 (Engines) |
+| `weapons` | Enemy Jagged Star Blood lvl 25 (Weapons) |
 
 ## Referenced By
 

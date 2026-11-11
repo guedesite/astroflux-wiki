@@ -42,3 +42,9 @@ type: "mission"
 | `dropItem` | Medium Data Chip (Commodities) |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | The Cleaning Lady! (MissionTypes) |
+

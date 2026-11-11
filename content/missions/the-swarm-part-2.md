@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Lieutenant Keryn: "Good job captain, there is still more waves to come. And this time you have to kill the swarm Queen. Don't panic, it's less dangerous than a mature queen. There are even a report of a huge Dread Queen somewhere in the Gellan System." |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Timed 22a (Drops) |
+

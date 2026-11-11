@@ -64,4 +64,8 @@ type: null
 | `enemy` | Mitrilion, Black Swarm, lvl 13 (Spawners) |
 | `enemy` | Mitrilion, Black Swarm, lvl 13 (Spawners) |
 | `enemy` | Mitrilion, Black Swarm, lvl 13 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
 

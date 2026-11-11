@@ -77,10 +77,14 @@ type: null
 | --- | --- |
 | `ship` | Enemy Dread Queen lvl 26 (Ships) |
 | `engine` | Enemy Dread Queen lvl 26 (Engines) |
+| `weapons` | Enemy Dread Queen Zero Wave lvl 26 (Weapons) |
+| `weapons` | Enemy Dread Queen Zero Nova lvl 26 (Weapons) |
+| `weapons` | Enemy Dread Queen Cloud lvl 26 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemy` | Mitrilion, DQ Elite, lvl 24 (Spawners) |
+| `enemies` | Mitrilion, DQ Elite, lvl 24 (Spawners) |
 

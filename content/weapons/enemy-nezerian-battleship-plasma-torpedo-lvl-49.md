@@ -69,3 +69,9 @@ type: "projectile"
 | `sound` | laser1.mp3 (Sounds) |
 | `dotEffect` | DOT Flame (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Nezerian Battleship lvl 49 (Enemies) |
+

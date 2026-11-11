@@ -66,3 +66,9 @@ type: "projectile"
 | `projectile` | Acid Mine (Projectiles) |
 | `dotEffect` | DOT Acid (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Experimental Macrophage lvl 62 (Enemies) |
+

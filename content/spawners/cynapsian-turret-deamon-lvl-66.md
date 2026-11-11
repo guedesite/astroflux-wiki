@@ -47,4 +47,9 @@ type: "mech"
 | `body` | Efedrit (Bodies) |
 | `bitmap` | boss_advectorion_chain2.png (Images) |
 | `enemy` | Daemon lvl 56 (Enemies) |
+| `turrets` | Turret Sniper, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
+| `turrets` | Fire Cannon, lvl 60 (Turrets) |
 

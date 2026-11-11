@@ -31,6 +31,12 @@ type: "kill"
 | `completeDescription` | Captain! The lead engineer on the Upgrade Station wants to talk with us.  |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Timed 22a (Drops) |
+
 ## Referenced By
 
 | Relation | Source |

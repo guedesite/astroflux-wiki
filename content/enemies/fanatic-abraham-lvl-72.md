@@ -63,6 +63,7 @@ type: null
 | --- | --- |
 | `ship` | Chrono (Ships) |
 | `engine` | Player Chrono (Engines) |
+| `weapons` | Enemy Fanatic Abraham Chrono (Weapons) |
 
 ## Referenced By
 

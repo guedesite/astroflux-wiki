@@ -60,3 +60,9 @@ type: "projectile"
 | `projectile` | Locust (Projectiles) |
 | `dotEffect` | DOT Acid (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Moth Servus lvl 30 (Enemies) |
+

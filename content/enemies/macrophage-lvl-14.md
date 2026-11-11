@@ -57,6 +57,8 @@ type: null
 | --- | --- |
 | `ship` | Enemy Macrofag lvl 14 (Ships) |
 | `engine` | Enemy Macrofag Engine lvl 14 (Engines) |
+| `weapons` | Enemy Macrofag Cloud lvl 14 (Weapons) |
+| `weapons` | Enemy Macrofag Mine lvl 14 (Weapons) |
 
 ## Referenced By
 

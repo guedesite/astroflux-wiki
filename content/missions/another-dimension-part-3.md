@@ -32,3 +32,9 @@ type: "kill"
 | `completeDescription` | Renegade Scientist: "Are you mad!?! We have been trying to close this dimensional rift and now y.... khsszzzz.... khsxzzzz.... khhhszzzz.. khzzz.... idiot.... khzzz..."Fanatic Abraham: "Hahaha... finally all heretics will be punished for their sins. Worship the new gods and despair!" |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP 1600-1800 (Drops) |
+

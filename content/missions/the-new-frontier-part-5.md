@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Agent Ace: “It looks like the Nezerian Fighters caused you more trouble than expected. However, we don’t have time to babysit you. Try and collect 10 bionic implants, they can sometimes be salvaged from the remains of a bionic creature. We think they are key to find weaknesses in the bionic armor. |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission 20k Mixed (Drops) |
+

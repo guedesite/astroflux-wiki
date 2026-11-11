@@ -44,3 +44,9 @@ type: "mission"
 | `dropItem` | Iridium (Commodities) |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | The Nezerian Threat (MissionTypes) |
+

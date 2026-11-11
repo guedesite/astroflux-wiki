@@ -98,4 +98,11 @@ type: null
 | --- | --- |
 | `ship` | Pet Wasp (Ships) |
 | `engine` | Enemy Dread Queen lvl 26 (Engines) |
+| `weapons` | Pet Wasp Acid Spore (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemy` | Wasp Bait (Weapons) |
 

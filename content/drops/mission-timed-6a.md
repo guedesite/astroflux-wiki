@@ -31,3 +31,19 @@ type: "mission"
 | Item | Table | Chance | Effective Chance | Quantity |
 | --- | --- | ---: | ---: | --- |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Transport assistance (MissionTypes) |
+| `drop` | Kill the Spawners! (MissionTypes) |
+| `drop` | Questions about that past: Part 4 (MissionTypes) |
+| `drop` | Kill the Triguns! (MissionTypes) |
+| `drop` | The Twins: Part 1 (MissionTypes) |
+| `drop` | Kill the Zappers (MissionTypes) |
+| `drop` | Elite Stalker takedown (MissionTypes) |
+| `drop` | Kill the Beamer! (MissionTypes) |
+| `drop` | Seeker and Destroy (MissionTypes) |
+| `drop` | Recycle [amount] (MissionTypes) |
+| `drop` | Kill the Guardian! (MissionTypes) |
+

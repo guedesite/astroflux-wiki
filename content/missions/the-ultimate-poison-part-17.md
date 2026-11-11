@@ -29,3 +29,9 @@ type: "transport"
 | `type` | transport |
 | `drop` | HukOu5ezKku59ldjPGCK4g |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Poison Part 16 (Drops) |
+

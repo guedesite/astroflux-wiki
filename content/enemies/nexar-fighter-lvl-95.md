@@ -72,4 +72,130 @@ type: null
 | --- | --- |
 | `ship` | Enemy Nexar Fighter (Ships) |
 | `engine` | Enemy Nexar Fighter (Engines) |
+| `weapons` | Enemy Nexar Slug Blaster (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies` | Vorsran, Nexar Cmdr Zherghur (Spawners) |
+| `enemies` | Vorsran, Nexar Cptn Xhargrefh (Spawners) |
+| `enemies` | Vorsran, Nexar Lt Xhaveris (Spawners) |
+| `enemies` | Vorsran, Nexar T10 lvl 100 (Spawners) |
+| `enemies` | Vorsran, Nexar T10 lvl 100 (Spawners) |
+| `enemies` | Vorsran, Nexar T10 lvl 100 (Spawners) |
+| `enemies` | Vorsran, Nexar T10 lvl 100 (Spawners) |
+| `enemies` | Vorsran, Nexar T10 lvl 100 (Spawners) |
+| `enemies` | Vorsran, Nexar T10 lvl 100 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 86 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 86 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 88 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 90 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 90 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 90 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 90 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 90 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 90 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 90 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 90 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 90 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 90 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 90 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 90 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 90 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 90 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 90 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 90 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 90 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 90 (Spawners) |
+| `enemies` | Vorsran, Nexar T2 lvl 90 (Spawners) |
+| `enemies` | Vorsran, Nexar T3 lvl 92 (Spawners) |
+| `enemies` | Vorsran, Nexar T3 lvl 92 (Spawners) |
+| `enemies` | Vorsran, Nexar T3 lvl 92 (Spawners) |
+| `enemies` | Vorsran, Nexar T3 lvl 92 (Spawners) |
+| `enemies` | Vorsran, Nexar T3 lvl 92 (Spawners) |
+| `enemies` | Vorsran, Nexar T3 lvl 92 (Spawners) |
+| `enemies` | Vorsran, Nexar T3 lvl 92 (Spawners) |
+| `enemies` | Vorsran, Nexar T3 lvl 92 (Spawners) |
+| `enemies` | Vorsran, Nexar T3 lvl 92 (Spawners) |
+| `enemies` | Vorsran, Nexar T3 lvl 92 (Spawners) |
+| `enemies` | Vorsran, Nexar T3 lvl 92 (Spawners) |
+| `enemies` | Vorsran, Nexar T3 lvl 92 (Spawners) |
+| `enemies` | Vorsran, Nexar T3 lvl 92 (Spawners) |
+| `enemies` | Vorsran, Nexar T3 lvl 92 (Spawners) |
+| `enemies` | Vorsran, Nexar T3 lvl 92 (Spawners) |
+| `enemies` | Vorsran, Nexar T3 lvl 92 (Spawners) |
+| `enemies` | Vorsran, Nexar T4 lvl 93 (Spawners) |
+| `enemies` | Vorsran, Nexar T4 lvl 93 (Spawners) |
+| `enemies` | Vorsran, Nexar T4 lvl 93 (Spawners) |
+| `enemies` | Vorsran, Nexar T4 lvl 93 (Spawners) |
+| `enemies` | Vorsran, Nexar T4 lvl 93 (Spawners) |
+| `enemies` | Vorsran, Nexar T4 lvl 93 (Spawners) |
+| `enemies` | Vorsran, Nexar T4 lvl 93 (Spawners) |
+| `enemies` | Vorsran, Nexar T4 lvl 93 (Spawners) |
+| `enemies` | Vorsran, Nexar T4 lvl 93 (Spawners) |
+| `enemies` | Vorsran, Nexar T4 lvl 93 (Spawners) |
+| `enemies` | Vorsran, Nexar T4 lvl 93 (Spawners) |
+| `enemies` | Vorsran, Nexar T4 lvl 93 (Spawners) |
+| `enemies` | Vorsran, Nexar T4 lvl 93 (Spawners) |
+| `enemies` | Vorsran, Nexar T4 lvl 93 (Spawners) |
+| `enemies` | Vorsran, Nexar T4 lvl 93 (Spawners) |
+| `enemies` | Vorsran, Nexar T4 lvl 93 (Spawners) |
+| `enemies` | Vorsran, Nexar T4 lvl 93 (Spawners) |
+| `enemies` | Vorsran, Nexar T4 lvl 93 (Spawners) |
+| `enemies` | Vorsran, Nexar T4 lvl 93 (Spawners) |
+| `enemies` | Vorsran, Nexar T4 lvl 93 (Spawners) |
+| `enemies` | Vorsran, Nexar T4 lvl 93 (Spawners) |
+| `enemies` | Vorsran, Nexar T4 lvl 93 (Spawners) |
+| `enemies` | Vorsran, Nexar T4 lvl 93 (Spawners) |
+| `enemies` | Vorsran, Nexar T5 lvl 9 (Spawners) |
+| `enemies` | Vorsran, Nexar T5 lvl 95 (Spawners) |
+| `enemies` | Vorsran, Nexar T5 lvl 95 (Spawners) |
+| `enemies` | Vorsran, Nexar T5 lvl 95 (Spawners) |
+| `enemies` | Vorsran, Nexar T5 lvl 95 (Spawners) |
+| `enemies` | Vorsran, Nexar T5 lvl 95 (Spawners) |
+| `enemies` | Vorsran, Nexar T5 lvl 95 (Spawners) |
+| `enemies` | Vorsran, Nexar T5 lvl 95 (Spawners) |
+| `enemies` | Vorsran, Nexar T5 lvl 95 (Spawners) |
+| `enemies` | Vorsran, Nexar T5 lvl 95 (Spawners) |
+| `enemies` | Vorsran, Nexar T5 lvl 95 (Spawners) |
+| `enemies` | Vorsran, Nexar T5 lvl 95 (Spawners) |
+| `enemies` | Vorsran, Nexar T5 lvl 95 (Spawners) |
 

@@ -57,5 +57,7 @@ type: "organic"
 | `bitmap` | organic_spawner_4.png (Images) |
 | `enemy` | Ice Moth lvl 16 (Enemies) |
 | `enemy2` | Larva lvl 7 (Enemies) |
+| `turrets` | Locust Swarmer lvl 12 (Turrets) |
+| `turrets` | Locust Swarmer lvl 12 (Turrets) |
 | `explosionEffect` | Explosion Organic Large Red (Effects) |
 

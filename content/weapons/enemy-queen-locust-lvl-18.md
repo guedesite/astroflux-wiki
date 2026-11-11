@@ -58,3 +58,9 @@ type: "projectile"
 | `projectile` | Locust (Projectiles) |
 | `dotEffect` | DOT Acid (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Moth Queen lvl 18 (Enemies) |
+

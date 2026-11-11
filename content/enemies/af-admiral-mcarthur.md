@@ -67,4 +67,12 @@ type: null
 | --- | --- |
 | `ship` | AF C8 Noxium (Ships) |
 | `engine` | Player Noxium (Engines) |
+| `weapons` | AF Noxium BFG (Weapons) |
+| `weapons` | AF Noxium Spray (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies2` | Vorsran, AF Research (Spawners) |
 

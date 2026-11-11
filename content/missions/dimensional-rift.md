@@ -32,3 +32,9 @@ type: "kill"
 | `completeDescription` | unknown voice: "Ahh.. very interesting indeed." |
 | `majorType` | time |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Timed 10a (Drops) |
+

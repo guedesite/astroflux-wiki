@@ -40,3 +40,9 @@ type: "mission"
 | `dropItem` | Steel (Commodities) |
 | `dropItem` | Plasma Fluids (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Renegade Scum! (MissionTypes) |
+

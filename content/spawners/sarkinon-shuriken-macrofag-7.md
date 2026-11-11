@@ -55,4 +55,5 @@ type: "mech"
 | `bitmap` | boss_blob_spawner.png (Images) |
 | `enemy` | Blood Macrophage lvl 31 (Enemies) |
 | `enemy2` | Zlatte Lvl 4 (Enemies) |
+| `turrets` | Boss Mother Brain Shuriken (Turrets) |
 

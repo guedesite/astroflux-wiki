@@ -72,3 +72,9 @@ type: "projectile"
 | `projectile` | Piercing lvl 3 (Projectiles) |
 | `fireSound` | laser2.mp3 (Sounds) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Elite Fanatic lvl 12 (Enemies) |
+

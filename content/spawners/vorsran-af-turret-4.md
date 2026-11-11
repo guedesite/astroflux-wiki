@@ -46,4 +46,9 @@ type: "mech"
 | --- | --- |
 | `body` | AF Hidden (Bodies) |
 | `bitmap` | af_turret_platform_active.png (Images) |
+| `enemies` | AF Peacekeeper II (Enemies) |
+| `turrets` | AF Turret (Turrets) |
+| `turrets` | AF Turret (Turrets) |
+| `turrets` | AF Turret (Turrets) |
+| `turrets` | AF Turret (Turrets) |
 

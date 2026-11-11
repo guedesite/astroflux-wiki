@@ -56,5 +56,8 @@ type: "mech"
 | `bitmap` | spawner_3.png (Images) |
 | `enemy` | Trigun lvl 5 (Enemies) |
 | `enemy2` | Seeker Lvl 6 (Enemies) |
+| `turrets` | Blaster 280 arc Turret lvl 6 (Turrets) |
+| `turrets` | Blaster 280 arc Turret lvl 6 (Turrets) |
+| `turrets` | Blaster 280 arc Turret lvl 6 (Turrets) |
 | `explosionEffect` | Explosion Mech Spawner (Effects) |
 

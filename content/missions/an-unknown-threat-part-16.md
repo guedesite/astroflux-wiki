@@ -32,3 +32,9 @@ type: "transport"
 | `type` | transport |
 | `drop` | iNUrR_J0HU6eEg0dxKpO1A |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP3k S1.2 A2x35 (Drops) |
+

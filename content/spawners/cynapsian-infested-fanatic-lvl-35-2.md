@@ -57,4 +57,5 @@ type: "organic"
 | `bitmap` | boss_blob_spawner.png (Images) |
 | `enemy` | Infested Fanatic lvl 35 (Enemies) |
 | `enemy2` | Zlatte Lvl 4 (Enemies) |
+| `turrets` | Boss Mother Brain Shuriken (Turrets) |
 

@@ -52,10 +52,15 @@ type: null
 | --- | --- |
 | `ship` | Enemy Ossakel lvl 36 (Ships) |
 | `engine` | Enemy Ossakel lvl 36 (Engines) |
+| `weapons` | Enemy Ossakel Bomb lvl 36 (Weapons) |
+| `weapons` | Enemy Ossakel, Armor Reduc (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemy` | Kritillian, Ossakel lvl 36 (Spawners) |
+| `enemies` | Kritillian, Ossakel lvl 36 (Spawners) |
+| `enemies` | Survival, Spawner 2 (Spawners) |
+| `enemies` | Survival, Spawner 2 (Spawners) |
 

@@ -49,13 +49,17 @@ export const REF_FIELDS = {
     parent: "Bodies",
     bitmap: "Images",
     mission: "MissionTypes",
-    payVaultItem: "PayVaultItems"
+    payVaultItem: "PayVaultItems",
+    boss: "Bosses"
   },
   Spawners: {
     body: "Bodies",
     bitmap: "Images",
     enemy: "Enemies",
     enemy2: "Enemies",
+    enemies: "Enemies",
+    enemies2: "Enemies",
+    turrets: "Turrets",
     drops: "Drops",
     drops2: "Drops",
     explosionEffect: "Effects"
@@ -83,7 +87,8 @@ export const REF_FIELDS = {
     sound: "Sounds",
     fireEffect: "Effects",
     hitEffect: "Effects",
-    dotEffect: "Effects"
+    dotEffect: "Effects",
+    enemy: "Enemies"
   },
   Projectiles: {
     bitmap: "Images",
@@ -99,7 +104,8 @@ export const REF_FIELDS = {
   Skins: {
     ship: "Ships",
     engine: "Engines",
-    bitmap: "Images"
+    bitmap: "Images",
+    payVaultItem: "PayVaultItems"
   },
   Engines: {
     bitmap: "Images",
@@ -114,5 +120,8 @@ export const REF_FIELDS = {
   },
   ArtifactTypes: {
     bitmap: "Images"
+  },
+  MissionTypes: {
+    drop: "Drops"
   }
 };

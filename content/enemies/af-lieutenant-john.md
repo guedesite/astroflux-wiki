@@ -47,6 +47,7 @@ type: null
 | --- | --- |
 | `ship` | Aurora V2 (Ships) |
 | `engine` | Player Supporter (Engines) |
+| `weapons` | AF Boomerang (Weapons) |
 
 ## Referenced By
 

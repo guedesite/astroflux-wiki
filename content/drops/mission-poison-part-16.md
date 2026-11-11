@@ -38,3 +38,9 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Death Cloud (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | The Ultimate Poison: Part 17 (MissionTypes) |
+

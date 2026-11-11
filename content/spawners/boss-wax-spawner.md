@@ -58,3 +58,9 @@ type: "organic"
 | `enemy2` | Locust lvl 22 (Enemies) |
 | `explosionEffect` | Explosion Organic Large (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `spawners` | Chelonidron (Bosses) |
+

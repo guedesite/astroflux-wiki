@@ -48,4 +48,24 @@ type: "mech"
 | --- | --- |
 | `explosionEffect` | Explosion HUGE (Effects) |
 | `explosionSound` | explosion_mech_spawner.mp3 (Sounds) |
+| `spawners` | Boss Wax Spawner lvl 72 (Spawners) |
+| `turrets` | Boss Cleaner Blade (Turrets) |
+| `turrets` | Boss Cleaner Blade (Turrets) |
+| `turrets` | Boss Cleaner Blade (Turrets) |
+| `turrets` | Boss Cleaner Macrophage (Turrets) |
+| `turrets` | Boss Cleaner Macrophage (Turrets) |
+| `turrets` | Boss Cleaner Macrophage (Turrets) |
+| `turrets` | Boss Cleaner Macrophage (Turrets) |
+| `turrets` | Boss Cleaner (Turrets) |
+| `turrets` | Boss Cleaner Blade (Turrets) |
+| `turrets` | Boss Cleaner Blade (Turrets) |
+| `turrets` | Boss Cleaner Blade (Turrets) |
+| `turrets` | Boss Cleaner Macrophage (Turrets) |
+| `turrets` | Boss Cleaner Macrophage (Turrets) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `boss` | Boss spawner 2 (Bodies) |
 

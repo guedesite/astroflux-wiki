@@ -29,3 +29,9 @@ type: "transport"
 | `type` | transport |
 | `drop` | PVxG4GVbIEmAER3s-N0D_Q |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Unknown Data 9 (Drops) |
+

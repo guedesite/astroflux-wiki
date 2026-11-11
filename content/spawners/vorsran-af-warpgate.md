@@ -50,4 +50,6 @@ type: null
 | Relation | Target |
 | --- | --- |
 | `body` | Warp Gate (Bodies) |
+| `enemies` | AF Peacekeeper II (Enemies) |
+| `enemies2` | Opertive Smith (Enemies) |
 

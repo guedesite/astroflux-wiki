@@ -59,3 +59,12 @@ type: "mech"
 | `enemy2` | Jagged Star Blood lvl 28 (Enemies) |
 | `explosionEffect` | Explosion Mech Spawner (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `spawners` | ??? (Bosses) |
+| `spawners` | ??? (Bosses) |
+| `spawners` | Mother Brain (Bosses) |
+| `spawners` | Mother Brain (Bosses) |
+

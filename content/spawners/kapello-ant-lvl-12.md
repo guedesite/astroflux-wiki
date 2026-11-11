@@ -46,4 +46,6 @@ type: "mech"
 | --- | --- |
 | `body` | Hidden Ant (Bodies) |
 | `bitmap` | spawner_1.png (Images) |
+| `enemies` | Ant lvl 12 (Enemies) |
+| `turrets` | Rocket 360 arc Turret lvl 9 (Turrets) |
 

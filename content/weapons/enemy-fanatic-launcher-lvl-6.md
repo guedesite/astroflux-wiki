@@ -55,3 +55,10 @@ type: "projectile"
 | `fireSound` | bug-explosion.mp3 (Sounds) |
 | `sound` | fire2.mp3 (Sounds) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Fanatic Purifier lvl 6 (Enemies) |
+| `weapons` | Fanatic lvl 6 (Enemies) |
+

@@ -57,10 +57,12 @@ type: null
 | --- | --- |
 | `ship` | Enemy Renegade DMAT-90 (Ships) |
 | `engine` | Player DMAT-90 (Engines) |
+| `weapons` | Enemy Gatling Laser (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemy` | Kritillian, Renegade DMAT-90 lvl 30 (Spawners) |
+| `enemies` | Kritillian, Renegade DMAT-90 lvl 30 (Spawners) |
 

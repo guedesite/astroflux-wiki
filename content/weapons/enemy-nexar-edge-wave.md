@@ -67,3 +67,10 @@ type: "projectile"
 | `projectile` | Nexar Edge (Projectiles) |
 | `fireSound` | fire2.mp3 (Sounds) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Commodore Herivis lvl 122 (Enemies) |
+| `weapons` | Nexar Elite Edge lvl 122 (Enemies) |
+

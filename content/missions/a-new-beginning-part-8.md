@@ -33,3 +33,9 @@ type: "transport"
 | `completeDescription` | We arrived just in time, it seems like the slavers didn’t have time to land on the planet yet, everyone in the colony is safe!  |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Tutorial 8 (Drops) |
+

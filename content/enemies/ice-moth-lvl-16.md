@@ -58,6 +58,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Moth Ice lvl 16 (Ships) |
 | `engine` | Enemy Moth Mature lvl 11 (Engines) |
+| `weapons` | Enemy Moth Ice Spit lvl 16 (Weapons) |
 
 ## Referenced By
 

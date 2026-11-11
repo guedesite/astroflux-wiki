@@ -78,4 +78,11 @@ type: null
 | --- | --- |
 | `ship` | Enemy Nexar Tank S1 (Ships) |
 | `engine` | Enemy Nexar Tank (Engines) |
+| `weapons` | Enemy Nexar Gatling Gun (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies2` | Vorsran, Nexar Lt Xhaveris (Spawners) |
 

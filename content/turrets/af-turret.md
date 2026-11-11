@@ -38,3 +38,40 @@ type: null
 | --- | --- |
 | `weapon` | AF Turret Blaster (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Fulzar, AF Turret (Spawners) |
+| `turrets` | Fulzar, AF Turret (Spawners) |
+| `turrets` | Fulzar, AF Turret (Spawners) |
+| `turrets` | Fulzar, AF Turret (Spawners) |
+| `turrets` | Fulzar, AF Turret (Spawners) |
+| `turrets` | Fulzar, AF Turret (Spawners) |
+| `turrets` | Fulzar, AF Turret (Spawners) |
+| `turrets` | Fulzar, AF Turret (Spawners) |
+| `turrets` | Fulzar, AF Turret (Spawners) |
+| `turrets` | Fulzar, AF Turret (Spawners) |
+| `turrets` | Fulzar, AF Turret (Spawners) |
+| `turrets` | Fulzar, AF Turret (Spawners) |
+| `turrets` | Fulzar, New Erath (Spawners) |
+| `turrets` | Fulzar, New Erath (Spawners) |
+| `turrets` | Fulzar, New Erath (Spawners) |
+| `turrets` | Fulzar, New Erath (Spawners) |
+| `turrets` | Vorsran, AF Turret (Spawners) |
+| `turrets` | Vorsran, AF Turret (Spawners) |
+| `turrets` | Vorsran, AF Turret (Spawners) |
+| `turrets` | Vorsran, AF Turret (Spawners) |
+| `turrets` | Vorsran, AF Turret (Spawners) |
+| `turrets` | Vorsran, AF Turret (Spawners) |
+| `turrets` | Vorsran, AF Turret (Spawners) |
+| `turrets` | Vorsran, AF Turret (Spawners) |
+| `turrets` | Vorsran, AF Turret (Spawners) |
+| `turrets` | Vorsran, AF Turret (Spawners) |
+| `turrets` | Vorsran, AF Turret (Spawners) |
+| `turrets` | Vorsran, AF Turret (Spawners) |
+| `turrets` | Vorsran, AF Turret (Spawners) |
+| `turrets` | Vorsran, AF Turret (Spawners) |
+| `turrets` | Vorsran, AF Turret (Spawners) |
+| `turrets` | Vorsran, AF Turret (Spawners) |
+

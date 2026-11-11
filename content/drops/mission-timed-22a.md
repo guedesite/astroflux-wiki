@@ -46,3 +46,22 @@ type: "mission"
 | `dropItem` | Plasma Fluids (Commodities) |
 | `dropItem` | Engine Part (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Questions about that past: Part 12 (MissionTypes) |
+| `drop` | The Swarm: Part 2 (MissionTypes) |
+| `drop` | Locust Frenzy (MissionTypes) |
+| `drop` | Egg Locust (MissionTypes) |
+| `drop` | Electrocute (MissionTypes) |
+| `drop` | Dire Fest (MissionTypes) |
+| `drop` | The Infestation: Part 1 (MissionTypes) |
+| `drop` | Kill Blood Plankton! (MissionTypes) |
+| `drop` | The Infestation: Part 4 (MissionTypes) |
+| `drop` | Thorn Ambush III (MissionTypes) |
+| `drop` | The Flame Trail (MissionTypes) |
+| `drop` | Brain Dead (MissionTypes) |
+| `drop` | Another Dimension: Part 1 (MissionTypes) |
+| `drop` | The Infestation: Part 5 (MissionTypes) |
+

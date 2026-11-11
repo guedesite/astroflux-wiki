@@ -44,3 +44,60 @@ type: null
 | --- | --- |
 | `weapon` | Boss Mother Brain Shuriken (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Advectorian (Bosses) |
+| `turrets` | Advectorian (Bosses) |
+| `turrets` | Mother Brain (Bosses) |
+| `turrets` | Mother Brain (Bosses) |
+| `turrets` | Mother Brain (Bosses) |
+| `turrets` | Mother Brain (Bosses) |
+| `turrets` | Cynapsian, Infested Fanatic lvl 35 (Spawners) |
+| `turrets` | Cynapsian, Infested Fanatic lvl 35 (Spawners) |
+| `turrets` | Kritillian, Renegade DMAT-90 lvl 30 (Spawners) |
+| `turrets` | Neurona, Infested Fanatic R lvl 38 (Spawners) |
+| `turrets` | Neurona, Infested Fanatic R lvl 38 (Spawners) |
+| `turrets` | Neurona, Infested Fanatic R lvl 38 (Spawners) |
+| `turrets` | Neurona, Infested Fanatic R lvl 38 (Spawners) |
+| `turrets` | Neurona, Infested Fanatic R lvl 38 (Spawners) |
+| `turrets` | Neurona, Infested Fanatic R lvl 38 (Spawners) |
+| `turrets` | Neurona, Infested Fanatic R lvl 38 (Spawners) |
+| `turrets` | Neurona, Infested Fanatic R lvl 38 (Spawners) |
+| `turrets` | Neurona, Infested Fanatic R lvl 38 (Spawners) |
+| `turrets` | Neurona, Infested Fanatic R lvl 38 (Spawners) |
+| `turrets` | Neurona, Infested Fanatic R lvl 38 (Spawners) |
+| `turrets` | Neurona, Infested Fanatic R lvl 38 (Spawners) |
+| `turrets` | Neurona, Infested Fanatic R lvl 38 (Spawners) |
+| `turrets` | Neurona, Infested Fanatic R lvl 38 (Spawners) |
+| `turrets` | Neurona, Infested Fanatic R lvl 38 (Spawners) |
+| `turrets` | Neurona, Infested Fanatic lvl 35 (Spawners) |
+| `turrets` | Neurona, Shuriken Macrofag (Spawners) |
+| `turrets` | Neurona, Shuriken Macrofag (Spawners) |
+| `turrets` | Sarkinon, Infested Fanatic lvl 35 (Spawners) |
+| `turrets` | Sarkinon, Infested Fanatic lvl 35 (Spawners) |
+| `turrets` | Sarkinon, Infested Fanatic lvl 35 (Spawners) |
+| `turrets` | Sarkinon, Shuriken Macrofag (Spawners) |
+| `turrets` | Sarkinon, Shuriken Macrofag (Spawners) |
+| `turrets` | Sarkinon, Shuriken Macrofag (Spawners) |
+| `turrets` | Sarkinon, Shuriken Macrofag (Spawners) |
+| `turrets` | Sarkinon, Shuriken Macrofag (Spawners) |
+| `turrets` | Sarkinon, Shuriken Macrofag (Spawners) |
+| `turrets` | Sarkinon, Shuriken Macrofag (Spawners) |
+| `turrets` | Sarkinon, Shuriken Spawner (Spawners) |
+| `turrets` | Sarkinon, Shuriken Spawner (Spawners) |
+| `turrets` | Sarkinon, Shuriken Spawner (Spawners) |
+| `turrets` | Sarkinon, Shuriken Spawner (Spawners) |
+| `turrets` | Sarkinon, Shuriken Spawner (Spawners) |
+| `turrets` | Sarkinon, Shuriken Spawner (Spawners) |
+| `turrets` | Sarkinon, Shuriken Spawner (Spawners) |
+| `turrets` | Sarkinon, Shuriken Spawner (Spawners) |
+| `turrets` | Sarkinon, Shuriken Spawner (Spawners) |
+| `turrets` | Sarkinon, Shuriken Spawner (Spawners) |
+| `turrets` | Sarkinon, Shuriken Spawner (Spawners) |
+| `turrets` | Sarkinon, Shuriken Spawner (Spawners) |
+| `turrets` | Sarkinon, Shuriken Spawner (Spawners) |
+| `turrets` | Sarkinon, Shuriken Spawner (Spawners) |
+| `turrets` | Zergilin, Renegade Spy-1 lvl 45 (Spawners) |
+

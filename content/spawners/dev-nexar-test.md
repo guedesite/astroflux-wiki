@@ -61,5 +61,9 @@ type: "mech"
 | `body` | Hidden Test (Bodies) |
 | `bitmap` | nexar_spawner_active1.png (Images) |
 | `enemy2` | Larva lvl 14 (Enemies) |
+| `enemies` | Emperor Xhersix lvl 160 (Enemies) |
+| `enemies` | Emperor Yhgvis lvl 160 (Enemies) |
+| `enemies` | Emperor Zharix lvl 160 (Enemies) |
+| `enemies2` | Nexar Stealth Bomber lvl 80 (Enemies) |
 | `explosionEffect` | Explosion Organic Large (Effects) |
 

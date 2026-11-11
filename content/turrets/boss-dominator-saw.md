@@ -37,3 +37,10 @@ type: null
 | `arc` | 360 |
 | `rotationSpeed` | 0 |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Dominator (Bosses) |
+| `turrets` | Dominator (Bosses) |
+

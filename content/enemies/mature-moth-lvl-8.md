@@ -45,6 +45,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Moth Mature lvl 8 (Ships) |
 | `engine` | Enemy Moth Mature lvl 8 (Engines) |
+| `weapons` | Enemy Moth Mature Spit lvl 8 (Weapons) |
 
 ## Referenced By
 

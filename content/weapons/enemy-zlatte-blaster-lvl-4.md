@@ -53,3 +53,10 @@ type: "blaster"
 | `projectile` | Blaster Bullet (Projectiles) |
 | `fireSound` | laser7.mp3 (Sounds) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Zlatte Lvl 4 (Enemies) |
+| `weapons` | Zlatte Lvl 4 (Enemies) |
+

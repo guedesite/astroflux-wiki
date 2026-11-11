@@ -39,3 +39,11 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | The Nexar Elite (MissionTypes) |
+| `drop` | The Nexar Elite (MissionTypes) |
+| `drop` | The Nexar Elite (MissionTypes) |
+

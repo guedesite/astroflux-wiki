@@ -55,4 +55,21 @@ type: null
 | --- | --- |
 | `ship` | AF Peacekeeper 2 (Ships) |
 | `engine` | Player Police Thruster (Engines) |
+| `weapons` | AF Blaster 2 (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies2` | Fulzar, AF Nguyen (Spawners) |
+| `enemies` | Fulzar, AF Turret (Spawners) |
+| `enemies` | Fulzar, AF Turret (Spawners) |
+| `enemies` | Fulzar, AF Turret (Spawners) |
+| `enemies` | Fulzar, AF Warpgate (Spawners) |
+| `enemies` | Vorsran, AF Research (Spawners) |
+| `enemies` | Vorsran, AF Turret (Spawners) |
+| `enemies` | Vorsran, AF Turret (Spawners) |
+| `enemies` | Vorsran, AF Turret (Spawners) |
+| `enemies` | Vorsran, AF Turret (Spawners) |
+| `enemies` | Vorsran, AF Warpgate (Spawners) |
 

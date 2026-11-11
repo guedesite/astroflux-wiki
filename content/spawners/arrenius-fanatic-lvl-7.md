@@ -56,5 +56,9 @@ type: "mech"
 | `bitmap` | spawner_3.png (Images) |
 | `enemy` | Fanatic lvl 7 (Enemies) |
 | `enemy2` | Stalker lvl 6 (Enemies) |
+| `turrets` | Blaster 280 arc Turret lvl 6 (Turrets) |
+| `turrets` | Blaster 280 arc Turret lvl 6 (Turrets) |
+| `turrets` | Blaster 280 arc Turret lvl 6 (Turrets) |
+| `turrets` | Blaster 280 arc Turret lvl 6 (Turrets) |
 | `explosionEffect` | Explosion Mech Spawner (Effects) |
 

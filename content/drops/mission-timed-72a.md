@@ -39,3 +39,12 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Collect [amount] Hydrogen Oscillators! (MissionTypes) |
+| `drop` | Monachus Destruction (MissionTypes) |
+| `drop` | Kill [amount] Bionic Plankton! (MissionTypes) |
+| `drop` | Bionic Macropahes! (MissionTypes) |
+

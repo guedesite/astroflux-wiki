@@ -48,6 +48,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Moth Baby Ice lvl 10 (Ships) |
 | `engine` | Enemy Moth Baby Ice lvl 10 (Engines) |
+| `weapons` | Enemy Moth Baby Spit Ice lvl 10 (Weapons) |
 
 ## Referenced By
 

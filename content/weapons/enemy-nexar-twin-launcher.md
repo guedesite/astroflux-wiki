@@ -70,3 +70,9 @@ type: "projectile"
 | `fireSound` | missile.mp3 (Sounds) |
 | `sound` | fire2.mp3 (Sounds) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Nexar Twin lvl 90 (Enemies) |
+

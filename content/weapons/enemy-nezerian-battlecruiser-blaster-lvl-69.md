@@ -67,3 +67,9 @@ type: "blaster"
 | `projectile` | Gatling Bullet (Projectiles) |
 | `fireSound` | fire2.mp3 (Sounds) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Nezerian Battlecruiser lvl 67 (Enemies) |
+

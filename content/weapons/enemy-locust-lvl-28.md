@@ -65,4 +65,6 @@ type: "projectile"
 | Relation | Source |
 | --- | --- |
 | `weapon` | Locust Swarmer lvl 28 (Turrets) |
+| `weapons` | Infested Fanatic Raider lvl 38 (Enemies) |
+| `weapons` | Infested Fanatic lvl 35 (Enemies) |
 

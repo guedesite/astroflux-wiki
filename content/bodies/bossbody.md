@@ -45,4 +45,5 @@ type: "boss"
 | Relation | Target |
 | --- | --- |
 | `solarSystem` | Argon (SolarSystems) |
+| `boss` | Three Emperors (Bosses) |
 

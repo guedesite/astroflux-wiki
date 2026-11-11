@@ -68,3 +68,9 @@ type: "projectile"
 | `fireEffect` | DOT Acid Ice (Effects) |
 | `dotEffect` | DOT Acid Ice (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Ice Moth lvl 16 (Enemies) |
+

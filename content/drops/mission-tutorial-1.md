@@ -31,3 +31,11 @@ type: "mission"
 | Item | Table | Chance | Effective Chance | Quantity |
 | --- | --- | ---: | ---: | --- |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Enemy takedown (MissionTypes) |
+| `drop` | Stalker takedown (MissionTypes) |
+| `drop` | A New Beginning: Part 1 (MissionTypes) |
+

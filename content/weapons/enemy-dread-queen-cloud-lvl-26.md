@@ -59,3 +59,9 @@ type: "blaster"
 | `projectile` | Dread Queen Acid Cloud (Projectiles) |
 | `dotEffect` | DOT Acid Dark (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Dread Queen lvl 68 (Enemies) |
+

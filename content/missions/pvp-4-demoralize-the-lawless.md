@@ -32,3 +32,9 @@ type: "kill"
 | `policeMission` | true |
 | `majorType` | pvpChain |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Reach Level 6 (Drops) |
+

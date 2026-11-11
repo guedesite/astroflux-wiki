@@ -56,4 +56,9 @@ type: "organic"
 | `bitmap` | black_hole.png (Images) |
 | `explosionEffect` | Explosion HUGE (Effects) |
 | `explosionSound` | explosion_huge2.mp3 (Sounds) |
+| `spawners` | Boss Blob Spawner 2 lvl 30 (Spawners) |
+| `spawners` | Boss Blob Spawner 2 lvl 30 (Spawners) |
+| `spawners` | Boss Blob Spawner lvl 30 (Spawners) |
+| `spawners` | Boss Blob Spawner lvl 30 (Spawners) |
+| `turrets` | Nexar Wave Generator lvl 120 (Turrets) |
 

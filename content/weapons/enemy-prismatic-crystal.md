@@ -98,3 +98,10 @@ type: "blaster"
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelMineral` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Abstractor Circle (Enemies) |
+| `weapons` | Renegade Crystal lvl 76 (Enemies) |
+

@@ -32,3 +32,9 @@ type: "pickup"
 | `completeDescription` | Xhargreg: ”Great! One Implant is actually enough… but I like the number 8 more… anyway return here with the implants… I need to try them right away! Hahahahehahgrh… oh and I even have a reward for you!” |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP16k F8 (Drops) |
+

@@ -81,3 +81,11 @@ type: "beam"
 | `fireSound` | laser3.mp3 (Sounds) |
 | `dotEffect` | DOT Reduced Armor (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Commander Zherghur lvl 88 (Enemies) |
+| `weapons` | Nexar Blade lvl 95 (Enemies) |
+| `weapons` | Nexar Vanguard lvl 84 (Enemies) |
+

@@ -54,4 +54,13 @@ type: null
 | --- | --- |
 | `ship` | AF Agent (Ships) |
 | `engine` | Player Agent (Engines) |
+| `weapons` | AF C-4 (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies` | AF Agent Spawner Arrenius (Spawners) |
+| `enemies2` | Fulzar, AF Ace (Spawners) |
+| `enemies` | Sarkinon, AF Agent (Spawners) |
 

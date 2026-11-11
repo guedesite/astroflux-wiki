@@ -64,3 +64,12 @@ type: "projectile"
 | `fireSound` | moth-spit1.mp3 (Sounds) |
 | `sound` | laser1.mp3 (Sounds) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Dread Moth lvl 24 (Enemies) |
+| `weapons` | Dread Moth lvl 25 (Enemies) |
+| `weapons` | Dread Moth lvl 52 (Enemies) |
+| `weapons` | Dread Moth lvl 62 (Enemies) |
+

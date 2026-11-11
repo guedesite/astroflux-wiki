@@ -63,4 +63,17 @@ type: null
 | --- | --- |
 | `ship` | Operative Smith (Ships) |
 | `engine` | Player Medic (Engines) |
+| `weapons` | AF Acid Spore (Weapons) |
+| `weapons` | AF Acid Spray (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies` | AF Agent Spawner Mitrilion (Spawners) |
+| `enemies` | AF Spawner Arrenius WF (Spawners) |
+| `enemies` | AF Spawner Kritilian WG (Spawners) |
+| `enemies2` | Fulzar, AF Warpgate (Spawners) |
+| `enemies2` | Sarkinon, AF Agent (Spawners) |
+| `enemies2` | Vorsran, AF Warpgate (Spawners) |
 

@@ -35,3 +35,18 @@ type: null
 | --- | --- |
 | `weapon` | Boss Mech Blaster (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `turrets` | Mandrom (Bosses) |
+| `turrets` | Mandrom (Bosses) |
+| `turrets` | Mandrom (Bosses) |
+| `turrets` | Mandrom (Bosses) |
+| `turrets` | Mandrom (Bosses) |
+| `turrets` | Mandrom (Bosses) |
+| `turrets` | Mandrom (Bosses) |
+| `turrets` | Mandrom (Bosses) |
+| `turrets` | Mandrom (Bosses) |
+| `turrets` | Mandrom (Bosses) |
+

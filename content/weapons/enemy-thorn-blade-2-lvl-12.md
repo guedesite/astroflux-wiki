@@ -53,3 +53,9 @@ type: "projectile"
 | `fireSound` | missile.mp3 (Sounds) |
 | `fireEffect` | DOT Acid Red (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Vicious Blade lvl 12 (Enemies) |
+

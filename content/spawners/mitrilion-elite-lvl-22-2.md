@@ -59,5 +59,11 @@ type: "mech"
 | `bitmap` | spawner_3.png (Images) |
 | `enemy` | Elite Flamer lvl 26 (Enemies) |
 | `enemy2` | Elite Repair Probe lvl 26 (Enemies) |
+| `enemies` | Elite Flamer lvl 26 (Enemies) |
+| `enemies2` | Elite Repair Probe lvl 26 (Enemies) |
+| `turrets` | Elite Flameball Turret lvl 22 (Turrets) |
+| `turrets` | Elite Flameball Turret lvl 22 (Turrets) |
+| `turrets` | Elite Flameball Turret lvl 22 (Turrets) |
+| `turrets` | Elite Flameball Turret lvl 22 (Turrets) |
 | `explosionEffect` | Explosion Mech Spawner (Effects) |
 

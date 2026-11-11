@@ -75,10 +75,15 @@ type: null
 | --- | --- |
 | `ship` | Enemy Drak lvl 26 (Ships) |
 | `engine` | Enemy Drak lvl 26 (Engines) |
+| `weapons` | Enemy Drak Mine lvl 26 (Weapons) |
+| `weapons` | Enemy Drak Wave lvl 26 (Weapons) |
 
 ## Referenced By
 
 | Relation | Source |
 | --- | --- |
 | `enemy` | Hidden Drak lvl 28 (Spawners) |
+| `enemies` | Hidden Drak lvl 28 (Spawners) |
+| `enemies` | Survival, Spawner 2 (Spawners) |
+| `enemies` | Survival, Spawner 2 (Spawners) |
 

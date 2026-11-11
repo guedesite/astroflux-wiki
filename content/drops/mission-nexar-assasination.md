@@ -39,3 +39,10 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Slay the Nether Horde (MissionTypes) |
+| `drop` | Assasination Plot (MissionTypes) |
+

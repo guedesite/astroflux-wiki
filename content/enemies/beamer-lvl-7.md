@@ -42,6 +42,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Beamer lvl 7 (Ships) |
 | `engine` | Enemy Beamer lvl 7 (Engines) |
+| `weapons` | Enemy Beamer lvl 7 (Weapons) |
 
 ## Referenced By
 
@@ -53,4 +54,8 @@ type: null
 | `enemy` | Arrenius, Visible 33, lvl 7 (Spawners) |
 | `enemy` | Arrenius, Visible 35, lvl 7 (Spawners) |
 | `enemy` | Arrenius, Visible 38, lvl 7 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
 

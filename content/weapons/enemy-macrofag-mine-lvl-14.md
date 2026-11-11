@@ -60,3 +60,9 @@ type: "projectile"
 | `projectile` | Acid Mine (Projectiles) |
 | `dotEffect` | DOT Acid (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Macrophage lvl 14 (Enemies) |
+

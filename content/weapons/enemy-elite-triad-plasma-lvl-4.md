@@ -57,3 +57,10 @@ type: "blaster"
 | `fireSound` | fire2.mp3 (Sounds) |
 | `dotEffect` | DOT Plasma (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Elite Triad lvl 4 (Enemies) |
+| `weapons` | X-42 Triad (Enemies) |
+

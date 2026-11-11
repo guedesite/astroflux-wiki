@@ -96,3 +96,10 @@ type: "blaster"
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelMineral` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Aureus Monachus lvl 160 (Enemies) |
+| `weapons` | Aureus Monachus lvl 73 (Enemies) |
+

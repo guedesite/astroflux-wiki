@@ -52,6 +52,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Seeker lvl 1 (Ships) |
 | `engine` | Enemy Seeker Engine lvl 1 (Engines) |
+| `weapons` | Enemy Seeker Slug lvl 1 (Weapons) |
 
 ## Referenced By
 

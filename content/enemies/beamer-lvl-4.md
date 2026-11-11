@@ -42,6 +42,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Beamer lvl 4 (Ships) |
 | `engine` | Enemy Beamer lvl 4 (Engines) |
+| `weapons` | Enemy Beamer lvl 4 (Weapons) |
 
 ## Referenced By
 

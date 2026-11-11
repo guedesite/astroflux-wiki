@@ -39,3 +39,12 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Steel (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Fulzar Cruise! (MissionTypes) |
+| `drop` | Pickup [amount] Bionic Implant! (MissionTypes) |
+| `drop` | Pickup [amount] Polyhedric Fabric. (MissionTypes) |
+| `drop` | Anti-fighter! (MissionTypes) |
+

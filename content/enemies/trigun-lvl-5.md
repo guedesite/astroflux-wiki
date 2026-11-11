@@ -50,6 +50,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Trigun lvl 5 (Ships) |
 | `engine` | Enemy Trigun lvl 5 (Engines) |
+| `weapons` | Enemy Trigun lvl 5 (Weapons) |
 
 ## Referenced By
 
@@ -71,5 +72,9 @@ type: null
 | `enemy` | Durian, Visible 27, lvl 4 (Spawners) |
 | `enemy2` | Durian, Visible 28, lvl 5 (Spawners) |
 | `enemy2` | Durian, Visible 8, lvl 5 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
 | `enemy2` | Venturi, Seeker/Trigun lvl 5 (Spawners) |
 

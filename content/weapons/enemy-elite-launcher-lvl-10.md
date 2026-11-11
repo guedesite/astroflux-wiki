@@ -60,3 +60,9 @@ type: "projectile"
 | `fireSound` | bug-explosion.mp3 (Sounds) |
 | `sound` | fire2.mp3 (Sounds) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Elite Launcher lvl 10 (Enemies) |
+

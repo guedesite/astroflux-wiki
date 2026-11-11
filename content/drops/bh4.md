@@ -39,3 +39,9 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Plasma Fluids (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Bounty Hunter Vorsran: Part 4 (MissionTypes) |
+

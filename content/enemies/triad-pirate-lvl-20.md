@@ -58,6 +58,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Triad Pirate lvl 20 (Ships) |
 | `engine` | Enemy Triad Pirate lvl 20 (Engines) |
+| `weapons` | Enemy Triad Pirate Plasma lvl 20 (Weapons) |
 
 ## Referenced By
 

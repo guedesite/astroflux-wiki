@@ -51,4 +51,5 @@ type: null
 | Relation | Target |
 | --- | --- |
 | `body` | Sun (Bodies) |
+| `enemies` | Admiral Zhersis lvl 130 (Enemies) |
 

@@ -31,3 +31,9 @@ type: "kill"
 | `completeDescription` | Captain, we have disturbing news, Ono has found out that the Queen is not responsible for its own actions, it is being mind controlled by something else. The energy readings from the Queen and the mechanical nano robots found inside the carcass indicates that something very unnatural is going on. |
 | `majorType` | static |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Timed 28a (Drops) |
+

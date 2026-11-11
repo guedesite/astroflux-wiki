@@ -51,3 +51,9 @@ type: "mech"
 | `explosionEffect` | Explosion HUGE (Effects) |
 | `explosionSound` | explosion_big.mp3 (Sounds) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `boss` | Boss Event (Bodies) |
+

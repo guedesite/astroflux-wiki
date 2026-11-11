@@ -69,4 +69,11 @@ type: null
 | --- | --- |
 | `ship` | Pet Orb 1 (Ships) |
 | `engine` | Enemy Aureus Still (Engines) |
+| `weapons` | Pet Orb 1 (Kinetic) (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemy` | Aureus Kinetic Manipulator (Weapons) |
 

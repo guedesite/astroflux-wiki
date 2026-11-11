@@ -75,6 +75,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Moth Fire lvl 25 (Ships) |
 | `engine` | Enemy Moth Dire lvl 23 (Engines) |
+| `weapons` | Enemy Moth Flame Trail (Weapons) |
 
 ## Referenced By
 
@@ -82,6 +83,7 @@ type: null
 | --- | --- |
 | `enemy2` | Vibrilian, Fire Moth lvl 24 (Spawners) |
 | `enemy2` | Vibrilian, Fire Moth lvl 25 (Spawners) |
+| `enemies2` | Vibrilian, Fire Moth lvl 25 (Spawners) |
 | `enemy2` | Vibrilian, Fire Moth lvl 25 (Spawners) |
 | `enemy2` | Vibrilian, Fire Moth lvl 25 (Spawners) |
 | `enemy2` | Vibrilian, Fire Moth lvl 25 (Spawners) |

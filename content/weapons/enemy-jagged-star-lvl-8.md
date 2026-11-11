@@ -48,3 +48,9 @@ type: "blaster"
 | --- | --- |
 | `projectile` | Thorn (Projectiles) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Jagged Star lvl 8 (Enemies) |
+

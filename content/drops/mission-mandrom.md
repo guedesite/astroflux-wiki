@@ -42,3 +42,9 @@ type: "mission"
 | `dropItem` | Core Charge (Commodities) |
 | `dropItem` | Engine Part (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Mandrom Terror (MissionTypes) |
+

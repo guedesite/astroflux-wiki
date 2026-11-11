@@ -31,3 +31,9 @@ type: "kill"
 | `available` | true |
 | `majorType` | time |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission Timed 10a (Drops) |
+

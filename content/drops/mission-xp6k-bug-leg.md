@@ -39,3 +39,9 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Bug Leg (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Bug Legs: Part 8 (MissionTypes) |
+

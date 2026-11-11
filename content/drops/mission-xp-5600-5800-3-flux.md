@@ -31,3 +31,11 @@ type: "mission"
 | Item | Table | Chance | Effective Chance | Quantity |
 | --- | --- | ---: | ---: | --- |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | The Ultimate Poison: Part 12 (MissionTypes) |
+| `drop` | The Ultimate Poison: Part 10 (MissionTypes) |
+| `drop` | Bug Legs: Part 1 (MissionTypes) |
+

@@ -67,3 +67,10 @@ type: "blaster"
 | `projectile` | Enemy Guardian Slug (Projectiles) |
 | `fireSound` | fire2.mp3 (Sounds) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Elite Guardian lvl 8 (Enemies) |
+| `weapons` | X-73 Guardian (Enemies) |
+

@@ -62,4 +62,11 @@ type: null
 | --- | --- |
 | `ship` | AF Admiral Ymer (Ships) |
 | `engine` | Player Chrono (Engines) |
+| `weapons` | AF Chrono Beam (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies` | Fulzar, New Erath (Spawners) |
 

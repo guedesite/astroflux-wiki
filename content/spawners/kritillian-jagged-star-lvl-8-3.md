@@ -56,5 +56,6 @@ type: "organic"
 | `bitmap` | organic_spawner_4.png (Images) |
 | `enemy` | Jagged Star lvl 8 (Enemies) |
 | `enemy2` | Larva lvl 7 (Enemies) |
+| `turrets` | Zappler lvl 9 (Turrets) |
 | `explosionEffect` | Explosion Organic Large (Effects) |
 

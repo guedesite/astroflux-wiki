@@ -44,3 +44,11 @@ type: "mission"
 | `dropItem` | Core Charge (Commodities) |
 | `dropItem` | Engine Part (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Dread Queen! (MissionTypes) |
+| `drop` | Insane in the Motherbrain (MissionTypes) |
+| `drop` | The Infestation: Part 8 (MissionTypes) |
+

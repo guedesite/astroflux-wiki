@@ -47,4 +47,5 @@ type: null
 | --- | --- |
 | `body` | Vibrilliion Hidden Miniboss spawner (Bodies) |
 | `enemy` | Fanatic Tank lvl 72 (Enemies) |
+| `enemies` | Fanatic Tank lvl 72 (Enemies) |
 

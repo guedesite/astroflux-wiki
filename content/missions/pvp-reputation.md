@@ -37,3 +37,9 @@ type: "kill"
 | `subtype` | player |
 | `maxLvl` | 0 |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission PvP t2 (Drops) |
+

@@ -31,3 +31,9 @@ type: "transport"
 | `type` | transport |
 | `drop` | 5y8-or6zS0W_-Zx4KTKdzw |
 
+## Links
+
+| Relation | Target |
+| --- | --- |
+| `drop` | Mission XP 1000-1200 (Drops) |
+

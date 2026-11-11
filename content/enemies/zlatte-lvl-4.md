@@ -58,6 +58,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Zlat lvl 4 (Ships) |
 | `engine` | Enemy Zlatte Engine lvl 4 (Engines) |
+| `weapons` | Enemy Zlatte Blaster lvl 4 (Weapons) |
 
 ## Referenced By
 

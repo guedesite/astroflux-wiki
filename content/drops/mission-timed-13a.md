@@ -44,3 +44,19 @@ type: "mission"
 | `dropItem` | Core Charge (Commodities) |
 | `dropItem` | Engine Part (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Kill Plankton! (MissionTypes) |
+| `drop` | Destroy Beetles (MissionTypes) |
+| `drop` | Blob Invasion (MissionTypes) |
+| `drop` | Missile Hunter (MissionTypes) |
+| `drop` | Kill the Macrophages! (MissionTypes) |
+| `drop` | Stolen Technology: Part 1 (MissionTypes) |
+| `drop` | Paper Cuts (MissionTypes) |
+| `drop` | Alpha Hunt Hozar (MissionTypes) |
+| `drop` | Ice Breaker (MissionTypes) |
+| `drop` | Elite Triad Destruction (MissionTypes) |
+| `drop` | Guards, Guards! (MissionTypes) |
+

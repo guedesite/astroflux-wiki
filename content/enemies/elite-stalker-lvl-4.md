@@ -67,6 +67,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Elite Stalker lvl 4 (Ships) |
 | `engine` | Enemy Elite Stalker lvl 4 (Engines) |
+| `weapons` | Enemy Elite Stalker Blaster lvl 4 (Weapons) |
 
 ## Referenced By
 
@@ -76,4 +77,8 @@ type: null
 | `enemy` | Hyperion, Elite 2, lvl 4 (Spawners) |
 | `enemy` | Hyperion, Elite 2, lvl 4 (Spawners) |
 | `enemy` | Hyperion, Elite 2, lvl 4 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
+| `enemies` | Survival, Spawner 1 (Spawners) |
 

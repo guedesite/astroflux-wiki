@@ -38,3 +38,9 @@ type: "mission"
 | --- | --- |
 | `dropItem` | Railgun (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Unknown Data: Part 10 (MissionTypes) |
+

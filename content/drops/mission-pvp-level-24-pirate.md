@@ -42,3 +42,9 @@ type: "mission"
 | `dropItem` | Iridium (Commodities) |
 | `dropItem` | Blood-Claw S28 Smart Gun (Weapons) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | (PvP-7) A new weapon (MissionTypes) |
+

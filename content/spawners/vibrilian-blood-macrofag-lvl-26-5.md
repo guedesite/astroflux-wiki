@@ -57,5 +57,7 @@ type: "organic"
 | `bitmap` | organic_spawner_4.png (Images) |
 | `enemy` | Blood Macrophage lvl 26 (Enemies) |
 | `enemy2` | Locust lvl 22 (Enemies) |
+| `enemies` | Blood Macrophage lvl 26 (Enemies) |
+| `enemies2` | Locust lvl 22 (Enemies) |
 | `explosionEffect` | Explosion Organic Large Red (Effects) |
 

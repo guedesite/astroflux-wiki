@@ -105,3 +105,11 @@ type: "projectile"
 | `techLevelMineral` | Steel (Commodities) |
 | `techLevelMineral` | Iridium (Commodities) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | AF Agent (Enemies) |
+| `weapons` | AF Agent Ace (Enemies) |
+| `weapons` | AF Agent Ace II (Enemies) |
+

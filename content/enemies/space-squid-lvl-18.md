@@ -69,6 +69,7 @@ type: null
 | --- | --- |
 | `ship` | Enemy Space Squid lvl 18 (Ships) |
 | `engine` | Enemy Space Squid lvl 18 (Engines) |
+| `weapons` | Enemy Space Squid Wave lvl 18 (Weapons) |
 
 ## Referenced By
 

@@ -63,4 +63,11 @@ type: null
 | --- | --- |
 | `ship` | AF Admiral Cheng (Ships) |
 | `engine` | Player Tanker (Engines) |
+| `weapons` | AF Concussion Sphere (Weapons) |
+
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `enemies` | AF Spawner Arrenius Warp Gate (Spawners) |
 

@@ -32,3 +32,14 @@ type: "mission"
 | Item | Table | Chance | Effective Chance | Quantity |
 | --- | --- | ---: | ---: | --- |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | An Unknown Threat: Part 40 (MissionTypes) |
+| `drop` | An Unknown Threat: Part 41 (MissionTypes) |
+| `drop` | Counter attack! - Part 26 (MissionTypes) |
+| `drop` | Bug Legs: Part 11 (MissionTypes) |
+| `drop` | Bug Legs: Part 4 (MissionTypes) |
+| `drop` | Bug Legs: Part 6 (MissionTypes) |
+

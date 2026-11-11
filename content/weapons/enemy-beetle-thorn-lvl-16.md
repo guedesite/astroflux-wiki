@@ -61,3 +61,9 @@ type: "blaster"
 | `projectile` | Beetle Thorn Red (Projectiles) |
 | `dotEffect` | DOT Reduced Armor (Effects) |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `weapons` | Beetle lvl 16 (Enemies) |
+

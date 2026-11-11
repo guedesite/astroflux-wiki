@@ -32,3 +32,14 @@ type: "mission"
 | Item | Table | Chance | Effective Chance | Quantity |
 | --- | --- | ---: | ---: | --- |
 
+## Referenced By
+
+| Relation | Source |
+| --- | --- |
+| `drop` | Bug Legs: Part 12 (MissionTypes) |
+| `drop` | Bug Legs: Part 5 (MissionTypes) |
+| `drop` | Counter attack! - Part 20 (MissionTypes) |
+| `drop` | Counter attack! - Part 14 (MissionTypes) |
+| `drop` | Counter attack! - Part 8 (MissionTypes) |
+| `drop` | Counter attack! - Part 17 (MissionTypes) |
+

@@ -44,4 +44,5 @@ type: null
 | Relation | Target |
 | --- | --- |
 | `body` | Abandoned Hangar (Bodies) |
+| `enemies` | Large Mutated Wasp (Enemies) |
 
