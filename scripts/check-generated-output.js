@@ -47,7 +47,9 @@ function checkHtmlLinks() {
     const baseDir = baseHref.startsWith("/")
       ? baseHref.slice(1)
       : path.normalize(path.join(fileDir, baseHref || "."));
-    const matches = html.matchAll(/href="([^"]+)"/g);
+    // `<base href>` changes how relative URLs resolve; it is not itself a link,
+    // so keep it out of the href scan.
+    const matches = html.replace(/<base\b[^>]*>/gi, "").matchAll(/href="([^"]+)"/g);
     for (const match of matches) {
       const href = match[1];
       if (href.startsWith("http:") || href.startsWith("https:") || href.startsWith("#")) continue;
