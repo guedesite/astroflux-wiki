@@ -19,7 +19,7 @@ type: "cloak"
 | --- | --- |
 | `radius` | 0 |
 | `speed` | 50 |
-| `description` | - Cloaking Device- Renders your ship invisible- Effect brakes when taking damage- Effect ends on attack |
+| `description` | - Cloaking Device- Renders your ship invisible- Effect breaks when taking damage- Effect ends on attack |
 | `hasSpecialFunction` | false |
 | `healthVamp` | 0 |
 | `heatCost` | 1000 |

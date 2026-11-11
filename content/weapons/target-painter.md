@@ -20,7 +20,7 @@ type: "projectile"
 | `projectile` | HEgHT5MXrE6nCXKJdQ4PAw |
 | `radius` | 0 |
 | `speed` | 600 |
-| `description` | - Focus pet attack on the target.- Reduces targets armor for x seconds. |
+| `description` | - Focus pet attack on the target.- Reduces target's armor for x seconds. |
 | `hasSpecialFunction` | false |
 | `healthVamp` | 0 |
 | `heatCost` | 120 |

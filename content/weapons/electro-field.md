@@ -20,7 +20,7 @@ type: "smartGun"
 | `projectile` | Bb3Bg1QNhkiAmQNelrvxCQ |
 | `radius` | 0 |
 | `speed` | 520 |
-| `description` | - Area of effect damage- Reduces enemy Energy resistances |
+| `description` | - Area of effect damage- Reduces enemy energy resistance |
 | `hasSpecialFunction` | false |
 | `healthVamp` | 0 |
 | `heatCost` | 208 |

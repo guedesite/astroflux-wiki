@@ -20,7 +20,7 @@ type: "projectile"
 | `projectile` | sMY1XVilKkOEOSAR6-icvA |
 | `radius` | 475 |
 | `speed` | 250 |
-| `description` | - Large area of effect- Additional damage over time effect - Ten second detonation timer- Hold fire to charge up launching velocity- Click fire a second time to detonated all bombs |
+| `description` | - Large area of effect- Additional damage over time effect - Ten second detonation timer- Hold fire to charge up launching velocity- Click fire a second time to detonate all bombs |
 | `hasSpecialFunction` | false |
 | `healthVamp` | 0 |
 | `heatCost` | 990 |

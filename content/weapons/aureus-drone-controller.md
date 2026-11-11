@@ -20,7 +20,7 @@ type: "petSpawner"
 | `projectile` | 7UwPDgdUvEyPaaCoJrtpUg |
 | `radius` | 0 |
 | `speed` | 150 |
-| `description` | - Summons and controls a Monachus fighters.- The Monachus receives 75% of player Hp- Disables Target Shield regen for 3 seconds |
+| `description` | - Summons and controls a Monachus fighter.- The Monachus receives 75% of player HP- Disables target shield regeneration for 3 seconds |
 | `hasSpecialFunction` | false |
 | `healthVamp` | 0 |
 | `heatCost` | 800 |

@@ -19,7 +19,7 @@ type: "teleport"
 | --- | --- |
 | `radius` | 0 |
 | `speed` | 100 |
-| `description` | - Bionic teleportation... made a by Xhargreg... who knows how this can possibly work?- Can NOT be copied at the Pirate Bay |
+| `description` | - Bionic teleportation... made by Xhargreg... who knows how this can possibly work?- Can NOT be copied at the Pirate Bay |
 | `hasSpecialFunction` | false |
 | `healthVamp` | 0 |
 | `heatCost` | 445 |

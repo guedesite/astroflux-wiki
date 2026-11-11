@@ -23,7 +23,7 @@ type: "blaster"
 | `positionVariance` | 2 |
 | `name` | Enemy Fanatic Sticky Bomb lvl 10 |
 | `speed` | 650 |
-| `description` | - Bombs sticks to targets- Three seconds detonation timer- Increased dmg for every additional bombs on the same target |
+| `description` | - Bombs stick to targets- Three seconds detonation timer- Increased damage for every additional bomb on the same target |
 | `radius` | 0 |
 | `dot` | 8 |
 | `ttl` | 600 |

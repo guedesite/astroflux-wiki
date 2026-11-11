@@ -20,7 +20,7 @@ type: "petSpawner"
 | `projectile` | XecE0eO1TEu6AwxX_G2q3w |
 | `radius` | 25 |
 | `speed` | 190 |
-| `description` | - Creates and controlls an Aureus Energy Projection- Receives 50% of player Hp |
+| `description` | - Creates and controls an Aureus Energy Projection- Receives 50% of player HP |
 | `hasSpecialFunction` | false |
 | `healthVamp` | 0 |
 | `heatCost` | 800 |

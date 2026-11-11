@@ -2,12 +2,12 @@
 id: "Ships:fWbOupTA0E6xJhHxS2ZMwQ"
 source_table: "Ships"
 source_key: "fWbOupTA0E6xJhHxS2ZMwQ"
-slug: "ships/boss-cleaner-blade2"
-name: "Boss Cleaner Blade2"
+slug: "ships/boss-cleaner-blade-2"
+name: "Boss Cleaner Blade 2"
 type: "turret"
 ---
 
-# Boss Cleaner Blade2
+# Boss Cleaner Blade 2
 
 ## Summary
 
@@ -19,7 +19,7 @@ type: "turret"
 | --- | --- |
 | `enginePosY` | 0 |
 | `collisionRadius` | 20 |
-| `name` | Boss Cleaner Blade2 |
+| `name` | Boss Cleaner Blade 2 |
 | `bitmap` | UrCybZsFzkKPvi0JbcJ5dA |
 | `enginePosX` | 0 |
 | `shieldRegen` | 0 |

@@ -20,7 +20,7 @@ type: "projectile"
 | `projectile` | XleFE5TZi0aYzyTzGHItHw |
 | `radius` | 225 |
 | `speed` | 250 |
-| `description` | - A scary surprise- Large area of effect- Additional damage over time effect - Ten second detonation timer- Hold fire to charge up launching velocity- Click fire a second time to detonated all bombs |
+| `description` | - A scary surprise- Large area of effect- Additional damage over time effect - Ten second detonation timer- Hold fire to charge up launching velocity- Click fire a second time to detonate all bombs |
 | `hasSpecialFunction` | true |
 | `healthVamp` | 0 |
 | `heatCost` | 990 |

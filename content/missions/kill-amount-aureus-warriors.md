@@ -20,7 +20,7 @@ type: "kill"
 | `label` | (timed): Kill [amount] Aureus Warriors (75-0) |
 | `title` | Kill [amount] Aureus Warriors |
 | `type` | kill |
-| `description` | Kill [amount] Aureus warrios and help the federation against the overwhelming Aureus. |
+| `description` | Kill [amount] Aureus warriors and help the federation against the overwhelming Aureus. |
 | `subtype` | ship |
 | `drop` | 6jcDvWRMGE-GXABmNTISzg |
 | `expires` | 2500 |

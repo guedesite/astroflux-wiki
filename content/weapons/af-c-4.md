@@ -20,7 +20,7 @@ type: "projectile"
 | `projectile` | i-LlJKMkE0WDA2y0pJFJGA |
 | `radius` | 100 |
 | `speed` | 380 |
-| `description` | - Fires multiple C4-bombs. - Hold fire to charge up launching velocity.- Click fire a second time to detonated all bombs.- Reduce targets armor. |
+| `description` | - Fires multiple C4-bombs. - Hold fire to charge up launching velocity.- Click fire a second time to detonate all bombs.- Reduce target's armor. |
 | `hasSpecialFunction` | false |
 | `healthVamp` | 0 |
 | `heatCost` | 100 |

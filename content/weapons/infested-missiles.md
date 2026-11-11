@@ -20,7 +20,7 @@ type: "projectile"
 | `projectile` | dr22_0pj20q3ZdD5lxbRRg |
 | `radius` | 200 |
 | `speed` | 360 |
-| `description` | - Guided- Deals huge area damage- Reduces targets Kinetic resist by xx% |
+| `description` | - Guided- Deals huge area damage- Reduces target's kinetic resistance by xx% |
 | `hasSpecialFunction` | false |
 | `healthVamp` | 0 |
 | `heatCost` | 500 |

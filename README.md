@@ -10,7 +10,7 @@ It is especially meant for players like me: people who enjoy the game, but need 
 
 The project turns extracted game data into a browsable static website:
 
-1. read game source files from `source\`
+1. rebuild `source\` from the live game (data, textures, sounds, UI images)
 2. normalize and index the data
 3. generate Markdown content
 4. build the final static site in `dist\`
@@ -28,22 +28,41 @@ The project depends on a local `source\` folder.
 
 That folder is **not committed to git**, for **confidentiality reasons**.
 
+The Steam build of Astroflux is an Electron shell that loads the live HTML5 client from `astroflux.net`; it does not bundle the game data. The `source\` folder mirrors what the live client downloads:
+
+| Path | Contents |
+| --- | --- |
+| `source\binaryData\cache_json.json` | game database (`data/cache.json`) |
+| `source\binaryData\lang_json.json` | localization tables (`data/lang.json`) |
+| `source\gamefs\textures\` | texture atlases (`.png` + `.xml`) |
+| `source\gamefs\audio\` | sounds referenced by the cache |
+| `source\images\` | UI / font images used by the site |
+
 Expected rule:
 
 - `source\` must exist locally if you want to run the full extraction pipeline
 - `source\` stays outside version control
-- contributors must not commit raw confidential source files
+- contributors must not commit the raw source files
 
 In practice:
 
+- `npm run fetch:assets` rebuilds `source\` from the live game
 - `npm run extract` **requires** `source\`
 - `npm run build` rebuilds the static site from generated data already present in the repo
 - `npm run check` validates generated output
-- GitHub Actions publishes `dist\` to GitHub Pages, so `dist\` itself is not committed
+- GitHub Actions runs `fetch:assets` (to get textures/sounds/UI images) and then `build`, and publishes `dist\` to GitHub Pages, so `dist\` itself is not committed
 
 ## How it works
 
 The real workflow is:
+
+### 0. Fetch the live game data
+
+```bash
+npm run fetch:assets
+```
+
+This downloads the current game files from `astroflux.net` (falling back to the legacy PlayerIO gamefs host) into `source\`. The database (`cache_json.json` / `lang_json.json`) is always refreshed; pass `--force` to also re-download textures, sounds and UI images that already exist. Run this first whenever the game ships a new version.
 
 ### 1. Extract
 
@@ -94,6 +113,14 @@ This runs:
 npm run extract && npm run build
 ```
 
+To refresh everything from the current game version, use:
+
+```bash
+npm run update
+```
+
+which runs `fetch:assets`, `extract`, and `build` in sequence.
+
 ### 5. Local preview
 
 ```bash
@@ -106,7 +133,7 @@ This serves the generated site locally for quick inspection.
 
 | Path | Purpose |
 | --- | --- |
-| `source\` | Local confidential game source input, not tracked by git |
+| `source\` | Local mirror of the live game data/assets, rebuilt by `fetch:assets`, not tracked by git |
 | `data\raw\` | Generated raw JSON output |
 | `data\index\` | Generated normalized indexes and manifests |
 | `content\` | Generated Markdown content |
@@ -123,7 +150,7 @@ This serves the generated site locally for quick inspection.
 | `scripts\check-generated-output.js` | Validates generated files |
 | `scripts\serve-dist.js` | Serves `dist\` locally |
 | `scripts\compare-dist-output.js` | Compares a rebuilt `dist\` against a baseline output |
-| `scripts\fetch-gamefs-assets.js` | Utility script for game asset retrieval |
+| `scripts\fetch-gamefs-assets.js` | Rebuilds `source\` from the live game (data, atlases, sounds, UI images) |
 
 ## Contributing
 

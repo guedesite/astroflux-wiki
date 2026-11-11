@@ -20,7 +20,7 @@ type: "smartGun"
 | `projectile` | T80VYRZx_EaGJchHWoMPIg |
 | `radius` | 10 |
 | `speed` | 450 |
-| `description` | - A spinning disc of death.- Can hit multiple targets.- Reduce targets armor for x seconds, stacks up to 10x times. |
+| `description` | - A spinning disc of death.- Can hit multiple targets.- Reduce target's armor for x seconds, stacks up to 10x times. |
 | `hasSpecialFunction` | false |
 | `healthVamp` | 0 |
 | `heatCost` | 80 |

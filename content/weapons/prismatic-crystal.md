@@ -20,7 +20,7 @@ type: "smartGun"
 | `projectile` | wFe9LC2kY0Wz2hulPkl-8Q |
 | `radius` | 0 |
 | `speed` | 1200 |
-| `description` | -Deals kinetic, energy and corrosive damage.-Fires a volley  of small projectiles.-Weak stacking dot effect |
+| `description` | - Deals kinetic, energy and corrosive damage.- Fires a volley of small projectiles.- Weak stacking dot effect |
 | `healthVamp` | 0 |
 | `heatCost` | 240 |
 | `range` | 1000 |

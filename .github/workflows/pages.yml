@@ -30,6 +30,12 @@ jobs:
       - name: Install npm metadata
         run: npm install --ignore-scripts --package-lock=false
 
+      # `source/` is not committed, but the build needs the texture atlases,
+      # sounds and UI images to render sprites. They are public on the live
+      # game host, so refresh them here before building.
+      - name: Fetch game assets
+        run: npm run fetch:assets
+
       - name: Build static wiki
         run: npm run build
 

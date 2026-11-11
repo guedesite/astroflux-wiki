@@ -20,7 +20,7 @@ type: "projectile"
 | `projectile` | jvP6_Bq2L0CV9IE7NdJ23A |
 | `radius` | 0 |
 | `speed` | 293 |
-| `description` | - Its's a fish?- Can bite targets 4x times- Life leech on higher levels- Its's a fish!! |
+| `description` | - It's a fish?- Can bite targets 4x times- Life leech on higher levels- It's a fish!! |
 | `hasSpecialFunction` | false |
 | `healthVamp` | 0 |
 | `heatCost` | 120 |

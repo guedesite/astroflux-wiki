@@ -115,5 +115,5 @@ type: "beam"
 
 | Relation | Source |
 | --- | --- |
-| `weapon` | Boss Auerus Lightning (Turrets) |
+| `weapon` | Boss Aureus Lightning (Turrets) |
 

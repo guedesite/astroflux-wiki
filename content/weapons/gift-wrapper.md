@@ -20,7 +20,7 @@ type: "smartGun"
 | `projectile` | 6918BCC8-1438-2163-716A-C5E9B8D058DB |
 | `radius` | 25 |
 | `speed` | 750 |
-| `description` | - Low damage- No power usage- Small area damage- Disables targets shield regeneration for x seconds. |
+| `description` | - Low damage- No power usage- Small area damage- Disables target's shield regeneration for x seconds. |
 | `healthVamp` | 0 |
 | `heatCost` | 0 |
 | `range` | 750 |

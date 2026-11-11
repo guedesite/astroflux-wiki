@@ -20,7 +20,7 @@ type: "petSpawner"
 | `projectile` | nvGIXMnj60a3D7IUScEM_g |
 | `radius` | 0 |
 | `speed` | 600 |
-| `description` | - Attracts large Wasps...- The Wasp has 150% of player hp |
+| `description` | - Attracts large Wasps...- The Wasp has 150% of player HP |
 | `hasSpecialFunction` | false |
 | `healthVamp` | 0 |
 | `heatCost` | 800 |

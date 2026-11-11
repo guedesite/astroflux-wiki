@@ -19,7 +19,7 @@ type: "teleport"
 | --- | --- |
 | `radius` | 0 |
 | `speed` | 50 |
-| `description` | -Teleportation device that uses power to teleport your ship.-Hold Fire to increase teleport range.-Warning, takes 100% increade damage while channeling |
+| `description` | - Teleportation device that uses power to teleport your ship.- Hold Fire to increase teleport range.- Warning, takes 100% increased damage while channeling |
 | `hasSpecialFunction` | false |
 | `healthVamp` | 0 |
 | `heatCost` | 800 |

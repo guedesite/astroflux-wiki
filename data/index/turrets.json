@@ -142,8 +142,8 @@
     "id": "Turrets:86vPSZQeMkyidaC1qYcu0g",
     "source_table": "Turrets",
     "source_key": "86vPSZQeMkyidaC1qYcu0g",
-    "name": "Boss Auerus Lightning",
-    "slug": "boss-auerus-lightning",
+    "name": "Boss Aureus Lightning",
+    "slug": "boss-aureus-lightning",
     "type": null,
     "stats": {
       "aimArc": 360,
@@ -160,7 +160,7 @@
       "xp": 1,
       "weapon": "CfhtzzXOME2jbmFExG1yUQ",
       "melee": false,
-      "name": "Boss Auerus Lightning",
+      "name": "Boss Aureus Lightning",
       "rotationSpeed": 5
     }
   },

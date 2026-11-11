@@ -20,7 +20,7 @@ type: "smartGun"
 | `projectile` | 5JAkRehFnkq14szdwm1Jsw |
 | `radius` | 10 |
 | `speed` | 500 |
-| `description` | - Fires two golden bullet that will split every 0.12 seconds. |
+| `description` | - Fires two golden bullets that will split every 0.12 seconds. |
 | `hasSpecialFunction` | false |
 | `healthVamp` | 0 |
 | `heatCost` | 222 |

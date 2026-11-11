@@ -20,7 +20,7 @@ type: "blaster"
 | `projectile` | tWJOI6HJLUaVdEn92QXWZg |
 | `radius` | 0 |
 | `speed` | 600 |
-| `description` | - Multiple shots- Reduces target energy resitance for 2 seconds. |
+| `description` | - Multiple shots- Reduces target energy resistance for 2 seconds. |
 | `healthVamp` | 0 |
 | `heatCost` | 200 |
 | `range` | 500 |

@@ -20,7 +20,7 @@ type: "projectile"
 | `projectile` | 758725E4-163E-DC7C-6F84-3553A351A12D |
 | `radius` | 0 |
 | `speed` | 340 |
-| `description` | - Guided- Deals huge area damage- Reduces targets Kinetic resist by xx% |
+| `description` | - Guided- Deals huge area damage- Reduces target's kinetic resistance by xx% |
 | `hasSpecialFunction` | false |
 | `healthVamp` | 0 |
 | `heatCost` | 380 |

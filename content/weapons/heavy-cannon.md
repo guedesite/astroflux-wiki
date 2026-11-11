@@ -20,7 +20,7 @@ type: "projectile"
 | `projectile` | BK2H63mlzEKhswqcrj9ZBg |
 | `radius` | 0 |
 | `speed` | 570 |
-| `description` | - Reduce targets armor for 1 second. |
+| `description` | - Reduce target's armor for 1 second. |
 | `hasSpecialFunction` | false |
 | `healthVamp` | 0 |
 | `heatCost` | 350 |

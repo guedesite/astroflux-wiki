@@ -20,7 +20,7 @@ type: "petSpawner"
 | `projectile` | nvGIXMnj60a3D7IUScEM_g |
 | `radius` | 0 |
 | `speed` | 400 |
-| `description` | - Launches one Triad Fighter- The Triad Fighter have 75% of player HP- Can have two at higher levels |
+| `description` | - Launches one Triad Fighter- The Triad Fighter has 75% of player HP- Can have two at higher levels |
 | `hasSpecialFunction` | false |
 | `healthVamp` | 0 |
 | `heatCost` | 400 |

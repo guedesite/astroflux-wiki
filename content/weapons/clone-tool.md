@@ -20,7 +20,7 @@ type: "petSpawner"
 | `projectile` | nvGIXMnj60a3D7IUScEM_g |
 | `radius` | 0 |
 | `speed` | 500 |
-| `description` | - Launches one Guardian- The Guardian have 50% of player HP |
+| `description` | - Launches one Guardian- The Guardian has 50% of player HP |
 | `hasSpecialFunction` | false |
 | `healthVamp` | 0 |
 | `heatCost` | 800 |

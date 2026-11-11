@@ -25,7 +25,7 @@ type: "planet"
 | `controlZoneGrabRewardFactor` | 0.85 |
 | `extraAreas` | 4 |
 | `controlZoneCompleteRewardFactor` | 0.86 |
-| `elite` | false |
+| `elite` | true |
 | `population` | 0 |
 | `type` | planet |
 | `atmosphereColor` | 65280 |

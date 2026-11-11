@@ -20,7 +20,7 @@ type: "smartGun"
 | `projectile` | -Y2SM_VVpU6TQ3YEPLGE4A |
 | `radius` | 75 |
 | `speed` | 650 |
-| `description` | - Bombs sticks to targets- Three second detonation timer- Increased dmg for every additional bombs on the same target |
+| `description` | - Bombs stick to targets- Three second detonation timer- Increased damage for every additional bomb on the same target |
 | `healthVamp` | 0 |
 | `heatCost` | 100 |
 | `range` | 800 |

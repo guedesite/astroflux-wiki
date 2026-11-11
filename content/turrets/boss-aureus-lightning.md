@@ -2,12 +2,12 @@
 id: "Turrets:86vPSZQeMkyidaC1qYcu0g"
 source_table: "Turrets"
 source_key: "86vPSZQeMkyidaC1qYcu0g"
-slug: "turrets/boss-auerus-lightning"
-name: "Boss Auerus Lightning"
+slug: "turrets/boss-aureus-lightning"
+name: "Boss Aureus Lightning"
 type: null
 ---
 
-# Boss Auerus Lightning
+# Boss Aureus Lightning
 
 ## Summary
 
@@ -29,7 +29,7 @@ type: null
 | `xp` | 1 |
 | `weapon` | CfhtzzXOME2jbmFExG1yUQ |
 | `melee` | false |
-| `name` | Boss Auerus Lightning |
+| `name` | Boss Aureus Lightning |
 | `rotationSpeed` | 5 |
 
 ## Links

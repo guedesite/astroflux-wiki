@@ -20,7 +20,7 @@ type: "projectile"
 | `projectile` | ZIggSX9-ZEON9GpSgAUYiw |
 | `radius` | 40 |
 | `speed` | 500 |
-| `description` | Deals heavy burn damage (does not stack).Can fire two torpedos in a rapid sequence. |
+| `description` | Deals heavy burn damage (does not stack).Can fire two torpedoes in a rapid sequence. |
 | `hasSpecialFunction` | false |
 | `healthVamp` | 0 |
 | `heatCost` | 350 |

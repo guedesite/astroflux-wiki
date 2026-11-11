@@ -20,7 +20,7 @@ type: "smartGun"
 | `projectile` | psQLs8IX00OjkG0iKoSgpw |
 | `radius` | 0 |
 | `speed` | 750 |
-| `description` | - Auto aim- Disables targets shield regeneration for x seconds. |
+| `description` | - Auto aim- Disables target's shield regeneration for x seconds. |
 | `healthVamp` | 0 |
 | `heatCost` | 80 |
 | `range` | 750 |

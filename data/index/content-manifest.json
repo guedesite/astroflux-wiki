@@ -14304,9 +14304,9 @@
     {
       "id": "Ships:fWbOupTA0E6xJhHxS2ZMwQ",
       "source_key": "fWbOupTA0E6xJhHxS2ZMwQ",
-      "name": "Boss Cleaner Blade2",
-      "slug": "ships/boss-cleaner-blade2",
-      "file": "content/ships/boss-cleaner-blade2.md"
+      "name": "Boss Cleaner Blade 2",
+      "slug": "ships/boss-cleaner-blade-2",
+      "file": "content/ships/boss-cleaner-blade-2.md"
     },
     {
       "id": "Ships:uxCogo734EWYYxyolc5bzQ",
@@ -17346,9 +17346,9 @@
     {
       "id": "Turrets:86vPSZQeMkyidaC1qYcu0g",
       "source_key": "86vPSZQeMkyidaC1qYcu0g",
-      "name": "Boss Auerus Lightning",
-      "slug": "turrets/boss-auerus-lightning",
-      "file": "content/turrets/boss-auerus-lightning.md"
+      "name": "Boss Aureus Lightning",
+      "slug": "turrets/boss-aureus-lightning",
+      "file": "content/turrets/boss-aureus-lightning.md"
     },
     {
       "id": "Turrets:dpdA0LZkL0--NB1rbvngdQ",

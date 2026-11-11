@@ -20,7 +20,7 @@ type: "smartGun"
 | `projectile` | _XJf_CGuXEWEQ-N7qfg7Ug |
 | `radius` | 0 |
 | `speed` | 600 |
-| `description` | - Multiple shots at higher level (with slight Angle Spreed) |
+| `description` | - Multiple shots at higher level (with slight angle spread) |
 | `healthVamp` | 0 |
 | `heatCost` | 40 |
 | `range` | 800 |

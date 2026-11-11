@@ -19,7 +19,7 @@ type: "teleport"
 | --- | --- |
 | `radius` | 0 |
 | `speed` | 50 |
-| `description` | -Teleportation device that uses power to teleport your ship. |
+| `description` | - Teleportation device that uses power to teleport your ship. |
 | `hasSpecialFunction` | false |
 | `healthVamp` | 0 |
 | `heatCost` | 800 |
